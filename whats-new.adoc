@@ -38,18 +38,6 @@ Per i dettagli su cosa è cambiato, vedere il https://docs.netapp.com/us-en/blue
 
 
 
-=== Protezione dalle violazioni dei dati
-
-
-
-=== SIEM
-
-
-
-=== Pulisci l'ambiente di ripristino
-
-
-
 == 15 luglio 2025
 
 
