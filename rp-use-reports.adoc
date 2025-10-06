@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: rp-use-reports.html 
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
+summary: Utilizzando NetApp Ransomware Resilience, puoi scaricare report che mostrano dettagli su protezione, avvisi e ripristino e salvarli come file CSV. 
+---
+= Scarica i report in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile esportare i dati di protezione e scaricare i file CSV o JSON che mostrano i dettagli delle esercitazioni di preparazione agli attacchi, della protezione, degli avvisi e del ripristino.
+
+
+TIP: Prima di scaricare i file, è necessario aggiornare i dati, aggiornando così anche i dati che appariranno nei file.
+
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+
+*Quali dati puoi scaricare?*  È possibile scaricare i file da una qualsiasi delle opzioni del menu principale:
+
+* *Protezione*: contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di quelli protetti e a rischio.
+* *Avvisi*: include lo stato e i dettagli di tutti gli avvisi, tra cui il numero totale di avvisi e snapshot automatici.
+* *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristino riuscito".
+* *Report*: puoi esportare i dati da qualsiasi pagina e scaricare i file.
++
+
+NOTE: È possibile scaricare i report delle esercitazioni di preparazione solo dalla pagina *Report*.
+
+
+
+Se scarichi file CSV o JSON dalla pagina Protezione, Avvisi o Ripristino, i dati mostrano solo i dati presenti in quella pagina.
+
+I file CSV o JSON includono dati per tutti i carichi di lavoro su tutti i sistemi Console.
+
+.Passi
+. Dal menu di navigazione a sinistra della Console, seleziona *Protezione* > *Ransomware Resilience*.
++
+image:screen-dashboard.png["Pagina del dashboard"]
+
+. Dalla Dashboard o da un'altra pagina, seleziona *Aggiorna*image:button-refresh.png["Opzione di aggiornamento"] opzione in alto a destra per aggiornare i dati che appariranno nei report.
+. Eseguire una delle seguenti operazioni:
++
+** Dalla pagina, seleziona *Download*image:button-download.png["Opzione di download"] opzione.
+** Dal menu NetApp Ransomware Resilience, seleziona *Report*.
+
+
+. Se hai selezionato l'opzione *Report*, seleziona uno dei nomi di file preconfigurati e seleziona *Scarica*.
++
+image:screen-reports.png["Pagina dei report che mostra il report dell'esercitazione di preparazione"]
+
+

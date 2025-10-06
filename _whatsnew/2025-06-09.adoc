@@ -1,0 +1,31 @@
+= Aggiornamenti della landing page
+:allow-uri-read: 
+
+
+
+
+=== Aggiornamenti della landing page
+
+Questa versione include aggiornamenti alla landing page per la BlueXP ransomware protection che semplificano l'avvio della prova gratuita e la scoperta.
+
+
+
+=== Aggiornamenti sulle esercitazioni di preparazione
+
+In precedenza, era possibile eseguire un'esercitazione di preparazione al ransomware simulando un attacco su un nuovo carico di lavoro di esempio.  Grazie a questa funzionalità è possibile analizzare l'attacco simulato e recuperare il carico di lavoro.  Utilizzare questa funzione per testare le notifiche di avviso, la risposta e il ripristino.  Esegui e programma queste esercitazioni tutte le volte che è necessario.
+
+Con questa versione, puoi utilizzare un nuovo pulsante sulla Dashboard BlueXP ransomware protection per eseguire un'esercitazione di preparazione al ransomware su un carico di lavoro di prova, semplificando la simulazione di attacchi ransomware, l'analisi del loro impatto e il ripristino efficiente dei carichi di lavoro, il tutto all'interno di un ambiente controllato.
+
+Ora è possibile eseguire esercitazioni di preparazione sui carichi di lavoro CIFS (SMB) oltre che sui carichi di lavoro NFS.
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
+
+
+
+=== Abilita gli aggiornamenti BlueXP classification
+
+Prima di utilizzare la BlueXP classification all'interno del servizio BlueXP ransomware protection , è necessario abilitare la BlueXP classification per eseguire la scansione dei dati.  La classificazione dei dati aiuta a trovare informazioni personali identificabili (PII), il che può aumentare i rischi per la sicurezza.
+
+È possibile distribuire la BlueXP classification su un carico di lavoro di condivisione file dall'interno BlueXP ransomware protection.  Nella colonna *Esposizione alla privacy*, seleziona l'opzione *Identifica esposizione*.  Se hai abilitato il servizio di classificazione, questa azione identifica l'esposizione.  Altrimenti, con questa versione, una finestra di dialogo presenta l'opzione per distribuire la BlueXP classification.  Selezionare *Distribuisci* per andare alla pagina di destinazione del servizio BlueXP classification , dove è possibile distribuire tale servizio.  O
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Distribuisci la BlueXP classification nel cloud"^] e per utilizzare il servizio all'interno BlueXP ransomware protection, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Scansiona le informazioni di identificazione personale con la BlueXP classification"] .

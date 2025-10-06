@@ -1,0 +1,32 @@
+= Simula un attacco e rispondi
+:allow-uri-read: 
+
+
+
+
+=== Simula un attacco e rispondi
+
+Con questa versione, simula un attacco ransomware per testare la tua risposta a un avviso ransomware.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
+
+
+
+=== Miglioramenti al processo di scoperta
+
+Questa versione include miglioramenti ai processi di scoperta e riscoperta selettiva:
+
+* Con questa versione, puoi scoprire i carichi di lavoro appena creati che sono stati aggiunti agli ambienti di lavoro selezionati in precedenza.
+* In questa versione è anche possibile selezionare _nuovi_ ambienti di lavoro.  Questa funzionalità ti aiuta a proteggere i nuovi carichi di lavoro aggiunti al tuo ambiente.
+* È possibile eseguire questi processi di individuazione durante il processo di individuazione iniziale oppure all'interno dell'opzione Impostazioni.
+
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i carichi di lavoro appena creati per gli ambienti di lavoro selezionati in precedenza"] E https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configura le funzionalità con l'opzione Impostazioni"] .
+
+
+
+=== Avvisi generati quando viene rilevata una crittografia elevata
+
+Con questa versione, puoi visualizzare avvisi quando viene rilevata una crittografia elevata nei tuoi carichi di lavoro, anche senza modifiche significative alle estensioni dei file.  Questa funzionalità, che utilizza l'intelligenza artificiale ONTAP Autonomous Ransomware Protection (ARP), aiuta a identificare i carichi di lavoro a rischio di attacchi ransomware.  Utilizza questa funzionalità e scarica l'elenco completo dei file interessati, con o senza modifiche all'estensione.
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondere a un avviso di ransomware rilevato"] .

@@ -1,0 +1,181 @@
+---
+sidebar: sidebar 
+permalink: rp-use-dashboard.html 
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
+summary: 'La dashboard NetApp Ransomware Resilience fornisce informazioni sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l"entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.  È inoltre possibile utilizzare la Dashboard per rivedere le raccomandazioni sulla protezione e agire di conseguenza.' 
+---
+= Monitora lo stato del carico di lavoro utilizzando la dashboard di resilienza ransomware di NetAPp
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+La dashboard NetApp Ransomware Resilience fornisce informazioni immediate sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, identificare i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l'entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.
+
+Utilizzare la Dashboard per rivedere i suggerimenti di protezione, modificare le impostazioni, scaricare report e visualizzare la documentazione.
+
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+
+
+
+== Esaminare lo stato del carico di lavoro utilizzando la Dashboard
+
+.Passi
+. Dopo che la Console rileva i carichi di lavoro, la dashboard Ransomware Resilience visualizza lo stato di protezione dei dati del carico di lavoro.
++
+image:screen-dashboard.png["Pagina del dashboard"]
+
+. Dalla Dashboard è possibile eseguire le seguenti azioni in ciascuno dei riquadri:
++
+** *Protezione dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina Protezione.  I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
++
+
+TIP: Selezionare il suggerimento "i" per visualizzare suggerimenti su questi dati.  Per aumentare il limite del carico di lavoro, seleziona *Aumenta limite del carico di lavoro* all'interno di questa nota.  Selezionando questa opzione verrai indirizzato alla pagina di supporto della console, dove potrai creare un ticket di assistenza.
+
+** *Avvisi e ripristino dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare gli incidenti attivi che hanno avuto un impatto sul tuo carico di lavoro, sono pronti per il ripristino dopo la neutralizzazione degli incidenti o sono in fase di ripristino. Fare riferimento a link:rp-use-alert.html["Rispondere a un avviso rilevato"] .
++
+*** Un incidente è classificato in uno dei seguenti stati:
++
+**** Nuovo
+**** Licenziato
+**** Licenziamento
+**** Risolto
+
+
+*** Un avviso può avere uno dei seguenti stati:
++
+**** Nuovo
+**** Inattivo
+
+
+*** Un carico di lavoro può avere uno dei seguenti stati di ripristino:
++
+**** Ripristino necessario
+**** In corso
+**** Restaurato
+**** Fallito
+
+
+
+
+** *Azioni consigliate*: per aumentare la protezione, rivedi ogni raccomandazione, quindi seleziona *Rivedi e correggi*.
++
+Vedere link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Esaminare i suggerimenti di protezione sulla Dashboard"] O link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
+
++
+Ransomware Resilience visualizza per 24 ore i nuovi suggerimenti dall'ultima visita alla Dashboard con il tag "Nuovo".  Le azioni vengono visualizzate in ordine di priorità, con la più importante in cima.  Esamina, agisci o ignora ogni raccomandazione.
+
++
+Il numero totale di azioni non include le azioni che hai ignorato.
+
+** *Dati sul carico di lavoro*: monitora le modifiche nella copertura di protezione negli ultimi 7 giorni.
+** *Backup del carico di lavoro*: monitora le modifiche nei backup del carico di lavoro creati da Ransomware Resilience che non sono riusciti o sono stati completati correttamente negli ultimi 7 giorni.
+
+
+
+
+
+
+== Esaminare le raccomandazioni di protezione sulla Dashboard
+
+Ransomware Resilience valuta la protezione dei tuoi carichi di lavoro e consiglia azioni per migliorarla.
+
+È possibile rivedere una raccomandazione e agire di conseguenza, modificando lo stato della raccomandazione in Completata.  Oppure, se vuoi agire in seguito, puoi ignorarlo.  Quando si ignora un'azione, la raccomandazione viene spostata in un elenco di azioni ignorate, che è possibile rivedere in seguito.
+
+Ecco alcuni esempi di consigli offerti da Ransomware Resilience.
+
+[cols="30,30,30"]
+|===
+| Raccomandazione | Descrizione | Come risolvere 
+
+
+| Aggiungere una policy di protezione dal ransomware. | Al momento il carico di lavoro non è protetto. | Assegnare una policy al carico di lavoro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+
+
+| Connettiti al SIEM per la segnalazione delle minacce. | Inviare dati a un sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce. Fare riferimento a link:rp-use-settings.html["Configurare le impostazioni di protezione"] . 
+
+
+| Abilita la protezione coerente con il carico di lavoro per le applicazioni o VMware. | Questi carichi di lavoro non sono gestiti da SnapCenter Software o SnapCenter Plug-in for VMware vSphere. | Per farli gestire da SnapCenter, abilitare la protezione coerente con il carico di lavoro. Fare riferimento a link:rp-use-protect.html["Proteggere il carico di lavoro dagli attacchi ransomware"] . 
+
+
+| Migliorare la sicurezza del sistema | NetApp Digital Advisor ha identificato almeno un rischio per la sicurezza elevato o critico. | Esamina tutti i rischi per la sicurezza in NetApp Digital Advisor. Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documentazione Digital Advisor"^] . 
+
+
+| Rendere una politica più forte. | Alcuni carichi di lavoro potrebbero non avere una protezione sufficiente.  Rafforza la protezione dei carichi di lavoro con una policy. | Aumenta la conservazione, aggiungi backup, applica backup immutabili, blocca estensioni di file sospette, abilita il rilevamento su storage secondario e molto altro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+
+
+| Preparare <provider di backup> come destinazione di backup per eseguire il backup dei dati del carico di lavoro. | Al momento il carico di lavoro non ha destinazioni di backup. | Aggiungi destinazioni di backup a questo carico di lavoro per proteggerlo. Fare riferimento a link:rp-use-settings.html["Configurare le impostazioni di protezione"] . 
+
+
+| Proteggi i carichi di lavoro delle applicazioni critiche o molto importanti dal ransomware. | La pagina Proteggi visualizza i carichi di lavoro delle applicazioni critici o molto importanti (in base al livello di priorità assegnato) che non sono protetti. | Assegnare una policy a questi carichi di lavoro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+
+
+| Proteggi i carichi di lavoro di condivisione file critici o molto importanti dal ransomware. | La pagina Protezione visualizza i carichi di lavoro critici o molto importanti di tipo Condivisione file o Datastore che non sono protetti. | Assegnare una policy a ciascun carico di lavoro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+
+
+| Registra il plugin SnapCenter disponibile per VMware vSphere (SCV) con la Console | Un carico di lavoro VM non è protetto. | Assegnare una protezione coerente con la VM al carico di lavoro della VM abilitando il plug-in SnapCenter per VMware vSphere. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+
+
+| Registra il server SnapCenter disponibile con la console | Un'applicazione non è protetta. | Assegnare una protezione coerente con l'applicazione al carico di lavoro abilitando SnapCenter Server. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+
+
+| Esamina i nuovi avvisi. | Sono presenti nuovi avvisi. | Esamina i nuovi avvisi. Fare riferimento a link:rp-use-alert.html["Rispondere a un avviso di ransomware rilevato"] . 
+|===
+.Passi
+. Dal riquadro Azioni consigliate in Ransomware Resilience, seleziona una raccomandazione, quindi *Esamina e correggi*.
+. Per ignorare l'azione e rimandarla a dopo, seleziona *Ignora*.
++
+La raccomandazione viene eliminata dall'elenco delle cose da fare e visualizzata nell'elenco delle cose ignorate.
+
++
+
+TIP: In seguito potrai trasformare un elemento ignorato in un elemento da fare.  Quando si contrassegna un elemento come completato o si trasforma un elemento ignorato in un'azione Da fare, il totale delle azioni aumenta di 1.
+
+. Per rivedere le informazioni su come agire in base alle raccomandazioni, selezionare l'icona *informazioni*.
+
+
+
+
+== Esporta i dati di protezione in file CSV
+
+È possibile esportare dati e scaricare file CSV che mostrano dettagli su protezione, avvisi e ripristino.
+
+È possibile scaricare i file CSV da una qualsiasi delle opzioni del menu principale:
+
+* *Protezione*: contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di carichi di lavoro che Ransomware Resilience contrassegna come protetti o a rischio.
+* *Avvisi*: include lo stato e i dettagli di tutti gli avvisi, tra cui il numero totale di avvisi e snapshot automatici.
+* *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro che Ransomware Resilience contrassegna come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristino riuscito".
+
+
+Scaricando un file CSV da una pagina vengono inclusi solo i dati di quella pagina.
+
+I file CSV includono dati per tutti i carichi di lavoro su tutti i sistemi Console.
+
+.Passi
+. Dalla dashboard di Ransomware Resilience, seleziona *Aggiorna*image:button-refresh.png["Opzione di aggiornamento"] opzione in alto a destra per aggiornare i dati che appariranno nei file.
+. Eseguire una delle seguenti operazioni:
++
+** Dalla pagina, seleziona *Download*image:button-download.png["Opzione di download"] opzione.
+** Dal menu Ransomware Resilience, seleziona *Report*.
+
+
+. Se hai selezionato l'opzione *Report*, seleziona uno dei file preconfigurati con nome, quindi seleziona *Scarica (CSV)* o *Scarica (JSON)*.
+
+
+
+
+== Accedi alla documentazione tecnica
+
+È possibile accedere alla documentazione tecnica di Ransomware Resilience dalink:https://docs.netapp.com["docs.netapp.com"^] o dall'interno di Ransomware Resilience.
+
+.Passi
+. Dalla dashboard Ransomware Resilience, seleziona la verticale *Azioni*image:button-actions-vertical.png["Opzione Azioni verticali"] opzione.
+. Seleziona una di queste opzioni:
++
+** *Novità* per visualizzare informazioni sulle funzionalità delle versioni attuali o precedenti nelle Note di rilascio.
+** *Documentazione* per visualizzare la documentazione di Ransomware Resilience nella home page e questa documentazione.
+
+
+

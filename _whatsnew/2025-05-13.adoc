@@ -1,0 +1,15 @@
+= Segnalazione di ambienti di lavoro non supportati nella BlueXP ransomware protection
+:allow-uri-read: 
+
+
+
+
+=== Segnalazione di ambienti di lavoro non supportati nella BlueXP ransomware protection
+
+Durante il flusso di lavoro di individuazione, la BlueXP ransomware protection segnala maggiori dettagli quando si passa il mouse su Carichi di lavoro supportati o non supportati.  Questo ti aiuterà a capire perché alcuni dei tuoi carichi di lavoro non vengono rilevati dal servizio BlueXP ransomware protection .
+
+Esistono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad esempio la versione ONTAP sul tuo ambiente di lavoro potrebbe essere inferiore a quella richiesta.  Quando si passa il mouse su un ambiente di lavoro non supportato, una descrizione comandi ne mostra il motivo.
+
+È possibile visualizzare gli ambienti di lavoro non supportati durante la fase di rilevamento iniziale, da cui è anche possibile scaricare i risultati.  È anche possibile visualizzare i risultati dell'individuazione tramite l'opzione *Individuazione del carico di lavoro* nella pagina Impostazioni.
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i carichi di lavoro nella BlueXP ransomware protection"] .

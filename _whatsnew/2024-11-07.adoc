@@ -1,0 +1,39 @@
+= Abilita la classificazione dei dati e la scansione per informazioni di identificazione personale (PII)
+:allow-uri-read: 
+
+
+
+
+=== Abilita la classificazione dei dati e la scansione per informazioni di identificazione personale (PII)
+
+Con questa versione, puoi abilitare la BlueXP classification, un componente fondamentale della famiglia BlueXP , per analizzare e classificare i dati nei carichi di lavoro di condivisione file.  La classificazione dei dati aiuta a identificare se i dati contengono informazioni personali o private, il che può aumentare i rischi per la sicurezza.  Questo processo influisce anche sull'importanza del carico di lavoro e ti aiuta a garantire che i carichi di lavoro vengano protetti con il giusto livello di protezione.
+
+La scansione dei dati PII nella BlueXP ransomware protection è generalmente disponibile per i clienti che hanno implementato la BlueXP classification.  La BlueXP classification è disponibile come parte della piattaforma BlueXP senza costi aggiuntivi e può essere distribuita in locale o nel cloud del cliente.
+
+Fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare le impostazioni BlueXP ransomware protection"] .
+
+Per avviare la scansione, nella pagina Protezione, fare clic su *Identifica esposizione* nella colonna Esposizione alla privacy.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Scansiona i dati sensibili identificabili personalmente con la BlueXP classification"] .
+
+
+
+=== Integrazione SIEM con Microsoft Sentinel
+
+Ora puoi inviare dati al tuo sistema di sicurezza e gestione degli eventi (SIEM) per l'analisi e il rilevamento delle minacce tramite Microsoft Sentinel.  In precedenza, era possibile selezionare AWS Security Hub o Splunk Cloud come SIEM.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Scopri di più sulla configurazione delle impostazioni BlueXP ransomware protection"] .
+
+
+
+=== Prova gratuita ora per 30 giorni
+
+Con questa versione, le nuove distribuzioni della BlueXP ransomware protection hanno ora 30 giorni di prova gratuita.  In precedenza, la BlueXP ransomware protection era disponibile in prova gratuita per 90 giorni.  Se hai già usufruito della prova gratuita di 90 giorni, l'offerta sarà valida per 90 giorni.
+
+
+
+=== Ripristina il carico di lavoro dell'applicazione a livello di file per Podman
+
+Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, ora puoi visualizzare un elenco dei file che potrebbero essere stati interessati da un attacco e identificare quelli che desideri ripristinare.  In precedenza, se i connettori BlueXP in un'organizzazione (in precedenza un account) utilizzavano Podman, questa funzionalità era disabilitata.  Ora è abilitato per Podman.  Puoi lasciare che la BlueXP ransomware protection scelga i file da ripristinare, puoi caricare un file CSV che elenca tutti i file interessati da un avviso oppure puoi identificare manualmente i file che desideri ripristinare.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Scopri di più sul recupero da un attacco ransomware"] .

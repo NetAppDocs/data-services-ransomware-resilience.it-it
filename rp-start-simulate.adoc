@@ -1,0 +1,215 @@
+---
+sidebar: sidebar 
+permalink: rp-start-simulate.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
+summary: 'Eseguire un"esercitazione di preparazione al ransomware simulando un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l"attacco simulato e recuperare il carico di lavoro di esempio.  È possibile eseguire più volte un"esercitazione di preparazione al ransomware.' 
+---
+= Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Esegui un'esercitazione di preparazione ad un attacco ransomware simulando un attacco su un nuovo carico di lavoro di esempio.  Esaminare l'attacco simulato e recuperare il carico di lavoro.  Utilizzare questa funzione per testare le notifiche di avviso, la risposta e il ripristino.  Eseguire il trapano tutte le volte che è necessario.
+
+
+TIP: I dati del tuo carico di lavoro reale non subiscono alcun impatto.
+
+È possibile eseguire esercitazioni di preparazione sui carichi di lavoro NFS e CIFS (SMB).
+
+
+
+== Configurare un'esercitazione di preparazione all'attacco ransomware
+
+Prima di eseguire una simulazione, imposta un'esercitazione nella pagina Impostazioni.  Accedi alla pagina Impostazioni dall'opzione Azioni nel menu in alto.
+
+È necessario immettere un nome utente e una password nelle seguenti situazioni:
+
+* Se si sono verificate modifiche al nome utente o alla password per la VM di archiviazione selezionata in precedenza
+* Se selezioni una VM di archiviazione CIFS (SMB) diversa
+* Se si immette un nome di carico di lavoro di prova diverso
+
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Dal menu NetApp Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
++
+image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione"]
+
+. Nella scheda di esercitazione sulla prontezza nella pagina Impostazioni, seleziona *Configura*.
++
+La Console visualizza la pagina di configurazione dell'esercitazione di preparazione.
+
++
+image:screen-settings-alert-drill-configure.png["Configura la pagina di esercitazione di preparazione"]
+
+. Procedi come segue:
++
+.. Selezionare l'agente della console che si desidera utilizzare per l'esercitazione di preparazione.
+.. Selezionare un sistema di prova.
+.. Selezionare un SVM di archiviazione di prova.
+.. Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.
+.. Immettere il nome del nuovo carico di lavoro di test da creare.  Non includere trattini nel nome.
+
+
+. Seleziona *Salva*.
+
+
+
+TIP: È possibile modificare la configurazione dell'esercitazione di preparazione in un secondo momento utilizzando la pagina Impostazioni.
+
+
+
+== Avviare un'esercitazione di preparazione
+
+Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+Quando si avvia l'esercitazione di preparazione, Ransomware Resilience salta la modalità di apprendimento e avvia l'esercitazione in modalità attiva.  Lo stato di rilevamento del carico di lavoro è Attivo.
+
+
+TIP: Un carico di lavoro può avere uno stato di rilevamento ransomware *Modalità di apprendimento* quando di recente è stato assegnato un criterio di rilevamento e Ransomware Resilience esegue la scansione dei carichi di lavoro.
+
+.Passi
+. Eseguire una delle seguenti operazioni:
++
+** Dal menu Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
++
+image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione"]
+
+** OPPURE, dalla pagina Impostazioni, nella scheda Esercizio di preparazione, seleziona *Avvia*.
+
+
+. Se hai già configurato l'esercitazione di preparazione, dopo aver selezionato *Avvia*, l'esercitazione di preparazione avrà inizio.
+
+
+
+NOTE: Dopo l'avvio dell'esercitazione, non è possibile modificare la configurazione dell'esercitazione di preparazione.  Puoi reimpostarlo per ricominciare.
+
+
+
+== Rispondere a un avviso di esercitazione di prontezza
+
+Metti alla prova la tua prontezza rispondendo a un avviso di esercitazione di prontezza.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
++
+La Console visualizza la pagina Avvisi.  Nella colonna ID avviso, accanto all'ID viene visualizzato "Esercitazione di preparazione".
+
++
+image:screen-alerts-readiness.png["Pagina degli avvisi che mostra l'avviso di esercitazione di prontezza"]
+
+. Selezionare l'avviso con l'indicazione "Esercitazione di prontezza".  Nella pagina dei dettagli degli avvisi viene visualizzato un elenco degli avvisi di incidente.
++
+image:screen-alerts-readiness-details.png["Pagina dei dettagli degli avvisi che mostra l'avviso di esercitazione di prontezza"]
+
+. Esaminare gli incidenti di allerta.
+. Seleziona un incidente di allerta.
++
+image:screen-alerts-readiness-incidents2.png["Pagina dell'incidente che mostra l'avviso di esercitazione di prontezza"]
+
+
+
+Ecco alcune cose da tenere a mente:
+
+* Osserva il tipo di attacco potenziale.
++
+Se il Tipo indica che un utente è sospettato di attività dannose, rivedere il nome utente.  Potresti voler indagare più approfonditamente sull'utente in Data Infrastructure Insights Workload Security selezionando *Indaga in Workload security*.
+
+
+
+* Esaminare l'attività del file e i processi sospetti:
++
+** Confrontare i dati rilevati in arrivo con i dati previsti.
+** Confronta la velocità di creazione dei file rilevata con quella prevista.
+** Confronta la frequenza di rinominazione dei file rilevata con quella prevista.
+** Osserva il tasso di eliminazione rispetto al tasso previsto.
+
+
+* Guarda l'elenco dei file interessati.  Esamina le estensioni che potrebbero causare l'attacco.
+* Determinare l'impatto e l'ampiezza dell'attacco esaminando il numero di file e directory interessati.
+
+
+
+
+== Ripristinare il carico di lavoro del test
+
+Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il carico di lavoro del test, se necessario.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Torna alla pagina dei dettagli dell'avviso.
+. Se il carico di lavoro del test deve essere ripristinato, procedere come segue:
++
+** Seleziona *Segna come necessario il ripristino*.
+** Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.
++
+*** Dal menu Ransomware Resilience, seleziona *Ripristino*.
+*** Selezionare il carico di lavoro di prova contrassegnato con "Esercitazione di preparazione" che si desidera ripristinare.
+*** Selezionare *Ripristina*.
+*** Nella pagina Ripristina, fornisci le informazioni per il ripristino:
+
+
+** Selezionare la copia dello snapshot di origine.
+** Selezionare il volume di destinazione.
+
+
+. Nella pagina di revisione del ripristino, seleziona *Ripristina*.
++
+La Console visualizza lo stato del ripristino del drill di prontezza come "In corso" nella pagina Ripristino.
+
++
+Una volta completato il ripristino, la Console modifica lo stato del carico di lavoro in *Ripristinato*.
+
+. Esaminare il carico di lavoro ripristinato.
+
+
+
+TIP: Per i dettagli sul processo di ripristino, vederelink:rp-use-recover.html["Recuperare da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati)"] .
+
+
+
+== Modificare lo stato degli avvisi dopo l'esercitazione di preparazione
+
+Dopo aver esaminato l'avviso di esercitazione di prontezza e aver ripristinato il carico di lavoro, modificare lo stato dell'avviso, se necessario.
+
+*È richiesto il ruolo Console* Amministratore dell'organizzazione, Amministratore di cartelle o progetti o Amministratore di Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Torna alla pagina dei dettagli dell'avviso.
+. Selezionare nuovamente l'avviso.
+. Indicare lo stato selezionando *Modifica stato* e cambiare lo stato in uno dei seguenti:
++
+** Ignorato: se sospetti che l'attività non sia un attacco ransomware, modifica lo stato in Ignorato.
++
+
+IMPORTANT: Dopo aver respinto un attacco, non è possibile ripristinarlo.  Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.  Se si ignora l'avviso, l'esercitazione di preparazione è considerata completata.
+
+** Risolto: l'incidente è stato mitigato.
+
+
+
+
+
+
+== Rivedere i rapporti sull'esercitazione di preparazione
+
+Una volta completata l'esercitazione di preparazione, potresti voler rivedere e salvare un report sull'esercitazione.
+
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Report*.
++
+image:screen-reports.png["Pagina dei report che mostra il report dell'esercitazione di preparazione"]
+
+. Selezionare *Esercitazioni di preparazione* e *Scarica* per scaricare il report delle esercitazioni di preparazione.
+

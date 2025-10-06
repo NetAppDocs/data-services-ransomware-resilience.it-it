@@ -1,0 +1,219 @@
+---
+sidebar: sidebar 
+permalink: concept-ransomware-resilience.html 
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyberattack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac 
+summary: Ransomware Resilience ti consente di visualizzare informazioni rilevanti sulla sicurezza informatica e di valutare il livello di resilienza della tua organizzazione a un attacco informatico.  Fornisce inoltre un elenco di avvisi e misure correttive per rendere i tuoi dati più sicuri. 
+---
+= Scopri di più sulla resilienza al ransomware NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Gli attacchi ransomware possono bloccare l'accesso ai tuoi dati e gli aggressori possono chiedere un riscatto in cambio del rilascio dei dati o della decrittazione.  Secondo l'IDC, non è raro che le vittime di ransomware subiscano più attacchi ransomware.  L'attacco può interrompere l'accesso ai tuoi dati per un periodo che può variare da un giorno a diverse settimane.
+
+NetApp Ransomware Resilience protegge i tuoi dati dagli attacchi ransomware.  In Ransomware Resilience, la protezione è disponibile per carichi di lavoro basati su applicazioni di Oracle, MySQL, datastore VM e condivisioni di file su storage NAS locale (utilizzando i protocolli NFS e CIFS) e storage SAN (FC, iSCSI e NVMe), nonché Cloud Volumes ONTAP per Amazon Web Services, Cloud Volumes ONTAP per Google Cloud, Cloud Volumes ONTAP per Microsoft Azure e Amazon FSx for NetApp ONTAP nella console NetApp .  È possibile eseguire il backup dei dati su Amazon Web Services, Google Cloud, Microsoft Azure Cloud Storage e NetApp StorageGRID.
+
+
+
+== Resilienza del ransomware a livello di dati
+
+In genere, la tua strategia di sicurezza prevede più livelli di difesa per proteggerti da una serie di minacce informatiche.
+
+* *Strato più esterno*: questa è la prima linea di difesa che utilizza firewall, sistemi di rilevamento delle intrusioni e reti private virtuali per salvaguardare i confini della rete.
+* *Sicurezza di rete*: questo livello si basa sulle fondamenta con segmentazione di rete, monitoraggio del traffico e crittografia.
+* *Sicurezza dell'identità*: utilizza metodi di autenticazione, controlli di accesso e gestione dell'identità per garantire che solo gli utenti autorizzati possano accedere alle risorse sensibili.
+* *Sicurezza delle applicazioni*: protegge le applicazioni software mediante pratiche di codifica sicura, test di sicurezza e autoprotezione delle applicazioni runtime.
+* *Sicurezza dei dati*: salvaguarda i tuoi dati con strategie di protezione, backup e ripristino.  La resilienza del ransomware opera su questo livello.
+
+
+image:concept-security-layer-diagram.png["Diagramma del livello di sicurezza"]
+
+
+
+== Cosa puoi fare con Ransomware Resilience
+
+Ransomware Resilience consente di sfruttare appieno diverse tecnologie NetApp , in modo che l'amministratore dell'archiviazione, l'amministratore della sicurezza dei dati o il tecnico delle operazioni di sicurezza possano raggiungere i seguenti obiettivi:
+
+* *Identificare* tutti i carichi di lavoro basati su applicazioni, condivisione file o gestiti da VMware nei sistemi NAS (NFS o CIFS) e SAN (FC, iSCSI e NVMe) locali NetApp nella console NetApp , nei progetti e negli agenti della console.  Ransomware Resilience categorizza la priorità dei dati e fornisce suggerimenti per migliorare la resilienza al ransomware.
+* *Proteggi* i tuoi carichi di lavoro abilitando backup, copie snapshot e strategie di protezione dal ransomware sui tuoi dati.
+* *Rileva* anomalie che potrebbero essere attacchi ransomware.footnote:[Sebbene sia possibile che un attacco passi inosservato, la nostra ricerca indica che la tecnologia NetApp ha portato a un elevato grado di rilevamento per alcuni attacchi ransomware basati sulla crittografia dei file.]
+* *Rispondi* ai potenziali attacchi ransomware avviando automaticamente uno snapshot NetApp ONTAP a prova di manomissione, bloccato in modo che la copia non possa essere eliminata accidentalmente o intenzionalmente.  I tuoi dati di backup rimarranno immutabili e protetti end-to-end dagli attacchi ransomware all'origine e nella destinazione.
+* *Recupera* i tuoi carichi di lavoro che contribuiscono ad accelerare i tempi di attività dei carichi di lavoro orchestrando diverse tecnologie NetApp .  È possibile scegliere di recuperare volumi specifici.  Ransomware Resilience fornisce consigli sulle opzioni migliori.
+* *Governare*: implementare la strategia di protezione dal ransomware e monitorarne i risultati.
+
+
+image:diagram-rp-features-phases3.png["Diagramma che mostra le strategie di resilienza al ransomware per identificare, proteggere, rilevare, rispondere e ripristinare"]
+
+
+
+== Vantaggi dell'utilizzo della resilienza ransomware
+
+Ransomware Resilience offre i seguenti vantaggi:
+
+* Rileva i carichi di lavoro e le relative pianificazioni di snapshot e backup esistenti, classificandone l'importanza relativa.
+* Valuta il tuo livello di protezione dal ransomware e lo visualizza in una dashboard di facile comprensione.
+* Fornisce raccomandazioni sui passaggi successivi in base all'analisi della posizione di scoperta e protezione.
+* Applica le raccomandazioni sulla protezione dei dati basate su AI/ML con accesso con un clic.
+* Protegge i dati nei principali carichi di lavoro basati sulle applicazioni, come MySQL, Oracle, datastore VMware e file-sharing.
+* Rileva in tempo reale gli attacchi ransomware sui dati presenti sullo storage primario utilizzando la tecnologia AI.
+* Avvia azioni automatizzate in risposta ai potenziali attacchi rilevati creando copie snapshot e inviando avvisi su attività anomale.
+* Applica un ripristino curato per soddisfare i criteri RPO.  Ransomware Resilience orchestra il ripristino dagli incidenti ransomware utilizzando diversi servizi di ripristino NetApp , tra cui NetApp Backup and Recovery (in precedenza Cloud Backup) e SnapCenter.
+* Utilizza il controllo degli accessi basato sui ruoli (RBAC) per gestire l'accesso alle funzionalità e alle operazioni.
+
+
+
+
+== Costo
+
+NetApp non addebita alcun costo per l'utilizzo della versione di prova di Ransomware Resilience.
+
+
+NOTE: Con la versione di ottobre 2024, le nuove distribuzioni di Ransomware Resilience offrono una prova gratuita di 30 giorni.  In precedenza, Ransomware Resilience offriva una prova gratuita di 90 giorni.  Se ti sei già iscritto alla prova gratuita di 90 giorni, la prova sarà valida per 90 giorni.
+
+Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
+
+Dopo aver acquistato una licenza o un abbonamento PayGo, qualsiasi carico di lavoro che abbia un criterio di rilevamento ransomware (Autonomous Ransomware Protection) abilitato (rilevato o impostato da Ransomware Resilience) e almeno uno snapshot o un criterio di backup, Ransomware Resilience lo classifica come "Protetto" e lo conta nella capacità acquistata o nell'abbonamento PayGo.  Se un carico di lavoro viene scoperto senza una policy di rilevamento, anche se dispone di policy di backup o snapshot, viene classificato come "A rischio" e _non_ viene conteggiato nella capacità acquistata.
+
+I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova di 90 giorni.  La tariffazione di Ransomware Resilience viene calcolata in base ai GB di dati associati ai carichi di lavoro protetti prima delle efficienze.
+
+
+
+== Licenza
+
+Con Ransomware Resilience puoi utilizzare diversi piani di licenza, tra cui una prova gratuita, un abbonamento a consumo o la possibilità di utilizzare la tua licenza.
+
+Per utilizzare Ransomware Resilience è necessaria una licenza NetApp ONTAP One.
+
+La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi.  Ransomware Resilience può utilizzare Backup e Recovery anche se non si dispone di una licenza per utilizzarlo.
+
+Per rilevare comportamenti anomali degli utenti, Ransomware Resilience utilizza NetApp Autonomous Ransomware Protection, un modello di apprendimento automatico (ML) all'interno di ONTAP che rileva attività di file dannosi.  Questo modello è incluso nella licenza Ransomware Resilience.  È inoltre possibile utilizzare Data Infrastructure Insights (in precedenza Cloud Insights) Workload Security (licenza richiesta) per analizzare il comportamento degli utenti e impedire a specifici utenti di intraprendere ulteriori attività.
+
+Per maggiori dettagli, vedere link:rp-start-licenses.html["Impostare la licenza"] .
+
+
+
+== Console NetApp
+
+Ransomware Resilience è accessibile tramite la console NetApp .
+
+NetApp Console offre una gestione centralizzata dei servizi di storage e dati NetApp in ambienti on-premise e cloud di livello aziendale. La console è necessaria per accedere e utilizzare i servizi dati NetApp . In quanto interfaccia di gestione, consente di gestire numerose risorse di archiviazione da un'unica interfaccia. Gli amministratori della console possono controllare l'accesso allo storage e ai servizi per tutti i sistemi all'interno dell'azienda.
+
+Per iniziare a utilizzare NetApp Console non è necessaria una licenza o un abbonamento e verranno addebitati costi solo quando sarà necessario distribuire gli agenti della console nel cloud per garantire la connettività ai sistemi di storage o ai servizi dati NetApp . Tuttavia, alcuni servizi dati NetApp accessibili dalla Console sono concessi in licenza o basati su abbonamento.
+
+Scopri di più sulink:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["Console NetApp"^] .
+
+
+
+== Come funziona Ransomware Resilience
+
+Ransomware Resilience utilizza NetApp Backup and Recovery per individuare e impostare policy di snapshot e backup per carichi di lavoro di condivisione file, e SnapCenter o SnapCenter for VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM.  Inoltre, Ransomware Resilience utilizza Backup and Recovery e SnapCenter / SnapCenter per VMware per eseguire un ripristino coerente con i file e i carichi di lavoro.
+
+image:diagram-rp-architecture-preview3.png["Diagramma che mostra l'architettura di resilienza del ransomware"]
+
+[cols="15,65a"]
+|===
+| Caratteristica | Descrizione 
+
+
+| *IDENTIFICARE*  a| 
+* Trova tutti i dati NAS (protocolli NFS e CIFS) on-premise del cliente, SAN (FC, iSCSI e NVMe) e Cloud Volumes ONTAP connessi alla console.
+* Identifica i dati dei clienti dalle API dei servizi ONTAP e SnapCenter e li associa ai carichi di lavoro. Scopri di più su https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] E https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^] .
+* Rileva il livello di protezione attuale di ogni volume delle copie snapshot NetApp e delle policy di backup, nonché tutte le funzionalità di rilevamento integrate.  Ransomware Resilience associa quindi questa posizione di protezione ai carichi di lavoro utilizzando Backup and Recovery, servizi ONTAP e tecnologie NetApp come Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ), FPolicy, policy di backup e policy di snapshot.  Scopri di più su https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] , https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino NetApp"^] , E https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
+* Assegna una priorità aziendale a ciascun carico di lavoro in base ai livelli di protezione rilevati automaticamente e consiglia policy di protezione per i carichi di lavoro in base alla loro priorità aziendale.  La priorità del carico di lavoro si basa sulle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro.
+
+
+
+
+| *PROTEGGERE*  a| 
+* Monitora attivamente i carichi di lavoro e orchestra l'uso delle API Backup and Recovery, SnapCenter e ONTAP applicando policy a ciascuno dei carichi di lavoro identificati.
+
+
+
+
+| *RILEVARE*  a| 
+* Rileva potenziali attacchi con un modello di apprendimento automatico (ML) integrato che rileva attività e crittografia potenzialmente anomale.
+* Fornisce un rilevamento a doppio livello che inizia con il rilevamento di potenziali attacchi ransomware nello storage primario e risponde alle attività anomale eseguendo copie snapshot automatizzate aggiuntive per creare i punti di ripristino dei dati più vicini.  Ransomware Resilience offre la possibilità di analizzare più a fondo la situazione per identificare potenziali attacchi con maggiore precisione, senza compromettere le prestazioni dei carichi di lavoro principali.
+* Determina i file sospetti specifici e le mappe che attaccano i carichi di lavoro associati, utilizzando le tecnologie ONTAP, Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ), Data Infrastructure Insights (in precedenza Cloud Insights), Workload Security e FPolicy.
+
+
+
+
+| *RISPONDERE*  a| 
+* Mostra dati rilevanti, come l'attività dei file, l'attività degli utenti e l'entropia, per aiutarti a completare le revisioni forensi sull'attacco.
+* Avvia copie snapshot rapide utilizzando tecnologie e prodotti NetApp quali ONTAP, Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ) e FPolicy.
+
+
+
+
+| *RECUPERARE*  a| 
+* Determina lo snapshot o il backup migliore e consiglia il miglior punto di ripristino effettivo (RPA) utilizzando le tecnologie e i servizi Backup and Recovery, ONTAP, Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ) e FPolicy.
+* Orchestra il ripristino dei carichi di lavoro, tra cui macchine virtuali, condivisioni di file, storage a blocchi e database, garantendo la coerenza delle applicazioni.
+
+
+
+
+| *GOVERNARE*  a| 
+* Assegna le strategie di protezione dal ransomware
+* Ti aiuta a monitorare i risultati.
+
+
+|===
+
+
+== Destinazioni di backup, sistemi e origini dati del carico di lavoro supportati
+
+Ransomware Resilience supporta i seguenti obiettivi di backup, sistemi e origini dati:
+
+*Destinazioni di backup supportate*
+
+* Servizi Web Amazon (AWS) S3
+* Piattaforma Google Cloud
+* Blob di Microsoft Azure
+* NetApp StorageGRID
+
+
+*Sistemi supportati*
+
+* NAS ONTAP in sede (utilizzando protocolli NFS e CIFS) con ONTAP versione 9.11.1 e successive
+* SAN ONTAP in sede (utilizzando protocolli FC, iSCSI e NVMe) con ONTAP versione 9.17.1 e successive
+* Cloud Volumes ONTAP 9.11.1 o versione successiva per AWS (utilizzando i protocolli NFS e CIFS)
+* Cloud Volumes ONTAP 9.11.1 o versione successiva per Google Cloud Platform (utilizzando i protocolli NFS e CIFS)
+* Cloud Volumes ONTAP 9.12.1 o versione successiva per Microsoft Azure (utilizzando i protocolli NFS e CIFS)
+* Cloud Volumes ONTAP 9.17.1 o versione successiva per AWS, Google Cloud Platform e Microsoft Azure (utilizzando i protocolli FC, iSCSI e NVMe)
+* Amazon FSx for NetApp ONTAP, che utilizza la protezione autonoma dal ransomware (ARP e non ARP/AI)
++
+
+NOTE: ARP/AI richiede ONTAP 9.16 o versione successiva.
+
+
+
+
+NOTE: Non sono supportati: volumi FlexGroup , versioni ONTAP precedenti alla 9.11.1, volumi di punti di montaggio, volumi di percorsi di montaggio, volumi offline e volumi di protezione dati (DP).
+
+*Origini dati del carico di lavoro supportate*
+
+Ransomware Resilience protegge i seguenti carichi di lavoro basati su applicazioni su volumi di dati primari:
+
+* Condivisioni file NetApp
+* Archiviazione a blocchi
+* Datastore VMware
+* Database (MySQL e Oracle)
+* Presto ne arriveranno altri
+
+
+Inoltre, se si utilizza SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da tali prodotti vengono identificati anche in Ransomware Resilience.  Ransomware Resilience è in grado di proteggerli e ripristinarli in modo coerente con il carico di lavoro.
+
+
+
+== Termini che potrebbero aiutarti con la protezione dal ransomware
+
+Potrebbe essere utile comprendere la terminologia relativa alla protezione dal ransomware.
+
+* *Protezione*: la protezione nella resilienza del ransomware significa garantire che gli snapshot e i backup immutabili vengano eseguiti regolarmente su un dominio di sicurezza diverso utilizzando criteri di protezione.
+* *Carico di lavoro*: un carico di lavoro in Ransomware Resilience può includere database MySQL o Oracle, datastore VMware o condivisioni di file.
+

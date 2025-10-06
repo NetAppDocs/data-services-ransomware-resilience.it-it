@@ -1,0 +1,342 @@
+---
+sidebar: sidebar 
+permalink: rp-use-recover.html 
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
+summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di backup sullo storage secondario siano puliti, consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.' 
+---
+= Ripristinare da un attacco ransomware (dopo aver neutralizzato gli incidenti) con NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dopo che i carichi di lavoro sono stati contrassegnati come "Ripristino necessario", NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.
+
+* Se l'applicazione o la VM è gestita da SnapCenter, Ransomware Resilience ripristina l'applicazione o la VM allo stato precedente e all'ultima transazione utilizzando il processo coerente con l'applicazione o con la VM.  Il ripristino coerente con l'applicazione o la macchina virtuale aggiunge ai dati nel volume tutti i dati che non sono stati archiviati, ad esempio i dati nella cache o in un'operazione di I/O.
+* Se l'applicazione o la VM non è gestita da SnapCenter ma da NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience esegue un ripristino coerente con l'arresto anomalo, in cui tutti i dati presenti nel volume nello stesso momento vengono ripristinati, ad esempio, in caso di arresto anomalo del sistema.
++
+È possibile ripristinare il carico di lavoro selezionando tutti i volumi, volumi specifici o file specifici.
+
+
+
+
+TIP: Il ripristino del carico di lavoro può avere un impatto sui carichi di lavoro in esecuzione.  Dovresti coordinare i processi di recupero con le parti interessate appropriate.
+
+Un carico di lavoro può avere uno dei seguenti stati di ripristino:
+
+* *Ripristino necessario*: il carico di lavoro deve essere ripristinato.
+* *In corso*: l'operazione di ripristino è attualmente in corso.
+* *Ripristinato*: il carico di lavoro è stato ripristinato.
+* *Non riuscito*: il processo di ripristino del carico di lavoro non è stato completato.
+
+
+
+
+== Visualizza i carichi di lavoro pronti per essere ripristinati
+
+Esaminare i carichi di lavoro che si trovano nello stato di ripristino "Ripristino necessario".
+
+.Passi
+. Eseguire una delle seguenti operazioni:
++
+** Dalla Dashboard, controlla i totali "Ripristino necessario" nel riquadro Avvisi e seleziona *Visualizza tutto*.
+** Dal menu, seleziona *Ripristino*.
+
+
+. Esaminare le informazioni sul carico di lavoro nella pagina *Recupero*.
++
+image:screen-recovery2.png["Pagina di recupero"]
+
+
+
+
+
+== Ripristina un carico di lavoro gestito da SnapCenter
+
+Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
+
+Se necessario, lo stato dell'applicazione cambierà per il ripristino.  L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup.  Al termine del ripristino, l'applicazione si apre in modalità LETTURA-SCRITTURA.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Da Ransomware Resilience, seleziona *Ripristino*.
+. Esaminare le informazioni sul carico di lavoro nella pagina *Recupero*.
+. Selezionare un carico di lavoro che si trovi nello stato "Ripristino necessario".
+. Per ripristinare, seleziona *Ripristina*.
+. *Ambito di ripristino*: coerente con l'applicazione (o per SnapCenter per VM, l'ambito di ripristino è "Per VM")
+. *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.  Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo backup appena prima dell'incidente e mostra l'indicazione "Consigliato".
+
+. *Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.
++
+.. Selezionare la posizione originale o alternativa.
+.. Selezionare il sistema.
+.. Selezionare la VM di archiviazione.
+
+
+. Se la destinazione originale non dispone di spazio sufficiente per ripristinare il carico di lavoro, viene visualizzata la riga "Archiviazione temporanea".  È possibile selezionare l'archiviazione temporanea per ripristinare i dati del carico di lavoro.  I dati ripristinati verranno copiati dall'archivio temporaneo alla posizione originale.  Fare clic sulla *freccia giù* nella riga Archiviazione temporanea e impostare il cluster di destinazione, la VM di archiviazione e il livello locale.
+. Seleziona *Salva*.
+. Selezionare *Avanti*.
+. Rivedi le tue selezioni.
+. Selezionare *Ripristina*.
+. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+
+
+
+
+== Ripristina un carico di lavoro non gestito da SnapCenter
+
+Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+L'amministratore dell'archiviazione di sicurezza può recuperare i dati a diversi livelli:
+
+* Recupera tutti i volumi
+* Ripristina un'applicazione a livello di volume o di file e cartella.
+* Ripristina una condivisione file a livello di volume, directory o file/cartella.
+* Ripristina da un datastore a livello di VM.
+
+
+Il processo varia a seconda del tipo di carico di lavoro.
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Ripristino*.
+. Esaminare le informazioni sul carico di lavoro nella pagina *Recupero*.
+. Selezionare un carico di lavoro che si trovi nello stato "Ripristino necessario".
+. Per ripristinare, seleziona *Ripristina*.
+. *Ambito di ripristino*: seleziona il tipo di ripristino che desideri completare:
++
+** Tutti i volumi
+** Per volume
+** Per file: è possibile specificare una cartella o singoli file da ripristinare.
++
+
+IMPORTANT: Per i carichi di lavoro SAN, è possibile eseguire il ripristino solo per carico di lavoro.
+
++
+
+TIP: È possibile selezionare fino a 100 file o una singola cartella.
+
+
+
+. Procedere con una delle seguenti procedure a seconda che si sia scelto applicazione, volume o file.
+
+
+
+
+=== Ripristina tutti i volumi
+
+. Dal menu Ransomware Resilience, seleziona *Ripristino*.
+. Selezionare un carico di lavoro che si trovi nello stato "Ripristino necessario".
+. Per ripristinare, seleziona *Ripristina*.
+. Nella pagina Ripristina, nell'ambito Ripristina, seleziona *Tutti i volumi*.
++
+image:screen-recovery-all-volumes.png["Ripristina pagina per tutti i volumi"]
+
+. *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo backup appena prima dell'incidente e mostra l'indicazione "Il più sicuro per tutti i volumi".  Ciò significa che tutti i volumi verranno ripristinati in una copia precedente al primo attacco al primo volume rilevato.
+
+
+
+. *Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.
++
+.. Selezionare il sistema.
+.. Selezionare la VM di archiviazione.
+.. Selezionare l'aggregato.
+.. Modifica il prefisso del volume che verrà aggiunto a tutti i nuovi volumi.
++
+
+TIP: Il nuovo nome del volume appare come prefisso + nome del volume originale + nome del backup + data del backup.
+
+
+
+. Seleziona *Salva*.
+. Selezionare *Avanti*.
+. Rivedi le tue selezioni.
+. Selezionare *Ripristina*.
+. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+
+
+
+
+=== Ripristinare un carico di lavoro applicativo a livello di volume
+
+. Dal menu Ransomware Resilience, seleziona *Ripristino*.
+. Selezionare un carico di lavoro applicativo che si trovi nello stato "Ripristino necessario".
+. Per ripristinare, seleziona *Ripristina*.
+. Nella pagina Ripristina, nell'ambito Ripristina, seleziona *Per volume*.
++
+image:screen-recovery-byvolume.png["Ripristina per volume pagina"]
+
+. Nell'elenco dei volumi, seleziona il volume che desideri ripristinare.
+. *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo backup appena prima dell'incidente e mostra l'indicazione "Consigliato".
+
+
+
+. *Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.
++
+.. Selezionare il sistema.
+.. Selezionare la VM di archiviazione.
+.. Selezionare l'aggregato.
+.. Controllare il nuovo nome del volume.
++
+
+TIP: Il nuovo nome del volume appare come nome del volume originale + nome del backup + data del backup.
+
+
+
+. Seleziona *Salva*.
+. Selezionare *Avanti*.
+. Rivedi le tue selezioni.
+. Selezionare *Ripristina*.
+. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+
+
+
+
+=== Ripristinare il carico di lavoro di un'applicazione a livello di file
+
+Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, è possibile visualizzare un elenco dei file interessati.  È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati.  Quindi utilizzare la pagina Recupero per caricare l'elenco e scegliere quali file ripristinare.
+
+È possibile ripristinare il carico di lavoro di un'applicazione a livello di file sullo stesso sistema o su un sistema diverso.
+
+.Passaggi per ottenere l'elenco dei file interessati
+Utilizzare la pagina Avvisi per recuperare l'elenco dei file interessati.
+
+
+TIP: Se un volume presenta più avvisi, sarà necessario scaricare l'elenco CSV dei file interessati per ciascun avviso.
+
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
+. Nella pagina Avvisi, ordina i risultati in base al carico di lavoro per visualizzare gli avvisi per il carico di lavoro dell'applicazione che desideri ripristinare.
+. Dall'elenco degli avvisi per quel carico di lavoro, seleziona un avviso.
+. Per quell'avviso, seleziona un singolo incidente.
++
+image:screen-alerts-incidents-impacted-files.png["elenco dei file interessati da un avviso specifico"]
+
+. Per visualizzare l'elenco completo dei file, seleziona *Clicca qui* nella parte superiore del riquadro File interessati.
+. Per tale incidente, seleziona l'icona di download e scarica l'elenco dei file interessati in formato CSV.
+
+
+.Passaggi per ripristinare quei file
+. Dal menu Ransomware Resilience, seleziona *Ripristino*.
+. Selezionare un carico di lavoro applicativo che si trovi nello stato "Ripristino necessario".
+. Per ripristinare, seleziona *Ripristina*.
+. Nella pagina Ripristina, nell'ambito Ripristina, seleziona *Per file*.
+. Nell'elenco dei volumi, seleziona il volume che contiene i file che desideri ripristinare.
+. *Punto di ripristino*: seleziona la freccia rivolta verso il basso accanto a *Punto di ripristino* per visualizzare i dettagli.  Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+NOTE: Nella colonna Motivo nel riquadro Punti di ripristino viene visualizzato il motivo dello snapshot o del backup, ovvero "Pianificato" o "Risposta automatica a un incidente ransomware".
+
+. *File*:
++
+** *Seleziona automaticamente i file*: lascia che Ransomware Resilience selezioni i file da ripristinare.
+** *Carica elenco file*: carica un file CSV contenente l'elenco dei file interessati che hai ricevuto dalla pagina Avvisi o che possiedi.  È possibile ripristinare fino a 10.000 file alla volta.
++
+image:screen-recovery-app-by-file-upload-csv.png["Carica il file CSV che elenca i file interessati dall'avviso"]
+
+** *Seleziona manualmente i file*: seleziona fino a 10.000 file o una singola cartella da ripristinare.
++
+image:screen-recovery-app-by-file-select-files.png["Seleziona manualmente i file da ripristinare"]
+
++
+
+NOTE: Se non è possibile ripristinare alcun file utilizzando il punto di ripristino selezionato, viene visualizzato un messaggio che indica il numero di file che non possono essere ripristinati e consente di scaricare l'elenco di tali file selezionando *Scarica elenco dei file interessati*.
+
+
+
+. *Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.
++
+.. Scegli dove ripristinare i dati: la posizione di origine originale o una posizione alternativa che puoi specificare.
++
+
+TIP: Sebbene i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi originali dei file e delle cartelle rimarranno gli stessi, a meno che non vengano specificati nuovi nomi.
+
+.. Selezionare il sistema.
+.. Selezionare la VM di archiviazione.
+.. Facoltativamente, inserisci il percorso.
++
+
+TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
+
+.. Selezionare se si desidera che i nomi dei file o delle directory ripristinati siano gli stessi nomi della posizione corrente oppure nomi diversi.
+
+
+. Selezionare *Avanti*.
+. Rivedi le tue selezioni.
+. Selezionare *Ripristina*.
+. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+
+
+
+
+=== Ripristinare una condivisione file o un archivio dati
+
+. Dopo aver selezionato una condivisione file o un datastore da ripristinare, nella pagina Ripristina, nell'ambito Ripristina, seleziona *Per volume*.
++
+image:screen-recovery-fileshare.png["Pagina di ripristino che mostra il ripristino della condivisione dei file"]
+
+. Nell'elenco dei volumi, seleziona il volume che desideri ripristinare.
+. *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.
++
+.. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
++
+
+TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo backup appena prima dell'incidente e mostra l'indicazione "Consigliato".
+
+
+
+. *Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.
++
+.. Scegli dove ripristinare i dati: la posizione di origine originale o una posizione alternativa che puoi specificare.
++
+
+TIP: Sebbene i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi originali dei file e delle cartelle rimarranno gli stessi, a meno che non vengano specificati nuovi nomi.
+
+.. Selezionare il sistema.
+.. Selezionare la VM di archiviazione.
+.. Facoltativamente, inserisci il percorso.
++
+
+TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
+
+
+
+. Seleziona *Salva*.
+. Rivedi le tue selezioni.
+. Selezionare *Ripristina*.
+. Dal menu, selezionare *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione passa attraverso i vari stati.
+
+
+
+
+=== Ripristinare una condivisione file VM a livello di VM
+
+Nella pagina Ripristino, dopo aver selezionato una VM da ripristinare, continuare con questi passaggi.
+
+. *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.
++
+image:screen-recovery-vm.png["Pagina di ripristino che mostra una VM in fase di ripristino"]
+
+. Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
+. *Destinazione*: Verso la posizione originale.
+. Selezionare *Avanti*.
+. Rivedi le tue selezioni.
+. Selezionare *Ripristina*.
+. Dal menu, selezionare *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione passa attraverso i vari stati.
+

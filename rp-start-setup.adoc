@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: rp-start-setup.html 
+keywords: bluexp, ransomware protection, aws, azure 
+summary: Per utilizzare Ransomware Resilience, è necessario eseguire alcuni passaggi per configurarlo. 
+---
+= Imposta NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi implementare facilmente NetApp Ransomware Resilience. Prima di iniziare, rivederelink:rp-start-prerequisites.html["prerequisiti"] per garantire che il tuo ambiente sia pronto.
+
+
+
+== Preparare la destinazione del backup
+
+Preparare una delle seguenti destinazioni di backup:
+
+* NetApp StorageGRID
+* Servizi Web Amazon
+* Piattaforma Google Cloud
+* Microsoft Azure
+
+
+Dopo aver configurato le opzioni nella destinazione di backup stessa, in seguito la configurerai come destinazione di backup in Ransomware Resilience.  Per i dettagli su come configurare la destinazione di backup in Ransomware Resilience, fare riferimento alink:rp-use-settings.html["Configurare le destinazioni di backup"] .
+
+
+
+=== Preparare StorageGRID per diventare una destinazione di backup
+
+Se si desidera utilizzare StorageGRID come destinazione di backup, fare riferimento a https://docs.netapp.com/us-en/storagegrid-117/index.html["Documentazione StorageGRID"^] per i dettagli su StorageGRID.
+
+
+
+=== Preparare AWS a diventare una destinazione di backup
+
+* Crea un account su AWS.
+* Configurare https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Autorizzazioni AWS"^] in AWS.
+
+
+Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
+
+
+
+=== Preparare Azure per diventare una destinazione di backup
+
+* Configura un account in Azure.
+* Configurare https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Autorizzazioni di Azure"^] in Azzurro.
+
+
+Per informazioni dettagliate sulla gestione dell'archiviazione di Azure nella console, fare riferimento a https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Gestisci i tuoi account di archiviazione di Azure"^] .
+
+
+
+== Configurare la console NetApp
+
+Il passaggio successivo consiste nell'impostare la console e la resilienza del ransomware.
+
+Revisione https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["Requisiti della console per la modalità standard"^] .
+
+
+
+=== Creare un agente Console
+
+Contatta il tuo rappresentante commerciale NetApp per provare o utilizzare questo servizio.  Quindi, quando si utilizza l'agente Console, saranno incluse le funzionalità appropriate per Ransomware Resilience.
+
+Per creare un agente Console utilizzando Ransomware Resilience, contattare l'amministratore dell'organizzazione Console che dispone delle autorizzazioni per creare agenti Console e fare riferimento alla documentazione che descrive https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["come creare un agente Console"^] .
+
+
+NOTE: Se si dispone di più agenti della Console, Ransomware Resilience esegue la scansione dei dati su tutti gli agenti della Console, ad eccezione di quello attualmente visualizzato nella Console.  Questo servizio rileva tutti i progetti e tutti gli agenti della console associati a questa organizzazione.

@@ -1,0 +1,323 @@
+---
+sidebar: sidebar 
+permalink: rp-use-alert.html 
+keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
+summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard di Ransomware Resilience viene visualizzato un avviso che indica un potenziale attacco.  A questo punto, dovresti esaminare il potenziale rischio nella scheda Avvisi di resilienza ransomware. 
+---
+= Gestisci gli avvisi ransomware rilevati con NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando NetApp Ransomware Resilience rileva un possibile attacco, mostra un avviso nella Dashboard e nell'area Notifiche.  Ransomware Resilience esegue immediatamente uno snapshot.  Esaminare il rischio potenziale nella scheda *Avvisi* di Ransomware Resilience.
+
+Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una notifica nelle impostazioni di notifica della console e viene inviata un'e-mail all'indirizzo configurato.  L'e-mail include informazioni sulla gravità, sul carico di lavoro interessato e un collegamento all'avviso nella scheda *Avvisi* di Ransomware Resilience.
+
+Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
+
+
+TIP: Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso.
+
+Per iniziare a recuperare i dati, contrassegna l'avviso come pronto per il recupero, in modo che l'amministratore dell'archiviazione possa avviare il processo di recupero.
+
+Ogni avviso potrebbe includere più incidenti su volumi e stati diversi.  Esaminare tutti gli incidenti.
+
+Ransomware Resilience fornisce informazioni, denominate _prove_, su ciò che ha causato l'emissione dell'avviso, come ad esempio:
+
+* Le estensioni dei file sono state create o modificate
+* Creazione di file con un confronto tra i tassi rilevati e quelli previsti
+* Eliminazione dei file con un confronto tra i tassi rilevati e quelli previsti
+* Quando la crittografia è elevata, senza modifiche all'estensione del file
+
+
+Un avviso è classificato come segue:
+
+* *Potenziale attacco*: viene generato un avviso quando Autonomous Ransomware Protection rileva una nuova estensione e l'evento si ripete più di 20 volte nelle ultime 24 ore (comportamento predefinito).
+* *Avviso*: un avviso si verifica in base ai seguenti comportamenti:
++
+** Non è mai stata identificata prima una nuova estensione e lo stesso comportamento non si ripete abbastanza volte da poter essere considerato un attacco.
+** Si osserva un'elevata entropia.
+** L'attività di lettura, scrittura, ridenominazione o eliminazione dei file è raddoppiata rispetto ai livelli normali.
+
+
+
+
+
+NOTE: Per gli ambienti SAN, gli avvisi si basano solo su entropia elevata.
+
+Le prove si basano sulle informazioni di Autonomous Ransomware Protection in ONTAP. Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Panoramica sulla protezione autonoma dal ransomware"^] .
+
+Un avviso può avere uno dei seguenti stati:
+
+* *Nuovo*
+* *Inattivo*
+
+
+Un incidente di allerta può avere uno dei seguenti stati:
+
+* *Nuovo*: tutti gli incidenti vengono contrassegnati come "nuovi" quando vengono identificati per la prima volta.
+* *Ignorato*: se sospetti che l'attività non sia un attacco ransomware, puoi modificare lo stato in "Ignorato".
++
+
+CAUTION: Dopo aver respinto un attacco, non è più possibile ripristinarlo.  Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.
+
+* *In fase di archiviazione*: L'incidente è in fase di archiviazione.
+* *Risolto*: l'incidente è stato risolto.
+* *Risoluzione automatica*: per gli avvisi a bassa priorità, l'incidente viene risolto automaticamente se non viene intrapresa alcuna azione entro cinque giorni.
+
+
+
+TIP: Se hai configurato un sistema di sicurezza e gestione degli eventi (SIEM) in Ransomware Resilience nella pagina Impostazioni, Ransomware Resilience invia i dettagli dell'avviso al tuo sistema SIEM.
+
+
+
+== Visualizza avvisi
+
+È possibile accedere agli avvisi dalla Ransomware Resilience Dashboard o dalla scheda *Avvisi*.
+
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+
+.Passi
+. Nella Dashboard di Resilienza Ransomware, esamina il riquadro Avvisi.
+. Selezionare *Visualizza tutto* sotto uno degli stati.
+. Selezionare un avviso per esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
+. Per rivedere altri avvisi, seleziona *Avviso* nel breadcrumb in alto a sinistra.
+. Esaminare gli avvisi nella pagina Avvisi.
++
+image:screen-alerts.png["Pagina degli avvisi"]
+
+. Continua con una delle seguenti opzioni:
++
+** <<Rileva attività dannose e comportamenti anomali degli utenti>> .
+** <<Contrassegna gli incidenti ransomware come pronti per il ripristino (dopo che gli incidenti sono stati neutralizzati)>> .
+** <<Ignorare gli incidenti che non sono potenziali attacchi>> .
+
+
+
+
+
+
+== Rispondere a un'e-mail di avviso
+
+Quando Ransomware Resilience rileva un potenziale attacco, invia una notifica via e-mail agli utenti iscritti in base alle loro preferenze di notifica di abbonamento.  L'e-mail contiene informazioni sull'avviso, tra cui la gravità e le risorse interessate.
+
+Puoi ricevere notifiche via e-mail per gli avvisi di Ransomware Resilience.  Questa funzionalità ti aiuta a rimanere informato sugli avvisi, sulla loro gravità e sulle risorse interessate.
+
+
+TIP: Per iscriversi alle notifiche via email, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["Imposta le impostazioni di notifica via email"^] .
+
+. In Ransomware Resilience, vai alla pagina *Impostazioni*.
+. In *Notifiche*, individua le impostazioni delle notifiche e-mail.
+. Inserisci l'indirizzo email a cui desideri ricevere gli avvisi.
+. Salva le modifiche.
+
+
+D'ora in poi riceverai notifiche via e-mail quando verranno generati nuovi avvisi.
+
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+
+.Passi
+. Visualizza l'email.
+. Nell'e-mail, seleziona *Visualizza avviso* e accedi a Ransomware Resilience.
++
+Viene visualizzata la pagina Avvisi.
+
+. Esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
+. Per rivedere altri avvisi, clicca su *Avviso* nel breadcrumb in alto a sinistra.
+. Continua con una delle seguenti opzioni:
++
+** <<Rileva attività dannose e comportamenti anomali degli utenti>> .
+** <<Contrassegna gli incidenti ransomware come pronti per il ripristino (dopo che gli incidenti sono stati neutralizzati)>> .
+** <<Ignorare gli incidenti che non sono potenziali attacchi>> .
+
+
+
+
+
+
+== Rileva attività dannose e comportamenti anomali degli utenti
+
+Nella scheda Avvisi è possibile verificare se si è verificata un'attività dannosa.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+*Quali dettagli appaiono?*  I dettagli visualizzati dipendono da come è stato attivato l'avviso:
+
+* Attivato dalla funzionalità di protezione autonoma dai ransomware in ONTAP.  Rileva attività dannose in base al comportamento dei file nel volume.
+* Attivato dalla sicurezza del carico di lavoro Data Infrastructure Insights .  Per farlo è necessaria una licenza per la sicurezza del carico di lavoro Data Infrastructure Insights e la sua abilitazione in Ransomware Resilience.  Questa funzionalità rileva comportamenti anomali degli utenti nei carichi di lavoro di archiviazione e consente di impedire ulteriori accessi a tali utenti.
++
+Per abilitare la sicurezza del carico di lavoro in Ransomware Resilience, vai alla pagina *Impostazioni* e seleziona l'opzione *Connessione alla sicurezza del carico di lavoro*.
+
++
+Per una panoramica della sicurezza del carico di lavoro Data Infrastructure Insights , consultare https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["Informazioni sulla sicurezza del carico di lavoro"^] .
+
+
+
+
+TIP: Se non si dispone di una licenza per la sicurezza del carico di lavoro dell'infrastruttura dati e non la si abilita in Ransomware Resilience, non verranno visualizzate le informazioni sul comportamento anomalo dell'utente.
+
+Quando si verifica un'attività dannosa, viene generato un avviso e viene eseguito uno snapshot automatico.
+
+
+
+=== Visualizza solo le attività dannose di Autonomous Ransomware Protection
+
+Quando Autonomous Ransomware Protection attiva un avviso in Ransomware Resilience, puoi visualizzare i seguenti dettagli:
+
+* Entropia dei dati in arrivo
+* Tasso di creazione previsto di nuovi file rispetto al tasso rilevato
+* Tasso di eliminazione previsto dei file rispetto al tasso rilevato
+* Frequenza di ridenominazione prevista dei file rispetto alla frequenza rilevata
+* File e directory interessati
+
+
+
+NOTE: Questi dettagli sono visualizzabili per i carichi di lavoro NAS.  Per gli ambienti SAN sono disponibili solo i dati sull'entropia.
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
+. Seleziona un avviso.
+. Esaminare gli incidenti nell'avviso.
++
+image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
+
+. Seleziona un incidente per esaminarne i dettagli.
+
+
+
+
+=== Visualizza il comportamento anomalo degli utenti in Data Infrastructure Insights Workload security
+
+Quando Data Infrastructure Insights Workload Security attiva un avviso in Ransomware Resilience, è possibile visualizzare l'utente sospetto, bloccarlo e indagare sull'attività dell'utente direttamente in Data Infrastructure Insights Workload Security.
+
+
+TIP: Queste funzionalità si aggiungono ai dettagli disponibili solo in Autonomous Ransomware Protection.
+
+.Prima di iniziare
+Questa opzione richiede una licenza per la sicurezza del carico di lavoro Data Infrastructure Insights e la sua abilitazione in Ransomware Resilience.
+
+Per abilitare la sicurezza del carico di lavoro in Ransomware Resilience, procedere come segue:
+
+. Vai alla pagina *Impostazioni*.
+. Selezionare l'opzione *Connessione Workload Security*.
++
+Per maggiori dettagli, vedere link:rp-use-settings.html["Configurare le impostazioni di resilienza al ransomware"] .
+
+
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
+. Seleziona un avviso.
+. Esaminare gli incidenti nell'avviso.
++
+image:screenshot-alerts.png["Screenshot della pagina Avvisi."]
+
+. Per impedire a un utente sospetto di accedere ulteriormente al tuo ambiente monitorato dalla Console, seleziona il collegamento *Blocca utente*.
+. Ricerca l'avviso o un incidente nell'avviso:
++
+.. Per approfondire l'avviso in Data Infrastructure Insights Workload security, selezionare il collegamento *Indaga su Workload security*.
+.. Seleziona un incidente per esaminarne i dettagli.
+
+
+
+
+Data Infrastructure Insights Workload Security si apre in una nuova scheda.
+
++image:screen-alerts-incidents-diiws-diiwspage.png["Indagare sulla sicurezza del carico di lavoro"]
+
+
+
+== Contrassegna gli incidenti ransomware come pronti per il ripristino (dopo che gli incidenti sono stati neutralizzati)
+
+Dopo aver fermato l'attacco, informa l'amministratore dell'archiviazione che i dati sono pronti, in modo che possa iniziare il ripristino.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
++
+image:screen-alerts.png["Pagina degli avvisi"]
+
+. Nella pagina Avvisi, seleziona l'avviso.
+. Esaminare gli incidenti nell'avviso.
++
+image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
+
+. Se si determina che gli incidenti sono pronti per il ripristino, selezionare *Segna come ripristino necessario*.
+. Conferma l'azione e seleziona *Segna come ripristino necessario*.
+. Per avviare il ripristino del carico di lavoro, selezionare *Recupera* carico di lavoro nel messaggio oppure selezionare la scheda *Ripristino*.
+
+
+.Risultato
+Dopo che l'avviso è stato contrassegnato per il ripristino, l'avviso passa dalla scheda Avvisi alla scheda Ripristino.
+
+
+
+== Ignorare gli incidenti che non sono potenziali attacchi
+
+Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi.  Se la condizione precedente non è soddisfatta, possono essere licenziati.
+
+Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.  Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso per tale comportamento.
+
+Se si elimina un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware vengono eliminate definitivamente.
+
+
+CAUTION: Se si ignora un avviso, non è possibile ripristinare lo stato precedente e non è possibile annullare questa modifica.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
++
+image:screen-alerts.png["Pagina degli avvisi"]
+
+. Nella pagina Avvisi, seleziona l'avviso.
++
+image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
+
+. Seleziona uno o più incidenti.  Oppure, seleziona tutti gli incidenti selezionando la casella ID incidente in alto a sinistra della tabella.
+. Se stabilisci che l'incidente non rappresenta una minaccia, scartalo come falso positivo:
++
+** Seleziona l'incidente.
+** Selezionare il pulsante *Modifica stato* sopra la tabella.
++
+image:screen-alerts-status-edit.png["Pagina di stato di modifica dell'avviso"]
+
+
+
+. Dalla casella Modifica stato, seleziona lo stato *“Ignorato”*.
++
+Vengono visualizzate informazioni aggiuntive sul carico di lavoro e sul fatto che le copie snapshot sono state eliminate.
+
+. Seleziona *Salva*.
++
+Lo stato dell'incidente o degli incidenti cambia in "Ignorato".
+
+
+
+
+
+== Visualizza un elenco dei file interessati
+
+Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, è possibile visualizzare un elenco dei file interessati.  È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati.  Quindi utilizzare la pagina Recupero per caricare l'elenco e scegliere quali file ripristinare.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+.Passi
+Utilizzare la pagina Avvisi per recuperare l'elenco dei file interessati.
+
+
+TIP: Se un volume presenta più avvisi, potrebbe essere necessario scaricare l'elenco CSV dei file interessati per ciascun avviso.
+
+. Dal menu Ransomware Resilience, seleziona *Avvisi*.
+. Nella pagina Avvisi, ordina i risultati in base al carico di lavoro per visualizzare gli avvisi per il carico di lavoro dell'applicazione che desideri ripristinare.
+. Dall'elenco degli avvisi per quel carico di lavoro, seleziona un avviso.
+. Per quell'avviso, seleziona un singolo incidente.
++
+image:screen-alerts-incidents-impacted-files.png["elenco dei file interessati da un avviso specifico"]
+
+. Per tale incidente, seleziona l'icona di download e scarica l'elenco dei file interessati in formato CSV.
+

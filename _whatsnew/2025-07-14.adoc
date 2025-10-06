@@ -1,0 +1,31 @@
+= Supporto del carico di lavoro SAN
+:allow-uri-read: 
+
+
+
+
+=== Supporto del carico di lavoro SAN
+
+Questa versione include il supporto per i carichi di lavoro SAN nella BlueXP ransomware protection.  Ora è possibile proteggere i carichi di lavoro SAN oltre ai carichi di lavoro NFS e CIFS.
+
+Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["Prerequisiti BlueXP ransomware protection"] .
+
+
+
+=== Protezione migliorata del carico di lavoro
+
+Questa versione migliora il processo di configurazione per i carichi di lavoro con policy di snapshot e backup da altri strumenti NetApp come SnapCenter o BlueXP backup and recovery.  Nelle versioni precedenti, la BlueXP ransomware protection rilevava le policy di altri strumenti, consentendo solo di modificare la policy di rilevamento.  Con questa versione, è possibile sostituire i criteri di snapshot e backup con i criteri BlueXP ransomware protection oppure continuare a utilizzare i criteri di altri strumenti.
+
+Per i dettagli, fare riferimento alink:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Proteggere i carichi di lavoro"] .
+
+
+
+=== Notifiche e-mail
+
+Se la BlueXP ransomware protection rileva un possibile attacco, viene visualizzata una notifica nelle Notifiche BlueXP e viene inviata un'e-mail all'indirizzo e-mail configurato.
+
+L'e-mail include informazioni sulla gravità, sul carico di lavoro interessato e un collegamento all'avviso nella scheda *Avvisi* della BlueXP ransomware protection .
+
+Se hai configurato un sistema di sicurezza e gestione degli eventi (SIEM) nella BlueXP ransomware protection, il servizio invia i dettagli dell'avviso al tuo sistema SIEM.
+
+Per i dettagli, fare riferimento alink:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Gestisci gli avvisi di ransomware rilevati"] .

@@ -1,0 +1,105 @@
+---
+sidebar: sidebar 
+permalink: rp-start-discover.html 
+keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
+summary: Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti e account della Console. 
+---
+= Scopri i carichi di lavoro in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Prima di poter utilizzare NetApp Ransomware Resilience, è necessario che il programma rilevi i dati.  Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti Console e progetti all'interno di un'organizzazione.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+
+*Cosa scopre Ransomware Resilience?*  Ransomware Resilience valuta le applicazioni MySQL, le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.
+
+
+NOTE: Ransomware Resilience non rileva carichi di lavoro con volumi che utilizzano FlexGroup.
+
+Ransomware Resilience rileva e visualizza nella Dashboard sia le configurazioni di sistema supportate che quelle non supportate.
+
+Ransomware Resilience verifica la protezione di backup corrente, le copie snapshot e le opzioni di protezione autonoma dai ransomware NetApp .  Quindi consiglia modi per migliorare la protezione contro il ransomware.
+
+*Come puoi scoprire i carichi di lavoro?*  Puoi fare quanto segue:
+
+* All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro. Questa funzionalità potrebbe rivelarsi utile se si desidera proteggere carichi di lavoro specifici nel proprio ambiente e non in altri.
+* Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza.
+* Scopri nuovi sistemi.
+
+
+
+
+== Seleziona i carichi di lavoro da scoprire e proteggere
+
+All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
+
+.Passi
+. Dalla console NetApp , seleziona *Protezione* > *Protezione ransomware*.
++
+Se è il tuo primo accesso, verrà visualizzata la landing page.
+
++
+image:screen-landing.png["Screenshot della landing page per Ransomware Resilience"]
+
++
+
+NOTE: Se hai avviato la prova gratuita, l'etichetta del pulsante *Avvia la prova gratuita di 30 giorni* cambia in *Inizia scoprendo i carichi di lavoro*.
+
+. Dalla landing page iniziale, seleziona *Inizia scoprendo i carichi di lavoro*.
++
+Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati. Questo processo potrebbe richiedere alcuni minuti.
+
++
+image:screen-discover-workloads-unsupported.png["Scopri lo screenshot dei carichi di lavoro"]
+
+. Per individuare i carichi di lavoro per uno specifico agente della console, seleziona *Seleziona sistemi* accanto all'agente della console in cui desideri individuare i carichi di lavoro.
+. Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
+. Seleziona *Scopri*.
++
+Ransomware Resilience rileva i dati del carico di lavoro solo per gli agenti della console con sistemi selezionati. Questo processo potrebbe richiedere alcuni minuti.
+
+. Per scaricare l'elenco dei carichi di lavoro rilevati, seleziona *Scarica risultati*.
+. Per visualizzare la dashboard di Ransomware Resilience, seleziona *Vai alla dashboard*.
++
+La Dashboard mostra lo stato di salute della protezione dei dati.  Numero di aggiornamenti dei carichi di lavoro a rischio o protetti man mano che vengono scoperti nuovi carichi di lavoro.
+
++
+image:screen-dashboard.png["Dashboard di resilienza al ransomware"]
+
++
+link:rp-use-dashboard.html["Scopri cosa ti mostra la Dashboard."]
+
+
+
+
+
+== Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza
+
+Se hai già selezionato i sistemi per l'individuazione, puoi individuare i carichi di lavoro appena creati per tali ambienti dalla Dashboard.
+
+.Passi
+. Per identificare la data dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.
+. Dalla Dashboard, seleziona l'icona *Aggiorna* per trovare nuovi carichi di lavoro.
+
+
+
+
+== Scopri nuovi sistemi
+
+Se hai già scoperto dei sistemi, puoi trovarne di nuovi o non selezionati in precedenza.
+
+.Passi
+. Dal menu Ransomware Resilience, seleziona la verticaleimage:button-actions-vertical.png["Azioni verticali"] ... opzione in alto a destra.  Dal menu a discesa, seleziona *Impostazioni*.
+. Nella scheda Individuazione carichi di lavoro, seleziona *Individuazione carichi di lavoro*.
++
+
+TIP: Questo processo potrebbe richiedere alcuni minuti e un'icona di caricamento ne mostra l'avanzamento.
+
+. Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati.  Ransomware Resilience non supporta un sistema se la sua versione ONTAP è inferiore alla versione richiesta.  Passando il mouse su un sistema non supportato, viene visualizzato un suggerimento che ne indica il motivo.  Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
+. Seleziona *Scopri*.
+

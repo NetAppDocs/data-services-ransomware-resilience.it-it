@@ -1,0 +1,31 @@
+= Rapporti di esercitazione di prontezza
+:allow-uri-read: 
+
+
+
+
+=== Rapporti di esercitazione di prontezza
+
+Con questa versione è possibile esaminare i report di esercitazione sulla prontezza agli attacchi ransomware.  Un'esercitazione di preparazione consente di simulare un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro di esempio.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
+
+
+
+=== Nuovi ruoli e autorizzazioni di controllo degli accessi basati sui ruoli
+
+In precedenza, era possibile assegnare ruoli e autorizzazioni agli utenti in base alle loro responsabilità, il che aiutava a gestire l'accesso degli utenti alla BlueXP ransomware protection.  Con questa versione sono disponibili due nuovi ruoli specifici per la BlueXP ransomware protection con autorizzazioni aggiornate.  I nuovi ruoli sono:
+
+* Amministratore della protezione ransomware
+* Visualizzatore di protezione ransomware
+
+
+Per i dettagli sui permessi, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP ransomware protection con accesso basato sui ruoli alle funzionalità"] .
+
+
+
+=== Miglioramenti nei pagamenti
+
+Questa versione include diversi miglioramenti al processo di pagamento.
+
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Impostare le opzioni di licenza e pagamento"] .
