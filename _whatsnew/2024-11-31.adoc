@@ -8,11 +8,11 @@
 
 Con questa versione, puoi utilizzare Data Infrastructure Insights Storage Workload Security per rilevare comportamenti anomali degli utenti nei tuoi carichi di lavoro di archiviazione.  Questa funzionalità ti aiuta a identificare potenziali minacce alla sicurezza e a bloccare gli utenti potenzialmente malintenzionati per proteggere i tuoi dati.
 
-Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondere a un avviso di ransomware rilevato"] .
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Rispondere a un avviso di ransomware rilevato"] .
 
 Prima di utilizzare Data Infrastructure Insights Storage Workload Security per rilevare comportamenti anomali degli utenti, è necessario configurare l'opzione tramite l'opzione *Impostazioni* BlueXP ransomware protection .
 
-Fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare le impostazioni BlueXP ransomware protection"] .
+Fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Configurare le impostazioni BlueXP ransomware protection"] .
 
 
 
@@ -25,4 +25,4 @@ Con questa versione, ora puoi fare quanto segue:
 * Scopri i carichi di lavoro appena creati per gli ambienti di lavoro selezionati in precedenza.
 
 
-Fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i carichi di lavoro"] .
+Fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Scopri i carichi di lavoro"] .

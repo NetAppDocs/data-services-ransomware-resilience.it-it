@@ -91,7 +91,7 @@ Per utilizzare Ransomware Resilience è necessaria una licenza NetApp ONTAP One.
 
 La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi.  Ransomware Resilience può utilizzare Backup e Recovery anche se non si dispone di una licenza per utilizzarlo.
 
-Per rilevare comportamenti anomali degli utenti, Ransomware Resilience utilizza NetApp Autonomous Ransomware Protection, un modello di apprendimento automatico (ML) all'interno di ONTAP che rileva attività di file dannosi.  Questo modello è incluso nella licenza Ransomware Resilience.  È inoltre possibile utilizzare Data Infrastructure Insights (in precedenza Cloud Insights) Workload Security (licenza richiesta) per analizzare il comportamento degli utenti e impedire a specifici utenti di intraprendere ulteriori attività.
+Per rilevare comportamenti anomali degli utenti, Ransomware Resilience utilizza NetApp Autonomous Ransomware Protection, un modello di apprendimento automatico (ML) all'interno di ONTAP che rileva attività di file dannosi.  Questo modello è incluso nella licenza Ransomware Resilience.
 
 Per maggiori dettagli, vedere link:rp-start-licenses.html["Impostare la licenza"] .
 
@@ -105,7 +105,7 @@ NetApp Console offre una gestione centralizzata dei servizi di storage e dati Ne
 
 Per iniziare a utilizzare NetApp Console non è necessaria una licenza o un abbonamento e verranno addebitati costi solo quando sarà necessario distribuire gli agenti della console nel cloud per garantire la connettività ai sistemi di storage o ai servizi dati NetApp . Tuttavia, alcuni servizi dati NetApp accessibili dalla Console sono concessi in licenza o basati su abbonamento.
 
-Scopri di più sulink:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["Console NetApp"^] .
+Scopri di più sulink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["Console NetApp"^] .
 
 
 
@@ -123,7 +123,7 @@ image:diagram-rp-architecture-preview3.png["Diagramma che mostra l'architettura 
 | *IDENTIFICARE*  a| 
 * Trova tutti i dati NAS (protocolli NFS e CIFS) on-premise del cliente, SAN (FC, iSCSI e NVMe) e Cloud Volumes ONTAP connessi alla console.
 * Identifica i dati dei clienti dalle API dei servizi ONTAP e SnapCenter e li associa ai carichi di lavoro. Scopri di più su https://docs.netapp.com/us-en/ontap-family/["ONTAP"^] E https://docs.netapp.com/us-en/snapcenter/index.html["Software SnapCenter"^] .
-* Rileva il livello di protezione attuale di ogni volume delle copie snapshot NetApp e delle policy di backup, nonché tutte le funzionalità di rilevamento integrate.  Ransomware Resilience associa quindi questa posizione di protezione ai carichi di lavoro utilizzando Backup and Recovery, servizi ONTAP e tecnologie NetApp come Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ), FPolicy, policy di backup e policy di snapshot.  Scopri di più su https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] , https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino NetApp"^] , E https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
+* Rileva il livello di protezione attuale di ogni volume delle copie snapshot NetApp e delle policy di backup, nonché tutte le funzionalità di rilevamento integrate.  Ransomware Resilience associa quindi questa posizione di protezione ai carichi di lavoro utilizzando Backup and Recovery, servizi ONTAP e tecnologie NetApp come Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ), FPolicy, policy di backup e policy di snapshot.  Scopri di più su https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] , https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e ripristino NetApp"^] , E https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
 * Assegna una priorità aziendale a ciascun carico di lavoro in base ai livelli di protezione rilevati automaticamente e consiglia policy di protezione per i carichi di lavoro in base alla loro priorità aziendale.  La priorità del carico di lavoro si basa sulle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro.
 
 
@@ -138,7 +138,7 @@ image:diagram-rp-architecture-preview3.png["Diagramma che mostra l'architettura 
 | *RILEVARE*  a| 
 * Rileva potenziali attacchi con un modello di apprendimento automatico (ML) integrato che rileva attività e crittografia potenzialmente anomale.
 * Fornisce un rilevamento a doppio livello che inizia con il rilevamento di potenziali attacchi ransomware nello storage primario e risponde alle attività anomale eseguendo copie snapshot automatizzate aggiuntive per creare i punti di ripristino dei dati più vicini.  Ransomware Resilience offre la possibilità di analizzare più a fondo la situazione per identificare potenziali attacchi con maggiore precisione, senza compromettere le prestazioni dei carichi di lavoro principali.
-* Determina i file sospetti specifici e le mappe che attaccano i carichi di lavoro associati, utilizzando le tecnologie ONTAP, Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ), Data Infrastructure Insights (in precedenza Cloud Insights), Workload Security e FPolicy.
+* Determina i file sospetti specifici e associa gli attacchi ai carichi di lavoro associati, utilizzando le tecnologie ONTAP, Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ) e FPolicy.
 
 
 

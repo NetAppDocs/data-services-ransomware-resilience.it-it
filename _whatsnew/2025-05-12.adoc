@@ -21,9 +21,9 @@ TIP: Non è possibile impostare i criteri di backup per un carico di lavoro in e
 * Gli incidenti di avviso mostrano il nuovo ambiente di lavoro FSx per ONTAP .
 
 
-Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Scopri di più sulla BlueXP ransomware protection e sugli ambienti di lavoro"] .
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Scopri di più sulla BlueXP ransomware protection e sugli ambienti di lavoro"] .
 
-Per informazioni sulle opzioni supportate, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["Limitazioni BlueXP ransomware protection"] .
+Per informazioni sulle opzioni supportate, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Limitazioni BlueXP ransomware protection"] .
 
 
 
@@ -31,4 +31,4 @@ Per informazioni sulle opzioni supportate, fare riferimento a https://docs.netap
 
 Ora è necessario uno dei seguenti ruoli di accesso per visualizzare, scoprire o gestire la BlueXP ransomware protection: amministratore dell'organizzazione, amministratore della cartella o del progetto, amministratore della protezione ransomware o visualizzatore della protezione ransomware.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .

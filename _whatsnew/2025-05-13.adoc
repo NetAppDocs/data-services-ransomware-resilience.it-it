@@ -12,4 +12,4 @@ Esistono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad
 
 È possibile visualizzare gli ambienti di lavoro non supportati durante la fase di rilevamento iniziale, da cui è anche possibile scaricare i risultati.  È anche possibile visualizzare i risultati dell'individuazione tramite l'opzione *Individuazione del carico di lavoro* nella pagina Impostazioni.
 
-Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i carichi di lavoro nella BlueXP ransomware protection"] .
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["Scopri i carichi di lavoro nella BlueXP ransomware protection"] .

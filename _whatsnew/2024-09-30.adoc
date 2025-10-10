@@ -8,4 +8,4 @@
 
 Con questa versione, ora puoi raggruppare le condivisioni file in gruppi per proteggere più facilmente il tuo patrimonio di dati.  Il servizio può proteggere contemporaneamente tutti i volumi di un gruppo.  In precedenza era necessario proteggere ogni volume separatamente.
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Scopri di più sul raggruppamento dei carichi di lavoro di condivisione file nelle strategie di protezione dal ransomware"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Scopri di più sul raggruppamento dei carichi di lavoro di condivisione file nelle strategie di protezione dal ransomware"] .

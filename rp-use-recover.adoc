@@ -59,7 +59,7 @@ Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stab
 
 Se necessario, lo stato dell'applicazione cambierà per il ripristino.  L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup.  Al termine del ripristino, l'applicazione si apre in modalità LETTURA-SCRITTURA.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
 
 .Passi
 . Da Ransomware Resilience, seleziona *Ripristino*.
@@ -93,7 +93,7 @@ TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo
 
 Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
 
 L'amministratore dell'archiviazione di sicurezza può recuperare i dati a diversi livelli:
 

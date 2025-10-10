@@ -11,32 +11,30 @@ summary: Migliora la sicurezza e la conformità alla privacy dei tuoi dati con N
 [role="lead"]
 All'interno di NetApp Ransomware Resilience, è possibile utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file.  La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza.  La classificazione dei dati è un componente fondamentale della Console ed è disponibile senza costi aggiuntivi.
 
-link:https://docs.netapp.com/us-en/bluexp-classification/["Classificazione dei dati"^]utilizza l'elaborazione del linguaggio naturale basata sull'intelligenza artificiale per l'analisi e la categorizzazione dei dati contestuali, fornendo informazioni fruibili sui dati per soddisfare i requisiti di conformità, rilevare vulnerabilità di sicurezza, ottimizzare i costi e accelerare la migrazione.
+link:https://docs.netapp.com/us-en/data-services-data-classification/["Classificazione dei dati"^]utilizza l'elaborazione del linguaggio naturale basata sull'intelligenza artificiale per l'analisi e la categorizzazione dei dati contestuali, fornendo informazioni fruibili sui dati per soddisfare i requisiti di conformità, rilevare vulnerabilità di sicurezza, ottimizzare i costi e accelerare la migrazione.
 
 
 TIP: Questo processo può influire sull'importanza del carico di lavoro per aiutarti a garantire la protezione adeguata.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
 
 
 
 == Identificare l'esposizione alla privacy con la classificazione dei dati
 
-Prima di utilizzare la classificazione dei dati all'interno di Ransomware Resilience, è necessariolink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["per abilitare la classificazione dei dati per analizzare i tuoi dati"^] .
+Prima di utilizzare la classificazione dei dati all'interno di Ransomware Resilience, è necessariolink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["per abilitare la classificazione dei dati per analizzare i tuoi dati"^] .
 
 È possibile implementare la classificazione dei dati nella pagina Protezione di Ransomware Resilience.  Seguire la procedura per identificare l'esposizione alla privacy.  Quando selezioni **Identifica esposizione**, se non hai ancora implementato la classificazione dei dati, una finestra di dialogo ti consente di abilitarla.
 
-image:classification-deploy.png["Screenshot della classificazione di distribuzione"]
-
 Per ulteriori informazioni sulla classificazione dei dati, vedere:
 
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Scopri di più sulla classificazione dei dati"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorie di dati privati"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Esamina i dati archiviati nella tua organizzazione"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["Scopri di più sulla classificazione dei dati"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["Categorie di dati privati"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Esamina i dati archiviati nella tua organizzazione"^]
 
 
 .Prima di iniziare
-La scansione dei dati PII in Ransomware Resilience è disponibile se hailink:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Classificazione dei dati distribuita"^] .  La classificazione dei dati è disponibile come parte della Console senza costi aggiuntivi e può essere distribuita in locale o nel cloud del cliente.
+La scansione dei dati PII in Ransomware Resilience è disponibile se hailink:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["Classificazione dei dati distribuita"^] .  La classificazione dei dati è disponibile come parte della Console senza costi aggiuntivi e può essere distribuita in locale o nel cloud del cliente.
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
@@ -115,7 +113,7 @@ Alto
 
 Per maggiori dettagli sulla classificazione dei dati, fare riferimento alla documentazione sulla classificazione dei dati:
 
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Scopri di più sulla classificazione dei dati"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["Categorie di dati privati"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Esamina i dati archiviati nella tua organizzazione"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["Scopri di più sulla classificazione dei dati"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["Categorie di dati privati"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["Esamina i dati archiviati nella tua organizzazione"^]
 

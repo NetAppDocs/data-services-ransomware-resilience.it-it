@@ -39,20 +39,20 @@ Se si desidera utilizzare StorageGRID come destinazione di backup, fare riferime
 === Preparare AWS a diventare una destinazione di backup
 
 * Crea un account su AWS.
-* Configurare https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Autorizzazioni AWS"^] in AWS.
+* Configurare https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Autorizzazioni AWS"^] in AWS.
 
 
-Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
+Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
 
 
 
 === Preparare Azure per diventare una destinazione di backup
 
 * Configura un account in Azure.
-* Configurare https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Autorizzazioni di Azure"^] in Azzurro.
+* Configurare https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Autorizzazioni di Azure"^] in Azzurro.
 
 
-Per informazioni dettagliate sulla gestione dell'archiviazione di Azure nella console, fare riferimento a https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Gestisci i tuoi account di archiviazione di Azure"^] .
+Per informazioni dettagliate sulla gestione dell'archiviazione di Azure nella console, fare riferimento a https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["Gestisci i tuoi account di archiviazione di Azure"^] .
 
 
 
@@ -60,7 +60,7 @@ Per informazioni dettagliate sulla gestione dell'archiviazione di Azure nella co
 
 Il passaggio successivo consiste nell'impostare la console e la resilienza del ransomware.
 
-Revisione https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["Requisiti della console per la modalità standard"^] .
+Revisione https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["Requisiti della console per la modalità standard"^] .
 
 
 

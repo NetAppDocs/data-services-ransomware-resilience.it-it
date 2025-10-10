@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: È possibile configurare diverse opzioni, tra cui una destinazione di backup, il rilevamento delle minacce e la connessione a Data Infrastructure Insights Workload Security in Ransomware Resilience. 
+summary: Nella pagina delle impostazioni è possibile configurare diverse opzioni, tra cui una destinazione di backup e il rilevamento delle minacce. 
 ---
 = Configurare le impostazioni di protezione in NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,15 +12,15 @@ summary: È possibile configurare diverse opzioni, tra cui una destinazione di b
 
 
 [role="lead"]
-È possibile configurare destinazioni di backup, inviare dati a un sistema SIEM (security and event management) esterno, eseguire un'esercitazione di preparazione agli attacchi, configurare l'individuazione del carico di lavoro o configurare la connessione alla sicurezza del carico di lavoro Data Infrastructure Insights accedendo all'opzione *Impostazioni*.
+È possibile configurare destinazioni di backup, inviare dati a un sistema di sicurezza e gestione degli eventi (SIEM) esterno, eseguire un'esercitazione di preparazione agli attacchi, configurare l'individuazione del carico di lavoro o configurare il rilevamento di attività utente sospette accedendo all'opzione *Impostazioni*.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
 
 *Cosa puoi fare nella pagina Impostazioni?*  Dalla pagina Impostazioni puoi fare quanto segue:
 
 * Simula un attacco ransomware eseguendo un'esercitazione di preparazione e rispondendo a un avviso ransomware simulato. Per maggiori dettagli, vedere link:rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
 * Configurare l'individuazione del carico di lavoro.
-* Configurare la connessione alla sicurezza del carico di lavoro Data Infrastructure Insights per visualizzare le informazioni sospette sugli utenti negli avvisi ransomware.
+* Configurare la segnalazione delle attività sospette degli utenti.
 * Aggiungi una destinazione di backup.
 * Collega il tuo sistema di sicurezza e gestione degli eventi (SIEM) per l'analisi e il rilevamento delle minacce.  L'abilitazione del rilevamento delle minacce invia automaticamente i dati al SIEM per l'analisi delle minacce.
 
@@ -63,35 +63,11 @@ Questa pagina mostra gli agenti della console con sistemi non selezionati in pre
 
 
 
-== Visualizza i comportamenti anomali sospetti degli utenti connettendoti alla sicurezza del carico di lavoro Data Infrastructure Insights
+== Attività utente sospetta
 
-Prima di poter visualizzare i dettagli di un presunto comportamento anomalo dell'utente in Ransomware Resilience, è necessario configurare la connessione al sistema di sicurezza Data Infrastructure Insights Workload.
+Nella scheda Attività utente è possibile creare e gestire l'agente attività utente necessario per rilevare attività utente sospette.
 
-
-
-=== Ottieni un token di accesso API dal sistema di sicurezza del carico di lavoro Data Infrastructure Insights
-
-Ottieni un token di accesso API dal sistema di sicurezza del carico di lavoro Data Infrastructure Insights .
-
-. Accedi al sistema di sicurezza del carico di lavoro Data Infrastructure Insights .
-. Dal menu di navigazione a sinistra, seleziona *Amministrazione* > *Accesso API*.
-+
-image:../media/screen-alerts-ci-api-access-token.png["Pagina di accesso API nella sicurezza del carico di lavoro Data Infrastructure Insights"]
-
-. Crea un token di accesso API oppure utilizzane uno esistente.
-. Copia il token di accesso API.
-
-
-
-
-=== Connettiti a Data Infrastructure Insights Sicurezza del carico di lavoro
-
-. Dal menu Impostazioni di resilienza ransomware, individua il riquadro *Connessione di sicurezza del carico di lavoro*.
-. Selezionare *Connetti*.
-. Immettere l'URL per l'interfaccia utente di sicurezza del carico di lavoro dell'infrastruttura dati.
-. Inserisci il token di accesso API che fornisce l'accesso alla sicurezza del carico di lavoro.
-. Selezionare *Connetti*.
-
+Per ulteriori informazioni, consultare link:suspicious-user-activity.html["Attività utente sospetta"] .
 
 
 
@@ -140,7 +116,7 @@ Per impostare NetApp StorageGRID come destinazione di backup, immettere le segue
 image:screen-settings-backup-destination.png["Pagina delle destinazioni di backup"]
 
 . Selezionare * StorageGRID*.
-. Selezionare la freccia giù accanto a ciascuna impostazione e immettere o selezionare i valori:
+. Selezionare la freccia rivolta verso il basso accanto a ciascuna impostazione e immettere o selezionare i valori:
 +
 ** *Impostazioni del provider*:
 +
@@ -169,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["Pagina delle destinazioni d
 
 Per impostare AWS come destinazione di backup, immettere le seguenti informazioni.
 
-Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
+Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
 
 .Passi
 . Nella pagina *Impostazioni > Destinazioni di backup*, seleziona *Aggiungi*.
@@ -185,7 +161,7 @@ image:screen-settings-backup-destination.png["Pagina delle destinazioni di backu
 *** Crea un nuovo bucket, seleziona un bucket esistente se ne esiste già uno nella Console oppure utilizza il tuo bucket in cui archiviare i backup.
 *** Account AWS, regione, chiave di accesso e chiave segreta per le credenziali AWS
 +
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Se vuoi portare il tuo bucket, fai riferimento ad Aggiungi bucket S3"^] .
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["Se vuoi portare il tuo bucket, fai riferimento ad Aggiungi bucket S3"^] .
 
 
 
@@ -228,7 +204,7 @@ image:screen-settings-backup-destinations-list2.png["Pagina delle destinazioni d
 
 Per impostare Google Cloud Platform (GCP) come destinazione di backup, immettere le seguenti informazioni.
 
-Per i dettagli sulla gestione dello storage GCP nella Console, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Opzioni di installazione dell'agente della console in Google Cloud"^] .
+Per i dettagli sulla gestione dell'archiviazione GCP nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["Opzioni di installazione dell'agente della console in Google Cloud"^] .
 
 .Passi
 . Nella pagina *Impostazioni > Destinazioni di backup*, seleziona *Aggiungi*.
@@ -269,7 +245,7 @@ La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di 
 
 Per impostare Azure come destinazione di backup, immettere le seguenti informazioni.
 
-Per informazioni dettagliate sulla gestione delle credenziali di Azure e degli abbonamenti al marketplace nella console, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Gestisci le tue credenziali di Azure e gli abbonamenti al marketplace"^] .
+Per informazioni dettagliate sulla gestione delle credenziali di Azure e degli abbonamenti al marketplace nella console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html["Gestisci le tue credenziali di Azure e gli abbonamenti al marketplace"^] .
 
 .Passi
 . Nella pagina *Impostazioni > Destinazioni di backup*, seleziona *Aggiungi*.
@@ -285,7 +261,7 @@ image:screen-settings-backup-destination.png["Pagina delle destinazioni di backu
 *** Crea un nuovo account di archiviazione, selezionane uno esistente se ne esiste già uno nella Console oppure utilizza il tuo account di archiviazione che memorizzerà i backup.
 *** Sottoscrizione, regione e gruppo di risorse di Azure per le credenziali di Azure
 +
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Se si desidera utilizzare il proprio account di archiviazione, fare riferimento ad Aggiungere account di archiviazione BLOB di Azure"^] .
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html["Se si desidera utilizzare il proprio account di archiviazione, fare riferimento ad Aggiungere account di archiviazione BLOB di Azure"^] .
 
 
 

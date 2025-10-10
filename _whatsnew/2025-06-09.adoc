@@ -18,7 +18,7 @@ Con questa versione, puoi utilizzare un nuovo pulsante sulla Dashboard BlueXP ra
 
 Ora è possibile eseguire esercitazioni di preparazione sui carichi di lavoro CIFS (SMB) oltre che sui carichi di lavoro NFS.
 
-Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
 
 
 
@@ -28,4 +28,4 @@ Prima di utilizzare la BlueXP classification all'interno del servizio BlueXP ran
 
 È possibile distribuire la BlueXP classification su un carico di lavoro di condivisione file dall'interno BlueXP ransomware protection.  Nella colonna *Esposizione alla privacy*, seleziona l'opzione *Identifica esposizione*.  Se hai abilitato il servizio di classificazione, questa azione identifica l'esposizione.  Altrimenti, con questa versione, una finestra di dialogo presenta l'opzione per distribuire la BlueXP classification.  Selezionare *Distribuisci* per andare alla pagina di destinazione del servizio BlueXP classification , dove è possibile distribuire tale servizio.  O
 
-Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["Distribuisci la BlueXP classification nel cloud"^] e per utilizzare il servizio all'interno BlueXP ransomware protection, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Scansiona le informazioni di identificazione personale con la BlueXP classification"] .
+Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["Distribuisci la BlueXP classification nel cloud"^] e per utilizzare il servizio all'interno BlueXP ransomware protection, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["Scansiona le informazioni di identificazione personale con la BlueXP classification"] .

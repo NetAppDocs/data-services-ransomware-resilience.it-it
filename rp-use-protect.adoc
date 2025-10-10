@@ -14,7 +14,7 @@ summary: È possibile proteggere i carichi di lavoro dagli attacchi ransomware a
 [role="lead"]
 È possibile proteggere i carichi di lavoro dagli attacchi ransomware abilitando una protezione coerente con il carico di lavoro o creando strategie di protezione ransomware in NetApp Ransomware Resilience.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
 
 
 
@@ -22,7 +22,7 @@ summary: È possibile proteggere i carichi di lavoro dagli attacchi ransomware a
 
 Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_ che di _protezione_.
 
-* **I criteri di rilevamento** rilevano le minacce ransomware e, facoltativamente, bloccano le estensioni di file sospette.
+* **Criteri di rilevamento** rilevano minacce ransomware
 * **Le policy di protezione** includono policy di snapshot e backup.  In una strategia di protezione sono necessarie policy di rilevamento e snapshot.  Le policy di backup sono facoltative.
 +
 Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransomware Resilience li rileva e ti offre la possibilità di:
@@ -35,7 +35,7 @@ Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransom
 
 
 
-TIP: Per una migliore gestione e protezione del tuo patrimonio di dati, puoi crearelink:#group-file-shares-for-easier-protection["condivisioni di file di gruppo"] per proteggere collettivamente i volumi con un'unica strategia.
+TIP: Per una migliore gestione e protezione del tuo patrimonio di dati, puoi crearelink:#create-a-protection-group["condivisioni di file di gruppo"] per proteggere collettivamente i volumi con un'unica strategia.
 
 
 
@@ -138,7 +138,10 @@ Ransomware Resilience assegna un'importanza o una priorità a ciascun carico di 
 
 *Criteri di rilevamento predefiniti* [[predefiniti]]
 
-È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro:
+È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.
+
+
+NOTE: Il criterio **Estensione utente crittografia** è l'unico criterio predefinito che supporta il rilevamento di comportamenti sospetti degli utenti.
 
 [cols="10,15a,20,15,15,15"]
 |===
@@ -203,6 +206,26 @@ Ogni 1 settimana
 | Mensile  a| 
 Ogni 30 giorni
 | 60 | 2 | 93 
+
+
+.4+| *Estensione utente crittografia*  a| 
+Ogni quarto d'ora
+| Ogni 30 minuti | 3 | 72 | 93 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 93 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 93 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 93 
 |===
 
 
@@ -216,8 +239,8 @@ Dopo aver abilitato la protezione coerente con il carico di lavoro, puoi gestire
 
 Per informazioni sulla registrazione SnapCenter o SnapCenter Plug-in for VMware vSphere tramite Backup e ripristino, fare riferimento alle seguenti informazioni:
 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html["Registra il software SnapCenter Server"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["Registra il SnapCenter Plug-in for VMware vSphere"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapcenter-server.html["Registra il software SnapCenter Server"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["Registra il SnapCenter Plug-in for VMware vSphere"^]
 
 
 .Passi
@@ -230,7 +253,7 @@ Per informazioni sulla registrazione SnapCenter o SnapCenter Plug-in for VMware 
 
 . Seguire le informazioni per registrare SnapCenter o SnapCenter Plug-in for VMware vSphere tramite Backup e ripristino.
 . Ritorno alla resilienza del ransomware.
-. Da Ransomware Resilience, vai alla Dashboard e avvia nuovamente il processo di rilevamento.
+. Da Ransomware Resilience, vai alla Dashboard e avvia nuovamente il processo di individuazione.
 . Da Ransomware Resilience, seleziona *Protezione* per visualizzare la pagina Protezione.
 . Esaminare i dettagli nella colonna delle policy di snapshot e backup nella pagina Protezione per verificare che le policy siano gestite altrove.
 
@@ -266,7 +289,7 @@ La strategia di protezione dal ransomware include:
 La policy di rilevamento non modifica le policy gestite in altri prodotti.
 
 +
-Il criterio di rilevamento abilita la protezione autonoma contro i ransomware e la protezione FPolicy se sono già attivate in altri servizi.  Scopri di più sulink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] ,link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Backup e ripristino"^] , Elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
+La policy di rilevamento abilita la protezione autonoma contro i ransomware e la protezione FPolicy se sono già attivate in altri servizi.  Scopri di più sulink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e ripristino"^] , Elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
 
 
 
@@ -287,9 +310,6 @@ Se nel carico di lavoro non sono presenti policy di snapshot o backup, è possib
 image:screen-protection.png["Gestisci la pagina della strategia"]
 
 . Dalla pagina Protezione, seleziona un carico di lavoro, quindi *Proteggi*.
-+
-image:screen-protection-strategy-list.png["Gestire le strategie"]
-
 . Nella pagina Strategie di protezione dal ransomware, seleziona *Aggiungi*.
 +
 image:screen-protection-strategy-add.png["Aggiungi una pagina di strategia che mostri la sezione snapshot"]
@@ -361,9 +381,14 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Ransomware Resilience rileva se sono presenti policy SnapCenter o Backup and Recovery attive.
 . Per mantenere in vigore i criteri di Backup e ripristino o SnapCenter esistenti e applicare solo un criterio di _rilevamento_, lasciare deselezionata la casella **Sostituisci criteri esistenti**.
 . Per visualizzare i dettagli delle policy SnapCenter , seleziona la *freccia giù*.
+. Seleziona le impostazioni di rilevamento desiderate: *Rilevamento crittografia* *Rilevamento comportamento utente sospetto* *Blocca estensioni file sospette*
+. Selezionare **Avanti**.
+. Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente olink:suspicious-user-activity.html#add-a-user-activity-agent["o crearne uno"] .
 +
-Selezionare un criterio di rilevamento, quindi selezionare **Proteggi**.
+L'agente di attività utente ospita i nuovi collettori di dati.  Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
 
+. Selezionare **Avanti**.
+. Rivedi le tue scelte.  Selezionare **Crea** per attivare il rilevamento.
 . Nella pagina Protezione, controlla lo **Stato di rilevamento** per confermare che il rilevamento sia Attivo.
 
 
@@ -382,6 +407,10 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Ransomware Resilience rileva se sono presenti policy attive di Backup e Recovery o SnapCenter .  Per sostituire i criteri di Backup e ripristino o SnapCenter esistenti, selezionare la casella **Sostituisci criteri esistenti**.  Selezionando la casella, Ransomware Resilience sostituisce l'elenco dei criteri di rilevamento con i criteri di rilevamento.
 . Scegli una polizza di protezione.  Se non esiste alcuna policy di protezione, selezionare **Aggiungi** per crearne una nuova.  Per informazioni sulla creazione di una policy, vedere<<steps,Creare una politica di protezione>> .  Selezionare **Avanti**.
 . Seleziona una destinazione di backup o creane una nuova.  Selezionare **Avanti**.
++
+.. Se la strategia di protezione prevede il rilevamento del comportamento dell'utente, selezionare un agente di attività utente nel proprio ambiente per ospitare i nuovi raccoglitori di dati.  Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
+
+
 . Esaminare la nuova strategia di protezione, quindi selezionare **Proteggi** per applicarla.
 . Nella pagina Protezione, controlla lo **Stato di rilevamento** per confermare che il rilevamento sia Attivo.
 
@@ -403,7 +432,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 
 
-== Condivisione file di gruppo per una protezione più semplice
+== Crea un gruppo di protezione
 
 Raggruppare le condivisioni file in un gruppo di protezione semplifica la protezione del patrimonio di dati.  Ransomware Resilience può proteggere tutti i volumi di un gruppo contemporaneamente, anziché proteggere ciascun volume separatamente.
 
@@ -432,10 +461,14 @@ TIP: Per visualizzare maggiori dettagli sui carichi di lavoro, scorrere verso de
 +
 image:screen-protection-groups-policy.png["Aggiungi gruppo di protezione - Pagina Criteri"]
 
-. Selezionare il criterio per gestire la protezione di questo gruppo.
-. Selezionare *Avanti*.
+. Selezionare il criterio per gestire la protezione di questo gruppo.  Per confermare, selezionare *Avanti*.
++
+.. Se è necessario configurare un criterio di backup, sceglierne uno, quindi selezionare **Avanti**.
+.. Se la policy di rilevamento include il rilevamento del comportamento dell'utente, seleziona il raccoglitore dati che desideri utilizzare, quindi **Avanti**.
+
+
 . Rivedere le selezioni per il gruppo di protezione.
-. Selezionare *Aggiungi*.
+. Per finalizzare la creazione del gruppo di protezione, selezionare *Aggiungi*.
 
 
 
@@ -502,7 +535,7 @@ Prima di eliminare una strategia di protezione ransomware, potrebbe essere oppor
 
 È possibile visualizzare i carichi di lavoro dall'elenco delle strategie o quando si modifica una strategia specifica.
 
-.Passaggi per visualizzare l'elenco delle strategie
+.Passaggi per visualizzare le strategie
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
 . Nella pagina Protezione, seleziona *Gestisci strategie di protezione*.
 +
