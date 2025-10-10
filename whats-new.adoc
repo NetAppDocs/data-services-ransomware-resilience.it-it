@@ -42,7 +42,7 @@ Ransomware Resilience include un nuovo meccanismo di rilevamento che può essere
 
 A differenza del rilevamento della crittografia tramite ARP a livello di archiviazione, il rilevamento dell'anomalia nel comportamento dell'utente viene eseguito nel servizio Ransomware Resilience SaaS mediante la raccolta di eventi FPolicy.
 
-Per maggiori informazioni, vederelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["Abilita il rilevamento delle attività sospette degli utenti"] Elink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizza il comportamento anomalo dell'utente"] .
+Per maggiori informazioni, vederelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Abilita il rilevamento delle attività sospette degli utenti"] Elink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizza il comportamento anomalo dell'utente"] .
 
 
 
