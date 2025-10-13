@@ -14,7 +14,7 @@ summary: Durante la fase di individuazione, Ransomware Resilience analizza tutti
 [role="lead"]
 Prima di poter utilizzare NetApp Ransomware Resilience, è necessario che il programma rilevi i dati.  Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti Console e progetti all'interno di un'organizzazione.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 *Cosa scopre Ransomware Resilience?*  Ransomware Resilience valuta le applicazioni MySQL, le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.
 

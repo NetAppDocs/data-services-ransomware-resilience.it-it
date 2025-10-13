@@ -17,7 +17,7 @@ summary: Utilizzando NetApp Ransomware Resilience, puoi scaricare report che mos
 
 TIP: Prima di scaricare i file, è necessario aggiornare i dati, aggiornando così anche i dati che appariranno nei file.
 
-*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 *Quali dati puoi scaricare?*  È possibile scaricare i file da una qualsiasi delle opzioni del menu principale:
 

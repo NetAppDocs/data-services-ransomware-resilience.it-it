@@ -32,7 +32,7 @@ Prima di eseguire una simulazione, imposta un'esercitazione nella pagina Imposta
 * Se si immette un nome di carico di lavoro di prova diverso
 
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 .Passi
 . Dal menu NetApp Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
@@ -67,7 +67,7 @@ TIP: È possibile modificare la configurazione dell'esercitazione di preparazion
 
 Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 Quando si avvia l'esercitazione di preparazione, Ransomware Resilience salta la modalità di apprendimento e avvia l'esercitazione in modalità attiva.  Lo stato di rilevamento del carico di lavoro è Attivo.
 
@@ -96,7 +96,7 @@ NOTE: Dopo l'avvio dell'esercitazione, non è possibile modificare la configuraz
 
 Metti alla prova la tua prontezza rispondendo a un avviso di esercitazione di prontezza.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
@@ -141,7 +141,7 @@ Se la gravità indica che un utente è sospettato di attività dannose, rivedere
 
 Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il carico di lavoro del test, se necessario.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 .Passi
 . Torna alla pagina dei dettagli dell'avviso.
@@ -202,7 +202,7 @@ IMPORTANT: Dopo aver respinto un attacco, non è possibile ripristinarlo.  Se si
 
 Una volta completata l'esercitazione di preparazione, potresti voler rivedere e salvare un report sull'esercitazione.
 
-*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso BlueXP per tutti i servizi"^] .
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Report*.

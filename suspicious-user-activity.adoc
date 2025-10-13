@@ -34,7 +34,7 @@ I collettori vengono configurati nelle impostazioni di Resilienza ransomware.
 
 == Abilita il rilevamento delle attività sospette degli utenti
 
-*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore del comportamento utente di Ransomware Resilience. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore del comportamento utente di Ransomware Resilience. Non è possibile eseguire questa attività con il ruolo di amministratore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 
 

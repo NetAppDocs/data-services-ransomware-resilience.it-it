@@ -14,7 +14,7 @@ summary: Nella pagina delle impostazioni è possibile configurare diverse opzion
 [role="lead"]
 È possibile configurare destinazioni di backup, inviare dati a un sistema di sicurezza e gestione degli eventi (SIEM) esterno, eseguire un'esercitazione di preparazione agli attacchi, configurare l'individuazione del carico di lavoro o configurare il rilevamento di attività utente sospette accedendo all'opzione *Impostazioni*.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 *Cosa puoi fare nella pagina Impostazioni?*  Dalla pagina Impostazioni puoi fare quanto segue:
 
