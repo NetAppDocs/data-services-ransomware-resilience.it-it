@@ -10,7 +10,7 @@ settings:
   langs: it-it,us-en,de-de,es-es,fr-fr,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Documentazione sulla resilienza del ransomware NetApp
+  - title: Documentazione NetApp Ransomware Resilience
     url: "/index.html"
   - title: Note di rilascio
     entries:

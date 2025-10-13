@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard di Ransomware Resilience viene visualizzato un avviso che indica un potenziale attacco.  A questo punto, dovresti esaminare il potenziale rischio nella scheda Avvisi di resilienza ransomware. 
+summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard di Ransomware Resilience viene visualizzato un avviso che indica un potenziale attacco. A questo punto, dovresti esaminare il potenziale rischio nella scheda Avvisi di resilienza ransomware. 
 ---
 = Gestisci gli avvisi ransomware rilevati con NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard d
 [role="lead"]
 Quando NetApp Ransomware Resilience rileva un possibile attacco, mostra un avviso nella Dashboard e nell'area Notifiche.  Ransomware Resilience esegue immediatamente uno snapshot.  Esaminare il rischio potenziale nella scheda *Avvisi* di Ransomware Resilience.
 
-Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una notifica nelle impostazioni di notifica della console e viene inviata un'e-mail all'indirizzo configurato.  L'e-mail include informazioni sulla gravità, sul carico di lavoro interessato e un collegamento all'avviso nella scheda *Avvisi* di Ransomware Resilience.
+Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una notifica nelle impostazioni di notifica della console e viene inviata un'e-mail all'indirizzo configurato. L'e-mail include informazioni sulla gravità, sul carico di lavoro interessato e un collegamento all'avviso nella scheda *Avvisi* di Ransomware Resilience.
 
 Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
 
@@ -142,10 +142,10 @@ Viene visualizzata la pagina Avvisi.
 
 Nella scheda Avvisi è possibile verificare se si è verificata un'attività dannosa o un comportamento anomalo da parte dell'utente.
 
-Per visualizzare il rilevamento a livello di utente, è necessario aver configurato un agente di attività utente e abilitato un criterio di protezione con rilevamento del comportamento utente.  Se il rilevamento del comportamento dell'utente è abilitato, la colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi; non viene visualizzata se il rilevamento del comportamento dell'utente non è abilitato.  Per abilitare il rilevamento degli utenti sospetti, vederelink:suspicious-user-activity.html["Attività utente sospetta"] .
+Per visualizzare il rilevamento a livello di utente, è necessario aver configurato un agente di attività utente e abilitato un criterio di protezione con rilevamento del comportamento utente. Se il rilevamento del comportamento dell'utente è abilitato, la colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi; non viene visualizzata se il rilevamento del comportamento dell'utente non è abilitato. Per abilitare il rilevamento degli utenti sospetti, vederelink:suspicious-user-activity.html["Attività utente sospetta"] .
 
 
-NOTE: Se si utilizza NetApp Data Infrastructure Insights (DII) Workload Security, si consiglia di utilizzare gli stessi agenti Workload Security per Ransomware Resilience.  Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience; tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security.  Contatta il tuo rappresentante di riferimento per abilitare questa associazione.
+NOTE: Se si utilizza NetApp Data Infrastructure Insights (DII) Workload Security, si consiglia di utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience; tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di riferimento per abilitare questa associazione.
 
 
 
@@ -177,7 +177,7 @@ image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
 
 === Visualizza il comportamento anomalo dell'utente
 
-Se hai configurato il rilevamento degli utenti sospetti per visualizzare comportamenti anomali degli utenti, puoi visualizzare i dati a livello di utente e bloccare utenti specifici.  Per abilitare le impostazioni utente sospette, vederelink:rp-use-settings.html["Configurare le impostazioni di resilienza al ransomware"] .
+Se hai configurato il rilevamento degli utenti sospetti per visualizzare comportamenti anomali degli utenti, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare le impostazioni utente sospette, vederelink:rp-use-settings.html["Configurare le impostazioni di resilienza al ransomware"] .
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
@@ -216,7 +216,7 @@ Dopo che l'avviso è stato contrassegnato per il ripristino, l'avviso passa dall
 
 == Ignorare gli incidenti che non sono potenziali attacchi
 
-Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi.  Se non si tratta di minacce reali, possono essere ignorate.
+Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.
 
 Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.  Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso per tale comportamento.
 

@@ -17,5 +17,5 @@ summary: È possibile gestire i carichi di lavoro modificandone il nome anziché
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
 . Selezionare un carico di lavoro, selezionare l'icona *Azioni* ... sulla destra e selezionare *Modifica nome carico di lavoro*.
-. Inserisci il nuovo nome del carico di lavoro e seleziona *Salva*.
+. Inserisci il nome del nuovo carico di lavoro e seleziona *Salva*.
 

@@ -42,7 +42,7 @@ Se si desidera utilizzare StorageGRID come destinazione di backup, fare riferime
 * Configurare https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Autorizzazioni AWS"^] in AWS.
 
 
-Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
+Per i dettagli sulla gestione dell'archiviazione AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
 
 
 
@@ -56,7 +56,7 @@ Per informazioni dettagliate sulla gestione dell'archiviazione di Azure nella co
 
 
 
-== Configurare la console NetApp
+== Configurare la NetApp Console
 
 Il passaggio successivo consiste nell'impostare la console e la resilienza del ransomware.
 

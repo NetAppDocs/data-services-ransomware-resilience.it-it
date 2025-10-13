@@ -57,7 +57,7 @@ Questa pagina mostra gli agenti della console con sistemi non selezionati in pre
 . Selezionare l'agente della console in cui si desidera rilevare i carichi di lavoro.
 . Esaminare l'elenco dei sistemi.
 . Selezionare i sistemi in cui si desidera rilevare i carichi di lavoro oppure selezionare la casella nella parte superiore della tabella per rilevare i carichi di lavoro in tutti gli ambienti di carico di lavoro rilevati.
-. Se necessario, ripetere la stessa operazione anche per altri sistemi.
+. Ripetere la stessa operazione per altri sistemi, se necessario.
 . Selezionare *Scopri* per fare in modo che Ransomware Resilience rilevi automaticamente i nuovi carichi di lavoro nell'agente della console selezionato.
 
 
@@ -126,7 +126,7 @@ image:screen-settings-backup-destination.png["Pagina delle destinazioni di backu
 
 ** *Networking*: Seleziona lo spazio IP.
 +
-*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
 
 
 
@@ -145,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["Pagina delle destinazioni d
 
 Per impostare AWS come destinazione di backup, immettere le seguenti informazioni.
 
-Per i dettagli sulla gestione dello storage AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
+Per i dettagli sulla gestione dell'archiviazione AWS nella Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^] .
 
 .Passi
 . Nella pagina *Impostazioni > Destinazioni di backup*, seleziona *Aggiungi*.
@@ -171,7 +171,7 @@ Per impostazione predefinita, i dati nel bucket vengono crittografati con chiavi
 
 ** *Networking*: seleziona lo spazio IP e se utilizzerai un endpoint privato.
 +
-*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
 *** Facoltativamente, scegli se utilizzerai un endpoint privato AWS (PrivateLink) configurato in precedenza.
 +
 Se si desidera utilizzare AWS PrivateLink, fare riferimento a https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink per Amazon S3"^] .
@@ -227,7 +227,7 @@ Per impostazione predefinita, i dati nel bucket vengono crittografati con chiavi
 
 ** *Networking*: seleziona lo spazio IP e se utilizzerai un endpoint privato.
 +
-*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
 *** Facoltativamente, scegli se utilizzerai un endpoint privato GCP (PrivateLink) configurato in precedenza.
 
 
@@ -271,7 +271,7 @@ Per impostazione predefinita, i dati nell'account vengono crittografati con chia
 
 ** *Networking*: seleziona lo spazio IP e se utilizzerai un endpoint privato.
 +
-*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup. I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
 *** Facoltativamente, scegli se utilizzerai un endpoint privato di Azure configurato in precedenza.
 +
 Se si desidera utilizzare Azure PrivateLink, fare riferimento a https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^] .
@@ -472,7 +472,7 @@ NOTE: Una volta completata l'autenticazione, verrà visualizzato il messaggio "A
 
 === Configurare Splunk Cloud per il rilevamento delle minacce
 
-Prima di abilitare Splunk Cloud in Ransomware Resilience, dovrai eseguire i seguenti passaggi generali in Splunk Cloud:
+Prima di abilitare Splunk Cloud in Ransomware Resilience, è necessario eseguire i seguenti passaggi generali in Splunk Cloud:
 
 * Abilita un HTTP Event Collector in Splunk Cloud per ricevere dati sugli eventi tramite HTTP o HTTPS dalla Console.
 * Crea un token Event Collector in Splunk Cloud.
@@ -480,7 +480,7 @@ Prima di abilitare Splunk Cloud in Ransomware Resilience, dovrai eseguire i segu
 
 .Passaggi per abilitare un HTTP Event Collector in Splunk
 . Vai a Splunk Cloud.
-. Selezionare *Impostazioni* > *Input dati*.
+. Selezionare *Impostazioni* > *Inserimento dati*.
 . Selezionare *HTTP Event Collector* > *Impostazioni globali*.
 . Nel menu a discesa Tutti i token, seleziona *Abilitato*.
 . Per fare in modo che Event Collector ascolti e comunichi tramite HTTPS anziché HTTP, selezionare *Abilita SSL*.

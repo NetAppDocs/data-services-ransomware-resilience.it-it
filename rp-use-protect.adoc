@@ -100,7 +100,7 @@ La pagina Protezione mostra le seguenti informazioni sulla protezione del carico
 
 * *Protetto*: è stata applicata una policy.  ARP (o ARP/AI a seconda della versione ONTAP ) è abilitato su tutti i volumi correlati al carico di lavoro.
 * *A rischio*: non viene applicata alcuna politica.  Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di snapshot e backup abilitato.
-* *In corso*: una politica è in fase di applicazione ma non è ancora stata completata.
+* *In corso*: una policy è in fase di applicazione ma non è ancora stata completata.
 * *Non riuscito*: un criterio è stato applicato ma non funziona.
 
 
@@ -247,8 +247,8 @@ Per informazioni sulla registrazione SnapCenter o SnapCenter Plug-in for VMware 
 . Dal menu Ransomware Resilience, seleziona *Dashboard*.
 . Dal riquadro Raccomandazioni, individua una delle seguenti raccomandazioni e seleziona *Rivedi e correggi*:
 +
-** Registra SnapCenter Server disponibile con la console NetApp
-** Registra il SnapCenter Plug-in for VMware vSphere (SCV) con la console NetApp
+** Registra SnapCenter Server disponibile con la NetApp Console
+** Registra il SnapCenter Plug-in for VMware vSphere (SCV) con la NetApp Console
 
 
 . Seguire le informazioni per registrare SnapCenter o SnapCenter Plug-in for VMware vSphere tramite Backup e ripristino.
@@ -289,7 +289,7 @@ La strategia di protezione dal ransomware include:
 La policy di rilevamento non modifica le policy gestite in altri prodotti.
 
 +
-La policy di rilevamento abilita la protezione autonoma contro i ransomware e la protezione FPolicy se sono già attivate in altri servizi.  Scopri di più sulink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e ripristino"^] , Elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
+La policy di rilevamento abilita la protezione autonoma contro i ransomware e la protezione FPolicy se sono già attivate in altri servizi. Scopri di più sulink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e ripristino"^] , Elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
 
 
 
@@ -312,7 +312,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Dalla pagina Protezione, seleziona un carico di lavoro, quindi *Proteggi*.
 . Nella pagina Strategie di protezione dal ransomware, seleziona *Aggiungi*.
 +
-image:screen-protection-strategy-add.png["Aggiungi una pagina di strategia che mostri la sezione snapshot"]
+image:screen-protection-strategy-add.png["Aggiungi una pagina di strategia che mostra la sezione snapshot"]
 
 . Inserisci un nuovo nome per la strategia oppure inserisci un nome esistente per copiarlo.  Se inserisci un nome esistente, scegli quale copiare e seleziona *Copia*.
 +
@@ -334,7 +334,7 @@ Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestio
 
 ** *Politica di snapshot*:
 +
-*** *Nome base policy snapshot*: seleziona una policy oppure seleziona *Crea* e immetti un nome per la policy snapshot.
+*** *Nome base policy snapshot*: seleziona una policy oppure seleziona *Crea* e inserisci un nome per la policy snapshot.
 *** *Blocco snapshot*: abilita questa opzione per bloccare le copie snapshot sull'archiviazione primaria in modo che non possano essere modificate o eliminate per un determinato periodo di tempo, anche se un attacco ransomware riesce a raggiungere la destinazione dell'archiviazione di backup.  Questo è anche chiamato _archiviazione immutabile_.  Ciò consente tempi di ripristino più rapidi.
 +
 Quando uno snapshot è bloccato, la data di scadenza del volume viene impostata sulla data di scadenza della copia dello snapshot.
@@ -385,10 +385,10 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Selezionare **Avanti**.
 . Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente olink:suspicious-user-activity.html#add-a-user-activity-agent["o crearne uno"] .
 +
-L'agente di attività utente ospita i nuovi collettori di dati.  Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
+L'agente di attività utente ospita i nuovi collettori di dati. Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
 
 . Selezionare **Avanti**.
-. Rivedi le tue scelte.  Selezionare **Crea** per attivare il rilevamento.
+. Rivedi le tue scelte. Selezionare **Crea** per attivare il rilevamento.
 . Nella pagina Protezione, controlla lo **Stato di rilevamento** per confermare che il rilevamento sia Attivo.
 
 
@@ -405,10 +405,10 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 . Dalla pagina Protezione, seleziona un carico di lavoro, quindi seleziona *Proteggi*.
 . Ransomware Resilience rileva se sono presenti policy attive di Backup e Recovery o SnapCenter .  Per sostituire i criteri di Backup e ripristino o SnapCenter esistenti, selezionare la casella **Sostituisci criteri esistenti**.  Selezionando la casella, Ransomware Resilience sostituisce l'elenco dei criteri di rilevamento con i criteri di rilevamento.
-. Scegli una polizza di protezione.  Se non esiste alcuna policy di protezione, selezionare **Aggiungi** per crearne una nuova.  Per informazioni sulla creazione di una policy, vedere<<steps,Creare una politica di protezione>> .  Selezionare **Avanti**.
-. Seleziona una destinazione di backup o creane una nuova.  Selezionare **Avanti**.
+. Scegli una polizza di protezione.  Se non esiste alcuna policy di protezione, seleziona **Aggiungi** per crearne una nuova.  Per informazioni sulla creazione di una policy, vedere<<steps,Creare una politica di protezione>> . Selezionare **Avanti**.
+. Seleziona una destinazione di backup o creane una nuova. Selezionare **Avanti**.
 +
-.. Se la strategia di protezione prevede il rilevamento del comportamento dell'utente, selezionare un agente di attività utente nel proprio ambiente per ospitare i nuovi raccoglitori di dati.  Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
+.. Se la strategia di protezione prevede il rilevamento del comportamento dell'utente, selezionare un agente di attività utente nel proprio ambiente per ospitare i nuovi raccoglitori di dati. Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
 
 
 . Esaminare la nuova strategia di protezione, quindi selezionare **Proteggi** per applicarla.
@@ -419,7 +419,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 === Assegna una politica diversa
 
-È possibile sostituire la polizza esistente con una diversa.
+È possibile sostituire la policy esistente con una diversa.
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
@@ -436,7 +436,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 Raggruppare le condivisioni file in un gruppo di protezione semplifica la protezione del patrimonio di dati.  Ransomware Resilience può proteggere tutti i volumi di un gruppo contemporaneamente, anziché proteggere ciascun volume separatamente.
 
-È possibile creare gruppi indipendentemente dal loro stato di protezione (ovvero gruppi non protetti e gruppi protetti).  Quando si aggiunge un criterio di protezione a un gruppo di protezione, il nuovo criterio di protezione sostituisce tutti i criteri esistenti, compresi quelli gestiti da SnapCenter e NetApp Backup and Recovery.
+È possibile creare gruppi indipendentemente dal loro stato di protezione (ovvero gruppi non protetti e gruppi protetti). Quando si aggiunge un criterio di protezione a un gruppo di protezione, il nuovo criterio di protezione sostituisce tutti i criteri esistenti, compresi quelli gestiti da SnapCenter e NetApp Backup and Recovery.
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
@@ -461,7 +461,7 @@ TIP: Per visualizzare maggiori dettagli sui carichi di lavoro, scorrere verso de
 +
 image:screen-protection-groups-policy.png["Aggiungi gruppo di protezione - Pagina Criteri"]
 
-. Selezionare il criterio per gestire la protezione di questo gruppo.  Per confermare, selezionare *Avanti*.
+. Selezionare il criterio per gestire la protezione di questo gruppo. Per confermare, selezionare *Avanti*.
 +
 .. Se è necessario configurare un criterio di backup, sceglierne uno, quindi selezionare **Avanti**.
 .. Se la policy di rilevamento include il rilevamento del comportamento dell'utente, seleziona il raccoglitore dati che desideri utilizzare, quindi **Avanti**.
@@ -539,7 +539,7 @@ Prima di eliminare una strategia di protezione ransomware, potrebbe essere oppor
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
 . Nella pagina Protezione, seleziona *Gestisci strategie di protezione*.
 +
-La pagina Strategie di protezione dal ransomware visualizza un elenco di strategie.
+La pagina Strategie di protezione dal ransomware mostra un elenco di strategie.
 
 +
 image:screen-protection-strategy-list.png["Schermata delle strategie di protezione dal ransomware che mostra un elenco di strategie"]

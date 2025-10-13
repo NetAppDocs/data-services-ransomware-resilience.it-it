@@ -6,7 +6,7 @@
 
 === Rapporti di esercitazione di prontezza
 
-Con questa versione è possibile esaminare i report di esercitazione sulla prontezza agli attacchi ransomware.  Un'esercitazione di preparazione consente di simulare un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro di esempio.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
+Con questa versione è possibile esaminare i report di esercitazione sulla preparazione agli attacchi ransomware.  Un'esercitazione di preparazione consente di simulare un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro di esempio.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
 
 Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
 

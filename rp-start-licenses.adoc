@@ -20,10 +20,10 @@ Per eseguire questa attività, è necessario il ruolo di amministratore dell'org
 
 * Registrati per una prova gratuita di 30 giorni.
 * Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace.
-* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.
+* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp .  È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.
 
 
-Dopo aver impostato BYOL o acquistato un abbonamento PAYGO, puoi visualizzare la licenza nella sezione Licenze e abbonamenti della Console.
+Dopo aver impostato BYOL o acquistato un abbonamento PAYGO, puoi visualizzare la licenza nella sezione Licenses and subscriptions della Console.
 
 Una volta terminata la prova gratuita o scaduta la licenza o l'abbonamento, puoi comunque effettuare le seguenti operazioni in Ransomware Resilience:
 
@@ -48,7 +48,7 @@ NOTE: Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti 
 Puoi provare Ransomware Resilience utilizzando la versione di prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.
 
 
-NOTE: Con la versione di ottobre 2024, le nuove distribuzioni di Ransomware Resilience avranno ora 30 giorni di prova gratuita.  In precedenza, Ransomware Resilience offriva una prova gratuita di 90 giorni.  Se hai già usufruito della prova gratuita di 90 giorni, l'offerta sarà valida per i successivi 90 giorni.
+NOTE: Con la versione di ottobre 2024, le nuove distribuzioni di Ransomware Resilience avranno ora 30 giorni di prova gratuita.  In precedenza, Ransomware Resilience offriva una prova gratuita di 90 giorni.  Se hai già usufruito della prova gratuita di 90 giorni, l'offerta sarà valida per 90 giorni.
 
 Durante la sperimentazione non sono previsti limiti di capienza.
 
@@ -59,7 +59,7 @@ Durante la prova avrai piena funzionalità.
 .Passi
 . Accedi al https://console.netapp.com/["Consolle"^] .
 . Accedi alla Console.
-. Dalla console NetApp , seleziona *Protezione* > *Ransomware Resilience*.
+. Dalla NetApp Console, seleziona *Protezione* > *Ransomware Resilience*.
 +
 Se è la prima volta che accedi a questo servizio, verrà visualizzata la pagina di destinazione.
 
@@ -112,7 +112,7 @@ NOTE: Ti verrà inviata un'e-mail contenente il numero di serie di Ransomware Re
 image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenza."]
 
 . Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail che ti è stata inviata e seleziona *Aggiungi licenza*.
-. Per visualizzare i dettagli della licenza, dal menu di navigazione a sinistra della Console, seleziona *Amministrazione* > *Licenze e abbonamenti*.
+. Per visualizzare i dettagli della licenza, dal menu di navigazione a sinistra della Console, selezionare *Amministrazione* > * Licenses and subscriptions*.
 +
 ** Per visualizzare le informazioni sull'abbonamento, seleziona *Abbonamenti*.
 ** Per visualizzare le licenze BYOL, selezionare *Licenze servizi dati*.
@@ -154,7 +154,7 @@ NOTE: Ti verrà inviata un'e-mail contenente il numero di serie di Ransomware Re
 image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenza."]
 
 . Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, quindi inserisci il numero di serie che hai ricevuto tramite e-mail.  Selezionare *Aggiungi licenza*.
-. Per visualizzare i dettagli della licenza in Licenze e abbonamenti, dal menu di navigazione a sinistra della Console, selezionare *Governance* > *Licenze e abbonamenti*.
+. Per visualizzare i dettagli della licenza in Licenses and subscriptions, dal menu di navigazione a sinistra della Console, selezionare *Governance* > * Licenses and subscriptions*.
 +
 ** Per visualizzare le informazioni sull'abbonamento, seleziona *Abbonamenti*.
 ** Per visualizzare le licenze BYOL, selezionare *Licenze servizi dati*.
@@ -196,7 +196,7 @@ NOTE: Ti verrà inviata un'e-mail contenente il numero di serie di Ransomware Re
 image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenza."]
 
 . Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*.  Inserisci il numero di serie che hai ricevuto via email.  Selezionare *Aggiungi licenza*.
-. Per visualizzare i dettagli della licenza, dal menu di navigazione a sinistra della Console, seleziona *Governance* > *Licenze e abbonamenti*.
+. Per visualizzare i dettagli della licenza, dal menu di navigazione a sinistra della Console, selezionare *Governance* > * Licenses and subscriptions*.
 +
 ** Per visualizzare le informazioni sull'abbonamento, seleziona *Abbonamenti*.
 ** Per visualizzare le licenze BYOL, selezionare *Licenze servizi dati*.
@@ -241,7 +241,7 @@ Se il tuo account del sito di supporto NetApp non è disponibile nell'elenco a d
 
 
 .Risultato
-Nella pagina Licenze e abbonamenti viene mostrato che Ransomware Resilience ha una licenza.
+Nella pagina Licenses and subscriptions viene mostrato che Ransomware Resilience ha una licenza.
 
 
 
@@ -260,7 +260,7 @@ Dopo aver pagato la licenza e averla registrata sul sito di supporto NetApp , la
 . Se la console non riesce ad aggiornare automaticamente la licenza, è necessario caricare manualmente il file di licenza.
 +
 .. È possibile ottenere il file di licenza dal sito di supporto NetApp .
-.. Nella Console, seleziona **Amministrazione** > **Licenze e abbonamenti**.
+.. Nella Console, seleziona **Amministrazione** > ** Licenses and subscriptions**.
 .. Selezionare la scheda *Licenze servizi dati*, selezionare l'icona *Azioni...* per il numero di serie che si sta aggiornando, quindi selezionare *Aggiorna licenza*.
 
 

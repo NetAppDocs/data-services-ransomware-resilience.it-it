@@ -24,18 +24,18 @@ Questa sezione FAQ può aiutarti se stai cercando una risposta rapida a una doma
 
 * Registrati per una prova gratuita di 30 giorni.
 * Acquista un abbonamento pay-as-you-go (PAYGO) a NetApp Intelligent Services e Ransomware Resilience con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace e Microsoft Azure Marketplace.
-* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella sezione Licenze e abbonamenti della Console.
+* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp .  È possibile utilizzare il numero di serie della licenza per attivare BYOL nella sezione Licenze e abbonamenti della Console.
 
 
-*Come si abilita la resilienza al ransomware?*  Ransomware Resilience non richiede alcuna abilitazione.  È possibile accedere a Ransomware Resilience dalla console NetApp .
+*Come si abilita la resilienza al ransomware?*  Ransomware Resilience non richiede alcuna abilitazione.  È possibile accedere a Ransomware Resilience dalla NetApp Console.
 
 Per iniziare, è necessario registrarsi o contattare il proprio rappresentante commerciale NetApp per provare questo servizio.  Quindi, quando si utilizza l'agente Console, saranno incluse le funzionalità appropriate per Ransomware Resilience.
 
 Per iniziare a utilizzare Ransomware Resilience, seleziona "Inizia a scoprire i carichi di lavoro" dalla pagina di destinazione iniziale.
 
-*Ransomware Resilience è disponibile nelle modalità standard, limitata e privata?*  Al momento, Ransomware Resilience è disponibile solo in modalità standard. Restate sintonizzati per saperne di più.
+*Ransomware Resilience è disponibile nelle modalità standard, limitata e privata?*  Al momento, Ransomware Resilience è disponibile solo in modalità standard.  Restate sintonizzati per saperne di più.
 
-Per una spiegazione su queste modalità in tutti i servizi dati NetApp , fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modalità di distribuzione della console NetApp"^] .
+Per una spiegazione su queste modalità in tutti i servizi dati NetApp , fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modalità di distribuzione NetApp Console"^] .
 
 
 
@@ -45,9 +45,9 @@ Per una spiegazione su queste modalità in tutti i servizi dati NetApp , fare ri
 
 *Come vengono gestiti i permessi di accesso?* https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
 
-*Qual è la risoluzione migliore per il tuo dispositivo?* La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x1080 o superiore.
+*Qual è la risoluzione migliore per il tuo dispositivo?*  La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x1080 o superiore.
 
-*Quale browser dovrei usare?* Qualsiasi browser moderno.
+*Quale browser dovrei usare?*  Qualsiasi browser moderno.
 
 
 
@@ -71,7 +71,7 @@ Inoltre, Ransomware Resilience utilizza Backup and Recovery e SnapCenter / SnapC
 
 == Carichi di lavoro
 
-*Da cosa è costituito un carico di lavoro?* Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file. Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione.  Ad esempio, un'istanza di Oracle DB distribuita su ora3.host.com può avere rispettivamente vol1 e vol2 per i suoi dati e log.  Questi volumi insieme costituiscono il carico di lavoro per quella specifica istanza dell'istanza Oracle DB.
+*Da cosa è costituito un carico di lavoro?*  Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file.  Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione.  Ad esempio, un'istanza di Oracle DB distribuita su ora3.host.com può avere rispettivamente vol1 e vol2 per i suoi dati e log.  Questi volumi insieme costituiscono il carico di lavoro per quella specifica istanza dell'istanza Oracle DB.
 
 *In che modo Ransomware Resilience assegna la priorità ai dati del carico di lavoro?*  La priorità dei dati è determinata dalle copie snapshot effettuate e dai backup pianificati.
 
@@ -93,9 +93,9 @@ Ransomware Resilience associa i dati a un carico di lavoro nei seguenti modi:
 * Inoltre, se si dispone di SnapCenter o SnapCenter per VMware e sono stati configurati carichi di lavoro in Backup e ripristino, Ransomware Resilience rileva i carichi di lavoro gestiti da SnapCenter e SnapCenter per VMware e i volumi associati.
 
 
-*Cos'è un carico di lavoro "protetto"?* In Ransomware Resilience, un carico di lavoro mostra uno stato "protetto" quando è abilitata una policy di rilevamento primaria.  Per ora, ciò significa che ARP è abilitato su tutti i volumi correlati al carico di lavoro.
+*Cos'è un carico di lavoro "protetto"?*  In Ransomware Resilience, un carico di lavoro mostra uno stato "protetto" quando è abilitata una policy di rilevamento primaria.  Per ora, ciò significa che ARP è abilitato su tutti i volumi correlati al carico di lavoro.
 
-*Che cosa si intende per carico di lavoro "a rischio"?* Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di backup e snapshot abilitato.
+*Che cosa si intende per carico di lavoro "a rischio"?*  Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di backup e snapshot abilitato.
 
 *Nuovo volume aggiunto, ma non ancora visualizzato* Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazione e applica i criteri di protezione per proteggere il nuovo volume.
 
@@ -119,7 +119,7 @@ Nella strategia Ransomware Resilience non è richiesta una policy di backup.
 
 *Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?*
 
-Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP e verifica se ARP e FPolicy sono abilitati su tutti i volumi in un carico di lavoro rilevato. Le informazioni visualizzate inizialmente nella Dashboard sono aggregate da altre soluzioni e prodotti NetApp .
+Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP e verifica se ARP e FPolicy sono abilitati su tutti i volumi in un carico di lavoro rilevato.  Le informazioni visualizzate inizialmente nella Dashboard sono aggregate da altre soluzioni e prodotti NetApp .
 
 *Ransomware Resilience è a conoscenza delle policy già definite in Backup and Recovery e SnapCenter?*
 

@@ -20,7 +20,7 @@ Ransomware Resilience utilizza i seguenti ruoli specifici di Ransomware Resilien
 * *Visualizzatore di resilienza ransomware*: visualizza i dati del carico di lavoro NetApp , visualizza i dati degli avvisi, scarica i dati di ripristino e scarica i report.
 
 
-Questi ruoli si aggiungono ai ruoli della piattaforma Console che regolano l'accesso al servizio Console e ad altri servizi, come la protezione dei dati, la gestione del carico di lavoro e così via.  Per i dettagli su tutti i ruoli della piattaforma Console, vedere https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["la documentazione di installazione e amministrazione"^] .
+Questi ruoli si aggiungono ai ruoli della piattaforma Console che regolano l'accesso al servizio Console e ad altri servizi, come la protezione dei dati, la gestione del carico di lavoro e così via. Per i dettagli su tutti i ruoli della piattaforma Console, vedere https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["la documentazione di installazione e amministrazione"^] .
 
 La tabella seguente indica le azioni che ciascun ruolo di Ransomware Resilience può eseguire.
 

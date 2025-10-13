@@ -35,7 +35,7 @@ Prima di eseguire una simulazione, imposta un'esercitazione nella pagina Imposta
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 .Passi
-. Dal menu NetApp Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
+. Dal menu NetApp Ransomware Resilience , seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
 +
 image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione"]
 
@@ -72,7 +72,7 @@ Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.
 Quando si avvia l'esercitazione di preparazione, Ransomware Resilience salta la modalità di apprendimento e avvia l'esercitazione in modalità attiva.  Lo stato di rilevamento del carico di lavoro è Attivo.
 
 
-TIP: Un carico di lavoro può avere uno stato di rilevamento ransomware *Modalità di apprendimento* quando di recente è stato assegnato un criterio di rilevamento e Ransomware Resilience esegue la scansione dei carichi di lavoro.
+TIP: Un carico di lavoro può avere uno stato di *Modalità di apprendimento* per il rilevamento ransomware quando di recente è stato assegnato un criterio di rilevamento e Ransomware Resilience esegue la scansione dei carichi di lavoro.
 
 .Passi
 . Eseguire una delle seguenti operazioni:
@@ -121,7 +121,7 @@ Ecco alcune cose da tenere a mente:
 
 * Osserva la potenziale gravità dell'attacco.
 +
-Se la gravità indica che un utente è sospettato di attività dannose, rivedere il nome utente.  Puoi anchelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloccare l'utente."]
+Se la gravità indica che un utente è sospettato di attività dannose, rivedere il nome utente. Puoi anchelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloccare l'utente."]
 
 * Esaminare l'attività del file e i processi sospetti:
 +
@@ -147,7 +147,7 @@ Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il c
 . Torna alla pagina dei dettagli dell'avviso.
 . Se il carico di lavoro del test deve essere ripristinato, procedere come segue:
 +
-** Seleziona *Segna come necessario il ripristino*.
+** Seleziona *Segna come ripristino necessario*.
 ** Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.
 +
 *** Dal menu Ransomware Resilience, seleziona *Ripristino*.

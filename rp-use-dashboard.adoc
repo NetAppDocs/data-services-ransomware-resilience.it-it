@@ -14,7 +14,7 @@ summary: 'La dashboard NetApp Ransomware Resilience fornisce informazioni sullo 
 [role="lead"]
 La dashboard NetApp Ransomware Resilience fornisce informazioni immediate sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, identificare i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l'entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.
 
-Utilizzare la Dashboard per rivedere i suggerimenti di protezione, modificare le impostazioni, scaricare report e visualizzare la documentazione.
+Utilizzare la Dashboard per rivedere i suggerimenti sulla protezione, modificare le impostazioni, scaricare report e visualizzare la documentazione.
 
 *Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -103,7 +103,7 @@ Ecco alcuni esempi di consigli offerti da Ransomware Resilience.
 | Migliorare la sicurezza del sistema | NetApp Digital Advisor ha identificato almeno un rischio per la sicurezza elevato o critico. | Esamina tutti i rischi per la sicurezza in NetApp Digital Advisor. Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documentazione Digital Advisor"^] . 
 
 
-| Rendere una politica più forte. | Alcuni carichi di lavoro potrebbero non avere una protezione sufficiente.  Rafforza la protezione dei carichi di lavoro con una policy. | Aumenta la conservazione, aggiungi backup, applica backup immutabili, blocca estensioni di file sospette, abilita il rilevamento su storage secondario e molto altro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
+| Rendere più forte una politica. | Alcuni carichi di lavoro potrebbero non avere una protezione sufficiente.  Rafforza la protezione dei carichi di lavoro con una policy. | Aumenta la conservazione, aggiungi backup, applica backup immutabili, blocca estensioni di file sospette, abilita il rilevamento su storage secondario e molto altro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
 
 
 | Preparare <provider di backup> come destinazione di backup per eseguire il backup dei dati del carico di lavoro. | Al momento il carico di lavoro non ha destinazioni di backup. | Aggiungi destinazioni di backup a questo carico di lavoro per proteggerlo. Fare riferimento a link:rp-use-settings.html["Configurare le impostazioni di protezione"] . 

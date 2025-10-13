@@ -4,7 +4,7 @@ permalink: rp-start-prerequisites.html
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
 summary: 'Inizia a usare NetApp Ransomware Resilience verificando il supporto per il tuo ambiente, l"accesso alla rete, l"accesso e il browser web.' 
 ---
-= Prerequisiti per la resilienza al ransomware NetApp
+= Prerequisiti per la NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -18,9 +18,9 @@ Per utilizzare Ransomware Resilience, è necessario soddisfare i seguenti prereq
 
 
 
-== Nella console NetApp
+== Nella NetApp Console
 
-* Un account utente della console NetApp con privilegi di amministratore dell'organizzazione per l'individuazione delle risorse.
+* Un account utente NetApp Console con privilegi di amministratore dell'organizzazione per l'individuazione delle risorse.
 * Un'organizzazione Console con almeno un agente Console attivo che si connette ai cluster ONTAP locali o a Cloud Volumes ONTAP in AWS o in Azure.
 * L'agente della console deve avere `cloudmanager-ransomware-protection` contenitore in stato attivo.
 * Almeno un sistema Console con un cluster ONTAP locale NetApp o Cloud Volumes ONTAP in AWS o Azure.  Ransomware Resilience supporta sia i protocolli NAS (NFS e SMB) sia SAN (iSCSI, FC e NVMe).

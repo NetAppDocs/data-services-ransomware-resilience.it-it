@@ -6,7 +6,7 @@
 
 === Supporto del carico di lavoro SAN
 
-Questa versione include il supporto per i carichi di lavoro SAN nella BlueXP ransomware protection.  Ora è possibile proteggere i carichi di lavoro SAN oltre ai carichi di lavoro NFS e CIFS.
+Questa versione include il supporto per i carichi di lavoro SAN nella BlueXP ransomware protection. Ora è possibile proteggere i carichi di lavoro SAN oltre ai carichi di lavoro NFS e CIFS.
 
 Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["Prerequisiti BlueXP ransomware protection"] .
 
@@ -14,7 +14,7 @@ Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-e
 
 === Protezione migliorata del carico di lavoro
 
-Questa versione migliora il processo di configurazione per i carichi di lavoro con policy di snapshot e backup da altri strumenti NetApp come SnapCenter o BlueXP backup and recovery.  Nelle versioni precedenti, la BlueXP ransomware protection rilevava le policy di altri strumenti, consentendo solo di modificare la policy di rilevamento.  Con questa versione, è possibile sostituire i criteri di snapshot e backup con i criteri BlueXP ransomware protection oppure continuare a utilizzare i criteri di altri strumenti.
+Questa versione migliora il processo di configurazione per i carichi di lavoro con policy di snapshot e backup da altri strumenti NetApp come SnapCenter o BlueXP backup and recovery. Nelle versioni precedenti, la BlueXP ransomware protection rilevava le policy di altri strumenti, consentendo solo di modificare la policy di rilevamento. Con questa versione, è possibile sostituire i criteri di snapshot e backup con i criteri BlueXP ransomware protection oppure continuare a utilizzare i criteri di altri strumenti.
 
 Per i dettagli, fare riferimento alink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteggere i carichi di lavoro"] .
 

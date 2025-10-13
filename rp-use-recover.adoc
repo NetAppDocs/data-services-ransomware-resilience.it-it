@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di backup sullo storage secondario siano puliti, consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.' 
 ---
-= Ripristinare da un attacco ransomware (dopo aver neutralizzato gli incidenti) con NetApp Ransomware Resilience
+= Recupera da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati) con NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -57,7 +57,7 @@ image:screen-recovery2.png["Pagina di recupero"]
 
 Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
 
-Se necessario, lo stato dell'applicazione cambierà per il ripristino.  L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup.  Al termine del ripristino, l'applicazione si apre in modalità LETTURA-SCRITTURA.
+Se necessario per il ripristino, lo stato dell'applicazione cambierà.  L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup.  Al termine del ripristino, l'applicazione si apre in modalità LETTURA-SCRITTURA.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -84,7 +84,7 @@ TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo
 . Selezionare *Avanti*.
 . Rivedi le tue selezioni.
 . Selezionare *Ripristina*.
-. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+. Dal menu in alto, seleziona *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
 
 
 
@@ -164,7 +164,7 @@ TIP: Il nuovo nome del volume appare come prefisso + nome del volume originale +
 . Selezionare *Avanti*.
 . Rivedi le tue selezioni.
 . Selezionare *Ripristina*.
-. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+. Dal menu in alto, seleziona *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
 
 
 
@@ -204,7 +204,7 @@ TIP: Il nuovo nome del volume appare come nome del volume originale + nome del b
 . Selezionare *Avanti*.
 . Rivedi le tue selezioni.
 . Selezionare *Ripristina*.
-. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+. Dal menu in alto, seleziona *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
 
 
 
@@ -274,13 +274,13 @@ TIP: Sebbene i file o la directory originali verranno sovrascritti dai dati ripr
 
 TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
 
-.. Selezionare se si desidera che i nomi dei file o delle directory ripristinati siano gli stessi nomi della posizione corrente oppure nomi diversi.
+.. Selezionare se si desidera che i nomi dei file o delle directory ripristinati siano gli stessi della posizione corrente oppure nomi diversi.
 
 
 . Selezionare *Avanti*.
 . Rivedi le tue selezioni.
 . Selezionare *Ripristina*.
-. Dal menu in alto, seleziona *Ripristino* per rivedere il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
+. Dal menu in alto, seleziona *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
 
 
 

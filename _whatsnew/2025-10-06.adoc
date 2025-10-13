@@ -14,13 +14,13 @@ Il servizio BlueXP ransomware protection è stato rinominato NetApp Ransomware R
 
 NetApp Console offre una gestione centralizzata dei servizi di storage e dati in ambienti on-premise e cloud di livello aziendale, offrendo informazioni in tempo reale, flussi di lavoro più rapidi e amministrazione semplificata.
 
-Per i dettagli su cosa è cambiato, vedere il https://docs.netapp.com/us-en/console-relnotes/index.html["Note sulla versione della console NetApp"] .
+Per i dettagli su cosa è cambiato, vedere il https://docs.netapp.com/us-en/console-relnotes/index.html["Note sulla versione NetApp Console"] .
 
 
 
 === Rilevamento delle violazioni dei dati
 
-Ransomware Resilience include un nuovo meccanismo di rilevamento che può essere attivato in pochi passaggi per rilevare letture anomale da parte dell'utente come indicatore precoce di violazione dei dati.  La resilienza del ransomware raccoglie e analizza gli eventi di lettura degli utenti creando una baseline storica, ovvero un profilo del comportamento normale e previsto dai dati passati.  Quando l'attività di un nuovo utente si discosta in modo significativo da questa norma consolidata (ad esempio, un'impennata di letture inaspettata combinata con modelli di lettura sospetti), viene generato un avviso.  Ransomware Resilience include un modello di intelligenza artificiale per rilevare modelli di lettura sospetti.
+Ransomware Resilience include un nuovo meccanismo di rilevamento che può essere attivato in pochi passaggi per rilevare letture anomale da parte dell'utente come indicatore precoce di violazione dei dati. La resilienza del ransomware raccoglie e analizza gli eventi di lettura degli utenti creando una baseline storica, ovvero un profilo del comportamento normale e previsto dai dati passati. Quando l'attività di un nuovo utente si discosta in modo significativo da questa norma consolidata (ad esempio, un'impennata di letture inaspettata combinata con modelli di lettura sospetti), viene generato un avviso. Ransomware Resilience include un modello di intelligenza artificiale per rilevare modelli di lettura sospetti.
 
 A differenza del rilevamento della crittografia tramite ARP a livello di archiviazione, il rilevamento dell'anomalia nel comportamento dell'utente viene eseguito nel servizio Ransomware Resilience SaaS mediante la raccolta di eventi FPolicy.
 
@@ -46,6 +46,6 @@ Oltre al rilevamento delle violazioni dei dati, Ransomware Resilience rileva anc
 
 Per gestire gli avvisi di attività sospette degli utenti, Ransomware Resilience ha introdotto due nuovi ruoli per gli amministratori dell'organizzazione Console per concedere l'accesso al rilevamento di attività sospette degli utenti: amministratore del comportamento degli utenti di Ransomware Resilience e visualizzatore del comportamento degli utenti di Ransomware Resilience.
 
-Per configurare le impostazioni relative al comportamento sospetto degli utenti, è necessario essere un amministratore del comportamento degli utenti.  Il ruolo di amministratore Ransomware Resilience non è supportato per la configurazione delle impostazioni relative al comportamento sospetto degli utenti.
+Per configurare le impostazioni relative al comportamento sospetto degli utenti, è necessario essere un amministratore del comportamento degli utenti. Il ruolo di amministratore Ransomware Resilience non è supportato per la configurazione delle impostazioni relative al comportamento sospetto degli utenti.
 
 Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Accesso basato sui ruoli NetApp Ransomware Resilience"^] .

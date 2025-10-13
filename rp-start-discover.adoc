@@ -12,7 +12,7 @@ summary: Durante la fase di individuazione, Ransomware Resilience analizza tutti
 
 
 [role="lead"]
-Prima di poter utilizzare NetApp Ransomware Resilience, è necessario che il programma rilevi i dati.  Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti Console e progetti all'interno di un'organizzazione.
+Prima di poter utilizzare NetApp Ransomware Resilience, è necessario che vengano rilevati i dati.  Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti Console e progetti all'interno di un'organizzazione.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -27,7 +27,7 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 
 *Come puoi scoprire i carichi di lavoro?*  Puoi fare quanto segue:
 
-* All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro. Questa funzionalità potrebbe rivelarsi utile se si desidera proteggere carichi di lavoro specifici nel proprio ambiente e non in altri.
+* All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.  Questa funzionalità potrebbe rivelarsi utile se si desidera proteggere carichi di lavoro specifici nel proprio ambiente e non in altri.
 * Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza.
 * Scopri nuovi sistemi.
 
@@ -39,7 +39,7 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
 
 .Passi
-. Dalla console NetApp , seleziona *Protezione* > *Protezione ransomware*.
+. Dalla NetApp Console, seleziona *Protezione* > *Protezione ransomware*.
 +
 Se è il tuo primo accesso, verrà visualizzata la landing page.
 
@@ -52,7 +52,7 @@ NOTE: Se hai avviato la prova gratuita, l'etichetta del pulsante *Avvia la prova
 
 . Dalla landing page iniziale, seleziona *Inizia scoprendo i carichi di lavoro*.
 +
-Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati. Questo processo potrebbe richiedere alcuni minuti.
+Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati.  Questo processo potrebbe richiedere alcuni minuti.
 
 +
 image:screen-discover-workloads.png["Scopri lo screenshot dei carichi di lavoro"]
@@ -61,7 +61,7 @@ image:screen-discover-workloads.png["Scopri lo screenshot dei carichi di lavoro"
 . Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
 . Seleziona *Scopri*.
 +
-Ransomware Resilience rileva i dati del carico di lavoro solo per gli agenti della console con sistemi selezionati. Questo processo potrebbe richiedere alcuni minuti.
+Ransomware Resilience rileva i dati del carico di lavoro solo per gli agenti della console con sistemi selezionati.  Questo processo potrebbe richiedere alcuni minuti.
 
 . Per scaricare l'elenco dei carichi di lavoro rilevati, seleziona *Scarica risultati*.
 . Per visualizzare la dashboard di Ransomware Resilience, seleziona *Vai alla dashboard*.

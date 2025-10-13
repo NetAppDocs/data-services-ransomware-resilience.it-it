@@ -44,7 +44,7 @@ image:screen-dashboard.png["Pagina del dashboard"]
 . Eseguire una delle seguenti operazioni:
 +
 ** Dalla pagina, seleziona *Download*image:button-download.png["Opzione di download"] opzione.
-** Dal menu NetApp Ransomware Resilience, seleziona *Report*.
+** Dal menu NetApp Ransomware Resilience , seleziona *Report*.
 
 
 . Se hai selezionato l'opzione *Report*, seleziona uno dei nomi di file preconfigurati e seleziona *Scarica*.
