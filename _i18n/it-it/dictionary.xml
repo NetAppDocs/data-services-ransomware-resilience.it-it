@@ -614,8 +614,6 @@
   <block id="60e39582e4cf8359d140fc0851baccb4" category="list-text">Un'organizzazione Console con almeno un agente Console attivo che si connette ai cluster ONTAP locali o a Cloud Volumes ONTAP in AWS o in Azure.</block>
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">L'agente della console deve avere<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block> contenitore in stato attivo.</block>
   <block id="7bff903bef6a1c5af1e562c29d1de15e" category="list-text">Almeno un sistema Console con un cluster ONTAP locale NetApp o Cloud Volumes ONTAP in AWS o Azure.  Ransomware Resilience supporta sia i protocolli NAS (NFS e SMB) sia SAN (iSCSI, FC e NVMe).</block>
-  <block id="fd90f947530ad3e6b6dfdb82ceff50cb" category="list-text">Sono supportati i cluster ONTAP o Cloud Volumes ONTAP con versione ONTAP OS 9.11.1 o successiva.</block>
-  <block id="7ea40a0c9f950a0c8c2ee16edd7f77f2" category="admonition">I carichi di lavoro SAN sono supportati solo in ONTAP 9.17.1 e versioni successive.</block>
   <block id="097ff3efa4909e783a040ec7edc317d6" category="list-text">Se i cluster ONTAP locali o Cloud Volumes ONTAP in AWS o nel cloud di Azure non sono già integrati nella Console, è necessario un agente della Console.</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">Scopri come configurare un agente Console</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">requisiti standard della console</block>
@@ -630,7 +628,6 @@
   <block id="5cc74ffa295c128286831c0e8de84cd1" category="paragraph">Per maggiori dettagli sulla licenza, fare riferimento a<block ref="11f96aed2a11a318ecdf8f5381ec25fa" category="inline-link-macro-rx"></block> .</block>
   <block id="47c8d077dd25d3b0a8650ef6f84f0820" category="list-text">Per applicare le configurazioni di protezione (ad esempio, l'abilitazione della protezione autonoma contro i ransomware e altre), Ransomware Resilience necessita delle autorizzazioni di amministratore sul cluster ONTAP .  Il cluster ONTAP avrebbe dovuto essere integrato utilizzando solo le credenziali utente amministratore del cluster ONTAP .</block>
   <block id="d6b16e754b93934f7687ad4f252b7073" category="list-text">Se il cluster ONTAP è già stato integrato nella Console utilizzando credenziali utente non amministratore, le autorizzazioni dell'utente non amministratore devono essere aggiornate con le autorizzazioni necessarie effettuando l'accesso al cluster ONTAP , come descritto in questa pagina.</block>
-  <block id="ed5ce0cb12bbc7e366d04460145d59f3" category="section-title">Per i backup dei dati</block>
   <block id="0885a21123eeb2ad2e03289064c229ea" category="list-text">Un account in NetApp StorageGRID, AWS S3, Azure Blob o Google Cloud Platform per le destinazioni di backup e le autorizzazioni di accesso impostate.</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">Elenco delle autorizzazioni AWS, Azure o S3</block>
   <block id="90061bb176f3e723f6f2161eafc1901c" category="paragraph">Fare riferimento al<block ref="31e1fb669a04af441205b80b4846232f" category="inline-link-rx"></block> per i dettagli.</block>
@@ -743,8 +740,6 @@
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Eseguire una delle seguenti operazioni:</block>
   <block id="298c644723428b96dd61c8e59f47eee9" category="list-text">Dal menu Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.</block>
   <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">OPPURE, dalla pagina Impostazioni, nella scheda Esercizio di preparazione, seleziona *Avvia*.</block>
-  <block id="f54a2552361ef76d1d69e95fc2f63e90" category="list-text">Se hai già configurato l'esercitazione di preparazione, dopo aver selezionato *Avvia*, l'esercitazione di preparazione avrà inizio.</block>
-  <block id="241197791593ba6fe12006bc7c44e045" category="admonition">Dopo l'avvio dell'esercitazione, non è possibile modificare la configurazione dell'esercitazione di preparazione.  Puoi reimpostarlo per ricominciare.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Rispondere a un avviso di esercitazione di prontezza</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Metti alla prova la tua prontezza rispondendo a un avviso di esercitazione di prontezza.</block>
   <block id="e9ebf76599d54488581ec7e47b518db1" category="list-text">Dal menu Ransomware Resilience, seleziona *Avvisi*.</block>
@@ -2036,4 +2031,11 @@
   <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">Recuperare da un attacco ransomware</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Domande frequenti</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
+  <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">Ransomware Resilience è supportato con i cluster ONTAP o Cloud Volumes ONTAP con ONTAP versione 9.11.1 o successiva.</block>
+  <block id="d36369f24098b858527294c5a234c72d" category="admonition">Se si prevede di utilizzare Ransomware Resilience su carichi di lavoro SAN, è necessario eseguire ONTAP 9.17.1 o versione successiva.</block>
+  <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Backup dei dati</block>
+  <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">Comportamento sospetto dell'utente</block>
+  <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Affinché Ransomware Resilience fornisca avvisi sui comportamenti sospetti degli utenti, è necessario configurare un agente di attività utente. Per maggiori informazioni, vedere <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>.</block>
+  <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">Selezionare il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati crittografati, seleziona **Ripristino personalizzato**. Per il ripristino in caso di attività sospette degli utenti, seleziona **Violazione dei dati**.</block>
+  <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">Non è possibile modificare la configurazione dell'esercitazione di preparazione mentre l'esercitazione è in esecuzione. È possibile reimpostare il trapano per fermarlo e modificarne la configurazione.</block>
 </blocks>

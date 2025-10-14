@@ -52,6 +52,7 @@ image:screen-settings-alert-drill-configure.png["Configura la pagina di esercita
 .. Selezionare un sistema di prova.
 .. Selezionare un SVM di archiviazione di prova.
 .. Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.
+.. Selezionare il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati crittografati, seleziona **Ripristino personalizzato**. Per il ripristino in caso di attività sospette degli utenti, seleziona **Violazione dei dati**.
 .. Immettere il nome del nuovo carico di lavoro di test da creare.  Non includere trattini nel nome.
 
 
@@ -84,11 +85,10 @@ image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di ese
 ** OPPURE, dalla pagina Impostazioni, nella scheda Esercizio di preparazione, seleziona *Avvia*.
 
 
-. Se hai già configurato l'esercitazione di preparazione, dopo aver selezionato *Avvia*, l'esercitazione di preparazione avrà inizio.
 
 
 
-NOTE: Dopo l'avvio dell'esercitazione, non è possibile modificare la configurazione dell'esercitazione di preparazione.  Puoi reimpostarlo per ricominciare.
+NOTE: Non è possibile modificare la configurazione dell'esercitazione di preparazione mentre l'esercitazione è in esecuzione. È possibile reimpostare il trapano per fermarlo e modificarne la configurazione.
 
 
 
