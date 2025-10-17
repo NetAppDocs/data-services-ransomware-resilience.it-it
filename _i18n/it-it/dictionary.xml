@@ -480,14 +480,12 @@
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, della cartella o del progetto.<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> .</block>
   <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*Tipi di licenza* È possibile utilizzare i seguenti tipi di licenza:</block>
   <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace.</block>
-  <block id="13bd4b8763a0912ae1342d2303d91929" category="list-text">Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp .  È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">Dopo aver impostato BYOL o acquistato un abbonamento PAYGO, puoi visualizzare la licenza nella sezione Licenses and subscriptions della Console.</block>
   <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">Una volta terminata la prova gratuita o scaduta la licenza o l'abbonamento, puoi comunque effettuare le seguenti operazioni in Ransomware Resilience:</block>
   <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">Visualizza i carichi di lavoro e il loro stato di integrità.</block>
   <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">Eliminare qualsiasi risorsa, ad esempio una policy.</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">Esegui tutte le operazioni pianificate create durante il periodo di prova o in base alla licenza.</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">Altre licenze</block>
-  <block id="f5b76d2b545a3d3806e510148858010e" category="paragraph">La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi.  Ransomware Resilience può utilizzare NetApp Backup and Recovery anche se non si dispone di una licenza.</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.</block>
   <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">Provalo utilizzando una prova gratuita di 30 giorni</block>
   <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">Puoi provare Ransomware Resilience utilizzando la versione di prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.</block>
@@ -645,36 +643,20 @@
   <block id="1f7fec232265cdaaed5c3995ce516af2" category="list-text">Per utilizzarlo, tornare all'interfaccia utente di Ransomware Resilience.</block>
   <block id="01ad1e9b6ee32140ab032c379c4fd753" category="summary">Inizia a usare NetApp Ransomware Resilience in pochi passaggi.</block>
   <block id="87269d545e3fccdff13a867df7261ace" category="doc">Avvio rapido per NetApp Ransomware Resilience</block>
-  <block id="41bff2ae3735c5f6436f8b085adcb8b8" category="paragraph">Ecco una panoramica dei passaggi necessari per iniziare a utilizzare NetApp Ransomware Resilience. I link presenti in ogni passaggio ti conducono a una pagina che fornisce maggiori dettagli.</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Uno</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>Rivedere i prerequisiti</block>
-  <block id="8245d68da46718af8e64343032f76d49" category="inline-link-macro">Assicurati che il tuo sistema soddisfi questi requisiti</block>
-  <block id="75d0ccc7689bb95b15a30d63c9ccdcd4" category="paragraph"><block ref="9f6f8763dd3393068af568a58712b0aa" category="inline-link-macro-rx"></block> .</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Due</block>
   <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Imposta la resilienza al ransomware</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">Preparare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform o Microsoft Azure come destinazione di backup</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> .</block>
-  <block id="9dc5e6bd86bf7e797ea094f6fe2a5852" category="inline-link-macro">Configurare un agente Console</block>
-  <block id="47eb90acf1b579722f7d5dd2b44ef0e4" category="list-text"><block ref="9ec4312a792865a12e09d73a517eab36" category="inline-link-macro-rx"></block> .</block>
-  <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block> .</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">Scopri i carichi di lavoro nella Console</block>
-  <block id="cba6bdbd119078f38347599e997682f2" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block> .</block>
   <block id="2eee0208d7c6702078e5b0a246b9c4d7" category="inline-link-macro">Configurare le destinazioni di backup</block>
-  <block id="5b00991bda21ffcce334fcd5ac0e12a5" category="list-text"><block ref="7814f70b7e043ab52a7b13bfded37018" category="inline-link-macro-rx"></block> .</block>
-  <block id="fcb74668c58aed2ac30ddcdee292a0c5" category="inline-link-macro">Abilita facoltativamente il rilevamento delle minacce</block>
-  <block id="896465c47d1995c6e7b722de16fa80e5" category="list-text"><block ref="4e4968353ad45e1648e9b700ebce5a49" category="inline-link-macro-rx"></block> .</block>
   <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">Facoltativamente, eseguire un'esercitazione di preparazione all'attacco ransomware</block>
-  <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block> .</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Tre</block>
-  <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>Cosa succederà adesso?</block>
-  <block id="b9a39cb5a55f28deea4823b82a9d759b" category="paragraph">Ecco cosa puoi fare dopo aver configurato Ransomware Resilience.</block>
   <block id="d50e8172d497c020af4e234d3280aa47" category="inline-link-macro">Visualizza lo stato di protezione del carico di lavoro nella Dashboard</block>
-  <block id="0da5fc044622620fa261132f6660bfdb" category="list-text"><block ref="97145b854a05806b01a222f1cee29fd6" category="inline-link-macro-rx"></block> .</block>
-  <block id="d3c00938bca00732fbba5d481863930b" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> .</block>
   <block id="347a92b70b3c471a8a681a4b4a0c9256" category="inline-link-macro">Rispondere al rilevamento di potenziali attacchi ransomware</block>
   <block id="063e9c9c189a9f6aaad2b0b511ff7b3f" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block> .</block>
   <block id="fc8492dd3eefdbcdcd34f8d91982e7a9" category="inline-link-macro">Recuperare da un attacco (dopo che gli incidenti sono stati neutralizzati)</block>
-  <block id="9ae83eb049c6b5251c9298d8a8d40241" category="list-text"><block ref="8b134bf38fb096386395972987c1b025" category="inline-link-macro-rx"></block> .</block>
   <block id="34966ee9421e907a190b85aa1680ce01" category="summary">Per utilizzare Ransomware Resilience, è necessario eseguire alcuni passaggi per configurarlo.</block>
   <block id="239718284ef31f1d7ca7a73645e14dd2" category="doc">Imposta NetApp Ransomware Resilience</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">prerequisiti</block>
@@ -1032,7 +1014,6 @@
   <block id="0a3dc5fda7d701cd5fc9a0ceb57afb3f" category="list-text"><block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block> .</block>
   <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">Migliora la sicurezza e la conformità alla privacy dei tuoi dati con NetApp Data Classification per identificare se i tuoi dati includono informazioni personali identificabili o private.</block>
   <block id="e00e52239c81eaad00507b4b0b815570" category="doc">Scansiona le informazioni di identificazione personale con NetApp Data Classification in Ransomware Resilience</block>
-  <block id="62fa4bfbc95859e20cfaa7150ab75d62" category="paragraph">All'interno di NetApp Ransomware Resilience, puoi utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file.  La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza.  La classificazione dei dati è un componente fondamentale della Console ed è disponibile senza costi aggiuntivi.</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">Classificazione dei dati</block>
   <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>utilizza l'elaborazione del linguaggio naturale basata sull'intelligenza artificiale per l'analisi e la categorizzazione dei dati contestuali, fornendo informazioni fruibili sui dati per soddisfare i requisiti di conformità, rilevare vulnerabilità di sicurezza, ottimizzare i costi e accelerare la migrazione.</block>
   <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">Questo processo può influire sull'importanza del carico di lavoro per garantire la protezione adeguata.</block>
@@ -2004,7 +1985,6 @@
   <block id="0f1fe9be7b1943507afe2ef939f76423" category="list-text">Monitora lo stato dei tuoi carichi di lavoro contro gli attacchi ransomware alla ricerca di anomalie nei dati.</block>
   <block id="12bcfe65b7fb19c1dbe60c374599be1e" category="list-text">Valuta rapidamente l'impatto degli incidenti ransomware sul tuo carico di lavoro.</block>
   <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">Ripristina in modo intelligente i dati in seguito a un attacco ransomware, assicurandoti che non si verifichi una nuova infezione dei dati archiviati.</block>
-  <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">NetApp Ransomware Resilience protegge, rileva e supporta il ripristino dei carichi di lavoro delle applicazioni e delle condivisioni di file dalle minacce ransomware negli storage locali e cloud. Supportando piattaforme quali Oracle, MySQL, datastore VM e storage NAS, Ransomware Resilience consente backup e ripristino sicuri, aiutando le organizzazioni a salvaguardare i dati critici e a mantenere la continuità aziendale.</block>
   <block id="89be776e54ba13993f6011aaa17a0ac9" category="sidebar">Documentazione NetApp Ransomware Resilience</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Iniziare</block>
   <block id="7b72a3240bb708a49cf4a635f75c8ca9" category="sidebar">Novità in Ransomware Resilience</block>
@@ -2038,4 +2018,41 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Affinché Ransomware Resilience fornisca avvisi sui comportamenti sospetti degli utenti, è necessario configurare un agente di attività utente. Per maggiori informazioni, vedere <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>.</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">Selezionare il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati crittografati, seleziona **Ripristino personalizzato**. Per il ripristino in caso di attività sospette degli utenti, seleziona **Violazione dei dati**.</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">Non è possibile modificare la configurazione dell'esercitazione di preparazione mentre l'esercitazione è in esecuzione. È possibile reimpostare il trapano per fermarlo e modificarne la configurazione.</block>
+  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.</block>
+  <block id="18105991dc2815c0ab610717f615d548" category="admonition">Se ti iscrivi a un periodo di prova di sei mesi, dovresti avere una licenza NLF.</block>
+  <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi. Tuttavia, Ransomware Resilience può essere integrato con NetApp Backup and Recovery, anche se non si dispone di una licenza separata per Backup and Recovery.</block>
+  <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">Scopri i passaggi principali da seguire per impostare la Ransomware Resilience e proteggere i tuoi carichi di lavoro.</block>
+  <block id="6ff0e20f052119502398978ae7712412" category="paragraph">Per informazioni dettagliate, seguire i link presenti in ogni passaggio.</block>
+  <block id="be796710aeb85a06716eb7e39256193d" category="paragraph">Per queste attività è richiesto il ruolo di _Amministratore della console_.</block>
+  <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">Assicurati di aver installato un agente Console</block>
+  <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
+  <block id="9fde088755a092fd7205d2e697984007" category="inline-link-macro">Assicurati che il tuo sistema soddisfi i requisiti</block>
+  <block id="643740187acce828986cb107d41bafc5" category="list-text"><block ref="643740187acce828986cb107d41bafc5" category="inline-link-macro-rx"></block></block>
+  <block id="b9278659401ebc53048947304c656764" category="inline-link-macro">Esaminare i ruoli utente di Ransomware Resilience e assegnare autorizzazioni agli utenti che accedono a Ransomware Resilience</block>
+  <block id="b29244e1b9c758144780bb223d35b4cf" category="list-text"><block ref="b29244e1b9c758144780bb223d35b4cf" category="inline-link-macro-rx"></block></block>
+  <block id="92c4728cc5c0729bcbef66420d0a7a81" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block></block>
+  <block id="ae1607d72fd3a0506ce195b27e1dee67" category="paragraph">Per queste attività è richiesto il ruolo di _amministratore di Ransomware Resilience_.</block>
+  <block id="76e35428aa7f6a7c95640d343a2f5eaa" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block></block>
+  <block id="97145b854a05806b01a222f1cee29fd6" category="list-text"><block ref="97145b854a05806b01a222f1cee29fd6" category="inline-link-macro-rx"></block></block>
+  <block id="2280163364b5b58f435fe47eab713eb2" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block></block>
+  <block id="68d94437ae944e7e96a72f2fb55b3138" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>Configurare la protezione e il rilevamento in Ransomware Resilience</block>
+  <block id="0facb5062c7824665d78c38387a13d0d" category="paragraph">Per queste attività è richiesto il ruolo di _amministratore di Ransomware Resilience_.  Per configurare attività di comportamento utente sospette è necessario il ruolo aggiuntivo _Ransomware Resilience user behavior admin_.</block>
+  <block id="2b2daeeb32402291362fa9fa843a5c7e" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block></block>
+  <block id="93826dca9773d5abc2e88bd13610fa5f" category="inline-link-macro">migliorare la protezione configurando il rilevamento delle attività sospette degli utenti</block>
+  <block id="2b3602d3a23fabd0142c6690d942d97c" category="list-text">Facoltativamente,<block ref="c26759f19d29fbc2698510c8d2899376" category="inline-link-macro-rx"></block></block>
+  <block id="9de6007d1c8bb200a2730a88c394ccc5" category="list-text">Facoltativamente, configurare le destinazioni di backup:</block>
+  <block id="7814f70b7e043ab52a7b13bfded37018" category="list-text"><block ref="7814f70b7e043ab52a7b13bfded37018" category="inline-link-macro-rx"></block></block>
+  <block id="b5ea4db5c411dc6348eb99be9283796b" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block></block>
+  <block id="8b134bf38fb096386395972987c1b025" category="list-text"><block ref="8b134bf38fb096386395972987c1b025" category="inline-link-macro-rx"></block></block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quattro</block>
+  <block id="84b770f92be71ec30166cecd58fe295f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>Cosa succederà adesso?</block>
+  <block id="6bed92a99cdfd0c4fededd25f3e7cc23" category="paragraph">Dopo aver configurato la protezione in Ransomware Resilience, ecco cosa potresti fare.</block>
+  <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">Abilita la classificazione dei dati per identificare i rischi di governance e sicurezza</block>
+  <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
+  <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">Invia avvisi a SIEM</block>
+  <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
+  <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">Scarica report di allerta, protezione, esercitazione di prontezza, ripristino o riepilogo</block>
+  <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
+  <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">All'interno di NetApp Ransomware Resilience, puoi utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza. Data Classification è un componente fondamentale della NetApp Console ed è disponibile senza costi aggiuntivi.</block>
+  <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience protegge, rileva e supporta il ripristino dei carichi di lavoro delle applicazioni e delle condivisioni di file dalle minacce ransomware negli storage locali e cloud. Ransomware Resilience consente backup e ripristino sicuri, aiutando le organizzazioni a salvaguardare i dati critici e a mantenere la continuità aziendale per Oracle, MySQL, datastore VM, storage NAS e altro ancora.</block>
 </blocks>
