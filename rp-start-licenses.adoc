@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-licenses.html 
 keywords: bluexp license, ransomware protection license, netapp console 
-summary: Inizia a usare NeApp Ransomware Resilience impostando le licenze. 
+summary: Assicurati di soddisfare i requisiti di licenza per Ransomware Resilience per proteggere i tuoi sistemi e carichi di lavoro. 
 ---
 = Imposta la licenza per NetApp Ransomware Resilience
 :hardbreaks:
@@ -16,23 +16,20 @@ Con NetApp Ransomware Resilience puoi utilizzare diversi piani di licenza.
 
 Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, della cartella o del progetto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console"^] .
 
-*Tipi di licenza* È possibile utilizzare i seguenti tipi di licenza:
+*Tipi di licenza* Ransomware Resilience è disponibile con i seguenti tipi di licenza:
 
-* Registrati per una prova gratuita di 30 giorni.
-* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace.
-* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.
+* Prova gratuita di 30 giorni
+* Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace
+* Bring your own license (BYOL): un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.
 
-
-
-NOTE: Se ti iscrivi a un periodo di prova di sei mesi, dovresti avere una licenza NLF.
 
 Dopo aver impostato BYOL o acquistato un abbonamento PAYGO, puoi visualizzare la licenza nella sezione Licenses and subscriptions della Console.
 
-Una volta terminata la prova gratuita o scaduta la licenza o l'abbonamento, puoi comunque effettuare le seguenti operazioni in Ransomware Resilience:
+Una volta terminato il periodo di prova gratuito o scaduta la licenza o l'abbonamento, puoi comunque:
 
-* Visualizza i carichi di lavoro e il loro stato di integrità.
-* Eliminare qualsiasi risorsa, ad esempio una policy.
-* Esegui tutte le operazioni pianificate create durante il periodo di prova o in base alla licenza.
+* Visualizza i carichi di lavoro e lo stato di integrità dei carichi di lavoro
+* Elimina risorse come le policy
+* Esegui tutte le operazioni pianificate create durante il periodo di prova o sotto la licenza
 
 
 
@@ -46,14 +43,11 @@ NOTE: Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti 
 
 
 
-== Provalo utilizzando una prova gratuita di 30 giorni
+== Prova Ransomware Resilience con una prova gratuita di 30 giorni
 
-Puoi provare Ransomware Resilience utilizzando la versione di prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.
+Puoi provare Ransomware Resilience con una prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.
 
-
-NOTE: Con la versione di ottobre 2024, le nuove distribuzioni di Ransomware Resilience avranno ora 30 giorni di prova gratuita.  In precedenza, Ransomware Resilience offriva una prova gratuita di 90 giorni.  Se hai già usufruito della prova gratuita di 90 giorni, l'offerta sarà valida per 90 giorni.
-
-Durante la sperimentazione non sono previsti limiti di capienza.
+Durante la prova non vengono applicati limiti alla capacità di archiviazione.
 
 Puoi ottenere una licenza o abbonarti in qualsiasi momento e non ti verrà addebitato alcun costo fino al termine del periodo di prova di 30 giorni.  Per continuare dopo il periodo di prova di 30 giorni, dovrai acquistare una licenza BYOL o un abbonamento PAYGO.
 
@@ -69,11 +63,12 @@ Se è la prima volta che accedi a questo servizio, verrà visualizzata la pagina
 +
 image:screen-landing.png["Screenshot della landing page per Ransomware Resilience"]
 
-. Se non hai ancora aggiunto un connettore per altri servizi, aggiungine uno.
+. Se non hai ancora aggiunto un agente Console per altri servizi,link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["aggiungine uno"^] .
+. Nella landing page di Ransomware Resilience, seleziona *Inizia individuando i carichi di lavoro* per individuare i tuoi carichi di lavoro.
 +
-Per aggiungere un agente Console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["Scopri di più sugli agenti della console"^] .
 
-. Dopo aver configurato un agente Console, nella landing page di Ransomware Resilience, il pulsante per aggiungere un agente Console si trasforma in un pulsante per l'individuazione dei carichi di lavoro.  Seleziona *Inizia scoprendo i carichi di lavoro*.
+NOTE: Questa opzione è disponibile solo se hai installato correttamente un agente Console.
+
 . Per rivedere le informazioni sulla prova gratuita, seleziona l'opzione a discesa in alto a destra.
 
 
@@ -114,7 +109,7 @@ NOTE: Ti verrà inviata un'e-mail contenente il numero di serie di Ransomware Re
 +
 image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenza."]
 
-. Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail che ti è stata inviata e seleziona *Aggiungi licenza*.
+. Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail che ti è stata inviata, quindi seleziona *Aggiungi licenza*.
 . Per visualizzare i dettagli della licenza, dal menu di navigazione a sinistra della Console, selezionare *Amministrazione* > * Licenses and subscriptions*.
 +
 ** Per visualizzare le informazioni sull'abbonamento, seleziona *Abbonamenti*.
@@ -123,7 +118,7 @@ image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenz
 
 . Ritorno alla resilienza del ransomware.  Dal menu di navigazione a sinistra della Console, seleziona *Protezione* > *Ransomware Resilience*.
 +
-Viene visualizzato un messaggio che indica che è stata aggiunta una licenza.
+Un messaggio conferma che è stata aggiunta una licenza.
 
 
 
@@ -260,7 +255,7 @@ TIP: Questo messaggio appare anche in Licenses and subscriptions e in https://do
 +
 Dopo aver pagato la licenza e averla registrata sul sito di supporto NetApp , la console aggiorna automaticamente la licenza.  La pagina Licenze dei servizi dati rifletterà la modifica entro 5-10 minuti.
 
-. Se la console non riesce ad aggiornare automaticamente la licenza, è necessario caricare manualmente il file di licenza.
+. Se la Console non riesce ad aggiornare automaticamente la licenza, è necessario caricare manualmente il file di licenza.
 +
 .. È possibile ottenere il file di licenza dal sito di supporto NetApp .
 .. Nella Console, seleziona **Amministrazione** > ** Licenses and subscriptions**.

@@ -142,7 +142,7 @@ Viene visualizzata la pagina Avvisi.
 
 Nella scheda Avvisi è possibile verificare se si è verificata un'attività dannosa o un comportamento anomalo da parte dell'utente.
 
-Per visualizzare il rilevamento a livello di utente, è necessario aver configurato un agente di attività utente e abilitato un criterio di protezione con rilevamento del comportamento utente. Se il rilevamento del comportamento dell'utente è abilitato, la colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi; non viene visualizzata se il rilevamento del comportamento dell'utente non è abilitato. Per abilitare il rilevamento degli utenti sospetti, vederelink:suspicious-user-activity.html["Attività utente sospetta"] .
+Per visualizzare gli avvisi a livello utente, è necessario aver configurato un agente di attività utente e abilitato un criterio di protezione con rilevamento del comportamento utente. Se il rilevamento del comportamento dell'utente è abilitato, la colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi; non viene visualizzata se il rilevamento del comportamento dell'utente non è abilitato.  Per abilitare il rilevamento degli utenti sospetti, vederelink:suspicious-user-activity.html["Attività utente sospetta"] .
 
 
 NOTE: Se si utilizza NetApp Data Infrastructure Insights (DII) Workload Security, si consiglia di utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience; tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di riferimento per abilitare questa associazione.
@@ -183,7 +183,7 @@ Se hai configurato il rilevamento degli utenti sospetti per visualizzare comport
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
 . Seleziona un avviso.
 . Esaminare gli incidenti nell'avviso.
-. Per impedire a un utente sospetto di accedere ulteriormente al tuo ambiente monitorato dalla Console, seleziona *Blocca* sotto il nome dell'utente.
+. Per bloccare un utente sospetto nel tuo ambiente, seleziona *Blocca* sotto il nome dell'utente.
 
 
 
@@ -223,7 +223,7 @@ Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi da
 Se si elimina un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware vengono eliminate definitivamente.
 
 
-CAUTION: Se si ignora un avviso, non è possibile ripristinare lo stato precedente e non è possibile annullare questa modifica.
+CAUTION: Se si ignora un avviso, non è possibile modificarne lo stato né annullare la modifica.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -277,5 +277,5 @@ TIP: Se un volume presenta più avvisi, potrebbe essere necessario scaricare l'e
 +
 image:screen-alerts-incidents-impacted-files.png["elenco dei file interessati da un avviso specifico"]
 
-. Per tale incidente, seleziona l'icona di download e scarica l'elenco dei file interessati in formato CSV.
+. Per quell'incidente, seleziona l'icona di download per scaricare l'elenco dei file interessati in formato CSV.
 

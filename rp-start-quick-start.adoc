@@ -27,7 +27,7 @@ Per queste attività è richiesto il ruolo di _Amministratore della console_.
 * link:rp-start-licenses.html["Impostare la licenza"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"]Imposta la resilienza al ransomware
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"]Inizia con Ransomware Resilience
 [role="quick-margin-para"]
 Per queste attività è richiesto il ruolo di _amministratore di Ransomware Resilience_.
 

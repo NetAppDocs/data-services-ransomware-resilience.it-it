@@ -14,7 +14,7 @@ summary: Il rilevamento delle attività sospette degli utenti in Ransomware Resi
 [role="lead"]
 Ransomware Resilience supporta il rilevamento di comportamenti sospetti degli utenti nelle policy di rilevamento, consentendo di affrontare gli incidenti ransomware a livello di utente.
 
-Ransomware Resilience rileva le attività sospette degli utenti analizzando gli eventi di attività degli utenti generati da FPolicy in ONTAP. Per raccogliere i dati sulle attività degli utenti, è necessario distribuire uno o più agenti di attività degli utenti. L'agente è un server Linux o una macchina virtuale con connettività ai dispositivi del tuo tenant.
+Ransomware Resilience rileva le attività sospette degli utenti analizzando gli eventi di attività degli utenti generati da FPolicy in ONTAP. Per raccogliere dati sull'attività dell'utente, è necessario distribuire uno o più agenti di attività dell'utente. L'agente è un server Linux o una macchina virtuale con connettività ai dispositivi del tuo tenant.
 
 
 
@@ -24,8 +24,8 @@ Per attivare il rilevamento delle attività sospette degli utenti in Ransomware 
 
 Un agente può ospitare più raccoglitori di dati. I raccoglitori di dati inviano i dati a una posizione SaaS per l'analisi. Esistono due tipi di collezionisti:
 
-* il **collettore dati** raccoglie i dati sull'attività degli utenti da ONTAP.
-* il **connettore directory utente** si connette alla tua directory per mappare gli ID utente ai nomi utente.
+* Il **collettore dati** raccoglie i dati sull'attività degli utenti da ONTAP.
+* Il **connettore directory utente** si connette alla tua directory per mappare gli ID utente ai nomi utente.
 
 
 I collettori vengono configurati nelle impostazioni di Resilienza ransomware.
@@ -34,7 +34,7 @@ I collettori vengono configurati nelle impostazioni di Resilienza ransomware.
 
 == Abilita il rilevamento delle attività sospette degli utenti
 
-*Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore del comportamento utente di Ransomware Resilience. Non è possibile eseguire questa attività con il ruolo di amministratore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+*Ruolo Console obbligatorio* Per attivare il rilevamento di attività utente sospette, è necessario il ruolo di amministratore dell'organizzazione.  Per le configurazioni successive relative ad attività utente sospette, è necessario il ruolo di amministratore del comportamento utente Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 
 
@@ -46,7 +46,7 @@ Gli agenti di attività utente sono ambienti eseguibili per i raccoglitori di da
 
 ==== Requisiti
 
-Per installare un agente di attività utente, è necessario un host o una macchina virtuale con uno dei seguenti requisiti di sistema operativo e server supportati.
+Per installare un agente di attività utente, è necessario un host o una macchina virtuale che soddisfi i seguenti requisiti del sistema operativo e del server supportati.
 
 **Requisiti del sistema operativo**
 

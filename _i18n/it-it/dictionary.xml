@@ -473,24 +473,13 @@
   <block id="1f25ef09ab6fce0b56c79cd4246453be" category="paragraph">*È possibile disattivare le policy?*</block>
   <block id="c90f429b2fc82db14813e44ccf0893a7" category="paragraph">È possibile disabilitare ARP nei criteri di rilevamento tramite l'interfaccia utente di System Manager, le API o la CLI.</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">È possibile disattivare i criteri FPolicy e di backup applicando un criterio diverso che non li includa.</block>
-  <block id="0a0e0e0ad04e5c7e8ed3c1b30cb4d073" category="summary">Inizia a usare NeApp Ransomware Resilience impostando le licenze.</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">Imposta la licenza per NetApp Ransomware Resilience</block>
   <block id="9472cf1130b90417862c1aa4710f22a7" category="paragraph">Con NetApp Ransomware Resilience puoi utilizzare diversi piani di licenza.</block>
   <block id="bf82f97d170b8b28711b0f6354af9b31" category="inline-link">Scopri di più sui ruoli di accesso alla console</block>
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, della cartella o del progetto.<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> .</block>
-  <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*Tipi di licenza* È possibile utilizzare i seguenti tipi di licenza:</block>
-  <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace.</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">Dopo aver impostato BYOL o acquistato un abbonamento PAYGO, puoi visualizzare la licenza nella sezione Licenses and subscriptions della Console.</block>
-  <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">Una volta terminata la prova gratuita o scaduta la licenza o l'abbonamento, puoi comunque effettuare le seguenti operazioni in Ransomware Resilience:</block>
-  <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">Visualizza i carichi di lavoro e il loro stato di integrità.</block>
-  <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">Eliminare qualsiasi risorsa, ad esempio una policy.</block>
-  <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">Esegui tutte le operazioni pianificate create durante il periodo di prova o in base alla licenza.</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">Altre licenze</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.</block>
-  <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">Provalo utilizzando una prova gratuita di 30 giorni</block>
-  <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">Puoi provare Ransomware Resilience utilizzando la versione di prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.</block>
-  <block id="6d82276368a10a436380f0cd7fa6094d" category="admonition">Con la versione di ottobre 2024, le nuove distribuzioni di Ransomware Resilience avranno ora 30 giorni di prova gratuita.  In precedenza, Ransomware Resilience offriva una prova gratuita di 90 giorni.  Se hai già usufruito della prova gratuita di 90 giorni, l'offerta sarà valida per 90 giorni.</block>
-  <block id="88c474e49a0cbbc7ef17d052040cd008" category="paragraph">Durante la sperimentazione non sono previsti limiti di capienza.</block>
   <block id="3ad87b9da828fc1c8e612ab5674dbabe" category="paragraph">Puoi ottenere una licenza o abbonarti in qualsiasi momento e non ti verrà addebitato alcun costo fino al termine del periodo di prova di 30 giorni.  Per continuare dopo il periodo di prova di 30 giorni, dovrai acquistare una licenza BYOL o un abbonamento PAYGO.</block>
   <block id="f37d436fdc8600ce24709a8f4435ec79" category="paragraph">Durante la prova avrai piena funzionalità.</block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="inline-link">Consolle</block>
@@ -498,10 +487,6 @@
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">Accedi alla Console.</block>
   <block id="16bcca2caaffd4aceb0b9f940711e44a" category="list-text">Dalla NetApp Console, seleziona *Protezione* &gt; *Ransomware Resilience*.</block>
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">Se è la prima volta che accedi a questo servizio, verrà visualizzata la pagina di destinazione.</block>
-  <block id="771e1ea643a8723d0d0dfad6c2b70ace" category="list-text">Se non hai ancora aggiunto un connettore per altri servizi, aggiungine uno.</block>
-  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">Scopri di più sugli agenti della console</block>
-  <block id="395a0c83d18cd49c5468e19cda311fa7" category="paragraph">Per aggiungere un agente Console, fare riferimento a<block ref="552a7d66ccd9c93a9dbc55fd8ef74d52" category="inline-link-rx"></block> .</block>
-  <block id="ce56f7856e3d6cb0eb9ff3ddabe5ec4e" category="list-text">Dopo aver configurato un agente Console, nella landing page di Ransomware Resilience, il pulsante per aggiungere un agente Console si trasforma in un pulsante per l'individuazione dei carichi di lavoro.  Seleziona *Inizia scoprendo i carichi di lavoro*.</block>
   <block id="7fd2f910bce182f3bed45cb0ffe3f2b7" category="list-text">Per rivedere le informazioni sulla prova gratuita, seleziona l'opzione a discesa in alto a destra.</block>
   <block id="07b00cce8ecdc9955eb27940a652e625" category="paragraph">*Al termine del periodo di prova, ottieni un abbonamento o una licenza*</block>
   <block id="a668e7961280a1c2dd9b2e1867761d44" category="paragraph">Al termine del periodo di prova gratuito, puoi abbonarti tramite uno dei Marketplace oppure acquistare una licenza da NetApp.</block>
@@ -523,7 +508,6 @@
   <block id="adee13c3532773f19ac1ed1cd57fb86d" category="list-text">Aggiungere la licenza alla Console selezionando *Aggiungi licenza*.</block>
   <block id="2e8bc7beff420b094bb88e9d8c7ae468" category="inline-image-macro">Screenshot della pagina Aggiungi licenza.</block>
   <block id="91aa021bc5ef766666131294c51b12a9" category="paragraph"><block ref="91aa021bc5ef766666131294c51b12a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dda85ea2192849a87663a1971ff2c144" category="list-text">Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail che ti è stata inviata e seleziona *Aggiungi licenza*.</block>
   <block id="44c74befbf9a8104854254c21263bbd0" category="list-text">Per visualizzare i dettagli della licenza, dal menu di navigazione a sinistra della Console, selezionare *Amministrazione* &gt; * Licenses and subscriptions*.</block>
   <block id="6ba03f72ccb23acc2e71d13b30e6a6f3" category="list-text">Per visualizzare le informazioni sull'abbonamento, seleziona *Abbonamenti*.</block>
   <block id="3a868051eb374227c279870a3cc58719" category="list-text">Per visualizzare le licenze BYOL, selezionare *Licenze servizi dati*.</block>
@@ -574,7 +558,6 @@
   <block id="3973bc267f97fbc53e553dbba08e2ea9" category="admonition">Questo messaggio appare anche in Licenses and subscriptions e in<block ref="a12300a172aa5e6e63382bcb48a8348c" category="inline-link-rx"></block> .</block>
   <block id="bf817abc839636c237e9679a5b237f47" category="list-text">Puoi inviare un'e-mail all'assistenza per richiedere un aggiornamento della tua licenza.</block>
   <block id="153d23d2fc1cd1fafa2626b2ebad671d" category="paragraph">Dopo aver pagato la licenza e averla registrata sul sito di supporto NetApp , la console aggiorna automaticamente la licenza.  La pagina Licenze dei servizi dati rifletterà la modifica entro 5-10 minuti.</block>
-  <block id="6c1f5db8cc1f713f620fa21a318cf1bc" category="list-text">Se la console non riesce ad aggiornare automaticamente la licenza, è necessario caricare manualmente il file di licenza.</block>
   <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">È possibile ottenere il file di licenza dal sito di supporto NetApp .</block>
   <block id="f3538d2e62d8886ed134a8cd0baef1b1" category="list-text">Nella Console, seleziona **Amministrazione** &gt; ** Licenses and subscriptions**.</block>
   <block id="08fc265b64fb33dd4dd39826e253b59a" category="list-text">Selezionare la scheda *Licenze servizi dati*, selezionare l'icona *Azioni...* per il numero di serie che si sta aggiornando, quindi selezionare *Aggiorna licenza*.</block>
@@ -646,7 +629,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Uno</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>Rivedere i prerequisiti</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Due</block>
-  <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Imposta la resilienza al ransomware</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">Preparare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform o Microsoft Azure come destinazione di backup</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> .</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">Scopri i carichi di lavoro nella Console</block>
@@ -841,8 +823,6 @@
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">Rileva attività dannose e comportamenti anomali degli utenti</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">Nella scheda Avvisi è possibile verificare se si è verificata un'attività dannosa o un comportamento anomalo da parte dell'utente.</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">Attività utente sospetta</block>
-  <block id="92733af7522951b34c707ece97b76dbb" category="paragraph">Per visualizzare il rilevamento a livello di utente, è necessario aver configurato un agente di attività utente e abilitato un criterio di protezione con rilevamento del comportamento utente. Se il rilevamento del comportamento dell'utente è abilitato, la colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi; non viene visualizzata se il rilevamento del comportamento dell'utente non è abilitato. Per abilitare il rilevamento degli utenti sospetti, vedere<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> .</block>
-  <block id="df6951a826abfdd03d428573cabc8a91" category="admonition">Se si utilizza NetApp Data Infrastructure Insights (DII) Workload Security, si consiglia di utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience; tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di riferimento per abilitare questa associazione.</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">Visualizza attività dannose</block>
   <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">Quando Autonomous Ransomware Protection attiva un avviso in Ransomware Resilience, puoi visualizzare i seguenti dettagli:</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">Entropia dei dati in arrivo</block>
@@ -859,7 +839,6 @@
   <block id="24d8050f046c3ac972fd95f26e1a8670" category="list-text">Seleziona un incidente per esaminarne i dettagli.</block>
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">Configurare le impostazioni di resilienza al ransomware</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">Se hai configurato il rilevamento degli utenti sospetti per visualizzare comportamenti anomali degli utenti, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare le impostazioni utente sospette, vedere<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block> .</block>
-  <block id="ec2349017ee84d143f6965ba0b643c86" category="list-text">Per impedire a un utente sospetto di accedere ulteriormente al tuo ambiente monitorato dalla Console, seleziona *Blocca* sotto il nome dell'utente.</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">Contrassegna gli incidenti ransomware come pronti per il ripristino (dopo che gli incidenti sono stati neutralizzati)</block>
   <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">Dopo aver fermato l'attacco, informa l'amministratore dell'archiviazione che i dati sono pronti, in modo che possa iniziare il ripristino.</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
@@ -873,7 +852,6 @@
   <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.</block>
   <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.  Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso per tale comportamento.</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">Se si elimina un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware vengono eliminate definitivamente.</block>
-  <block id="e092b1515493abdb05e77ec47a53f36f" category="admonition">Se si ignora un avviso, non è possibile ripristinare lo stato precedente e non è possibile annullare questa modifica.</block>
   <block id="46b4f01c45e92cd2d2fe7d4406168b5d" category="list-text">Seleziona uno o più incidenti.  Oppure, seleziona tutti gli incidenti selezionando la casella ID incidente in alto a sinistra della tabella.</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">Se stabilisci che l'incidente non rappresenta una minaccia, scartalo come falso positivo:</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">Seleziona l'incidente.</block>
@@ -1785,17 +1763,13 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">Il rilevamento delle attività sospette degli utenti in Ransomware Resilience consente di rilevare le attività degli utenti che potrebbero rappresentare una potenziale minaccia.</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">Configurare il rilevamento delle attività sospette degli utenti in NetApp Ransomware Resilience</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">Ransomware Resilience supporta il rilevamento di comportamenti sospetti degli utenti nelle policy di rilevamento, consentendo di affrontare gli incidenti ransomware a livello di utente.</block>
-  <block id="97f8807a01c3206f369065a241cf5ac7" category="paragraph">Ransomware Resilience rileva le attività sospette degli utenti analizzando gli eventi di attività degli utenti generati da FPolicy in ONTAP. Per raccogliere i dati sulle attività degli utenti, è necessario distribuire uno o più agenti di attività degli utenti. L'agente è un server Linux o una macchina virtuale con connettività ai dispositivi del tuo tenant.</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">Agenti e collezionisti</block>
   <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">Per attivare il rilevamento delle attività sospette degli utenti in Ransomware Resilience, è necessario installare almeno un agente di attività utente. Quando si attiva la funzionalità relativa alle attività sospette degli utenti dalla dashboard di Ransomware Resilience, è necessario fornire le informazioni sull'host dell'agente per attivare la funzionalità.</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">Un agente può ospitare più raccoglitori di dati. I raccoglitori di dati inviano i dati a una posizione SaaS per l'analisi. Esistono due tipi di collezionisti:</block>
-  <block id="4fb02306f3b85b6cfd31c67b79007829" category="list-text">il **collettore dati** raccoglie i dati sull'attività degli utenti da ONTAP.</block>
-  <block id="4449b11da47ae4743bfe16fdd7a33631" category="list-text">il **connettore directory utente** si connette alla tua directory per mappare gli ID utente ai nomi utente.</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">I collettori vengono configurati nelle impostazioni di Resilienza ransomware.</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">Aggiungi un agente di attività utente</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">Gli agenti di attività utente sono ambienti eseguibili per i raccoglitori di dati; i raccoglitori di dati condividono gli eventi di attività utente con Ransomware Resilience. È necessario creare almeno un agente di attività utente per abilitare il rilevamento di attività utente sospette.</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">Requisiti</block>
-  <block id="69cba9646d8849744460eb9ba06c7bd6" category="paragraph">Per installare un agente di attività utente, è necessario un host o una macchina virtuale con uno dei seguenti requisiti di sistema operativo e server supportati.</block>
   <block id="176c18a49aa227401be466a34a903666" category="paragraph">**Requisiti del sistema operativo**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">Sistema operativo</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">Versioni supportate</block>
@@ -1821,7 +1795,6 @@
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">Il server deve soddisfare i seguenti requisiti minimi:</block>
   <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**: 4 CORE</block>
   <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**RAM**: 16 GB di RAM</block>
-  <block id="465860b9bc6b405baa8ced9914b08ab3" category="list-text">**Spazio su disco**: 35 GB di spazio libero su disco</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">Se è la prima volta che crei un agente di attività utente, vai alla **Dashboard**. Nel riquadro **Attività utente**, seleziona **Attiva**.</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">Se vuoi aggiungere un ulteriore agente di attività utente, vai su *Impostazioni*, individua il riquadro **Attività utente**, quindi seleziona **Gestisci**. Nella schermata Attività utente, seleziona la scheda **Agenti attività utente**, quindi **Aggiungi**.</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">Seleziona un **fornitore cloud**, quindi una **regione**. Selezionare **Avanti**.</block>
@@ -1834,7 +1807,6 @@
   <block id="7298950e09abf5a29938d42a442acced" category="paragraph"><block ref="7298950e09abf5a29938d42a442acced" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">Rivedi le tue impostazioni. Selezionare *Attiva* per completare l'aggiunta dell'agente di attività utente.</block>
   <block id="a5990ac92f36dcb99f016321efbfa2cd" category="list-text">Conferma che l'agente di attività utente è stato creato correttamente. Nel riquadro Attività utente, una distribuzione riuscita viene visualizzata come In esecuzione.</block>
-  <block id="58dc71d80ac36fa12a160eef553b4dac" category="paragraph">Dopo aver creato correttamente l'agente di attività utente, torna al menu **Impostazioni**, quindi seleziona **Gestisci** nel riquadro Attività utente. Selezionare la scheda **Agente attività utente**, quindi selezionare l'agente attività utente per visualizzarne i dettagli, inclusi i collettori dati e i connettori della directory utente.</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">Aggiungi un raccoglitore di dati</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">aggiungere una politica di rilevamento</block>
   <block id="24590b7519b5649099545f7ef699e504" category="paragraph">I collettori di dati vengono creati automaticamente quando si attiva una strategia di protezione dal ransomware con rilevamento delle attività sospette degli utenti. Per ulteriori informazioni, consultare <block ref="c43e895be468efa96867f0ef21f97de4" category="inline-xref-macro-rx"></block> .</block>
@@ -1842,7 +1814,6 @@
   <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">Screenshot delle impostazioni dell'attività utente</block>
   <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ae5063128f989ec31ec308b7dd0cb2ed" category="section-title">Aggiungi un connettore di directory utente</block>
-  <block id="0e27165c28d4f54b78e7e5ec47c83fc4" category="paragraph">Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di directory utente.</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">In Ransomware Resilience, vai su *Impostazioni*.</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">Nel riquadro Attività utente, seleziona **Gestisci**.</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">Selezionare la scheda **Connettori directory utente**, quindi **Aggiungi**.</block>
@@ -2018,8 +1989,6 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Affinché Ransomware Resilience fornisca avvisi sui comportamenti sospetti degli utenti, è necessario configurare un agente di attività utente. Per maggiori informazioni, vedere <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>.</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">Selezionare il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati crittografati, seleziona **Ripristino personalizzato**. Per il ripristino in caso di attività sospette degli utenti, seleziona **Violazione dei dati**.</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">Non è possibile modificare la configurazione dell'esercitazione di preparazione mentre l'esercitazione è in esecuzione. È possibile reimpostare il trapano per fermarlo e modificarne la configurazione.</block>
-  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.</block>
-  <block id="18105991dc2815c0ab610717f615d548" category="admonition">Se ti iscrivi a un periodo di prova di sei mesi, dovresti avere una licenza NLF.</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi. Tuttavia, Ransomware Resilience può essere integrato con NetApp Backup and Recovery, anche se non si dispone di una licenza separata per Backup and Recovery.</block>
   <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">Scopri i passaggi principali da seguire per impostare la Ransomware Resilience e proteggere i tuoi carichi di lavoro.</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">Per informazioni dettagliate, seguire i link presenti in ogni passaggio.</block>
@@ -2055,4 +2024,37 @@
   <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">All'interno di NetApp Ransomware Resilience, puoi utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza. Data Classification è un componente fondamentale della NetApp Console ed è disponibile senza costi aggiuntivi.</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience protegge, rileva e supporta il ripristino dei carichi di lavoro delle applicazioni e delle condivisioni di file dalle minacce ransomware negli storage locali e cloud. Ransomware Resilience consente backup e ripristino sicuri, aiutando le organizzazioni a salvaguardare i dati critici e a mantenere la continuità aziendale per Oracle, MySQL, datastore VM, storage NAS e altro ancora.</block>
+  <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">Assicurati di soddisfare i requisiti di licenza per Ransomware Resilience per proteggere i tuoi sistemi e carichi di lavoro.</block>
+  <block id="785a67fbf7c46bd5774af376154df40a" category="paragraph">*Tipi di licenza* Ransomware Resilience è disponibile con i seguenti tipi di licenza:</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">Prova gratuita di 30 giorni</block>
+  <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace</block>
+  <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">Bring your own license (BYOL): un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp . È possibile utilizzare il numero di serie della licenza per attivare BYOL nella Console.</block>
+  <block id="16c0368d04c8f5c865d6c2e90734f733" category="paragraph">Una volta terminato il periodo di prova gratuito o scaduta la licenza o l'abbonamento, puoi comunque:</block>
+  <block id="99c8f1488beda59e11f21ed9f557f56e" category="list-text">Visualizza i carichi di lavoro e lo stato di integrità dei carichi di lavoro</block>
+  <block id="1975faa7cb5e0e460ae859ca96dbfd00" category="list-text">Elimina risorse come le policy</block>
+  <block id="f51b0d61321d5c9f169d1ee6403840fa" category="list-text">Esegui tutte le operazioni pianificate create durante il periodo di prova o sotto la licenza</block>
+  <block id="3819161dec7fd89239516062a4cc56a3" category="section-title">Prova Ransomware Resilience con una prova gratuita di 30 giorni</block>
+  <block id="e20a7cd21fba7d540ffd7589c1c59928" category="paragraph">Puoi provare Ransomware Resilience con una prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.</block>
+  <block id="85a5bc1275ab09d60eed9f7c3b4d429b" category="paragraph">Durante la prova non vengono applicati limiti alla capacità di archiviazione.</block>
+  <block id="ca78bf5eeed0245ff3d76d132c93b609" category="inline-link-macro">aggiungine uno</block>
+  <block id="94c135a38d325e223714d1f313c8efec" category="list-text">Se non hai ancora aggiunto un agente Console per altri servizi,<block ref="f7f69135987ef22de86b03a4f14a7bc8" category="inline-link-macro-rx"></block> .</block>
+  <block id="edbdd3e3e169cd712816f78b82e91c2e" category="list-text">Nella landing page di Ransomware Resilience, seleziona *Inizia individuando i carichi di lavoro* per individuare i tuoi carichi di lavoro.</block>
+  <block id="2866dfee0ffdf3a11a8323f6d53635f4" category="admonition">Questa opzione è disponibile solo se hai installato correttamente un agente Console.</block>
+  <block id="933f33d572b754e91a336439049ae279" category="list-text">Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, inserisci il numero di serie incluso nell'e-mail che ti è stata inviata, quindi seleziona *Aggiungi licenza*.</block>
+  <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">Un messaggio conferma che è stata aggiunta una licenza.</block>
+  <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">Se la Console non riesce ad aggiornare automaticamente la licenza, è necessario caricare manualmente il file di licenza.</block>
+  <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Inizia con Ransomware Resilience</block>
+  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">Per visualizzare gli avvisi a livello utente, è necessario aver configurato un agente di attività utente e abilitato un criterio di protezione con rilevamento del comportamento utente. Se il rilevamento del comportamento dell'utente è abilitato, la colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi; non viene visualizzata se il rilevamento del comportamento dell'utente non è abilitato.  Per abilitare il rilevamento degli utenti sospetti, vedere<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> .</block>
+  <block id="3c6a637355e70f686e34e6e7c966c200" category="admonition">Se si utilizza NetApp Data Infrastructure Insights (DII) Workload Security, si consiglia di utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience; tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di riferimento per abilitare questa associazione.</block>
+  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">Per bloccare un utente sospetto nel tuo ambiente, seleziona *Blocca* sotto il nome dell'utente.</block>
+  <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">Se si ignora un avviso, non è possibile modificarne lo stato né annullare la modifica.</block>
+  <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">Per quell'incidente, seleziona l'icona di download per scaricare l'elenco dei file interessati in formato CSV.</block>
+  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">Ransomware Resilience rileva le attività sospette degli utenti analizzando gli eventi di attività degli utenti generati da FPolicy in ONTAP. Per raccogliere dati sull'attività dell'utente, è necessario distribuire uno o più agenti di attività dell'utente. L'agente è un server Linux o una macchina virtuale con connettività ai dispositivi del tuo tenant.</block>
+  <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">Il **collettore dati** raccoglie i dati sull'attività degli utenti da ONTAP.</block>
+  <block id="b6173a051353d59a4ee775fcef288441" category="list-text">Il **connettore directory utente** si connette alla tua directory per mappare gli ID utente ai nomi utente.</block>
+  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*Ruolo Console obbligatorio* Per attivare il rilevamento di attività utente sospette, è necessario il ruolo di amministratore dell'organizzazione.  Per le configurazioni successive relative ad attività utente sospette, è necessario il ruolo di amministratore del comportamento utente Ransomware Resilience. <block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>.</block>
+  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">Per installare un agente di attività utente, è necessario un host o una macchina virtuale che soddisfi i seguenti requisiti del sistema operativo e del server supportati.</block>
+  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**Spazio su disco**: 35 GB di spazio libero su disco</block>
+  <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">Dopo aver creato correttamente l'agente di attività utente, torna al menu **Impostazioni**, quindi seleziona **Gestisci** nel riquadro Attività utente. Selezionare la scheda **Agente attività utente**, quindi selezionare l'agente attività utente per visualizzarne i dettagli, inclusi i collettori dati e i connettori della directory utente.</block>
+  <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di directory utente.</block>
 </blocks>
