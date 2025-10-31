@@ -121,7 +121,7 @@ Dopo aver creato correttamente l'agente di attività utente, torna al menu **Imp
 
 === Aggiungi un raccoglitore di dati
 
-I collettori di dati vengono creati automaticamente quando si attiva una strategia di protezione dal ransomware con rilevamento delle attività sospette degli utenti. Per ulteriori informazioni, consultare xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [aggiungere una politica di rilevamento] .
+I collettori di dati vengono creati automaticamente quando si attiva una strategia di protezione dal ransomware con rilevamento delle attività sospette degli utenti. Per maggiori informazioni, vedere xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[aggiungere una politica di rilevamento].
 
 È possibile visualizzare i dettagli del raccoglitore dati. Da Impostazioni, seleziona **Gestisci** nel riquadro Attività utente. Selezionare la scheda **Raccolta dati**, quindi selezionare la raccolta dati per visualizzarne i dettagli o metterla in pausa.
 

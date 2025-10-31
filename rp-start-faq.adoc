@@ -18,22 +18,21 @@ Questa sezione FAQ può aiutarti se stai cercando una risposta rapida a una doma
 
 == Distribuzione
 
-*È necessaria una licenza per utilizzare Ransomware Resilience?*
-
+.Hai bisogno di una licenza per utilizzare Ransomware Resilience?
 È possibile utilizzare i seguenti tipi di licenza:
 
 * Registrati per una prova gratuita di 30 giorni.
 * Acquista un abbonamento pay-as-you-go (PAYGO) a NetApp Intelligent Services e Ransomware Resilience con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace e Microsoft Azure Marketplace.
-* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp .  È possibile utilizzare il numero di serie della licenza per attivare BYOL nella sezione Licenze e abbonamenti della Console.
+* Bring your own license (BYOL), ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante di vendita NetApp . Puoi utilizzare il numero di serie della licenza per attivare BYOL nella sezione Licenses and subscriptions della Console.
 
 
-*Come si abilita la resilienza al ransomware?*  Ransomware Resilience non richiede alcuna abilitazione.  È possibile accedere a Ransomware Resilience dalla NetApp Console.
+.Come si abilita la Ransomware Resilience?
+È possibile accedere a Ransomware Resilience dalla NetApp Console. Assicurati di aver link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["ruoli di accesso"] E link:rp-start-prerequisites.html["prerequisiti"]. Se hai configurato correttamente un agente Console, puoi quindi link:rp-start-discover.html["scoprire i carichi di lavoro"].
 
-Per iniziare, è necessario registrarsi o contattare il proprio rappresentante commerciale NetApp per provare questo servizio.  Quindi, quando si utilizza l'agente Console, saranno incluse le funzionalità appropriate per Ransomware Resilience.
+Per maggiori informazioni, vederelink:rp-start-login.html["Access Ransomware Resilience"] Elink:rp-start-quick-start.html["Guida rapida alla resilienza del ransomware"] .
 
-Per iniziare a utilizzare Ransomware Resilience, seleziona "Inizia a scoprire i carichi di lavoro" dalla pagina di destinazione iniziale.
-
-*Ransomware Resilience è disponibile nelle modalità standard, limitata e privata?*  Al momento, Ransomware Resilience è disponibile solo in modalità standard.  Restate sintonizzati per saperne di più.
+.Ransomware Resilience è disponibile nelle modalità standard, limitata e privata?
+Al momento, Ransomware Resilience è disponibile solo in modalità standard.
 
 Per una spiegazione su queste modalità in tutti i servizi dati NetApp , fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modalità di distribuzione NetApp Console"^] .
 
@@ -41,108 +40,102 @@ Per una spiegazione su queste modalità in tutti i servizi dati NetApp , fare ri
 
 == Accesso
 
-*Qual è l'URL di Ransomware Resilience?*  In un browser, inserisci https://console.netapp.com/["https://console.netapp.com/ransomware-resilience"^] per accedere alla Console.
+.Qual è l'URL di Ransomware Resilience?
+In un browser, inserisci https://console.netapp.com/["https://console.netapp.com/ransomware-resilience"^] per accedere alla Console.
 
-*Come vengono gestiti i permessi di accesso?* https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+.Come vengono gestiti i permessi di accesso?
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^]. Ransomware Resilience ha anche link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["ruoli di accesso dedicati"^].
 
-*Qual è la risoluzione migliore per il tuo dispositivo?*  La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x1080 o superiore.
+.Quale risoluzione del dispositivo è migliore?
+La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x1080 o superiore.
 
-*Quale browser dovrei usare?*  Qualsiasi browser moderno.
-
-
-
-== Interazione con altri servizi
-
-*Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?*  Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP.
-
-*Se imposti una policy utilizzando Ransomware Resilience, dovrai apportare modifiche future solo a questo servizio?*  Ti consigliamo di apportare modifiche alla policy tramite Ransomware Resilience.
-
-*In che modo Ransomware Resilience interagisce con NetApp Backup and Recovery e SnapCenter?*
-
-Ransomware Resilience utilizza i seguenti prodotti e servizi:
-
-* Backup e ripristino per scoprire e impostare criteri di snapshot e backup per carichi di lavoro di condivisione file
-* SnapCenter o SnapCenter per VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM.
+.Quale browser dovrei usare?
+È possibile accedere alla NetApp Console con qualsiasi browser Web moderno.
 
 
-Inoltre, Ransomware Resilience utilizza Backup and Recovery e SnapCenter / SnapCenter per VMware per eseguire un ripristino coerente con i file e i carichi di lavoro.
+
+== Interoperabilità
+
+.Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?
+Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP.
+
+.In che modo Ransomware Resilience interagisce con NetApp Backup and Recovery e SnapCenter?
+Ransomware Resilience interagisce con Backup and Recovery per individuare e impostare policy di snapshot e backup per i carichi di lavoro di condivisione file.
+
+Ransomware Resilience funziona con SnapCenter o SnapCenter per VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM.
+
+Ransomware Resilience funziona anche con Backup and Recovery e SnapCenter (incluso SnapCenter per VMware) per eseguire un ripristino coerente con i file e i carichi di lavoro.
 
 
 
 == Carichi di lavoro
 
-*Da cosa è costituito un carico di lavoro?*  Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file.  Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione.  Ad esempio, un'istanza di Oracle DB distribuita su ora3.host.com può avere rispettivamente vol1 e vol2 per i suoi dati e log.  Questi volumi insieme costituiscono il carico di lavoro per quella specifica istanza dell'istanza Oracle DB.
+.Cos'è un carico di lavoro nel contesto della resilienza al ransomware?
+Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file. Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione.
 
-*In che modo Ransomware Resilience assegna la priorità ai dati del carico di lavoro?*  La priorità dei dati è determinata dalle copie snapshot effettuate e dai backup pianificati.
+Ad esempio, si consideri un database Oracle distribuito su ora3.host.com con `vol1` contenente dati e `vol2` contenente registri. I due volumi costituiscono il carico di lavoro per quell'istanza di Oracle Database.
 
-La priorità del carico di lavoro (critica, standard, importante) è determinata dalle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro.
+.In che modo Ransomware Resilience assegna la priorità ai dati del carico di lavoro?
+La priorità del carico di lavoro (critica, standard, importante) è determinata dalle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro e dai backup pianificati.
 
 link:rp-use-protect.html["Scopri la priorità o l'importanza del carico di lavoro"] .
 
-*Quali carichi di lavoro supporta Ransomware Resilience?*
-
+.Quali carichi di lavoro supporta Ransomware Resilience?
 Ransomware Resilience è in grado di identificare i seguenti carichi di lavoro: Oracle, MySQL, condivisioni di file, storage a blocchi, VM e datastore di VM.
 
-Inoltre, se si utilizza SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da tali prodotti vengono identificati anche in Ransomware Resilience, che può proteggerli e ripristinarli in modo coerente con il carico di lavoro.
+Se utilizzi SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da questi prodotti sono identificati anche in Ransomware Resilience. Ransomware Resilience può proteggere e ripristinare SnapCenter e i carichi di lavoro SnapCenter in modo coerente con il carico di lavoro.
 
-*Come si associano i dati a un carico di lavoro?*
+.Come si associano i dati a un carico di lavoro?
+Ransomware Resilience rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.
 
-Ransomware Resilience associa i dati a un carico di lavoro nei seguenti modi:
+Se disponi SnapCenter o SnapCenter per VMware e hai configurato carichi di lavoro in Backup e ripristino, Ransomware Resilience rileva i carichi di lavoro gestiti da SnapCenter e SnapCenter per VMware e i volumi associati.
 
-* Ransomware Resilience rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.
-* Inoltre, se si dispone di SnapCenter o SnapCenter per VMware e sono stati configurati carichi di lavoro in Backup e ripristino, Ransomware Resilience rileva i carichi di lavoro gestiti da SnapCenter e SnapCenter per VMware e i volumi associati.
+.Che cosa è un carico di lavoro protetto?
+In Ransomware Resilience, un carico di lavoro mostra uno stato di *protetto* quando ha una policy di _rilevamento_ primaria abilitata, ovvero link:concept-ransomware-resilience.html["Protezione autonoma dal ransomware (ARP)"] è abilitato su tutti i volumi correlati al carico di lavoro.
 
+.Che cosa si intende per carico di lavoro "a rischio"?
+Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, viene etichettato come "a rischio" anche se ha un criterio di backup e snapshot abilitato. Per la protezione dal ransomware, dovresti abilitare un link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
 
-*Cos'è un carico di lavoro "protetto"?*  In Ransomware Resilience, un carico di lavoro mostra uno stato "protetto" quando è abilitata una policy di rilevamento primaria.  Per ora, ciò significa che ARP è abilitato su tutti i volumi correlati al carico di lavoro.
-
-*Che cosa si intende per carico di lavoro "a rischio"?*  Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di backup e snapshot abilitato.
-
-*Nuovo volume aggiunto, ma non ancora visualizzato* Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazione e applica i criteri di protezione per proteggere il nuovo volume.
+.Ho aggiunto un nuovo volume, ma non è ancora uscito. Cosa dovrei fare?
+Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazione del carico di lavoro. Dopo che il volume è stato scoperto, link:rp-use-protect.html#add-a-ransomware-protection-strategy["applicare policy di protezione per proteggere il nuovo volume"].
 
 
 
 == Politiche di protezione
 
-*Le policy ransomware Ransomware Resilience coesistono con altri tipi di policy relative ai carichi di lavoro?*  Al momento, Backup e ripristino (Cloud Backup) supporta un criterio di backup per volume.  Pertanto, Backup and Recovery e Ransomware Resilience condividono le policy di backup.
+.Le policy ransomware Ransomware Resilience coesistono con altri tipi di policy relative ai carichi di lavoro?
+Al momento, Backup e ripristino (Cloud Backup) supporta un criterio di backup per volume. Se si configura la protezione del backup con Backup e ripristino, questa condivide i criteri di backup con Ransomware Resilience.
 
 Le copie snapshot non hanno limiti e possono essere aggiunte separatamente da ciascun servizio.
 
-*Quali politiche sono richieste in una strategia di protezione dal ransomware?*
+.Quali politiche sono richieste in una strategia di protezione dal ransomware?
+UN link:rp-use-protect.html#add-a-ransomware-protection-strategy["strategia di protezione dal ransomware"] richiede:
 
-Nella strategia di protezione dal ransomware sono richieste le seguenti policy:
-
-* Criterio di rilevamento del ransomware
-* Politica di snapshot
+* una politica di rilevamento del ransomware e
+* una politica di snapshot
 
 
 Nella strategia Ransomware Resilience non è richiesta una policy di backup.
 
-*Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?*
+.Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?
+Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP. Rileva inoltre se ARP e FPolicy sono abilitati su tutti i volumi in un carico di lavoro rilevato. Le informazioni visualizzate nella Ransomware Resilience Dashboard sono aggregate da altre soluzioni e prodotti NetApp .
 
-Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP e verifica se ARP e FPolicy sono abilitati su tutti i volumi in un carico di lavoro rilevato.  Le informazioni visualizzate inizialmente nella Dashboard sono aggregate da altre soluzioni e prodotti NetApp .
-
-*Ransomware Resilience è a conoscenza delle policy già definite in Backup and Recovery e SnapCenter?*
-
+.Ransomware Resilience è a conoscenza delle policy già definite in Backup and Recovery e SnapCenter?
 Sì, se hai carichi di lavoro gestiti in Backup and Recovery o SnapCenter, le policy gestite da tali prodotti vengono importate in Ransomware Resilience.
 
-*È possibile modificare le policy trasferite da NetApp Backup and Recovery e/o SnapCenter?*
-
+.È possibile modificare le policy trasferite da NetApp Backup and Recovery e/o SnapCenter?
 No, non è possibile modificare i criteri gestiti da Backup and Recovery o SnapCenter da Ransomware Resilience.  È possibile gestire eventuali modifiche a tali criteri in Backup e ripristino o SnapCenter.
 
-*Se esistono policy da ONTAP (già abilitate in System Manager come ARP, FPolicy e snapshot), queste vengono modificate in Ransomware Resilience?*
-
+.Se esistono policy di ONTAP (come ARP, FPolicy e snapshot), queste vengono modificate in Ransomware Resilience?
 No. Ransomware Resilience non modifica alcuna policy di rilevamento esistente (impostazioni ARP, FPolicy) da ONTAP.
 
-*Cosa succede se aggiungi nuove policy in Backup and Recovery o SnapCenter dopo aver effettuato la registrazione a Ransomware Resilience?*
+.Cosa succede se aggiungi nuove policy in Backup and Recovery o SnapCenter dopo aver effettuato la registrazione a Ransomware Resilience?
+Ransomware Resilience riconosce le policy appena create e le modifiche alle policy in Backup and Recovery o SnapCenter.
 
-Ransomware Resilience riconosce tutte le nuove policy create in Backup and Recovery o SnapCenter.
-
-*È possibile modificare le politiche di ONTAP?*
-
+.È possibile modificare le politiche di ONTAP?
 Sì, è possibile modificare le policy da ONTAP in Ransomware Resilience.  È anche possibile creare nuove policy in Ransomware Resilience e applicarle ai carichi di lavoro.  Questa azione sostituisce le policy ONTAP esistenti con le policy create in Ransomware Resilience.
 
-*È possibile disattivare le policy?*
-
-È possibile disabilitare ARP nei criteri di rilevamento tramite l'interfaccia utente di System Manager, le API o la CLI.
+.È possibile disattivare le policy in ONTAP?
+È possibile disabilitare ARP nei criteri di rilevamento tramite l'interfaccia utente di System Manager, le API o la CLI in ONTAP.
 
 È possibile disattivare i criteri FPolicy e di backup applicando un criterio diverso che non li includa.
