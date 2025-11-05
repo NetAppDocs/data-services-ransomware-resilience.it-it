@@ -16,7 +16,11 @@ Con NetApp Ransomware Resilience puoi utilizzare diversi piani di licenza.
 
 Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, della cartella o del progetto. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console"^] .
 
-*Tipi di licenza* Ransomware Resilience è disponibile con i seguenti tipi di licenza:
+
+
+== Tipi di licenza
+
+Ransomware Resilience è disponibile con i seguenti tipi di licenza:
 
 * Prova gratuita di 30 giorni
 * Acquista un abbonamento pay-as-you-go (PAYGO) con Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace o Azure Marketplace

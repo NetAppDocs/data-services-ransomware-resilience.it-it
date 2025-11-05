@@ -1,0 +1,15 @@
+= 
+:allow-uri-read: 
+
+
+* NAS ONTAP in sede (utilizzando protocolli NFS e CIFS) con ONTAP versione 9.11.1 e successive
+* SAN ONTAP in sede (utilizzando protocolli FC, iSCSI e NVMe) con ONTAP versione 9.17.1 e successive
+* Cloud Volumes ONTAP 9.11.1 o versione successiva per AWS (utilizzando i protocolli NFS e CIFS)
+* Cloud Volumes ONTAP 9.11.1 o versione successiva per Google Cloud Platform (utilizzando i protocolli NFS e CIFS)
+* Cloud Volumes ONTAP 9.12.1 o versione successiva per Microsoft Azure (utilizzando i protocolli NFS e CIFS)
+* Cloud Volumes ONTAP 9.17.1 o versione successiva per AWS, Google Cloud Platform e Microsoft Azure (utilizzando i protocolli FC, iSCSI e NVMe)
+* Amazon FSx for NetApp ONTAP, che utilizza la protezione autonoma dal ransomware (ARP e non ARP/AI)
+
+
+
+NOTE: Per utilizzare ARP/AI in ONTAP è necessario ONTAP 9.16 o versione successiva.  + ONTAP non fornisce supporto per la protezione ransomware per volumi FlexGroup , volumi di punti di montaggio, volumi di percorsi di montaggio, volumi offline e volumi di protezione dati (DP).  Assicurati di rivederelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["configurazioni supportate e non supportate in ONTAP"^] .
