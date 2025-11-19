@@ -2059,4 +2059,12 @@
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">Torna alla NetApp Console per utilizzare Ransomware Resilience.</block>
   <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">Se utilizzi SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da tali prodotti sono identificati anche in Ransomware Resilience. Ransomware Resilience è in grado di proteggerli e ripristinarli in modo coerente con il carico di lavoro.</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10 novembre 2025</block>
+  <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">**Supporto del provider cloud**</block>
+  <block id="4dbf3bdbb500347a8ca0ffe04b7e1f6c" category="paragraph">Le attività sospette degli utenti sono disponibili con AWS e Azure nelle seguenti regioni:</block>
+  <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">Fornitore di cloud</block>
+  <block id="f447ac856e7e72435904956e3b15f433" category="cell">Regione</block>
+  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
+  <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">Stati Uniti orientali (us-east-1)</block>
+  <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azzurro</block>
+  <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">Stati Uniti orientali</block>
 </blocks>

@@ -52,8 +52,6 @@ Per installare un agente di attività utente, è necessario un host o una macchi
 
 [cols="2"]
 |===
-
-
 | Sistema operativo | Versioni supportate 
 
 
@@ -92,6 +90,19 @@ Il server deve soddisfare i seguenti requisiti minimi:
 * **Spazio su disco**: 35 GB di spazio libero su disco
 
 
+**Supporto del provider cloud**
+
+Le attività sospette degli utenti sono disponibili con AWS e Azure nelle seguenti regioni:
+
+|===
+| Fornitore di cloud | Regione 
+
+
+| AWS | Stati Uniti orientali (us-east-1) 
+
+
+| Azzurro | Stati Uniti orientali 
+|===
 .Passi
 . Se è la prima volta che crei un agente di attività utente, vai alla **Dashboard**. Nel riquadro **Attività utente**, seleziona **Attiva**.
 +
