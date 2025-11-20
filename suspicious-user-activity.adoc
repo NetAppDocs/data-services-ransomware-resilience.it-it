@@ -92,7 +92,7 @@ Il server deve soddisfare i seguenti requisiti minimi:
 
 **Supporto del provider cloud**
 
-Le attività sospette degli utenti sono disponibili con AWS e Azure nelle seguenti regioni:
+I dati sulle attività sospette degli utenti possono essere archiviati in AWS e Azure nelle seguenti regioni:
 
 |===
 | Fornitore di cloud | Regione 
