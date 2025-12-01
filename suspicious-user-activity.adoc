@@ -98,11 +98,17 @@ I dati sulle attività sospette degli utenti possono essere archiviati in AWS e 
 | Fornitore di cloud | Regione 
 
 
-| AWS | Stati Uniti orientali (us-east-1) 
+| AWS  a| 
+* Asia Pacifico (Sydney) (ap-southeast-2)
+* Europa (Francoforte) (eu-central-1)
+* Stati Uniti orientali (Virginia settentrionale) (us-east-1)
+
+
 
 
 | Azzurro | Stati Uniti orientali 
 |===
+ and
 .Passi
 . Se è la prima volta che crei un agente di attività utente, vai alla **Dashboard**. Nel riquadro **Attività utente**, seleziona **Attiva**.
 +
