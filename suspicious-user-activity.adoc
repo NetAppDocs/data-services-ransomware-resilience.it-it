@@ -108,7 +108,6 @@ I dati sulle attività sospette degli utenti possono essere archiviati in AWS e 
 
 | Azzurro | Stati Uniti orientali 
 |===
- and
 .Passi
 . Se è la prima volta che crei un agente di attività utente, vai alla **Dashboard**. Nel riquadro **Attività utente**, seleziona **Attiva**.
 +
