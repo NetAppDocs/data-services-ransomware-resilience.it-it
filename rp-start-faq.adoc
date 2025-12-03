@@ -56,7 +56,7 @@ La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x108
 
 == Interoperabilità
 
-.Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?
+.Ransomware Resilience è a conoscenza delle impostazioni di protezione in ONTAP?
 Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP.
 
 .In che modo Ransomware Resilience interagisce con NetApp Backup and Recovery e SnapCenter?
@@ -65,6 +65,8 @@ Ransomware Resilience interagisce con Backup and Recovery per individuare e impo
 Ransomware Resilience funziona con SnapCenter o SnapCenter per VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM.
 
 Ransomware Resilience funziona anche con Backup and Recovery e SnapCenter (incluso SnapCenter per VMware) per eseguire un ripristino coerente con i file e i carichi di lavoro.
+
+Per quanto riguarda le licenze e la fatturazione, Ransomware Resilience può integrarsi con Backup and Recovery anche se non si dispone di una licenza separata per Backup and Recovery. Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
 
 
 
@@ -117,7 +119,7 @@ UN link:rp-use-protect.html#add-a-ransomware-protection-strategy["strategia di p
 
 Nella strategia Ransomware Resilience non è richiesta una policy di backup.
 
-.Ransomware Resilience è a conoscenza delle impostazioni di protezione definite in NetApp ONTAP?
+.Ransomware Resilience è a conoscenza delle impostazioni di protezione in ONTAP?
 Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP. Rileva inoltre se ARP e FPolicy sono abilitati su tutti i volumi in un carico di lavoro rilevato. Le informazioni visualizzate nella Ransomware Resilience Dashboard sono aggregate da altre soluzioni e prodotti NetApp .
 
 .Ransomware Resilience è a conoscenza delle policy già definite in Backup and Recovery e SnapCenter?
