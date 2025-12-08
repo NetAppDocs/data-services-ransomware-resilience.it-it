@@ -16,7 +16,7 @@ Prima di poter utilizzare NetApp Ransomware Resilience, è necessario che vengan
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
-*Cosa scopre Ransomware Resilience?*  Ransomware Resilience valuta le applicazioni MySQL, le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.
+*Cosa scopre Ransomware Resilience?* Ransomware Resilience valuta le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.
 
 
 NOTE: Ransomware Resilience non rileva carichi di lavoro con volumi che utilizzano FlexGroup.

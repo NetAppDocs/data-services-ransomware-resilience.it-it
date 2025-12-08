@@ -45,7 +45,7 @@ Oltre a Ransomware Resilience, è possibile utilizzare i seguenti servizi per ge
 
 * NetApp Backup and Recovery per condivisioni di file, condivisioni di file VM
 * SnapCenter per VMware per datastore VM
-* SnapCenter per Oracle e MySQL
+* SnapCenter per Oracle
 
 
 Le informazioni sulla protezione da questi servizi vengono visualizzate in Ransomware Resilience.  È possibile aggiungere criteri di rilevamento a questi servizi con Ransomware Resilience.  L'aggiunta di una policy di protezione con Ransomware Resilience sostituisce le policy di protezione esistenti.
