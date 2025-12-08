@@ -20,7 +20,7 @@ Ransomware Resilience rileva le attività sospette degli utenti analizzando gli 
 
 == Agenti e collezionisti
 
-Per attivare il rilevamento delle attività sospette degli utenti in Ransomware Resilience, è necessario installare almeno un agente di attività utente. Quando si attiva la funzionalità relativa alle attività sospette degli utenti dalla dashboard di Ransomware Resilience, è necessario fornire le informazioni sull'host dell'agente per attivare la funzionalità.
+Per attivare il rilevamento delle attività sospette degli utenti in Ransomware Resilience, è necessario installare almeno un agente di attività utente. Quando si attiva la funzionalità relativa alle attività sospette degli utenti dalla dashboard Ransomware Resilience, è necessario fornire le informazioni sull'host dell'agente.
 
 Un agente può ospitare più raccoglitori di dati. I raccoglitori di dati inviano i dati a una posizione SaaS per l'analisi. Esistono due tipi di collezionisti:
 
@@ -70,7 +70,7 @@ Per installare un agente di attività utente, è necessario un host o una macchi
 | Oracle Linux | 8.10 (64 bit) e 9.1 (64 bit) fino a 9.6 (64 bit), incluso SELinux 
 
 
-| RedHat | 8.10 (64 bit), 9.1 (64 bit) fino a 9.6 (64 bit) e 10 (64 bit), incluso SELinux 
+| Cappello rosso | 8.10 (64 bit), 9.1 (64 bit) fino a 9.6 (64 bit) e 10 (64 bit), incluso SELinux 
 
 
 | Roccioso | Rocky 9.4 (64 bit) fino a 9.6 (64 bit), incluso SELinux 
@@ -85,7 +85,7 @@ Per installare un agente di attività utente, è necessario un host o una macchi
 
 Il server deve soddisfare i seguenti requisiti minimi:
 
-* **CPU**: 4 CORE
+* **CPU**: 4 core
 * **RAM**: 16 GB di RAM
 * **Spazio su disco**: 35 GB di spazio libero su disco
 
@@ -153,31 +153,47 @@ Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di 
 . In Ransomware Resilience, vai su *Impostazioni*.
 . Nel riquadro Attività utente, seleziona **Gestisci**.
 . Selezionare la scheda **Connettori directory utente**, quindi **Aggiungi**.
-. Fornire i dettagli della connessione:
+. Configurare la connessione. Inserisci le informazioni richieste per ogni campo.
 +
-** *Nome*
-** *Tipo di directory utente*
-** *Indirizzo IP del server o nome di dominio*
-** *Nome della foresta o nome della ricerca*
-** *Nome di dominio BIND*
-** *Password BIND*
-** *Protocollo* (facoltativo)
-** *Porta*
+|===
+
+
+| Campo | Descrizione 
+
+
+| *Nome* | Inserisci un nome univoco per il connettore della directory utente 
+
+
+| *Tipo di directory utente* | Il tipo di directory 
+
+
+| *Indirizzo IP del server o nome di dominio* | L'indirizzo IP o il nome di dominio completo (FQDN) del server che ospita la connessione 
+
+
+| *Nome della foresta o nome della ricerca*  a| 
+È possibile specificare il livello di foresta della struttura della directory come nome di dominio diretto (ad esempio `unit.company.com`) o un insieme di nomi distinti relativi (ad esempio: `DC=unit,DC=company,DC=com`). Puoi anche inserire un `OU` per filtrare per unità organizzativa o per `CN` per limitare a un utente specifico (ad esempio: `CN=user,OU=engineering,DC=unit,DC=company,DC=com`).
+
+
+
+| *LEGA DN* | Il BIND DN è un account utente autorizzato a effettuare ricerche nella directory, ad esempio utente@dominio.com. L'utente necessita dell'autorizzazione di sola lettura del dominio. 
+
+
+| *Password BIND* | La password per l'utente fornita in BIND DN 
+
+
+| *Protocollo* | Il campo protocollo è facoltativo. È possibile utilizzare LDAP, LDAPS o LDAP su StartTLS. 
+
+
+| *Porta* | Inserisci il numero di porta scelto 
+|===
 +
 image:screenshot-user-directory-connection.png["Screenshot della connessione alla directory utente"]
 
 +
-Fornire i dettagli della mappatura degli attributi:
+Fornisci i dettagli di mappatura degli attributi: * *Nome visualizzato* * *SID* (se utilizzi LDAP) * *Nome utente* * *ID Unix* (se utilizzi NFS) * Se selezioni *Includi attributi facoltativi*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il DN del responsabile o dei gruppi.
 
-** *Nome da visualizzare*
-** *SID* (se si utilizza LDAP)
-** *Nome utente*
-** *ID Unix* (se stai utilizzando NFS)
-** Seleziona *Includi attributi facoltativi*. Puoi anche includere indirizzo email, numero di telefono, ruolo, stato, paese, reparto, foto, nome del responsabile o gruppi.
 +
-Selezionare *Avanzate* per aggiungere una query di ricerca facoltativa.
-
-
++ Seleziona *Avanzate* per aggiungere una query di ricerca facoltativa.
 
 . Selezionare **Aggiungi**.
 . Torna alla scheda dei connettori della directory utente per controllare lo stato del connettore della directory utente. Se la creazione avviene correttamente, lo stato del connettore della directory utente viene visualizzato come *In esecuzione*.
