@@ -14,7 +14,7 @@ Quando si abilita il blocco delle estensioni, ora viene abilitato a livello di c
 
 Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti. È possibile ignorare e risolvere manualmente gli avvisi.
 
-Per maggiori informazioni, vedere xref:rp-use-alert.html[Gestisci gli avvisi].
+Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Gestisci gli avvisi in Ransomware Resilience"^].
 
 
 

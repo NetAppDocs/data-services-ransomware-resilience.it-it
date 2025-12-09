@@ -2069,8 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">Il blocco delle estensioni è abilitato a livello di carico di lavoro</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">Quando si abilita il blocco delle estensioni, ora viene abilitato a livello di carico di lavoro anziché a livello di VM di archiviazione.</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">Modifica lo stato dell'avviso sul comportamento dell'utente</block>
-  <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">Gestisci gli avvisi</block>
-  <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">Per maggiori informazioni, vedere <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>.</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">Supporto per più agenti della console</block>
   <block id="1a6a565def701385358a626d6728afd8" category="paragraph">Ransomware Resilience ora supporta l'utilizzo di più agenti Console per gestire gli stessi sistemi.</block>
   <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">Per ulteriori informazioni sugli agenti della console, vedere<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block> .</block>
@@ -2089,4 +2087,6 @@
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">Se selezioni *Includi attributi facoltativi*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il nome del responsabile o dei gruppi. Selezionare *Avanzate* per aggiungere una query di ricerca facoltativa.</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">08 dicembre 2025</block>
   <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti. È possibile ignorare e risolvere manualmente gli avvisi.</block>
+  <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">Gestisci gli avvisi in Ransomware Resilience</block>
+  <block id="869c8807275d576171cb34b892652da6" category="paragraph">Per maggiori informazioni, vedere <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>.</block>
 </blocks>
