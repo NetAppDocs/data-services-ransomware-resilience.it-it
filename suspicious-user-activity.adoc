@@ -117,7 +117,7 @@ Se vuoi aggiungere un ulteriore agente di attività utente, vai su *Impostazioni
 . Fornire i dettagli dell'agente di attività dell'utente:
 +
 ** **Nome dell'agente di attività dell'utente**
-** *Agente console*: l'agente console deve trovarsi nella stessa rete dell'agente di attività utente e disporre di connettività SSH all'indirizzo IP dell'agente di attività utente.
+** *Agente console* - L'agente console deve trovarsi nella stessa rete dell'agente di attività utente e disporre di connettività SSH all'indirizzo IP dell'agente di attività utente.
 ** *Nome DNS o indirizzo IP della VM*
 ** *Chiave SSH della VM*
 +
@@ -155,9 +155,8 @@ Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di 
 . Selezionare la scheda **Connettori directory utente**, quindi **Aggiungi**.
 . Configurare la connessione. Inserisci le informazioni richieste per ogni campo.
 +
+[cols="25,75"]
 |===
-
-
 | Campo | Descrizione 
 
 
@@ -197,10 +196,7 @@ Fornire i dettagli della mappatura degli attributi:
 ** *SID* (se si utilizza LDAP)
 ** *Nome utente*
 ** *ID Unix* (se stai utilizzando NFS)
-** Se selezioni *Includi attributi facoltativi*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il nome del responsabile o dei gruppi.
-+
-Selezionare *Avanzate* per aggiungere una query di ricerca facoltativa.
-
+** Se selezioni *Includi attributi facoltativi*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il nome del responsabile o dei gruppi. Selezionare *Avanzate* per aggiungere una query di ricerca facoltativa.
 
 
 . Selezionare **Aggiungi**.

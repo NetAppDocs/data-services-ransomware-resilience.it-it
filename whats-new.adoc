@@ -18,6 +18,32 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 
 
+== 08 dicembre 2025
+
+
+
+=== Il blocco delle estensioni è abilitato a livello di carico di lavoro
+
+Quando si abilita il blocco delle estensioni, ora viene abilitato a livello di carico di lavoro anziché a livello di VM di archiviazione.
+
+
+
+=== Modifica lo stato dell'avviso sul comportamento dell'utente
+
+Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti.  È possibile ignorare e risolvere manualmente gli avvisi.  Ora puoi anche contrassegnare gli avvisi come "In revisione".
+
+Per maggiori informazioni, vedere xref:rp-use-alert.html[Gestisci gli avvisi].
+
+
+
+=== Supporto per più agenti della console
+
+Ransomware Resilience ora supporta l'utilizzo di più agenti Console per gestire gli stessi sistemi.
+
+Per ulteriori informazioni sugli agenti della console, vederelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-setup.html["Creare un agente Console"] .
+
+
+
 == 10 novembre 2025
 
 Questa versione include miglioramenti e miglioramenti generali.

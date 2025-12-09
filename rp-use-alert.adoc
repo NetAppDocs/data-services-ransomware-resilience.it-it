@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard di Ransomware Resilience viene visualizzato un avviso che indica un potenziale attacco. A questo punto, dovresti esaminare il potenziale rischio nella scheda Avvisi di resilienza ransomware. 
 ---
-= Gestisci gli avvisi ransomware rilevati con NetApp Ransomware Resilience
+= Gestisci gli avvisi in NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard d
 
 
 [role="lead"]
-Quando NetApp Ransomware Resilience rileva un possibile attacco, mostra un avviso nella Dashboard e nell'area Notifiche.  Ransomware Resilience esegue immediatamente uno snapshot.  Esaminare il rischio potenziale nella scheda *Avvisi* di Ransomware Resilience.
+Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso nella Dashboard e nell'area Notifiche. Ransomware Resilience esegue immediatamente uno snapshot. Esaminare il rischio potenziale nella scheda *Avvisi* di Ransomware Resilience.
 
 Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una notifica nelle impostazioni di notifica della console e viene inviata un'e-mail all'indirizzo configurato. L'e-mail include informazioni sulla gravità, sul carico di lavoro interessato e un collegamento all'avviso nella scheda *Avvisi* di Ransomware Resilience.
 
@@ -56,13 +56,14 @@ Un avviso può avere uno dei seguenti stati:
 * *Inattivo*
 
 
-Un incidente di allerta può avere uno dei seguenti stati:
+Un incidente di allerta può avere i seguenti stati:
 
 * *Nuovo*: tutti gli incidenti vengono contrassegnati come "nuovi" quando vengono identificati per la prima volta.
+* *In revisione*: puoi contrassegnare un incidente come in revisione mentre lo valuti.
 * *Ignorato*: se sospetti che l'attività non sia un attacco ransomware, puoi modificare lo stato in "Ignorato".
 +
 
-CAUTION: Dopo aver respinto un attacco, non è più possibile ripristinarlo.  Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.
+CAUTION: Dopo aver respinto un attacco, non è possibile ripristinarne lo stato. Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.
 
 * *In fase di archiviazione*: L'incidente è in fase di archiviazione.
 * *Risolto*: l'incidente è stato risolto.
@@ -218,7 +219,7 @@ Dopo che l'avviso è stato contrassegnato per il ripristino, l'avviso passa dall
 
 Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.
 
-Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.  Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso per tale comportamento.
+Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento e lo associa alle normali operazioni, senza più avviare un avviso per tale comportamento.
 
 Se si elimina un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware vengono eliminate definitivamente.
 
@@ -236,7 +237,7 @@ image:screen-alerts.png["Pagina degli avvisi"]
 +
 image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
 
-. Seleziona uno o più incidenti.  Oppure, seleziona tutti gli incidenti selezionando la casella ID incidente in alto a sinistra della tabella.
+. Seleziona uno o più incidenti. In alternativa, selezionare tutti gli incidenti selezionando la casella ID incidente in alto a sinistra della tabella.
 . Se stabilisci che l'incidente non rappresenta una minaccia, scartalo come falso positivo:
 +
 ** Seleziona l'incidente.
@@ -246,9 +247,9 @@ image:screen-alerts-status-edit.png["Pagina di stato di modifica dell'avviso"]
 
 
 
-. Dalla casella Modifica stato, seleziona lo stato *“Ignorato”*.
+. Dalla casella Modifica stato, seleziona lo stato *Ignorato*.
 +
-Vengono visualizzate informazioni aggiuntive sul carico di lavoro e sul fatto che le copie snapshot sono state eliminate.
+Vengono visualizzate informazioni aggiuntive sul carico di lavoro e sulle copie snapshot eliminate.
 
 . Seleziona *Salva*.
 +
