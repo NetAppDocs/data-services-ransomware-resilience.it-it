@@ -59,7 +59,6 @@ Un avviso può avere uno dei seguenti stati:
 Un incidente di allerta può avere i seguenti stati:
 
 * *Nuovo*: tutti gli incidenti vengono contrassegnati come "nuovi" quando vengono identificati per la prima volta.
-* *In revisione*: puoi contrassegnare un incidente come in revisione mentre lo valuti.
 * *Ignorato*: se sospetti che l'attività non sia un attacco ransomware, puoi modificare lo stato in "Ignorato".
 +
 

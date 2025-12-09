@@ -30,7 +30,7 @@ Quando si abilita il blocco delle estensioni, ora viene abilitato a livello di c
 
 === Modifica lo stato dell'avviso sul comportamento dell'utente
 
-Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti.  È possibile ignorare e risolvere manualmente gli avvisi.  Ora puoi anche contrassegnare gli avvisi come "In revisione".
+Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti. È possibile ignorare e risolvere manualmente gli avvisi.
 
 Per maggiori informazioni, vedere xref:rp-use-alert.html[Gestisci gli avvisi].
 

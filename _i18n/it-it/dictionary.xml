@@ -2069,7 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">Il blocco delle estensioni è abilitato a livello di carico di lavoro</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">Quando si abilita il blocco delle estensioni, ora viene abilitato a livello di carico di lavoro anziché a livello di VM di archiviazione.</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">Modifica lo stato dell'avviso sul comportamento dell'utente</block>
-  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti.  È possibile ignorare e risolvere manualmente gli avvisi.  Ora puoi anche contrassegnare gli avvisi come "In revisione".</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">Gestisci gli avvisi</block>
   <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">Per maggiori informazioni, vedere <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>.</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">Supporto per più agenti della console</block>
@@ -2079,7 +2078,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">Gestisci gli avvisi in NetApp Ransomware Resilience</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso nella Dashboard e nell'area Notifiche. Ransomware Resilience esegue immediatamente uno snapshot. Esaminare il rischio potenziale nella scheda *Avvisi* di Ransomware Resilience.</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">Un incidente di allerta può avere i seguenti stati:</block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*In revisione*: puoi contrassegnare un incidente come in revisione mentre lo valuti.</block>
   <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">Dopo aver respinto un attacco, non è possibile ripristinarne lo stato. Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento e lo associa alle normali operazioni, senza più avviare un avviso per tale comportamento.</block>
@@ -2090,4 +2088,5 @@
   <block id="6edf03555b64b68b413469994ca42164" category="list-text">*Agente console* - L'agente console deve trovarsi nella stessa rete dell'agente di attività utente e disporre di connettività SSH all'indirizzo IP dell'agente di attività utente.</block>
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">Se selezioni *Includi attributi facoltativi*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il nome del responsabile o dei gruppi. Selezionare *Avanzate* per aggiungere una query di ricerca facoltativa.</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">08 dicembre 2025</block>
+  <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti. È possibile ignorare e risolvere manualmente gli avvisi.</block>
 </blocks>
