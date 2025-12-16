@@ -280,3 +280,10 @@ Se desideri disdire il tuo abbonamento PAYGO, puoi farlo in qualsiasi momento.
 . Nei dettagli a discesa, deseleziona la casella *Utilizza dopo la scadenza del metodo di pagamento corrente*.
 . Seleziona *Salva*.
 
+
+
+
+== Ulteriori informazioni
+
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["Documentazione sulle licenze e gli abbonamenti NetApp Console"^]
+
