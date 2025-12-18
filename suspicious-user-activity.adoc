@@ -18,7 +18,7 @@ Ransomware Resilience rileva le attività sospette degli utenti analizzando gli 
 
 
 
-== Agenti e collezionisti
+== Agenti e collettori di attività utente
 
 Per attivare il rilevamento delle attività sospette degli utenti in Ransomware Resilience, è necessario installare almeno un agente di attività utente. Quando si attiva la funzionalità relativa alle attività sospette degli utenti dalla dashboard Ransomware Resilience, è necessario fornire le informazioni sull'host dell'agente.
 
@@ -30,25 +30,17 @@ Un agente può ospitare più raccoglitori di dati. I raccoglitori di dati invian
 
 I collettori vengono configurati nelle impostazioni di Resilienza ransomware.
 
-
-
-== Abilita il rilevamento delle attività sospette degli utenti
-
 *Ruolo Console obbligatorio* Per attivare il rilevamento di attività utente sospette, è necessario il ruolo di amministratore dell'organizzazione.  Per le configurazioni successive relative ad attività utente sospette, è necessario il ruolo di amministratore del comportamento utente Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 
 
-=== Aggiungi un agente di attività utente
+== Requisiti di sistema
 
-Gli agenti di attività utente sono ambienti eseguibili per i raccoglitori di dati; i raccoglitori di dati condividono gli eventi di attività utente con Ransomware Resilience. È necessario creare almeno un agente di attività utente per abilitare il rilevamento di attività utente sospette.
+Per installare un agente di attività utente, è necessario un host o una macchina virtuale che soddisfi i seguenti requisiti.
 
 
 
-==== Requisiti
-
-Per installare un agente di attività utente, è necessario un host o una macchina virtuale che soddisfi i seguenti requisiti del sistema operativo e del server supportati.
-
-**Requisiti del sistema operativo**
+=== Requisiti del sistema operativo
 
 [cols="2"]
 |===
@@ -81,14 +73,124 @@ Per installare un agente di attività utente, è necessario un host o una macchi
 
 | Ubuntu | 20.04 LTS (64 bit), 22.04 LTS (64 bit) e 24.04 LTS (64 bit) 
 |===
-**Requisiti del server**
+
+NOTE: L’ordinateur que vous utilisez pour l’agent d’activité de l’utilisateur ne doit pas exécuter d’autres logiciels au niveau de l’application. Si consiglia un server dedicato.
+
+IL `unzip` il comando è necessario per l'installazione. IL `sudo su -` Il comando è necessario per l'installazione, l'esecuzione degli script e la disinstallazione.
+
+
+
+=== Requisiti del server
 
 Il server deve soddisfare i seguenti requisiti minimi:
 
 * **CPU**: 4 core
 * **RAM**: 16 GB di RAM
-* **Spazio su disco**: 35 GB di spazio libero su disco
+* **Spazio su disco**: 36 GB di spazio libero su disco
 
+
+
+NOTE: Assegnare spazio extra sul disco per consentire la creazione del file system. Assicurarsi che ci siano almeno 35 GB di spazio libero nel file system. + Se `/opt` è una cartella montata da un archivio NAS, gli utenti locali devono avere accesso a questa cartella. La creazione dell'agente di attività utente può fallire se gli utenti locali non dispongono delle autorizzazioni necessarie.
+
+
+NOTE: Si consiglia di installare l'agente di attività utente su un sistema diverso da quello dell'ambiente Ransomware Resilience. Se decidi di installarli sullo stesso computer, dovresti prevedere da 50 a 55 GB di spazio su disco. Per Linux, allocare 25-30 GB di spazio a `/opt/netapp` e 25 GB a `var/log/netapp`.
+
+
+TIP: Si consiglia di sincronizzare l'ora sia sul sistema ONTAP sia sulla macchina dell'agente di attività utente utilizzando il protocollo NTP (Network Time Protocol) o il protocollo SNTP (Simple Network Time Protocol).
+
+
+
+=== Regole di accesso alla rete cloud
+
+Esamina le regole di accesso alla rete cloud per la tua area geografica di riferimento (Asia Pacifico, Europa o Stati Uniti).
+
+
+
+==== Distribuzioni di agenti di attività utente basate su APAC
+
+[cols="5*"]
+|===
+| Protocollo | Porta | Fonte | Destinazione | Descrizione 
+
+
+| TCP | 443 | Agente di attività dell'utente  a| 
+* <nome_sito>.cs01-ap-1.cloudinsights.netapp.com
+* <nome_sito>.c01-ap-1.cloudinsights.netapp.com
+* <nome_sito>.c02-ap-1.cloudinsights.netapp.com
+
+| Accesso alla resilienza del ransomware 
+
+
+| TCP | 443 | Agente di attività dell'utente | agentlogin.cs01-ap-1.cloudinsights.netapp.com | Accesso ai servizi di autenticazione 
+|===
+
+
+==== Distribuzioni di agenti di attività utente basate in Europa
+
+[cols="5*"]
+|===
+| Protocollo | Porta | Fonte | Destinazione | Descrizione 
+
+
+| TCP | 443 | Agente di attività dell'utente  a| 
+* <nome_sito>.cs01-eu-1.cloudinsights.netapp.com
+* <nome_sito>.c01-eu-1.cloudinsights.netapp.com
+* <nome_sito>.c02-eu-1.cloudinsights.netapp.com
+
+| Accesso alla resilienza del ransomware 
+
+
+| TCP | 443 | Agente di attività dell'utente | agentlogin.cs01-eu-1.cloudinsights.netapp.com | Accesso ai servizi di autenticazione 
+|===
+
+
+==== Distribuzioni di agenti di attività utente con sede negli Stati Uniti
+
+[cols="5*"]
+|===
+| Protocollo | Porta | Fonte | Destinazione | Descrizione 
+
+
+| TCP | 443 | Agente di attività dell'utente  a| 
+* <nome_sito>.cs01.cloudinsights.netapp.com
+* <nome_sito>.c01.cloudinsights.netapp.com
+* <nome_sito>.c02.cloudinsights.netapp.com
+
+| Accesso alla resilienza del ransomware 
+
+
+| TCP | 443 | Agente di attività dell'utente | agentlogin.cs01.cloudinsights.netapp.com | Accesso ai servizi di autenticazione 
+|===
+
+
+=== Regole in-network
+
+[cols="5*"]
+|===
+| Protocollo | Porta | Fonte | Destinazione | Descrizione 
+
+
+| TCP | 389 (LDAP) 636 (LDAP / start-tls) | Agente di attività dell'utente | URL del server LDAP | Connettiti a LDAP 
+
+
+| TCP | 443 | Agente di attività dell'utente | Indirizzo IP di gestione del cluster o SVM (a seconda della configurazione del collettore SVM) | Comunicazione API con ONTAP 
+
+
+| TCP | 35000 - 55000  a| 
+Indirizzi IP LIF dei dati SVM
+| Agente di attività dell'utente | Comunicazione da ONTAP all'agente di attività dell'utente per gli eventi Fpolicy. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli eventi, incluso qualsiasi firewall sull'agente di attività utente stesso (se presente). + **NOTA:** Non è necessario riservare *tutte* queste porte, ma le porte riservate a questo scopo devono essere comprese in questo intervallo. Si consiglia di iniziare riservando 100 porte e di aumentarle se necessario. 
+
+
+| TCP | 35000-55000 | IP di gestione del cluster | Agente di attività dell'utente | Comunicazione dall'IP di gestione del cluster ONTAP all'agente di attività dell'utente per *eventi EMS*. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli eventi EMS, incluso qualsiasi firewall sull'agente di attività utente stesso. + **NOTA:** Non è necessario riservare *tutte* queste porte, ma le porte riservate a questo scopo devono essere comprese in questo intervallo. Si consiglia di iniziare riservando 100 porte e di aumentarle se necessario. 
+
+
+| SSH | 22 | Agente di attività dell'utente | Gestione dei cluster | Necessario per il blocco degli utenti CIFS/SMB. 
+|===
+
+
+== Abilita il rilevamento delle attività sospette degli utenti
+
+Assicurati di aver soddisfatto i requisiti link:#system-requirements["requisiti di sistema"] per l'agente di attività dell'utente. Assicurati che la tua configurazione sia conforme ai provider cloud e alle regioni supportati.
 
 **Supporto del provider cloud**
 
@@ -108,6 +210,12 @@ I dati sulle attività sospette degli utenti possono essere archiviati in AWS e 
 
 | Azzurro | Stati Uniti orientali 
 |===
+
+
+=== Aggiungi un agente di attività utente
+
+Gli agenti di attività utente sono ambienti eseguibili per i raccoglitori di dati; i raccoglitori di dati condividono gli eventi di attività utente con Ransomware Resilience. È necessario creare almeno un agente di attività utente per abilitare il rilevamento di attività utente sospette.
+
 .Passi
 . Se è la prima volta che crei un agente di attività utente, vai alla **Dashboard**. Nel riquadro **Attività utente**, seleziona **Attiva**.
 +

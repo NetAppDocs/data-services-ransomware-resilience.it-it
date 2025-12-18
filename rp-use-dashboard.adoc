@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: 'La dashboard NetApp Ransomware Resilience fornisce informazioni sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l"entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.  È inoltre possibile utilizzare la Dashboard per rivedere le raccomandazioni sulla protezione e agire di conseguenza.' 
 ---
-= Monitora lo stato del carico di lavoro utilizzando la dashboard di resilienza ransomware di NetAPp
+= Monitora lo stato del carico di lavoro utilizzando la dashboard NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -14,7 +14,7 @@ summary: 'La dashboard NetApp Ransomware Resilience fornisce informazioni sullo 
 [role="lead"]
 La dashboard NetApp Ransomware Resilience fornisce informazioni immediate sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, identificare i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l'entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.
 
-Utilizzare la Dashboard per rivedere i suggerimenti sulla protezione, modificare le impostazioni, scaricare report e visualizzare la documentazione.
+Utilizzare la Dashboard per rivedere i suggerimenti di protezione, modificare le impostazioni e scaricare i report.
 
 *Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -32,7 +32,7 @@ image:screen-dashboard.png["Pagina del dashboard"]
 ** *Protezione dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina Protezione.  I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
 +
 
-TIP: Selezionare il suggerimento "i" per visualizzare suggerimenti su questi dati.  Per aumentare il limite del carico di lavoro, seleziona *Aumenta limite del carico di lavoro* all'interno di questa nota.  Selezionando questa opzione verrai indirizzato alla pagina di supporto della console, dove potrai creare un ticket di assistenza.
+TIP: Selezionare il suggerimento "i" per visualizzare suggerimenti su questi dati. Per aumentare il limite del carico di lavoro, seleziona *Aumenta limite del carico di lavoro* all'interno di questa nota. Selezionando questa opzione verrai indirizzato alla pagina di supporto della console, dove potrai creare un ticket di assistenza.
 
 ** *Avvisi e ripristino dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare gli incidenti attivi che hanno avuto un impatto sul tuo carico di lavoro, sono pronti per il ripristino dopo la neutralizzazione degli incidenti o sono in fase di ripristino. Fare riferimento a link:rp-use-alert.html["Rispondere a un avviso rilevato"] .
 +
@@ -131,7 +131,7 @@ La raccomandazione viene eliminata dall'elenco delle cose da fare e visualizzata
 
 +
 
-TIP: In seguito potrai trasformare un elemento ignorato in un elemento da fare.  Quando si contrassegna un elemento come completato o si trasforma un elemento ignorato in un'azione Da fare, il totale delle azioni aumenta di 1.
+TIP: In seguito potrai trasformare un elemento ignorato in un elemento da fare. Quando si contrassegna un elemento come completato o si trasforma un elemento ignorato in un'azione Da fare, il totale delle azioni aumenta di 1.
 
 . Per rivedere le informazioni su come agire in base alle raccomandazioni, selezionare l'icona *informazioni*.
 
@@ -154,10 +154,10 @@ Scaricando un file CSV da una pagina vengono inclusi solo i dati di quella pagin
 I file CSV includono dati per tutti i carichi di lavoro su tutti i sistemi Console.
 
 .Passi
-. Dalla dashboard di Ransomware Resilience, seleziona *Aggiorna*image:button-refresh.png["Opzione di aggiornamento"] opzione in alto a destra per aggiornare i dati che appariranno nei file.
+. Dalla dashboard Ransomware Resilience, seleziona *Aggiorna* image:button-refresh.png["Opzione di aggiornamento"] opzione in alto a destra per aggiornare i dati che appariranno nei file.
 . Eseguire una delle seguenti operazioni:
 +
-** Dalla pagina, seleziona *Download*image:button-download.png["Opzione di download"] opzione.
+** Dalla pagina, seleziona *Download* image:button-download.png["Immagine dell'icona dell'opzione di download"] opzione.
 ** Dal menu Ransomware Resilience, seleziona *Report*.
 
 
