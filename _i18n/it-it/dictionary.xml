@@ -337,10 +337,6 @@
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">Si consiglia di non disabilitare i criteri di snapshot.</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti e account della Console.</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">Scopri i carichi di lavoro in NetApp Ransomware Resilience</block>
-  <block id="66fde4240a0e74342b069b682c733504" category="paragraph">*Come puoi scoprire i carichi di lavoro?*  Puoi fare quanto segue:</block>
-  <block id="e532d8f244f0ea9cd5619802d3cb8f03" category="list-text">All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.  Questa funzionalità potrebbe rivelarsi utile se si desidera proteggere carichi di lavoro specifici nel proprio ambiente e non in altri.</block>
-  <block id="6785cfec3a12064afa1fdb005b389154" category="list-text">Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza.</block>
-  <block id="35cf13d9dca3a78ecf913cca5a7af14a" category="list-text">Scopri nuovi sistemi.</block>
   <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Passi</block>
   <block id="7b8dc42ed597eb23a119869a1195c334" category="list-text">Dalla NetApp Console, seleziona *Protezione* &gt; *Protezione ransomware*.</block>
@@ -363,12 +359,9 @@
   <block id="7aa859cab6bf5bccbd16604f19eefa93" category="inline-link-macro">Scopri cosa ti mostra la Dashboard.</block>
   <block id="6363fabfdf63bcf12dfba9fd9de06ba3" category="paragraph"><block ref="6363fabfdf63bcf12dfba9fd9de06ba3" category="inline-link-macro-rx"></block></block>
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza</block>
-  <block id="50cb53872ff54665f11a232b976038d3" category="paragraph">Se hai già selezionato i sistemi per l'individuazione, puoi individuare i carichi di lavoro appena creati per tali ambienti dalla Dashboard.</block>
-  <block id="349f26e9c45e28e1bbdcacd539035898" category="list-text">Per identificare la data dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">Scopri nuovi sistemi</block>
   <block id="3a268026d4270688c4ec208104cc118c" category="paragraph">Se hai già scoperto dei sistemi, puoi trovarne di nuovi o non selezionati in precedenza.</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">Azioni verticali</block>
-  <block id="981597877eeda1ab60f9f862028665bf" category="list-text">Dal menu Ransomware Resilience, seleziona la verticale<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block> ... opzione in alto a destra.  Dal menu a discesa, seleziona *Impostazioni*.</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">Trova la risposta a una domanda frequente su NetApp Ransomware Resilience.</block>
   <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">Domande frequenti su NetApp Ransomware Resilience</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">Questa sezione FAQ può aiutarti se stai cercando una risposta rapida a una domanda su NetApp Ransomware Resilience.</block>
@@ -924,8 +917,6 @@
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">Proteggi i carichi di lavoro con le strategie di protezione NetApp Ransomware Resilience</block>
   <block id="7bf3a8af65d2a153b44dafcf248f1df7" category="paragraph">È possibile proteggere i carichi di lavoro dagli attacchi ransomware abilitando una protezione coerente con il carico di lavoro o creando strategie di protezione ransomware in NetApp Ransomware Resilience.</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">Comprendere le strategie di protezione dal ransomware</block>
-  <block id="88a4ad08ed31669f06a098dea0a14a38" category="paragraph">Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_ che di _protezione_.</block>
-  <block id="dd90d4cdb71a18320f3becc35cd530d5" category="list-text">**Criteri di rilevamento** rilevano minacce ransomware</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**Le policy di protezione** includono policy di snapshot e backup.  In una strategia di protezione sono necessarie policy di rilevamento e snapshot.  Le policy di backup sono facoltative.</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransomware Resilience li rileva e ti offre la possibilità di:</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">utilizzare una policy di rilevamento ransomware e continuare a utilizzare le policy di snapshot e backup create da altri strumenti NetApp , oppure</block>
@@ -975,18 +966,11 @@
   <block id="6041f003f0f1bda39024283f18c8591b" category="list-text">Nome della policy di protezione ransomware che regola gli snapshot e i backup</block>
   <block id="0b780e70f563e19cd1a3f1e2bce2f198" category="paragraph">*Importanza del carico di lavoro*</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">Ransomware Resilience assegna un'importanza o una priorità a ciascun carico di lavoro durante la fase di individuazione, basandosi su un'analisi di ciascun carico di lavoro.  L'importanza del carico di lavoro è determinata dalle seguenti frequenze di snapshot:</block>
-  <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*Critico*: vengono eseguite più di 1 copia snapshot all'ora (programma di protezione altamente aggressivo)</block>
-  <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*Importante*: copie snapshot effettuate meno di 1 all'ora ma più di 1 al giorno</block>
-  <block id="e12f58d91eed1a4a160b184cc1b10ebf" category="list-text">*Standard*: copie snapshot eseguite più di 1 al giorno</block>
-  <block id="48102e7d0a568223836c2d653abd58e5" category="paragraph">*Criteri di rilevamento predefiniti* [[predefiniti]]</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">Il criterio **Estensione utente crittografia** è l'unico criterio predefinito che supporta il rilevamento di comportamenti sospetti degli utenti.</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">Livello di politica</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Istantanea</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">Frequenza</block>
-  <block id="c2097ddf718c7c0477555ad9dde31c5e" category="cell">Conservazione (giorni)</block>
-  <block id="39531fdceaea662abd6669cba8f989fc" category="cell">Numero di copie snapshot</block>
-  <block id="c6b8cedaee837159aadd999ac609755e" category="cell">Numero massimo totale di copie snapshot</block>
   <block id="e8ce96c640213db710ed76440fe41391" category="cell">*Politica sui carichi di lavoro critici*</block>
   <block id="ef47e7cb2656929b4b5701de51c43f5f" category="paragraph">Ogni quarto d'ora</block>
   <block id="efec1cf9b9eee75e20f0e689c7d19618" category="cell">Ogni 15 minuti</block>
@@ -1054,9 +1038,7 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">Per ogni elemento, seleziona la *freccia giù*.</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*Politica di rilevamento*:</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*Criterio*: scegliere uno dei criteri di rilevamento predefiniti.</block>
-  <block id="0bea212ea55cc876a45f2009621526fb" category="list-text">*Rilevamento primario*: abilita il rilevamento ransomware per consentire a Ransomware Resilience di rilevare potenziali attacchi ransomware.</block>
   <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*Rilevamento del comportamento sospetto dell'utente*: abilita il rilevamento del comportamento dell'utente per trasmettere gli eventi delle attività dell'utente a Ransomware Resilience e rilevare eventi sospetti, come violazioni dei dati.</block>
-  <block id="25c38cb370fc00bc6fd644a75102eeb2" category="list-text">*Blocca estensioni file*: abilita questa opzione per far sì che Ransomware Resilience blocchi le estensioni di file sospette note.  Ransomware Resilience esegue automaticamente copie snapshot quando il rilevamento primario è abilitato.</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestione sistema.</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*Politica di snapshot*:</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*Nome base policy snapshot*: seleziona una policy oppure seleziona *Crea* e inserisci un nome per la policy snapshot.</block>
@@ -1079,7 +1061,6 @@
   <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">Ransomware Resilience rileva se sono presenti policy SnapCenter o Backup and Recovery attive.</block>
   <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">Per mantenere in vigore i criteri di Backup e ripristino o SnapCenter esistenti e applicare solo un criterio di _rilevamento_, lasciare deselezionata la casella **Sostituisci criteri esistenti**.</block>
   <block id="346ced422939f5220048eed80e512829" category="list-text">Per visualizzare i dettagli delle policy SnapCenter , seleziona la *freccia giù*.</block>
-  <block id="0004fcb1621d03d3051ca5a93121a0c9" category="list-text">Seleziona le impostazioni di rilevamento desiderate: *Rilevamento crittografia* *Rilevamento comportamento utente sospetto* *Blocca estensioni file sospette*</block>
   <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">Selezionare **Avanti**.</block>
   <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">o crearne uno</block>
   <block id="4ba6fce8781481d7a10ccdf42ed8690d" category="list-text">Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente o<block ref="739a3400f03009256dff1eb7cc8f7f4a" category="inline-link-macro-rx"></block> .</block>
@@ -1259,9 +1240,7 @@
   <block id="b2ff9d90b8575c5030e4183e92ccf938" category="summary">Utilizzando NetApp Ransomware Resilience, puoi scaricare report che mostrano dettagli su protezione, avvisi e ripristino e salvarli come file CSV.</block>
   <block id="2963ad4383209a31ba7b5a890b302bc2" category="doc">Scarica i report in NetApp Ransomware Resilience</block>
   <block id="6fb301adfaa83e3f2590a0454361757e" category="paragraph">È possibile esportare i dati di protezione e scaricare i file CSV o JSON che mostrano i dettagli delle esercitazioni di preparazione agli attacchi, della protezione, degli avvisi e del ripristino.</block>
-  <block id="d788bcb0d6bc2e0d54ec3c042333bf41" category="admonition">Prima di scaricare i file, è necessario aggiornare i dati, aggiornando così anche i dati che appariranno nei file.</block>
   <block id="229560de4c61096e275f68d7eda37c00" category="paragraph">*Quali dati puoi scaricare?*  È possibile scaricare i file da una qualsiasi delle opzioni del menu principale:</block>
-  <block id="9e3cf45f94aa890af53ce59cfb5a0bac" category="list-text">*Protezione*: contiene lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di quelli protetti e a rischio.</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristino riuscito".</block>
   <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*Report*: puoi esportare i dati da qualsiasi pagina e scaricare i file.</block>
   <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">È possibile scaricare i report delle esercitazioni di preparazione solo dalla pagina *Report*.</block>
@@ -1542,9 +1521,7 @@
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Novità assoluta per NetApp</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Se sei un nuovo utente NetApp e non hai un account NSS, segui i passaggi indicati di seguito.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Uno screenshot del menu Aiuto in cui Supporto è la prima opzione elencata</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Individua il numero di serie del tuo ID account nella pagina di registrazione del supporto.</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Sito di registrazione del supporto NetApp</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Vai a<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> e seleziona *Non sono un cliente NetApp registrato*.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Compila i campi obbligatori (quelli contrassegnati da asterischi rossi).</block>
@@ -1572,8 +1549,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Lo stesso vale se si dispone di account NSS preesistenti a livello di cliente e si tenta di aggiungere un account a livello di partner.</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Dopo aver effettuato l'accesso, NetApp memorizzerà il nome utente NSS.</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Un'icona di tre punti orizzontali</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Si tratta di un ID generato dal sistema che corrisponde al tuo indirizzo email. Nella pagina *Gestione NSS*, puoi visualizzare la tua email da<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Se hai bisogno di aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Aggiorna credenziali* in<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">Utilizzando questa opzione ti verrà richiesto di effettuare nuovamente l'accesso. Si noti che il token per questi account scade dopo 90 giorni. Verrà pubblicata una notifica per avvisarti di ciò.</block>
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">Il rilevamento delle attività sospette degli utenti in Ransomware Resilience consente di rilevare le attività degli utenti che potrebbero rappresentare una potenziale minaccia.</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">Configurare il rilevamento delle attività sospette degli utenti in NetApp Ransomware Resilience</block>
@@ -2044,7 +2019,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">Gestisci gli avvisi in NetApp Ransomware Resilience</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso nella Dashboard e nell'area Notifiche. Ransomware Resilience esegue immediatamente uno snapshot. Esaminare il rischio potenziale nella scheda *Avvisi* di Ransomware Resilience.</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">Un incidente di allerta può avere i seguenti stati:</block>
-  <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">Dopo aver respinto un attacco, non è possibile ripristinarne lo stato. Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento e lo associa alle normali operazioni, senza più avviare un avviso per tale comportamento.</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">Seleziona uno o più incidenti. In alternativa, selezionare tutti gli incidenti selezionando la casella ID incidente in alto a sinistra della tabella.</block>
@@ -2066,7 +2040,6 @@
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">Nella dashboard Discovery, Ransomware Resilience visualizza le configurazioni di sistema supportate e non supportate. Ransomware Resilience valuta le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.</block>
   <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">Ransomware Resilience non rileva carichi di lavoro con volumi che utilizzano FlexGroup.</block>
   <block id="c0605366a345249c74664f31f92636c4" category="paragraph">Ransomware Resilience verifica la protezione di backup corrente, le copie snapshot e le opzioni di protezione autonoma dai ransomware NetApp . Ransomware Resilience rileva anche le informazioni di protezione da SnapCenter per VMware per i datastore delle VM, SnapCenter per Oracle e NetApp Backup and Recovery per le condivisioni di file e le condivisioni di file delle VM. Quindi consiglia modi per migliorare la protezione contro il ransomware.</block>
-  <block id="20571d4d9a9f67814984ceaa9897d90b" category="paragraph">Ransomware Resilience rileva i dati del carico di lavoro solo per gli agenti della console con sistemi selezionati. Questo processo può richiedere alcuni minuti.</block>
   <block id="0c4db502345984347741cd5a9a3da447" category="list-text">Dalla Dashboard, seleziona l'icona *Aggiorna* per trovare nuovi carichi di lavoro.</block>
   <block id="242b6b00ff2f35d933e337704d202041" category="list-text">Nella scheda Individuazione carichi di lavoro, seleziona *Individuazione carichi di lavoro*. La scoperta potrebbe richiedere alcuni minuti.  Un'icona di caricamento mostra l'avanzamento.</block>
   <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati. Non supporta un sistema se la sua versione ONTAP è inferiore alla versione richiesta. Passando il mouse su un sistema non supportato, viene visualizzato un suggerimento che ne indica il motivo. Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.</block>
@@ -2129,4 +2102,74 @@
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">requisiti di sistema</block>
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">Assicurati di aver soddisfatto i requisiti <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> per l'agente di attività dell'utente. Assicurati che la tua configurazione sia conforme ai provider cloud e alle regioni supportati.</block>
   <block id="bbeae0eeffca7072631fe62be382e481" category="cell">Servizio di resilienza al ransomware</block>
+  <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">Replica gli snapshot su ONTAP</block>
+  <block id="f67d671d0eb9b2810d472b2c73fb65d6" category="paragraph">Ransomware Resilience ora supporta l'aggiunta della replica degli snapshot a un sito ONTAP secondario. È possibile creare una strategia di protezione dal ransomware che includa la replica oppure utilizzare la strategia predefinita. Con i gruppi di protezione che utilizzano un criterio di replica, è possibile replicare sulla stessa destinazione o su destinazioni diverse per ogni carico di lavoro.</block>
+  <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">Proteggi i carichi di lavoro con Ransomware Resilience</block>
+  <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">Per maggiori informazioni, vedere <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>.</block>
+  <block id="f7bb3fba9e87909a7d99018a8feebef5" category="section-title">Escludere i carichi di lavoro dalla resilienza del ransomware</block>
+  <block id="36d62eb8fbffb07f574185bd90036cd1" category="paragraph">Ransomware Resilience ora supporta l'esclusione di carichi di lavoro specifici in un sistema dalla protezione e dalla dashboard di Ransomware Resilience. È possibile escludere i carichi di lavoro dopo l'individuazione e reincluderli se si desidera aggiungere la protezione ransomware. Non ti verrà addebitato alcun costo per i carichi di lavoro esclusi.</block>
+  <block id="427dab7765b34a516acce2d3545db33d" category="inline-link-macro">Escludi carichi di lavoro</block>
+  <block id="cce6483b933a36b9eebb2ecf0d8f32a6" category="paragraph">Per maggiori informazioni, vedere <block ref="40a5b14292f3b3c1d42c8b093a2843e2" category="inline-link-macro-rx"></block>.</block>
+  <block id="35308ce14b9ba8b4f632405b876f0cc3" category="section-title">Contrassegna gli avvisi come in revisione</block>
+  <block id="ff4c9cd383a7fe5ae887d1ac68d7ba52" category="paragraph">Ransomware Resilience ora consente di contrassegnare gli avvisi come "In revisione". Utilizza l'etichetta "In revisione" per migliorare la chiarezza all'interno del tuo team durante la selezione e la gestione delle minacce ransomware attive.</block>
+  <block id="89f2d4e28daee04bf630a66530a30349" category="paragraph">Ransomware Resilience rileva i dati del carico di lavoro solo quando selezioni il sistema. Il processo di scoperta può richiedere diversi minuti.</block>
+  <block id="67cfc97e3b12b9504bf641388c095506" category="paragraph">Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, devi riavviare la rilevazione per proteggere i nuovi carichi di lavoro.</block>
+  <block id="a766aa8ad09c7fe20050753d75beca3f" category="list-text">Per identificare l'ora dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.</block>
+  <block id="b449485bf7d14cf53070de7818e6bb15" category="inline-image-macro">Azioni verticali&lt;block ref="2f43b42fd833d1e77420a8dae7419000" prefix="</block>
+  <block id="5b000e587ccbc59d84db84375ebb8da8" category="list-text">Dal menu Ransomware Resilience, seleziona la verticale <block ref="fc01824fafc69aa9b95ac35277bbc402" category="inline-image-macro-rx" type="image"></block>" opzione category='inline-code'/&gt; in alto a destra. Dal menu a discesa, seleziona *Impostazioni*.</block>
+  <block id="a73cb044815fd2c4fc6f7f4be69aea1b" category="paragraph">Ransomware Resilience consente di escludere carichi di lavoro specifici in un sistema dalla protezione e dal rilevamento del ransomware.</block>
+  <block id="195a678c9c8d484143eb63eed10f0646" category="paragraph">È possibile escludere solo i carichi di lavoro supportati e rilevati correttamente. È possibile modificare l'elenco dei carichi di lavoro esclusi in qualsiasi momento. Non ti verrà addebitato alcun costo per i carichi di lavoro esclusi da Ransomware Resilience.</block>
+  <block id="8177747908126fef8483f6d1d6004f44" category="list-title">Aggiungi carichi di lavoro all'elenco dei carichi di lavoro esclusi</block>
+  <block id="37eb321d29db5dca11557bda9adc6eb7" category="list-text">In Ransomware Resilience, seleziona **Impostazioni**.</block>
+  <block id="c015f4b89fe0df1b17fc4657c586df8c" category="list-text">Nella dashboard Impostazioni, individua la dashboard Individuazione del carico di lavoro. La scheda identifica il numero di carichi di lavoro esclusi. Per aggiungere carichi di lavoro, accanto ai carichi di lavoro esclusi, seleziona **Gestisci**.</block>
+  <block id="7722f090277db2c47e7aecd7f6ee7e81" category="inline-image-macro">Dashboard delle impostazioni di Ransomware Resilience</block>
+  <block id="fed7f3c8409ae810bb45ed3af428f167" category="paragraph"><block ref="fed7f3c8409ae810bb45ed3af428f167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2aa032eed68682b8806374264ab61a71" category="list-text">Nella pagina Carichi di lavoro esclusi, seleziona **Aggiungi**.</block>
+  <block id="37cf02ce6bbea058426687b673a078ad" category="list-text">Seleziona i carichi di lavoro che vuoi escludere, quindi **Aggiungi**.</block>
+  <block id="5b9260ea2b4c6018fc2bd598ec422b08" category="list-text">Esaminare i carichi di lavoro esclusi nella pagina Carichi di lavoro esclusi. Durante l'aggiunta del carico di lavoro, accanto al suo nome viene visualizzato un indicatore di avanzamento. Se un carico di lavoro non è stato escluso correttamente, non viene visualizzato nella pagina.</block>
+  <block id="423527e51d69b12e13d1380a3cd19d9f" category="list-title">Rimuovi i carichi di lavoro dall'elenco dei carichi di lavoro esclusi</block>
+  <block id="8e0c5d2e3270df01d0de694ff5c7c445" category="list-text">Nella dashboard Impostazioni, individua la dashboard Individuazione del carico di lavoro. La scheda identifica il numero di carichi di lavoro esclusi. Accanto ai carichi di lavoro esclusi, seleziona **Gestisci**.</block>
+  <block id="d3ce09b8cd5f44a1b0f3a2d83e6ac0f2" category="inline-image-macro">Screenshot della dashboard delle impostazioni di Ransomware Resilience.</block>
+  <block id="ca700be141532b3ddfdcc178e0b5cd32" category="paragraph"><block ref="ca700be141532b3ddfdcc178e0b5cd32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec9c37808e2bdf2c275e0fc67f873fc" category="list-text">Per rimuovere un singolo carico di lavoro, seleziona il menu azioni per il carico di lavoro che desideri rimuovere dall'elenco degli esclusi.</block>
+  <block id="d1e463c8fe8d734bd3327fb633998456" category="paragraph">Per rimuovere più carichi di lavoro, seleziona la casella di controllo accanto ai carichi di lavoro che desideri rimuovere, quindi **Rimuovi da esclusi**.</block>
+  <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">Nella finestra di dialogo, seleziona **Rimuovi** per confermare che desideri rimuovere i carichi di lavoro dall'elenco delle esclusioni.</block>
+  <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">Screenshot della rimozione riuscita di un carico di lavoro escluso.</block>
+  <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">Se il carico di lavoro viene rimosso correttamente dall'elenco dei carichi di lavoro esclusi, nella pagina Carico di lavoro escluso viene visualizzato un messaggio di operazione riuscita e il carico di lavoro non viene più visualizzato nell'elenco dei carichi di lavoro esclusi. Se l'azione fallisce, viene visualizzato un messaggio di errore; riprovare l'operazione. <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*In revisione*: puoi contrassegnare un incidente come in revisione mentre lo valuti.</block>
+  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">Dopo aver respinto un attacco, non è possibile ripristinarne lo stato. Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.</block>
+  <block id="95f7e6287ef0ab80de109e7baee476ad" category="paragraph">Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_, _protezione_ e _replica_.</block>
+  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**Le policy di rilevamento** identificano le minacce ransomware</block>
+  <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**I criteri di replica** consentono di replicare gli snapshot da Ransomware Resilience a un sito secondario. Le pianificazioni di replicazione possono essere impostate su frequenze orarie, giornaliere, settimanali o mensili.</block>
+  <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">Attualmente è possibile replicare gli snapshot solo nell'archiviazione ONTAP locale.</block>
+  <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">Dal menu di navigazione a sinistra della Console, seleziona *Protezione* &gt; *Ransomware Resilience*.</block>
+  <block id="ace8eeed056a04351826cffef5f4da33" category="admonition">Le attività sospette relative al comportamento dell'utente e le attività FPolicy (estensioni di file sospette) vengono elencate separatamente dallo stato di rilevamento.</block>
+  <block id="8e671825df2521c62d586d393df3398d" category="paragraph">*Destinazione di replica*: se hai configurato la replica degli snapshot, vengono elencati i nomi delle VM e dei sistemi di archiviazione di destinazione. Se non c'è replica, questo campo visualizza "Nessuno".</block>
+  <block id="705d8898c1c055eb3bff9939a87b6812" category="list-text">*Critico*: vengono eseguite più copie snapshot all'ora (programma di protezione molto aggressivo)</block>
+  <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*Importante*: le copie degli snapshot vengono create meno frequentemente di ogni ora ma più frequentemente di ogni giorno</block>
+  <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*Standard*: le copie snapshot vengono eseguite più di una volta al giorno</block>
+  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">Criteri di rilevamento predefiniti</block>
+  <block id="b267816a1724e79c894aa7e4509e18b2" category="paragraph">+ La **Criterio di replica critica** è l'unica politica predefinita che supporta la replica degli snapshot su ONTAP.</block>
+  <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">Conservazione (giorni)</block>
+  <block id="b5b7fab63026325a379913c2a05751c2" category="cell">Numero di copie snapshot</block>
+  <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">Numero massimo di copie snapshot</block>
+  <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*Politica di replicazione critica*</block>
+  <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">Replicazione secondaria a ONTAP</block>
+  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*Rilevamento primario*: abilita Ransomware Resilience per rilevare potenziali attacchi ransomware.</block>
+  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*Blocca estensioni file*: abilita Ransomware Resilience per bloccare le estensioni di file sospette note. Ransomware Resilience esegue automaticamente copie snapshot quando il rilevamento primario è abilitato.</block>
+  <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*Politica di replicazione*:</block>
+  <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*Nome base della policy di replicazione*: immettere un nuovo nome o sceglierne uno esistente. Il nome base è il prefisso aggiunto a tutti gli snapshot.</block>
+  <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*Pianificazioni di replicazione*: attiva/disattiva le frequenze che desideri abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da conservare) per ogni pianificazione abilitata.</block>
+  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">Seleziona le impostazioni di rilevamento desiderate: *Rilevamento crittografia* *Rilevamento comportamento utente sospetto* *Blocca estensioni di file sospette*</block>
+  <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">Se la strategia prevede la replica, selezionare **Sistema di destinazione** e **VM di archiviazione di destinazione**. Selezionare **Avanti**.</block>
+  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">Se la strategia di protezione include la replica, rivedere le impostazioni di replica.</block>
+  <block id="22af614d3b0e3b88037f6f632819e41f" category="list-text">Per replicare tutti gli snapshot nella stessa destinazione, seleziona **Usa la stessa destinazione per ogni carico di lavoro**. Selezionare un *Sistema di destinazione* e una *VM di archiviazione di destinazione* per i carichi di lavoro nella sezione Agente console.</block>
+  <block id="5cddb60bd30a2b5abfa065435ff46fad" category="paragraph">Per utilizzare destinazioni diverse, deselezionare la casella. Esaminare ciascun carico di lavoro in ciascun agente della console e assegnare un *Sistema di destinazione* e una *VM di archiviazione di destinazione* per ciascun carico di lavoro. Selezionare **Avanti**.</block>
+  <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">Prima di scaricare i file, dovresti aggiornare la dashboard per acquisire i dati più recenti nei tuoi report.</block>
+  <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*Protezione*: include lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di quelli protetti e a rischio.</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">Si tratta di un ID generato dal sistema che corrisponde al tuo indirizzo email. Nella pagina *Gestione NSS*, puoi visualizzare la tua email da<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">Se hai bisogno di aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Aggiorna credenziali* in<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">12 gennaio 2026</block>
 </blocks>

@@ -23,13 +23,6 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
-*Come puoi scoprire i carichi di lavoro?*  Puoi fare quanto segue:
-
-* All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.  Questa funzionalità potrebbe rivelarsi utile se si desidera proteggere carichi di lavoro specifici nel proprio ambiente e non in altri.
-* Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza.
-* Scopri nuovi sistemi.
-
-
 
 
 == Seleziona i carichi di lavoro da scoprire e proteggere
@@ -59,7 +52,7 @@ image:screen-discover-workloads.png["Scopri lo screenshot dei carichi di lavoro"
 . Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
 . Seleziona *Scopri*.
 +
-Ransomware Resilience rileva i dati del carico di lavoro solo per gli agenti della console con sistemi selezionati. Questo processo può richiedere alcuni minuti.
+Ransomware Resilience rileva i dati del carico di lavoro solo quando selezioni il sistema. Il processo di scoperta può richiedere diversi minuti.
 
 . Per scaricare l'elenco dei carichi di lavoro rilevati, seleziona *Scarica risultati*.
 . Per visualizzare la dashboard di Ransomware Resilience, seleziona *Vai alla dashboard*.
@@ -78,10 +71,10 @@ link:rp-use-dashboard.html["Scopri cosa ti mostra la Dashboard."]
 
 == Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza
 
-Se hai già selezionato i sistemi per l'individuazione, puoi individuare i carichi di lavoro appena creati per tali ambienti dalla Dashboard.
+Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, devi riavviare la rilevazione per proteggere i nuovi carichi di lavoro.
 
 .Passi
-. Per identificare la data dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.
+. Per identificare l'ora dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.
 . Dalla Dashboard, seleziona l'icona *Aggiorna* per trovare nuovi carichi di lavoro.
 
 
@@ -92,8 +85,41 @@ Se hai già selezionato i sistemi per l'individuazione, puoi individuare i caric
 Se hai già scoperto dei sistemi, puoi trovarne di nuovi o non selezionati in precedenza.
 
 .Passi
-. Dal menu Ransomware Resilience, seleziona la verticaleimage:button-actions-vertical.png["Azioni verticali"] ... opzione in alto a destra.  Dal menu a discesa, seleziona *Impostazioni*.
+. Dal menu Ransomware Resilience, seleziona la verticale " opzione category='inline-code'/> in alto a destra. Dal menu a discesa, seleziona *Impostazioni*.
 . Nella scheda Individuazione carichi di lavoro, seleziona *Individuazione carichi di lavoro*. La scoperta potrebbe richiedere alcuni minuti.  Un'icona di caricamento mostra l'avanzamento.
 . Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati. Non supporta un sistema se la sua versione ONTAP è inferiore alla versione richiesta. Passando il mouse su un sistema non supportato, viene visualizzato un suggerimento che ne indica il motivo. Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
 . Seleziona *Scopri*.
+
+
+
+
+== Escludi carichi di lavoro
+
+Ransomware Resilience consente di escludere carichi di lavoro specifici in un sistema dalla protezione e dal rilevamento del ransomware.
+
+È possibile escludere solo i carichi di lavoro supportati e rilevati correttamente. È possibile modificare l'elenco dei carichi di lavoro esclusi in qualsiasi momento. Non ti verrà addebitato alcun costo per i carichi di lavoro esclusi da Ransomware Resilience.
+
+.Aggiungi carichi di lavoro all'elenco dei carichi di lavoro esclusi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella dashboard Impostazioni, individua la dashboard Individuazione del carico di lavoro. La scheda identifica il numero di carichi di lavoro esclusi. Per aggiungere carichi di lavoro, accanto ai carichi di lavoro esclusi, seleziona **Gestisci**.
++
+image:settings-excluded-workload.png["Dashboard delle impostazioni di Ransomware Resilience"]
+
+. Nella pagina Carichi di lavoro esclusi, seleziona **Aggiungi**.
+. Seleziona i carichi di lavoro che vuoi escludere, quindi **Aggiungi**.
+. Esaminare i carichi di lavoro esclusi nella pagina Carichi di lavoro esclusi. Durante l'aggiunta del carico di lavoro, accanto al suo nome viene visualizzato un indicatore di avanzamento. Se un carico di lavoro non è stato escluso correttamente, non viene visualizzato nella pagina.
+
+
+.Rimuovi i carichi di lavoro dall'elenco dei carichi di lavoro esclusi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella dashboard Impostazioni, individua la dashboard Individuazione del carico di lavoro. La scheda identifica il numero di carichi di lavoro esclusi. Accanto ai carichi di lavoro esclusi, seleziona **Gestisci**.
++
+image:settings-excluded-workload.png["Screenshot della dashboard delle impostazioni di Ransomware Resilience."]
+
+. Per rimuovere un singolo carico di lavoro, seleziona il menu azioni per il carico di lavoro che desideri rimuovere dall'elenco degli esclusi.
++
+Per rimuovere più carichi di lavoro, seleziona la casella di controllo accanto ai carichi di lavoro che desideri rimuovere, quindi **Rimuovi da esclusi**.
+
+. Nella finestra di dialogo, seleziona **Rimuovi** per confermare che desideri rimuovere i carichi di lavoro dall'elenco delle esclusioni.
+. Se il carico di lavoro viene rimosso correttamente dall'elenco dei carichi di lavoro esclusi, nella pagina Carico di lavoro escluso viene visualizzato un messaggio di operazione riuscita e il carico di lavoro non viene più visualizzato nell'elenco dei carichi di lavoro esclusi. Se l'azione fallisce, viene visualizzato un messaggio di errore; riprovare l'operazione. image:exclude-workload-remove-successful.png["Screenshot della rimozione riuscita di un carico di lavoro escluso."]
 

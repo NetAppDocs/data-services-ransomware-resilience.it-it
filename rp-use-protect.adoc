@@ -20,9 +20,9 @@ summary: È possibile proteggere i carichi di lavoro dagli attacchi ransomware a
 
 == Comprendere le strategie di protezione dal ransomware
 
-Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_ che di _protezione_.
+Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_, _protezione_ e _replica_.
 
-* **Criteri di rilevamento** rilevano minacce ransomware
+* **Le policy di rilevamento** identificano le minacce ransomware
 * **Le policy di protezione** includono policy di snapshot e backup.  In una strategia di protezione sono necessarie policy di rilevamento e snapshot.  Le policy di backup sono facoltative.
 +
 Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransomware Resilience li rileva e ti offre la possibilità di:
@@ -31,6 +31,10 @@ Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransom
 ** utilizzare una policy di rilevamento ransomware e continuare a utilizzare le policy di snapshot e backup create da altri strumenti NetApp , oppure
 ** utilizzare Ransomware Resilience per gestire rilevamento, snapshot e backup.
 
+
+* **I criteri di replica** consentono di replicare gli snapshot da Ransomware Resilience a un sito secondario. Le pianificazioni di replicazione possono essere impostate su frequenze orarie, giornaliere, settimanali o mensili.
++
+Attualmente è possibile replicare gli snapshot solo nell'archiviazione ONTAP locale.
 
 
 
@@ -116,7 +120,12 @@ TIP: Quando la protezione è abilitata in Ransomware Resilience, il rilevamento 
 
 
 
+
+NOTE: Le attività sospette relative al comportamento dell'utente e le attività FPolicy (estensioni di file sospette) vengono elencate separatamente dallo stato di rilevamento.
+
 *Criterio di rilevamento*: viene visualizzato il nome del criterio di rilevamento del ransomware, se ne è stato assegnato uno.  Se il criterio di rilevamento non è stato assegnato, viene visualizzato "N/D".
+
+*Destinazione di replica*: se hai configurato la replica degli snapshot, vengono elencati i nomi delle VM e dei sistemi di archiviazione di destinazione. Se non c'è replica, questo campo visualizza "Nessuno".
 
 *Criteri di snapshot e backup*: questa colonna mostra i criteri di snapshot e backup applicati al carico di lavoro e il prodotto o servizio che gestisce tali criteri.
 
@@ -131,21 +140,25 @@ TIP: Quando la protezione è abilitata in Ransomware Resilience, il rilevamento 
 
 Ransomware Resilience assegna un'importanza o una priorità a ciascun carico di lavoro durante la fase di individuazione, basandosi su un'analisi di ciascun carico di lavoro.  L'importanza del carico di lavoro è determinata dalle seguenti frequenze di snapshot:
 
-* *Critico*: vengono eseguite più di 1 copia snapshot all'ora (programma di protezione altamente aggressivo)
-* *Importante*: copie snapshot effettuate meno di 1 all'ora ma più di 1 al giorno
-* *Standard*: copie snapshot eseguite più di 1 al giorno
+* *Critico*: vengono eseguite più copie snapshot all'ora (programma di protezione molto aggressivo)
+* *Importante*: le copie degli snapshot vengono create meno frequentemente di ogni ora ma più frequentemente di ogni giorno
+* *Standard*: le copie snapshot vengono eseguite più di una volta al giorno
 
 
-*Criteri di rilevamento predefiniti* [[predefiniti]]
+
+
+=== Criteri di rilevamento predefiniti
 
 È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.
 
 
 NOTE: Il criterio **Estensione utente crittografia** è l'unico criterio predefinito che supporta il rilevamento di comportamenti sospetti degli utenti.
 
++ La **Criterio di replica critica** è l'unica politica predefinita che supporta la replica degli snapshot su ONTAP.
+
 [cols="10,15a,20,15,15,15"]
 |===
-| Livello di politica | Istantanea | Frequenza | Conservazione (giorni) | Numero di copie snapshot | Numero massimo totale di copie snapshot 
+| Livello di politica | Istantanea | Frequenza | Conservazione (giorni) | Numero di copie snapshot | Numero massimo di copie snapshot 
 
 
 .4+| *Politica sui carichi di lavoro critici*  a| 
@@ -226,6 +239,46 @@ Ogni 1 settimana
 | Mensile  a| 
 Ogni 30 giorni
 | 60 | 2 | 93 
+
+
+.4+| *Estensione utente crittografia*  a| 
+Ogni quarto d'ora
+| Ogni 30 minuti | 3 | 72 | 93 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 93 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 93 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 93 
+
+
+.4+| *Politica di replicazione critica*  a| 
+Ogni quarto d'ora
+| Ogni 15 minuti | 3 | 288 | 309 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 309 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 309 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 309 
 |===
 
 
@@ -302,6 +355,7 @@ Se nel carico di lavoro non sono presenti policy di snapshot o backup, è possib
 * Politica di snapshot
 * Politica di backup
 * Criterio di rilevamento del ransomware
+* Replicazione secondaria a ONTAP
 
 
 .Passaggi per creare una strategia di protezione dal ransomware [[passaggi]]
@@ -324,9 +378,9 @@ NOTE: Se si sceglie di copiare e modificare una strategia esistente, Ransomware 
 ** *Politica di rilevamento*:
 +
 *** *Criterio*: scegliere uno dei criteri di rilevamento predefiniti.
-*** *Rilevamento primario*: abilita il rilevamento ransomware per consentire a Ransomware Resilience di rilevare potenziali attacchi ransomware.
+*** *Rilevamento primario*: abilita Ransomware Resilience per rilevare potenziali attacchi ransomware.
 *** *Rilevamento del comportamento sospetto dell'utente*: abilita il rilevamento del comportamento dell'utente per trasmettere gli eventi delle attività dell'utente a Ransomware Resilience e rilevare eventi sospetti, come violazioni dei dati.
-*** *Blocca estensioni file*: abilita questa opzione per far sì che Ransomware Resilience blocchi le estensioni di file sospette note.  Ransomware Resilience esegue automaticamente copie snapshot quando il rilevamento primario è abilitato.
+*** *Blocca estensioni file*: abilita Ransomware Resilience per bloccare le estensioni di file sospette note. Ransomware Resilience esegue automaticamente copie snapshot quando il rilevamento primario è abilitato.
 +
 Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestione sistema.
 
@@ -345,17 +399,23 @@ Il blocco della copia snapshot è disponibile con ONTAP 9.12.1 e versioni succes
 *** *Pianificazioni snapshot*: scegli le opzioni di pianificazione, il numero di copie snapshot da conservare e seleziona per abilitare la pianificazione.
 
 
+** *Politica di replicazione*:
++
+*** *Nome base della policy di replicazione*: immettere un nuovo nome o sceglierne uno esistente. Il nome base è il prefisso aggiunto a tutti gli snapshot.
+*** *Pianificazioni di replicazione*: attiva/disattiva le frequenze che desideri abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da conservare) per ogni pianificazione abilitata.
+
+
 ** *Politica di backup*:
 +
 *** *Nome base della policy di backup*: inserisci un nuovo nome o scegline uno esistente.
 *** *Pianificazioni di backup*: scegli le opzioni di pianificazione per l'archiviazione secondaria e abilita la pianificazione.
-
-
-
-
 +
 
 TIP: Per abilitare il blocco del backup sull'archiviazione secondaria, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per maggiori dettagli, vedere link:rp-use-settings.html["Configurare le impostazioni"] .
+
+
+
+
 
 . Selezionare *Aggiungi*.
 
@@ -381,7 +441,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Ransomware Resilience rileva se sono presenti policy SnapCenter o Backup and Recovery attive.
 . Per mantenere in vigore i criteri di Backup e ripristino o SnapCenter esistenti e applicare solo un criterio di _rilevamento_, lasciare deselezionata la casella **Sostituisci criteri esistenti**.
 . Per visualizzare i dettagli delle policy SnapCenter , seleziona la *freccia giù*.
-. Seleziona le impostazioni di rilevamento desiderate: *Rilevamento crittografia* *Rilevamento comportamento utente sospetto* *Blocca estensioni file sospette*
+. Seleziona le impostazioni di rilevamento desiderate: *Rilevamento crittografia* *Rilevamento comportamento utente sospetto* *Blocca estensioni di file sospette*
 . Selezionare **Avanti**.
 . Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente olink:suspicious-user-activity.html#add-a-user-activity-agent["o crearne uno"] .
 +
@@ -406,6 +466,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Dalla pagina Protezione, seleziona un carico di lavoro, quindi seleziona *Proteggi*.
 . Ransomware Resilience rileva se sono presenti policy attive di Backup e Recovery o SnapCenter .  Per sostituire i criteri di Backup e ripristino o SnapCenter esistenti, selezionare la casella **Sostituisci criteri esistenti**.  Selezionando la casella, Ransomware Resilience sostituisce l'elenco dei criteri di rilevamento con i criteri di rilevamento.
 . Scegli una polizza di protezione.  Se non esiste alcuna policy di protezione, seleziona **Aggiungi** per crearne una nuova.  Per informazioni sulla creazione di una policy, vedere<<steps,Creare una politica di protezione>> . Selezionare **Avanti**.
+. Se la strategia prevede la replica, selezionare **Sistema di destinazione** e **VM di archiviazione di destinazione**. Selezionare **Avanti**.
 . Seleziona una destinazione di backup o creane una nuova. Selezionare **Avanti**.
 +
 .. Se la strategia di protezione prevede il rilevamento del comportamento dell'utente, selezionare un agente di attività utente nel proprio ambiente per ospitare i nuovi raccoglitori di dati. Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
@@ -462,11 +523,16 @@ TIP: Per visualizzare maggiori dettagli sui carichi di lavoro, scorrere verso de
 image:screen-protection-groups-policy.png["Aggiungi gruppo di protezione - Pagina Criteri"]
 
 . Selezionare il criterio per gestire la protezione di questo gruppo. Per confermare, selezionare *Avanti*.
+. Se la strategia di protezione include la replica, rivedere le impostazioni di replica.
 +
-.. Se è necessario configurare un criterio di backup, sceglierne uno, quindi selezionare **Avanti**.
-.. Se la policy di rilevamento include il rilevamento del comportamento dell'utente, seleziona il raccoglitore dati che desideri utilizzare, quindi **Avanti**.
+.. Per replicare tutti gli snapshot nella stessa destinazione, seleziona **Usa la stessa destinazione per ogni carico di lavoro**. Selezionare un *Sistema di destinazione* e una *VM di archiviazione di destinazione* per i carichi di lavoro nella sezione Agente console.
++
+Per utilizzare destinazioni diverse, deselezionare la casella. Esaminare ciascun carico di lavoro in ciascun agente della console e assegnare un *Sistema di destinazione* e una *VM di archiviazione di destinazione* per ciascun carico di lavoro. Selezionare **Avanti**.
 
 
+
+. Se è necessario configurare un criterio di backup, sceglierne uno, quindi selezionare **Avanti**.
+. Se la policy di rilevamento include il rilevamento del comportamento dell'utente, seleziona il raccoglitore dati che desideri utilizzare, quindi **Avanti**.
 . Rivedere le selezioni per il gruppo di protezione.
 . Per finalizzare la creazione del gruppo di protezione, selezionare *Aggiungi*.
 
