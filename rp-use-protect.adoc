@@ -523,15 +523,7 @@ TIP: Per visualizzare maggiori dettagli sui carichi di lavoro, scorrere verso de
 image:screen-protection-groups-policy.png["Aggiungi gruppo di protezione - Pagina Criteri"]
 
 . Selezionare il criterio per gestire la protezione di questo gruppo. Per confermare, selezionare *Avanti*.
-. Se la strategia di protezione include la replica, rivedere le impostazioni di replica.
-+
-.. Per replicare tutti gli snapshot nella stessa destinazione, seleziona **Usa la stessa destinazione per ogni carico di lavoro**. Selezionare un *Sistema di destinazione* e una *VM di archiviazione di destinazione* per i carichi di lavoro nella sezione Agente console.
-+
-Per utilizzare destinazioni diverse, deselezionare la casella. Esaminare ciascun carico di lavoro in ciascun agente della console e assegnare un *Sistema di destinazione* e una *VM di archiviazione di destinazione* per ciascun carico di lavoro. Selezionare **Avanti**.
-
-
-
-. Se è necessario configurare un criterio di backup, sceglierne uno, quindi selezionare **Avanti**.
+. Per configurare un criterio di backup, selezionarne uno, quindi selezionare **Avanti**.
 . Se la policy di rilevamento include il rilevamento del comportamento dell'utente, seleziona il raccoglitore dati che desideri utilizzare, quindi **Avanti**.
 . Rivedere le selezioni per il gruppo di protezione.
 . Per finalizzare la creazione del gruppo di protezione, selezionare *Aggiungi*.
