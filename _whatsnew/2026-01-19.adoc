@@ -1,0 +1,11 @@
+= Volumi non supportati
+:allow-uri-read: 
+
+
+
+
+=== Volumi non supportati
+
+I report di Ransomware Resilience ora acquisiscono informazioni sui volumi supportati e non supportati nel report **Riepilogo**. Utilizzare queste informazioni per diagnosticare il motivo per cui i volumi di un sistema potrebbero non essere idonei alla protezione anti-ransomware.
+
+Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Scarica i report in Ransomware Resilience"^].

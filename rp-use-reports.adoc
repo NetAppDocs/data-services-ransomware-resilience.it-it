@@ -15,12 +15,13 @@ summary: Utilizzando NetApp Ransomware Resilience, puoi scaricare report che mos
 È possibile esportare i dati di protezione e scaricare i file CSV o JSON che mostrano i dettagli delle esercitazioni di preparazione agli attacchi, della protezione, degli avvisi e del ripristino.
 
 
-TIP: Prima di scaricare i file, dovresti aggiornare la dashboard per acquisire i dati più recenti nei tuoi report.
+TIP: Prima di scaricare i file, aggiorna la dashboard per acquisire i dati più recenti nei tuoi report.
 
 *Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 *Quali dati puoi scaricare?*  È possibile scaricare i file da una qualsiasi delle opzioni del menu principale:
 
+* **Riepilogo**: include elenchi di carichi di lavoro supportati e non supportati, azioni consigliate per migliorare la tua postura di resilienza informatica e informazioni acquisite nella dashboard Ransomware Resilience.
 * *Protezione*: include lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di quelli protetti e a rischio.
 * *Avvisi*: include lo stato e i dettagli di tutti gli avvisi, tra cui il numero totale di avvisi e snapshot automatici.
 * *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristino riuscito".

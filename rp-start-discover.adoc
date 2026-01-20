@@ -79,6 +79,9 @@ Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, devi ri
 
 
 
+TIP: Se noti che alcuni volumi non vengono visualizzati per il sistema individuato, è possibile che non siano supportati. Per trovare un elenco dei volumi non supportati, vai al menu **Impostazioni**, quindi seleziona il menu Azione nella scheda Individuazione del carico di lavoro per scaricare un report JSON dei volumi supportati e non supportati.
+
+
 
 == Scopri nuovi sistemi
 

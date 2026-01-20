@@ -18,13 +18,25 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 
 
+== 19 gennaio 2026
+
+
+
+=== Volumi non supportati
+
+I report di Ransomware Resilience ora acquisiscono informazioni sui volumi supportati e non supportati nel report **Riepilogo**. Utilizzare queste informazioni per diagnosticare il motivo per cui i volumi di un sistema potrebbero non essere idonei alla protezione anti-ransomware.
+
+Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Scarica i report in Ransomware Resilience"^].
+
+
+
 == 12 gennaio 2026
 
 
 
 === Replica gli snapshot su ONTAP
 
-Ransomware Resilience ora supporta l'aggiunta della replica degli snapshot a un sito ONTAP secondario. È possibile creare una strategia di protezione dal ransomware che includa la replica oppure utilizzare la strategia predefinita.
+Ransomware Resilience ora supporta l'aggiunta della replica degli snapshot a un sito ONTAP secondario. Con i gruppi di protezione che utilizzano un criterio di replica, è possibile replicare sulla stessa destinazione o su destinazioni diverse per ogni carico di lavoro. È possibile creare una strategia di protezione dal ransomware che includa la replica oppure utilizzare la strategia predefinita.
 
 Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteggi i carichi di lavoro con Ransomware Resilience"^].
 

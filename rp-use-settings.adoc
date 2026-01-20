@@ -62,6 +62,9 @@ Questa pagina mostra gli agenti della console con sistemi non selezionati in pre
 
 
 
+TIP: Dalla scheda Individuazione del carico di lavoro in Impostazioni, seleziona il menu Azione `...` quindi **Scarica il report (JSON)** per esaminare un elenco dei carichi di lavoro supportati e non supportati nei tuoi sistemi.
+
+
 
 == Attività utente sospetta
 
