@@ -30,7 +30,9 @@ Un agente può ospitare più raccoglitori di dati. I raccoglitori di dati invian
 
 I collettori vengono configurati nelle impostazioni di Resilienza ransomware.
 
-*Ruolo Console obbligatorio* Per attivare il rilevamento di attività utente sospette, è necessario il ruolo di amministratore dell'organizzazione.  Per le configurazioni successive relative ad attività utente sospette, è necessario il ruolo di amministratore del comportamento utente Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
+*Ruolo Console obbligatorio* Per attivare il rilevamento di attività utente sospette, è necessario il ruolo **Organization admin role**. Per le successive configurazioni di attività utente sospette, è necessario il ruolo **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
+
+Assicurarsi che ogni ruolo venga applicato a livello di organizzazione.
 
 
 
