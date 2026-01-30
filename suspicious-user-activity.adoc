@@ -107,46 +107,58 @@ TIP: Si consiglia di sincronizzare l'ora sia sul sistema ONTAP sia sulla macchin
 Esamina le regole di accesso alla rete cloud per la tua area geografica di riferimento (Asia Pacifico, Europa o Stati Uniti).
 
 
+IMPORTANT: Durante l'installazione iniziale, sostituire l' `<site_name>` con un'autorizzazione con carattere jolly (`*`). Dopo che l'agente è attivato e completamente operativo, è possibile sostituire l'autorizzazione con il nome del sito. Contattare il proprio NetApp rappresentante per il nome del sito.
+
+
 
 ==== Distribuzioni di agenti di attività utente basate su APAC
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | Protocollo | Porta | Fonte | Destinazione | Descrizione 
 
 
-| TCP | 443 | Agente di attività dell'utente | Servizio di resilienza al ransomware | Accesso alla resilienza del ransomware 
+| TCP | 443 | Agente di attività dell'utente  a| 
+* <site_name>.cs01-ap-1.cloudinsights.netapp.com
+* <site_name>.c01-ap-1.cloudinsights.netapp.com
+* <site_name>.c02-ap-1.cloudinsights.netapp.com
+* gentlogin.cs01-ap-1.cloudinsights.netapp.com
 
-
-| TCP | 443 | Agente di attività dell'utente | Servizio di resilienza al ransomware | Accesso ai servizi di autenticazione 
+| Accesso alla resilienza del ransomware 
 |===
 
 
 ==== Distribuzioni di agenti di attività utente basate in Europa
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | Protocollo | Porta | Fonte | Destinazione | Descrizione 
 
 
-| TCP | 443 | Agente di attività dell'utente | Servizio di resilienza al ransomware | Accesso alla resilienza del ransomware 
+| TCP | 443 | Agente di attività dell'utente  a| 
+* <site_name>.cs01-eu-1.cloudinsights.netapp.com
+* <site_name>.c01-eu-1.cloudinsights.netapp.com
+* <site_name>.c02-eu-1.cloudinsights.netapp.com
+* agentlogin.cs01-eu-1.cloudinsights.netapp.com
 
-
-| TCP | 443 | Agente di attività dell'utente | Servizio di resilienza al ransomware | Accesso ai servizi di autenticazione 
+| Accesso alla resilienza del ransomware 
 |===
 
 
 ==== Distribuzioni di agenti di attività utente con sede negli Stati Uniti
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | Protocollo | Porta | Fonte | Destinazione | Descrizione 
 
 
-| TCP | 443 | Agente di attività dell'utente | Servizio di resilienza al ransomware | Accesso alla resilienza del ransomware 
+| TCP | 443 | Agente di attività dell'utente  a| 
+* <site_name>.cs01.cloudinsights.netapp.com
+* <site_name>.c01.cloudinsights.netapp.com
+* <site_name>.c02.cloudinsights.netapp.com
+* agentlogin.cs01.cloudinsights.netapp.com
 
-
-| TCP | 443 | Agente di attività dell'utente | Servizio di resilienza al ransomware | Accesso ai servizi di autenticazione 
+| Accesso alla resilienza del ransomware 
 |===
 
 
