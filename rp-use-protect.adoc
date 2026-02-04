@@ -20,7 +20,7 @@ summary: È possibile proteggere i carichi di lavoro dagli attacchi ransomware a
 
 == Comprendere le strategie di protezione dal ransomware
 
-Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_, _protezione_ e _replica_.
+Le strategie di protezione dal ransomware comprendono _rilevamento_, _protezione_ e _replica_.
 
 * **Le policy di rilevamento** identificano le minacce ransomware
 * **Le policy di protezione** includono policy di snapshot e backup.  In una strategia di protezione sono necessarie policy di rilevamento e snapshot.  Le policy di backup sono facoltative.

@@ -2066,7 +2066,6 @@
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">Se il carico di lavoro viene rimosso correttamente dall'elenco dei carichi di lavoro esclusi, nella pagina Carico di lavoro escluso viene visualizzato un messaggio di operazione riuscita e il carico di lavoro non viene più visualizzato nell'elenco dei carichi di lavoro esclusi. Se l'azione fallisce, viene visualizzato un messaggio di errore; riprovare l'operazione. <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*In revisione*: puoi contrassegnare un incidente come in revisione mentre lo valuti.</block>
   <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">Dopo aver respinto un attacco, non è possibile ripristinarne lo stato. Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.</block>
-  <block id="95f7e6287ef0ab80de109e7baee476ad" category="paragraph">Le strategie di protezione dal ransomware comprendono sia politiche di _rilevamento_, _protezione_ e _replica_.</block>
   <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**Le policy di rilevamento** identificano le minacce ransomware</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**I criteri di replica** consentono di replicare gli snapshot da Ransomware Resilience a un sito secondario. Le pianificazioni di replicazione possono essere impostate su frequenze orarie, giornaliere, settimanali o mensili.</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">Attualmente è possibile replicare gli snapshot solo nell'archiviazione ONTAP locale.</block>
@@ -2132,4 +2131,5 @@
   <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com</block>
   <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
   <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
+  <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">Le strategie di protezione dal ransomware comprendono _rilevamento_, _protezione_ e _replica_.</block>
 </blocks>
