@@ -443,7 +443,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Per visualizzare i dettagli delle policy SnapCenter , seleziona la *freccia giù*.
 . Seleziona le impostazioni di rilevamento desiderate: *Rilevamento crittografia* *Rilevamento comportamento utente sospetto* *Blocca estensioni di file sospette*
 . Selezionare **Avanti**.
-. Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente olink:suspicious-user-activity.html#add-a-user-activity-agent["o crearne uno"] .
+. Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente o link:suspicious-user-activity.html#create-a-user-activity-agent["o crearne uno"].
 +
 L'agente di attività utente ospita i nuovi collettori di dati. Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
 

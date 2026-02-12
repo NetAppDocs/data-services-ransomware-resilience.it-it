@@ -136,9 +136,6 @@ Nella scheda Avvisi è possibile verificare se si è verificata un'attività dan
 È necessario aver configurato un agente di attività utente e abilitato una policy di protezione con rilevamento del comportamento utente per visualizzare gli avvisi a livello utente. La colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi solo quando il rilevamento del comportamento utente è abilitato. Per abilitare il rilevamento degli utenti sospetti, vedere link:suspicious-user-activity.html["Attività utente sospetta"].
 
 
-NOTE: Se stai utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, è consigliato utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience, tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di account per abilitare questa associazione. + Per utilizzare il rilevamento di utenti sospetti _senza_ DII, assicurati di aver link:suspicious-user-activity.html["ha abilitato il rilevamento di attività sospette degli utenti"] e di aver configurato gli agenti appropriati.
-
-
 
 === Visualizza attività dannose
 

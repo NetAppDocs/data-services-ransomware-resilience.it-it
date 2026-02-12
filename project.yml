@@ -41,8 +41,14 @@ sidebar:
     - title: Configura backup, rilevamento minacce e simulazioni di attacchi nelle
         Impostazioni
       url: "/rp-use-settings.html"
-    - title: Configurare il rilevamento delle attività sospette degli utenti
-      url: "/suspicious-user-activity.html"
+    - title: Configura il rilevamento dell'attività dell'utente
+      entries:
+      - title: Scopri il rilevamento delle attività degli utenti
+        url: "/concept-user-behavior.html"
+      - title: Requisiti di attività dell'utente
+        url: "/reference-user-activity-requirements.html"
+      - title: Configura agenti e collettori
+        url: "/suspicious-user-activity.html"
   - title: Utilizzare la resilienza del ransomware
     entries:
     - title: Visualizza lo stato del carico di lavoro tramite la Dashboard
