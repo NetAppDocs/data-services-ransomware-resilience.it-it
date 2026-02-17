@@ -26,6 +26,17 @@ Se si seleziona un volume ONTAP 9.11.1 per l'esercitazione di preparazione all'a
 
 Il sistema Amazon FSx for NetApp ONTAP è supportato in Ransomware Resilience. Ad Amazon FSx per ONTAP si applicano le seguenti limitazioni:
 
-* Le policy di backup non sono supportate per Amazon FSx for ONTAP. In questo ambiente, è consigliabile eseguire le operazioni di backup utilizzando Amazon FSx . È possibile ripristinare questi carichi di lavoro utilizzando Ransomware Resilience.
+* Le policy di backup non sono supportate per Amazon FSx for ONTAP. In questo ambiente, dovresti eseguire le operazioni di backup utilizzando Amazon FSx for backup. Puoi ripristinare questi carichi di lavoro utilizzando Ransomware Resilience.
 * Le operazioni di ripristino vengono eseguite solo dagli snapshot.
+
+
+
+
+== Limitazioni di Azure NetApp Files
+
+Azure NetApp Files è supportato in Ransomware Resilience. Le seguenti limitazioni si applicano ad Azure NetApp Files:
+
+* Le strategie di protezione ransomware con criteri di backup non sono supportate per Azure NetApp Files. In alternativa, è possibile utilizzare il backup di Azure NetApp Files.
+* Le strategie di protezione ransomware con replica non sono supportate per Azure NetApp Files.
+* Quando si seleziona una strategia di protezione, assicurarsi che la pianificazione degli snapshot sia compatibile con Azure NetApp Files. La pianificazione degli snapshot più frequente disponibile in Azure NetApp Files è oraria.
 

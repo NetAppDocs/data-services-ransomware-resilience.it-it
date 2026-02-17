@@ -150,11 +150,51 @@ Fornire i dettagli della mappatura degli attributi:
 
 === Elimina un connettore di directory utente
 
+.Passi
 . In Ransomware Resilience, vai su *Impostazioni*.
 . Individua il riquadro Attività utente e seleziona **Gestisci**.
 . Selezionare la scheda **Connettore directory utente**.
 . Identifica il connettore della directory utente che desideri eliminare. Nel menu azioni alla fine della riga, seleziona i tre punti `...` quindi **Elimina**.
 . Nella finestra di dialogo pop-up, seleziona **Delete** per confermare.
+
+
+
+
+=== Escludi gli utenti dagli avvisi
+
+Se ci sono determinati utenti attendibili il cui comportamento potrebbe attivare avvisi sul comportamento degli utenti, puoi escluderli dagli avvisi.
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella dashboard Impostazioni, individua la scheda User activity, quindi seleziona **Manage**.
+. Seleziona la scheda **Utenti esclusi**.
+. Per rivedere i singoli utenti nell'interfaccia utente, seleziona **Seleziona manualmente**. Per caricare un elenco di utenti esclusi, seleziona **Carica**.
++
+.. Se hai selezionato **Seleziona manualmente**, seleziona la casella di controllo accanto ai nomi degli utenti specifici che desideri escludere.
+.. Se selezioni **Carica**, devi prima scaricare un file CSV che include l'elenco di tutti gli utenti. Seleziona **Scarica** per accedere all'elenco.
++
+Esamina il file CSV. Rimuovi i nomi di tutti gli utenti per cui desideri mantenere il rilevamento. Quando l'elenco include solo i nomi degli utenti che desideri escludere dal rilevamento, salvalo. Seleziona **Upload** per individuare il file, quindi selezionalo.
+
+
+
+. Seleziona **Aggiungi** per completare l'aggiunta degli utenti all'elenco delle esclusioni.
+. Nella scheda **Utenti esclusi**, i nomi degli utenti rimossi dagli avvisi di rilevamento del comportamento utente ora vengono visualizzati nella dashboard.
+
+
+
+TIP: È anche possibile escludere un utente direttamente da un avviso. Per ulteriori informazioni, vedere link:rp-use-alert.html["Rispondere agli avvisi di ransomware"].
+
+
+
+==== Rimuovi gli utenti dall'elenco degli utenti esclusi
+
+È possibile aggiungere nuovamente un utente al rilevamento in seguito.
+
+.Passi
+. Nella dashboard Impostazioni, individua la scheda User activity, quindi seleziona **Manage**.
+. Seleziona la scheda **Utenti esclusi**.
+. Individua il nome dell'utente che desideri rimuovere dalla selezione degli utenti esclusi. Seleziona il menu Azione (`...` sulla riga con il nome dell'utente, quindi **Rimuovi**.
+. Nella finestra di dialogo, seleziona **Remove** per confermare che desideri rimuovere gli utenti selezionati.
 
 
 

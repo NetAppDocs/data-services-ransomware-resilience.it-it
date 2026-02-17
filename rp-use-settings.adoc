@@ -12,7 +12,7 @@ summary: Nella pagina delle impostazioni è possibile configurare diverse opzion
 
 
 [role="lead"]
-È possibile configurare destinazioni di backup, inviare dati a un sistema di sicurezza e gestione degli eventi (SIEM) esterno, eseguire un'esercitazione di preparazione agli attacchi, configurare l'individuazione del carico di lavoro o configurare il rilevamento di attività utente sospette accedendo all'opzione *Impostazioni*.
+Nella scheda delle impostazioni di NetApp Ransomware Resilience, puoi configurare le destinazioni di backup, eseguire un'esercitazione di preparazione all'attacco, configurare l'individuazione del carico di lavoro o configurare il rilevamento di attività sospette degli utenti.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -20,9 +20,9 @@ summary: Nella pagina delle impostazioni è possibile configurare diverse opzion
 
 * Simula un attacco ransomware eseguendo un'esercitazione di preparazione e rispondendo a un avviso ransomware simulato. Per maggiori dettagli, vedere link:rp-start-simulate.html["Eseguire un'esercitazione di preparazione all'attacco ransomware"] .
 * Configurare l'individuazione del carico di lavoro.
-* Configurare la segnalazione delle attività sospette degli utenti.
+* Configura la segnalazione delle attività sospette degli utenti. Per ulteriori informazioni, vedi link:suspicious-user-activity.html["Attività utente sospetta"].
 * Aggiungi una destinazione di backup.
-* Collega il tuo sistema di sicurezza e gestione degli eventi (SIEM) per l'analisi e il rilevamento delle minacce.  L'abilitazione del rilevamento delle minacce invia automaticamente i dati al SIEM per l'analisi delle minacce.
+* Collega il tuo sistema di sicurezza e gestione degli eventi (SIEM) per l'analisi e il rilevamento delle minacce. Abilitando il rilevamento delle minacce, i dati vengono inviati automaticamente al tuo SIEM per l'analisi delle minacce. Per ulteriori informazioni, consulta link:task-siem.html["Collega NetApp Ransomware Resilience a un SIEM"].
 
 
 
@@ -66,14 +66,6 @@ TIP: Dalla scheda Individuazione del carico di lavoro in Impostazioni, seleziona
 
 
 
-== Attività utente sospetta
-
-Nella scheda Attività utente è possibile creare e gestire l'agente attività utente necessario per rilevare attività utente sospette.
-
-Per ulteriori informazioni, consultare link:suspicious-user-activity.html["Attività utente sospetta"] .
-
-
-
 == Aggiungi una destinazione di backup
 
 Ransomware Resilience è in grado di identificare i carichi di lavoro che non hanno ancora alcun backup e anche i carichi di lavoro che non hanno ancora alcuna destinazione di backup assegnata.
@@ -87,7 +79,7 @@ Per proteggere tali carichi di lavoro, è necessario aggiungere una destinazione
 
 
 
-NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP.  Eseguire operazioni di backup utilizzando il servizio di backup FSx for ONTAP .
+NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP né in Azure NetApp Files. Eseguire le operazioni di backup utilizzando soluzioni di backup native: FSx for ONTAP backup service o Azure NetApp Files backup.
 
 È possibile aggiungere una destinazione di backup in base a un'azione consigliata dalla Dashboard o accedendo all'opzione Impostazioni nel menu.
 
@@ -290,244 +282,3 @@ Se si desidera utilizzare Azure PrivateLink, fare riferimento a https://azure.mi
 La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
 
 image:screen-settings-backup-destinations-list2.png["Pagina delle destinazioni di backup, opzione Impostazioni"]
-
-
-
-== Connettersi a un sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce
-
-È possibile inviare automaticamente i dati al sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce.  Puoi selezionare AWS Security Hub, Microsoft Sentinel o Splunk Cloud come SIEM.
-
-Prima di abilitare SIEM in Ransomware Resilience, è necessario configurare il sistema SIEM.
-
-.Informazioni sui dati dell'evento inviati a un SIEM
-Ransomware Resilience può inviare i seguenti dati sugli eventi al tuo sistema SIEM:
-
-* *contesto*:
-+
-** *os*: Questa è una costante con il valore di ONTAP.
-** *os_version*: la versione di ONTAP in esecuzione sul sistema.
-** *connector_id*: ID dell'agente della console che gestisce il sistema.
-** *cluster_id*: ID del cluster segnalato da ONTAP per il sistema.
-** *svm_name*: Nome dell'SVM in cui è stato trovato l'avviso.
-** *volume_name*: Nome del volume su cui si trova l'avviso.
-** *volume_id*: ID del volume segnalato da ONTAP per il sistema.
-
-
-* *incidente*:
-+
-** *incident_id*: ID incidente generato da Ransomware Resilience per il volume sottoposto ad attacco in Ransomware Resilience.
-** *alert_id*: ID generato da Ransomware Resilience per il carico di lavoro.
-** *gravità*: Uno dei seguenti livelli di allerta: "CRITICO", "ALTO", "MEDIO", "BASSO".
-** *descrizione*: Dettagli sull'avviso rilevato, ad esempio "Un potenziale attacco ransomware rilevato sul carico di lavoro arp_learning_mode_test_2630"
-
-
-
-
-
-
-=== Configurare AWS Security Hub per il rilevamento delle minacce
-
-Prima di abilitare AWS Security Hub in Ransomware Resilience, è necessario eseguire i seguenti passaggi generali in AWS Security Hub:
-
-* Imposta le autorizzazioni in AWS Security Hub.
-* Imposta la chiave di accesso all'autenticazione e la chiave segreta in AWS Security Hub.  (Questi passaggi non sono forniti qui.)
-
-
-.Passaggi per impostare le autorizzazioni in AWS Security Hub
-. Vai alla *console AWS IAM*.
-. Selezionare *Politiche*.
-. Crea una policy utilizzando il seguente codice in formato JSON:
-+
-[listing]
-----
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "NetAppSecurityHubFindings",
-      "Effect": "Allow",
-      "Action": [
-        "securityhub:BatchImportFindings",
-        "securityhub:BatchUpdateFindings"
-      ],
-      "Resource": [
-        "arn:aws:securityhub:*:*:product/*/default",
-        "arn:aws:securityhub:*:*:hub/default"
-      ]
-    }
-  ]
-}
-----
-
-
-
-
-=== Configurare Microsoft Sentinel per il rilevamento delle minacce
-
-Prima di abilitare Microsoft Sentinel in Ransomware Resilience, è necessario eseguire i seguenti passaggi generali in Microsoft Sentinel:
-
-* *Prerequisiti*
-+
-** Abilita Microsoft Sentinel.
-** Crea un ruolo personalizzato in Microsoft Sentinel.
-
-
-* *Registrazione*
-+
-** Registra Ransomware Resilience per ricevere eventi da Microsoft Sentinel.
-** Crea un segreto per la registrazione.
-
-
-* *Autorizzazioni*: assegna le autorizzazioni all'applicazione.
-* *Autenticazione*: immettere le credenziali di autenticazione per l'applicazione.
-
-
-.Passaggi per abilitare Microsoft Sentinel
-. Vai a Microsoft Sentinel.
-. Creare un'*area di lavoro di Log Analytics*.
-. Abilita Microsoft Sentinel per utilizzare l'area di lavoro Log Analytics appena creata.
-
-
-.Passaggi per creare un ruolo personalizzato in Microsoft Sentinel
-. Vai a Microsoft Sentinel.
-. Selezionare *Abbonamento* > *Controllo accessi (IAM)*.
-. Inserisci un nome di ruolo personalizzato.  Utilizzare il nome *Ransomware Resilience Sentinel Configurator*.
-. Copia il seguente JSON e incollalo nella scheda *JSON*.
-+
-[listing]
-----
-{
-  "roleName": "Ransomware Resilience Sentinel Configurator",
-  "description": "",
-  "assignableScopes":["/subscriptions/{subscription_id}"],
-  "permissions": [
-
-  ]
-}
-----
-. Rivedi e salva le tue impostazioni.
-
-
-.Passaggi per registrare Ransomware Resilience per ricevere eventi da Microsoft Sentinel
-. Vai a Microsoft Sentinel.
-. Selezionare *Entra ID* > *Applicazioni* > *Registrazioni app*.
-. Per il *Nome visualizzato* dell'applicazione, immettere "*Ransomware Resilience*".
-. Nel campo *Tipo di account supportato*, seleziona *Solo account in questa directory organizzativa*.
-. Selezionare un *Indice predefinito* in cui verranno inviati gli eventi.
-. Seleziona *Recensione*.
-. Seleziona *Registra* per salvare le tue impostazioni.
-+
-Dopo la registrazione, l'interfaccia di amministrazione di Microsoft Entra visualizza il riquadro Panoramica dell'applicazione.
-
-
-
-.Passaggi per creare un segreto per la registrazione
-. Vai a Microsoft Sentinel.
-. Selezionare *Certificati e segreti* > *Segreti client* > *Nuovo segreto client*.
-. Aggiungi una descrizione per il segreto della tua applicazione.
-. Seleziona una *Scadenza* per il segreto oppure specifica una durata personalizzata.
-+
-
-TIP: La durata del segreto del cliente è limitata a due anni (24 mesi) o meno.  Microsoft consiglia di impostare un valore di scadenza inferiore a 12 mesi.
-
-. Seleziona *Aggiungi* per creare il tuo segreto.
-. Registrare il segreto da utilizzare nella fase di autenticazione.  Una volta che avrai abbandonato questa pagina, il segreto non verrà più visualizzato.
-
-
-.Passaggi per assegnare le autorizzazioni all'applicazione
-. Vai a Microsoft Sentinel.
-. Selezionare *Abbonamento* > *Controllo accessi (IAM)*.
-. Selezionare *Aggiungi* > *Aggiungi assegnazione ruolo*.
-. Per il campo *Ruoli di amministratore privilegiato*, selezionare *Ransomware Resilience Sentinel Configurator*.
-+
-
-TIP: Questo è il ruolo personalizzato che hai creato in precedenza.
-
-. Selezionare *Avanti*.
-. Nel campo *Assegna accesso a*, seleziona *Utente, gruppo o entità servizio*.
-. Seleziona *Seleziona membri*.  Quindi, seleziona *Ransomware Resilience Sentinel Configurator*.
-. Selezionare *Avanti*.
-. Nel campo *Cosa può fare l'utente*, seleziona *Consenti all'utente di assegnare tutti i ruoli eccetto i ruoli di amministratore con privilegi Proprietario, UAA, RBAC (consigliato)*.
-. Selezionare *Avanti*.
-. Selezionare *Rivedi e assegna* per assegnare le autorizzazioni.
-
-
-.Passaggi per immettere le credenziali di autenticazione per l'applicazione
-. Vai a Microsoft Sentinel.
-. Inserisci le credenziali:
-+
-.. Immettere l'ID tenant, l'ID applicazione client e il segreto dell'applicazione client.
-.. Fare clic su *Autentica*.
-+
-
-NOTE: Una volta completata l'autenticazione, verrà visualizzato il messaggio "Autenticato".
-
-
-
-. Immettere i dettagli dell'area di lavoro di Log Analytics per l'applicazione.
-+
-.. Selezionare l'ID dell'abbonamento, il gruppo di risorse e l'area di lavoro Log Analytics.
-
-
-
-
-
-
-=== Configurare Splunk Cloud per il rilevamento delle minacce
-
-Prima di abilitare Splunk Cloud in Ransomware Resilience, è necessario eseguire i seguenti passaggi generali in Splunk Cloud:
-
-* Abilita un HTTP Event Collector in Splunk Cloud per ricevere dati sugli eventi tramite HTTP o HTTPS dalla Console.
-* Crea un token Event Collector in Splunk Cloud.
-
-
-.Passaggi per abilitare un HTTP Event Collector in Splunk
-. Vai a Splunk Cloud.
-. Selezionare *Impostazioni* > *Inserimento dati*.
-. Selezionare *HTTP Event Collector* > *Impostazioni globali*.
-. Nel menu a discesa Tutti i token, seleziona *Abilitato*.
-. Per fare in modo che Event Collector ascolti e comunichi tramite HTTPS anziché HTTP, selezionare *Abilita SSL*.
-. Immettere una porta in *Numero porta HTTP* per HTTP Event Collector.
-
-
-.Passaggi per creare un token Event Collector in Splunk
-. Vai a Splunk Cloud.
-. Selezionare *Impostazioni* > *Aggiungi dati*.
-. Selezionare *Monitor* > *HTTP Event Collector*.
-. Inserisci un nome per il token e seleziona *Avanti*.
-. Selezionare un *Indice predefinito* in cui verranno inviati gli eventi, quindi selezionare *Revisiona*.
-. Verificare che tutte le impostazioni per l'endpoint siano corrette, quindi selezionare *Invia*.
-. Copia il token e incollalo in un altro documento per averlo pronto per la fase di autenticazione.
-
-
-
-
-=== Connetti SIEM alla resilienza del ransomware
-
-Abilitando SIEM, i dati da Ransomware Resilience vengono inviati al server SIEM per l'analisi e la segnalazione delle minacce.
-
-.Passi
-. Dal menu Console, seleziona *Protezione* > *Ransomware Resilience*.
-. Dal menu Ransomware Resilience, seleziona la verticaleimage:button-actions-vertical.png["Azioni verticali"] ... opzione in alto a destra.
-. Selezionare *Impostazioni*.
-+
-Viene visualizzata la pagina Impostazioni.
-
-+
-image:screen-settings2.png["Pagina delle impostazioni"]
-
-. Nella pagina Impostazioni, seleziona *Connetti* nel riquadro Connessione SIEM.
-+
-image:screen-settings-threat-detection-3options.png["Abilita la pagina dei dettagli del rilevamento delle minacce"]
-
-. Scegli uno dei sistemi SIEM.
-. Inserisci il token e i dettagli di autenticazione configurati in AWS Security Hub o Splunk Cloud.
-+
-
-NOTE: Le informazioni da immettere dipendono dal SIEM selezionato.
-
-. Selezionare *Abilita*.
-+
-Nella pagina Impostazioni viene visualizzato "Connesso".
-
-

@@ -41,6 +41,8 @@ sidebar:
     - title: Configura backup, rilevamento minacce e simulazioni di attacchi nelle
         Impostazioni
       url: "/rp-use-settings.html"
+    - title: Configura SIEM
+      url: "/task-siem.html"
     - title: Configura il rilevamento dell'attività dell'utente
       entries:
       - title: Scopri il rilevamento delle attività degli utenti

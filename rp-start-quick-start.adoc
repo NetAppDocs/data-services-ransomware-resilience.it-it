@@ -63,6 +63,6 @@ Dopo aver configurato la protezione in Ransomware Resilience, ecco cosa potresti
 
 [role="quick-margin-list"]
 * link:rp-use-protect-classify.html["Abilita la classificazione dei dati per identificare i rischi di governance e sicurezza"]
-* link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection["Invia avvisi a SIEM"]
+* link:task-siem.html["Invia avvisi a SIEM"]
 * link:rp-use-reports.html["Scarica report di allerta, protezione, esercitazione di prontezza, ripristino o riepilogo"]
 

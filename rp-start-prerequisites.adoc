@@ -26,7 +26,10 @@ Assicurati di utilizzare un sistema supportato:
 | Ambiente | Protocollo | Versioni supportate 
 
 
-| Amazon FSx for NetApp ONTAP* | NFS, CIFS e SAN | N / A 
+| Amazon FSx for NetApp ONTAP* | CIFS, NFS and SAN | N / A 
+
+
+| Azure NetApp Files | CIFS e NFS | N / A 
 
 
 .2+| Cloud Volumes ONTAP per AWS | CIFS e NFS | 9.11.1 e versioni successive 

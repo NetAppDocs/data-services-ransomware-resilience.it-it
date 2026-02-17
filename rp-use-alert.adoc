@@ -171,8 +171,15 @@ Se hai configurato il rilevamento degli utenti sospetti per visualizzare comport
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
 . Seleziona un avviso.
 . Esaminare gli incidenti nell'avviso.
-. Per bloccare un utente sospetto nel tuo ambiente, seleziona *Blocca* sotto il nome dell'utente.
++
+.. Per bloccare un utente sospetto nel tuo ambiente, seleziona *Blocca* accanto al nome dell'utente.
+.. Per disattivare gli avvisi su un determinato utente che è oggetto di un avviso che sai essere falso, seleziona i tre puntini (`...` quindi **Escludi questo utente dal monitoraggio**. Rivedi la finestra di dialogo quindi seleziona **Escludi** per confermare.
 
+
+
+
+
+TIP: Per riattivare gli avvisi per un utente, restituisci l'avviso. Seleziona i tre puntini e poi **Includi questo utente nel monitoraggio**. Puoi anche link:suspicious-user-activity.html#exclude-users-from-alerts["Escludi utenti"] dal monitoraggio.
 
 
 
