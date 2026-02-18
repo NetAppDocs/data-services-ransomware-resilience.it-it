@@ -59,6 +59,8 @@ sidebar:
       entries:
       - title: Proteggi i carichi di lavoro con strategie di protezione dal ransomware
         url: "/rp-use-protect.html"
+      - title: Gestisci i gruppi di protezione
+        url: "/task-protection-group.html"
       - title: Scansione per dati personali identificabili
         url: "/rp-use-protect-classify.html"
     - title: Rispondere a un avviso rilevato

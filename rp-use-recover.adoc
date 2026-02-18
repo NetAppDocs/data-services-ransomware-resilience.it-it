@@ -14,8 +14,7 @@ summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di b
 [role="lead"]
 Dopo che i carichi di lavoro sono stati contrassegnati come "Ripristino necessario", NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.
 
-* Se l'applicazione o la VM è gestita da SnapCenter, Ransomware Resilience ripristina l'applicazione o la VM allo stato precedente e all'ultima transazione utilizzando il processo coerente con l'applicazione o con la VM.  Il ripristino coerente con l'applicazione o la macchina virtuale aggiunge ai dati nel volume tutti i dati che non sono stati archiviati, ad esempio i dati nella cache o in un'operazione di I/O.
-* Se l'applicazione o la VM non è gestita da SnapCenter ma da NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience esegue un ripristino coerente con l'arresto anomalo, in cui tutti i dati presenti nel volume nello stesso momento vengono ripristinati, ad esempio, in caso di arresto anomalo del sistema.
+* Se l'applicazione o la macchina virtuale è gestita da NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience esegue un ripristino coerente con l'arresto anomalo, in cui tutti i dati che erano presenti nel volume nello stesso momento vengono ripristinati, ad esempio, se il sistema si è arrestato in modo anomalo.
 +
 È possibile ripristinare il carico di lavoro selezionando tutti i volumi, volumi specifici o file specifici.
 
@@ -53,43 +52,7 @@ image:screen-recovery2.png["Pagina di recupero"]
 
 
 
-== Ripristina un carico di lavoro gestito da SnapCenter
-
-Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
-
-Se necessario per il ripristino, lo stato dell'applicazione cambierà.  L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup.  Al termine del ripristino, l'applicazione si apre in modalità LETTURA-SCRITTURA.
-
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
-
-.Passi
-. Da Ransomware Resilience, seleziona *Ripristino*.
-. Esaminare le informazioni sul carico di lavoro nella pagina *Recupero*.
-. Selezionare un carico di lavoro che si trovi nello stato "Ripristino necessario".
-. Per ripristinare, seleziona *Ripristina*.
-. *Ambito di ripristino*: coerente con l'applicazione (o per SnapCenter per VM, l'ambito di ripristino è "Per VM")
-. *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.  Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.
-+
-
-TIP: Ransomware Resilience identifica come punto di ripristino migliore l'ultimo backup appena prima dell'incidente e mostra l'indicazione "Consigliato".
-
-. *Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.
-+
-.. Selezionare la posizione originale o alternativa.
-.. Selezionare il sistema.
-.. Selezionare la VM di archiviazione.
-
-
-. Se la destinazione originale non dispone di spazio sufficiente per ripristinare il carico di lavoro, viene visualizzata la riga "Archiviazione temporanea".  È possibile selezionare l'archiviazione temporanea per ripristinare i dati del carico di lavoro.  I dati ripristinati verranno copiati dall'archivio temporaneo alla posizione originale.  Fare clic sulla *freccia giù* nella riga Archiviazione temporanea e impostare il cluster di destinazione, la VM di archiviazione e il livello locale.
-. Seleziona *Salva*.
-. Selezionare *Avanti*.
-. Rivedi le tue selezioni.
-. Selezionare *Ripristina*.
-. Dal menu in alto, seleziona *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.
-
-
-
-
-== Ripristina un carico di lavoro non gestito da SnapCenter
+== Ripristina un carico di lavoro
 
 Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
 

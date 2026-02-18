@@ -198,7 +198,6 @@
   <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp Console offre una gestione centralizzata dei servizi di storage e dati NetApp in ambienti on-premise e cloud di livello aziendale. La console è necessaria per accedere e utilizzare i servizi dati NetApp . In quanto interfaccia di gestione, consente di gestire numerose risorse di archiviazione da un'unica interfaccia. Gli amministratori della console possono controllare l'accesso allo storage e ai servizi per tutti i sistemi all'interno dell'azienda.</block>
   <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">Scopri di più su<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block> .</block>
   <block id="cbd914c846d96d6001aec3ae8b50e684" category="section-title">Come funziona Ransomware Resilience</block>
-  <block id="16091f015c891dfa25a4cfd6d5a0d84b" category="paragraph">Ransomware Resilience utilizza NetApp Backup and Recovery per individuare e impostare policy di snapshot e backup per carichi di lavoro di condivisione file, e SnapCenter o SnapCenter for VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM.  Inoltre, Ransomware Resilience utilizza Backup and Recovery e SnapCenter / SnapCenter per VMware per eseguire un ripristino coerente con i file e i carichi di lavoro.</block>
   <block id="22923429041036f2b1f3e35fddeb9626" category="inline-image-macro">Diagramma che mostra l'architettura di resilienza del ransomware</block>
   <block id="f0a0e2f9ba23fe1d39ea3c9b319b0262" category="paragraph"><block ref="f0a0e2f9ba23fe1d39ea3c9b319b0262" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">Caratteristica</block>
@@ -206,14 +205,11 @@
   <block id="3d39c52f84949476c9663603ca01f73f" category="cell">*IDENTIFICARE*</block>
   <block id="c82f46c0119153d2fbb052c15694e283" category="list-text">Trova tutti i dati NAS (protocolli NFS e CIFS) on-premise del cliente, SAN (FC, iSCSI e NVMe) e Cloud Volumes ONTAP connessi alla console.</block>
   <block id="253b40ae359ba25b56231803430c4873" category="inline-link">ONTAP</block>
-  <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="inline-link">Software SnapCenter</block>
-  <block id="0101be00694088a1944bea83a894d482" category="list-text">Identifica i dati dei clienti dalle API dei servizi ONTAP e SnapCenter e li associa ai carichi di lavoro.  Scopri di più su<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block> E<block ref="d4e2312364a2363181c5807750f77d43" category="inline-link-rx"></block> .</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">Protezione autonoma dal ransomware</block>
   <block id="cc6088539286339733631d73fb51774b" category="inline-link">NetApp Backup and Recovery</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">Politica ONTAP</block>
   <block id="d8b67a8dae92158ddb9e71a66b9532b5" category="list-text">Assegna una priorità aziendale a ciascun carico di lavoro in base ai livelli di protezione rilevati automaticamente e consiglia policy di protezione per i carichi di lavoro in base alla loro priorità aziendale.  La priorità del carico di lavoro si basa sulle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro.</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*PROTEGGERE*</block>
-  <block id="63b3247f9021fefc99163e7f1ccaa624" category="list-text">Monitora attivamente i carichi di lavoro e orchestra l'uso delle API Backup and Recovery, SnapCenter e ONTAP applicando policy a ciascuno dei carichi di lavoro identificati.</block>
   <block id="bd86dbcbafa7a7406429c16dcbb97e30" category="cell">*RILEVARE*</block>
   <block id="f90af1ae1e0fb166621b4480576b55ac" category="list-text">Rileva potenziali attacchi con un modello di apprendimento automatico (ML) integrato che rileva attività e crittografia potenzialmente anomale.</block>
   <block id="643c690d78252033cbf74c266292ae07" category="list-text">Fornisce un rilevamento a doppio livello che inizia con il rilevamento di potenziali attacchi ransomware nello storage primario e risponde alle attività anomale eseguendo copie snapshot automatizzate aggiuntive per creare i punti di ripristino dei dati più vicini.  Ransomware Resilience offre la possibilità di analizzare più a fondo la situazione per identificare potenziali attacchi con maggiore precisione, senza compromettere le prestazioni dei carichi di lavoro principali.</block>
@@ -728,10 +724,6 @@
   <block id="189c4ff0677fc252921dcedc653aa720" category="cell">Inviare dati a un sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce.</block>
   <block id="6dfbc052f1c7457b9c825b0e076c1503" category="inline-link-macro">Configurare le impostazioni di protezione</block>
   <block id="c00b830d377d62d0c3d20c11bcd0ce1e" category="cell">Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce. Fare riferimento a <block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block> .</block>
-  <block id="87179dfbe133b0e5bec8d13398695148" category="cell">Abilita la protezione coerente con il carico di lavoro per le applicazioni o VMware.</block>
-  <block id="c9cf11dae3413da2395f3c9102153a2f" category="cell">Questi carichi di lavoro non sono gestiti da SnapCenter Software o SnapCenter Plug-in for VMware vSphere.</block>
-  <block id="67f57f861a379dead16cb189597a369c" category="inline-link-macro">Proteggere il carico di lavoro dagli attacchi ransomware</block>
-  <block id="e3807143575a294b5c98b4786f7cb179" category="cell">Per farli gestire da SnapCenter, abilitare la protezione coerente con il carico di lavoro. Fare riferimento a <block ref="2d12612123ced7dcaea608fc8db14aca" category="inline-link-macro-rx"></block> .</block>
   <block id="2f2ad69d4eabc32debaa79396c406151" category="cell">Migliorare la sicurezza del sistema</block>
   <block id="ed1df3b69f10d586e5712ba9ce41d501" category="cell">NetApp Digital Advisor ha identificato almeno un rischio per la sicurezza elevato o critico.</block>
   <block id="c422252635de9cce46903202ef695202" category="cell">Esamina tutti i rischi per la sicurezza in NetApp Digital Advisor. Fare riferimento a<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block> .</block>
@@ -746,13 +738,6 @@
   <block id="1f03c05bf6e65a368653bb061f47d41c" category="cell">Assegnare una policy a questi carichi di lavoro. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
   <block id="09ac1a414033303cc9f61ba014837263" category="cell">Proteggi i carichi di lavoro di condivisione file critici o molto importanti dal ransomware.</block>
   <block id="723aa86a592f3ac7a3d0c493a7f7f6f8" category="cell">La pagina Protezione visualizza i carichi di lavoro critici o molto importanti di tipo Condivisione file o Datastore che non sono protetti.</block>
-  <block id="71f89a5dcbec59e77a93dd3d78946bec" category="cell">Assegnare una policy a ciascun carico di lavoro. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
-  <block id="7d88942a24d59d8cc9c016aa59861d89" category="cell">Registra il plugin SnapCenter disponibile per VMware vSphere (SCV) con la Console</block>
-  <block id="8b335c02365a669f37c5c422d345fe5a" category="cell">Un carico di lavoro VM non è protetto.</block>
-  <block id="9dfe1b9e848ef36ab7e53e7c31b9859a" category="cell">Assegnare una protezione coerente con la VM al carico di lavoro della VM abilitando il plug-in SnapCenter per VMware vSphere. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
-  <block id="39b7962492ec1bd941ef06d01eb99cb3" category="cell">Registra il server SnapCenter disponibile con la console</block>
-  <block id="2ece652cbde6f187c5192710497e20cc" category="cell">Un'applicazione non è protetta.</block>
-  <block id="9fbd0a5b8d780df80cfc32e0668ad4b0" category="cell">Assegnare una protezione coerente con l'applicazione al carico di lavoro abilitando SnapCenter Server. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> .</block>
   <block id="98ec50a82f77bf6d52cb0d41cd36eb6e" category="cell">Esamina i nuovi avvisi.</block>
   <block id="b29cd5fcb78e77e70a83008e3f5f222b" category="cell">Sono presenti nuovi avvisi.</block>
   <block id="66cea763fac3b4f8340502aaf5d8d0d2" category="cell">Esamina i nuovi avvisi. Fare riferimento a <block ref="09d5258094b1e39cdb847e9d6bbdf0b2" category="inline-link-macro-rx"></block> .</block>
@@ -850,16 +835,9 @@
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransomware Resilience li rileva e ti offre la possibilità di:</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">utilizzare una policy di rilevamento ransomware e continuare a utilizzare le policy di snapshot e backup create da altri strumenti NetApp , oppure</block>
   <block id="47751183709636889e320f1a849dd584" category="list-text">utilizzare Ransomware Resilience per gestire rilevamento, snapshot e backup.</block>
-  <block id="299dad2dd448d97ac3577bbf54e62bae" category="inline-link-macro">condivisioni di file di gruppo</block>
-  <block id="aa6ed3da76207281afb017fa59e3a234" category="admonition">Per una migliore gestione e protezione del tuo patrimonio di dati, puoi creare<block ref="42586d1dae6cc24e336332e3dadf2f9b" category="inline-link-macro-rx"></block> per proteggere collettivamente i volumi con un'unica strategia.</block>
   <block id="be96aa820e4d4c79150a1ea86f47ceb0" category="section-title">Politiche di protezione con altri servizi gestiti NetApp</block>
-  <block id="7d94fa5c52f4b044d2cd78e42e11247c" category="paragraph">Oltre a Ransomware Resilience, è possibile utilizzare i seguenti servizi per gestire la protezione:</block>
-  <block id="58c4a0b8427aedffed15f507a82a122c" category="list-text">NetApp Backup and Recovery per condivisioni di file, condivisioni di file VM</block>
-  <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">SnapCenter per VMware per datastore VM</block>
-  <block id="9f467d31ef54c60530e9d07d18e7df6d" category="paragraph">Le informazioni sulla protezione da questi servizi vengono visualizzate in Ransomware Resilience.  È possibile aggiungere criteri di rilevamento a questi servizi con Ransomware Resilience.  L'aggiunta di una policy di protezione con Ransomware Resilience sostituisce le policy di protezione esistenti.</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">Se una policy di rilevamento ransomware è gestita da Autonomous Ransomware Protection (ARP o ARP/AI, a seconda della versione ONTAP ) e FPolicy in ONTAP, tali carichi di lavoro sono protetti e continueranno a essere gestiti da ARP e FPolicy.</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">Criteri di protezione per carichi di lavoro non protetti dalle applicazioni NetApp</block>
-  <block id="ec45a6a3163f1e5c5139c2b24b9596f2" category="paragraph">Se il carico di lavoro non è gestito da Backup and Recovery, Ransomware Resilience, SnapCenter o SnapCenter Plug-in for VMware vSphere, potrebbero essere presenti snapshot acquisiti come parte di ONTAP o di altri prodotti.  Se è attiva la protezione FPolicy ONTAP , è possibile modificarla utilizzando ONTAP.</block>
   <block id="631014fb608aae26275f461a597abc09" category="section-title">Visualizza la protezione ransomware su un carico di lavoro</block>
   <block id="a6f7464fa2fed88291aecd220709e4c3" category="paragraph">Uno dei primi passi per proteggere i carichi di lavoro è visualizzare i carichi di lavoro correnti e il loro stato di protezione.  È possibile visualizzare i seguenti tipi di carichi di lavoro:</block>
   <block id="1178945c6ac5c3d230f56a7ae6f7233f" category="list-text">Carichi di lavoro applicativi</block>
@@ -872,7 +850,6 @@
   <block id="b6ed68904b26faac81b9a6914f1b95cd" category="paragraph"><block ref="b6ed68904b26faac81b9a6914f1b95cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">Da questa pagina è possibile visualizzare e modificare i dettagli di protezione per il carico di lavoro.</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">Aggiungi una strategia di protezione dal ransomware</block>
-  <block id="a81f2565e57ff5c4b192e7c8be0e161c" category="admonition">Vedere<block ref="63a8fd9f713a393cc650fb6baf07f02c" category="inline-link-macro-rx"></block> per scoprire come utilizzare Ransomware Resilience quando è presente una policy di protezione con SnapCenter o Backup and Recovery.</block>
   <block id="ea8dec8d3636bbf3ba7b767b038d9d54" category="section-title">Comprendere la pagina Protezione</block>
   <block id="48b06ad4392e9d571814713a4c79666f" category="paragraph">La pagina Protezione mostra le seguenti informazioni sulla protezione del carico di lavoro:</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*Stato di protezione*: un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se una policy è applicata o meno:</block>
@@ -887,7 +864,6 @@
   <block id="5c2759b4d028484070c8f18a9a00a77b" category="list-text">*Errore*: è stato assegnato un criterio di rilevamento ransomware, ma Ransomware Resilience ha riscontrato un errore.</block>
   <block id="848b5d316059d2d55beb9ee650949af1" category="admonition">Quando la protezione è abilitata in Ransomware Resilience, il rilevamento degli avvisi e la segnalazione iniziano dopo che lo stato della policy di rilevamento ransomware passa dalla modalità di apprendimento alla modalità attiva.</block>
   <block id="5136b3f2cc37cf0eaf6bfaccc2423d06" category="paragraph">*Criterio di rilevamento*: viene visualizzato il nome del criterio di rilevamento del ransomware, se ne è stato assegnato uno.  Se il criterio di rilevamento non è stato assegnato, viene visualizzato "N/D".</block>
-  <block id="fcfaa1717a25ca0b7a0ee4d01c88d881" category="paragraph">*Criteri di snapshot e backup*: questa colonna mostra i criteri di snapshot e backup applicati al carico di lavoro e il prodotto o servizio che gestisce tali criteri.</block>
   <block id="7800ff1a67d9e451676d5610315d8070" category="list-text">Gestito da SnapCenter</block>
   <block id="0472b61b28ca14fb08ff6c175c18d033" category="list-text">Gestito dal SnapCenter Plug-in for VMware vSphere</block>
   <block id="41f549aea93353d6eedfd7f80279c9bc" category="list-text">Gestito da Backup e Ripristino</block>
@@ -925,29 +901,10 @@
   <block id="32bb90e8976aab5298d5da10fe66f21d" category="cell">72</block>
   <block id="98dce83da57b0395e163467c9dae521b" category="cell">93</block>
   <block id="0396743cd11b926055aa9c4e3fc5eb14" category="cell">*Estensione utente crittografia*</block>
-  <block id="39b649553c2deef3d750057602cfacdb" category="section-title">Abilita la protezione coerente con l'applicazione o la VM con SnapCenter</block>
-  <block id="50140fc820086d654fdd4e90a5104aef" category="paragraph">Abilitando la protezione coerente con l'applicazione o la macchina virtuale, è possibile proteggere i carichi di lavoro dell'applicazione o della macchina virtuale in modo coerente, ottenendo uno stato di quiescenza e coerenza per evitare potenziali perdite di dati in un secondo momento, qualora fosse necessario un ripristino.</block>
-  <block id="9f4541743e1d4a7bfc25061647eb3902" category="paragraph">Questo processo avvia la registrazione di SnapCenter Software Server per le applicazioni o SnapCenter Plug-in for VMware vSphere per le VM che utilizzano Backup e Ripristino.</block>
-  <block id="6baa335c463f583028e58b3acfd45211" category="paragraph">Dopo aver abilitato la protezione coerente con il carico di lavoro, puoi gestire le strategie di protezione in Ransomware Resilience.  La strategia di protezione include le policy di snapshot e backup gestite altrove, insieme a una policy di rilevamento ransomware gestita in Ransomware Resilience.</block>
-  <block id="261346f7d903c80fe95c3eed4c9b6f97" category="paragraph">Per informazioni sulla registrazione SnapCenter o SnapCenter Plug-in for VMware vSphere tramite Backup e ripristino, fare riferimento alle seguenti informazioni:</block>
-  <block id="9b210cd0fa0a7fe3694561f1949c72e3" category="inline-link">Registra il software SnapCenter Server</block>
-  <block id="ddf89136f09ce1edd773dde2cdce8ec9" category="list-text"><block ref="ddf89136f09ce1edd773dde2cdce8ec9" category="inline-link-rx"></block></block>
-  <block id="8f2653c5938080ffdd57904f850bc430" category="inline-link">Registra il SnapCenter Plug-in for VMware vSphere</block>
-  <block id="9aa90d1045ef51cc1be88f6f561fd811" category="list-text"><block ref="9aa90d1045ef51cc1be88f6f561fd811" category="inline-link-rx"></block></block>
-  <block id="1ec4d515745aff456d744786e699ea82" category="list-text">Dal menu Ransomware Resilience, seleziona *Dashboard*.</block>
-  <block id="37253b6a1f32230b01d647f42b9b6e8f" category="list-text">Dal riquadro Raccomandazioni, individua una delle seguenti raccomandazioni e seleziona *Rivedi e correggi*:</block>
-  <block id="0bde9546f6d4c2d3b942bb4c05094c32" category="list-text">Registra SnapCenter Server disponibile con la NetApp Console</block>
-  <block id="854f384d16b1aa3f59795b8cd8a7ea92" category="list-text">Registra il SnapCenter Plug-in for VMware vSphere (SCV) con la NetApp Console</block>
-  <block id="8256db449d783061334b6804f98bc901" category="list-text">Seguire le informazioni per registrare SnapCenter o SnapCenter Plug-in for VMware vSphere tramite Backup e ripristino.</block>
-  <block id="5a43fd978fdfbe5150cdd067263fac36" category="list-text">Ritorno alla resilienza del ransomware.</block>
-  <block id="3a1b7ef92b9f821158d7a6a8276d337c" category="list-text">Da Ransomware Resilience, vai alla Dashboard e avvia nuovamente il processo di individuazione.</block>
-  <block id="02d5d22b5f67beb8b5279408d426e93c" category="list-text">Da Ransomware Resilience, seleziona *Protezione* per visualizzare la pagina Protezione.</block>
-  <block id="cebfa4409b0603554b2d559a348328f3" category="list-text">Esaminare i dettagli nella colonna delle policy di snapshot e backup nella pagina Protezione per verificare che le policy siano gestite altrove.</block>
   <block id="5a0562438e5d5b94d2b1f72b243b05b6" category="paragraph">Esistono tre approcci per aggiungere una strategia di protezione dal ransomware:</block>
   <block id="4f55a46d628f47452a1508b130bbaa08" category="list-text">**Creare una strategia di protezione dal ransomware se non si dispone di policy di snapshot o backup.**</block>
   <block id="06c84d9fd2ec5293677c8364dc1b3da7" category="paragraph">La strategia di protezione dal ransomware include:</block>
   <block id="7759a4720271a1ab3b4e6b1c36a67058" category="list-text">Politica di backup</block>
-  <block id="5c18f2365717154f53f286eba4d53797" category="list-text">**Sostituisci le policy di snapshot o backup esistenti di SnapCenter o la protezione di Backup e Recovery con strategie di protezione gestite da Ransomware Resilience.**</block>
   <block id="a49a95f9a293b47d316bebea16d14e29" category="list-text">*Creare una policy di rilevamento per i carichi di lavoro con policy di snapshot e backup esistenti gestite in altri prodotti o servizi NetApp .*</block>
   <block id="b7caa7f3615aea01fd626561bb13bda1" category="paragraph">La policy di rilevamento non modifica le policy gestite in altri prodotti.</block>
   <block id="f05ea9e0c9ccffc58a546b5b7a0d8608" category="inline-link-macro">Backup e ripristino</block>
@@ -980,15 +937,9 @@
   <block id="589d15d214feb500a590692bf3a50f04" category="list-text">*Pianificazioni di backup*: scegli le opzioni di pianificazione per l'archiviazione secondaria e abilita la pianificazione.</block>
   <block id="02fe451dde6aa884097ca3b7c67707a5" category="admonition">Per abilitare il blocco del backup sull'archiviazione secondaria, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per maggiori dettagli, vedere <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block> .</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">Selezionare *Aggiungi*.</block>
-  <block id="0e345c91bfbb67f474a5e74b7cfde71f" category="section-title">Aggiungere un criterio di rilevamento ai carichi di lavoro con criteri di snapshot e backup esistenti gestiti da SnapCenter o Backup and Recovery</block>
-  <block id="896d240f69d6ce39da710b568fd26741" category="paragraph">Ransomware Resilience consente di assegnare una policy di rilevamento o una policy di protezione ai carichi di lavoro con protezione snapshot e backup esistente gestita in altri prodotti o servizi NetApp .  Altri servizi, come Backup and Recovery e SnapCenter, utilizzano policy che regolano gli snapshot, la replica su storage secondario o i backup su storage di oggetti.</block>
   <block id="1a068d6a85d666ea306209409d3e8bca" category="section-title">Aggiungere una policy di rilevamento ai carichi di lavoro con policy di backup o snapshot esistenti</block>
   <block id="8ffd4321390a5a9174c14e023f8f68f8" category="inline-xref">Proteggiti con la resilienza del ransomware</block>
-  <block id="7a7571f3126bfa4d6b2758ba7ef43c5b" category="paragraph">Se disponi di policy di snapshot o backup esistenti con Backup and Recovery o SnapCenter, puoi aggiungere una policy per rilevare gli attacchi ransomware.  Per gestire la protezione e il rilevamento con Ransomware Resilience, vedere<block ref="1b2a8d93a0a5a450b6a73f4f622cfd7c" category="inline-xref-macro-rx"></block> .</block>
   <block id="09c6435d6ace09bdb7d8fc52f7d5661e" category="list-text">Dalla pagina Protezione, seleziona un carico di lavoro, quindi seleziona *Proteggi*.</block>
-  <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">Ransomware Resilience rileva se sono presenti policy SnapCenter o Backup and Recovery attive.</block>
-  <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">Per mantenere in vigore i criteri di Backup e ripristino o SnapCenter esistenti e applicare solo un criterio di _rilevamento_, lasciare deselezionata la casella **Sostituisci criteri esistenti**.</block>
-  <block id="346ced422939f5220048eed80e512829" category="list-text">Per visualizzare i dettagli delle policy SnapCenter , seleziona la *freccia giù*.</block>
   <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">Selezionare **Avanti**.</block>
   <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">o crearne uno</block>
   <block id="8e7f1a46323a19741e1abd05eac8cbb8" category="paragraph">L'agente di attività utente ospita i nuovi collettori di dati. Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.</block>
@@ -996,7 +947,6 @@
   <block id="24fae1821c4530c41f4af2d4f1f70175" category="list-text">Nella pagina Protezione, controlla lo **Stato di rilevamento** per confermare che il rilevamento sia Attivo.</block>
   <block id="783a386314b7dc75416c1abf94fcf70f" category="section-title">Sostituisci le policy di backup o snapshot esistenti con una strategia di protezione dal ransomware</block>
   <block id="cc8bf7105e0bf7256578c2b5c24f9ebf" category="paragraph">È possibile sostituire le policy di backup o snapshot esistenti con una strategia di protezione dal ransomware.  Questo approccio rimuove la protezione gestita esternamente e configura il rilevamento e la protezione in Ransomware Resilience.</block>
-  <block id="6d512117a713a92567c93ad11953652c" category="list-text">Ransomware Resilience rileva se sono presenti policy attive di Backup e Recovery o SnapCenter .  Per sostituire i criteri di Backup e ripristino o SnapCenter esistenti, selezionare la casella **Sostituisci criteri esistenti**.  Selezionando la casella, Ransomware Resilience sostituisce l'elenco dei criteri di rilevamento con i criteri di rilevamento.</block>
   <block id="df03f91b3a74d5ec2baa41276e3a16de" category="inline-xref">Creare una politica di protezione</block>
   <block id="6254fbe0af1c355b3b21ba0edff9f802" category="list-text">Scegli una polizza di protezione.  Se non esiste alcuna policy di protezione, seleziona **Aggiungi** per crearne una nuova.  Per informazioni sulla creazione di una policy, vedere<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block> . Selezionare **Avanti**.</block>
   <block id="375396793fa0187dd9b04e12d4a0a7b3" category="list-text">Seleziona una destinazione di backup o creane una nuova. Selezionare **Avanti**.</block>
@@ -1005,13 +955,10 @@
   <block id="82f3ca7fa2e1f82d7f077e15af9747a4" category="section-title">Assegna una politica diversa</block>
   <block id="0fd65377e78b78ae68af3a3a26d93972" category="paragraph">È possibile sostituire la policy esistente con una diversa.</block>
   <block id="46d1903c41e1de7b9bef66a115265f90" category="list-text">Nella pagina Protezione, nella riga del carico di lavoro, seleziona *Modifica protezione*.</block>
-  <block id="be7f5945ef4dddcdf00af31b8a6b7017" category="list-text">Se il carico di lavoro ha una policy di Backup e ripristino o SnapCenter esistente che si desidera mantenere, deselezionare **Sostituisci policy esistenti**.  Per sostituire le policy esistenti, seleziona **Sostituisci policy esistenti**.</block>
   <block id="66ec3353b28340ad300fda396a4ba1f1" category="list-text">Nella pagina Criteri, seleziona la freccia rivolta verso il basso per il criterio che desideri assegnare per esaminarne i dettagli.</block>
   <block id="bb5447070c795a6e8d29fa9cd98a5127" category="list-text">Seleziona la policy che vuoi assegnare.</block>
   <block id="29864b11a88d292065fabaefa9c7fd21" category="list-text">Selezionare *Proteggi* per completare la modifica.</block>
   <block id="d3bc7420d7e89fa51ba74ffa21c65564" category="section-title">Crea un gruppo di protezione</block>
-  <block id="57f424e2ea0a409d7e6664f904a599fd" category="paragraph">Raggruppare le condivisioni file in un gruppo di protezione semplifica la protezione del patrimonio di dati.  Ransomware Resilience può proteggere tutti i volumi di un gruppo contemporaneamente, anziché proteggere ciascun volume separatamente.</block>
-  <block id="ceb5e85b23125d83e7e34d6d2cd53a46" category="paragraph">È possibile creare gruppi indipendentemente dal loro stato di protezione (ovvero gruppi non protetti e gruppi protetti). Quando si aggiunge un criterio di protezione a un gruppo di protezione, il nuovo criterio di protezione sostituisce tutti i criteri esistenti, compresi quelli gestiti da SnapCenter e NetApp Backup and Recovery.</block>
   <block id="c0083e031f0cf112f85b91ba1e7e9ede" category="list-text">Dalla pagina Protezione, seleziona la scheda *Gruppi di protezione*.</block>
   <block id="eff1f461a10b29d3af110ea7c19ed170" category="inline-image-macro">Pagina dei gruppi di protezione</block>
   <block id="eafdfecbaead6d931ea739364927dcc6" category="paragraph"><block ref="eafdfecbaead6d931ea739364927dcc6" category="inline-image-macro-rx" type="image"></block></block>
@@ -1025,25 +972,18 @@
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">Se la policy di rilevamento include il rilevamento del comportamento dell'utente, seleziona il raccoglitore dati che desideri utilizzare, quindi **Avanti**.</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">Rivedere le selezioni per il gruppo di protezione.</block>
-  <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">Per finalizzare la creazione del gruppo di protezione, selezionare *Aggiungi*.</block>
   <block id="eda3b9c0a863dbdeae5ac8cceaa9106b" category="section-title">Modifica protezione gruppo</block>
   <block id="109a3a62d5a108a8bab007233de0c046" category="paragraph">È possibile modificare i criteri di rilevamento per un gruppo esistente.</block>
   <block id="ecfb3b2431beb33b5fe2ef7c83f7fb1b" category="list-text">Dalla pagina Protezione, seleziona la scheda *Gruppi di protezione*, quindi seleziona il gruppo di cui desideri modificare la policy.</block>
   <block id="a26badbee19c22b720b3fd3aab2acb10" category="list-text">Dalla pagina di panoramica del gruppo di protezione, seleziona *Modifica protezione*.</block>
-  <block id="2ff762148d68ddc135491ee1e6eebb11" category="list-text">Selezionare un criterio di protezione esistente da applicare oppure selezionare **Aggiungi** per creare un nuovo criterio di protezione.  Per ulteriori informazioni sull'aggiunta di una policy di protezione, vedere,<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block> .  Quindi seleziona **Salva**.</block>
   <block id="5e98270982ef1359c1d22eb22e2503e8" category="list-text">Nella panoramica della destinazione di backup, seleziona una destinazione di backup esistente oppure **Aggiungi una nuova destinazione di backup**.</block>
   <block id="b2eb460947dbe219806dbc27f478d291" category="list-text">Seleziona **Avanti** per rivedere le modifiche.</block>
-  <block id="53522fa53710da57ddc6e0452516732b" category="section-title">Rimuovere carichi di lavoro da un gruppo</block>
-  <block id="7fac60e8c61e94cf97a02abd83048b7d" category="paragraph">Potrebbe essere necessario in seguito rimuovere carichi di lavoro da un gruppo esistente.</block>
   <block id="35a8cf13ce382c8fdf2a7f51c0b2b8cc" category="list-text">Seleziona il gruppo da cui desideri rimuovere uno o più carichi di lavoro.</block>
   <block id="44264335870d783d6e7b840b5015b4b8" category="inline-image-macro">Pagina dei dettagli del gruppo di protezione</block>
   <block id="b65981674e374f9759dbdb3ca4f23faf" category="paragraph"><block ref="b65981674e374f9759dbdb3ca4f23faf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3b38fb1cff0115f63e5d56c7c77aa619" category="inline-image-macro">Pulsante Azioni</block>
-  <block id="c2117b7e370bdb148d6d321b9f97e6a2" category="list-text">Dalla pagina del gruppo di protezione selezionato, seleziona il carico di lavoro che desideri rimuovere dal gruppo e seleziona *Azioni*<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> opzione.</block>
   <block id="a700fd9c40104e68960fb6ca2311ac54" category="list-text">Dal menu Azioni, seleziona *Rimuovi carico di lavoro*.</block>
   <block id="05d9024c9e1747e3e7428ac3d6598aec" category="list-text">Conferma di voler rimuovere il carico di lavoro e seleziona *Rimuovi*.</block>
-  <block id="c03e7f3047e8c0787fdc020e7de058ad" category="section-title">Elimina il gruppo di protezione</block>
-  <block id="9fd377e1ddf4914e67d43d07590f6fd7" category="paragraph">L'eliminazione del gruppo di protezione rimuove il gruppo e la sua protezione, ma non rimuove i singoli carichi di lavoro.</block>
   <block id="45a84df973de2cf5ebebbbb483cfdc19" category="list-text">Nella pagina del gruppo di protezione selezionato, in alto a destra, seleziona *Elimina gruppo di protezione*.</block>
   <block id="923d9e45e363794e64a67b73838142ac" category="list-text">Conferma di voler eliminare il gruppo e seleziona *Elimina*.</block>
   <block id="f3d0cde08790f065a5bc8c494e512b95" category="section-title">Gestire le strategie di protezione dal ransomware</block>
@@ -1064,8 +1004,6 @@
   <block id="2626c315654649457283f31cd264c39c" category="summary">Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di backup sullo storage secondario siano puliti, consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.</block>
   <block id="113ff3b2aeb407622305a50c77bebec8" category="doc">Recupera da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati) con NetApp Ransomware Resilience</block>
   <block id="197d5e3f8c27a534ff428274b4db5d59" category="paragraph">Dopo che i carichi di lavoro sono stati contrassegnati come "Ripristino necessario", NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.</block>
-  <block id="02a3255b4a78b568c242155543d840b5" category="list-text">Se l'applicazione o la VM è gestita da SnapCenter, Ransomware Resilience ripristina l'applicazione o la VM allo stato precedente e all'ultima transazione utilizzando il processo coerente con l'applicazione o con la VM.  Il ripristino coerente con l'applicazione o la macchina virtuale aggiunge ai dati nel volume tutti i dati che non sono stati archiviati, ad esempio i dati nella cache o in un'operazione di I/O.</block>
-  <block id="150a9129e0470e3f64dd6e85290aa419" category="list-text">Se l'applicazione o la VM non è gestita da SnapCenter ma da NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience esegue un ripristino coerente con l'arresto anomalo, in cui tutti i dati presenti nel volume nello stesso momento vengono ripristinati, ad esempio, in caso di arresto anomalo del sistema.</block>
   <block id="57a6bb038991f08ac0fdcf64095bd0af" category="paragraph">È possibile ripristinare il carico di lavoro selezionando tutti i volumi, volumi specifici o file specifici.</block>
   <block id="b5ccdb3dc0dc7a8afa4ba1ad3929e36a" category="admonition">Il ripristino del carico di lavoro può avere un impatto sui carichi di lavoro in esecuzione.  Dovresti coordinare i processi di recupero con le parti interessate appropriate.</block>
   <block id="3ab57f205469e682011f73cdb8f98562" category="list-text">*Ripristino necessario*: il carico di lavoro deve essere ripristinato.</block>
@@ -1079,23 +1017,14 @@
   <block id="6ff7646970e054813b30a697e9d483e8" category="list-text">Esaminare le informazioni sul carico di lavoro nella pagina *Recupero*.</block>
   <block id="4adfa9c3d33f897660ad408e7f5dc8e8" category="inline-image-macro">Pagina di recupero</block>
   <block id="926aaeb3693d20413ab32b7da19a4c24" category="paragraph"><block ref="926aaeb3693d20413ab32b7da19a4c24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c88ce586395ff50170d86c2e66f0f11f" category="section-title">Ripristina un carico di lavoro gestito da SnapCenter</block>
   <block id="e5807844b120730d46eedbad32ba0ea7" category="paragraph">Utilizzando Ransomware Resilience, l'amministratore dell'archiviazione può stabilire il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.</block>
-  <block id="3701babc00cc2388f5c0e0a6bec5332e" category="paragraph">Se necessario per il ripristino, lo stato dell'applicazione cambierà.  L'applicazione verrà ripristinata allo stato precedente dai file di controllo, se inclusi nel backup.  Al termine del ripristino, l'applicazione si apre in modalità LETTURA-SCRITTURA.</block>
-  <block id="09d14384760a241994bfdec992b9465c" category="list-text">Da Ransomware Resilience, seleziona *Ripristino*.</block>
   <block id="7c653203a3096df8b7646a6ab87c0b2f" category="list-text">Selezionare un carico di lavoro che si trovi nello stato "Ripristino necessario".</block>
   <block id="3423ce5ef0c24dff08aba7c67e954912" category="list-text">Per ripristinare, seleziona *Ripristina*.</block>
-  <block id="30c409ae1b08d8e3117cdad918ae4f7c" category="list-text">*Ambito di ripristino*: coerente con l'applicazione (o per SnapCenter per VM, l'ambito di ripristino è "Per VM")</block>
-  <block id="6d1ab812949416963a53c2fdc95014ab" category="list-text">*Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.  Selezionare il punto di ripristino che si desidera utilizzare per ripristinare i dati.</block>
-  <block id="ea8da750ada6c0a6912947f81ce03786" category="admonition">Ransomware Resilience identifica come punto di ripristino migliore l'ultimo backup appena prima dell'incidente e mostra l'indicazione "Consigliato".</block>
   <block id="8e39c6b8e82f00af62a92b5e18f0d487" category="list-text">*Destinazione*: seleziona la freccia rivolta verso il basso accanto a Destinazione per visualizzare i dettagli.</block>
-  <block id="ad7fb327f4193be83424f1fc4c25d4fd" category="list-text">Selezionare la posizione originale o alternativa.</block>
   <block id="fc36d223c5b876afa4e1a764e408f5bb" category="list-text">Selezionare il sistema.</block>
   <block id="977d94fcfbb6a7da851005e1aaa99663" category="list-text">Selezionare la VM di archiviazione.</block>
-  <block id="accfbb7c139fd416a120a640d6c1590a" category="list-text">Se la destinazione originale non dispone di spazio sufficiente per ripristinare il carico di lavoro, viene visualizzata la riga "Archiviazione temporanea".  È possibile selezionare l'archiviazione temporanea per ripristinare i dati del carico di lavoro.  I dati ripristinati verranno copiati dall'archivio temporaneo alla posizione originale.  Fare clic sulla *freccia giù* nella riga Archiviazione temporanea e impostare il cluster di destinazione, la VM di archiviazione e il livello locale.</block>
   <block id="1a7c3267d0415566593c1285505aa765" category="list-text">Rivedi le tue selezioni.</block>
   <block id="6f6897e6c796f284c66b248179fd67ba" category="list-text">Dal menu in alto, seleziona *Ripristino* per esaminare il carico di lavoro nella pagina Ripristino, dove lo stato dell'operazione scorre tra gli stati.</block>
-  <block id="f0266c70abac9ef71bb56a1eb183c0b0" category="section-title">Ripristina un carico di lavoro non gestito da SnapCenter</block>
   <block id="4bd702a7df3c8966625d698f05cd0cc6" category="paragraph">L'amministratore dell'archiviazione di sicurezza può recuperare i dati a diversi livelli:</block>
   <block id="c2fcef7151504f035e47ba31c3e5ddf5" category="list-text">Recupera tutti i volumi</block>
   <block id="068f7fc4b5a2b14387afa21644b54045" category="list-text">Ripristina un'applicazione a livello di volume o di file e cartella.</block>
@@ -1733,15 +1662,12 @@
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP.</block>
   <block id="8ed72bdbbdc0df9146a0777651178cbf" category="paragraph-title">In che modo Ransomware Resilience interagisce con NetApp Backup and Recovery e SnapCenter?</block>
   <block id="8f3fc6dee049aeb65422cea50c997060" category="paragraph">Ransomware Resilience interagisce con Backup and Recovery per individuare e impostare policy di snapshot e backup per i carichi di lavoro di condivisione file.</block>
-  <block id="41c755bb70844acc0dfa6ef656a1458f" category="paragraph">Ransomware Resilience funziona con SnapCenter o SnapCenter per VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM.</block>
-  <block id="4aab1b1684152d34047e64fa09c64149" category="paragraph">Ransomware Resilience funziona anche con Backup and Recovery e SnapCenter (incluso SnapCenter per VMware) per eseguire un ripristino coerente con i file e i carichi di lavoro.</block>
   <block id="282764b1530b129720ca01a123b6f6ce" category="paragraph-title">Cos'è un carico di lavoro nel contesto della resilienza al ransomware?</block>
   <block id="10c8ec686acd93b9da39b3efea09bc01" category="paragraph">Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file. Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione.</block>
   <block id="f7e19062cc2eaeb5901ce8337d69e539" category="paragraph">Ad esempio, si consideri un database Oracle distribuito su ora3.host.com con<block ref="2b0d59c7031769e80c8e5118b6ec7694" prefix=" " category="inline-code"></block> contenente dati e<block ref="a110e8ed91b0de267a5728888b1f4ed1" prefix=" " category="inline-code"></block> contenente registri. I due volumi costituiscono il carico di lavoro per quell'istanza di Oracle Database.</block>
   <block id="f4d0f54d022c7715505fb12db9dfaab4" category="paragraph-title">In che modo Ransomware Resilience assegna la priorità ai dati del carico di lavoro?</block>
   <block id="6f240a888a055fa4629059d3d5328220" category="paragraph">La priorità del carico di lavoro (critica, standard, importante) è determinata dalle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro e dai backup pianificati.</block>
   <block id="79444a9daf1e4ef34a492d7a4ccc93fd" category="paragraph-title">Quali carichi di lavoro supporta Ransomware Resilience?</block>
-  <block id="8ff55251ff506b50711d75f8d5138385" category="paragraph">Se utilizzi SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da questi prodotti sono identificati anche in Ransomware Resilience. Ransomware Resilience può proteggere e ripristinare SnapCenter e i carichi di lavoro SnapCenter in modo coerente con il carico di lavoro.</block>
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">Come si associano i dati a un carico di lavoro?</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">Ransomware Resilience rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.</block>
   <block id="bbcd2d0377872826c23c1bf4bcd98e47" category="paragraph">Se disponi SnapCenter o SnapCenter per VMware e hai configurato carichi di lavoro in Backup e ripristino, Ransomware Resilience rileva i carichi di lavoro gestiti da SnapCenter e SnapCenter per VMware e i volumi associati.</block>
@@ -1793,7 +1719,6 @@
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">Un account in NetApp StorageGRID, AWS S3, Azure Blob o Google Cloud Platform per le destinazioni di backup con autorizzazioni di accesso appropriate configurate.</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">Accedere alla CLI del cluster ONTAP come utente amministratore.</block>
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">Torna alla NetApp Console per utilizzare Ransomware Resilience.</block>
-  <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">Se utilizzi SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da tali prodotti sono identificati anche in Ransomware Resilience. Ransomware Resilience è in grado di proteggerli e ripristinarli in modo coerente con il carico di lavoro.</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">10 novembre 2025</block>
   <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">**Supporto del provider cloud**</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">Fornitore di cloud</block>
@@ -1880,7 +1805,6 @@
   <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">Protegge i dati nei carichi di lavoro basati su applicazioni quali Oracle, datastore VMware e condivisioni di file.</block>
   <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*Carico di lavoro*: un carico di lavoro in Ransomware Resilience può includere database Oracle, datastore VMware o condivisioni di file.</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">Ransomware Resilience è in grado di identificare i seguenti carichi di lavoro: Oracle, condivisioni di file, storage a blocchi, VM e datastore di VM.</block>
-  <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">SnapCenter per Oracle</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">Nella versione di anteprima, il servizio protegge i carichi di lavoro basati sulle applicazioni di Oracle, i datastore delle VM e le condivisioni di file su storage NAS locale, nonché Cloud Volumes ONTAP su AWS (utilizzando il protocollo NFS) nelle singole organizzazioni BlueXP ed esegue il backup dei dati sullo storage cloud di Amazon Web Services.</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience protegge, rileva e supporta il ripristino dei carichi di lavoro delle applicazioni e delle condivisioni di file dalle minacce ransomware negli storage locali e cloud. Ransomware Resilience consente backup e ripristino sicuri, aiutando le organizzazioni a salvaguardare i dati critici e a mantenere la continuità aziendale per Oracle, datastore VM, storage NAS e altro ancora.</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">Da 15.3 (64 bit) a 15.6 (64 bit)</block>
@@ -2178,7 +2102,6 @@
   <block id="771abd282157ca2dcc3c9f4d73d158c2" category="admonition">Se stai configurando strategie di protezione per Amazon FSxN per ONTAP e Azure NetApp Files, consulta <block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>.</block>
   <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP o Azure NetApp Files. Esegui le operazioni di backup utilizzando il servizio di backup FSx for ONTAP. Imposti le policy di backup per i carichi di lavoro in FSx for ONTAP in AWS, non in Ransomware Resilience. Le policy di backup vengono visualizzate in Ransomware Resilience e rimangono invariate rispetto ad AWS.</block>
   <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">Seleziona le impostazioni di rilevamento che desideri:</block>
-  <block id="d5fc4bf8c0e9a03cea6fbde26d8608f2" category="list-text">Seleziona il criterio per governare la protezione di questo gruppo.</block>
   <block id="e468b341048b440bba27f4904f7a59c4" category="paragraph">Nella scheda delle impostazioni di NetApp Ransomware Resilience, puoi configurare le destinazioni di backup, eseguire un'esercitazione di preparazione all'attacco, configurare l'individuazione del carico di lavoro o configurare il rilevamento di attività sospette degli utenti.</block>
   <block id="04ba211304888e157a1517c86860bd73" category="list-text">Configura la segnalazione delle attività sospette degli utenti. Per ulteriori informazioni, vedi <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>.</block>
   <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">Collega NetApp Ransomware Resilience a un SIEM</block>
@@ -2210,4 +2133,44 @@
   <block id="2787b10f438b5f28e340793feb9becb6" category="paragraph">Prima di abilitare Microsoft Sentinel in Ransomware Resilience, è necessario eseguire i seguenti passaggi di alto livello in Microsoft Sentinel:</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">16 febbraio 2026</block>
   <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">Configura SIEM</block>
+  <block id="8944abed4a7795983ff8cde0c660dfda" category="paragraph">Ransomware Resilience utilizza NetApp Backup and Recovery per individuare e impostare policy di snapshot e backup per i carichi di lavoro di condivisione file.</block>
+  <block id="7275b90366e3424df414ea245c97ebe6" category="list-text">Identifica i dati dei clienti da ONTAP e SnapCenter service API e li associa ai carichi di lavoro. Scopri di più su<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>.</block>
+  <block id="c7508e265b893e4d518594502d79c380" category="list-text">Monitora attivamente i carichi di lavoro e orchestra l'uso delle API di NetApp Backup and Recovery e ONTAP applicando policy a ciascuno dei carichi di lavoro identificati.</block>
+  <block id="8ab694960534ed38cae5f75597a21b9b" category="admonition">Sebbene Ransomware Resilience riconosca le policy da SnapCenter, non è possibile eseguire il ripristino tramite SnapCenter con Ransomware Resilience.</block>
+  <block id="52632b136c48766a9fb3109144810641" category="paragraph">Ransomware Resilience funziona con SnapCenter o SnapCenter per VMware per individuare e impostare policy di snapshot e backup per carichi di lavoro di applicazioni e VM. Al momento non puoi utilizzare Ransomware Resilience per il ripristino con SnapCenter.</block>
+  <block id="33be3f4617dbd57db084d6df8086348f" category="paragraph">Ransomware Resilience funziona anche con Backup and Recovery per eseguire un ripristino coerente di file e carichi di lavoro.</block>
+  <block id="ae785e9a302942d106ead6b14e222e26" category="paragraph">Se utilizzi SnapCenter o SnapCenter per VMware, tutti i carichi di lavoro supportati da questi prodotti sono identificati anche in Ransomware Resilience.</block>
+  <block id="e47b008a3c9b07db3a7f7c525eeccc5a" category="cell">Assegna una policy a ciascun workload. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>. Fare riferimento a <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>.</block>
+  <block id="402b250b6b0cd33bf0396353ed30be82" category="inline-link-macro">carichi di lavoro di gruppo</block>
+  <block id="c35d66439764aa49afc7babd31dd817e" category="admonition">Per una migliore gestione e protezione del tuo patrimonio di dati, puoi creare <block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block> per proteggere collettivamente i volumi con un'unica strategia.</block>
+  <block id="32fcd2ee690f5f3556594e0a5c86b657" category="paragraph">Oltre a Ransomware Resilience, puoi utilizzare NetApp Backup and Recovery per gestire la protezione delle condivisioni di file e delle condivisioni di file delle VM.</block>
+  <block id="19df373c6eb28e440c7376f7b6153ac6" category="paragraph">Le informazioni sulla protezione dai servizi di Backup &amp; Recovery vengono visualizzate in Ransomware Resilience. Puoi aggiungere policy di rilevamento a questi servizi con Ransomware Resilience. L'aggiunta di una policy di protezione con Ransomware Resilience sostituisce le policy di protezione esistenti.</block>
+  <block id="42a88e6373b8a6a0a4d8625012fbd018" category="paragraph">Ransomware Resilience rileva anche le policy di protezione da SnapCenter per VMware per i datastore delle VM e da SnapCenter per Oracle. Non è possibile utilizzare questi servizi per il ripristino con Ransomware Resilience.</block>
+  <block id="5faff4d5da024e537f30a6f61e63b11d" category="paragraph">Se il carico di lavoro non è gestito da Backup and Recovery o Ransomware Resilience, potrebbero essere presenti snapshot creati come parte di ONTAP o di altri prodotti. Se la protezione FPolicy di ONTAP è attiva, puoi modificarla utilizzando ONTAP.</block>
+  <block id="376bb43ad447ff15d962afc4342493d1" category="admonition">Vedere <block ref="63a8fd9f713a393cc650fb6baf07f02c" category="inline-link-macro-rx"></block> per saperne di più sull'utilizzo di Ransomware Resilience quando è presente una policy di protezione con Backup and Recovery.</block>
+  <block id="c049e5f82d4b1bdaa78b9bfa0423bfe4" category="paragraph">*Criteri di Snapshot, replica e backup*: questa colonna mostra i criteri di snapshot e backup applicati al carico di lavoro e il prodotto o servizio che gestisce tali criteri.</block>
+  <block id="c042540406160704837d8d0bcec8b01c" category="admonition">Non è possibile gestire il ripristino in Ransomware Resilience per nessuna policy SnapCenter.</block>
+  <block id="294bdeaab3c13eeb5476a96b2a4d7991" category="list-text">**Sostituisci le policy di snapshot o backup esistenti da Backup and Recovery protection con strategie di protezione gestite da Ransomware Resilience.**</block>
+  <block id="f9dbe879fedc698e4cd50df0431ab680" category="section-title">Aggiungi una policy di rilevamento ai carichi di lavoro con policy di Snapshot e backup esistenti gestite da NetApp Backup and Recovery</block>
+  <block id="8fd11cb4939abea9a38c1a8b9b718b44" category="paragraph">Ransomware Resilience consente di assegnare una policy di rilevamento o una policy di protezione ai carichi di lavoro con protezione snapshot e backup esistente gestita in altri NetApp prodotti o servizi. Backup and Recovery utilizza policy che regolano snapshot, replica su storage secondario o backup su storage a oggetti.</block>
+  <block id="7d234783d8e389cb7544820e219e6417" category="paragraph">Se disponi di policy di snapshot o backup esistenti con Backup and Recovery, puoi aggiungere una policy per rilevare gli attacchi ransomware. Per gestire la protezione e il rilevamento con Ransomware Resilience, consulta <block ref="1b2a8d93a0a5a450b6a73f4f622cfd7c" category="inline-xref-macro-rx"></block>.</block>
+  <block id="ecd154a0da8331970980b784ad676e9b" category="list-text">Ransomware Resilience rileva se sono presenti policy di Backup and Recovery attive.</block>
+  <block id="ffe6653bcd557bfbd80aff3ce171f491" category="list-text">Per lasciare invariato il tuo Backup and Recovery esistente e applicare solo una policy di _detection_, lascia la casella **Replace existing policies** non selezionata.</block>
+  <block id="aafd4e94bcc37426152d473c41e03659" category="list-text">Ransomware Resilience rileva se sono presenti policy di Backup and Recovery attive. Per sostituire le policy esistenti, seleziona la casella **Replace existing policies**. Quando selezioni la casella, Ransomware Resilience sostituisce l'elenco delle policy di rilevamento con le policy di rilevamento.</block>
+  <block id="037372d8704e59765af4c473d08f5257" category="list-text">Se il carico di lavoro ha una policy di Backup and Recovery esistente che si desidera mantenere, deselezionare **Replace existing policies**. Per sostituire le policy esistenti, selezionare **Replace existing policies**.</block>
+  <block id="2ef974fc1907e25ad7d2ab240867a065" category="list-text">Se l'applicazione o la macchina virtuale è gestita da NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience esegue un ripristino coerente con l'arresto anomalo, in cui tutti i dati che erano presenti nel volume nello stesso momento vengono ripristinati, ad esempio, se il sistema si è arrestato in modo anomalo.</block>
+  <block id="b11b835f559ed8748e33a3412f3c77b2" category="section-title">Ripristina un carico di lavoro</block>
+  <block id="ea9eea4a980add15f1982bc5d385bfc2" category="doc">Gestire i gruppi di protezione in NetApp Ransomware Resilience</block>
+  <block id="ed2728c518fe52f7f1f0f734bdf3232f" category="paragraph">NetApp Ransomware Resilience offre gruppi di protezione per semplificare la gestione del patrimonio dati. I gruppi di protezione sono raggruppamenti logici di carichi di lavoro. Ransomware Resilience può proteggere tutti i volumi di un gruppo di protezione contemporaneamente con una singola strategia di protezione, evitandoti di dover applicare una strategia a ciascun carico di lavoro.</block>
+  <block id="e4b0231f7907d5401a43e9aad6fab95f" category="paragraph">È possibile creare gruppi indipendentemente dal loro stato di protezione (ovvero, gruppi non protetti e gruppi protetti). Quando si aggiunge una policy di protezione a un gruppo di protezione, la nuova policy di protezione sostituisce qualsiasi policy esistente, incluse le policy gestite da NetApp Backup and Recovery.</block>
+  <block id="d9caa9454e226f338bc169e8c4db8222" category="list-text">Dalla dashboard Protection, seleziona la scheda *Protection groups*.</block>
+  <block id="3ad4ecebf7017832f3e6bbb358275752" category="list-text">Seleziona una strategia di protezione per il gruppo.</block>
+  <block id="edd7f8585c7f281bafec7321766208f9" category="list-text">Per finalizzare il gruppo di protezione, seleziona *Add*.</block>
+  <block id="67d340d4f19203c29ed66de9c5912ec7" category="list-text">Seleziona una policy di protezione esistente da applicare oppure seleziona **Aggiungi** per creare una nuova policy di protezione. Per ulteriori informazioni sull'aggiunta di una policy di protezione, consulta <block ref="138ab222387c0cb2938fed9d223ea5db" category="inline-link-macro-rx"></block>. Quindi seleziona **Salva**.</block>
+  <block id="3128b94e12f52eaecfdea189a2bfe4fd" category="section-title">Rimuovi i carichi di lavoro da un gruppo di protezione</block>
+  <block id="9be117e96d40f1667b79710dcb8a2372" category="paragraph">Potresti in seguito dover rimuovere i carichi di lavoro da un gruppo di protezione esistente.</block>
+  <block id="6ee81a346ed2300b07940337511fa860" category="list-text">Dalla pagina del gruppo di protezione, seleziona il carico di lavoro che desideri rimuovere dal gruppo e seleziona l'opzione *Azioni* <block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="82cec7652bb841468c070420458d39c0" category="section-title">Elimina un gruppo di protezione</block>
+  <block id="fbd3e733007100e47d8c59bbffb4a650" category="paragraph">Quando si elimina un gruppo di protezione, Ransomware Resilience rimuove il gruppo e la strategia di protezione sui carichi di lavoro. Non elimina i singoli carichi di lavoro.</block>
+  <block id="3f3b36ab9f107f9d308521e786376b81" category="sidebar">Gestisci i gruppi di protezione</block>
 </blocks>
