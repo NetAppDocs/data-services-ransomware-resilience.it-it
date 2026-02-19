@@ -62,7 +62,7 @@ Per queste attività è richiesto il ruolo di _amministratore di Ransomware Resi
 Dopo aver configurato la protezione in Ransomware Resilience, ecco cosa potresti fare.
 
 [role="quick-margin-list"]
-* link:rp-use-protect-classify.html["Abilita la classificazione dei dati per identificare i rischi di governance e sicurezza"]
+* link:task-classify.html["Abilita la classificazione dei dati per identificare i rischi di governance e sicurezza"]
 * link:task-siem.html["Invia avvisi a SIEM"]
 * link:rp-use-reports.html["Scarica report di allerta, protezione, esercitazione di prontezza, ripristino o riepilogo"]
 

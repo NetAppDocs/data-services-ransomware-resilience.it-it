@@ -43,7 +43,7 @@ indexpage:
       url: "/rp-use-protect.html"
     - title: Scansiona le informazioni di identificazione personale con NetApp Data
         Classification
-      url: "/rp-use-protect-classify.html"
+      url: "/task-classify.html"
     - title: Rispondere a un avviso rilevato
       url: "/rp-use-alert.html"
     - title: Recuperare da un attacco

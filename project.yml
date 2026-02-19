@@ -62,7 +62,7 @@ sidebar:
       - title: Gestisci i gruppi di protezione
         url: "/task-protection-group.html"
       - title: Scansione per dati personali identificabili
-        url: "/rp-use-protect-classify.html"
+        url: "/task-classify.html"
     - title: Rispondere a un avviso rilevato
       url: "/rp-use-alert.html"
     - title: Recuperare da un attacco ransomware

@@ -244,26 +244,6 @@ Ogni 30 giorni
 | 60 | 2 | 93 
 
 
-.4+| *Estensione utente crittografia*  a| 
-Ogni quarto d'ora
-| Ogni 30 minuti | 3 | 72 | 93 
-
-
-| Quotidiano  a| 
-Ogni 1 giorno
-| 14 | 14 | 93 
-
-
-| Settimanale  a| 
-Ogni 1 settimana
-| 35 | 5 | 93 
-
-
-| Mensile  a| 
-Ogni 30 giorni
-| 60 | 2 | 93 
-
-
 .4+| *Politica di replicazione critica*  a| 
 Ogni quarto d'ora
 | Ogni 15 minuti | 3 | 288 | 309 

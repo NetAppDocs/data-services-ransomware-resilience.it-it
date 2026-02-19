@@ -39,7 +39,7 @@ image:all-file-activity.png["Screenshot della vista di tutte le attività dei fi
 Ci sono tre componenti chiave nel rilevamento dell'attività sospetta degli utenti in Ransomware Resilience.
 
 * L'**agente di attività utente** è un ambiente eseguibile per i raccoglitori di dati. È necessario configurare l'agente di attività utente.
-* Il **collettore dati** condivide gli eventi di attività dell'utente con Ransomware Resilience. Il collettore dati viene creato automaticamente quando xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[abilita una strategia di protezione dal ransomware con rilevamento delle attività sospette degli utenti].
+* Il **collettore dati** condivide gli eventi di attività dell'utente con Ransomware Resilience. Il collettore dati viene creato automaticamente quando link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["abilita una strategia di protezione dal ransomware con rilevamento delle attività sospette degli utenti"].
 * Il **connettore directory utente** consente la mappatura tra nomi utente e ID utente, garantendo maggiore chiarezza nella risposta a comportamenti sospetti degli utenti. È necessario configurare il connettore directory utente.
 
 
