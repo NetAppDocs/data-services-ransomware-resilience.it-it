@@ -12,13 +12,11 @@ summary: Prima di creare un agente di attività utente e altri collettori, è ne
 
 
 [role="lead"]
-Prima di creare un agente di attività utente e altri collettori, è necessario assicurarsi di soddisfare i requisiti delineati per il sistema operativo, il server e la rete.
+NetApp Ransomware Resilience il rilevamento del comportamento utente consente di rispondere agli eventi ransomware a livello utente. È necessario creare un set di agenti per abilitare il rilevamento del comportamento utente. Prima di abilitare il rilevamento, è necessario assicurarsi di soddisfare i requisiti di sistema operativo, server e rete indicati, in modo che Ransomware Resilience possa rilevare e segnalare correttamente gli eventi.
 
 
 
 == Supporto del cloud provider
-
-**Supporto del provider cloud**
 
 I dati sulle attività sospette degli utenti possono essere archiviati in AWS e Azure nelle seguenti regioni:
 

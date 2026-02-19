@@ -58,6 +58,9 @@ image:screen-protection-groups-policy.png["Aggiungi gruppo di protezione - Pagin
 
 
 
+TIP: Quando si esamina la dashboard di protezione in Ransomware Resilience, è possibile ordinare i carichi di lavoro per gruppo di protezione.
+
+
 
 === Modifica protezione gruppo
 

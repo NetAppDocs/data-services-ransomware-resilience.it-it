@@ -1,15 +1,13 @@
 ---
-sidebar: sidebar 
 permalink: rp-use-manage.html 
-keywords: ransomware protection workload name, ransomware protection 
-summary: È possibile gestire i carichi di lavoro modificandone il nome anziché utilizzare un nome predefinito, che è più rischioso. 
+redirect: data-services-ransomware-resilience/rp-use-protect.html 
 ---
-= Gestisci i carichi di lavoro in NetApp Ransomware Resilience
-:hardbreaks:
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ./media/
 
+
+'''
+barra laterale: barra laterale permalink: rp-use-manage.html parole chiave: nome del carico di lavoro di ransomware protection, riepilogo di ransomware protection: È possibile gestire i carichi di lavoro modificando il nome del carico di lavoro invece di utilizzare un nome predefinito, che è più rischioso. --- = Modificare il nome dei carichi di lavoro in NetApp Ransomware Resilience :hardbreaks: :icons: font :imagesdir: ./media/
 
 [role="lead"]
 È possibile gestire i carichi di lavoro in NetApp Ransomware Resilience modificandone il nome.  L'utilizzo di un nome predefinito rappresenta un rischio per gli attacchi ransomware.

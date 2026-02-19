@@ -52,7 +52,7 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 === Volumi non supportati
 
-I report di Ransomware Resilience ora acquisiscono informazioni sui volumi supportati e non supportati nel report **Riepilogo**. Utilizzare queste informazioni per diagnosticare il motivo per cui i volumi di un sistema potrebbero non essere idonei alla protezione anti-ransomware.
+I report di Ransomware Resilience ora acquisiscono informazioni sui volumi supportati e non supportati nel report **Summary**. Utilizza queste informazioni per diagnosticare perché i volumi di un sistema potrebbero non essere idonei alla protezione ransomware.
 
 Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Scarica i report in Ransomware Resilience"^].
 
@@ -439,7 +439,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 === Valutazione del rischio per la sicurezza da parte di Digital Advisor
 
-La BlueXP ransomware protection ora raccoglie informazioni sui rischi per la sicurezza elevati e critici correlati a un cluster da NetApp Digital Advisor.  Se viene rilevato un rischio, la BlueXP ransomware protection fornisce una raccomandazione nel riquadro *Azioni consigliate* della Dashboard: "Correggi una vulnerabilità di sicurezza nota sul cluster <nome>".  Dalla raccomandazione sulla Dashboard, cliccando su *Rivedi e correggi* viene suggerito di consultare Digital Advisor e un articolo Common Vulnerability & Exposure (CVE) per risolvere il rischio per la sicurezza.  Se sono presenti più rischi per la sicurezza, rivedere le informazioni in Digital Advisor.
+BlueXP ransomware protection ora raccoglie informazioni sui rischi per la sicurezza elevati e critici relativi a un cluster da NetApp Digital Advisor. Se viene rilevato un rischio, BlueXP ransomware protection fornisce una raccomandazione nel riquadro *Azioni consigliate* della Dashboard: "Correggi una vulnerabilità di sicurezza nota sul cluster <name>." Dalla raccomandazione nella Dashboard, selezionando *Esamina e correggi* viene suggerito di consultare Digital Advisor e un articolo Common Vulnerability & Exposure (CVE) per risolvere il rischio per la sicurezza. Se sono presenti più rischi per la sicurezza, rivedere le informazioni in Digital Advisor.
 
 Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documentazione Digital Advisor"^] .
 

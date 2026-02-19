@@ -12,7 +12,7 @@ summary: È possibile proteggere i carichi di lavoro dagli attacchi ransomware a
 
 
 [role="lead"]
-È possibile proteggere i carichi di lavoro dagli attacchi ransomware abilitando una protezione coerente con il carico di lavoro o creando strategie di protezione ransomware in NetApp Ransomware Resilience.
+Le strategie di protezione dal ransomware sono una caratteristica fondamentale di NetApp Ransomware Resilience: supportano il rilevamento, la protezione e la replicazione. Le strategie di protezione sono un elemento essenziale della tua strategia di sicurezza informatica.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -61,92 +61,9 @@ NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in 
 
 
 
-=== Criteri di protezione per carichi di lavoro non protetti dalle applicazioni NetApp
+==== Criteri di protezione per carichi di lavoro non protetti dalle applicazioni NetApp
 
 Se il carico di lavoro non è gestito da Backup and Recovery o Ransomware Resilience, potrebbero essere presenti snapshot creati come parte di ONTAP o di altri prodotti. Se la protezione FPolicy di ONTAP è attiva, puoi modificarla utilizzando ONTAP.
-
-
-
-== Visualizza la protezione ransomware su un carico di lavoro
-
-Uno dei primi passi per proteggere i carichi di lavoro è visualizzare i carichi di lavoro correnti e il loro stato di protezione.  È possibile visualizzare i seguenti tipi di carichi di lavoro:
-
-* Carichi di lavoro applicativi
-* Carichi di lavoro a blocchi
-* Carichi di lavoro di condivisione file
-* Carichi di lavoro VM
-
-
-.Passi
-. Dal menu di navigazione a sinistra della Console, seleziona *Protezione* > *Ransomware Resilience*.
-. Eseguire una delle seguenti operazioni:
-+
-** Dal riquadro Protezione dati nella Dashboard, seleziona *Visualizza tutto*.
-** Dal menu, seleziona *Protezione*.
-+
-image:screen-protection.png["Pagina di protezione"]
-
-
-
-. Da questa pagina è possibile visualizzare e modificare i dettagli di protezione per il carico di lavoro.
-
-
-
-NOTE: Vedere link:#add-a-ransomware-protection-strategy["Aggiungi una strategia di protezione dal ransomware"] per saperne di più sull'utilizzo di Ransomware Resilience quando è presente una policy di protezione con Backup and Recovery.
-
-
-
-=== Comprendere la pagina Protezione
-
-La pagina Protezione mostra le seguenti informazioni sulla protezione del carico di lavoro:
-
-*Stato di protezione*: un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se una policy è applicata o meno:
-
-* *Protetto*: è stata applicata una policy.  ARP (o ARP/AI a seconda della versione ONTAP ) è abilitato su tutti i volumi correlati al carico di lavoro.
-* *A rischio*: non viene applicata alcuna politica.  Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di snapshot e backup abilitato.
-* *In corso*: una policy è in fase di applicazione ma non è ancora stata completata.
-* *Non riuscito*: un criterio è stato applicato ma non funziona.
-
-
-*Stato di rilevamento*: un carico di lavoro può avere uno dei seguenti stati di rilevamento ransomware:
-
-* *Apprendimento*: di recente è stata assegnata una policy di rilevamento ransomware al carico di lavoro e Ransomware Resilience sta eseguendo la scansione dei carichi di lavoro.
-* *Attivo*: è assegnata una policy di protezione contro il rilevamento del ransomware.
-* *Non impostato*: non è assegnato alcun criterio di protezione contro il rilevamento del ransomware.
-* *Errore*: è stato assegnato un criterio di rilevamento ransomware, ma Ransomware Resilience ha riscontrato un errore.
-+
-
-TIP: Quando la protezione è abilitata in Ransomware Resilience, il rilevamento degli avvisi e la segnalazione iniziano dopo che lo stato della policy di rilevamento ransomware passa dalla modalità di apprendimento alla modalità attiva.
-
-
-
-
-NOTE: Le attività sospette relative al comportamento dell'utente e le attività FPolicy (estensioni di file sospette) vengono elencate separatamente dallo stato di rilevamento.
-
-*Criterio di rilevamento*: viene visualizzato il nome del criterio di rilevamento del ransomware, se ne è stato assegnato uno.  Se il criterio di rilevamento non è stato assegnato, viene visualizzato "N/D".
-
-*Destinazione di replica*: se hai configurato la replica degli snapshot, vengono elencati i nomi delle VM e dei sistemi di archiviazione di destinazione. Se non c'è replica, questo campo visualizza "Nessuno".
-
-*Criteri di Snapshot, replica e backup*: questa colonna mostra i criteri di snapshot e backup applicati al carico di lavoro e il prodotto o servizio che gestisce tali criteri.
-
-* Gestito da SnapCenter
-* Gestito dal SnapCenter Plug-in for VMware vSphere
-* Gestito da Backup e Ripristino
-* Nome della policy di protezione ransomware che regola gli snapshot e i backup
-* Nessuno
-
-
-
-NOTE: Non è possibile gestire il ripristino in Ransomware Resilience per nessuna policy SnapCenter.
-
-*Importanza del carico di lavoro*
-
-Ransomware Resilience assegna un'importanza o una priorità a ciascun carico di lavoro durante la fase di individuazione, basandosi su un'analisi di ciascun carico di lavoro.  L'importanza del carico di lavoro è determinata dalle seguenti frequenze di snapshot:
-
-* *Critico*: vengono eseguite più copie snapshot all'ora (programma di protezione molto aggressivo)
-* *Importante*: le copie degli snapshot vengono create meno frequentemente di ogni ora ma più frequentemente di ogni giorno
-* *Standard*: le copie snapshot vengono eseguite più di una volta al giorno
-
 
 
 
@@ -394,11 +311,11 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 . Per lasciare invariato il tuo Backup and Recovery esistente e applicare solo una policy di _detection_, lascia la casella **Replace existing policies** non selezionata.
 . Seleziona le impostazioni di rilevamento che desideri:
 +
-....
-*Encryption detection*
-*Suspicious user behavior detection*
-*Block suspicious file extensions*
-....
+** *Rilevamento della crittografia*
+** *Rilevamento di comportamenti utente sospetti*
+** *Blocca le estensioni di file sospette*
+
+
 . Selezionare **Avanti**.
 . Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente o link:suspicious-user-activity.html#create-a-user-activity-agent["o crearne uno"].
 +

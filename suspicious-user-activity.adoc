@@ -12,20 +12,20 @@ summary: Il rilevamento delle attività sospette degli utenti in Ransomware Resi
 
 
 [role="lead"]
-Per abilitare il rilevamento di comportamenti sospetti degli utenti in NetApp Ransomware Resilience, è necessario installare almeno un agente di attività utente. Quando si attiva la funzionalità di rilevamento di comportamenti sospetti degli utenti dalla dashboard di Ransomware Resilience, è necessario fornire le informazioni sull'host dell'agente di attività utente.
+NetApp Ransomware Resilience rilevamento dell'attività utente aiuta a prevenire eventi ransomware a livello utente. Per abilitare il rilevamento di comportamenti sospetti degli utenti in Ransomware Resilience, è necessario installare almeno un agente di attività utente, che crea un ambiente di raccolta di dati per monitorare il comportamento degli utenti alla ricerca di modelli anomali che assomigliano a eventi ransomware.
 
-Un agente può ospitare più raccoglitori di dati. I raccoglitori di dati inviano i dati a una posizione SaaS per l'analisi. Esistono due tipi di collezionisti:
+Un agente di attività utente ospita un raccoglitore di dati e un connettore di directory utente, che inviano entrambi i dati a una posizione SaaS per l'analisi.
 
-* Il **collettore dati** raccoglie i dati sull'attività degli utenti da ONTAP.
-* Il **connettore directory utente** si connette alla tua directory per mappare gli ID utente ai nomi utente.
+* Il **collettore dati** raccoglie i dati sull'attività degli utenti da ONTAP. Il collettore dati viene creato automaticamente quando si crea una strategia di protezione con rilevamento del comportamento degli utenti.
+* Il **connettore directory utente** si connette alla tua directory per mappare gli ID utente ai nomi utente. Devi configurare il connettore directory utente.
 
 
-I collettori vengono configurati nelle impostazioni di Resilienza ransomware.
+L'agente di attività utente, il data collector e il connettore della user directory possono essere tutti gestiti dalla dashboard delle impostazioni di Ransomware Resilience.
 
 
 NOTE: Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, è consigliato utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience, tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di account per abilitare questa associazione.
 
-+ Se non stai già utilizzando DII, procedi con le istruzioni di configurazione qui.
++ Se _non_ stai utilizzando DII, procedi con le istruzioni di configurazione qui.
 
 
 

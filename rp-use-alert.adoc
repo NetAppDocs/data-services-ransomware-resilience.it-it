@@ -117,7 +117,7 @@ TIP: Per impostare le notifiche e-mail nella NetApp Console, vedere link:https:/
 Viene visualizzata la pagina Avvisi.
 
 . Esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
-. Per rivedere altri avvisi, clicca su *Avviso* nel breadcrumb in alto a sinistra.
+. Per rivedere altri avvisi, seleziona *Avviso* nel breadcrumb in alto a sinistra.
 . Continua con una delle seguenti opzioni:
 +
 ** <<Rileva attività dannose e comportamenti anomali degli utenti>> .
