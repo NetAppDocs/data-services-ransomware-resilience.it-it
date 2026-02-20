@@ -21,6 +21,9 @@ Grazie al rilevamento e all'invio di avvisi in caso di comportamenti sospetti de
 Ransomware Resilience rileva le attività sospette degli utenti analizzando gli eventi di attività degli utenti generati da FPolicy in ONTAP. Per raccogliere dati sull'attività dell'utente, è necessario distribuire uno o più agenti di attività dell'utente. L'agente è un server Linux o una macchina virtuale con connettività ai dispositivi del tuo tenant.
 
 
+IMPORTANT: Il rilevamento delle attività utente non è attualmente supportato per i carichi di lavoro SAN. È possibile utilizzare il rilevamento delle attività utente con i carichi di lavoro NAS in Amazon FSxN per ONTAP, Cloud Volumes ONTAP e ONTAP.
+
+
 
 == Analisi forense delle attività sospette degli utenti
 
