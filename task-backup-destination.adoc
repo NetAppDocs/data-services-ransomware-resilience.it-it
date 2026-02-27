@@ -1,0 +1,215 @@
+---
+sidebar: sidebar 
+permalink: task-backup-destination.html 
+keywords: ransomware protection, backup destination, storagegrid, aws, azure, google cloud 
+summary: Aggiungi una destinazione di backup in NetApp Ransomware Resilience per migliorare la resilienza informatica. 
+---
+= Aggiungi una destinazione di backup in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando NetApp Ransomware Resilience rileva i carichi di lavoro, se i backup sono configurati, Ransomware Resilience riconosce le destinazioni di backup. Se si prevede di utilizzare i backup come parte del link:rp-use-protect.html["strategia di protezione dal ransomware"] ma non sono state configurate destinazioni di backup sul carico di lavoro, è necessario aggiungere una destinazione di backup in NetApp Ransomware Resilience per migliorare la resilienza informatica.
+
+Puoi scegliere una delle seguenti destinazioni di backup:
+
+* NetApp StorageGRID
+* Servizi Web Amazon (AWS)
+* Piattaforma Google Cloud
+* Microsoft Azure
+
+
+
+NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP e Azure NetApp Files. Eseguire le operazioni di backup utilizzando soluzioni di backup native: FSx for ONTAP backup service o Azure NetApp Files backups.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+
+
+
+== Aggiungi StorageGRID come destinazione di backup
+
+Per impostare NetApp StorageGRID come destinazione di backup, immettere le seguenti informazioni.
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro **Backup Destinations**, seleziona **Visualizza**.
+. Selezionare **Aggiungi**.
+. Immettere un nome per la destinazione del backup.
++
+image:screen-settings-backup-destination.png["Pagina delle destinazioni di backup"]
+
+. Selezionare * StorageGRID*.
+. Seleziona la freccia rivolta verso il basso accanto a ciascuna impostazione per esaminare i campi obbligatori:
++
+** *Impostazioni del provider*:
++
+*** Scegli se **creare un nuovo bucket** o **utilizzare il tuo bucket**.
+*** Fornire il **fully qualified domain name (FQDN) del nodo Gateway** e la **porta**.
+*** Fornire le credenziali StorageGRID: **Chiave di accesso** e **Chiave segreta**.
+
+
+** *Networking*: Seleziona lo spazio IP.
++
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+
+
+** *Backup Lock*
++
+Scegli se desideri configurare il blocco del backup. Con il blocco del backup, le copie sono protette da modifiche o eliminazioni e sottoposte a scansione per rilevare minacce ransomware. Non puoi modificare questa impostazione dopo aver configurato la destinazione di backup. ** Se non desideri il blocco del backup, seleziona **None**. ** Seleziona **Governance mode** per consentire agli utenti con autorizzazioni specifiche di sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione. ** Seleziona **Compliance mode** per impedire agli utenti di sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione.
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+image:screen-settings-backup-destinations-list2.png["Screenshot delle destinazioni di backup."]
+
+
+
+== Aggiungi Amazon Web Services come destinazione di backup
+
+Per impostare AWS come destinazione di backup, immettere le seguenti informazioni.
+
+Per dettagli sulla gestione dello storage AWS nella Console, vedere link:https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Gestisci i tuoi bucket Amazon S3"^].
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro **Backup Destinations**, seleziona **Visualizza**.
+. Selezionare **Aggiungi**.
+. Seleziona *Amazon Web Services*.
+. Selezionare la freccia giù accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni del provider*:
++
+*** Crea un nuovo bucket, seleziona un bucket esistente se ne esiste già uno nella Console oppure utilizza il tuo bucket in cui archiviare i backup.
+*** Account AWS, regione, chiave di accesso e chiave segreta per le credenziali AWS
++
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["Se vuoi portare il tuo bucket, fai riferimento ad Aggiungi bucket S3"^] .
+
+
+
+** *Crittografia*: se stai creando un nuovo bucket S3, inserisci le informazioni sulla chiave di crittografia fornite dal provider.  Se hai scelto un bucket esistente, le informazioni sulla crittografia sono già disponibili.
++
+Per impostazione predefinita, i dati nel bucket vengono crittografati con chiavi gestite da AWS.  Puoi continuare a utilizzare le chiavi gestite da AWS oppure puoi gestire la crittografia dei tuoi dati utilizzando le tue chiavi.
+
+** *Networking*: seleziona lo spazio IP e se utilizzerai un endpoint privato.
++
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+*** Facoltativamente, scegli se utilizzerai un endpoint privato AWS (PrivateLink) configurato in precedenza.
++
+Se si desidera utilizzare AWS PrivateLink, fare riferimento a https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink per Amazon S3"^] .
+
+
+
+** *Blocco backup*: scegli se vuoi che Ransomware Resilience protegga i backup da modifiche o eliminazioni.  Questa opzione utilizza la tecnologia NetApp DataLock.  Ogni backup verrà bloccato durante il periodo di conservazione, o per un minimo di 30 giorni, più un periodo di buffer fino a 14 giorni.
++
+
+CAUTION: Se si configura ora l'impostazione di blocco del backup, non sarà possibile modificarla dopo aver configurato la destinazione del backup.
+
++
+*** *Modalità di governance*: utenti specifici (con autorizzazione s3:BypassGovernanceRetention) possono sovrascrivere o eliminare i file protetti durante il periodo di conservazione.
+*** *Modalità di conformità*: gli utenti non possono sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione.
+
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+image:screen-settings-backup-destinations-list2.png["Pagina delle destinazioni di backup, opzione Impostazioni"]
+
+
+
+== Aggiungi Google Cloud Platform come destinazione di backup
+
+Per impostare Google Cloud Platform (GCP) come destinazione di backup, immettere le seguenti informazioni.
+
+Per dettagli sulla gestione dello storage GCP nella Console, fare riferimento a link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["Opzioni di installazione dell'agente della console in Google Cloud"^].
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro **Backup Destinations**, seleziona **Visualizza**.
+. Selezionare **Aggiungi**.
+. Immettere un nome per la destinazione del backup.
+. Seleziona *Google Cloud Platform*.
+. Selezionare la freccia giù accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni del provider*:
++
+*** Scegli se **creare un nuovo bucket** o **utilizzare il tuo bucket**.
+*** Fornire le credenziali di Google Cloud Platform: **Access key** e **Secret key**.
+*** Seleziona il tuo **Project** e la **Region** in cui si trova.
++
+image:screen-settings-backup-destination-gcp.png["Pagina delle destinazioni di backup"]
+
+
+
+** *Crittografia*: se stai creando un nuovo bucket, inserisci le informazioni sulla chiave di crittografia fornite dal provider.  Se hai scelto un bucket esistente, le informazioni sulla crittografia sono già disponibili.
++
+Per impostazione predefinita, i dati nel bucket vengono crittografati con chiavi gestite da Google. Puoi continuare con l'impostazione predefinita selezionando **Google-managed keys** oppure utilizzare **Customer-managed keys**.
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+
+
+== Aggiungi Microsoft Azure come destinazione di backup
+
+Per impostare Azure come destinazione di backup, immettere le seguenti informazioni.
+
+Per informazioni dettagliate sulla gestione delle credenziali di Azure e degli abbonamenti al marketplace nella console, fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html["Gestisci le tue credenziali di Azure e gli abbonamenti al marketplace"^] .
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro **Backup Destinations**, seleziona **Visualizza**.
+. Selezionare **Aggiungi**.
+. Selezionare *Azure*.
+. Selezionare la freccia giù accanto a ciascuna impostazione e immettere o selezionare i valori:
++
+** *Impostazioni del provider*:
++
+*** Crea un nuovo account di archiviazione, selezionane uno esistente se ne esiste già uno nella Console oppure utilizza il tuo account di archiviazione che memorizzerà i backup.
+*** Fornire l'ID dell'applicazione (client), il client secret e l'ID della directory (tenant). Selezionare **Authenticate**.
+*** Seleziona la Azure subscription, la regione e il gruppo di risorse per la tua Azure subscription.
++
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html["Se si desidera utilizzare il proprio account di archiviazione, fare riferimento ad Aggiungere account di archiviazione BLOB di Azure"^] .
+
+
+
+** *Crittografia*: per impostazione predefinita, i dati vengono crittografati con una chiave gestita da Microsoft. Seleziona **Microsoft-managed key** per mantenere questa opzione; in alternativa, scegli **Customer managed key** per utilizzare le tue chiavi per la crittografia.
+** *Networking*: seleziona lo spazio IP e se utilizzerai un endpoint privato.
++
+*** Lo spazio IP è il cluster in cui risiedono i volumi di cui si desidera eseguire il backup.  I LIF intercluster per questo spazio IP devono avere accesso a Internet in uscita.
+*** Facoltativamente, scegli se utilizzerai un endpoint privato di Azure configurato in precedenza.
++
+Se si desidera utilizzare Azure PrivateLink, fare riferimento a https://azure.microsoft.com/en-us/products/private-link/["Azure PrivateLink"^] .
+
+
+
+** *Backup Lock*
++
+Scegli se desideri configurare il blocco del backup. Con il blocco del backup, le copie sono protette da modifiche o eliminazioni e sottoposte a scansione per rilevare minacce ransomware. Non puoi modificare questa impostazione dopo aver configurato la destinazione di backup. ** Se non desideri il blocco del backup, seleziona **None**. ** Seleziona **Governance mode** per consentire agli utenti con autorizzazioni specifiche di sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione. ** Seleziona **Compliance mode** per impedire agli utenti di sovrascrivere o eliminare i file di backup protetti durante il periodo di conservazione.
+
+
+
+. Selezionare *Aggiungi*.
+
+
+.Risultato
+La nuova destinazione di backup viene aggiunta all'elenco delle destinazioni di backup.
+
+image:screen-settings-backup-destinations-list2.png["Pagina delle destinazioni di backup, opzione Impostazioni"]

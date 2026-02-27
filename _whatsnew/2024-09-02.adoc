@@ -16,7 +16,7 @@ Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documenta
 
 Con questa versione, puoi impostare una destinazione di backup su un bucket di Google Cloud Platform.  In precedenza, era possibile aggiungere destinazioni di backup solo a NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["Scopri di più sulla configurazione delle impostazioni BlueXP ransomware protection"] .
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Scopri di più sulla configurazione delle impostazioni BlueXP ransomware protection"].
 
 
 

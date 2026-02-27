@@ -32,7 +32,7 @@ Uno dei primi passi per proteggere i carichi di lavoro è visualizzare i carichi
 . Dal menu di navigazione a sinistra della Console, seleziona *Protezione* > *Ransomware Resilience*.
 . Eseguire una delle seguenti operazioni:
 +
-** Dal riquadro Protezione dati nella Dashboard, seleziona *Visualizza tutto*.
+** Dal riquadro Data Protection nella dashboard, seleziona *View all*.
 ** Dal menu, seleziona *Protezione*.
 +
 image:screen-protection.png["Pagina di protezione"]

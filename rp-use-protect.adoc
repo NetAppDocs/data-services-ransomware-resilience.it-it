@@ -280,7 +280,7 @@ Il blocco della copia snapshot è disponibile con ONTAP 9.12.1 e versioni succes
 *** *Pianificazioni di backup*: scegli le opzioni di pianificazione per l'archiviazione secondaria e abilita la pianificazione.
 +
 
-TIP: Per abilitare il blocco del backup sull'archiviazione secondaria, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per maggiori dettagli, vedere link:rp-use-settings.html["Configurare le impostazioni"] .
+TIP: Per abilitare il blocco del backup su storage secondario, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per i dettagli, vedere link:task-backup-destination.html["Configurare le impostazioni"].
 
 
 

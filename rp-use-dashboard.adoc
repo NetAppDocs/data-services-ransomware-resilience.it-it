@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-dashboard.html 
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
-summary: 'La dashboard NetApp Ransomware Resilience fornisce informazioni sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l"entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.  È inoltre possibile utilizzare la Dashboard per rivedere le raccomandazioni sulla protezione e agire di conseguenza.' 
+summary: 'Utilizzare la Ransomware Resilience per determinare quali carichi di lavoro richiedono protezione o attenzione e per valutare l"entità della protezione esaminando la quantità di storage protetto o a rischio.' 
 ---
 = Monitora lo stato del carico di lavoro in NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,22 +12,22 @@ summary: 'La dashboard NetApp Ransomware Resilience fornisce informazioni sullo 
 
 
 [role="lead"]
-La dashboard NetApp Ransomware Resilience fornisce informazioni immediate sullo stato di protezione dei tuoi carichi di lavoro.  È possibile determinare rapidamente i carichi di lavoro a rischio o protetti, identificare i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l'entità della protezione esaminando la quantità di spazio di archiviazione protetto o a rischio.
+La dashboard NetApp Ransomware Resilience fornisce informazioni immediate sullo stato di protezione dei carichi di lavoro. È possibile individuare rapidamente i carichi di lavoro a rischio o protetti, identificare i carichi di lavoro interessati da un incidente o in fase di ripristino e valutare l'entità della protezione analizzando la quantità di storage protetto o a rischio.
 
-Utilizzare la Dashboard per rivedere i suggerimenti di protezione, modificare le impostazioni e scaricare i report.
+Utilizza la dashboard per rivedere i suggerimenti di protezione, modificare le impostazioni e scaricare i report.
 
 *Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 
 
-== Esaminare lo stato del carico di lavoro utilizzando la Dashboard
+== Esaminare lo stato di salute del carico di lavoro utilizzando la dashboard
 
 .Passi
 . Dopo che la Console rileva i carichi di lavoro, la dashboard Ransomware Resilience visualizza lo stato di protezione dei dati del carico di lavoro.
 +
 image:screen-dashboard.png["Pagina del dashboard"]
 
-. Dalla Dashboard è possibile eseguire le seguenti azioni in ciascuno dei riquadri:
+. Dalla dashboard, puoi eseguire le seguenti azioni in ciascuno dei riquadri:
 +
 ** *Protezione dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina Protezione.  I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
 +
@@ -62,10 +62,10 @@ TIP: Selezionare il suggerimento "i" per visualizzare suggerimenti su questi dat
 
 ** *Azioni consigliate*: per aumentare la protezione, rivedi ogni raccomandazione, quindi seleziona *Rivedi e correggi*.
 +
-Vedere link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Esaminare i suggerimenti di protezione sulla Dashboard"] O link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
+Vedi link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard["Rivedi i suggerimenti di protezione sulla dashboard"] o link:rp-use-protect.html["Proteggere i carichi di lavoro"].
 
 +
-Ransomware Resilience visualizza per 24 ore i nuovi suggerimenti dall'ultima visita alla Dashboard con il tag "Nuovo".  Le azioni vengono visualizzate in ordine di priorità, con la più importante in cima.  Esamina, agisci o ignora ogni raccomandazione.
+Ransomware Resilience visualizza nuovi suggerimenti dall'ultima visita alla dashboard con il tag "Nuovo" per 24 ore. Le azioni vengono visualizzate in ordine di priorità, con la più importante in alto. Rivedi, intervieni o ignora ogni suggerimento.
 
 +
 Il numero totale di azioni non include le azioni che hai ignorato.
@@ -78,7 +78,7 @@ Il numero totale di azioni non include le azioni che hai ignorato.
 
 
 
-== Esaminare le raccomandazioni di protezione sulla Dashboard
+== Esaminare le raccomandazioni di protezione sulla dashboard
 
 Ransomware Resilience valuta la protezione dei tuoi carichi di lavoro e consiglia azioni per migliorarla.
 
@@ -94,7 +94,7 @@ Ecco alcuni esempi di consigli offerti da Ransomware Resilience.
 | Aggiungere una policy di protezione dal ransomware. | Al momento il carico di lavoro non è protetto. | Assegnare una policy al carico di lavoro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
 
 
-| Connettiti al SIEM per la segnalazione delle minacce. | Inviare dati a un sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce. | Immettere i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce. Fare riferimento a link:rp-use-settings.html["Configurare le impostazioni di protezione"] . 
+| Connettiti al SIEM per la segnalazione delle minacce. | Inviare dati a un sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce. | Inserire i dettagli del server SIEM/XDR per abilitare il rilevamento delle minacce. Fare riferimento a link:task-siem.html["Connettersi a un SIEM"]. 
 
 
 | Migliorare la sicurezza del sistema | NetApp Digital Advisor ha identificato almeno un rischio per la sicurezza elevato o critico. | Esamina tutti i rischi per la sicurezza in NetApp Digital Advisor. Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documentazione Digital Advisor"^] . 
@@ -103,7 +103,7 @@ Ecco alcuni esempi di consigli offerti da Ransomware Resilience.
 | Rendere più forte una politica. | Alcuni carichi di lavoro potrebbero non avere una protezione sufficiente.  Rafforza la protezione dei carichi di lavoro con una policy. | Aumenta la conservazione, aggiungi backup, applica backup immutabili, blocca estensioni di file sospette, abilita il rilevamento su storage secondario e molto altro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 
 
 
-| Preparare <provider di backup> come destinazione di backup per eseguire il backup dei dati del carico di lavoro. | Al momento il carico di lavoro non ha destinazioni di backup. | Aggiungi destinazioni di backup a questo carico di lavoro per proteggerlo. Fare riferimento a link:rp-use-settings.html["Configurare le impostazioni di protezione"] . 
+| Preparare <provider di backup> come destinazione di backup per eseguire il backup dei dati del carico di lavoro. | Al momento il carico di lavoro non ha destinazioni di backup. | Aggiungi destinazioni di backup a questo workload per proteggerlo. Consulta link:task-backup-destination.html["Aggiungi una destinazione di backup"]. 
 
 
 | Proteggi i carichi di lavoro delle applicazioni critiche o molto importanti dal ransomware. | La pagina Proteggi visualizza i carichi di lavoro delle applicazioni critici o molto importanti (in base al livello di priorità assegnato) che non sono protetti. | Assegnare una policy a questi carichi di lavoro. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro dagli attacchi ransomware"] . 

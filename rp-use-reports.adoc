@@ -41,7 +41,7 @@ I file CSV o JSON includono dati per tutti i carichi di lavoro su tutti i sistem
 +
 image:screen-dashboard.png["Pagina del dashboard"]
 
-. Dalla Dashboard o da un'altra pagina, seleziona *Aggiorna*image:button-refresh.png["Opzione di aggiornamento"] opzione in alto a destra per aggiornare i dati che appariranno nei report.
+. Dalla dashboard o da un'altra pagina, seleziona l'opzione *Aggiorna* image:button-refresh.png["Opzione di aggiornamento"] in alto a destra per aggiornare i dati che verranno visualizzati nei report.
 . Eseguire una delle seguenti operazioni:
 +
 ** Dalla pagina, seleziona *Download*image:button-download.png["Opzione di download"] opzione.

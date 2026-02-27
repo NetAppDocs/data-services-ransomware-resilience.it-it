@@ -26,7 +26,7 @@ Preparare una delle seguenti destinazioni di backup:
 * Microsoft Azure
 
 
-Dopo aver configurato le opzioni nella destinazione di backup stessa, in seguito la configurerai come destinazione di backup in Ransomware Resilience.  Per i dettagli su come configurare la destinazione di backup in Ransomware Resilience, fare riferimento alink:rp-use-settings.html["Configurare le destinazioni di backup"] .
+Dopo aver configurato le opzioni nella destinazione di backup stessa, sarà possibile configurarla successivamente come destinazione di backup in Ransomware Resilience. Per dettagli su come configurare la destinazione di backup in Ransomware Resilience, consultare link:task-backup-destination.html["Configurare le destinazioni di backup"].
 
 
 

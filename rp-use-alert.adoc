@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-alert.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
-summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard di Ransomware Resilience viene visualizzato un avviso che indica un potenziale attacco. A questo punto, dovresti esaminare il potenziale rischio nella scheda Avvisi di resilienza ransomware. 
+summary: Se Ransomware Resilience rileva un possibile attacco, nella dashboard di Ransomware Resilience viene visualizzato un avviso che indica un potenziale attacco. A questo punto, dovresti esaminare il potenziale rischio nella scheda Avvisi di Ransomware Resilience. 
 ---
 = Gestisci gli avvisi in NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: Se Ransomware Resilience rileva un possibile attacco, sulla Dashboard d
 
 
 [role="lead"]
-Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso nella Dashboard e nell'area Notifiche. Ransomware Resilience acquisisce immediatamente uno snapshot. Quando ricevi un avviso, esamina il potenziale rischio nella scheda *Alerts* di Ransomware Resilience per valutare l'impatto sui tuoi dati e prevenire un potenziale attacco ransomware.
+Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso sulla dashboard e nel menu Notifiche. Ransomware Resilience acquisisce immediatamente uno snapshot. Quando ricevi un avviso, esamina il potenziale rischio nella scheda *Alerts* di Ransomware Resilience per valutare l'impatto sui tuoi dati e prevenire un potenziale attacco ransomware.
 
 Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una notifica nelle impostazioni di notifica della Console e viene inviata un'email agli indirizzi configurati. L'email include informazioni sulla gravità, sul workload interessato e un collegamento all'alert nella scheda *Alerts* di Ransomware Resilience.
 
@@ -110,7 +110,7 @@ Se sospetti che l'attività non sia un attacco ransomware, puoi modificare lo st
 *Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
 .Passi
-. Nella Dashboard di Resilienza Ransomware, esamina il riquadro Avvisi.
+. Nella dashboard NetApp Ransomware Resilience, esamina il riquadro Avvisi.
 . Selezionare *Visualizza tutto* sotto uno degli stati.
 . Selezionare un avviso per esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
 . Per rivedere altri avvisi, seleziona *Avviso* nel breadcrumb in alto a sinistra.
@@ -195,7 +195,7 @@ image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
 
 === Visualizza il comportamento anomalo dell'utente
 
-Se hai configurato il rilevamento degli utenti sospetti per visualizzare comportamenti anomali degli utenti, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare le impostazioni utente sospette, vederelink:rp-use-settings.html["Configurare le impostazioni di resilienza al ransomware"] .
+Se hai configurato il rilevamento degli utenti sospetti per visualizzare comportamenti anomali degli utenti, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare le impostazioni per gli utenti sospetti, consulta link:suspicious-user-activity.html["Configura agenti e collettori per il rilevamento delle attività degli utenti"].
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
