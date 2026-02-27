@@ -79,7 +79,7 @@ Per proteggere tali carichi di lavoro, è necessario aggiungere una destinazione
 
 
 
-NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP né in Azure NetApp Files. Eseguire le operazioni di backup utilizzando soluzioni di backup native: FSx for ONTAP backup service o Azure NetApp Files backup.
+NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP né in Azure NetApp Files. Eseguire le operazioni di backup utilizzando soluzioni di backup native: FSx for ONTAP backup service o Azure NetApp Files backups.
 
 È possibile aggiungere una destinazione di backup in base a un'azione consigliata dalla Dashboard o accedendo all'opzione Impostazioni nel menu.
 
