@@ -14,7 +14,7 @@ Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-e
 
 === Protezione migliorata del carico di lavoro
 
-Questa versione migliora il processo di configurazione per i carichi di lavoro con policy di snapshot e backup da altri strumenti NetApp come SnapCenter o BlueXP backup and recovery. Nelle versioni precedenti, la BlueXP ransomware protection rilevava le policy di altri strumenti, consentendo solo di modificare la policy di rilevamento. Con questa versione, è possibile sostituire i criteri di snapshot e backup con i criteri BlueXP ransomware protection oppure continuare a utilizzare i criteri di altri strumenti.
+Questa versione migliora il processo di configurazione per i carichi di lavoro con policy di snapshot e backup provenienti da altri NetApp tool come BlueXP backup and recovery. Nelle versioni precedenti, BlueXP ransomware protection rilevava le policy di altri tool, consentendo solo di modificare la policy di rilevamento. Con questa versione, è ora possibile sostituire le policy di snapshot e backup con le policy di protezione ransomware di BlueXP o continuare a utilizzare le policy di altri tool.
 
 Per i dettagli, fare riferimento alink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Proteggere i carichi di lavoro"] .
 

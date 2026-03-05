@@ -61,7 +61,7 @@ Ransomware Resilience offre i seguenti vantaggi:
 * Protegge i dati nei carichi di lavoro basati su applicazioni quali Oracle, datastore VMware e condivisioni di file.
 * Rileva in tempo reale gli attacchi ransomware sui dati presenti sullo storage primario utilizzando la tecnologia AI.
 * Avvia azioni automatizzate in risposta ai potenziali attacchi rilevati creando copie snapshot e inviando avvisi su attività anomale.
-* Applica un ripristino curato per soddisfare i criteri RPO.  Ransomware Resilience orchestra il ripristino dagli incidenti ransomware utilizzando diversi servizi di ripristino NetApp , tra cui NetApp Backup and Recovery (in precedenza Cloud Backup) e SnapCenter.
+* Applica un ripristino curato per soddisfare i criteri RPO. Ransomware Resilience orchestra il ripristino dagli incidenti ransomware tramite NetApp Backup and Recovery.
 * Utilizza il controllo degli accessi basato sui ruoli (RBAC) per gestire l'accesso alle funzionalità e alle operazioni.
 
 
@@ -117,8 +117,8 @@ image:diagram-rp-architecture-preview3.png["Diagramma che mostra l'architettura 
 
 
 | *IDENTIFICARE*  a| 
-* Trova tutti i dati NAS (protocolli NFS e CIFS) on-premise del cliente, SAN (FC, iSCSI e NVMe) e Cloud Volumes ONTAP connessi alla console.
-* Identifica i dati dei clienti da ONTAP e SnapCenter service API e li associa ai carichi di lavoro. Scopri di più su https://docs.netapp.com/us-en/ontap-family/["ONTAP"^].
+* Trova tutti i dati NAS locali e cloud dei clienti (protocolli NFS e CIFS) e SAN (FC, iSCSI e NVMe) nei sistemi collegati alla Console.
+* Identifica i dati dei clienti dalle API dei servizi ONTAP e Backup and Recovery e li associa ai carichi di lavoro. Scopri di più su https://docs.netapp.com/us-en/ontap-family/["ONTAP"^].
 * Rileva il livello di protezione attuale di ogni volume delle copie snapshot NetApp e delle policy di backup, nonché tutte le funzionalità di rilevamento integrate. Ransomware Resilience associa quindi questa posizione di protezione ai carichi di lavoro utilizzando Backup e Recovery, servizi ONTAP e tecnologie NetApp come Autonomous Ransomware Protection (ARP o ARP/AI a seconda della versione ONTAP ), FPolicy, policy di backup e policy di snapshot.  Scopri di più su https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] , https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] , E https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
 * Assegna una priorità aziendale a ciascun carico di lavoro in base ai livelli di protezione rilevati automaticamente e consiglia policy di protezione per i carichi di lavoro in base alla loro priorità aziendale.  La priorità del carico di lavoro si basa sulle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro.
 
