@@ -73,9 +73,9 @@ Puoi provare Ransomware Resilience con una prova gratuita di 30 giorni. NetApp n
 
 Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
 
-Quando un carico di lavoro è classificato come protetto, viene conteggiato nella capacità acquistata o nell'abbonamento PayGo. Ransomware Resilience classifica un carico di lavoro come protetto quando una policy di rilevamento è abilitata con almeno una policy di snapshot o di backup. I carichi di lavoro rilevati con una policy di rilevamento ma _senza_ policy di backup o snapshot sono classificati come a rischio. I carichi di lavoro a rischio non vengono conteggiati nella capacità acquistata.
+Quando un carico di lavoro viene classificato come protetto, viene conteggiato nella capacità acquistata o nell'abbonamento PAYGO. Ransomware Resilience classifica un carico di lavoro come protetto quando una policy di rilevamento è abilitata con almeno una policy di snapshot o di backup. I carichi di lavoro rilevati con una policy di rilevamento ma _senza_ policy di backup o snapshot sono classificati come a rischio. I carichi di lavoro a rischio non vengono conteggiati nella capacità acquistata.
 
-I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova gratuito. Ransomware Resilience viene addebitato in base ai GB per i dati associati ai carichi di lavoro protetti, prima delle efficienze.
+I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova gratuito. Ransomware Resilience viene addebitato in base ai GB per i dati associati ai carichi di lavoro protetti (come riportato da ONTAP) prima delle efficienze.
 
 
 

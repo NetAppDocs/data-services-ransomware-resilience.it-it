@@ -36,6 +36,15 @@ Al momento, Ransomware Resilience è disponibile solo in modalità standard.
 
 Per una spiegazione su queste modalità in tutti i servizi dati NetApp , fare riferimento a https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["Modalità di distribuzione NetApp Console"^] .
 
+.Come funziona la fatturazione per Ransomware Resilience?
+Puoi provare Ransomware Resilience con una prova gratuita di 30 giorni. NetApp non addebita alcun costo per l'utilizzo della versione di prova di Ransomware Resilience.
+
+Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
+
+Quando un carico di lavoro viene classificato come protetto, viene conteggiato nella capacità acquistata o nell'abbonamento PAYGO. Ransomware Resilience classifica un carico di lavoro come protetto quando una policy di rilevamento è abilitata con almeno una policy di snapshot o di backup. I carichi di lavoro rilevati con una policy di rilevamento ma _senza_ policy di backup o snapshot sono classificati come a rischio. I carichi di lavoro a rischio non vengono conteggiati nella capacità acquistata.
+
+I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova gratuito. Ransomware Resilience viene addebitato in base ai GB per i dati associati ai carichi di lavoro protetti (come riportato da ONTAP) prima delle efficienze.
+
 
 
 == Accesso
