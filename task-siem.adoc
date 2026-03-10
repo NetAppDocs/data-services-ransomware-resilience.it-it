@@ -4,14 +4,14 @@ permalink: task-siem.html
 keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management 
 summary: 'Puoi inviare automaticamente i dati da NetApp Ransomware Resilience al tuo sistema di gestione della sicurezza e degli eventi (SIEM) per l"analisi e il rilevamento delle minacce.' 
 ---
-= Collega NetApp Ransomware Resilience al sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce
+= Collega NetApp Ransomware Resilience a un SIEM per l'analisi e il rilevamento delle minacce
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Un sistema di gestione della sicurezza e degli eventi (SIEM) centralizza i dati di log ed eventi per fornire informazioni sugli eventi di sicurezza e sulla conformità. NetApp Ransomware Resilience supporta l'invio automatico dei dati al SIEM per semplificare l'analisi e il rilevamento delle minacce.
+Un sistema di gestione delle informazioni e degli eventi di sicurezza (SIEM) centralizza i dati di log e degli eventi per fornire informazioni sugli eventi di sicurezza e sulla conformità. NetApp Ransomware Resilience supporta l'invio automatico dei dati al tuo SIEM per semplificare l'analisi e il rilevamento delle minacce.
 
 Ransomware Resilience supporta i seguenti SIEM:
 

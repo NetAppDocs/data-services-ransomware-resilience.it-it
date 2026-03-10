@@ -18,6 +18,26 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 
 
+== 09 marzo 2026
+
+
+
+=== Escludi in blocco gli utenti dagli avvisi sul comportamento degli utenti
+
+Ransomware Resilience ora supporta il caricamento di un elenco JSON di utenti da escludere dagli avvisi sulle attività comportamentali degli utenti, oltre alle opzioni esistenti basate su UI e CSV.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["Escludi gli utenti dagli avvisi"^].
+
+
+
+=== Miglioramenti dell'attività comportamentale dell'utente
+
+Ransomware Resilience ha migliorato la comprensione del comportamento degli utenti aggiungendo avvisi via email e includendo gli eventi relativi al comportamento degli utenti nei dati degli eventi SIEM supportati (AWS Security Hub, Microsoft Sentinel e Splunk Cloud). Questi miglioramenti forniscono informazioni più accurate sul monitoraggio della sicurezza e della conformità.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Collega NetApp Ransomware Resilience a un SIEM"^].
+
+
+
 == 16 febbraio 2026
 
 
@@ -26,7 +46,7 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 Ransomware Resilience ora supporta i sistemi Azure NetApp Files, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Azure NetApp Files. Quando scopri i carichi di lavoro, Ransomware Resilience ora presenta Azure NetApp Files e li visualizza nella dashboard di protezione. Il supporto di Ransomware Resilience per Azure NetApp Files include strategie di rilevamento e protezione basate solo su snapshot. Il supporto per Azure NetApp Files è attualmente in anteprima.
 
-Per ulteriori informazioni, vedere il link:Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Scopri di più sulla resilienza al ransomware"^].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Scopri di più sulla resilienza al ransomware"^].
 
 
 

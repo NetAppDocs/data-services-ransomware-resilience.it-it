@@ -1893,7 +1893,6 @@
   <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">Ransomware Resilience ora supporta l'aggiunta della replica degli snapshot a un sito ONTAP secondario. Con i gruppi di protezione che utilizzano una policy di replica, puoi replicare sulla stessa destinazione o su destinazioni diverse per ogni carico di lavoro. Puoi creare una strategia di protezione ransomware che includa la replica o utilizzare la strategia predefinita.</block>
   <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Supporto per Azure NetApp Files</block>
   <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilience ora supporta i sistemi Azure NetApp Files, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Azure NetApp Files. Quando scopri i carichi di lavoro, Ransomware Resilience ora presenta Azure NetApp Files e li visualizza nella dashboard di protezione. Il supporto di Ransomware Resilience per Azure NetApp Files include strategie di rilevamento e protezione basate solo su snapshot. Il supporto per Azure NetApp Files è attualmente in anteprima.</block>
-  <block id="5e0e68da0b873ce6ac5da97de07de426" category="paragraph">Per ulteriori informazioni, vedere il link:Per ulteriori informazioni, vedere <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>.</block>
   <block id="533173be617e8e70b39c22d6b639f1ef" category="section-title">Escludere gli utenti dagli avvisi sul comportamento degli utenti</block>
   <block id="34db265ea1c563cd1e8fec4196fdd55a" category="paragraph">Ransomware Resilience ora consente di escludere utenti specifici dagli avvisi sul comportamento utente. L'esclusione di utenti attendibili può prevenire falsi positivi e avvisi non necessari.</block>
   <block id="0801620ca1af462c0fd534ad95bfa3b0" category="inline-link-macro">Escludi gli utenti dagli avvisi</block>
@@ -1920,8 +1919,6 @@
   <block id="82694a5fa079406313056daf01f9118b" category="list-text">Seleziona la scheda **Utenti esclusi**.</block>
   <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">Per rivedere i singoli utenti nell'interfaccia utente, seleziona **Seleziona manualmente**. Per caricare un elenco di utenti esclusi, seleziona **Carica**.</block>
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">Se hai selezionato **Seleziona manualmente**, seleziona la casella di controllo accanto ai nomi degli utenti specifici che desideri escludere.</block>
-  <block id="d2b1df006cba7f480a48064be15b71ec" category="list-text">Se selezioni **Carica**, devi prima scaricare un file CSV che include l'elenco di tutti gli utenti. Seleziona **Scarica** per accedere all'elenco.</block>
-  <block id="f44e20ff3f0d285a050e5f4e9dc1267f" category="paragraph">Esamina il file CSV. Rimuovi i nomi di tutti gli utenti per cui desideri mantenere il rilevamento. Quando l'elenco include solo i nomi degli utenti che desideri escludere dal rilevamento, salvalo. Seleziona **Upload** per individuare il file, quindi selezionalo.</block>
   <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">Seleziona **Aggiungi** per completare l'aggiunta degli utenti all'elenco delle esclusioni.</block>
   <block id="98e062a77fcb05260f463a017f171f72" category="list-text">Nella scheda **Utenti esclusi**, i nomi degli utenti rimossi dagli avvisi di rilevamento del comportamento utente ora vengono visualizzati nella dashboard.</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">Rispondere agli avvisi di ransomware</block>
@@ -1931,7 +1928,6 @@
   <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">Individua il nome dell'utente che desideri rimuovere dalla selezione degli utenti esclusi. Seleziona il menu Azione <block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block> sulla riga con il nome dell'utente, quindi **Rimuovi**.</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">Nella finestra di dialogo, seleziona **Remove** per confermare che desideri rimuovere gli utenti selezionati.</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">Puoi inviare automaticamente i dati da NetApp Ransomware Resilience al tuo sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce.</block>
-  <block id="2e83d7690079c133e11ad37c5e4ff93e" category="doc">Collega NetApp Ransomware Resilience al sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce</block>
   <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">Ransomware Resilience supporta i seguenti SIEM:</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
   <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
@@ -2025,7 +2021,6 @@
   <block id="5ca3c8d5b41265fc9239c63ce669af8e" category="list-text"><block ref="5ca3c8d5b41265fc9239c63ce669af8e" category="inline-link-macro-rx"></block></block>
   <block id="a328de7375b1a392aaa6da8ac6a9c525" category="list-text"><block ref="a328de7375b1a392aaa6da8ac6a9c525" category="inline-link-macro-rx"></block></block>
   <block id="3e16604d2667be9816f6bfb6ba4f70f1" category="list-text"><block ref="3e16604d2667be9816f6bfb6ba4f70f1" category="inline-link-macro-rx"></block></block>
-  <block id="d3a17ab1969b7e28ae5324bee6d4cd54" category="paragraph">Un sistema di gestione della sicurezza e degli eventi (SIEM) centralizza i dati di log ed eventi per fornire informazioni sugli eventi di sicurezza e sulla conformità. NetApp Ransomware Resilience supporta l'invio automatico dei dati al SIEM per semplificare l'analisi e il rilevamento delle minacce.</block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">Seleziona *Authenticate*.</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">Verifica protezione</block>
   <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">Il rilevamento delle attività utente non è attualmente supportato per i carichi di lavoro SAN. È possibile utilizzare il rilevamento delle attività utente con i carichi di lavoro NAS in Amazon FSxN per ONTAP, Cloud Volumes ONTAP e ONTAP.</block>
@@ -2157,4 +2152,19 @@
   <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">01 luglio 2024</block>
   <block id="c3084a9e2d458e9a14fb0606a505126d" category="section-title">05 marzo 2024</block>
   <block id="ff1c2e86cdd326544983c6d6affd39a5" category="section-title">06 ottobre 2023</block>
+  <block id="d78202f5dede249577567c1012878352" category="paragraph">Per ulteriori informazioni, vedere <block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>.</block>
+  <block id="f1997d5dfd164e5a0380ec3b9fe07b89" category="doc">Escludi in blocco gli utenti dagli avvisi sul comportamento degli utenti</block>
+  <block id="4de429b8f1b2702e94fc5d32dd614fa1" category="paragraph">Ransomware Resilience ora supporta il caricamento di un elenco JSON di utenti da escludere dagli avvisi sulle attività comportamentali degli utenti, oltre alle opzioni esistenti basate su UI e CSV.</block>
+  <block id="0255e4883b8e158de2dac4173dac190a" category="paragraph">Per ulteriori informazioni, vedere <block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>.</block>
+  <block id="5d8e3a83bb9b2062983b23dd93a1a59a" category="section-title">Miglioramenti dell'attività comportamentale dell'utente</block>
+  <block id="fcd457ee097f566ef709e77f46015c87" category="paragraph">Ransomware Resilience ha migliorato la comprensione del comportamento degli utenti aggiungendo avvisi via email e includendo gli eventi relativi al comportamento degli utenti nei dati degli eventi SIEM supportati (AWS Security Hub, Microsoft Sentinel e Splunk Cloud). Questi miglioramenti forniscono informazioni più accurate sul monitoraggio della sicurezza e della conformità.</block>
+  <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">Collega NetApp Ransomware Resilience a un SIEM</block>
+  <block id="ffe0756ca1f78d7e15e127b325f96178" category="paragraph">Per ulteriori informazioni, vedere <block ref="372c79e94d2824fc0323cc318a30717d" category="inline-link-macro-rx"></block>.</block>
+  <block id="2aeee41e03e1ec5e48f7c1deb934b617" category="list-text">Se selezioni **Upload**, scarica il file CSV o JSON che include l'elenco di tutti gli utenti. Seleziona **Download** per accedere all'elenco.</block>
+  <block id="e2616004bc9cf87f18910a512e2c2379" category="paragraph">Esamina il file sul tuo computer locale. Rimuovi i nomi di tutti gli utenti per cui desideri mantenere il rilevamento. Quando l'elenco include solo i nomi degli utenti che desideri escludere dal rilevamento, salvalo.</block>
+  <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">In NetApp Ransomware Resilience, seleziona **Carica**. Individua e carica il file.</block>
+  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">Per escludere singoli utenti dall'interfaccia utente, scegliere **Seleziona manualmente**.</block>
+  <block id="fd117b89b92e15d359324da93300356b" category="doc">Collega NetApp Ransomware Resilience a un SIEM per l'analisi e il rilevamento delle minacce</block>
+  <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">Un sistema di gestione delle informazioni e degli eventi di sicurezza (SIEM) centralizza i dati di log e degli eventi per fornire informazioni sugli eventi di sicurezza e sulla conformità. NetApp Ransomware Resilience supporta l'invio automatico dei dati al tuo SIEM per semplificare l'analisi e il rilevamento delle minacce.</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">09 marzo 2026</block>
 </blocks>

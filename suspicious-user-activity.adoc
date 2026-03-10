@@ -171,9 +171,12 @@ Se ci sono determinati utenti attendibili il cui comportamento potrebbe attivare
 . Per rivedere i singoli utenti nell'interfaccia utente, seleziona **Seleziona manualmente**. Per caricare un elenco di utenti esclusi, seleziona **Carica**.
 +
 .. Se hai selezionato **Seleziona manualmente**, seleziona la casella di controllo accanto ai nomi degli utenti specifici che desideri escludere.
-.. Se selezioni **Carica**, devi prima scaricare un file CSV che include l'elenco di tutti gli utenti. Seleziona **Scarica** per accedere all'elenco.
+.. Se selezioni **Upload**, scarica il file CSV o JSON che include l'elenco di tutti gli utenti. Seleziona **Download** per accedere all'elenco.
 +
-Esamina il file CSV. Rimuovi i nomi di tutti gli utenti per cui desideri mantenere il rilevamento. Quando l'elenco include solo i nomi degli utenti che desideri escludere dal rilevamento, salvalo. Seleziona **Upload** per individuare il file, quindi selezionalo.
+Esamina il file sul tuo computer locale. Rimuovi i nomi di tutti gli utenti per cui desideri mantenere il rilevamento. Quando l'elenco include solo i nomi degli utenti che desideri escludere dal rilevamento, salvalo.
+
++
+In NetApp Ransomware Resilience, seleziona **Carica**. Individua e carica il file.
 
 
 
@@ -193,6 +196,8 @@ TIP: È anche possibile escludere un utente direttamente da un avviso. Per ulter
 .Passi
 . Nella dashboard Impostazioni, individua la scheda User activity, quindi seleziona **Manage**.
 . Seleziona la scheda **Utenti esclusi**.
+. Selezionare **Aggiungi**.
+. Per escludere singoli utenti dall'interfaccia utente, scegliere **Seleziona manualmente**.
 . Individua il nome dell'utente che desideri rimuovere dalla selezione degli utenti esclusi. Seleziona il menu Azione (`...` sulla riga con il nome dell'utente, quindi **Rimuovi**.
 . Nella finestra di dialogo, seleziona **Remove** per confermare che desideri rimuovere gli utenti selezionati.
 
