@@ -2172,4 +2172,31 @@
   <block id="a8bb9ad5a88304569c56e3805762683b" category="doc">Scansiona le informazioni di identificazione personale in NetApp Ransomware Resilience</block>
   <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">All'interno di NetApp Ransomware Resilience, puoi utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza.</block>
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">La classificazione dei dati è un componente fondamentale della NetApp Console. Non è necessaria una licenza per utilizzare la classificazione dei dati. A seconda della configurazione, la configurazione della classificazione dei dati può comportare costi, che non vengono addebitati da Ransomware Resilience. Per ulteriori informazioni, vedere <block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>.</block>
+  <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">Playbook SOAR per Microsoft Sentinel e Splunk</block>
+  <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
+  <block id="e0df5750183f59f1a681c84ab0a08458" category="paragraph">Ransomware Resilience ora offre playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) per <block ref="353f990ad0de32e744a84d05e731dc96" category="inline-link-macro-rx"></block> e <block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block>. I playbook consentono una gestione più semplice della risposta alle minacce, automatizzando le attività di test e gli sforzi essenziali di risposta al ransomware, inclusa la creazione di snapshot e la messa offline di un volume.</block>
+  <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">Integra SOAR playbook</block>
+  <block id="b8b94feeaf531f391629f42d138991ba" category="paragraph">Per ulteriori informazioni, vedere <block ref="ea7002ba1a528c89bfc86119082f1178" category="inline-link-macro-rx"></block>.</block>
+  <block id="e809d3cd971f3bd0702a07af10ed5b3f" category="summary">Integra e utilizza i playbook SOAR per automatizzare le attività di risposta alle minacce di NetApp Ransomware Resilience.</block>
+  <block id="64495558f55fc510fa1f0d8417e9d0f9" category="doc">Integra un playbook SOAR per NetApp Ransomware Resilience</block>
+  <block id="15ece8e7c495c241dd67ef0baad7fcaf" category="paragraph">Ransomware Resilience offre playbook di orchestrazione, automazione e risposta (SOAR) alla sicurezza che consentono di automatizzare attività come la risposta alle minacce.</block>
+  <block id="be0ccf0303f9149ec406ad081d1e1b4f" category="paragraph">I playbook di Ransomware Resilience offrono le seguenti funzionalità:</block>
+  <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">Crea uno snapshot di un volume</block>
+  <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">Arricchisci un indirizzo IP con threat intelligence</block>
+  <block id="762279f864f96ffbe81b311754b74896" category="list-text">Arricchisci le informazioni di archiviazione per un dato agente e sistema</block>
+  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">Mettere un volume offline per la risposta agli incidenti</block>
+  <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">Test di connettività</block>
+  <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">Verificare lo stato di un job di enrichment</block>
+  <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">Playbook</block>
+  <block id="0c7fbad5c54a3cc727fd8969a07d6ea4" category="paragraph">Ransomware Resilience offre playbook per Microsoft Sentinel e Splunk. Consulta le rispettive pagine GitHub per i dettagli di configurazione.</block>
+  <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
+  <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
+  <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
+  <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">Per Splunk Cloud, è necessario eseguire la versione della piattaforma 7.0, 7.1, 7.2, 8.0 o 8.4. Per ulteriori informazioni, vedere <block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>.</block>
+  <block id="d11de361a9507cdd0eba54b47b77df6e" category="list-text"><block ref="d11de361a9507cdd0eba54b47b77df6e" category="inline-link-macro-rx"></block></block>
+  <block id="5d0a0988b6064ad1afb79d8f5aa31f02" category="inline-link-macro">playbook di security orchestration, automation, and response (SOAR)</block>
+  <block id="b6f1ae85c12d06f23f82164c0136a6fc" category="admonition">Ransomware Resilience supporta anche <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>.</block>
+  <block id="d8c1214f51ea9ce3d7b9e64dd8a16327" category="inline-link-macro">Integra un playbook SOAR</block>
+  <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
+  <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">12 marzo 2026</block>
 </blocks>
