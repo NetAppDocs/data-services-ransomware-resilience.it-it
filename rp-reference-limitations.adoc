@@ -4,7 +4,7 @@ permalink: rp-reference-limitations.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
 summary: Le limitazioni note identificano piattaforme, dispositivi o funzioni non supportati da questa versione del prodotto. 
 ---
-= Limitazioni note di NetApp Ransomware Resilience
+= Limitazioni note in NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

@@ -4,14 +4,16 @@ permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
 summary: Migliora la sicurezza e la conformità alla privacy dei tuoi dati con NetApp Data Classification per identificare se i tuoi dati includono informazioni personali identificabili o private. 
 ---
-= Scansiona le informazioni di identificazione personale con NetApp Data Classification in Ransomware Resilience
+= Scansiona le informazioni di identificazione personale in NetApp Ransomware Resilience
 :allow-uri-read: 
 
 
 [role="lead"]
-All'interno di NetApp Ransomware Resilience, puoi utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza. Data Classification è un componente fondamentale della NetApp Console ed è disponibile senza costi aggiuntivi.
+All'interno di NetApp Ransomware Resilience, puoi utilizzare NetApp Data Classification per analizzare e classificare i dati in un carico di lavoro di condivisione file. La classificazione dei dati aiuta a determinare se il set di dati include informazioni di identificazione personale (PII), che possono aumentare i rischi per la sicurezza.
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/["Classificazione dei dati"^]utilizza l'elaborazione del linguaggio naturale basata sull'intelligenza artificiale per l'analisi e la categorizzazione dei dati contestuali, fornendo informazioni fruibili sui dati per soddisfare i requisiti di conformità, rilevare vulnerabilità di sicurezza, ottimizzare i costi e accelerare la migrazione.
+
+La classificazione dei dati è un componente fondamentale della NetApp Console. Non è necessaria una licenza per utilizzare la classificazione dei dati. A seconda della configurazione, la configurazione della classificazione dei dati può comportare costi, che non vengono addebitati da Ransomware Resilience. Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#cost["Scopri di più sulla classificazione dei dati"^].
 
 
 TIP: Questo processo può influire sull'importanza del carico di lavoro per garantire la protezione adeguata.
