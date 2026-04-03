@@ -4,6 +4,8 @@
 
 Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
 
-Quando un carico di lavoro viene classificato come protetto, viene conteggiato nella capacità acquistata o nell'abbonamento PAYGO. Ransomware Resilience classifica un carico di lavoro come protetto quando una policy di rilevamento è abilitata con almeno una policy di snapshot o di backup. I carichi di lavoro rilevati con una policy di rilevamento ma _senza_ policy di backup o snapshot sono classificati come a rischio. I carichi di lavoro a rischio non vengono conteggiati nella capacità acquistata.
+Quando un carico di lavoro viene classificato come protetto, viene conteggiato ai fini della capacità acquistata o dell'abbonamento PAYGO. Ransomware Resilience classifica un carico di lavoro come protetto quando è abilitata una policy di rilevamento con almeno una policy di backup o snapshot. I carichi di lavoro rilevati con una policy di rilevamento ma _senza_ alcuna policy di backup o snapshot vengono classificati come a rischio. I carichi di lavoro a rischio non vengono conteggiati ai fini della capacità acquistata.
 
 I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova gratuito. Ransomware Resilience viene addebitato in base ai GB per i dati associati ai carichi di lavoro protetti (come riportato da ONTAP) prima delle efficienze.
+
+Nel calcolo delle dimensioni, i costi di licenza si basano sulla capacità logica del file system attivo (ovvero, lo spazio occupato dagli snapshot non è incluso).
