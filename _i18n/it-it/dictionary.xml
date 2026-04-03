@@ -2186,7 +2186,6 @@
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">Test di connettività</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">Verificare lo stato di un job di enrichment</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">Playbook</block>
-  <block id="0c7fbad5c54a3cc727fd8969a07d6ea4" category="paragraph">Ransomware Resilience offre playbook per Microsoft Sentinel e Splunk. Consulta le rispettive pagine GitHub per i dettagli di configurazione.</block>
   <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
   <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
   <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
@@ -2202,11 +2201,12 @@
   <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">Nel calcolo delle dimensioni, i costi di licenza si basano sulla capacità logica del file system attivo (ovvero, lo spazio occupato dagli snapshot non è incluso).</block>
   <block id="ed300adca180c1e33d800707367434a6" category="doc">Manuale SOAR per Google SecOps</block>
   <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
-  <block id="6e9577ca2ef4afc51475afb9c4855a58" category="paragraph">Ransomware Resilience offre ora un playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) per <block ref="a0b16504c1687e5508c034346a32796a" category="inline-link-macro-rx"></block>. Il playbook semplifica la gestione della risposta alle minacce, automatizzando le attività di test e gli sforzi essenziali di risposta al ransomware, tra cui la creazione di snapshot e la messa offline di un volume.</block>
   <block id="d942356c034f7ad3c314a5fae7d11e1d" category="list-text"><block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block></block>
   <block id="1432a60da610bc1b6af09d6319597446" category="inline-link-macro">limitazioni per Azure NetApp Files</block>
   <block id="7c227d7b6723bc5af92a1b877aae1bbe" category="admonition">Per i sistemi di file Azure NetApp, rivedere <block ref="a1a46b98c4974de0d0c21339035b1250" category="inline-link-macro-rx"></block> con SOAR.</block>
   <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">Playbook SOAR</block>
-  <block id="fbaf8ef61cfa55e52a929ce171ffe013" category="list-text">Si sconsiglia di utilizzare <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> con Azure NetApp Files perché le API di Azure NetApp Files bloccano le azioni automatizzate.</block>
   <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">31 marzo 2026</block>
+  <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience offre ora un playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>. Il playbook semplifica la gestione della risposta alle minacce, automatizza attività e test e supporta le attività essenziali di risposta al ransomware, tra cui la creazione di snapshot e la messa offline di un volume.</block>
+  <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience offre playbook per Google SecOps, Microsoft Sentinel e Splunk. Consulta le rispettive pagine GitHub per i dettagli di configurazione.</block>
+  <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Si sconsiglia di utilizzare <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> con Azure NetApp Files poiché le API di Azure NetApp Files bloccano le azioni automatizzate.</block>
 </blocks>
