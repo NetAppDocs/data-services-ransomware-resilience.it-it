@@ -498,7 +498,6 @@
   <block id="6c66a8a541d348bc3f3a48dc2e58492c" category="list-text">Selezionare un sistema di prova.</block>
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">Selezionare un SVM di archiviazione di prova.</block>
   <block id="09cb5a7830e25d2457463ef0f909f5a0" category="list-text">Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.</block>
-  <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">Immettere il nome del nuovo carico di lavoro di test da creare.  Non includere trattini nel nome.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">È possibile modificare la configurazione dell'esercitazione di preparazione in un secondo momento utilizzando la pagina Impostazioni.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Avviare un'esercitazione di preparazione</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.</block>
@@ -538,7 +537,6 @@
   <block id="402892b652810818eb61e703ca333d06" category="list-text">Seleziona *Segna come ripristino necessario*.</block>
   <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.</block>
   <block id="63d4b8d17265522f12b229a2016b08c9" category="list-text">Dal menu Ransomware Resilience, seleziona *Ripristino*.</block>
-  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Selezionare il carico di lavoro di prova contrassegnato con "Esercitazione di preparazione" che si desidera ripristinare.</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Selezionare *Ripristina*.</block>
   <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">Nella pagina Ripristina, fornisci le informazioni per il ripristino:</block>
   <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">Selezionare la copia dello snapshot di origine.</block>
@@ -555,7 +553,6 @@
   <block id="b707d985234424bd425b96580911950e" category="list-text">Selezionare nuovamente l'avviso.</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indicare lo stato selezionando *Modifica stato* e cambiare lo stato in uno dei seguenti:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Ignorato: se sospetti che l'attività non sia un attacco ransomware, modifica lo stato in Ignorato.</block>
-  <block id="ff8d215b189dca41bf900d6545392594" category="admonition">Dopo aver respinto un attacco, non è possibile ripristinarlo.  Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.  Se si ignora l'avviso, l'esercitazione di preparazione è considerata completata.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Risolto: l'incidente è stato mitigato.</block>
   <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Rivedere i rapporti sull'esercitazione di preparazione</block>
   <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Una volta completata l'esercitazione di preparazione, potresti voler rivedere e salvare un report sull'esercitazione.</block>
@@ -2209,4 +2206,7 @@
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience offre ora un playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>. Il playbook semplifica la gestione della risposta alle minacce, automatizza attività e test e supporta le attività essenziali di risposta al ransomware, tra cui la creazione di snapshot e la messa offline di un volume.</block>
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience offre playbook per Google SecOps, Microsoft Sentinel e Splunk. Consulta le rispettive pagine GitHub per i dettagli di configurazione.</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Si sconsiglia di utilizzare <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> con Azure NetApp Files poiché le API di Azure NetApp Files bloccano le azioni automatizzate.</block>
+  <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">Inserisci il nome per il carico di lavoro di test. Non includere trattini nel nome.</block>
+  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">Seleziona il carico di lavoro di prova contrassegnato con "Readiness drill" che desideri ripristinare.</block>
+  <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">Dopo aver ignorato un attacco, non è possibile ripristinarlo. Se si ignora un carico di lavoro, tutte le copie snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente. Se si ignora l'avviso, l'esercitazione di preparazione si considera completata.</block>
 </blocks>

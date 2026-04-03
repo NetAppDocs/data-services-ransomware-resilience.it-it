@@ -53,7 +53,7 @@ image:screen-settings-alert-drill-configure.png["Configura la pagina di esercita
 .. Selezionare un SVM di archiviazione di prova.
 .. Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.
 .. Selezionare il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati crittografati, seleziona **Ripristino personalizzato**. Per il ripristino in caso di attività sospette degli utenti, seleziona **Violazione dei dati**.
-.. Immettere il nome del nuovo carico di lavoro di test da creare.  Non includere trattini nel nome.
+.. Inserisci il nome per il carico di lavoro di test. Non includere trattini nel nome.
 
 
 . Seleziona *Salva*.
@@ -151,7 +151,7 @@ Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il c
 ** Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.
 +
 *** Dal menu Ransomware Resilience, seleziona *Ripristino*.
-*** Selezionare il carico di lavoro di prova contrassegnato con "Esercitazione di preparazione" che si desidera ripristinare.
+*** Seleziona il carico di lavoro di prova contrassegnato con "Readiness drill" che desideri ripristinare.
 *** Selezionare *Ripristina*.
 *** Nella pagina Ripristina, fornisci le informazioni per il ripristino:
 
@@ -189,7 +189,7 @@ Dopo aver esaminato l'avviso di esercitazione di prontezza e aver ripristinato i
 ** Ignorato: se sospetti che l'attività non sia un attacco ransomware, modifica lo stato in Ignorato.
 +
 
-IMPORTANT: Dopo aver respinto un attacco, non è possibile ripristinarlo.  Se si ignora un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente.  Se si ignora l'avviso, l'esercitazione di preparazione è considerata completata.
+IMPORTANT: Dopo aver ignorato un attacco, non è possibile ripristinarlo. Se si ignora un carico di lavoro, tutte le copie snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente. Se si ignora l'avviso, l'esercitazione di preparazione si considera completata.
 
 ** Risolto: l'incidente è stato mitigato.
 
