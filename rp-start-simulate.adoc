@@ -151,7 +151,7 @@ Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il c
 ** Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.
 +
 *** Dal menu Ransomware Resilience, seleziona *Ripristino*.
-*** Seleziona il carico di lavoro di prova contrassegnato con "Readiness drill" che desideri ripristinare.
+*** Seleziona il carico di lavoro di prova contrassegnato con "Esercitazione di preparazione" che desideri ripristinare.
 *** Selezionare *Ripristina*.
 *** Nella pagina Ripristina, fornisci le informazioni per il ripristino:
 
