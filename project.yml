@@ -70,7 +70,7 @@ sidebar:
         url: "/rp-use-recover.html"
       - title: Eseguire un ripristino pulito
         entries:
-        - title: Creare un ambiente di recovery isolato
+        - title: Creare un ambiente di ripristino isolato
           url: "/task-clean-restore.html"
         - title: Ripristina con un ripristino pulito
           url: "/task-clean-restore-recover.html"

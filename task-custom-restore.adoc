@@ -4,7 +4,7 @@ permalink: task-custom-restore.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di backup sullo storage secondario siano puliti, consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.' 
 ---
-= Recupera da un attacco ransomware con un ripristino personalizzato in NetApp Ransomware Resilience
+= Ripristina da un attacco ransomware con un ripristino personalizzato in NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,16 +12,16 @@ summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di b
 
 
 [role="lead"]
-Con Ransomware Resilience, gli amministratori dello storage possono determinare il modo migliore per ripristinare i carichi di lavoro, scegliendo tra il punto di ripristino consigliato e quello preferito.
+Con Ransomware Resilience, gli amministratori dello storage possono determinare il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
 
 
-TIP: Ransomware Resilience supporta anche una xref:task-clean-restore.html[opzione di ripristino pulito], che offre un ripristino guidato e funzionalità avanzate per garantire il recupero di soli dati puliti e non crittografati.
+TIP: Ransomware Resilience supporta anche una xref:task-clean-restore.html[opzione di ripristino pulito] funzionalità che offre un ripristino guidato e funzionalità avanzate per garantire il recupero di soli dati puliti e non crittografati.
 
 
 
 == Ripristina un carico di lavoro
 
-*Ruolo richiesto nella console* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^].
+*Ruolo richiesto nella console* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^].
 
 L'amministratore dell'archiviazione di sicurezza può recuperare i dati a diversi livelli:
 

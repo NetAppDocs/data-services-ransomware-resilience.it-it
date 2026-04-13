@@ -3,7 +3,7 @@
 
 
 * È possibile eseguire un ripristino completo solo in caso di attacco ransomware basato sulla crittografia.
-* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non si libera spazio.
+* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non c'è disponibilità.
 +
 ** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.
 

@@ -22,7 +22,7 @@ L'opzione di ripristino pulito è un'alternativa a xref:task-custom-restore.html
 
 == Prima di iniziare
 
-È necessario aver configurato un link:task-clean-restore.html["ambiente di recupero isolato"^] prima di poter eseguire un ripristino pulito.
+È necessario aver configurato un link:task-clean-restore.html["ambiente di recovery isolato"^] prima di poter eseguire un ripristino pulito.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -31,7 +31,7 @@ L'opzione di ripristino pulito è un'alternativa a xref:task-custom-restore.html
 == Considerazioni
 
 * È possibile eseguire un ripristino completo solo in caso di attacco ransomware basato sulla crittografia.
-* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non si libera spazio.
+* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non c'è disponibilità.
 +
 ** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.
 
@@ -45,10 +45,10 @@ L'opzione di ripristino pulito è un'alternativa a xref:task-custom-restore.html
 
 . Nella sezione **Recovery**, seleziona il workload che desideri ripristinare. Seleziona **Restore**.
 . Nelle opzioni Tipo di ripristino, seleziona **Ripristino pulito** quindi **Avanti**.
-. Seleziona l'ambiente di recovery isolato che desideri utilizzare, quindi **Avanti**.
-. Esamina l'ambiente di recovery isolato, verificando che si tratti della posizione corretta. Seleziona **Restore**.
-. Ransomware Resilience esegue la configurazione necessaria. Una volta completata correttamente la configurazione, Ransomware Resilience visualizza **Setup complete**. Per procedere all'analisi, selezionare **Next**.
-. Al termine della configurazione, selezionare **Esegui analisi**. NetApp Ransomware Resilience analizza tutti i punti di ripristino disponibili nei sette giorni precedenti all'evento ransomware, visualizzando la data e il tipo di punto di ripristino.
+. Seleziona l'ambiente di ripristino isolato che desideri utilizzare, quindi **Avanti**.
+. Esamina l'ambiente di recovery isolato, verificando che si tratti della posizione corretta. Seleziona **Ripristina**.
+. Ransomware Resilience esegue la configurazione necessaria. Una volta completata correttamente la configurazione, Ransomware Resilience indica **Setup complete**. Per procedere all'analisi, selezionare **Next**.
+. Al termine della configurazione, selezionare **Esegui analisi**. Ransomware Resilience analizza tutti i punti di ripristino disponibili nei sette giorni precedenti all'evento ransomware, visualizzando la data e il tipo di punto di ripristino.
 +
 image:screenshot-clean-room-analysis.png["Screenshot della fase di analisi del ripristino pulito."]
 
@@ -66,6 +66,6 @@ Al termine della pulizia, seleziona **Avvia recovery** per iniziare il recovery.
 
 . Scegli se salvare il carico di lavoro originale. Per non salvare il carico di lavoro originale, seleziona **No, sostituisci il carico di lavoro originale**. Per salvarlo, seleziona **Sì, salva il carico di lavoro originale** quindi inserisci un nuovo nome per il carico di lavoro.
 . Seleziona **Avvia recovery** per avviare il recovery.
-. Al termine del recovery, selezionare **Avanti** per passare alla fase finale.
+. Al termine del ripristino, selezionare **Avanti** per passare alla fase finale.
 . Seleziona **Rilascia risorse e termina** per rilasciare le risorse e chiudere la clean room. Per confermare che desideri rilasciare la risorsa, seleziona **Termina**.
 
