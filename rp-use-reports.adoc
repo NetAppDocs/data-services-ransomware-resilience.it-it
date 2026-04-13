@@ -12,29 +12,25 @@ summary: Utilizzando NetApp Ransomware Resilience, puoi scaricare report che mos
 
 
 [role="lead"]
-NetApp Ransomware Resilience fornisce report in formato CSV e JSON che mostrano i dettagli dei volumi supportati e non supportati, esercitazioni di preparazione agli attacchi, protezione, avvisi e ripristino. Con i report, puoi salvare e rivedere offline report su esercitazioni, stato di protezione, avvisi ed eventi di ripristino.
+NetApp Ransomware Resilience fornisce report in formato JSON che mostrano i dettagli dei volumi supportati e non supportati, le esercitazioni di preparazione agli attacchi, la protezione, gli avvisi e il recovery, consentendo di valutare e rivedere gli eventi ransomware e la preparazione offline.
 
 
 TIP: Prima di scaricare i file, aggiorna la dashboard per acquisire i dati più recenti nei tuoi report.
 
 *Ruolo Console obbligatorio* Per eseguire questa attività, è necessario il ruolo Amministratore organizzazione, Amministratore cartella o progetto, Amministratore Ransomware Resilience o Visualizzatore Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
-*Quali dati puoi scaricare?*  È possibile scaricare i file da una qualsiasi delle opzioni del menu principale:
+*Quali report posso scaricare?*
 
 * **Riepilogo**: include elenchi di carichi di lavoro supportati e non supportati, azioni consigliate per migliorare la tua postura di resilienza informatica e informazioni acquisite nella dashboard Ransomware Resilience.
 * *Protezione*: include lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di quelli protetti e a rischio.
 * *Avvisi*: include lo stato e i dettagli di tutti gli avvisi, tra cui il numero totale di avvisi e snapshot automatici.
 * *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristino riuscito".
-* *Report*: puoi esportare i dati da qualsiasi pagina e scaricare i file.
+* *Esercitazioni di prontezza*: includono i risultati di attacchi simulati per evidenziare le aree di miglioramento.
+* *Ripristino pulito*: Include i dettagli sui carichi di lavoro ripristinati con il ripristino pulito.
 +
-
-NOTE: È possibile scaricare i report delle esercitazioni di preparazione solo dalla pagina *Report*.
-
+Per generare report di ripristino pulito, è necessario disporre di un ambiente di ripristino isolato (IRE) attivo. I report di ripristino pulito non sono disponibili dopo l'eliminazione dell'IRE.
 
 
-Se scarichi file CSV o JSON dalla pagina Protezione, Avvisi o Ripristino, i dati mostrano solo i dati presenti in quella pagina.
-
-I file CSV o JSON includono dati per tutti i carichi di lavoro su tutti i sistemi Console.
 
 .Passi
 . Dal menu di navigazione a sinistra della Console, seleziona *Protezione* > *Ransomware Resilience*.

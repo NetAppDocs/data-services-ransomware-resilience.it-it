@@ -82,7 +82,7 @@ Se è la prima volta che accedi a questo servizio, verrà visualizzata la pagina
 +
 image:screen-landing.png["Screenshot della landing page per Ransomware Resilience"]
 
-. Se non hai ancora aggiunto un agente Console per altri servizi,link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["aggiungine uno"^] .
+. Se non hai ancora aggiunto un agente Console per altri servizi, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["aggiungine uno"^].
 . Nella landing page di Ransomware Resilience, seleziona *Inizia individuando i carichi di lavoro* per individuare i tuoi carichi di lavoro.
 +
 
@@ -240,7 +240,7 @@ Dopo aver acquistato la licenza Ransomware Resilience dal tuo rappresentante com
 
 .Passi
 . Dopo aver ottenuto la licenza, torna a Ransomware Resilience.  Seleziona l'opzione *Visualizza metodi di pagamento* in alto a destra.  Oppure, nel messaggio che informa della scadenza della prova gratuita, seleziona *Abbonati o acquista una licenza*.
-. Selezionare *Aggiungi licenza* per andare alla pagina Licenze e abbonamenti della console.
+. Seleziona *Aggiungi licenza* per accedere alla pagina Licenses and subscriptions della console.
 . Dalla scheda *Licenze servizi dati*, seleziona *Aggiungi licenza*.
 +
 image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenza."]

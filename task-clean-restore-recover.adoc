@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore-recover.html 
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
+summary: Ransomware Resilience ti consente di controllare e ripulire i tuoi carichi di lavoro con un ripristino pulito. 
+---
+= Recupera i carichi di lavoro con un ripristino pulito in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato dopo un attacco ransomware basato sulla crittografia utilizzando un ripristino pulito. Il ripristino pulito identifica percorsi di ripristino ottimizzati per ridurre al minimo la perdita di dati e riportare i carichi di lavoro online nel minor tempo possibile.
+
+L'opzione di ripristino pulito è un'alternativa a xref:task-custom-restore.html[opzione di ripristino personalizzata].
+
+
+
+== Prima di iniziare
+
+È necessario aver configurato un link:task-clean-restore.html["ambiente di recupero isolato"^] prima di poter eseguire un ripristino pulito.
+
+*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+
+
+
+== Considerazioni
+
+* È possibile eseguire un ripristino completo solo in caso di attacco ransomware basato sulla crittografia.
+* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non si libera spazio.
++
+** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.
+
+
+* Quando si avvia un ripristino pulito, il volume originale viene smontato, il che può interrompere l'accesso IO.
+
+
+
+
+== Eseguire un ripristino pulito
+
+. Nella sezione **Recovery**, seleziona il workload che desideri ripristinare. Seleziona **Restore**.
+. Nelle opzioni Tipo di ripristino, seleziona **Ripristino pulito** quindi **Avanti**.
+. Seleziona l'ambiente di recovery isolato che desideri utilizzare, quindi **Avanti**.
+. Esamina l'ambiente di recovery isolato, verificando che si tratti della posizione corretta. Seleziona **Restore**.
+. Ransomware Resilience esegue la configurazione necessaria. Una volta completata correttamente la configurazione, Ransomware Resilience visualizza **Setup complete**. Per procedere all'analisi, selezionare **Next**.
+. Al termine della configurazione, selezionare **Esegui analisi**. NetApp Ransomware Resilience analizza tutti i punti di ripristino disponibili nei sette giorni precedenti all'evento ransomware, visualizzando la data e il tipo di punto di ripristino.
++
+image:screenshot-clean-room-analysis.png["Screenshot della fase di analisi del ripristino pulito."]
+
+. Al termine dell'analisi, seleziona **Avanti** per pianificare il recovery. NetApp Ransomware Resilience presenta due opzioni: **Minima perdita di dati** e **Ultimo punto di ripristino non compromesso**. Seleziona una delle due opzioni e, facoltativamente, visualizza i dati dei singoli file per ciascun punto di ripristino.
++
+Per visualizzare i dati dettagliati sugli eventi relativi ai file, selezionare un file per analizzarne lo stato di crittografia; quando è stato creato, modificato o eliminato e a quale azione corrisponde ciascun punto di ripristino.
+
++
+image:clean-restore-plan.png["Screenshot della fase del piano di recovery pulito."]
+
+. Dopo aver scelto il punto di ripristino, seleziona **Avanti** per iniziare la pulizia dei file.
+. Ransomware Resilience avvia la pulizia del carico di lavoro.
++
+Al termine della pulizia, seleziona **Avvia recovery** per iniziare il recovery.
+
+. Scegli se salvare il carico di lavoro originale. Per non salvare il carico di lavoro originale, seleziona **No, sostituisci il carico di lavoro originale**. Per salvarlo, seleziona **Sì, salva il carico di lavoro originale** quindi inserisci un nuovo nome per il carico di lavoro.
+. Seleziona **Avvia recovery** per avviare il recovery.
+. Al termine del recovery, selezionare **Avanti** per passare alla fase finale.
+. Seleziona **Rilascia risorse e termina** per rilasciare le risorse e chiudere la clean room. Per confermare che desideri rilasciare la risorsa, seleziona **Termina**.
+

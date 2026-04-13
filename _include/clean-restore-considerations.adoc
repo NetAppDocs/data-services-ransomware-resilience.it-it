@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+* È possibile eseguire un ripristino completo solo in caso di attacco ransomware basato sulla crittografia.
+* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non si libera spazio.
++
+** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.
+
+
+* Quando si avvia un ripristino pulito, il volume originale viene smontato, il che può interrompere l'accesso IO.
+
