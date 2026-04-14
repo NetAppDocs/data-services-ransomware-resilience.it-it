@@ -16,15 +16,13 @@ summary: Ransomware Resilience ti consente di controllare e ripulire i tuoi cari
 [role="lead"]
 Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato dopo un attacco ransomware basato sulla crittografia utilizzando un ripristino pulito. Il ripristino pulito identifica percorsi di ripristino ottimizzati per ridurre al minimo la perdita di dati e riportare i carichi di lavoro online nel minor tempo possibile.
 
-L'opzione di ripristino pulito è un'alternativa a xref:task-custom-restore.html[opzione di ripristino personalizzata].
-
 
 
 == Prima di iniziare
 
-È necessario aver configurato un link:task-clean-restore.html["ambiente di recovery isolato"^] prima di poter eseguire un ripristino pulito.
-
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+
+È necessario aver configurato un link:task-clean-restore.html["ambiente di recovery isolato"^] prima di poter eseguire un ripristino pulito.
 
 
 
