@@ -41,8 +41,5 @@ In caso contrario, viene visualizzata la dashboard Ransomware Resilience.
 +
 image:screen-dashboard.png["Screenshot della dashboard di Ransomware Resilience"]
 
-. Se non lo hai ancora fatto, seleziona l'opzione *Scopri carichi di lavoro*.
-+
-Fare riferimento a link:rp-start-discover.html["Scopri i carichi di lavoro"] .
-
+. Se è la prima volta che utilizzi Ransomware Resilience, link:rp-start-discover.html["scoprire i carichi di lavoro"].
 

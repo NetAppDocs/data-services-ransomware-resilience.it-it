@@ -17,7 +17,7 @@ Prima di poter utilizzare NetApp Ransomware Resilience, è necessario rilevare i
 Nella dashboard Discovery, Ransomware Resilience visualizza le configurazioni di sistema supportate e non supportate. Ransomware Resilience valuta le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.
 
 
-NOTE: Ransomware Resilience non rileva carichi di lavoro con volumi che utilizzano FlexGroup.
+NOTE: Ransomware Resilience non rileva i sistemi con volumi che utilizzano FlexGroup.
 
 Ransomware Resilience verifica la protezione di backup corrente, le copie snapshot e le opzioni di NetApp Autonomous Ransomware Protection. Ransomware Resilience rileva anche le informazioni di protezione da NetApp Backup and Recovery per le condivisioni file e le condivisioni file delle VM. Quindi consiglia modi per migliorare la protezione dal ransomware.
 
@@ -25,31 +25,28 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 
 
 
-== Seleziona i carichi di lavoro da scoprire e proteggere
+== Seleziona i carichi di lavoro da scoprire
 
-All'interno di ciascun agente della console, seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
+All'interno di ciascun agente della Console, selezionare i sistemi in cui si desidera identificare i carichi di lavoro.
+
+La scoperta dei carichi di lavoro non li protegge automaticamente. Ransomware Resilience riconosce le policy di protezione esistenti da NetApp Backup and Recovery o ONTAP durante il processo di rilevamento. Per tutti i carichi di lavoro che non dispongono di protezione è necessario link:rp-use-protect.html["configurare la protezione"].
 
 .Passi
-. Dalla NetApp Console, seleziona *Protezione* > *Protezione ransomware*.
+. Dalla NetApp Console, seleziona *Protezione* > *Ransomware Resilience*.
 +
-Se è il tuo primo accesso, verrà visualizzata la landing page.
+Se è il tuo primo accesso, viene visualizzata la landing page. Per iniziare la prova gratuita, seleziona *Avvia la prova gratuita di 30 giorni*. Se hai già attivato la prova, seleziona *Inizia scoprendo i carichi di lavoro*.
 
 +
 image:screen-landing.png["Screenshot della landing page per Ransomware Resilience"]
 
 +
-
-NOTE: Se hai avviato la prova gratuita, l'etichetta del pulsante *Avvia la prova gratuita di 30 giorni* cambia in *Inizia scoprendo i carichi di lavoro*.
-
-. Dalla landing page iniziale, seleziona *Inizia scoprendo i carichi di lavoro*.
-+
 Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati.  Questo processo potrebbe richiedere alcuni minuti.
 
+. Per individuare i sistemi associati a uno specifico agente Console, seleziona la freccia rivolta verso il basso corrispondente all'agente Console che contiene il sistema che desideri individuare.
 +
 image:screen-discover-workloads.png["Scopri lo screenshot dei carichi di lavoro"]
 
-. Per individuare i carichi di lavoro per uno specifico agente della console, seleziona *Seleziona sistemi* accanto all'agente della console in cui desideri individuare i carichi di lavoro.
-. Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
+. Seleziona i sistemi su cui desideri eseguire la discovery.
 . Seleziona *Scopri*.
 +
 Ransomware Resilience rileva i dati del carico di lavoro solo quando selezioni il sistema. Il processo di scoperta può richiedere diversi minuti.
@@ -75,7 +72,7 @@ Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, devi ri
 
 .Passi
 . Per identificare l'ora dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.
-. Dalla dashboard, seleziona l'icona *Refresh* per trovare nuovi workload.
+. Dalla dashboard, seleziona l'icona *Aggiorna* per identificare i nuovi carichi di lavoro.
 
 
 
@@ -85,12 +82,12 @@ TIP: Se noti che alcuni volumi non vengono visualizzati per il sistema individua
 
 == Scopri nuovi sistemi
 
-Se hai già individuato carichi di lavoro, puoi trovarne di nuovi o precedentemente non selezionati.
+Se hai già eseguito la rilevazione su un sistema e successivamente vi hai aggiunto un carico di lavoro, esegui nuovamente la rilevazione per identificare i carichi di lavoro.
 
 .Passi
 . Da NetApp Ransomware Resilience, seleziona *Settings*.
-. Nella scheda Individuazione carichi di lavoro, seleziona *Individuazione carichi di lavoro*. La scoperta potrebbe richiedere alcuni minuti.  Un'icona di caricamento mostra l'avanzamento.
-. Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati. Non supporta un sistema se la sua versione ONTAP è inferiore alla versione richiesta. Passando il mouse su un sistema non supportato, viene visualizzato un suggerimento che ne indica il motivo. Seleziona i sistemi in cui desideri rilevare i carichi di lavoro.
+. Nella scheda Workload discovery, selezionare *Discover*. Il rilevamento può richiedere alcuni minuti. Un'icona di caricamento visualizza l'avanzamento.
+. Ransomware Resilience rileva sia i sistemi supportati che quelli non supportati. Un sistema non è supportato se la sua versione di ONTAP è inferiore alla versione richiesta. Quando si passa il mouse sopra un sistema non supportato, viene visualizzato un tooltip che ne spiega il motivo. Selezionare i sistemi per i quali si desidera identificare i carichi di lavoro.
 . Seleziona *Scopri*.
 
 
