@@ -171,7 +171,6 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSxN per ONTAP, igno
 
 .Tabella di routing dell'ambiente di produzione
 * La tabella di routing di produzione deve consentire il traffico dalla sottorete IRE all'indirizzo IP LIF dei dati di ripristino puliti. È necessario aggiungere questa rotta alla tabella di routing di produzione.
-* I gruppi di sicurezza e i firewall sul cluster ONTAP devono consentire il traffico in entrata NFSv4 e NFSv3 verso l'indirizzo IP LIF dei dati di ripristino pulito. Il firewall deve essere aperto per il traffico in ingresso dall'intervallo CIDR IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -195,6 +194,10 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSxN per ONTAP, igno
 
 | TCP e UDP | 4049 | Intervallo CIDR IRE VPC | Accesso NFSv3 da IRE 
 |===
+
+
+.Firewall IRE
+* È necessario creare un firewall separato per gestire il traffico in ingresso per la crr-data-LIF-IP. Questo firewall deve consentire i mount NFSv3 e NFSv4 dall'intervallo CIDR della IRE VPC.
 
 
 .tabella di instradamento IRE
@@ -307,7 +310,6 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSxN per ONTAP, igno
 
 .Tabella di routing dell'ambiente di produzione
 * La tabella di routing di produzione deve consentire il traffico dalla sottorete IRE all'indirizzo IP LIF dei dati di ripristino puliti. È necessario aggiungere questa rotta alla tabella di routing di produzione.
-* I gruppi di sicurezza e i firewall sul cluster ONTAP devono consentire il traffico in entrata NFSv4 e NFSv3 verso l'indirizzo IP LIF dei dati di ripristino pulito. Il firewall deve essere aperto per il traffico in ingresso dall'intervallo CIDR IRE:
 +
 [cols="1,1,1,1"]
 |===
@@ -331,6 +333,10 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSxN per ONTAP, igno
 
 | TCP e UDP | 4049 | Intervallo CIDR IRE VPC | Accesso NFSv3 da IRE 
 |===
+
+
+.Firewall IRE
+* È necessario creare un firewall separato per gestire il traffico in ingresso per la crr-data-LIF-IP. Questo firewall deve consentire i mount NFSv3 e NFSv4 dall'intervallo CIDR della IRE VPC.
 
 
 .tabella di instradamento IRE
