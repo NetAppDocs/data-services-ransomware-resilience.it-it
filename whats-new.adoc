@@ -485,14 +485,6 @@ Con questa versione, le nuove distribuzioni della BlueXP ransomware protection h
 
 
 
-=== Ripristina il carico di lavoro dell'applicazione a livello di file per Podman
-
-Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, ora puoi visualizzare un elenco dei file che potrebbero essere stati interessati da un attacco e identificare quelli che desideri ripristinare.  In precedenza, se i connettori BlueXP in un'organizzazione (in precedenza un account) utilizzavano Podman, questa funzionalità era disabilitata.  Ora è abilitato per Podman.  Puoi lasciare che la BlueXP ransomware protection scelga i file da ripristinare, puoi caricare un file CSV che elenca tutti i file interessati da un avviso oppure puoi identificare manualmente i file che desideri ripristinare.
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Scopri di più sul recupero da un attacco ransomware"] .
-
-
-
 == 30 settembre 2024
 
 
@@ -565,9 +557,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
-=== Ripristinare il carico di lavoro dell'applicazione a livello di file
+=== Ripristina il carico di lavoro a livello di file
 
-Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, ora puoi visualizzare un elenco dei file che potrebbero essere stati interessati da un attacco e identificare quelli che desideri ripristinare.  Puoi lasciare che la BlueXP ransomware protection scelga i file da ripristinare, puoi caricare un file CSV che elenca tutti i file interessati da un avviso oppure puoi identificare manualmente i file che desideri ripristinare.
+Prima di ripristinare un carico di lavoro a livello di file, ora è possibile visualizzare un elenco di file che potrebbero essere stati interessati da un attacco e identificare quelli da ripristinare. È possibile lasciare che BlueXP ransomware protection scelga i file da ripristinare, caricare un file CSV contenente l'elenco di tutti i file interessati da un avviso oppure identificare manualmente i file da ripristinare.
 
 
 NOTE: Con questa versione, se tutti i connettori BlueXP in un account non utilizzano Podman, la funzionalità di ripristino di singoli file è abilitata.  In caso contrario, la funzione verrà disabilitata per quell'account.
@@ -578,9 +570,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover
 
 === Scarica un elenco dei file interessati
 
-Prima di ripristinare un carico di lavoro dell'applicazione a livello di file, è ora possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati in un file CSV e quindi utilizzare la pagina Ripristino per caricare il file CSV.
+Prima di ripristinare un carico di lavoro a livello di file, ora è possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati in un file CSV e quindi utilizzare la pagina Ripristino per caricare il file CSV.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Scopri di più sul download dei file interessati prima di ripristinare un'applicazione"] .
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Scopri di più sul download dei file interessati prima di ripristinare un carico di lavoro"]
 
 
 

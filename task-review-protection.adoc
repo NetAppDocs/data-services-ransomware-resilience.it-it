@@ -22,7 +22,6 @@ Una volta compresa la portata della tua attuale protezione, link:rp-use-protect.
 
 Uno dei primi passi per proteggere i carichi di lavoro è visualizzare i carichi di lavoro correnti e il loro stato di protezione.  È possibile visualizzare i seguenti tipi di carichi di lavoro:
 
-* Carichi di lavoro applicativi
 * Carichi di lavoro a blocchi
 * Carichi di lavoro di condivisione file
 * Carichi di lavoro VM

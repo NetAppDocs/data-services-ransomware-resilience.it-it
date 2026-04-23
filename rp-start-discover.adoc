@@ -14,7 +14,7 @@ summary: Durante la fase di individuazione, Ransomware Resilience analizza tutti
 [role="lead"]
 Prima di poter utilizzare NetApp Ransomware Resilience, è necessario rilevare i dati del carico di lavoro. Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti Console e progetti all'interno di un'organizzazione.
 
-Nella dashboard Discovery, Ransomware Resilience visualizza le configurazioni di sistema supportate e non supportate. Ransomware Resilience valuta le applicazioni Oracle, gli archivi dati VMware, le condivisioni di file e lo storage a blocchi.
+Nella dashboard di rilevamento, Ransomware Resilience visualizza le configurazioni di sistema supportate e non supportate. Ransomware Resilience valuta le condivisioni di file e storage a blocchi.
 
 
 NOTE: Ransomware Resilience non rileva i sistemi con volumi che utilizzano FlexGroup.

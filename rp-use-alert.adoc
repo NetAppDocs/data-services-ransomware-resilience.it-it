@@ -285,7 +285,7 @@ Lo stato dell'incidente o degli incidenti cambia in "Ignorato".
 
 == Visualizza un elenco dei file interessati
 
-Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, è possibile visualizzare un elenco dei file interessati.  È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati.  Quindi utilizzare la pagina Recupero per caricare l'elenco e scegliere quali file ripristinare.
+Prima di ripristinare un carico di lavoro a livello di file, è possibile visualizzare un elenco dei file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati. Quindi utilizzare la pagina Ripristino per caricare l'elenco e scegliere quali file ripristinare.
 
 *Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
 
@@ -296,7 +296,7 @@ Utilizzare la pagina Avvisi per recuperare l'elenco dei file interessati.
 TIP: Se un volume presenta più avvisi, potrebbe essere necessario scaricare l'elenco CSV dei file interessati per ciascun avviso.
 
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
-. Nella pagina Avvisi, ordina i risultati in base al carico di lavoro per visualizzare gli avvisi per il carico di lavoro dell'applicazione che desideri ripristinare.
+. Nella pagina Avvisi, ordina i risultati per carico di lavoro per visualizzare gli avvisi relativi al carico di lavoro che desideri ripristinare.
 . Dall'elenco degli avvisi per quel carico di lavoro, seleziona un avviso.
 . Per quell'avviso, seleziona un singolo incidente.
 +

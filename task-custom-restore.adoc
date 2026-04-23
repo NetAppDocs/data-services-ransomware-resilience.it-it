@@ -26,8 +26,7 @@ TIP: Ransomware Resilience supporta anche una xref:task-clean-restore.html[opzio
 L'amministratore dell'archiviazione di sicurezza può recuperare i dati a diversi livelli:
 
 * Recupera tutti i volumi
-* Ripristina un'applicazione a livello di volume o di file e cartella.
-* Ripristina una condivisione file a livello di volume, directory o file/cartella.
+* Ripristina una condivisione di file a livello di volume, directory o file.
 * Ripristina da un datastore a livello di VM.
 
 
@@ -54,7 +53,7 @@ TIP: È possibile selezionare fino a 100 file o una singola cartella.
 
 
 
-. Procedere con una delle seguenti procedure a seconda che si sia scelto applicazione, volume o file.
+. Procedere con una delle seguenti procedure a seconda che si sia scelto volume o file.
 
 
 
@@ -62,7 +61,7 @@ TIP: È possibile selezionare fino a 100 file o una singola cartella.
 === Ripristina tutti i volumi
 
 . Dal menu Ransomware Resilience, seleziona *Ripristino*.
-. Selezionare un carico di lavoro che si trovi nello stato "Ripristino necessario".
+. Selezionare un carico di lavoro nello stato "Ripristino necessario".
 . Per ripristinare, seleziona *Ripristina*.
 . Nella pagina Ripristina, nell'ambito Ripristina, seleziona *Tutti i volumi*.
 +
@@ -98,10 +97,10 @@ TIP: Il nuovo nome del volume appare come prefisso + nome del volume originale +
 
 
 
-=== Ripristinare un carico di lavoro applicativo a livello di volume
+=== Ripristinare un carico di lavoro a livello di volume
 
 . Dal menu Ransomware Resilience, seleziona *Ripristino*.
-. Selezionare un carico di lavoro applicativo che si trovi nello stato "Ripristino necessario".
+. Selezionare un carico di lavoro nello stato "Ripristino necessario".
 . Per ripristinare, seleziona *Ripristina*.
 . Nella pagina Ripristina, nell'ambito Ripristina, seleziona *Per volume*.
 +
@@ -138,11 +137,11 @@ TIP: Il nuovo nome del volume appare come nome del volume originale + nome del b
 
 
 
-=== Ripristinare il carico di lavoro di un'applicazione a livello di file
+=== Ripristinare un carico di lavoro a livello di file
 
-Prima di ripristinare il carico di lavoro di un'applicazione a livello di file, è possibile visualizzare un elenco dei file interessati.  È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati.  Quindi utilizzare la pagina Recupero per caricare l'elenco e scegliere quali file ripristinare.
+Prima di ripristinare un carico di lavoro a livello di file, è possibile visualizzare un elenco dei file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati. Quindi utilizzare la pagina Ripristino per caricare l'elenco e scegliere quali file ripristinare.
 
-È possibile ripristinare il carico di lavoro di un'applicazione a livello di file sullo stesso sistema o su un sistema diverso.
+È possibile ripristinare un carico di lavoro a livello di file sullo stesso sistema o su un sistema diverso.
 
 
 
@@ -155,7 +154,7 @@ TIP: Se un volume presenta più avvisi, è necessario scaricare l'elenco CSV dei
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
-. Nella pagina Avvisi, ordina i risultati in base al carico di lavoro per visualizzare gli avvisi per il carico di lavoro dell'applicazione che desideri ripristinare.
+. Nella pagina Avvisi, ordina i risultati per carico di lavoro per visualizzare gli avvisi relativi al carico di lavoro che desideri ripristinare.
 . Dall'elenco degli avvisi per quel carico di lavoro, seleziona un avviso.
 . Per quell'avviso, seleziona un singolo incidente.
 +
@@ -173,7 +172,7 @@ Dopo aver valutato i file interessati, è possibile ripristinarli.
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Ripristino*.
-. Selezionare un carico di lavoro applicativo che si trovi nello stato "Ripristino necessario".
+. Selezionare un carico di lavoro nello stato "Ripristino necessario".
 . Selezionare *Ripristina*.
 . Nella pagina Ripristina, nell'ambito Ripristina, seleziona *Per file*.
 . Nell'elenco dei volumi, seleziona il volume che contiene i file che desideri ripristinare.

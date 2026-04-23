@@ -80,9 +80,7 @@ Per quanto riguarda le licenze e la fatturazione, Ransomware Resilience può int
 == Carichi di lavoro
 
 .Cos'è un carico di lavoro nel contesto della resilienza al ransomware?
-Un carico di lavoro è un'applicazione, una macchina virtuale o una condivisione di file. Un carico di lavoro include tutti i volumi utilizzati da una singola istanza dell'applicazione.
-
-Ad esempio, si consideri un database Oracle distribuito su ora3.host.com con `vol1` contenente dati e `vol2` contenente registri. I due volumi costituiscono il carico di lavoro per quell'istanza di Oracle Database.
+Un carico di lavoro è una macchina virtuale o una condivisione di file.
 
 .In che modo Ransomware Resilience assegna la priorità ai dati del carico di lavoro?
 La priorità del carico di lavoro (critica, standard, importante) è determinata dalle frequenze degli snapshot già applicate a ciascun volume associato al carico di lavoro e dai backup pianificati.
