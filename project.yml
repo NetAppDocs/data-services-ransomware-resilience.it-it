@@ -66,14 +66,14 @@ sidebar:
         url: "/rp-use-alert.html"
       - title: Esaminare lo stato di recupero
         url: "/rp-use-recover.html"
-      - title: Ripristina con un ripristino personalizzato
-        url: "/rp-use-recover.html"
-      - title: Eseguire un ripristino pulito
+      - title: Ripristina con un ripristino pulito
         entries:
         - title: Creare un ambiente di ripristino isolato
           url: "/task-clean-restore.html"
-        - title: Ripristina con un ripristino pulito
+        - title: Eseguire un ripristino pulito
           url: "/task-clean-restore-recover.html"
+      - title: Ripristina con un ripristino personalizzato
+        url: "/rp-use-recover.html"
     - title: Eseguire un'esercitazione di preparazione
       url: "/rp-start-simulate.html"
     - title: Configura SIEM

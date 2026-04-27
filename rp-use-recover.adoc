@@ -54,6 +54,6 @@ image:screen-recovery2.png["Pagina di recupero"]
 
 Dopo aver valutato i carichi di lavoro, hai due opzioni per ripristinare il tuo carico di lavoro:
 
-* xref:task-custom-restore.html[Ripristina con un ripristino personalizzato]
 * xref:task-clean-restore.html[Ripristina con un ripristino pulito]
+* xref:task-custom-restore.html[Ripristina con un ripristino personalizzato]
 
