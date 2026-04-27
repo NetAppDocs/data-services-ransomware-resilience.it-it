@@ -457,7 +457,7 @@ image:diagram-clean-recovery-on-prem.png["Diagramma del ripristino pulito da clo
 ** È necessario che VMware Tools sia installato e in esecuzione.
 ** SSH deve essere abilitato.
 ** È necessario aver installato nfs-common.
-** Docker deve essere installato e in esecuzione.
+** È necessario che Docker versione 20.x o superiore sia installato e in esecuzione.
 ** È necessario disporre di almeno 40 GB di spazio libero.
 
 
