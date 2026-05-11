@@ -1,0 +1,35 @@
+= Miglioramenti al ripristino pulito
+:allow-uri-read: 
+
+
+
+
+=== Miglioramenti al ripristino pulito
+
+Il ripristino pulito ora supporta il ripristino su cluster alternativi e l'analisi oltre sette giorni.
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Recupera i carichi di lavoro con un ripristino pulito"^].
+
+
+
+=== Supporto SIEM di Google SecOps
+
+Ransomware Resilience ora supporta la gestione delle informazioni e degli eventi di sicurezza (SIEM) con Google SecOps, consentendo di inviare automaticamente i dati a Google SecOps per un'analisi e un rilevamento delle minacce più efficienti.
+
+Per informazioni sulla configurazione, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Collega NetApp Ransomware Resilience a un SIEM"^].
+
+
+
+=== Il supporto per Azure NetApp Files è ora disponibile a livello generale
+
+Ransomware Resilience ora supporta i sistemi Azure NetApp Files, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Azure NetApp Files. Quando vengono rilevati carichi di lavoro, Ransomware Resilience ora presenta Azure NetApp Files e li visualizza nella dashboard di protezione. Il supporto di Ransomware Resilience per Azure NetApp Files include strategie di rilevamento e protezione basate esclusivamente su snapshot. Il supporto per Azure NetApp Files è ora disponibile a livello generale (GA).
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Scopri di più sulla resilienza al ransomware"^].
+
+
+
+=== Supporto SOAR per il blocco degli utenti
+
+Ransomware Resilience ora supporta il blocco di singoli utenti con Google SecOps e playbook SOAR di Splunk. Con questa aggiunta, puoi automatizzare il blocco degli utenti quando Ransomware Resilience rileva attività utente sospette come una violazione dei dati o una cancellazione massiva di dati.
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["Integra un playbook SOAR"^].

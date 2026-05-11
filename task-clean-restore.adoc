@@ -518,8 +518,9 @@ La procedura per la creazione di una sala di ripristino isolata varia a seconda 
 --
 . In Ransomware Resilience, seleziona **Impostazioni**.
 . Nella scheda Ripristino pulito, seleziona **Aggiungi** per creare l'ambiente di ripristino isolato.
-. Per un IRE basato sul cloud, selezionare **Amazon Web Services**.
+. Nella sezione Tipo, scegliere *Solo pulizia*.
 . Espandere la sezione **Nome**. Inserire un **Nome** per l'ambiente.
+. Per un IRE basato sul cloud, selezionare **Amazon Web Services**.
 . Espandere la sezione *Sistemi*. Selezionare i sistemi che si desidera connettere all'IRE. Per ogni sistema selezionato, è necessario fornire l'indirizzo IP, la subnet mask e il gateway della VM di storage.
 +
 
@@ -549,8 +550,9 @@ Dopo aver selezionato add, Ransomware Resilience verifica la connessione, operaz
 --
 . In Ransomware Resilience, seleziona **Impostazioni**.
 . Nella scheda Ripristini puliti, seleziona **Aggiungi** se questo è il tuo primo ambiente oppure **Gestisci** se ne hai già creato uno.
-. Per la posizione, selezionare **On-premises**.
+. Nella sezione Tipo, scegliere *Solo pulizia*.
 . Espandere la sezione *Nome*. Assegnare un **Nome** per l'IRE.
+. Per la posizione, selezionare **On-premises**.
 . Espandere la sezione *Sistemi*. Selezionare i sistemi che si desidera connettere all'IRE. Assegnare un indirizzo IP della storage VM, una subnet mask e un gateway per ciascun sistema che ha carichi di lavoro da recuperare nell'IRE.
 +
 Ciascun sistema selezionato deve avere un indirizzo IP assegnato. È possibile selezionare sistemi primari o secondari. I sistemi secondari possono essere utilizzati per l'analisi e il ripristino qualora il sistema primario non disponga di snapshot non crittografati o non sia disponibile.

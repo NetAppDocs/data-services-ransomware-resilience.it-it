@@ -46,7 +46,7 @@ Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato do
 . Seleziona l'ambiente di ripristino isolato che desideri utilizzare, quindi **Avanti**.
 . Esamina l'ambiente di recovery isolato, verificando che si tratti della posizione corretta. Seleziona **Ripristina**.
 . Ransomware Resilience esegue la configurazione necessaria. Una volta completata correttamente la configurazione, Ransomware Resilience indica **Setup complete**. Per procedere all'analisi, selezionare **Next**.
-. Al termine della configurazione, selezionare **Esegui analisi**. Ransomware Resilience analizza tutti i punti di ripristino disponibili nei sette giorni precedenti all'evento ransomware, visualizzando la data e il tipo di punto di ripristino.
+. Una volta completata la configurazione, selezionare **Esegui analisi**. Ransomware Resilience cerca i punti di ripristino disponibili prima dell'evento ransomware, visualizzando la data e il tipo di punto di ripristino. Ransomware Resilience cerca i punti di ripristino a intervalli di sette giorni. Se non è disponibile un punto di ripristino nei primi sette giorni, Ransomware Resilience inizia a cercare nei sette giorni precedenti e ripete il processo finché non viene trovato un percorso di ripristino valido.
 +
 image:screenshot-clean-room-analysis.png["Screenshot della fase di analisi del ripristino pulito."]
 
@@ -57,11 +57,13 @@ Per visualizzare i dati dettagliati sugli eventi relativi ai file, selezionare u
 +
 image:clean-restore-plan.png["Screenshot della fase del piano di recovery pulito."]
 
-. Dopo aver scelto il punto di ripristino, seleziona **Avanti** per iniziare la pulizia dei file.
-. Ransomware Resilience avvia la pulizia del carico di lavoro.
+. Dopo aver scelto il punto di ripristino, seleziona **Avanti** per iniziare la pulizia dei file. Ransomware Resilience avvia la pulizia del carico di lavoro.
+. Scegli la destinazione.
 +
-Al termine della pulizia, seleziona **Avvia recovery** per iniziare il recovery.
+.. Se hai scelto *Alternativa*, seleziona *Sistema*, *VM di archiviazione* e *Aggregato* su cui eseguire il ripristino. Inserisci un nome per il *Nuovo volume*.
 
+
+. Al termine della pulizia, seleziona **Avvia recovery** per iniziare il recovery.
 . Scegli se salvare il carico di lavoro originale. Per non salvare il carico di lavoro originale, seleziona **No, sostituisci il carico di lavoro originale**. Per salvarlo, seleziona **Sì, salva il carico di lavoro originale** quindi inserisci un nuovo nome per il carico di lavoro.
 . Seleziona **Avvia recovery** per avviare il recovery.
 . Al termine del ripristino, selezionare **Avanti** per passare alla fase finale.
