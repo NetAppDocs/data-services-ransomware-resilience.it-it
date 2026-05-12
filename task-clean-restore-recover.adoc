@@ -39,33 +39,52 @@ Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato do
 
 
 
+=== Considerazioni per il ripristino in una posizione alternativa
+
+Quando si ripristina un volume utilizzando un ripristino pulito, è possibile scegliere di ripristinarlo in una posizione alternativa gestita dallo stesso agente della Console. La nuova posizione può trovarsi sullo stesso sistema, su una storage VM o su un aggregate, oppure su un sistema diverso. Quando si esegue il ripristino in una posizione alternativa:
+
+* ARP viene abilitato automaticamente sul nuovo volume.
+* Il percorso di giunzione viene impostato in base al nome fornito. Ad esempio: `<Data LIF IP address of destination storage VM>:<new volume name>`.
+* La policy di esportazione sul volume ripristinato è la stessa del volume di origine.
+* Le condivisioni SMB sul volume ripristinato sono le stesse del volume di origine.
+
+
+
+
 == Eseguire un ripristino pulito
 
-. Nella sezione **Recovery**, seleziona il workload che desideri ripristinare. Seleziona **Restore**.
+. Nella sezione **Ripristino**, identifica il carico di lavoro che desideri ripristinare. Seleziona **Ripristina**.
 . Nelle opzioni Tipo di ripristino, seleziona **Ripristino pulito** quindi **Avanti**.
 . Seleziona l'ambiente di ripristino isolato che desideri utilizzare, quindi **Avanti**.
 . Esamina l'ambiente di recovery isolato, verificando che si tratti della posizione corretta. Seleziona **Ripristina**.
-. Ransomware Resilience esegue la configurazione necessaria. Una volta completata correttamente la configurazione, Ransomware Resilience indica **Setup complete**. Per procedere all'analisi, selezionare **Next**.
-. Una volta completata la configurazione, selezionare **Esegui analisi**. Ransomware Resilience cerca i punti di ripristino disponibili prima dell'evento ransomware, visualizzando la data e il tipo di punto di ripristino. Ransomware Resilience cerca i punti di ripristino a intervalli di sette giorni. Se non è disponibile un punto di ripristino nei primi sette giorni, Ransomware Resilience inizia a cercare nei sette giorni precedenti e ripete il processo finché non viene trovato un percorso di ripristino valido.
+. Ransomware Resilience esegue la configurazione necessaria. Una volta completata correttamente la configurazione, Ransomware Resilience aggiorna lo stato. Per procedere, selezionare **Avanti**.
+. Al termine della configurazione, selezionare **Esegui analisi**. Ransomware Resilience cerca l'istantanea più recente non compromessa.
 +
 image:screenshot-clean-room-analysis.png["Screenshot della fase di analisi del ripristino pulito."]
 
 . Al termine dell'analisi, seleziona **Avanti** per pianificare il recovery. NetApp Ransomware Resilience presenta due opzioni: **Minima perdita di dati** e **Ultimo punto di ripristino non compromesso**. Seleziona una delle due opzioni e, facoltativamente, visualizza i dati dei singoli file per ciascun punto di ripristino.
 +
-Per visualizzare i dati dettagliati sugli eventi relativi ai file, selezionare un file per analizzarne lo stato di crittografia; quando è stato creato, modificato o eliminato e a quale azione corrisponde ciascun punto di ripristino.
+Per visualizzare i dati dettagliati relativi agli eventi sui file, selezionare un file per analizzarne lo stato di crittografia e metadati: quando è stato creato, modificato o eliminato e quale punto di ripristino corrisponde a quale azione.
 
 +
 image:clean-restore-plan.png["Screenshot della fase del piano di recovery pulito."]
 
-. Dopo aver scelto il punto di ripristino, seleziona **Avanti** per iniziare la pulizia dei file. Ransomware Resilience avvia la pulizia del carico di lavoro.
-. Scegli la destinazione.
+. Dopo aver scelto il punto di ripristino, seleziona **Crea punto di ripristino**. Ransomware Resilience avvia una serie di operazioni per creare il punto di ripristino. Una volta completato questo processo, seleziona **Avanti**.
+. Seleziona **Avvia pulizia** per iniziare a rimuovere il malware dai file.
+. Una volta completata la pulizia, selezionare **Avanti**.
+. Scegli la destinazione di ripristino:
 +
-.. Se hai scelto *Alternativa*, seleziona *Sistema*, *VM di archiviazione* e *Aggregato* su cui eseguire il ripristino. Inserisci un nome per il *Nuovo volume*.
+** Seleziona **Principale (originale)** per ripristinare nella destinazione originale.
++
+Se la posizione primaria non è disponibile e link:task-clean-restore.html#secondary-sources["hai configurato una sorgente secondaria"], è possibile invece ripristinare nella sorgente **Secondary**.
+
+** Seleziona **Alternativa** per ripristinare su un nuovo volume. Scegli il **Sistema**, la **Storage VM** e l'**Aggregato** per il nuovo volume, quindi specifica un **Nuovo nome volume**.
++
+image:alternate-recovery-destination.png["Screenshot della destinazione di ripristino alternativa"]
 
 
-. Al termine della pulizia, seleziona **Avvia recovery** per iniziare il recovery.
-. Scegli se salvare il carico di lavoro originale. Per non salvare il carico di lavoro originale, seleziona **No, sostituisci il carico di lavoro originale**. Per salvarlo, seleziona **Sì, salva il carico di lavoro originale** quindi inserisci un nuovo nome per il carico di lavoro.
+
 . Seleziona **Avvia recovery** per avviare il recovery.
 . Al termine del ripristino, selezionare **Avanti** per passare alla fase finale.
-. Seleziona **Rilascia risorse e termina** per rilasciare le risorse e chiudere la clean room. Per confermare che desideri rilasciare la risorsa, seleziona **Termina**.
+. Selezionare **Rilascia risorse ed esci** per rilasciare le risorse e chiudere la clean room. Per confermare, selezionare **Fine**.
 

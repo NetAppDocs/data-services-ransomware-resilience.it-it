@@ -122,7 +122,7 @@ Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla clone V
 
 Quando si crea l'IRE per le origini locali, si ha la possibilità di aggiungere un'origine secondaria.
 
-Se l'origine primaria è disponibile, il ripristino pulito deve essere eseguito sull'origine primaria. Se l'origine primaria non è disponibile e hai configurato un'origine secondaria, il ripristino pulito verrà eseguito sull'origine secondaria.
+Se l'origine primaria non è disponibile e hai configurato un'origine secondaria, il ripristino pulito verrà eseguito sull'origine secondaria.
 
 Il processo di ripristino pulito, per impostazione predefinita, analizza gli snapshot dell'ambiente di origine. Se l'ambiente di origine non è disponibile o non è disponibile uno snapshot non crittografato sull'origine, il ripristino pulito analizza gli snapshot su un sistema secondario se ne hai configurato uno.
 

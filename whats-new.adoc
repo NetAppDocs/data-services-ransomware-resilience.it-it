@@ -24,9 +24,9 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 === Miglioramenti al ripristino pulito
 
-Il ripristino pulito ora supporta il ripristino su cluster alternativi e l'analisi oltre sette giorni.
+Il ripristino pulito ora supporta il ripristino in una posizione alternativa, consentendo di ripristinare i volumi su sistemi, storage VM e aggregati diversi gestiti dallo stesso Console agent. Inoltre, il ripristino pulito ha rimosso la limitazione di sette giorni nella ricerca di snapshot validi per il ripristino. Il ripristino pulito ora continua a cercare tra gli snapshot disponibili un punto di ripristino valido, indipendentemente dalla distanza dall'evento ransomware.
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Recupera i carichi di lavoro con un ripristino pulito"^].
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera i carichi di lavoro con un ripristino pulito"^].
 
 
 
