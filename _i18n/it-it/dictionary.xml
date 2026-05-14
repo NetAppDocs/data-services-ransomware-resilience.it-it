@@ -2199,7 +2199,6 @@
   <block id="42d5a005352158447d080ff821694db4" category="list-text">L'utilizzo della stessa identità macchina comporta problemi di licenza e attivazione.</block>
   <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla clone VM, che reimposta SID, CN e identità della macchina. La reimpostazione di questi valori garantisce che la clone VM operi come un'istanza unica e indipendente senza interferire con la source VM.</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">Fonti secondarie</block>
-  <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">Quando si crea l'IRE per le origini locali, si ha la possibilità di aggiungere un'origine secondaria.</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">Il processo di ripristino pulito, per impostazione predefinita, analizza gli snapshot dell'ambiente di origine. Se l'ambiente di origine non è disponibile o non è disponibile uno snapshot non crittografato sull'origine, il ripristino pulito analizza gli snapshot su un sistema secondario se ne hai configurato uno.</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">Il ripristino pulito è offerto come parte di Ransomware Resilience. Non è richiesta alcuna licenza aggiuntiva per eseguire un ripristino pulito o creare un IRE.</block>
   <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">L'attivazione del ripristino pulito può comportare costi da parte del cloud provider di terze parti. A seconda di come si utilizza il servizio, questi costi possono ripetersi finché gli ambienti di ripristino pulito rimangono attivi.</block>
@@ -2493,4 +2492,5 @@
   <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">Selezionare **Rilascia risorse ed esci** per rilasciare le risorse e chiudere la clean room. Per confermare, selezionare **Fine**.</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">Se l'origine primaria non è disponibile e hai configurato un'origine secondaria, il ripristino pulito verrà eseguito sull'origine secondaria.</block>
+  <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">Quando crei l'IRE, hai la possibilità di aggiungere una fonte secondaria.</block>
 </blocks>

@@ -120,7 +120,7 @@ Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla clone V
 
 === Fonti secondarie
 
-Quando si crea l'IRE per le origini locali, si ha la possibilità di aggiungere un'origine secondaria.
+Quando crei l'IRE, hai la possibilità di aggiungere una fonte secondaria.
 
 Se l'origine primaria non è disponibile e hai configurato un'origine secondaria, il ripristino pulito verrà eseguito sull'origine secondaria.
 
