@@ -69,12 +69,12 @@ La configurazione NetApp Console richiede:
 ** Se i cluster ONTAP locali o i sistemi Cloud Volumes ONTAP non sono configurati nella Console, vedere link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["Scopri come configurare un agente Console"^] e link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["requisiti standard della console"^].
 +
 
-NOTE: Se sono presenti più agenti Console in un'unica organizzazione Console, Ransomware Resilience analizzerà le risorse ONTAP su tutti gli agenti Console, a parte quello attualmente selezionato nell'interfaccia utente della Console.
+NOTE: Se in una singola organizzazione Console sono presenti più agenti Console, Ransomware Resilience eseguirà la scansione delle risorse ONTAP su tutti gli agenti Console, oltre a quello attualmente selezionato nell'interfaccia utente di Console.
 
 
 
 * L'agente della console deve avere `cloudmanager-ransomware-protection` contenitore in stato attivo.
-* Per i cluster ONTAP o Cloud Volumes ONTAP, Ransomware Resilience richiede che la versione di ONTAP sia 9.11.1 o superiore.
+* Per i cluster ONTAP o Cloud Volumes ONTAP, la resilienza al ransomware richiede la versione di ONTAP 9.11.1 o superiore.
 +
 
 NOTE: Per utilizzare Ransomware Resilience sui carichi di lavoro SAN, è necessario eseguire ONTAP 9.17.1 o versione successiva.
@@ -90,7 +90,7 @@ NOTE: Per utilizzare Ransomware Resilience sui carichi di lavoro SAN, è necessa
 
 
 
-NOTE: Se hai connesso un cluster ONTAP alla Console con credenziali non amministrative, [devi aggiornare le credenziali nel cluster ONTAP ](#update-non-admin-user-permissions-in-an-ontap-system).
+NOTE: Se hai collegato un ONTAP cluster alla Console con credenziali non amministrative, devi <<Aggiornare le autorizzazioni degli utenti non amministratori in un sistema ONTAP>>.
 
 
 
@@ -114,11 +114,17 @@ Affinché Ransomware Resilience fornisca avvisi su comportamenti sospetti degli 
 
 
 
+== Prerequisiti per il ripristino pulito
+
+Ransomware Resilience offre ripristini puliti, che offrono un processo di ripristino guidato che individua i percorsi di ripristino ottimali. Per utilizzare il ripristino pulito, link:task-clean-restore.html["Assicurati di soddisfare i prerequisiti"].
+
+
+
 == Aggiornare le autorizzazioni degli utenti non amministratori in un sistema ONTAP
 
-Se è necessario aggiornare le autorizzazioni degli utenti non amministratori per un particolare sistema, utilizzare questi passaggi della procedura.
+Se devi aggiornare le autorizzazioni degli utenti non amministratori per un determinato sistema, segui questa procedura:
 
-. Accedi alla Console. Nella dashboard, identifica il sistema che necessita di aggiornare le autorizzazioni utente ONTAP.
+. Accedi alla Console. Nella dashboard, identifica il sistema per il quale è necessario aggiornare le autorizzazioni utente ONTAP.
 . Seleziona il sistema per visualizzarne i dettagli.
 . Selezionare *Visualizza informazioni aggiuntive* per visualizzare il nome utente.
 . Accedere alla CLI del cluster ONTAP come utente amministratore.
