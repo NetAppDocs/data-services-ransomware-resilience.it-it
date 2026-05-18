@@ -1,0 +1,21 @@
+= Supporto per Google Cloud NetApp Volumes (anteprima)
+:allow-uri-read: 
+
+
+
+
+=== Supporto per Google Cloud NetApp Volumes (anteprima)
+
+Ransomware Resilience ora supporta i sistemi Google Cloud NetApp Volumes, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Google Cloud NetApp Volumes. Durante la fase di rilevamento, Ransomware Resilience visualizza automaticamente i carichi di lavoro dai sistemi Google Cloud NetApp Volumes. Quando rilevi i sistemi, questi appaiono nella dashboard di Ransomware Resilience. Il supporto per Google Cloud NetApp Volumes in Ransomware Resilience è attualmente in anteprima.
+
+Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["Scopri di più sulla resilienza al ransomware"^]. Per informazioni sull'ambito del supporto di Google Cloud NetApp Volumes, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Limitazioni nella resilienza al ransomware"^].
+
+
+
+=== Miglioramenti al ripristino pulito
+
+La funzione di ripristino pulito ora supporta i report. Grazie ai report, è possibile esaminare e valutare i ripristini puliti, salvando queste informazioni offline come file CSV.
+
+Il ripristino pulito ora supporta anche l'interruzione dell'analisi. Se si interrompe l'analisi, è necessario avviare nuovamente il ripristino pulito.
+
+Per ulteriori informazioni sui report, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Scarica i report in Ransomware Resilience"^]. Per ulteriori informazioni sul ripristino, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera i carichi di lavoro con un ripristino pulito"^].

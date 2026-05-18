@@ -62,6 +62,9 @@ Quando si ripristina un volume utilizzando un ripristino pulito, è possibile sc
 +
 image:screenshot-clean-room-analysis.png["Screenshot della fase di analisi del ripristino pulito."]
 
++
+Durante l'esecuzione dell'analisi, è possibile selezionare **Interrompi**. L'interruzione dell'analisi richiede l'avvio di una nuova procedura di ripristino pulito.
+
 . Al termine dell'analisi, seleziona **Avanti** per pianificare il recovery. NetApp Ransomware Resilience presenta due opzioni: **Minima perdita di dati** e **Ultimo punto di ripristino non compromesso**. Seleziona una delle due opzioni e, facoltativamente, visualizza i dati dei singoli file per ciascun punto di ripristino.
 +
 Per visualizzare i dati dettagliati relativi agli eventi sui file, selezionare un file per analizzarne lo stato di crittografia e metadati: quando è stato creato, modificato o eliminato e quale punto di ripristino corrisponde a quale azione.

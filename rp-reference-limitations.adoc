@@ -24,7 +24,7 @@ Se si seleziona un volume ONTAP 9.11.1 per l'esercitazione di preparazione all'a
 
 == Limitazioni Amazon FSx for NetApp ONTAP
 
-Il sistema Amazon FSx for NetApp ONTAP è supportato in Ransomware Resilience. Ad Amazon FSx per ONTAP si applicano le seguenti limitazioni:
+Le seguenti limitazioni si applicano ad Amazon FSx per ONTAP:
 
 * Le policy di backup non sono supportate per Amazon FSx for ONTAP. In questo ambiente, dovresti eseguire le operazioni di backup utilizzando Amazon FSx for backup. Puoi ripristinare questi carichi di lavoro utilizzando Ransomware Resilience.
 * Le operazioni di ripristino vengono eseguite solo dagli snapshot.
@@ -34,7 +34,7 @@ Il sistema Amazon FSx for NetApp ONTAP è supportato in Ransomware Resilience. A
 
 == Limitazioni di Azure NetApp Files
 
-Azure NetApp Files è supportato in Ransomware Resilience. Le seguenti limitazioni si applicano ad Azure NetApp Files:
+Le seguenti limitazioni si applicano ad Azure NetApp Files:
 
 * Le strategie di protezione ransomware con criteri di backup non sono supportate per Azure NetApp Files. In alternativa, è possibile utilizzare il backup di Azure NetApp Files.
 * Le strategie di protezione ransomware con replica non sono supportate per Azure NetApp Files.
@@ -42,4 +42,14 @@ Azure NetApp Files è supportato in Ransomware Resilience. Le seguenti limitazio
 * Quando si seleziona una strategia di protezione, assicurarsi che la pianificazione degli snapshot sia compatibile con Azure NetApp Files. La pianificazione degli snapshot più frequente disponibile in Azure NetApp Files è oraria.
 * Si sconsiglia di utilizzare link:reference-soar.html["Playbook SOAR"] con Azure NetApp Files poiché le API di Azure NetApp Files bloccano le azioni automatizzate.
 * Alcuni dati relativi agli eventi non sono inclusi in link:task-siem.html["Rapporti SIEM"] per le configurazioni di Azure NetApp Files.
+
+
+
+
+== Limitazioni di Google Cloud NetApp Volumes
+
+Le seguenti limitazioni si applicano a Google Cloud NetApp Volumes:
+
+* Al momento, è possibile applicare solo strategie di protezione basate sulla crittografia e su FPolicy ai carichi di lavoro di Google Cloud NetApp Volumes. Non è possibile applicare strategie di protezione basate sull'attività dell'utente.
+* Le strategie di protezione con replica non sono attualmente supportate per Google Cloud NetApp Volumes
 
