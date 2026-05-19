@@ -100,6 +100,52 @@ Il server deve soddisfare i seguenti requisiti minimi:
 
 
 
+=== Raccomandazioni sulle dimensioni
+
+Quando si raccolgono gli eventi utente, assicurarsi che la macchina che ospita l'agente di attività utente sia dimensionata per gestire la frequenza degli eventi. Ciò significa assicurarsi di disporre di un numero sufficiente di data collector e di una quantità di CPU e RAM sufficiente sulla macchina che ospita l'agente di attività utente per tollerare il numero di eventi al secondo. Per aumentare il numero di data collector, potrebbe essere necessario aumentare la capacità di RAM o CPU. Ransomware Resilience supporta fino a 50 data collector per agente di attività utente.
+
+La tabella seguente fornisce indicazioni generali per il dimensionamento:
+
+|===
+| Configurazione della macchina dell'agente di attività utente | Numero di raccoglitori di dati | Frequenza massima degli eventi 
+
+
+| 4 core, 16GB | 10 raccoglitori di dati | 20.000 eventi/secondo 
+
+
+| 4 core, 32GB | 20 raccoglitori di dati | 20.000 eventi/secondo 
+|===
+È inoltre possibile calcolare i requisiti specifici. Nel calcolo delle dimensioni appropriate, si consiglia di considerare un margine di sicurezza del 30%. Utilizzare questa formula per determinare se la configurazione è in grado di gestire il carico.
+
+[listing]
+----
+Where E is the sum of all events per second across all data collectors:
+
+E + (0.3 x E) < 20,000 events/second
+----
+.Ransomware Resilience fornisce uno script per calcolare la velocità di trasmissione dei dati degli eventi. Scopri come calcolare la velocità di trasmissione dei dati degli eventi in Ransomware Resilience.
+[%collapsible]
+====
+Ransomware Resilience fornisce uno script che è possibile eseguire sul sistema per calcolare la frequenza dei dati degli eventi. Per impostazione predefinita, lo script viene eseguito per un massimo di cinque macchine virtuali di archiviazione (SVM). Se l'ambiente include più di 5 SVM, è possibile modificare lo script di conseguenza. Indipendentemente dal numero di SVM, lo script impiega circa cinque minuti per ottenere una lettura media della frequenza degli eventi. Prima di eseguire lo script è necessario disporre di:
+
+* link:suspicious-user-activity.html["Configurato un agente di attività utente"]
+* L'indirizzo IP del cluster
+* Nome utente e password dell'amministratore del cluster
+* Installato  `sshpass` sulla macchina Linux (è possibile installarlo con il comando  `sudo yum install -y sshpass`)
+
+
+.Passi
+. Dal cluster che ospita l'agente di attività utente, eseguire lo script come amministratore: `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
+. Quando richiesto, fornire l'indirizzo IP del cluster, il nome utente dell'amministratore e la password dell'amministratore.
+. L'esecuzione dello script richiede circa cinque minuti. Al termine, la riga di comando visualizza la frequenza degli eventi, ad esempio "Svm svm_rate sta generando 100 eventi/sec."
++
+Utilizza la frequenza degli eventi per calcolare le dimensioni.
+
+
+
+====
+
+
 == Regole di accesso alla rete cloud
 
 Esamina le regole di accesso alla rete cloud per la tua area geografica di riferimento (Asia Pacifico, Europa o Stati Uniti).
