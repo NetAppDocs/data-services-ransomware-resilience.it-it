@@ -52,7 +52,7 @@ image:screen-settings-alert-drill-configure.png["Configura la pagina di esercita
 .. Selezionare un sistema di prova.
 .. Selezionare un SVM di archiviazione di prova.
 .. Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.
-.. Selezionare il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati crittografati, seleziona **Ripristino personalizzato**. Per il ripristino in caso di attività sospette degli utenti, seleziona **Violazione dei dati**.
+.. Seleziona il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati di crittografia, scegli **Ripristino personalizzato**. Per il ripristino da un comportamento sospetto dell'utente, scegli **Violazione dei dati**.
 .. Inserisci il nome per il carico di lavoro di test. Non includere trattini nel nome.
 
 

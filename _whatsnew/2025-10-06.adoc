@@ -27,13 +27,13 @@ A differenza del rilevamento della crittografia tramite ARP a livello di archivi
 
 IMPORTANT: Devi usare il nuovolink:#new-user-roles-for-data-breach-detection["Amministratore del comportamento utente di Ransomware Resilience e visualizzatore del comportamento utente di Ransomware Resilience"] ruoli per accedere alle impostazioni di rilevamento dei comportamenti sospetti degli utenti.
 
-Per maggiori informazioni, vederelink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Abilita il rilevamento delle attività sospette degli utenti"] Elink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizza il comportamento anomalo dell'utente"] .
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["Abilita il rilevamento dell'attività dell'utente"] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["Visualizza il comportamento anomalo dell'utente"].
 
 
 
 ==== Ulteriori rilevamenti di attività sospette degli utenti
 
-Oltre al rilevamento delle violazioni dei dati, Ransomware Resilience rileva anche i seguenti tipi di avviso in base alle attività sospette osservate dagli utenti:
+Oltre al rilevamento delle violazioni dei dati, Ransomware Resilience rileva anche i seguenti tipi di avviso in base all'attività osservata degli utenti:
 
 * **Distruzione dei dati - potenziale attacco** - Viene creato un avviso con la gravità del potenziale attacco quando il numero di eliminazioni di file supera la norma storica.
 * **Comportamento sospetto dell'utente - potenziale attacco** - Viene creato un avviso con la gravità del potenziale attacco quando vengono osservate operazioni di lettura, ridenominazione ed eliminazione in una sequenza simile a un attacco ransomware
@@ -44,7 +44,7 @@ Oltre al rilevamento delle violazioni dei dati, Ransomware Resilience rileva anc
 
 ==== Nuovi ruoli utente per il rilevamento delle violazioni dei dati
 
-Per gestire gli avvisi di attività sospette degli utenti, Ransomware Resilience ha introdotto due nuovi ruoli per gli amministratori dell'organizzazione Console per concedere l'accesso al rilevamento di attività sospette degli utenti: amministratore del comportamento degli utenti di Ransomware Resilience e visualizzatore del comportamento degli utenti di Ransomware Resilience.
+Per gestire gli avvisi relativi all'attività degli utenti, Ransomware Resilience ha introdotto due nuovi ruoli per gli amministratori dell'organizzazione Console, che consentono di concedere l'accesso al rilevamento di attività sospette: Ransomware Resilience user behavior admin e Ransomware Resilience user behavior viewer.
 
 Per configurare le impostazioni relative al comportamento sospetto degli utenti, è necessario essere un amministratore del comportamento degli utenti. Il ruolo di amministratore Ransomware Resilience non è supportato per la configurazione delle impostazioni relative al comportamento sospetto degli utenti.
 

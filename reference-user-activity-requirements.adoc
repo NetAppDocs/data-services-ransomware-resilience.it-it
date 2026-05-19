@@ -14,13 +14,13 @@ summary: Prima di creare un agente di attività utente e altri collettori, è ne
 [role="lead"]
 NetApp Ransomware Resilience il rilevamento del comportamento utente consente di rispondere agli eventi ransomware a livello utente. È necessario creare un set di agenti per abilitare il rilevamento del comportamento utente. Prima di abilitare il rilevamento, è necessario assicurarsi di soddisfare i requisiti di sistema operativo, server e rete indicati, in modo che Ransomware Resilience possa rilevare e segnalare correttamente gli eventi.
 
-Il rilevamento dell'attività del comportamento dell'utente è supportato in Ransomware Resilience per i carichi di lavoro nei sistemi ONTAP on-premises, nonché in Amazon FsxN per NetApp ONTAP e Cloud Volumes ONTAP che sono allineati con <<Supporto del cloud provider>>.
+Il rilevamento del comportamento dell'utente è supportato in Ransomware Resilience per i carichi di lavoro nei sistemi ONTAP on-premises, così come in Amazon FsxN per NetApp ONTAP e Cloud Volumes ONTAP che sono allineati con <<Supporto del cloud provider>>.
 
 
 
 == Supporto del cloud provider
 
-I dati sulle attività sospette degli utenti possono essere archiviati in AWS e Azure nelle seguenti regioni:
+I dati relativi al comportamento degli utenti possono essere archiviati in AWS e Azure nelle seguenti regioni:
 
 |===
 | Fornitore di cloud | Regione 

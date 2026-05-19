@@ -161,7 +161,7 @@ Viene visualizzata la pagina Avvisi.
 
 Nella scheda Avvisi è possibile verificare se si è verificata un'attività dannosa o un comportamento anomalo da parte dell'utente.
 
-È necessario aver configurato un agente di attività utente e abilitato una policy di protezione con rilevamento del comportamento utente per visualizzare gli avvisi a livello utente. La colonna *Utente sospetto* viene visualizzata nella dashboard Avvisi solo quando il rilevamento del comportamento utente è abilitato. Per abilitare il rilevamento degli utenti sospetti, vedere link:suspicious-user-activity.html["Attività utente sospetta"].
+È necessario aver configurato un agente di attività utente e abilitato una policy di protezione con rilevamento del comportamento utente per visualizzare gli avvisi a livello utente. La colonna *Utente sospetto* viene visualizzata nel dashboard degli avvisi solo quando è abilitato il rilevamento del comportamento utente. Per ulteriori informazioni, link:suspicious-user-activity.html["Scopri come rilevare l'attività dell'utente"].
 
 
 
@@ -195,7 +195,7 @@ image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
 
 === Visualizza il comportamento anomalo dell'utente
 
-Se hai configurato il rilevamento degli utenti sospetti per visualizzare comportamenti anomali degli utenti, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare le impostazioni per gli utenti sospetti, consulta link:suspicious-user-activity.html["Configura agenti e collettori per il rilevamento delle attività degli utenti"].
+Se hai configurato il rilevamento del comportamento dell'utente, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare il rilevamento dell'attività dell'utente, consulta link:suspicious-user-activity.html["Configura agenti e collettori"].
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.

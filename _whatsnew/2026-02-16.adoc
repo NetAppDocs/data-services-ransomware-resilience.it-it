@@ -20,7 +20,7 @@ Per ulteriori informazioni, vedere il link:Per ulteriori informazioni, vedere li
 
 
 
-=== Supporto del gruppo di protezione per l'attività dell'utente
+=== Supporto del gruppo di protezione per il rilevamento del comportamento dell'utente
 
 I gruppi di protezione Ransomware Resilience ora supportano policy di rilevamento per il rilevamento di comportamenti sospetti degli utenti. Quando si applica una strategia di protezione ransomware a un gruppo di protezione, viene applicata una policy su tutti i carichi di lavoro, semplificando la gestione della postura di cybersecurity.
 

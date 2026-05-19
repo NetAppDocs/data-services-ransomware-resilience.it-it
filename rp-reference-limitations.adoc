@@ -38,7 +38,7 @@ Le seguenti limitazioni si applicano ad Azure NetApp Files:
 
 * Le strategie di protezione ransomware con criteri di backup non sono supportate per Azure NetApp Files. In alternativa, è possibile utilizzare il backup di Azure NetApp Files.
 * Le strategie di protezione ransomware con replica non sono supportate per Azure NetApp Files.
-* Azure NetApp Files non supporta FPolicy né l'attività di comportamento degli utenti. Azure NetApp Files non supporta nemmeno l'entropia forense.
+* Azure NetApp Files non supporta FPolicy né il rilevamento del comportamento degli utenti. Azure NetApp Files non supporta nemmeno l'analisi forense dell'entropia.
 * Quando si seleziona una strategia di protezione, assicurarsi che la pianificazione degli snapshot sia compatibile con Azure NetApp Files. La pianificazione degli snapshot più frequente disponibile in Azure NetApp Files è oraria.
 * Si sconsiglia di utilizzare link:reference-soar.html["Playbook SOAR"] con Azure NetApp Files poiché le API di Azure NetApp Files bloccano le azioni automatizzate.
 * Alcuni dati relativi agli eventi non sono inclusi in link:task-siem.html["Rapporti SIEM"] per le configurazioni di Azure NetApp Files.
@@ -50,6 +50,6 @@ Le seguenti limitazioni si applicano ad Azure NetApp Files:
 
 Le seguenti limitazioni si applicano a Google Cloud NetApp Volumes:
 
-* Al momento, è possibile applicare solo strategie di protezione basate sulla crittografia e su FPolicy ai carichi di lavoro di Google Cloud NetApp Volumes. Non è possibile applicare strategie di protezione basate sull'attività dell'utente.
+* Al momento, è possibile applicare solo strategie di protezione basate sulla crittografia e su FPolicy ai carichi di lavoro di Google Cloud NetApp Volumes. Non è possibile applicare strategie di protezione basate sul comportamento degli utenti.
 * Le strategie di protezione con replica non sono attualmente supportate per Google Cloud NetApp Volumes
 

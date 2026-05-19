@@ -24,7 +24,7 @@ I playbook di Ransomware Resilience offrono le seguenti funzionalità:
 * Verificare lo stato di un job di enrichment
 
 
-{asterisk} Il blocco di un utente è supportato solo per Splunk e per i playbook SOAR di Google SecOps. È necessario aver configurato link:concept-user-behavior["rilevamento dell'attività del comportamento utente"] su un sistema supportato per bloccare un utente.
+{asterisk} Il blocco di un utente è supportato solo per Splunk e per i playbook SOAR di Google SecOps. È necessario aver configurato link:concept-user-behavior["rilevamento del comportamento dell'utente"] su un sistema supportato per bloccare un utente.
 
 
 
