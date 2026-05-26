@@ -24,7 +24,9 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 === Supporto per Google Cloud NetApp Volumes (anteprima)
 
-Ransomware Resilience ora supporta la creazione di gruppi di protezione per i carichi di lavoro nei sistemi Google Cloud NetApp Volumes, consentendo di organizzare più carichi di lavoro sotto un'unica policy per semplificare la gestione. Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html["Creare un gruppo di protezione in Ransomware Resilience"^].
+Ransomware Resilience ora supporta la creazione di gruppi di protezione per i carichi di lavoro nei sistemi Google Cloud NetApp Volumes, consentendo di organizzare più carichi di lavoro sotto un'unica policy per semplificare la gestione.
+
+Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html["Creare un gruppo di protezione in Ransomware Resilience"^].
 
 
 
