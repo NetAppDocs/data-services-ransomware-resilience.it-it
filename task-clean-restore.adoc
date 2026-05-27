@@ -16,7 +16,7 @@ summary: 'Prima di eseguire un ripristino completo in NetApp Ransomare Resilienc
 [role="lead"]
 NetApp Ransomware Resilience offre ripristini puliti, che forniscono un recupero guidato dopo gli attacchi ransomware. Per eseguire un ripristino pulito, è necessario innanzitutto creare un ambiente di ripristino isolato (IRE), in locale o in un ambiente cloud supportato. Nell'IRE, si crea una stanza pulita in cui Ransomware Resilience isola il carico di lavoro per identificare quali file sono puliti e quali sono stati infettati dal ransomware.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+*Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 
 

@@ -21,7 +21,7 @@ NOTE: Ransomware Resilience non rileva i sistemi con volumi che utilizzano FlexG
 
 Ransomware Resilience verifica la protezione di backup corrente, le copie snapshot e le opzioni di NetApp Autonomous Ransomware Protection. Ransomware Resilience rileva anche le informazioni di protezione da NetApp Backup and Recovery per le condivisioni file e le condivisioni file delle VM. Quindi consiglia modi per migliorare la protezione dal ransomware.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+*Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 
 

@@ -11,7 +11,7 @@ summary: Ransomware Resilience è in grado di identificare le esposizioni della 
 [role="lead"]
 All'interno di NetApp Ransomware Resilience, è possibile utilizzare NetApp Data Classification per identificare le vulnerabilità della privacy e proteggere i dati in modo proattivo. L'identificazione delle vulnerabilità della privacy rivela se un set di dati include informazioni di identificazione personale (PII). Le vulnerabilità della privacy possono aumentare i rischi per la sicurezza e modificare la classificazione dell'importanza del carico di lavoro.
 
-*Ruolo di console obbligatorio* Per eseguire questa attività, è necessario il ruolo di amministratore dell'organizzazione, di amministratore della cartella o del progetto o di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^] .
+*Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 
 
