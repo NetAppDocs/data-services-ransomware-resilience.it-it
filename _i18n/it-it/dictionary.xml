@@ -1609,7 +1609,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">Nella finestra di dialogo, seleziona **Rimuovi** per confermare che desideri rimuovere i carichi di lavoro dall'elenco delle esclusioni.</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">Screenshot della rimozione riuscita di un carico di lavoro escluso.</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">Se il carico di lavoro viene rimosso correttamente dall'elenco dei carichi di lavoro esclusi, nella pagina Carico di lavoro escluso viene visualizzato un messaggio di operazione riuscita e il carico di lavoro non viene più visualizzato nell'elenco dei carichi di lavoro esclusi. Se l'azione fallisce, viene visualizzato un messaggio di errore; riprovare l'operazione. <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**Le policy di rilevamento** identificano le minacce ransomware</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**I criteri di replica** consentono di replicare gli snapshot da Ransomware Resilience a un sito secondario. Le pianificazioni di replicazione possono essere impostate su frequenze orarie, giornaliere, settimanali o mensili.</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">Attualmente è possibile replicare gli snapshot solo nell'archiviazione ONTAP locale.</block>
   <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">Dal menu di navigazione a sinistra della Console, seleziona *Protezione* &gt; *Ransomware Resilience*.</block>
@@ -1977,7 +1976,6 @@
   <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">Crea uno snapshot di un volume</block>
   <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">Arricchisci un indirizzo IP con threat intelligence</block>
   <block id="762279f864f96ffbe81b311754b74896" category="list-text">Arricchisci le informazioni di archiviazione per un dato agente e sistema</block>
-  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">Mettere un volume offline per la risposta agli incidenti</block>
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">Test di connettività</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">Verificare lo stato di un job di enrichment</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">Playbook</block>
@@ -2057,7 +2055,6 @@
   <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">Collega NetApp Ransomware Resilience a un SIEM</block>
   <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">Per ulteriori informazioni, vedere <block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>.</block>
   <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">Le informazioni relative alle violazioni dei dati vengono ora conservate per 13 mesi dopo un incidente, consentendo una conservazione dei record più lunga per le vostre esigenze di reporting.</block>
-  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">Per ulteriori informazioni, vedere <block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>.</block>
   <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">Se non hai ancora aggiunto un agente Console per altri servizi, <block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>.</block>
   <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">Seleziona *Aggiungi licenza* per accedere alla pagina Licenses and subscriptions della console.</block>
   <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">Esamina lo stato di recovery in NetApp Ransomware Resilience</block>
@@ -2344,7 +2341,6 @@
   <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">Supporto SOAR per il blocco degli utenti</block>
   <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">Ransomware Resilience ora supporta il blocco di singoli utenti con Google SecOps e playbook SOAR di Splunk. Con questa aggiunta, puoi automatizzare il blocco degli utenti quando Ransomware Resilience rileva attività utente sospette come una violazione dei dati o una cancellazione massiva di dati.</block>
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>.</block>
-  <block id="cec6d1e77603c10f8f9b0c0c23a333f4" category="list-text">Blocca un utente*</block>
   <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">Nella sezione Tipo, scegliere *Solo pulizia*.</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">Un sistema di gestione delle informazioni e degli eventi di sicurezza (SIEM) centralizza i dati di log e degli eventi per fornire informazioni dettagliate sugli eventi di sicurezza e sulla conformità. NetApp Ransomware Resilience supporta l'invio automatico dei dati al tuo SIEM per un'analisi e un rilevamento delle minacce più efficienti.</block>
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience supporta i seguenti sistemi SIEM:</block>
@@ -2486,11 +2482,8 @@
   <block id="d8e08662cf603a3c4ee9aaf071e19599" category="section-title">Tipi di attacco</block>
   <block id="e4234a1d906d9cdc9c698d93ee4a1039" category="paragraph">Ransomware Resilience riconosce cinque tipi di attacchi:</block>
   <block id="fa56851239948098bf91b1314fa7effe" category="cell">Tipo di attacco</block>
-  <block id="0b890b1926b90387673882e6ccae7fdc" category="cell">Definizione</block>
   <block id="c4ffd36782688a65f942ba6948827e83" category="cell">Crittografia (entropia)</block>
-  <block id="fd2cef800f88467f684f65a53518ac63" category="cell">Ransomware Resilience riconosce modelli di IOPS anomali, entropia dei dati e suffissi di file non standard.</block>
   <block id="403901db25c61c486833fc82dd2d7acd" category="cell">Crittografia (comportamento dell'utente)</block>
-  <block id="4ae2d9c30cc3f3a656abf5d6a3d16fa4" category="cell">Ransomware Resilience identifica attività anomale di lettura, scrittura e ridenominazione di file eseguite da uno specifico utente.</block>
   <block id="bf4ede30456e84ab02d9c068f99126f7" category="cell">Ransomware Resilience rileva modelli anomali di accesso in lettura ai file eseguiti da uno specifico utente.</block>
   <block id="85205fe8e109c0311a7cc912374e07a9" category="cell">Ransomware Resilience rileva la cancellazione massiva di file da parte di uno specifico utente.</block>
   <block id="9ad1cf824a5d301d8eb3668a3f64e5c9" category="cell">Ransomware Resilience identifica comportamenti anomali che vanno oltre l'ambito di violazione dei dati, distruzione dei dati o crittografia.</block>
@@ -2509,7 +2502,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">Configurare gli agenti e i rilevatori del comportamento degli utenti</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="bd3c8dbfc7f9bd3854a71cfc2ee0f27e" category="paragraph">{asterisk} Il blocco di un utente è supportato solo per Splunk e per i playbook SOAR di Google SecOps. È necessario aver configurato <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> su un sistema supportato per bloccare un utente.</block>
   <block id="4a7bec04cbec6247858664ff561920a3" category="paragraph">Il rilevamento del comportamento dell'utente è supportato in Ransomware Resilience per i carichi di lavoro nei sistemi ONTAP on-premises, così come in Amazon FsxN per NetApp ONTAP e Cloud Volumes ONTAP che sono allineati con <block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>.</block>
   <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">I dati relativi al comportamento degli utenti possono essere archiviati in AWS e Azure nelle seguenti regioni:</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files non supporta FPolicy né il rilevamento del comportamento degli utenti. Azure NetApp Files non supporta nemmeno l'analisi forense dell'entropia.</block>
@@ -2549,4 +2541,25 @@
   <block id="ff6a5ffc05eb6e03c3063d043a5357eb" category="inline-link-macro">Super amministratore</block>
   <block id="3a7fa73e20b4b1d037f90f17dc665f22" category="paragraph">*Ruolo della console richiesto* Per eseguire questa attività, è necessario il <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block>, ruolo di amministratore di Ransomware Resilience o di visualizzatore di Ransomware Resilience. <block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>.</block>
   <block id="61c00724cddefbe4d1c796a3d8795e62" category="paragraph">*Ruolo della console richiesto* Per eseguire questa attività, è necessario il <block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> o il ruolo di amministratore di Ransomware Resilience. <block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>.</block>
+  <block id="4b77ea6c402cb5104fd06a61c7376030" category="inline-link-macro">Scopri il rilevamento del comportamento degli utenti</block>
+  <block id="85780f52607b54dbe81ff2c46d981a17" category="paragraph">Per ulteriori informazioni, consultare <block ref="371ae1c35fd8f1482622c079d0f009f9" category="inline-link-macro-rx"></block>.</block>
+  <block id="ad047b692e58386490130db85fe198fd" category="doc">Maggiore flessibilità per le strategie di protezione</block>
+  <block id="0492ddae19933de338f553ff06833c6f" category="paragraph">Ransomware Resilience offre ora maggiore flessibilità nella scelta delle strategie di rilevamento del ransomware. In precedenza, tutte le strategie di protezione dal ransomware dovevano includere il rilevamento della crittografia. Ora puoi attivare una strategia di protezione dal ransomware che includa solo il rilevamento del comportamento dell'utente.</block>
+  <block id="7238c31678a241cb872ee9d18f1e46a2" category="paragraph">Le strategie di protezione possono ancora includere sia il rilevamento della crittografia che il rilevamento di comportamenti sospetti degli utenti. È inoltre possibile aggiungere il blocco delle estensioni dei file a qualsiasi strategia di protezione.</block>
+  <block id="bd1924893d8fb00ed3c326b7af6243b5" category="paragraph">Se si disabilita una parte della strategia di protezione per una policy esistente, gli avvisi esistenti creati con la versione precedente della policy possono essere contrassegnati solo come "Risolti" e non come "Ignorati". Ad esempio, se si disponeva di una strategia di protezione che includeva il rilevamento della crittografia e il monitoraggio dei comportamenti sospetti degli utenti, ma si disabilita il rilevamento della crittografia, è possibile solo risolvere un avviso di crittografia esistente per quel carico di lavoro.</block>
+  <block id="2b7a103134591ddcc36191e5b569a29b" category="paragraph">Per ulteriori informazioni, consultare <block ref="5b0b8f72704979749944145d24f2c6be" category="inline-link-macro-rx"></block>.</block>
+  <block id="eac1000048fff271adb3d0d010dd86f5" category="section-title">Miglioramenti al playbook SOAR</block>
+  <block id="993b3419e78327c12451169533b8d701" category="paragraph">I playbook SOAR per la resilienza al ransomware ora forniscono passaggi di ripristino dopo aver bloccato un utente o messo un volume offline. Ora è possibile rimettere online un volume e sbloccare un utente se l'azione non è stata considerata una minaccia ransomware.</block>
+  <block id="74ea76930b47f412faf2fb55e463038e" category="cell">Ransomware Resilience riconosce modelli di IOPS anomali, entropia dei dati e suffissi di file non standard.</block>
+  <block id="583ab768c1c1f45999e48e96c301cc48" category="cell">Ransomware Resilience identifica attività anomale di lettura, scrittura e ridenominazione di file eseguite da uno specifico utente.</block>
+  <block id="48c197e68b527d9bc2137bcea71c2e76" category="list-text">Bloccare/sbloccare un utente*</block>
+  <block id="1943cfeff6e7967a7ab396ecab9a4c21" category="list-text">Metti offline un volume per la gestione degli incidenti oppure metti online un volume dopo un incidente</block>
+  <block id="46d3a8bf54f5d5c4058a1eba2e7daa4a" category="paragraph">{asterisk} Il blocco/sblocco di un utente è supportato solo per Splunk e per i playbook SOAR di Google SecOps. È necessario aver configurato <block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block> su un sistema supportato per bloccare un utente.</block>
+  <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">Le **politiche di rilevamento** identificano le minacce ransomware. Hai tre opzioni per il rilevamento:</block>
+  <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">Rilevamento della crittografia</block>
+  <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">Blocca le estensioni di file sospette</block>
+  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">Attività utente sospetta (che richiede configurazioni aggiuntive)</block>
+  <block id="262d414194517bdfa67b048201f2b424" category="paragraph">La tua politica di rilevamento può includere tutte e tre le opzioni o una combinazione. Deve includere il rilevamento della crittografia o <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>.</block>
+  <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*Modifiche alla protezione*: include una revisione delle modifiche alle strategie di protezione per i carichi di lavoro in un determinato periodo di tempo: 30 giorni, 60 giorni, 90 giorni o 1 anno.</block>
+  <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">08 giugno 2026</block>
 </blocks>

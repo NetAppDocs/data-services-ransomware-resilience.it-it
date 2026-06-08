@@ -22,7 +22,16 @@ Le strategie di protezione dal ransomware sono una caratteristica fondamentale d
 
 Le strategie di protezione dal ransomware comprendono _rilevamento_, _protezione_ e _replica_.
 
-* **Le policy di rilevamento** identificano le minacce ransomware
+* Le **politiche di rilevamento** identificano le minacce ransomware. Hai tre opzioni per il rilevamento:
++
+** Rilevamento della crittografia
+** Attività utente sospetta
+** Blocca le estensioni di file sospette
++
+La tua politica di rilevamento può includere tutte e tre le opzioni o una combinazione. Deve includere il rilevamento della crittografia o link:suspicious-user-activity.html["Attività utente sospetta (che richiede configurazioni aggiuntive)"].
+
+
+
 * **Le policy di protezione** includono policy di snapshot e backup.  In una strategia di protezione sono necessarie policy di rilevamento e snapshot.  Le policy di backup sono facoltative.
 +
 Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransomware Resilience li rileva e ti offre la possibilità di:

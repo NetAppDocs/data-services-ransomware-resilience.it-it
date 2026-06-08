@@ -168,7 +168,7 @@ Ransomware Resilience riconosce cinque tipi di attacchi:
 
 [cols="25,75"]
 |===
-| Tipo di attacco | Definizione 
+| Tipo di attacco | Descrizione 
 
 
 | Crittografia (entropia) | Ransomware Resilience riconosce modelli di IOPS anomali, entropia dei dati e suffissi di file non standard. 
