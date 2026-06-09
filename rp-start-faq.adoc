@@ -94,10 +94,10 @@ Ransomware Resilience è in grado di identificare i seguenti carichi di lavoro: 
 Ransomware Resilience rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.
 
 .Che cosa è un carico di lavoro protetto?
-In Ransomware Resilience, un carico di lavoro mostra uno stato di *protetto* quando ha una policy di _rilevamento_ primaria abilitata, ovvero link:concept-ransomware-resilience.html["Protezione autonoma dal ransomware (ARP)"] è abilitato su tutti i volumi correlati al carico di lavoro.
+In Ransomware Resilience, un carico di lavoro mostra lo stato *protetto* quando è abilitata una policy di _rilevamento_. La policy di rilevamento deve consistere nel rilevamento della crittografia o nel rilevamento di comportamenti utente sospetti (o entrambi). Può anche includere il rilevamento di estensioni di file sospette. Per ulteriori informazioni, vedere link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
 
 .Che cosa si intende per carico di lavoro "a rischio"?
-Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, viene etichettato come "a rischio" anche se ha un criterio di backup e snapshot abilitato. Per la protezione dal ransomware, dovresti abilitare un link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
+Se un carico di lavoro non ha una policy di rilevamento abilitata, viene etichettato come "a rischio" anche se ha una policy di backup e snapshot abilitata. Per la protezione dal ransomware, dovresti abilitare una link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
 
 .Ho aggiunto un nuovo volume, ma non è ancora uscito. Cosa dovrei fare?
 Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazione del carico di lavoro. Dopo che il volume è stato scoperto, link:rp-use-protect.html#add-a-ransomware-protection-strategy["applicare policy di protezione per proteggere il nuovo volume"].

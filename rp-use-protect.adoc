@@ -254,11 +254,15 @@ NOTE: Se si sceglie di copiare e modificare una strategia esistente, Ransomware 
 ** *Politica di rilevamento*:
 +
 *** *Criterio*: scegliere uno dei criteri di rilevamento predefiniti.
-*** *Rilevamento primario*: abilita Ransomware Resilience per rilevare potenziali attacchi ransomware.
-*** *Rilevamento del comportamento sospetto dell'utente*: abilita il rilevamento del comportamento dell'utente per trasmettere gli eventi delle attività dell'utente a Ransomware Resilience e rilevare eventi sospetti, come violazioni dei dati.
-*** *Blocca estensioni file*: abilita Ransomware Resilience per bloccare le estensioni di file sospette note. Ransomware Resilience esegue automaticamente copie snapshot quando il rilevamento primario è abilitato.
+*** *Rilevamento della crittografia*: Abilita la resilienza al ransomware per rilevare gli attacchi basati sulla crittografia.
+*** *Rilevamento di comportamenti utente sospetti*: Abilita il rilevamento del comportamento utente per trasmettere gli eventi relativi all'attività dell'utente a Ransomware Resilience e rilevare eventi sospetti come violazioni di dati o distruzione di dati.
+*** *Blocca le estensioni dei file*: Abilita la Ransomware Resilience per bloccare le estensioni di file sospette note.
 +
 Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestione sistema.
+
++
+
+NOTE: È possibile scegliere qualsiasi combinazione di policy di rilevamento. La policy di rilevamento deve includere il rilevamento della crittografia o il rilevamento di comportamenti utente sospetti.
 
 
 

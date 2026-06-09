@@ -52,10 +52,10 @@ La dashboard di protezione in Ransomware Resilience mostra informazioni dettagli
 
 *Stato di protezione*: un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se una policy è applicata o meno:
 
-* *Protetto*: è stata applicata una policy.  ARP (o ARP/AI a seconda della versione ONTAP ) è abilitato su tutti i volumi correlati al carico di lavoro.
-* *A rischio*: non viene applicata alcuna politica.  Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di snapshot e backup abilitato.
-* *In corso*: una policy è in fase di applicazione ma non è ancora stata completata.
-* *Non riuscito*: un criterio è stato applicato ma non funziona.
+* *Protetto*: viene applicata una policy di rilevamento.
+* *A rischio*: Non viene applicata alcuna policy. Se a un carico di lavoro non è abilitata una policy di rilevamento, è considerato "a rischio" anche se ha una policy di snapshot e una policy di backup abilitate.
+* *In corso*: È in corso l'applicazione di una policy, ma l'operazione non è ancora stata completata.
+* *Errore*: È stata configurata una policy di backup, ma si è verificato un errore.
 
 
 *Stato di rilevamento*:

@@ -19,7 +19,7 @@ Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una not
 Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
 
 
-TIP: Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso.
+TIP: Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa al normale funzionamento e smette di inviare avvisi per eventi simili.
 
 Per iniziare a recuperare i dati, contrassegna l'avviso come pronto per il recupero, in modo che l'amministratore dell'archiviazione possa avviare il processo di recupero.
 
@@ -101,6 +101,9 @@ Se sospetti che l'attività non sia un attacco ransomware, puoi modificare lo st
 
 | *Risolto automaticamente* | Per gli avvisi di bassa priorità, l'incidente viene risolto automaticamente se non è stata intrapresa alcuna azione su di esso entro cinque giorni. 
 |===
+
+NOTE: Se si dispone di una strategia di protezione esistente e si disabilita una forma di rilevamento, gli avvisi creati con la precedente versione della policy possono essere contrassegnati solo come "Risolti" non "Ignorati". Ad esempio, se si disponeva di un avviso attivo per una strategia di protezione che includeva il rilevamento della crittografia e il comportamento sospetto degli utenti, ma si disabilita il rilevamento della crittografia, è possibile contrassegnare tale avviso solo come "Risolto".
+
 
 
 == Visualizza avvisi

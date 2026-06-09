@@ -521,7 +521,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">Selezionare *Esercitazioni di preparazione* e *Scarica* per scaricare il report delle esercitazioni di preparazione.</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.</block>
-  <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa alle normali operazioni e non avvia più un avviso.</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">Per iniziare a recuperare i dati, contrassegna l'avviso come pronto per il recupero, in modo che l'amministratore dell'archiviazione possa avviare il processo di recupero.</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">Ogni avviso potrebbe includere più incidenti su volumi e stati diversi.  Esaminare tutti gli incidenti.</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">Le estensioni dei file sono state create o modificate</block>
@@ -709,10 +708,6 @@
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">Da questa pagina è possibile visualizzare e modificare i dettagli di protezione per il carico di lavoro.</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">Aggiungi una strategia di protezione dal ransomware</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*Stato di protezione*: un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se una policy è applicata o meno:</block>
-  <block id="463f5e1b668b83efc12cf4dbc90300ff" category="list-text">*Protetto*: è stata applicata una policy.  ARP (o ARP/AI a seconda della versione ONTAP ) è abilitato su tutti i volumi correlati al carico di lavoro.</block>
-  <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*A rischio*: non viene applicata alcuna politica.  Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, è "a rischio" anche se ha un criterio di snapshot e backup abilitato.</block>
-  <block id="d8b2d86957c187231adaeb328cc57adb" category="list-text">*In corso*: una policy è in fase di applicazione ma non è ancora stata completata.</block>
-  <block id="a6539f11a6b87c60fecf3f4d34dfb4d1" category="list-text">*Non riuscito*: un criterio è stato applicato ma non funziona.</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">Ransomware Resilience assegna un'importanza o una priorità a ciascun carico di lavoro durante la fase di individuazione, basandosi su un'analisi di ciascun carico di lavoro.  L'importanza del carico di lavoro è determinata dalle seguenti frequenze di snapshot:</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">Il criterio **Estensione utente crittografia** è l'unico criterio predefinito che supporta il rilevamento di comportamenti sospetti degli utenti.</block>
@@ -767,7 +762,6 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">Per ogni elemento, seleziona la *freccia giù*.</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*Politica di rilevamento*:</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*Criterio*: scegliere uno dei criteri di rilevamento predefiniti.</block>
-  <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*Rilevamento del comportamento sospetto dell'utente*: abilita il rilevamento del comportamento dell'utente per trasmettere gli eventi delle attività dell'utente a Ransomware Resilience e rilevare eventi sospetti, come violazioni dei dati.</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestione sistema.</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*Politica di snapshot*:</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*Nome base policy snapshot*: seleziona una policy oppure seleziona *Crea* e inserisci un nome per la policy snapshot.</block>
@@ -988,7 +982,6 @@
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">Configurare AWS Security Hub per il rilevamento delle minacce</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">Imposta le autorizzazioni in AWS Security Hub.</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">Imposta la chiave di accesso all'autenticazione e la chiave segreta in AWS Security Hub.  (Questi passaggi non sono forniti qui.)</block>
-  <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">Passaggi per impostare le autorizzazioni in AWS Security Hub</block>
   <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">Vai alla *console AWS IAM*.</block>
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">Selezionare *Politiche*.</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">Crea una policy utilizzando il seguente codice in formato JSON:</block>
@@ -1375,11 +1368,8 @@
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">Come si associano i dati a un carico di lavoro?</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">Ransomware Resilience rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.</block>
   <block id="f7d49d845f0e8fd37a070e797785ddd2" category="paragraph-title">Che cosa è un carico di lavoro protetto?</block>
-  <block id="7259cd6e0f46eebf9079f25f465a8c63" category="inline-link-macro">Protezione autonoma dal ransomware (ARP)</block>
-  <block id="7fd0dced59717f1ce225e83c1eba7879" category="paragraph">In Ransomware Resilience, un carico di lavoro mostra uno stato di *protetto* quando ha una policy di _rilevamento_ primaria abilitata, ovvero <block ref="f47b2a56bf7e72f952a180e4f688a755" category="inline-link-macro-rx"></block> è abilitato su tutti i volumi correlati al carico di lavoro.</block>
   <block id="a7728d009ece45c9ca2552ef1b9e83b5" category="paragraph-title">Che cosa si intende per carico di lavoro "a rischio"?</block>
   <block id="feb245a8019757951a6c89440c58dbd0" category="inline-link-macro">politica di rilevamento</block>
-  <block id="073899b4550e086de0057b494471a8d5" category="paragraph">Se un carico di lavoro non ha un criterio di rilevamento primario abilitato, viene etichettato come "a rischio" anche se ha un criterio di backup e snapshot abilitato. Per la protezione dal ransomware, dovresti abilitare un <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
   <block id="77f988a37bbdd1881b090c55f9b830f1" category="paragraph-title">Ho aggiunto un nuovo volume, ma non è ancora uscito. Cosa dovrei fare?</block>
   <block id="2173d44554906f5f04303f8e155b7e0d" category="inline-link-macro">applicare policy di protezione per proteggere il nuovo volume</block>
   <block id="b79a0001646a8a21be92374c30d89073" category="paragraph">Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazione del carico di lavoro. Dopo che il volume è stato scoperto, <block ref="11d93ee27365ded5cd7b6061cdb7f916" category="inline-link-macro-rx"></block>.</block>
@@ -1622,8 +1612,6 @@
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">Numero massimo di copie snapshot</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*Politica di replicazione critica*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">Replicazione secondaria a ONTAP</block>
-  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*Rilevamento primario*: abilita Ransomware Resilience per rilevare potenziali attacchi ransomware.</block>
-  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*Blocca estensioni file*: abilita Ransomware Resilience per bloccare le estensioni di file sospette note. Ransomware Resilience esegue automaticamente copie snapshot quando il rilevamento primario è abilitato.</block>
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*Politica di replicazione*:</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*Nome base della policy di replicazione*: immettere un nuovo nome o sceglierne uno esistente. Il nome base è il prefisso aggiunto a tutti gli snapshot.</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*Pianificazioni di replicazione*: attiva/disattiva le frequenze che desideri abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da conservare) per ogni pianificazione abilitata.</block>
@@ -2346,7 +2334,6 @@
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">Ransomware Resilience supporta i seguenti sistemi SIEM:</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">NetApp Ransomware Resilience fornisce anche <block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>.</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*titolo*: Il nome visualizzato dell'avviso rilevato.</block>
-  <block id="bf49f7b724de055a76d11fee549a6a9c" category="paragraph">Prima di abilitare AWS Security Hub in Ransomware Resilience, è necessario eseguire i seguenti high-level passaggi in AWS Security Hub:</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">Autentica AWS Security Hub in NetApp Ransomware Resilience</block>
   <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">In Ransomware Resilience, seleziona *Impostazioni* nella barra laterale.</block>
   <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">Scegli *AWS Security Hub* come provider SIEM.</block>
@@ -2562,4 +2549,18 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">La tua politica di rilevamento può includere tutte e tre le opzioni o una combinazione. Deve includere il rilevamento della crittografia o <block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>.</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*Modifiche alla protezione*: include una revisione delle modifiche alle strategie di protezione per i carichi di lavoro in un determinato periodo di tempo: 30 giorni, 60 giorni, 90 giorni o 1 anno.</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">08 giugno 2026</block>
+  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">In Ransomware Resilience, un carico di lavoro mostra lo stato *protetto* quando è abilitata una policy di _rilevamento_. La policy di rilevamento deve consistere nel rilevamento della crittografia o nel rilevamento di comportamenti utente sospetti (o entrambi). Può anche includere il rilevamento di estensioni di file sospette. Per ulteriori informazioni, vedere <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
+  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">Se un carico di lavoro non ha una policy di rilevamento abilitata, viene etichettato come "a rischio" anche se ha una policy di backup e snapshot abilitata. Per la protezione dal ransomware, dovresti abilitare una <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>.</block>
+  <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa al normale funzionamento e smette di inviare avvisi per eventi simili.</block>
+  <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">Se si dispone di una strategia di protezione esistente e si disabilita una forma di rilevamento, gli avvisi creati con la precedente versione della policy possono essere contrassegnati solo come "Risolti" non "Ignorati". Ad esempio, se si disponeva di un avviso attivo per una strategia di protezione che includeva il rilevamento della crittografia e il comportamento sospetto degli utenti, ma si disabilita il rilevamento della crittografia, è possibile contrassegnare tale avviso solo come "Risolto".</block>
+  <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*Rilevamento della crittografia*: Abilita la resilienza al ransomware per rilevare gli attacchi basati sulla crittografia.</block>
+  <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*Rilevamento di comportamenti utente sospetti*: Abilita il rilevamento del comportamento utente per trasmettere gli eventi relativi all'attività dell'utente a Ransomware Resilience e rilevare eventi sospetti come violazioni di dati o distruzione di dati.</block>
+  <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*Blocca le estensioni dei file*: Abilita la Ransomware Resilience per bloccare le estensioni di file sospette note.</block>
+  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">È possibile scegliere qualsiasi combinazione di policy di rilevamento. La policy di rilevamento deve includere il rilevamento della crittografia o il rilevamento di comportamenti utente sospetti.</block>
+  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*Protetto*: viene applicata una policy di rilevamento.</block>
+  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*A rischio*: Non viene applicata alcuna policy. Se a un carico di lavoro non è abilitata una policy di rilevamento, è considerato "a rischio" anche se ha una policy di snapshot e una policy di backup abilitate.</block>
+  <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*In corso*: È in corso l'applicazione di una policy, ma l'operazione non è ancora stata completata.</block>
+  <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Errore*: È stata configurata una policy di backup, ma si è verificato un errore.</block>
+  <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">Prima di abilitare AWS Security Hub in Ransomware Resilience, è necessario eseguire le configurazioni di sicurezza in AWS Security Hub:</block>
+  <block id="6209d7a62e35781f2a36ba4149e80d90" category="list-title">Configura le autorizzazioni in AWS Security Hub</block>
 </blocks>
