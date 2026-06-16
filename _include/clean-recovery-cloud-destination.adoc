@@ -12,7 +12,7 @@
 
 
 
-NOTE: Se stai configurando un IRE con la sorgente in Amazon FSxN per ONTAP, ignora questo requisito IP LIF dati SVM della clean room.
+NOTE: Se stai configurando un IRE con la sorgente in Amazon FSx for NetApp ONTAP, salta questo requisito dell'IP LIF dati SVM della clean room.
 
 .Tabella di routing dell'ambiente di produzione
 * La tabella di routing di produzione deve consentire il traffico dalla sottorete IRE all'indirizzo IP LIF dei dati di ripristino puliti. È necessario aggiungere questa rotta alla tabella di routing di produzione.

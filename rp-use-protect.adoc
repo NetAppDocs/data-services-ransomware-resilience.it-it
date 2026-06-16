@@ -48,7 +48,7 @@ Attualmente è possibile replicare gli snapshot solo nell'archiviazione ONTAP lo
 
 
 
-NOTE: Se stai configurando strategie di protezione per Amazon FSxN per ONTAP e Azure NetApp Files, consulta link:rp-reference-limitations.html["le limitazioni per ogni servizio"].
+NOTE: Se stai configurando strategie di protezione per Amazon FSx for NetApp ONTAP e Azure NetApp Files, consulta link:rp-reference-limitations.html["le limitazioni per ogni servizio"].
 
 
 TIP: Per una migliore gestione e protezione del tuo patrimonio di dati, puoi creare link:task-protection-group.html["carichi di lavoro di gruppo"] per proteggere collettivamente i volumi con un'unica strategia.

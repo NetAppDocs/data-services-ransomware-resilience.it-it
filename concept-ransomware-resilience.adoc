@@ -212,7 +212,7 @@ Ransomware Resilience supporta i seguenti obiettivi di backup, sistemi e origini
 | Ambiente | Protocollo | Versioni supportate 
 
 
-| Amazon FSx for NetApp ONTAP* | CIFS, NFS and SAN | N / A 
+| Amazon FSx for NetApp ONTAP | CIFS, NFS and SAN | N / A 
 
 
 | Azure NetApp Files | CIFS e NFS | N / A 
@@ -244,8 +244,6 @@ Ransomware Resilience supporta i seguenti obiettivi di backup, sistemi e origini
 
 | Google Cloud NetApp Volumes | CIFS, NFS, SAN (iSCSI e NVMe) | N / A 
 |===
-{asterisco} Amazon FSx for NetApp ONTAP utilizza Autonomous Ransomware Protection (ARP) e non ARP/AI.  Per maggiori informazioni sulla differenza, vederelink:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/IA"^] .
-
 
 NOTE: Il rilevamento dell'attività dell'utente non è supportato per Azure NetApp Files o Google Cloud NetApp Volumes. Per ulteriori informazioni sul supporto per il rilevamento dell'attività dell'utente, vedere link:reference-user-activity-requirements.html["Requisiti di rilevamento delle attività degli utenti"].
 
