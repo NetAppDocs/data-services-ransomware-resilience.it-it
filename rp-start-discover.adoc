@@ -31,6 +31,9 @@ All'interno di ciascun agente della Console, selezionare i sistemi in cui si des
 
 La scoperta dei carichi di lavoro non li protegge automaticamente. Ransomware Resilience riconosce le policy di protezione esistenti da NetApp Backup and Recovery o ONTAP durante il processo di rilevamento. Per tutti i carichi di lavoro che non dispongono di protezione è necessario link:rp-use-protect.html["configurare la protezione"].
 
+
+NOTE: Ransomware Resilience può rilevare fino a 3.000 carichi di lavoro per ogni agente Console.
+
 .Passi
 . Dalla NetApp Console, seleziona *Protezione* > *Ransomware Resilience*.
 +
