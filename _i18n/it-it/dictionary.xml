@@ -2405,7 +2405,6 @@
   <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">Se devi aggiornare le autorizzazioni degli utenti non amministratori per un determinato sistema, segui questa procedura:</block>
   <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">Accedi alla Console. Nella dashboard, identifica il sistema per il quale è necessario aggiornare le autorizzazioni utente ONTAP.</block>
   <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">ripristini puliti</block>
-  <block id="ff3968cf2fd662dd2275d75511ef33af" category="cell">CIFS, NFS, SAN (iSCSI e NVMe)</block>
   <block id="a1b7351b5e78c5f7b3c07f1f9b210761" category="doc">Supporto per Google Cloud NetApp Volumes (anteprima)</block>
   <block id="d80af1c0606a32f418ab576db57cacc1" category="paragraph">Ransomware Resilience ora supporta i sistemi Google Cloud NetApp Volumes, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Google Cloud NetApp Volumes. Durante la fase di rilevamento, Ransomware Resilience visualizza automaticamente i carichi di lavoro dai sistemi Google Cloud NetApp Volumes. Quando rilevi i sistemi, questi appaiono nella dashboard di Ransomware Resilience. Il supporto per Google Cloud NetApp Volumes in Ransomware Resilience è attualmente in anteprima.</block>
   <block id="35b27350003f459df80234524883b5fc" category="inline-link-macro">Limitazioni nella resilienza al ransomware</block>
@@ -2563,4 +2562,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Per gli IRE distribuiti su Amazon FSx per NetApp ONTAP, non devi fornire queste informazioni.</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilience può rilevare fino a 3.000 carichi di lavoro per ogni agente Console.</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">C'è un limite di 3.000 carichi di lavoro per ogni agente Console.</block>
+  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">I carichi di lavoro SAN di Google Cloud NetApp Volumes al momento non sono supportati in Ransomware Resilience.</block>
+  <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">Politica di replica</block>
 </blocks>
