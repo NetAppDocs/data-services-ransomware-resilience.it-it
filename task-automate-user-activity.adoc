@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-automate-user-activity.html 
+keywords: data breach detection, data breach, user activity, automated response 
+summary: NetApp Ransomware Resilience supporta la creazione di risposte automatizzate agli eventi di attività degli utenti, consentendoti di creare automaticamente una snapshot o bloccare un utente. 
+---
+= Automatizza le risposte agli avvisi di attività degli utenti in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience supporta la creazione di risposte automatizzate a link:concept-user-behavior.html["eventi di attività utente"]. Con risposte automatizzate, Ransomware Resilience può creare uno snapshot o bloccare un utente quando viene rilevato un attacco o un avviso, permettendo una risposta più rapida agli eventi ransomware.
+
+Le risposte automatiche sono supportate per gli eventi di crittografia (comportamento dell'utente), violazione dei dati e distruzione dei dati. Devi avere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Hai configurato un agente di attività utente, abilitato una policy con rilevamento dell'attività utente e creato un connettore di directory utente"] prima di creare una risposta automatica.
+
+
+
+== Crea una risposta automatica
+
+Puoi proteggere solo una macchina virtuale di archiviazione con almeno un carico di lavoro protetto da una policy di rilevamento di comportamenti utente sospetti.
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro Monitoraggio attività utente, seleziona **Gestisci**.
+. Seleziona la scheda **Risposte automatiche**.
+. Seleziona **Aggiungi** per creare il comportamento.
+. Inserisci un **Nome** per la risposta automatica.
+. Scegli il tipo di evento che attiva la risposta: **Attacco** o **Avviso**. Scopri di più sulle diverse link:rp-use-alert.html#alert-types-and-statuses["tipi di avvisi"].
+. Scegli la risposta:
++
+** **Blocco accesso utente**: l'utente viene bloccato da tutte le storage VM protette da NetApp Ransomware Resilience quando viene attivato l'avviso.
++
+Se scegli questa opzione, devi anche selezionare la durata del blocco. Può essere un intervallo compreso tra 1 e 24 ore oppure permanente.
+
+** **Crea snapshot**: crea uno snapshot dei carichi di lavoro interessati da utilizzare per un eventuale ripristino. Gli snapshot vengono conservati per sette giorni.
+
+
+. Seleziona le tipologie di avviso che attivano la risposta automatica:
++
+|===
+
+
+| Tipo di avviso | Descrizione 
+
+
+| Crittografia (comportamento dell'utente) | Ransomware Resilience identifica attività anomale di lettura, scrittura e ridenominazione di file eseguite da uno specifico utente. 
+
+
+| Violazione dei dati | Ransomware Resilience rileva modelli anomali di accesso in lettura ai file eseguiti da uno specifico utente. 
+
+
+| Distruzione dei dati | Ransomware Resilience rileva la cancellazione massiva di file da parte di uno specifico utente. 
+|===
+. Seleziona le macchine virtuali di archiviazione a cui applicare la risposta automatica.
+. Seleziona **Aggiungi** per creare la risposta automatica.
+
+
+
+
+== Modifica una risposta automatica
+
+Dopo aver creato una risposta automatizzata, puoi metterla in pausa, riavviarla o modificarla. Puoi modificare il nome della risposta, i tipi di avvisi che la attivano, le storage VM e l'azione intrapresa.
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro Monitoraggio attività utente, seleziona **Gestisci**.
+. Seleziona la scheda **Risposte automatiche**.
+. Seleziona la risposta automatica che vuoi modificare.
+. Per mettere in pausa o eliminare la risposta, seleziona il menu Azioni, poi **Pausa** (o **Avvia**) o **Elimina**.
++
+Per modificare la risposta, seleziona **Modifica**.
+
+. Puoi modificare tutte le impostazioni, tranne la gravità dell'avviso.
+. Seleziona **Salva** per acquisire le modifiche.
+

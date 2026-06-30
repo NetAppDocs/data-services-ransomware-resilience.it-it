@@ -50,3 +50,10 @@ image:screen-dashboard.png["Pagina del dashboard"]
 image:screen-reports.png["Pagina dei report che mostra il report dell'esercitazione di preparazione"]
 
 
+
+
+
+== Ulteriori informazioni
+
+* link:task-automate-user-activity.html["Automatizza le risposte agli eventi di attività dell'utente"]
+

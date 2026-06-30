@@ -70,11 +70,11 @@ image:user-activity-agent.png["Screenshot dell'interfaccia dell'agente di aggiun
 
 . Selezionare **Avanti**.
 . Rivedi le tue impostazioni. Selezionare *Attiva* per completare l'aggiunta dell'agente di attività utente.
-. Conferma che l'agente di attività utente è stato creato correttamente. Nel riquadro Attività utente, una distribuzione riuscita viene visualizzata come **Running**.
+. Conferma che l'agente di monitoraggio delle attività utente sia stato creato correttamente. Nel riquadro di monitoraggio delle attività utente, una distribuzione riuscita viene visualizzata come **Running**.
 
 
 .Risultato
-Dopo che l'agente di attività utente è stato creato correttamente, torna al menu **Impostazioni** e seleziona **Gestisci** nel riquadro Attività utente. Seleziona la scheda **Agenti di attività utente** e poi seleziona l'agente di attività utente per visualizzare i dettagli relativi, inclusi i collettori di dati e i connettori della directory utente.
+Dopo che l'agente di attività utente è stato creato correttamente, torna al menu **Impostazioni** e seleziona **Gestisci** nel riquadro Monitoraggio attività utente. Seleziona la scheda **Agenti di attività utente** e poi seleziona l'agente di attività utente per visualizzare i dettagli, inclusi i data collector e i connettori della directory utente.
 
 
 
@@ -82,7 +82,7 @@ Dopo che l'agente di attività utente è stato creato correttamente, torna al me
 
 I raccoglitori di dati vengono creati automaticamente quando si abilita una strategia di protezione dal ransomware con rilevamento dell'attività dell'utente. Per ulteriori informazioni, vedere link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["aggiungere una politica di rilevamento"].
 
-È possibile visualizzare i dettagli del raccoglitore dati. Da Impostazioni, seleziona **Gestisci** nel riquadro Attività utente. Selezionare la scheda **Raccolta dati**, quindi selezionare la raccolta dati per visualizzarne i dettagli o metterla in pausa.
+Puoi visualizzare i dettagli del data collector. Dalle Impostazioni, seleziona **Gestisci** nel riquadro User activity monitoring. Seleziona la scheda **Data collector** e poi seleziona il data collector per visualizzarne i dettagli o metterlo in pausa.
 
 image:user-activity-settings.png["Screenshot delle impostazioni dell'attività utente."]
 
@@ -94,7 +94,7 @@ Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di 
 
 .Passi
 . In Ransomware Resilience, vai su *Impostazioni*.
-. Nel riquadro Attività utente, seleziona **Gestisci**.
+. Nel riquadro Monitoraggio attività utente, seleziona **Gestisci**.
 . Selezionare la scheda **Connettori directory utente**, quindi **Aggiungi**.
 . Configurare la connessione. Inserisci le informazioni richieste per ogni campo.
 +
@@ -151,8 +151,8 @@ Fornire i dettagli della mappatura degli attributi:
 === Elimina un connettore di directory utente
 
 .Passi
-. In Ransomware Resilience, vai su *Impostazioni*.
-. Individua il riquadro Attività utente e seleziona **Gestisci**.
+. In Ransomware Resilience, seleziona *Impostazioni*.
+. Individua il riquadro Monitoraggio attività utente e seleziona **Gestisci**.
 . Selezionare la scheda **Connettore directory utente**.
 . Identifica il connettore della directory utente che desideri eliminare. Nel menu azioni alla fine della riga, seleziona i tre punti `...` quindi **Elimina**.
 . Nella finestra di dialogo pop-up, seleziona **Delete** per confermare.
@@ -160,50 +160,15 @@ Fornire i dettagli della mappatura degli attributi:
 
 
 
-=== Escludi gli utenti dagli avvisi
-
-Se ci sono determinati utenti attendibili il cui comportamento potrebbe attivare avvisi sul comportamento degli utenti, puoi escluderli dagli avvisi.
-
-.Passi
-. In Ransomware Resilience, seleziona **Impostazioni**.
-. Nella dashboard Impostazioni, individua la scheda User activity, quindi seleziona **Manage**.
-. Seleziona la scheda **Utenti esclusi**.
-. Per rivedere i singoli utenti nell'interfaccia utente, seleziona **Seleziona manualmente**. Per caricare un elenco di utenti esclusi, seleziona **Carica**.
-+
-.. Se hai selezionato **Seleziona manualmente**, seleziona la casella di controllo accanto ai nomi degli utenti specifici che desideri escludere.
-.. Se selezioni **Upload**, scarica il file CSV o JSON che include l'elenco di tutti gli utenti. Seleziona **Download** per accedere all'elenco.
-+
-Esamina il file sul tuo computer locale. Rimuovi i nomi di tutti gli utenti per cui desideri mantenere il rilevamento. Quando l'elenco include solo i nomi degli utenti che desideri escludere dal rilevamento, salvalo.
-
-+
-In NetApp Ransomware Resilience, seleziona **Carica**. Individua e carica il file.
-
-
-
-. Seleziona **Aggiungi** per completare l'aggiunta degli utenti all'elenco delle esclusioni.
-. Nella scheda **Utenti esclusi**, i nomi degli utenti rimossi dagli avvisi di rilevamento del comportamento utente ora vengono visualizzati nella dashboard.
-
-
-
-TIP: È anche possibile escludere un utente direttamente da un avviso. Per ulteriori informazioni, vedere link:rp-use-alert.html["Rispondere agli avvisi di ransomware"].
-
-
-
-==== Rimuovi gli utenti dall'elenco degli utenti esclusi
-
-È possibile aggiungere nuovamente un utente al rilevamento in seguito.
-
-.Passi
-. Nella dashboard Impostazioni, individua la scheda User activity, quindi seleziona **Manage**.
-. Seleziona la scheda **Utenti esclusi**.
-. Selezionare **Aggiungi**.
-. Per escludere singoli utenti dall'interfaccia utente, scegliere **Seleziona manualmente**.
-. Individua il nome dell'utente che desideri rimuovere dalla selezione degli utenti esclusi. Seleziona il menu Azione (`...` sulla riga con il nome dell'utente, quindi **Rimuovi**.
-. Nella finestra di dialogo, seleziona **Remove** per confermare che desideri rimuovere gli utenti selezionati.
-
-
-
-
 == Rispondere agli avvisi di attività degli utenti
 
 Dopo aver configurato il rilevamento dell'attività dell'utente, è possibile monitorare gli eventi nella pagina degli avvisi. Per ulteriori informazioni, consultare link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Rileva attività dannose e comportamenti sospetti degli utenti"].
+
+È inoltre possibile link:task-automate-user-activity.html["Automatizza le risposte agli eventi di attività dell'utente"].
+
+
+
+== Prossimi passi
+
+* link:task-users-manage.html["Gestisci il blocco degli utenti e gli avvisi in NetApp Ransomware Resilience"]
+

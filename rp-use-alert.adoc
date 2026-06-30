@@ -207,12 +207,14 @@ Se hai configurato il rilevamento del comportamento dell'utente, puoi visualizza
 +
 .. Per bloccare un utente sospetto nel tuo ambiente, seleziona *Block* accanto al nome dell'utente.
 .. Per disattivare gli avvisi su un determinato utente che è oggetto di un avviso che sai essere falso, seleziona i tre puntini (`...` quindi **Escludi questo utente dal monitoraggio**. Rivedi la finestra di dialogo quindi seleziona **Escludi** per confermare.
+.. Nel riquadro *Risposte*, seleziona **Crea snapshot ora** per creare uno snapshot.
+.. Se hai abilitato una risposta automatica sull'SVM, seleziona **Modifica blocco utente** per bloccare l'utente. Per bloccare l'utente, seleziona **Periodo di tempo per l'utente bloccato** e imposta la durata del blocco (da un'ora a permanente). Puoi anche sbloccare l'utente se pensi che l'avviso non sia un evento ransomware. Seleziona **Salva**.
 
 
 
 
 
-TIP: Per riattivare gli avvisi per un utente, restituisci l'avviso. Seleziona i tre puntini e poi **Includi questo utente nel monitoraggio**. Puoi anche link:suspicious-user-activity.html#exclude-users-from-alerts["Escludi utenti"] dal monitoraggio.
+TIP: Per riattivare gli avvisi per un utente, restituisci l'avviso. Seleziona i tre puntini e poi **Includi questo utente nel monitoraggio**. Puoi anche link:task-users-manage.html["Escludi utenti"] dal monitoraggio.
 
 
 
