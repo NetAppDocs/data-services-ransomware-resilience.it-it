@@ -437,85 +437,40 @@
   <block id="3b6afbed7c49d679fd061dcc03462ca9" category="admonition">Se si dispone di più agenti della Console, Ransomware Resilience esegue la scansione dei dati su tutti gli agenti della Console, ad eccezione di quello attualmente visualizzato nella Console.  Questo servizio rileva tutti i progetti e tutti gli agenti della console associati a questa organizzazione.</block>
   <block id="427b8d3f96436f6a74500df89f6e5e4b" category="summary">Eseguire un'esercitazione di preparazione al ransomware simulando un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro di esempio.  È possibile eseguire più volte un'esercitazione di preparazione al ransomware.</block>
   <block id="004823325f4227a58d03f7083e873d82" category="doc">Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience</block>
-  <block id="9d5986928b4d9f163f32ad92b34e5f6c" category="paragraph">Esegui un'esercitazione di preparazione ad un attacco ransomware simulando un attacco su un nuovo carico di lavoro di esempio.  Esaminare l'attacco simulato e recuperare il carico di lavoro.  Utilizzare questa funzione per testare le notifiche di avviso, la risposta e il ripristino.  Eseguire il trapano tutte le volte che è necessario.</block>
   <block id="1beda934b3626b55dcd019ee000eb5bb" category="admonition">I dati del tuo carico di lavoro reale non subiscono alcun impatto.</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">È possibile eseguire esercitazioni di preparazione sui carichi di lavoro NFS e CIFS (SMB).</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">Configurare un'esercitazione di preparazione all'attacco ransomware</block>
-  <block id="967881e6d2dc084af896f11a462fd3aa" category="paragraph">Prima di eseguire una simulazione, imposta un'esercitazione nella pagina Impostazioni.  Accedi alla pagina Impostazioni dall'opzione Azioni nel menu in alto.</block>
-  <block id="af27ed6a55d6e157eb9aa729fc023e25" category="paragraph">È necessario immettere un nome utente e una password nelle seguenti situazioni:</block>
-  <block id="0e88bee7df752028718ee649bb708730" category="list-text">Se si sono verificate modifiche al nome utente o alla password per la VM di archiviazione selezionata in precedenza</block>
-  <block id="c41a1b315fb28fed8deab2192a3edf47" category="list-text">Se selezioni una VM di archiviazione CIFS (SMB) diversa</block>
-  <block id="f5db11c84a05565db3aa0ce4df7af48b" category="list-text">Se si immette un nome di carico di lavoro di prova diverso</block>
-  <block id="111cf58b2700ca43f2e6075a6eb39f74" category="list-text">Dal menu NetApp Ransomware Resilience , seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.</block>
   <block id="008b8b82922cab3483d70d8899f74b5c" category="inline-image-macro">Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione</block>
   <block id="3e3777c0093c940cbceb8cd58c4f9dac" category="paragraph"><block ref="3e3777c0093c940cbceb8cd58c4f9dac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">Nella scheda di esercitazione sulla prontezza nella pagina Impostazioni, seleziona *Configura*.</block>
-  <block id="5a6ea2c21bfdd4f145b28691ccbbba4f" category="paragraph">La Console visualizza la pagina di configurazione dell'esercitazione di preparazione.</block>
-  <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">Configura la pagina di esercitazione di preparazione</block>
-  <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5382046ea385cbcd7367b36d70b4decb" category="list-text">Procedi come segue:</block>
-  <block id="26069ed470ab5c0a17dac9d962d81768" category="list-text">Selezionare l'agente della console che si desidera utilizzare per l'esercitazione di preparazione.</block>
-  <block id="6c66a8a541d348bc3f3a48dc2e58492c" category="list-text">Selezionare un sistema di prova.</block>
-  <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">Selezionare un SVM di archiviazione di prova.</block>
-  <block id="09cb5a7830e25d2457463ef0f909f5a0" category="list-text">Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">È possibile modificare la configurazione dell'esercitazione di preparazione in un secondo momento utilizzando la pagina Impostazioni.</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">Avviare un'esercitazione di preparazione</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.</block>
-  <block id="7aa812939fe3418657c0f50a2117b3cb" category="paragraph">Quando si avvia l'esercitazione di preparazione, Ransomware Resilience salta la modalità di apprendimento e avvia l'esercitazione in modalità attiva.  Lo stato di rilevamento del carico di lavoro è Attivo.</block>
-  <block id="f0a3c0943e04d17a02c290b3d11c3717" category="admonition">Un carico di lavoro può avere uno stato di *Modalità di apprendimento* per il rilevamento ransomware quando di recente è stato assegnato un criterio di rilevamento e Ransomware Resilience esegue la scansione dei carichi di lavoro.</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">Eseguire una delle seguenti operazioni:</block>
-  <block id="298c644723428b96dd61c8e59f47eee9" category="list-text">Dal menu Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.</block>
-  <block id="8d2bd4422410271303c0633a19aefea9" category="list-text">OPPURE, dalla pagina Impostazioni, nella scheda Esercizio di preparazione, seleziona *Avvia*.</block>
   <block id="1e4a43fb392ed69a6d5a047ba0d88826" category="section-title">Rispondere a un avviso di esercitazione di prontezza</block>
   <block id="6128067a6b325891717a7cfc23e60bae" category="paragraph">Metti alla prova la tua prontezza rispondendo a un avviso di esercitazione di prontezza.</block>
   <block id="e9ebf76599d54488581ec7e47b518db1" category="list-text">Dal menu Ransomware Resilience, seleziona *Avvisi*.</block>
   <block id="fd60ef582b0cdfbc6e56efcd83e3669a" category="paragraph">La Console visualizza la pagina Avvisi.  Nella colonna ID avviso, accanto all'ID viene visualizzato "Esercitazione di preparazione".</block>
   <block id="bfb2eabf2e2f3750c3b857a9c0072bfa" category="inline-image-macro">Pagina degli avvisi che mostra l'avviso di esercitazione di prontezza</block>
   <block id="fd9f53769c15c2cf878c35f4cbc5a081" category="paragraph"><block ref="fd9f53769c15c2cf878c35f4cbc5a081" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="918afe8d47cac8e65affe228df4d1798" category="list-text">Selezionare l'avviso con l'indicazione "Esercitazione di prontezza".  Nella pagina dei dettagli degli avvisi viene visualizzato un elenco degli avvisi di incidente.</block>
   <block id="81ec450a746d2846c599b97e0284672a" category="inline-image-macro">Pagina dei dettagli degli avvisi che mostra l'avviso di esercitazione di prontezza</block>
   <block id="2869923d8a7e4947ee11eff41f3267f2" category="paragraph"><block ref="2869923d8a7e4947ee11eff41f3267f2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7173a995c95a8992913692d7f8b29a3" category="list-text">Esaminare gli incidenti di allerta.</block>
   <block id="8094150588327954ce01d91cf529ccfc" category="list-text">Seleziona un incidente di allerta.</block>
   <block id="bf6725ca3f9665491e02c1818a34d256" category="inline-image-macro">Pagina dell'incidente che mostra l'avviso di esercitazione di prontezza</block>
   <block id="b0e402efbf054d8b9cab93c3c4e53922" category="paragraph"><block ref="b0e402efbf054d8b9cab93c3c4e53922" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dba36383db70a071d84d9ad78273ce43" category="paragraph">Ecco alcune cose da tenere a mente:</block>
-  <block id="e26826f2ec39df72ffed839fea5c19e9" category="list-text">Osserva la potenziale gravità dell'attacco.</block>
   <block id="a82587f768afa380a3cf985310780335" category="inline-link-macro">bloccare l'utente.</block>
   <block id="eab63628812531c73d2f750d4a6dad20" category="paragraph">Se la gravità indica che un utente è sospettato di attività dannose, rivedere il nome utente. Puoi anche<block ref="94387481cf2aeadb5711130400ff1590" category="inline-link-macro-rx"></block></block>
-  <block id="c7243cc109c65ad504b84c3e805c784c" category="list-text">Esaminare l'attività del file e i processi sospetti:</block>
-  <block id="fdb29353d86a86580fc253dc319e3e0b" category="list-text">Confrontare i dati rilevati in arrivo con i dati previsti.</block>
-  <block id="929c013ec98095ed1024dac131501e30" category="list-text">Confronta la velocità di creazione dei file rilevata con quella prevista.</block>
-  <block id="1a1d9c1ba30af27c48d2816231dc83e8" category="list-text">Confronta la frequenza di rinominazione dei file rilevata con quella prevista.</block>
-  <block id="452eacf856e21da57eb379e95122df3c" category="list-text">Osserva il tasso di eliminazione rispetto al tasso previsto.</block>
-  <block id="f86fe9463862bcb6c0a89b3fdbb1028b" category="list-text">Guarda l'elenco dei file interessati.  Esamina le estensioni che potrebbero causare l'attacco.</block>
   <block id="464d4de9e42b79f0c1893e372df7593d" category="list-text">Determinare l'impatto e l'ampiezza dell'attacco esaminando il numero di file e directory interessati.</block>
   <block id="d40581f789448c5ecd5a19fb28ec3cd7" category="section-title">Ripristinare il carico di lavoro del test</block>
   <block id="cf14bb05f198df8718a11d38daa4892b" category="paragraph">Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il carico di lavoro del test, se necessario.</block>
   <block id="b1b9ff3cb3c8be033645e7815ff3a231" category="list-text">Torna alla pagina dei dettagli dell'avviso.</block>
-  <block id="1428f7ff07a53448ce6c5a848493a542" category="list-text">Se il carico di lavoro del test deve essere ripristinato, procedere come segue:</block>
-  <block id="402892b652810818eb61e703ca333d06" category="list-text">Seleziona *Segna come ripristino necessario*.</block>
-  <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.</block>
   <block id="63d4b8d17265522f12b229a2016b08c9" category="list-text">Dal menu Ransomware Resilience, seleziona *Ripristino*.</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Selezionare *Ripristina*.</block>
-  <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">Nella pagina Ripristina, fornisci le informazioni per il ripristino:</block>
-  <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">Selezionare la copia dello snapshot di origine.</block>
-  <block id="773018347112b716b659352d9f401251" category="list-text">Selezionare il volume di destinazione.</block>
-  <block id="d945f439c98a4e493f221b959e0eb5a8" category="list-text">Nella pagina di revisione del ripristino, seleziona *Ripristina*.</block>
-  <block id="e2c10d3e5cc7814771b74301da2e77fb" category="paragraph">La Console visualizza lo stato del ripristino del drill di prontezza come "In corso" nella pagina Ripristino.</block>
-  <block id="be33dcf1e82018837356a18329cfd83a" category="paragraph">Una volta completato il ripristino, la Console modifica lo stato del carico di lavoro in *Ripristinato*.</block>
-  <block id="5a1452d08b817dee6f550ab72ed5761c" category="list-text">Esaminare il carico di lavoro ripristinato.</block>
-  <block id="97236d1d6456b91de75d53d6249f5af0" category="inline-link-macro">Recuperare da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati)</block>
-  <block id="225c52e147dc652783f29cce5e5f1205" category="admonition">Per i dettagli sul processo di ripristino, vedere<block ref="2318031b9bf9fde86d3a7f04f24d9774" category="inline-link-macro-rx"></block> .</block>
-  <block id="37eb9cec5c575b48f279378f147d9523" category="section-title">Modificare lo stato degli avvisi dopo l'esercitazione di preparazione</block>
   <block id="aa217641d7c21b459c5c614fba9e0b2c" category="paragraph">Dopo aver esaminato l'avviso di esercitazione di prontezza e aver ripristinato il carico di lavoro, modificare lo stato dell'avviso, se necessario.</block>
-  <block id="965e3caf98e8e0df69529bdc2c5838cc" category="paragraph">*È richiesto il ruolo Console* Amministratore dell'organizzazione, Amministratore di cartelle o progetti o Amministratore di Ransomware Resilience.<block ref="5b95efebf772ec16abdf1053e3a4558b" category="inline-link-rx"></block> .</block>
   <block id="b707d985234424bd425b96580911950e" category="list-text">Selezionare nuovamente l'avviso.</block>
-  <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">Indicare lo stato selezionando *Modifica stato* e cambiare lo stato in uno dei seguenti:</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">Ignorato: se sospetti che l'attività non sia un attacco ransomware, modifica lo stato in Ignorato.</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">Risolto: l'incidente è stato mitigato.</block>
   <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">Rivedere i rapporti sull'esercitazione di preparazione</block>
-  <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">Una volta completata l'esercitazione di preparazione, potresti voler rivedere e salvare un report sull'esercitazione.</block>
   <block id="d4a3a2b9e82e37bb02affeedbb17575f" category="list-text">Dal menu Ransomware Resilience, seleziona *Report*.</block>
   <block id="50ca22b8d354f001a742f726d3cf2be9" category="inline-image-macro">Pagina dei report che mostra il report dell'esercitazione di preparazione</block>
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
@@ -839,7 +794,6 @@
   <block id="571f33f6eea9a8d4cbc40d9ea733c1e9" category="list-text">Nella pagina Gestisci strategie, seleziona *Azioni*<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block> opzione per la strategia che vuoi eliminare.</block>
   <block id="b850d388555da9da0c8036cffa6c6951" category="list-text">Dal menu Azioni, seleziona *Elimina criterio*.</block>
   <block id="2626c315654649457283f31cd264c39c" category="summary">Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di backup sullo storage secondario siano puliti, consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.</block>
-  <block id="197d5e3f8c27a534ff428274b4db5d59" category="paragraph">Dopo che i carichi di lavoro sono stati contrassegnati come "Ripristino necessario", NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.</block>
   <block id="57a6bb038991f08ac0fdcf64095bd0af" category="paragraph">È possibile ripristinare il carico di lavoro selezionando tutti i volumi, volumi specifici o file specifici.</block>
   <block id="b5ccdb3dc0dc7a8afa4ba1ad3929e36a" category="admonition">Il ripristino del carico di lavoro può avere un impatto sui carichi di lavoro in esecuzione.  Dovresti coordinare i processi di recupero con le parti interessate appropriate.</block>
   <block id="3ab57f205469e682011f73cdb8f98562" category="list-text">*Ripristino necessario*: il carico di lavoro deve essere ripristinato.</block>
@@ -1290,7 +1244,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">Domande frequenti</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Conoscenza e supporto</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">Backup dei dati</block>
-  <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">Non è possibile modificare la configurazione dell'esercitazione di preparazione mentre l'esercitazione è in esecuzione. È possibile reimpostare il trapano per fermarlo e modificarne la configurazione.</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi. Tuttavia, Ransomware Resilience può essere integrato con NetApp Backup and Recovery, anche se non si dispone di una licenza separata per Backup and Recovery.</block>
   <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">Scopri i passaggi principali da seguire per impostare la Ransomware Resilience e proteggere i tuoi carichi di lavoro.</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">Per informazioni dettagliate, seguire i link presenti in ogni passaggio.</block>
@@ -1971,9 +1924,7 @@
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilience offre ora un playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) <block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>. Il playbook semplifica la gestione della risposta alle minacce, automatizza attività e test e supporta le attività essenziali di risposta al ransomware, tra cui la creazione di snapshot e la messa offline di un volume.</block>
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware Resilience offre playbook per Google SecOps, Microsoft Sentinel e Splunk. Consulta le rispettive pagine GitHub per i dettagli di configurazione.</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Si sconsiglia di utilizzare <block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block> con Azure NetApp Files poiché le API di Azure NetApp Files bloccano le azioni automatizzate.</block>
-  <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">Inserisci il nome per il carico di lavoro di test. Non includere trattini nel nome.</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">Dopo aver ignorato un attacco, non è possibile ripristinarlo. Se si ignora un carico di lavoro, tutte le copie snapshot acquisite automaticamente in risposta al potenziale attacco ransomware verranno eliminate definitivamente. Se si ignora l'avviso, l'esercitazione di preparazione si considera completata.</block>
-  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">Seleziona il carico di lavoro di prova contrassegnato con "Esercitazione di preparazione" che desideri ripristinare.</block>
   <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
   <block id="a8fdc49c32c2aa34ebd35cbf9823def6" category="section-title">Configurare Splunk Cloud e Splunk Enterprise per il rilevamento delle minacce</block>
   <block id="681024dbfdb70dd04ac980451d89db64" category="paragraph">Ransomware Resilience supporta il rilevamento delle minacce con Splunk Cloud e Splunk Enterprise. Prima di abilitare la connessione Splunk in Ransomware Resilience, è necessario:</block>
@@ -2484,7 +2435,6 @@
   <block id="d266a5bcc7addbbfb5f3a2a3a2da96b4" category="paragraph">Dopo aver configurato la protezione in Ransomware Resilience, è possibile:</block>
   <block id="109acfe0b7e8d2f9308c5731f4ac86cf" category="inline-link-macro">Configura un playbook SOAR</block>
   <block id="02d1f111792f02519c820dcc08793e25" category="list-text"><block ref="02d1f111792f02519c820dcc08793e25" category="inline-link-macro-rx"></block></block>
-  <block id="6a9d17e41c0c073fa0d9711e06fada20" category="list-text">Seleziona il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati di crittografia, scegli **Ripristino personalizzato**. Per il ripristino da un comportamento sospetto dell'utente, scegli **Violazione dei dati**.</block>
   <block id="edf3f8822a49a1bb13fbd120171d257c" category="inline-link-macro">Scopri come rilevare l'attività dell'utente</block>
   <block id="0b86f0cc70fa97941f30d9b58654f3af" category="paragraph">È necessario aver configurato un agente di attività utente e abilitato una policy di protezione con rilevamento del comportamento utente per visualizzare gli avvisi a livello utente. La colonna *Utente sospetto* viene visualizzata nel dashboard degli avvisi solo quando è abilitato il rilevamento del comportamento utente. Per ulteriori informazioni, <block ref="c0b52a716b3bac77455f18f3a2c3f3e3" category="inline-link-macro-rx"></block>.</block>
   <block id="6726b54c5a2ddd1b0d3a5f45023156e4" category="paragraph">Se hai configurato il rilevamento del comportamento dell'utente, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare il rilevamento dell'attività dell'utente, consulta <block ref="3140e0dc60f85706f2dff3cb0112bd4a" category="inline-link-macro-rx"></block>.</block>
@@ -2626,4 +2576,39 @@
   <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">29 giugno 2026</block>
   <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">Gestisci avvisi e blocchi utente</block>
+  <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience per testare la tua prontezza a un vero attacco ransomware. Con l'esercitazione di preparazione, Ransomware Resilience simula un attacco su un nuovo carico di lavoro di esempio, permettendoti di analizzare l'attacco simulato ed eseguire un ripristino senza impattare sui tuoi dati di produzione. L'esercitazione di preparazione ti aiuta a familiarizzare con le notifiche di avviso e a prepararti per la risposta e il ripristino. Puoi eseguire l'esercitazione tutte le volte che vuoi.</block>
+  <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">Nel riquadro dell'esercitazione di preparazione, seleziona **Configura**.</block>
+  <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">Scegli il **tipo di esercitazione di preparazione**.</block>
+  <block id="7b1c6c26786355a2591470660c65da62" category="inline-link-macro">un ripristino personalizzato</block>
+  <block id="0f17af467c79e20d3693f219481946ab" category="list-text">**Ripristino personalizzato**: questa procedura crea un avviso e poi ti permette di eseguire <block ref="03c74c192711f88b7d0a53dcc4c4539e" category="inline-link-macro-rx"></block> dove configuri il punto di ripristino.</block>
+  <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">ripristino pulito</block>
+  <block id="c4ea46b930e86e42d84d7d62143805bf" category="list-text">**Ripristino pulito**: questa procedura genera un avviso e poi ti porta al <block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block> processo di ripristino, che ti guida verso punti di ripristino ottimizzati.</block>
+  <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">un agente di attività utente</block>
+  <block id="735dd28d475e0e047aa789767a8252e0" category="list-text">**Ripristino in caso di violazione dei dati**: questa procedura genera un avviso per un evento di violazione dei dati avviato dall'utente. Devi aver configurato <block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block> prima di poter abilitare questo tipo di procedura.</block>
+  <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">Scegli l'ambiente in cui verrà creata l'esercitazione di prontezza operativa.</block>
+  <block id="3026f14fd36d3165478399b611373fb8" category="list-text">Scegli l'**agente della console** e il **sistema**.</block>
+  <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">Dopo aver scelto il **Sistema**, scegli la **Storage VM** dall'elenco precompilato.</block>
+  <block id="3db3fb74a2b36310b9059bb1932ec7ce" category="list-text">Fornisci un nome per il **nuovo carico di lavoro di test**. Il carico di lavoro di test verrà preceduto da "rps_test_".</block>
+  <block id="c30460d790febc2f1a11000f7e9dae5a" category="list-text">Se l'esercitazione di preparazione è finalizzata al ripristino in caso di violazione dei dati, seleziona l'**User activity agent** per l'ambiente di esercitazione.</block>
+  <block id="c622e795c00706524901f4150a5ebe4e" category="inline-image-macro">Screenshot delle opzioni di configurazione dell'esercitazione di preparazione.</block>
+  <block id="f4f81b5211932d1ec08f7bbee3d205fe" category="paragraph"><block ref="f4f81b5211932d1ec08f7bbee3d205fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="022d85fe9248458ef65cf16481972329" category="list-text">Per avviare l'esercitazione:</block>
+  <block id="81107e8f37cdb96dee7eb88d136b8e27" category="list-text">Dalla dashboard di Ransomware Resilience, seleziona il pulsante *Run readiness drill* in alto a destra.</block>
+  <block id="b3833f107edd43c29b6874a2a10bef7a" category="list-text">Oppure vai su **Impostazioni**. Nel riquadro Esercitazione di preparazione, seleziona *Avvia*.</block>
+  <block id="f62bfcf4d7189e2ae5caf57497df14b5" category="admonition">Non puoi modificare la configurazione dell'esercitazione di prontezza mentre l'esercitazione è in corso. Per modificare l'esercitazione di prontezza, seleziona **Ripristina** e poi modifica l'esercitazione.</block>
+  <block id="3798ead7c288ba8d157f0c0b116976de" category="list-text">Seleziona l'avviso con l'indicazione "Esercitazione di preparazione".</block>
+  <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">Quando rivedi l'incidente, considera:</block>
+  <block id="aa823a078e061b627817667be59a3966" category="list-text">La potenziale gravità dell'attacco.</block>
+  <block id="b20c07ab3d395d21be11ec99cd4f86bc" category="list-text">L'attività sui file rispetto ai tassi previsti. Questo include il tasso di lettura/scrittura, la creazione, la ridenominazione e l'eliminazione dei file.</block>
+  <block id="79937840afd2a2e82d05deb4a76fb903" category="list-text">L'elenco dei file interessati. Guarda le estensioni che potrebbero causare l'attacco.</block>
+  <block id="993613047b942198cc7322f8e11f7420" category="list-text">Se vuoi ripristinare il carico di lavoro di prova, seleziona **Segna come necessario il ripristino** e poi seleziona di nuovo quel pulsante nella finestra di dialogo di conferma.</block>
+  <block id="d5e852ec035f9425ed8495bf6d48334d" category="list-text">Seleziona il carico di lavoro di prova contrassegnato con l'etichetta "Readiness drill" che vuoi ripristinare.</block>
+  <block id="6fa33edafac526b51cd549a1e05b2a96" category="list-text">Segui le istruzioni per lo stile di ripristino che hai configurato:</block>
+  <block id="956c8997fffc6ce6b1f22bc10d0ba47f" category="list-text"><block ref="956c8997fffc6ce6b1f22bc10d0ba47f" category="inline-link-macro-rx"></block></block>
+  <block id="d83283d005fa9bcf48b6756243aafbdc" category="list-text"><block ref="d83283d005fa9bcf48b6756243aafbdc" category="inline-link-macro-rx"></block></block>
+  <block id="f27953d6339af15a493ade74a07689a4" category="section-title">Modifica lo stato di allerta dopo l'esercitazione di prontezza</block>
+  <block id="b6445b4da8c40fc5009a5eb5b2b9969c" category="paragraph">*Ruolo richiesto nella console* Amministratore dell'organizzazione, amministratore di cartelle o progetti, oppure amministratore di NetApp Ransomware Resilience<block ref="5b95efebf772ec16abdf1053e3a4558b" category="inline-link-rx"></block>.</block>
+  <block id="42caf31af7b0b287a88952c8986218ab" category="list-text">Indica lo stato selezionando *Modifica* accanto allo stato. Cambia lo stato in uno dei seguenti:</block>
+  <block id="12c6663cbe23396ea86ae553869baab3" category="paragraph">Al termine dell'esercitazione di preparazione, puoi generare e salvare un report sull'esercitazione. Il report dell'esercitazione è un file JSON che raccoglie informazioni quali la policy di rilevamento, il tipo di avviso e la data e l'ora, i dettagli dell'attacco e lo stato di ripristino.</block>
+  <block id="4c5236fa54058c5de2620586b5275209" category="paragraph">Dopo che i carichi di lavoro sono stati contrassegnati come "Ripristino necessario", NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino resistente agli arresti anomali.</block>
 </blocks>

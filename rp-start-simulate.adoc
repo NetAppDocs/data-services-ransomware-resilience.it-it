@@ -12,7 +12,7 @@ summary: 'Eseguire un"esercitazione di preparazione al ransomware simulando un a
 
 
 [role="lead"]
-Esegui un'esercitazione di preparazione ad un attacco ransomware simulando un attacco su un nuovo carico di lavoro di esempio.  Esaminare l'attacco simulato e recuperare il carico di lavoro.  Utilizzare questa funzione per testare le notifiche di avviso, la risposta e il ripristino.  Eseguire il trapano tutte le volte che è necessario.
+Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience per testare la tua prontezza a un vero attacco ransomware. Con l'esercitazione di preparazione, Ransomware Resilience simula un attacco su un nuovo carico di lavoro di esempio, permettendoti di analizzare l'attacco simulato ed eseguire un ripristino senza impattare sui tuoi dati di produzione. L'esercitazione di preparazione ti aiuta a familiarizzare con le notifiche di avviso e a prepararti per la risposta e il ripristino. Puoi eseguire l'esercitazione tutte le volte che vuoi.
 
 
 TIP: I dati del tuo carico di lavoro reale non subiscono alcun impatto.
@@ -23,37 +23,27 @@ TIP: I dati del tuo carico di lavoro reale non subiscono alcun impatto.
 
 == Configurare un'esercitazione di preparazione all'attacco ransomware
 
-Prima di eseguire una simulazione, imposta un'esercitazione nella pagina Impostazioni.  Accedi alla pagina Impostazioni dall'opzione Azioni nel menu in alto.
-
-È necessario immettere un nome utente e una password nelle seguenti situazioni:
-
-* Se si sono verificate modifiche al nome utente o alla password per la VM di archiviazione selezionata in precedenza
-* Se selezioni una VM di archiviazione CIFS (SMB) diversa
-* Se si immette un nome di carico di lavoro di prova diverso
-
-
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 .Passi
-. Dal menu NetApp Ransomware Resilience , seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nel riquadro dell'esercitazione di preparazione, seleziona **Configura**.
+. Scegli il **tipo di esercitazione di preparazione**.
 +
-image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione"]
+** **Ripristino personalizzato**: questa procedura crea un avviso e poi ti permette di eseguire link:rp-use-recover.html["un ripristino personalizzato"] dove configuri il punto di ripristino.
+** **Ripristino pulito**: questa procedura genera un avviso e poi ti porta al link:task-clean-restore-recover.html["ripristino pulito"] processo di ripristino, che ti guida verso punti di ripristino ottimizzati.
+** **Ripristino in caso di violazione dei dati**: questa procedura genera un avviso per un evento di violazione dei dati avviato dall'utente. Devi aver configurato link:suspicious-user-activity.html["un agente di attività utente"] prima di poter abilitare questo tipo di procedura.
 
-. Nella scheda di esercitazione sulla prontezza nella pagina Impostazioni, seleziona *Configura*.
-+
-La Console visualizza la pagina di configurazione dell'esercitazione di preparazione.
 
+. Scegli l'ambiente in cui verrà creata l'esercitazione di prontezza operativa.
 +
-image:screen-settings-alert-drill-configure.png["Configura la pagina di esercitazione di preparazione"]
+.. Scegli l'**agente della console** e il **sistema**.
+.. Dopo aver scelto il **Sistema**, scegli la **Storage VM** dall'elenco precompilato.
+.. Fornisci un nome per il **nuovo carico di lavoro di test**. Il carico di lavoro di test verrà preceduto da "rps_test_".
+.. Se l'esercitazione di preparazione è finalizzata al ripristino in caso di violazione dei dati, seleziona l'**User activity agent** per l'ambiente di esercitazione.
++
+image:screen-settings-alert-drill-configure.png["Screenshot delle opzioni di configurazione dell'esercitazione di preparazione."]
 
-. Procedi come segue:
-+
-.. Selezionare l'agente della console che si desidera utilizzare per l'esercitazione di preparazione.
-.. Selezionare un sistema di prova.
-.. Selezionare un SVM di archiviazione di prova.
-.. Se hai selezionato una VM di archiviazione CIFS (SMB), vengono visualizzati i campi **Nome utente** e **Password**.  Immettere il nome utente e la password per la VM di archiviazione.
-.. Seleziona il tipo di esercitazione di preparazione. Per un ripristino manuale da una violazione dei dati di crittografia, scegli **Ripristino personalizzato**. Per il ripristino da un comportamento sospetto dell'utente, scegli **Violazione dei dati**.
-.. Inserisci il nome per il carico di lavoro di test. Non includere trattini nel nome.
 
 
 . Seleziona *Salva*.
@@ -70,25 +60,20 @@ Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.
 
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
-Quando si avvia l'esercitazione di preparazione, Ransomware Resilience salta la modalità di apprendimento e avvia l'esercitazione in modalità attiva.  Lo stato di rilevamento del carico di lavoro è Attivo.
-
-
-TIP: Un carico di lavoro può avere uno stato di *Modalità di apprendimento* per il rilevamento ransomware quando di recente è stato assegnato un criterio di rilevamento e Ransomware Resilience esegue la scansione dei carichi di lavoro.
-
 .Passi
-. Eseguire una delle seguenti operazioni:
+. Per avviare l'esercitazione:
 +
-** Dal menu Ransomware Resilience, seleziona il pulsante *Esegui esercitazione di preparazione* in alto a destra.
+** Dalla dashboard di Ransomware Resilience, seleziona il pulsante *Run readiness drill* in alto a destra.
 +
 image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione"]
 
-** OPPURE, dalla pagina Impostazioni, nella scheda Esercizio di preparazione, seleziona *Avvia*.
+** Oppure vai su **Impostazioni**. Nel riquadro Esercitazione di preparazione, seleziona *Avvia*.
 
 
 
 
 
-NOTE: Non è possibile modificare la configurazione dell'esercitazione di preparazione mentre l'esercitazione è in esecuzione. È possibile reimpostare il trapano per fermarlo e modificarne la configurazione.
+NOTE: Non puoi modificare la configurazione dell'esercitazione di prontezza mentre l'esercitazione è in corso. Per modificare l'esercitazione di prontezza, seleziona **Ripristina** e poi modifica l'esercitazione.
 
 
 
@@ -106,7 +91,7 @@ La Console visualizza la pagina Avvisi.  Nella colonna ID avviso, accanto all'ID
 +
 image:screen-alerts-readiness.png["Pagina degli avvisi che mostra l'avviso di esercitazione di prontezza"]
 
-. Selezionare l'avviso con l'indicazione "Esercitazione di prontezza".  Nella pagina dei dettagli degli avvisi viene visualizzato un elenco degli avvisi di incidente.
+. Seleziona l'avviso con l'indicazione "Esercitazione di preparazione".
 +
 image:screen-alerts-readiness-details.png["Pagina dei dettagli degli avvisi che mostra l'avviso di esercitazione di prontezza"]
 
@@ -117,21 +102,14 @@ image:screen-alerts-readiness-incidents2.png["Pagina dell'incidente che mostra l
 
 
 
-Ecco alcune cose da tenere a mente:
+Quando rivedi l'incidente, considera:
 
-* Osserva la potenziale gravità dell'attacco.
+* La potenziale gravità dell'attacco.
 +
 Se la gravità indica che un utente è sospettato di attività dannose, rivedere il nome utente. Puoi anchelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloccare l'utente."]
 
-* Esaminare l'attività del file e i processi sospetti:
-+
-** Confrontare i dati rilevati in arrivo con i dati previsti.
-** Confronta la velocità di creazione dei file rilevata con quella prevista.
-** Confronta la frequenza di rinominazione dei file rilevata con quella prevista.
-** Osserva il tasso di eliminazione rispetto al tasso previsto.
-
-
-* Guarda l'elenco dei file interessati.  Esamina le estensioni che potrebbero causare l'attacco.
+* L'attività sui file rispetto ai tassi previsti. Questo include il tasso di lettura/scrittura, la creazione, la ridenominazione e l'eliminazione dei file.
+* L'elenco dei file interessati. Guarda le estensioni che potrebbero causare l'attacco.
 * Determinare l'impatto e l'ampiezza dell'attacco esaminando il numero di file e directory interessati.
 
 
@@ -145,46 +123,30 @@ Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il c
 
 .Passi
 . Torna alla pagina dei dettagli dell'avviso.
-. Se il carico di lavoro del test deve essere ripristinato, procedere come segue:
+. Se vuoi ripristinare il carico di lavoro di prova, seleziona **Segna come necessario il ripristino** e poi seleziona di nuovo quel pulsante nella finestra di dialogo di conferma.
+. Dal menu Ransomware Resilience, seleziona *Ripristino*.
+. Seleziona il carico di lavoro di prova contrassegnato con l'etichetta "Readiness drill" che vuoi ripristinare.
+. Selezionare *Ripristina*.
+. Segui le istruzioni per lo stile di ripristino che hai configurato:
 +
-** Seleziona *Segna come ripristino necessario*.
-** Rivedi la conferma e seleziona *Segna come ripristino necessario* nella casella di conferma.
-+
-*** Dal menu Ransomware Resilience, seleziona *Ripristino*.
-*** Seleziona il carico di lavoro di prova contrassegnato con "Esercitazione di preparazione" che desideri ripristinare.
-*** Selezionare *Ripristina*.
-*** Nella pagina Ripristina, fornisci le informazioni per il ripristino:
-
-
-** Selezionare la copia dello snapshot di origine.
-** Selezionare il volume di destinazione.
-
-
-. Nella pagina di revisione del ripristino, seleziona *Ripristina*.
-+
-La Console visualizza lo stato del ripristino del drill di prontezza come "In corso" nella pagina Ripristino.
-
-+
-Una volta completato il ripristino, la Console modifica lo stato del carico di lavoro in *Ripristinato*.
-
-. Esaminare il carico di lavoro ripristinato.
+** link:task-clean-restore-recover.html["Ripristina con un ripristino pulito"]
+** link:task-custom-restore.html["Ripristina con un ripristino personalizzato"]
 
 
 
-TIP: Per i dettagli sul processo di ripristino, vederelink:rp-use-recover.html["Recuperare da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati)"] .
 
 
 
-== Modificare lo stato degli avvisi dopo l'esercitazione di preparazione
+== Modifica lo stato di allerta dopo l'esercitazione di prontezza
 
 Dopo aver esaminato l'avviso di esercitazione di prontezza e aver ripristinato il carico di lavoro, modificare lo stato dell'avviso, se necessario.
 
-*È richiesto il ruolo Console* Amministratore dell'organizzazione, Amministratore di cartelle o progetti o Amministratore di Ransomware Resilience. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^] .
+*Ruolo richiesto nella console* Amministratore dell'organizzazione, amministratore di cartelle o progetti, oppure amministratore di NetApp Ransomware Resilience https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^].
 
 .Passi
 . Torna alla pagina dei dettagli dell'avviso.
 . Selezionare nuovamente l'avviso.
-. Indicare lo stato selezionando *Modifica stato* e cambiare lo stato in uno dei seguenti:
+. Indica lo stato selezionando *Modifica* accanto allo stato. Cambia lo stato in uno dei seguenti:
 +
 ** Ignorato: se sospetti che l'attività non sia un attacco ransomware, modifica lo stato in Ignorato.
 +
@@ -200,7 +162,7 @@ IMPORTANT: Dopo aver ignorato un attacco, non è possibile ripristinarlo. Se si 
 
 == Rivedere i rapporti sull'esercitazione di preparazione
 
-Una volta completata l'esercitazione di preparazione, potresti voler rivedere e salvare un report sull'esercitazione.
+Al termine dell'esercitazione di preparazione, puoi generare e salvare un report sull'esercitazione. Il report dell'esercitazione è un file JSON che raccoglie informazioni quali la policy di rilevamento, il tipo di avviso e la data e l'ora, i dettagli dell'attacco e lo stato di ripristino.
 
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^], ruolo di amministratore di Ransomware Resilience o di visualizzatore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
