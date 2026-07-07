@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-simulate.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
-summary: 'Eseguire un"esercitazione di preparazione al ransomware simulando un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l"attacco simulato e recuperare il carico di lavoro di esempio.  È possibile eseguire più volte un"esercitazione di preparazione al ransomware.' 
+summary: 'Esegui un"esercitazione di preparazione agli attacchi ransomware simulando un attacco ransomware su un carico di lavoro di esempio. Poi, indaga sull"attacco simulato e ripristina il carico di lavoro di esempio. Puoi eseguire un"esercitazione di preparazione agli attacchi ransomware più volte.' 
 ---
 = Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience
 :hardbreaks:
@@ -14,10 +14,19 @@ summary: 'Eseguire un"esercitazione di preparazione al ransomware simulando un a
 [role="lead"]
 Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience per testare la tua prontezza a un vero attacco ransomware. Con l'esercitazione di preparazione, Ransomware Resilience simula un attacco su un nuovo carico di lavoro di esempio, permettendoti di analizzare l'attacco simulato ed eseguire un ripristino senza impattare sui tuoi dati di produzione. L'esercitazione di preparazione ti aiuta a familiarizzare con le notifiche di avviso e a prepararti per la risposta e il ripristino. Puoi eseguire l'esercitazione tutte le volte che vuoi.
 
-
-TIP: I dati del tuo carico di lavoro reale non subiscono alcun impatto.
-
 È possibile eseguire esercitazioni di preparazione sui carichi di lavoro NFS e CIFS (SMB).
+
+
+
+== Come funzionano le esercitazioni di prontezza operativa
+
+Ransomware Resilience supporta tre tipi di esercitazioni: link:task-clean-restore-recover.html["ripristino pulito"], link:rp-use-recover.html["recupero personalizzato"] e link:suspicious-user-activity.html["recupero da data breach"]. Le esercitazioni di ripristino pulito e di ripristino personalizzato simulano attacchi basati sulla crittografia (entropia) e si differenziano per il metodo di ripristino che offrono. Le esercitazioni di ripristino in caso di violazione dei dati simulano l'esfiltrazione con modelli di lettura insoliti sui tuoi dati.
+
+Quando configuri un'esercitazione di preparazione, Ransomware Resilience crea un volume di test, applica la protezione ransomware con una policy di snapshot al volume, convalida la connettività, monta il volume, copia i dati di base, smonta il volume e crea uno snapshot di base.
+
+Quando inizi la simulazione, Ransomware Resilience monta il volume e poi simula un attacco ransomware. Se la simulazione serve per un ripristino personalizzato o un ripristino pulito, i dati di base del volume di test vengono sostituiti con estensioni di file note per essere ransomware e con file crittografati o modificati tramite entropia. Per una simulazione di ripristino da violazione dei dati, i file non vengono sostituiti; invece, Ransomware Resilience simula un attaccante che legge ed esfiltra sistematicamente i dati. Indipendentemente dal tipo di simulazione, Ransomware Resilience genera un avviso e verifica che l'avviso sia stato generato correttamente.
+
+Quando esegui la simulazione, puoi testare la tua risposta agli avvisi e, se vuoi, seguire il processo di ripristino senza influire sui dati reali.
 
 
 
@@ -30,9 +39,9 @@ TIP: I dati del tuo carico di lavoro reale non subiscono alcun impatto.
 . Nel riquadro dell'esercitazione di preparazione, seleziona **Configura**.
 . Scegli il **tipo di esercitazione di preparazione**.
 +
-** **Ripristino personalizzato**: questa procedura crea un avviso e poi ti permette di eseguire link:rp-use-recover.html["un ripristino personalizzato"] dove configuri il punto di ripristino.
-** **Ripristino pulito**: questa procedura genera un avviso e poi ti porta al link:task-clean-restore-recover.html["ripristino pulito"] processo di ripristino, che ti guida verso punti di ripristino ottimizzati.
-** **Ripristino in caso di violazione dei dati**: questa procedura genera un avviso per un evento di violazione dei dati avviato dall'utente. Devi aver configurato link:suspicious-user-activity.html["un agente di attività utente"] prima di poter abilitare questo tipo di procedura.
+** **Ripristino personalizzato**: Rispondi a un attacco di crittografia (entropia) con un link:rp-use-recover.html["ripristino personalizzato"] in cui configuri il punto di ripristino.
+** **Ripristino pulito**: Rispondi a un attacco di crittografia (entropia) con un link:task-clean-restore-recover.html["ripristino pulito"] processo di ripristino che ti guida verso punti di ripristino ottimizzati.
+** **Ripristino in caso di violazione dei dati**: devi aver configurato link:suspicious-user-activity.html["un agente di attività utente"] prima di poter abilitare questo tipo di esercitazione.
 
 
 . Scegli l'ambiente in cui verrà creata l'esercitazione di prontezza operativa.
@@ -73,7 +82,7 @@ image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di ese
 
 
 
-NOTE: Non puoi modificare la configurazione dell'esercitazione di prontezza mentre l'esercitazione è in corso. Per modificare l'esercitazione di prontezza, seleziona **Ripristina** e poi modifica l'esercitazione.
+NOTE: Non puoi modificare la configurazione dell'esercitazione di prontezza mentre l'esercitazione è in corso. Per modificare l'esercitazione di prontezza, seleziona **Ripristina**, poi modifica l'esercitazione.
 
 
 

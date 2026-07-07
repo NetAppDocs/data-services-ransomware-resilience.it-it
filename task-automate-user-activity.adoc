@@ -22,6 +22,9 @@ Le risposte automatiche sono supportate per gli eventi di crittografia (comporta
 
 Puoi proteggere solo una macchina virtuale di archiviazione con almeno un carico di lavoro protetto da una policy di rilevamento di comportamenti utente sospetti.
 
+
+NOTE: Per le risposte automatiche a comportamenti sospetti degli utenti, puoi solo acquisire un'istantanea. Bloccare un utente non è supportato come risposta automatica a comportamenti sospetti degli utenti.
+
 .Passi
 . In Ransomware Resilience, seleziona **Impostazioni**.
 . Nel riquadro Monitoraggio attività utente, seleziona **Gestisci**.
@@ -53,6 +56,9 @@ Se scegli questa opzione, devi anche selezionare la durata del blocco. Può esse
 
 
 | Distruzione dei dati | Ransomware Resilience rileva la cancellazione massiva di file da parte di uno specifico utente. 
+
+
+| Comportamento sospetto dell'utente | Ransomware Resilience identifica comportamenti anomali che vanno oltre l'ambito di violazione dei dati, distruzione dei dati o crittografia. 
 |===
 . Seleziona le macchine virtuali di archiviazione a cui applicare la risposta automatica.
 . Seleziona **Aggiungi** per creare la risposta automatica.
