@@ -1,0 +1,11 @@
+= Escludi i percorsi dei file dagli avvisi relativi al comportamento dell'utente
+:allow-uri-read: 
+
+
+
+
+=== Escludi i percorsi dei file dagli avvisi relativi al comportamento dell'utente
+
+Ransomware Resilience supporta l'esclusione di percorsi di file specifici dagli avvisi di monitoraggio del comportamento degli utenti. Puoi escludere i percorsi di file se sai che non sono a rischio o se stai lavorando su file in un volume che potrebbe attivare avvisi.
+
+Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["Escludi i percorsi dei file dagli avvisi"^].

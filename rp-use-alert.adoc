@@ -41,7 +41,7 @@ Ransomware Resilience si basa su prove relative a modelli di entropia dei dati, 
 
 
 
-NOTE: Per avvisi di violazione dei dati, distruzione dei dati e comportamento sospetto degli utenti, è necessario configurare link:concept-user-behavior.html["rilevamento dell'attività dell'utente"].
+NOTE: Per gli avvisi relativi a violazioni dei dati, distruzione dei dati e comportamenti sospetti degli utenti, devi configurare link:concept-user-behavior.html["rilevamento dell'attività dell'utente"]. Puoi anche impedire a link:task-users-manage.html["percorsi di file specifici e utenti"] di generare avvisi.
 
 
 

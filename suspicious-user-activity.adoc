@@ -170,5 +170,5 @@ Dopo aver configurato il rilevamento dell'attività dell'utente, è possibile mo
 
 == Prossimi passi
 
-* link:task-users-manage.html["Gestisci il blocco degli utenti e gli avvisi in NetApp Ransomware Resilience"]
+* link:task-users-manage.html["Gestisci le impostazioni degli avvisi e gli utenti bloccati"]
 
