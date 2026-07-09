@@ -19,6 +19,7 @@ TIP: Ransomware Resilience supporta anche una xref:task-clean-restore.html[opzio
 
 
 
+[[restore-a-workload]]
 == Ripristina un carico di lavoro
 
 *Ruolo richiesto nella console* Amministratore dell'organizzazione, amministratore di cartelle o progetti oppure amministratore della protezione anti-ransomware. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console per tutti i servizi"^].
@@ -58,6 +59,7 @@ TIP: È possibile selezionare fino a 100 file o una singola cartella.
 
 
 
+[[restore-all-volumes]]
 === Ripristina tutti i volumi
 
 . Dal menu Ransomware Resilience, seleziona *Ripristino*.
@@ -97,6 +99,7 @@ TIP: Il nuovo nome del volume appare come prefisso + nome del volume originale +
 
 
 
+[[restore-a-workload-at-the-volume-level]]
 === Ripristinare un carico di lavoro a livello di volume
 
 . Dal menu Ransomware Resilience, seleziona *Ripristino*.
@@ -137,6 +140,7 @@ TIP: Il nuovo nome del volume appare come nome del volume originale + nome del b
 
 
 
+[[restore-a-workload-at-the-file-level]]
 === Ripristinare un carico di lavoro a livello di file
 
 Prima di ripristinare un carico di lavoro a livello di file, è possibile visualizzare un elenco dei file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati. Quindi utilizzare la pagina Ripristino per caricare l'elenco e scegliere quali file ripristinare.
@@ -223,6 +227,7 @@ TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristi
 
 
 
+[[restore-a-file-share-or-datastore]]
 === Ripristinare una condivisione file o un archivio dati
 
 . Dopo aver selezionato una condivisione file o un datastore da ripristinare, nella pagina Ripristina, nell'ambito Ripristina, seleziona *Per volume*.
@@ -263,6 +268,7 @@ TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristi
 
 
 
+[[restore-a-vm-file-share-at-the-vm-level]]
 === Ripristinare una condivisione file VM a livello di VM
 
 Nella pagina Ripristino, dopo aver selezionato una VM da ripristinare, continuare con questi passaggi.

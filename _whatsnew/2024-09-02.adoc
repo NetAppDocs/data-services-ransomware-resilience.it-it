@@ -4,6 +4,7 @@
 
 
 
+[[security-risk-assessment-from-digital-advisor]]
 === Valutazione del rischio per la sicurezza da parte di Digital Advisor
 
 BlueXP ransomware protection ora raccoglie informazioni sui rischi per la sicurezza elevati e critici relativi a un cluster da NetApp Digital Advisor. Se viene rilevato un rischio, BlueXP ransomware protection fornisce una raccomandazione nel riquadro *Azioni consigliate* della Dashboard: "Correggi una vulnerabilità di sicurezza nota sul cluster <name>." Dalla raccomandazione nella Dashboard, selezionando *Esamina e correggi* viene suggerito di consultare Digital Advisor e un articolo Common Vulnerability & Exposure (CVE) per risolvere il rischio per la sicurezza. Se sono presenti più rischi per la sicurezza, rivedere le informazioni in Digital Advisor.
@@ -12,6 +13,7 @@ Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documenta
 
 
 
+[[back-up-to-google-cloud-platform]]
 === Esegui il backup su Google Cloud Platform
 
 Con questa versione, puoi impostare una destinazione di backup su un bucket di Google Cloud Platform.  In precedenza, era possibile aggiungere destinazioni di backup solo a NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
@@ -20,6 +22,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[support-for-google-cloud-platform]]
 === Supporto per Google Cloud Platform
 
 Il servizio ora supporta Cloud Volumes ONTAP per Google Cloud Platform per la protezione dell'archiviazione.  In precedenza, il servizio supportava solo Cloud Volumes ONTAP per Amazon Web Services e Microsoft Azure insieme a NAS locali.
@@ -28,6 +31,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[role-based-access-control]]
 === Controllo degli accessi basato sui ruoli
 
 Ora puoi limitare l'accesso ad attività specifiche con il controllo degli accessi basato sui ruoli (RBAC).  La BlueXP ransomware protection utilizza due ruoli di BlueXP: amministratore dell'account BlueXP e amministratore senza account (visualizzatore).

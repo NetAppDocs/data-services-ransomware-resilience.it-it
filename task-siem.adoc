@@ -27,6 +27,7 @@ TIP: NetApp Ransomware Resilience fornisce anche link:reference-soar.html["playb
 
 
 
+[[event-data-sent-to-a-siem]]
 == Dati evento inviati a un SIEM
 
 Ransomware Resilience può inviare i seguenti dati sugli eventi al tuo sistema SIEM:
@@ -67,6 +68,7 @@ NOTE: I campi *user_name* e *user_id* sono pertinenti solo se hai configurato xr
 
 
 
+[[configure-aws-security-hub-for-threat-detection]]
 == Configurare AWS Security Hub per il rilevamento delle minacce
 
 Prima di abilitare AWS Security Hub in Ransomware Resilience, è necessario eseguire le configurazioni di sicurezza in AWS Security Hub:
@@ -124,6 +126,7 @@ image:screen-settings-threat-detection-3options.png["Abilita la pagina dei detta
 
 
 
+[[configure-google-secops-for-threat-detection]]
 == Configura Google SecOps per il rilevamento delle minacce
 
 Prima di abilitare Google SecOps in Ransomware Resilience, è necessario registrare il tipo di log e il webhook in Google SecOps per abilitare la connessione tra i servizi.
@@ -173,6 +176,7 @@ image:screen-settings-threat-detection-3options.png["Abilita la pagina dei detta
 
 
 
+[[configure-microsoft-sentinel-for-threat-detection]]
 == Configurare Microsoft Sentinel per il rilevamento delle minacce
 
 Prima di abilitare Microsoft Sentinel in Ransomware Resilience, è necessario eseguire i seguenti passaggi high-level in Microsoft Sentinel:
@@ -304,6 +308,7 @@ image:screen-settings-threat-detection-3options.png["Abilita la pagina dei detta
 
 
 
+[[configure-splunk-cloud-and-splunk-enterprise-for-threat-detection]]
 == Configurare Splunk Cloud e Splunk Enterprise per il rilevamento delle minacce
 
 Ransomware Resilience supporta il rilevamento delle minacce con Splunk Cloud e Splunk Enterprise. Prima di abilitare la connessione Splunk in Ransomware Resilience, è necessario:
@@ -357,6 +362,7 @@ image:screen-settings-threat-detection-3options.png["Abilita la pagina dei detta
 
 
 
+[[next-steps]]
 == Prossimi passi
 
 * link:reference-soar.html["Integra un playbook SOAR"]

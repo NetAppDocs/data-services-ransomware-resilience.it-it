@@ -20,6 +20,7 @@ NetApp Ransomware Resilience offre ripristini puliti, che forniscono un recupero
 
 
 
+[[learn-about-clean-restores]]
 == Scopri di più sui restauri puliti
 
 Quando si esegue un ripristino pulito, Ransomware Resilience guida l'utente attraverso un processo in più fasi che ottimizza il recovery.
@@ -48,6 +49,7 @@ Nella fase di pianificazione è inoltre possibile visualizzare la cronologia dei
 
 
 
+[[supported-configurations]]
 == Configurazioni supportate
 
 * È possibile creare un solo IRE per account Ransomware Resilience. Ogni IRE può avere tre clean room.
@@ -92,6 +94,7 @@ NOTE: L'esecuzione di un ripristino pulito in un ambiente basato sul cloud può 
 
 
 
+[[considerations]]
 == Considerazioni
 
 * È possibile eseguire un ripristino completo solo in caso di attacco ransomware basato sulla crittografia.
@@ -105,6 +108,7 @@ NOTE: L'esecuzione di un ripristino pulito in un ambiente basato sul cloud può 
 
 
 
+[[additional-considerations-for-on-premises-environments]]
 === Considerazioni aggiuntive per gli ambienti on-premises
 
 Se si implementa un IRE locale, quando una macchina virtuale Windows viene clonata per l'analisi di ripristino durante un ripristino pulito, la macchina virtuale clonata mantiene la stessa configurazione di quella di origine. Ciò può causare conflitti:
@@ -118,6 +122,7 @@ Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla clone V
 
 
 
+[[secondary-sources]]
 === Fonti secondarie
 
 Quando crei l'IRE, hai la possibilità di aggiungere una fonte secondaria.
@@ -128,6 +133,7 @@ Il processo di ripristino pulito, per impostazione predefinita, analizza gli sna
 
 
 
+[[cost-and-licensing]]
 == Costo e licenza
 
 Il ripristino pulito è offerto come parte di Ransomware Resilience. Non è richiesta alcuna licenza aggiuntiva per eseguire un ripristino pulito o creare un IRE.
@@ -142,6 +148,7 @@ I costi di terze parti possono includere la creazione e l'implementazione di ist
 
 
 
+[[prerequisites]]
 == Prerequisiti
 
 Assicurati di aver completato i prerequisiti per il tipo di clean restore scelto. Seleziona la scheda per la configurazione IRE scelta.
@@ -506,6 +513,7 @@ Accesso NFS a: * Agente della console di produzione * VLAN dell'agente della con
 ====
 
 
+[[create-an-isolated-recovery-environment]]
 == Creare un ambiente di ripristino isolato
 
 Prima di condurre un ripristino completo, è necessario creare una stanza di ripristino isolata.
@@ -593,6 +601,7 @@ TIP: Se devi modificare i dettagli dell'IRE, seleziona *Impostazioni* dalla barr
 
 
 
+[[delete-an-isolated-recovery-environment]]
 == Eliminare un ambiente di ripristino isolato
 
 Non è possibile eliminare un IRE durante un'operazione di ripristino attiva; è possibile annullare l'operazione di ripristino oppure attendere il completamento del ripristino e quindi eliminare l'IRE.

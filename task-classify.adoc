@@ -15,6 +15,7 @@ All'interno di NetApp Ransomware Resilience, è possibile utilizzare NetApp Data
 
 
 
+[[identify-privacy-exposures]]
 == Identificare le vulnerabilità relative alla privacy
 
 Prima di poter identificare le vulnerabilità della privacy in Ransomware Resilience, è necessario link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["per abilitare la classificazione dei dati per analizzare i tuoi dati"^].
@@ -48,6 +49,8 @@ image:screen-protection-workload-details-privacy-exposure.png["Schermata dei det
 
 
 
+[[impact-of-privacy-exposure-on-workload-importance]]
+[[privacy-impact]]
 == Impatto dell'esposizione alla privacy sull'importanza del carico di lavoro
 
 Le modifiche all'esposizione alla privacy possono influire sull'importanza del carico di lavoro.
@@ -70,6 +73,7 @@ Le modifiche all'esposizione alla privacy possono influire sull'importanza del c
 |===
 
 
+[[more-information]]
 == Ulteriori informazioni
 
 Per informazioni su come porre rimedio alle violazioni della privacy, consultare la documentazione sulla classificazione dei dati:

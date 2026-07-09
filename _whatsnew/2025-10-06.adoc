@@ -4,12 +4,14 @@
 
 
 
+[[bluexp-ransomware-protection-is-now-netapp-ransomware-resilience]]
 === La BlueXP ransomware protection è ora NetApp Ransomware Resilience
 
 Il servizio BlueXP ransomware protection è stato rinominato NetApp Ransomware Resilience.
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXP è ora NetApp Console
 
 NetApp Console offre una gestione centralizzata dei servizi di storage e dati in ambienti on-premise e cloud di livello aziendale, offrendo informazioni in tempo reale, flussi di lavoro più rapidi e amministrazione semplificata.
@@ -18,6 +20,7 @@ Per i dettagli su cosa è cambiato, vedere il https://docs.netapp.com/us-en/cons
 
 
 
+[[data-breach-detection]]
 === Rilevamento delle violazioni dei dati
 
 Ransomware Resilience include un nuovo meccanismo di rilevamento che può essere attivato in pochi passaggi per rilevare letture anomale da parte dell'utente come indicatore precoce di violazione dei dati. La resilienza del ransomware raccoglie e analizza gli eventi di lettura degli utenti creando una baseline storica, ovvero un profilo del comportamento normale e previsto dai dati passati. Quando l'attività di un nuovo utente si discosta in modo significativo da questa norma consolidata (ad esempio, un'impennata di letture inaspettata combinata con modelli di lettura sospetti), viene generato un avviso. Ransomware Resilience include un modello di intelligenza artificiale per rilevare modelli di lettura sospetti.

@@ -2632,4 +2632,72 @@
   <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">07 luglio 2026</block>
   <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">Gestisci avvisi e utenti bloccati</block>
   <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">Per ulteriori informazioni, vedi <block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>.</block>
+  <block id="088851556c5183ba62f78e52f665450d" category="summary">NetApp Ransomware Resilience offre uno script quando abiliti il monitoraggio dell'attività degli utenti per testare attacchi ransomware basati sulla crittografia ed eventi di violazione dei dati.</block>
+  <block id="f10a2790decd8276267a9325d2ec853c" category="doc">Simula il comportamento di un utente malintenzionato in NetApp Ransomware Resilience</block>
+  <block id="4e0329a11fc113704ab597dec933d4f9" category="paragraph">Quando configuri il monitoraggio dell'attività degli utenti in NetApp Ransomware Resilience, puoi eseguire uno script di test per simulare eventi di comportamento utente sospetti.</block>
+  <block id="48870f5f7ec6a7cd18dda2260f3f863d" category="paragraph">Questo script è progettato per simulare attacchi ransomware basati sulla crittografia eseguiti da utenti noti. Con comandi aggiuntivi, puoi anche simulare attacchi di violazione dei dati o di distruzione dei dati.</block>
+  <block id="b61313cb99a86aa7c4af1cfa344ac6cd" category="section-title">Informazioni sullo script</block>
+  <block id="da3cedfecf043e3ceb03125c26fecc0d" category="paragraph">Lo script di test è disponibile quando abiliti il monitoraggio dell'attività utente su una macchina. Puoi eseguire lo script tramite shell o Python.</block>
+  <block id="7e6f25d1d7385994a39a9ac6707d57d7" category="paragraph">Dovresti eseguire lo script su un volume di una storage VM dove hai creato un data collector. Lo script va eseguito su un volume di dati di test che includa almeno 100 file in più sottodirectory; puoi generare questi file in modo programmatico con lo script. Metti in pausa il data collector prima di creare i dati di test, poi riattivalo dopo.</block>
+  <block id="f2cd23a46c4739df7b265821b029b5e5" category="list-text">Lo script simula eventi di crittografia utente. Puoi eseguirlo solo su sistemi Linux.</block>
+  <block id="44be22ec8c354e86f26878a2e6869a6a" category="list-text">Se il tuo sistema utilizza NFSv4.1, devi eseguire ONTAP 9.15.1 o versioni successive.</block>
+  <block id="531cbc897b356bf21820a08095b8c1a8" category="list-text">Puoi eseguire lo script come script di shell o con Python.</block>
+  <block id="9a1b8a4eb3ef803a3599c362930c48b1" category="admonition">Ci sono <block ref="d7c15ecbf1bd0b493d7d802a7d5593c8" category="inline-xref-macro-rx"></block> per eseguire lo script Python.</block>
+  <block id="bb6ebe7d3cdaa25ff6af3432f080a641" category="inline-link-macro">un raccoglitore di dati</block>
+  <block id="8c03a22f9c95640c3bb8429f4bf5e109" category="paragraph">Devi aver creato <block ref="25255e849fb901c2a60ef562973adcbd" category="inline-link-macro-rx"></block> sul sistema in cui vuoi eseguire il test. Questo richiede la creazione di un agente di attività utente e l'attivazione di una strategia di protezione da ransomware con rilevamento di comportamenti utente sospetti.</block>
+  <block id="0658a5d053bc56d26874c74f4f82eb95" category="section-title">Requisiti per lo script Python</block>
+  <block id="aa4b3b0dd36ad2480f69ecbf85167a6f" category="paragraph">Per eseguire lo script in Python, devi avere:</block>
+  <block id="8fae4712a65fdfaf48cbde542b2a9ade" category="inline-link-macro">Python versione 3.5.2 o successiva installata</block>
+  <block id="c16a7f3126c119e01f3735cfa03fcd14" category="list-text"><block ref="c16a7f3126c119e01f3735cfa03fcd14" category="inline-link-macro-rx"></block></block>
+  <block id="930c8d3ab7ccdfb89b6367f3e4c9e33a" category="inline-link-macro">pip installato</block>
+  <block id="05150bdac5efcf781bc7dc39187000ff" category="list-text"><block ref="05150bdac5efcf781bc7dc39187000ff" category="inline-link-macro-rx"></block></block>
+  <block id="c494a383b88b41e65ab6a667d5b86eab" category="list-text">Installata la libreria PyCryptodome:<block ref="194fc90597125afc86caf1d15cbf368c" prefix=" " category="inline-code"></block></block>
+  <block id="946a47fad0db31bcb1352814f354f62e" category="admonition">Puoi controllare la tua versione di Python con il comando<block ref="ac719163117fd79e0e5eddf5be2929c4" prefix=" " category="inline-code"></block>. Puoi testare l'installazione di pip con il comando<block ref="3327b3fc56e7d8a50b0df977a4c20e3b" prefix=" " category="inline-code"></block>. Puoi testare l'installazione di PyCryptodome con il comando<block ref="ee7f1b491d78d8f365fc68f9f583d45a" prefix=" " category="inline-code"></block>.</block>
+  <block id="8f0b614002da860dc1e6531a85cb97f3" category="section-title">Simula un evento di crittografia</block>
+  <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="list-title">Prepara il sistema</block>
+  <block id="87e2110ce690ce81adb3e713b153b873" category="list-text">Monta il volume di destinazione in cui verranno creati i file di esempio sulla macchina Linux. Puoi montare un'esportazione NFS o CIFS.</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
+  <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="open-title">CIFS</block>
+  <block id="f50e5184fb8c928d7117d67711584443" category="inline-link-macro">volume di destinazione</block>
+  <block id="1673cf027945840c2811415d6232efdd" category="list-text">Proteggi il <block ref="3d3c2588c42d776cb353386bd6eee25e" category="inline-link-macro-rx"></block>.</block>
+  <block id="bc979566f738dcfe656a3b320c999839" category="list-text">Metti in pausa il data collector.</block>
+  <block id="8c23ab446281c217db1cff12b27ccfd2" category="paragraph">In Ransomware Resilience, seleziona **Impostazioni**, quindi nel riquadro Monitoraggio rilevamento utenti seleziona **Gestisci**. Nella scheda Data collector, seleziona il data collector per la storage VM, quindi **Metti in pausa**.</block>
+  <block id="a7a3e8f26a5ca674052385b91e2af3f9" category="list-text">Aggiungi i file da crittografare. Puoi copiare manualmente i file da crittografare nella cartella o nel volume di destinazione, oppure usare uno degli script inclusi per creare i file in modo programmatico. Devi aggiungere un minimo di 100 file.</block>
+  <block id="7e82a47442c59e75e46f9fdd753262f1" category="paragraph">Per creare i file tramite programmazione:</block>
+  <block id="ea89b68c34ce4a63c0f77e17413c6e30" category="open-title">Shell</block>
+  <block id="c11cbcce6b0ad89ee99892b0be101ae0" category="list-text">Accedi all'host su cui è in esecuzione l'agente di attività utente.</block>
+  <block id="2d58c6f19a717d43f32a96bdf10d6ea3" category="list-text">Monta una condivisione NFS o CIFS dalla storage VM del filer alla macchina su cui è in esecuzione l'agente di attività utente. Cambia la directory di lavoro impostandola sul volume appropriato per il test.</block>
+  <block id="9b06fa9f212979fe62299f124d940ebb" category="list-text">Copia lo script dalla directory di installazione dell'agente della directory utente alla posizione di montaggio di destinazione:</block>
+  <block id="b3caaa68d416a8514777fe70cce61658" category="list-text">Esegui il <block ref="ab2b6c413bb2ed5d0773bf72872cb574" prefix=" " category="inline-code"></block> comando usando gli script presenti nella directory montata per creare la cartella e i file del dataset di test. Questo comando crea 100 file (non vuoti) con estensioni diverse all'interno della cartella montata, in una directory chiamata "test_dataset".</block>
+  <block id="a7f5f35426b927411fc9231b56382173" category="open-title">Python</block>
+  <block id="81241013d4d86f41891746f6aa17b1cb" category="list-text">Copia lo script dalla directory di installazione dell'agente della directory utente al volume di destinazione:</block>
+  <block id="6c9617bf31efa03703c1d95ebd8ae628" category="list-text">Crea il set di dati di test:<block ref="d9e54f0bcc3f9baa2eba11b3752679fa" prefix=" " category="inline-code"></block>.</block>
+  <block id="e334323c00387f9c7a97f89668f49278" category="paragraph">Questo comando crea 100 file (non vuoti) con estensioni diverse all'interno della cartella montata, in una directory denominata "test_dataset".</block>
+  <block id="5f47ed0572459cd1bd9d24536a91b94f" category="list-text">Riprendi il collector.</block>
+  <block id="725f6a6f3ce0c97f02d177ac7f5837ea" category="paragraph">In Ransomware Resilience, seleziona **Impostazioni**, quindi nel riquadro Monitoraggio rilevamento utente seleziona **Gestisci**. Nella scheda Raccolta dati, seleziona la raccolta dati per la storage VM, quindi **Riprendi**.</block>
+  <block id="84777a8a48e5db1a305f8031c48714e7" category="paragraph-title">Simula l'attacco</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="a9d5986540c724cee5301f21be69fcdb" category="list-text">Copia lo script dalla directory di installazione dell'agente alla posizione di montaggio di destinazione:<block ref="494e32253615c0d68d99633322481510" prefix=" " category="inline-code"></block>.</block>
+  <block id="3691873db288ed4131190505aca1ca8b" category="list-text">Esegui lo script nella directory montata per crittografare il dataset di test:<block ref="63e7482ce629b80b8af855bab40816a3" prefix=" " category="inline-code"></block>.</block>
+  <block id="d4c261be6751956136d8899a67f73a3a" category="list-text">Copia lo script dalla directory di installazione dell'agente alla posizione di montaggio di destinazione:<block ref="384ad51ddad01da131e783aa5e8f11c5" prefix=" " category="inline-code"></block>.</block>
+  <block id="79f03c887a5b87f60dc11888eb1912c8" category="list-text">Esegui lo script per crittografare i dati:<block ref="fb27c7de1224eb6c593d86d443e08cba" prefix=" " category="inline-code"></block> in "test_dataset".</block>
+  <block id="c831854b6d1296b1799fcf60d7b7b23a" category="inline-link-macro">Esamina l'avviso nel menu Avvisi di NetApp Ransomware Resilience</block>
+  <block id="a356ea555457a50fd1024b72eda469df" category="paragraph">Dopo aver eseguito lo script, puoi <block ref="947e5f30e76a2b5bc4762ca3a4aecff4" category="inline-link-macro-rx"></block>.</block>
+  <block id="ae5bda10485478daa986cdf30bc9e269" category="paragraph-title">Genera avvisi aggiuntivi in Ransomware Resilience</block>
+  <block id="e05643c8bdde83ac8e66b25523f73c2e" category="paragraph">Poiché NetApp Ransomware Resilience si adatta al comportamento dell'utente, non genererà ulteriori avvisi se la stessa azione viene ripetuta sugli stessi dati da un utente entro 24 ore, quindi non puoi semplicemente crittografare nuovamente i dati per generare un altro avviso. Invece, per generare ulteriori avvisi, devi ripetere il processo: ricreare i dati di test e poi crittografarli.</block>
+  <block id="c7c8ba74ff4da532146fafc10096fb17" category="section-title">Simula avvisi di violazione dei dati e distruzione dei dati</block>
+  <block id="fa99409416aabd6f21788becebea7f8c" category="paragraph">Ransomware Resilience supporta anche il simulare una violazione dei dati o un evento di distruzione dei dati.</block>
+  <block id="45bda3ef7e901d33873cbff1e6690379" category="admonition">Perché venga registrato un avviso, l'utente deve essere attivo nel sistema per più di sette giorni.</block>
+  <block id="cfad69f39333cee3e161b5244b11653e" category="list-text">Monta il volume protetto:</block>
+  <block id="88f75a382c65ffd132afb22173b12253" category="list-text">Metti in pausa il data collector:</block>
+  <block id="60ce062ddaebd3a3bb4145e9ac9ec1cd" category="list-text">Crea un set di dati. Questo comando crea un set di dati di 5.000 file:</block>
+  <block id="e50f2b72c469150557983c8e468853cd" category="list-text">Riprendi le operazioni sul raccoglitore di dati:</block>
+  <block id="7f9d9c534a11d35cdc123038548fbc5a" category="list-text">Esegui una lettura in blocco:</block>
+  <block id="a4d1f9df55cc0e951116c0a1ae2a8312" category="list-text">Svuota la cache:</block>
+  <block id="12db011a51ee87b1a0fba45cff8aeca1" category="list-text">Esegui una lettura di tutti i file per simulare una violazione dei dati:</block>
+  <block id="d70072b82ef29f9ccd9b78c13dcb0dd2" category="inline-link-macro">Dashboard degli avvisi</block>
+  <block id="30c987f189c1203506e252277c182117" category="list-text">Attendi che venga visualizzato l'avviso di violazione dei dati. Puoi confermare la presenza dell'avviso nel <block ref="cd880d4b431a9e359489824093adec00" category="inline-link-macro-rx"></block> e analizzarne i dettagli.</block>
+  <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">Dopo aver individuato le informazioni desiderate nell'avviso, elimina i dati:</block>
+  <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">Simulare attacchi</block>
+  <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">Simulare eventi utente malevoli</block>
 </blocks>

@@ -18,10 +18,12 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 
 
+[[07-july-2026]]
 == 07 luglio 2026
 
 
 
+[[exclude-file-paths-from-user-behavior-alerts]]
 === Escludi i percorsi dei file dagli avvisi relativi al comportamento dell'utente
 
 Ransomware Resilience supporta l'esclusione di percorsi di file specifici dagli avvisi di monitoraggio del comportamento degli utenti. Puoi escludere i percorsi di file se sai che non sono a rischio o se stai lavorando su file in un volume che potrebbe attivare avvisi.
@@ -30,10 +32,12 @@ Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-service
 
 
 
+[[29-june-2026]]
 == 29 giugno 2026
 
 
 
+[[automated-responses-to-user-activity-alerts]]
 === Risposte automatiche agli avvisi di attività degli utenti
 
 Ransomware Resilience ora supporta l'automazione della creazione di snapshot e del blocco degli utenti quando viene generato un avviso di attività utente. Con le risposte automatizzate, puoi bloccare un utente non appena viene generato un avviso e creare uno snapshot per il ripristino, permettendo una risposta più rapida senza intervento manuale.
@@ -42,10 +46,12 @@ Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-service
 
 
 
+[[08-june-2026]]
 == 08 giugno 2026
 
 
 
+[[enhanced-flexibility-for-protection-strategies]]
 === Maggiore flessibilità per le strategie di protezione
 
 Ransomware Resilience offre ora maggiore flessibilità nella scelta delle strategie di rilevamento del ransomware. In precedenza, tutte le strategie di protezione dal ransomware dovevano includere il rilevamento della crittografia. Ora puoi attivare una strategia di protezione dal ransomware che includa solo il rilevamento del comportamento dell'utente.
@@ -58,6 +64,7 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-s
 
 
 
+[[soar-playbook-enhancements]]
 === Miglioramenti al playbook SOAR
 
 I playbook SOAR per la resilienza al ransomware ora forniscono passaggi di ripristino dopo aver bloccato un utente o messo un volume offline. Ora è possibile rimettere online un volume e sbloccare un utente se l'azione non è stata considerata una minaccia ransomware.
@@ -66,10 +73,12 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
+[[26-may-2026]]
 == 26 maggio 2026
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Supporto per Google Cloud NetApp Volumes (anteprima)
 
 Ransomware Resilience ora supporta la creazione di gruppi di protezione per i carichi di lavoro nei sistemi Google Cloud NetApp Volumes, consentendo di organizzare più carichi di lavoro sotto un'unica policy per semplificare la gestione.
@@ -78,10 +87,12 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-s
 
 
 
+[[18-may-2026]]
 == 18 maggio 2026
 
 
 
+[[google-cloud-netapp-volumes-support-preview]]
 === Supporto per Google Cloud NetApp Volumes (anteprima)
 
 Ransomware Resilience ora supporta i sistemi Google Cloud NetApp Volumes, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Google Cloud NetApp Volumes. Durante la fase di rilevamento, Ransomware Resilience visualizza automaticamente i carichi di lavoro dai sistemi Google Cloud NetApp Volumes. Quando rilevi i sistemi, questi appaiono nella dashboard di Ransomware Resilience. Il supporto per Google Cloud NetApp Volumes in Ransomware Resilience è attualmente in anteprima.
@@ -90,6 +101,7 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-s
 
 
 
+[[clean-restore-enhancements]]
 === Miglioramenti al ripristino pulito
 
 La funzione di ripristino pulito ora supporta i report. Grazie ai report, è possibile esaminare e valutare i ripristini puliti, salvando queste informazioni offline come file CSV.
@@ -100,10 +112,12 @@ Per ulteriori informazioni sui report, consultare link:https://docs.netapp.com/u
 
 
 
+[[11-may-2026]]
 == 11 maggio 2026
 
 
 
+[[clean-restore-enhancements]]
 === Miglioramenti al ripristino pulito
 
 Il ripristino pulito ora supporta il ripristino in una posizione alternativa, consentendo di ripristinare i volumi su sistemi, storage VM e aggregati diversi gestiti dallo stesso Console agent. Inoltre, il ripristino pulito ha rimosso la limitazione di sette giorni nella ricerca di snapshot validi per il ripristino. Il ripristino pulito ora continua a cercare tra gli snapshot disponibili un punto di ripristino valido, indipendentemente dalla distanza dall'evento ransomware.
@@ -112,6 +126,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 
 
+[[google-secops-siem-support]]
 === Supporto SIEM di Google SecOps
 
 Ransomware Resilience ora supporta la gestione delle informazioni e degli eventi di sicurezza (SIEM) con Google SecOps, consentendo di inviare automaticamente i dati a Google SecOps per un'analisi e un rilevamento delle minacce più efficienti.
@@ -120,6 +135,7 @@ Per informazioni sulla configurazione, vedere link:https://docs.netapp.com/us-en
 
 
 
+[[azure-netapp-files-support-is-now-generally-available]]
 === Il supporto per Azure NetApp Files è ora disponibile a livello generale
 
 Ransomware Resilience ora supporta i sistemi Azure NetApp Files, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Azure NetApp Files. Quando vengono rilevati carichi di lavoro, Ransomware Resilience ora presenta Azure NetApp Files e li visualizza nella dashboard di protezione. Il supporto di Ransomware Resilience per Azure NetApp Files include strategie di rilevamento e protezione basate esclusivamente su snapshot. Il supporto per Azure NetApp Files è ora disponibile a livello generale (GA).
@@ -128,6 +144,7 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[soar-support-for-blocking-users]]
 === Supporto SOAR per il blocco degli utenti
 
 Ransomware Resilience ora supporta il blocco di singoli utenti con Google SecOps e playbook SOAR di Splunk. Con questa aggiunta, puoi automatizzare il blocco degli utenti quando Ransomware Resilience rileva attività utente sospette come una violazione dei dati o una cancellazione massiva di dati.
@@ -136,10 +153,12 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
+[[13-april-2026]]
 == 13 aprile 2026
 
 
 
+[[clean-restore]]
 === Ripristino pulito
 
 Ransomware Resilience ora supporta i ripristini puliti, una nuova opzione di ripristino che consente di recuperare rapidamente e facilmente dagli attacchi ransomware. I ripristini puliti offrono flussi di lavoro guidati che identificano i punti di ripristino ottimali per riavviare i carichi di lavoro riducendo al minimo i tempi di inattività. I flussi di lavoro di ripristino pulito forniscono anche informazioni dettagliate a livello di file sui dati, garantendo il ripristino di carichi di lavoro privi di malware, prevenendo la reinfezione e riducendo al minimo la perdita di dati.
@@ -148,6 +167,7 @@ Per informazioni sulle configurazioni supportate e su come configurare il sistem
 
 
 
+[[siem-support-for-splunk-enterprise]]
 === Supporto SIEM per Splunk Enterprise
 
 Ransomware Resilience ora offre il supporto per la gestione degli eventi e delle informazioni di sicurezza (SIEM) per Splunk Enterprise, consentendo di centralizzare i dati di log e degli eventi e di semplificare l'analisi e il rilevamento delle minacce.
@@ -156,6 +176,7 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[user-behavior-detection-enhancement]]
 === Miglioramento del rilevamento del comportamento dell'utente
 
 Le informazioni relative alle violazioni dei dati vengono ora conservate per 13 mesi dopo un incidente, consentendo una conservazione dei record più lunga per le vostre esigenze di reporting.
@@ -164,10 +185,12 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-s
 
 
 
+[[31-march-2026]]
 == 31 marzo 2026
 
 
 
+[[soar-playbook-for-google-secops]]
 === Manuale SOAR per Google SecOps
 
 Ransomware Resilience offre ora un playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]. Il playbook semplifica la gestione della risposta alle minacce, automatizza attività e test e supporta le attività essenziali di risposta al ransomware, tra cui la creazione di snapshot e la messa offline di un volume.
@@ -176,10 +199,12 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[12-march-2026]]
 == 12 marzo 2026
 
 
 
+[[soar-playbooks-for-microsoft-sentinel-and-splunk]]
 === Playbook SOAR per Microsoft Sentinel e Splunk
 
 Ransomware Resilience ora offre playbook di orchestrazione, automazione e risposta alla sicurezza (SOAR) per link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^] e link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]. I playbook consentono una gestione più semplice della risposta alle minacce, automatizzando le attività di test e gli sforzi essenziali di risposta al ransomware, inclusa la creazione di snapshot e la messa offline di un volume.
@@ -188,10 +213,12 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[09-march-2026]]
 == 09 marzo 2026
 
 
 
+[[bulk-exclude-users-from-user-behavior-alerts]]
 === Escludi in blocco gli utenti dagli avvisi sul comportamento degli utenti
 
 Ransomware Resilience ora supporta il caricamento di un elenco JSON di utenti da escludere dagli avvisi sul comportamento degli utenti, oltre alle opzioni esistenti basate su interfaccia utente e CSV.
@@ -200,6 +227,7 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[user-behavior-detection-enhancements]]
 === Miglioramenti al rilevamento del comportamento dell'utente
 
 Ransomware Resilience ha migliorato la comprensione del comportamento degli utenti aggiungendo avvisi via email e includendo gli eventi relativi al comportamento degli utenti nei dati degli eventi SIEM supportati (AWS Security Hub, Microsoft Sentinel e Splunk Cloud). Questi miglioramenti forniscono informazioni più accurate sul monitoraggio della sicurezza e della conformità.
@@ -208,10 +236,12 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[16-february-2026]]
 == 16 febbraio 2026
 
 
 
+[[azure-netapp-files-support]]
 === Supporto per Azure NetApp Files
 
 Ransomware Resilience ora supporta i sistemi Azure NetApp Files, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Azure NetApp Files. Quando scopri i carichi di lavoro, Ransomware Resilience ora presenta Azure NetApp Files e li visualizza nella dashboard di protezione. Il supporto di Ransomware Resilience per Azure NetApp Files include strategie di rilevamento e protezione basate solo su snapshot. Il supporto per Azure NetApp Files è attualmente in anteprima.
@@ -220,6 +250,7 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[exclude-users-from-user-behavior-alerts]]
 === Escludere gli utenti dagli avvisi sul comportamento degli utenti
 
 Ransomware Resilience ora consente di escludere utenti specifici dagli avvisi sul comportamento utente. L'esclusione di utenti attendibili può prevenire falsi positivi e avvisi non necessari.
@@ -228,6 +259,7 @@ Per ulteriori informazioni, vedere il link:Per ulteriori informazioni, vedere li
 
 
 
+[[protection-group-support-for-user-behavior-detection]]
 === Supporto del gruppo di protezione per il rilevamento del comportamento dell'utente
 
 I gruppi di protezione Ransomware Resilience ora supportano policy di rilevamento per il rilevamento di comportamenti sospetti degli utenti. Quando si applica una strategia di protezione ransomware a un gruppo di protezione, viene applicata una policy su tutti i carichi di lavoro, semplificando la gestione della postura di cybersecurity.
@@ -236,10 +268,12 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[19-january-2026]]
 == 19 gennaio 2026
 
 
 
+[[unsupported-volumes]]
 === Volumi non supportati
 
 I report di Ransomware Resilience ora acquisiscono informazioni sui volumi supportati e non supportati nel report **Summary**. Utilizza queste informazioni per diagnosticare perché i volumi di un sistema potrebbero non essere idonei alla protezione ransomware.
@@ -248,10 +282,12 @@ Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[12-january-2026]]
 == 12 gennaio 2026
 
 
 
+[[replicate-snapshots-to-ontap]]
 === Replica gli snapshot su ONTAP
 
 Ransomware Resilience ora supporta l'aggiunta della replica degli snapshot a un sito ONTAP secondario. Con i gruppi di protezione che utilizzano una policy di replica, puoi replicare sulla stessa destinazione o su destinazioni diverse per ogni carico di lavoro. Puoi creare una strategia di protezione ransomware che includa la replica o utilizzare la strategia predefinita.
@@ -260,6 +296,7 @@ Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[exclude-workloads-from-ransomware-resilience]]
 === Escludere i carichi di lavoro dalla resilienza del ransomware
 
 Ransomware Resilience ora supporta l'esclusione di carichi di lavoro specifici in un sistema dalla protezione e dalla dashboard di Ransomware Resilience. È possibile escludere i carichi di lavoro dopo l'individuazione e reincluderli se si desidera aggiungere la protezione ransomware. Non ti verrà addebitato alcun costo per i carichi di lavoro esclusi.
@@ -268,6 +305,7 @@ Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[mark-alerts-as-in-review]]
 === Contrassegna gli avvisi come in revisione
 
 Ransomware Resilience ora consente di contrassegnare gli avvisi come "In revisione". Utilizza l'etichetta "In revisione" per migliorare la chiarezza all'interno del tuo team durante la selezione e la gestione delle minacce ransomware attive.
@@ -276,16 +314,19 @@ Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[08-december-2025]]
 == 08 dicembre 2025
 
 
 
+[[extension-blocking-is-enabled-at-the-workload-level]]
 === Il blocco delle estensioni è abilitato a livello di carico di lavoro
 
 Quando si abilita il blocco delle estensioni, ora viene abilitato a livello di carico di lavoro anziché a livello di VM di archiviazione.
 
 
 
+[[edit-user-behavior-alert-status]]
 === Modifica lo stato dell'avviso sul comportamento dell'utente
 
 Ransomware Resilience ora consente di modificare lo stato degli avvisi sul comportamento degli utenti. È possibile ignorare e risolvere manualmente gli avvisi.
@@ -294,6 +335,7 @@ Per maggiori informazioni, vedere link:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[support-for-multiple-console-agents]]
 === Supporto per più agenti della console
 
 Ransomware Resilience ora supporta l'utilizzo di più agenti Console per gestire gli stessi sistemi.
@@ -302,22 +344,26 @@ Per ulteriori informazioni sugli agenti della console, vederelink:https://docs.n
 
 
 
+[[10-november-2025]]
 == 10 novembre 2025
 
 Questa versione include miglioramenti e miglioramenti generali.
 
 
 
+[[06-october-2025]]
 == 06 ottobre 2025
 
 
 
+[[bluexp-ransomware-protection-is-now-netapp-ransomware-resilience]]
 === La BlueXP ransomware protection è ora NetApp Ransomware Resilience
 
 Il servizio BlueXP ransomware protection è stato rinominato NetApp Ransomware Resilience.
 
 
 
+[[bluexp-is-now-netapp-console]]
 === BlueXP è ora NetApp Console
 
 NetApp Console offre una gestione centralizzata dei servizi di storage e dati in ambienti on-premise e cloud di livello aziendale, offrendo informazioni in tempo reale, flussi di lavoro più rapidi e amministrazione semplificata.
@@ -326,6 +372,7 @@ Per i dettagli su cosa è cambiato, vedere il https://docs.netapp.com/us-en/cons
 
 
 
+[[data-breach-detection]]
 === Rilevamento delle violazioni dei dati
 
 Ransomware Resilience include un nuovo meccanismo di rilevamento che può essere attivato in pochi passaggi per rilevare letture anomale da parte dell'utente come indicatore precoce di violazione dei dati. La resilienza del ransomware raccoglie e analizza gli eventi di lettura degli utenti creando una baseline storica, ovvero un profilo del comportamento normale e previsto dai dati passati. Quando l'attività di un nuovo utente si discosta in modo significativo da questa norma consolidata (ad esempio, un'impennata di letture inaspettata combinata con modelli di lettura sospetti), viene generato un avviso. Ransomware Resilience include un modello di intelligenza artificiale per rilevare modelli di lettura sospetti.
@@ -360,16 +407,19 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/consol
 
 
 
+[[12-august-2025]]
 == 12 agosto 2025
 
 Questa versione include miglioramenti e miglioramenti generali.
 
 
 
+[[15-july-2025]]
 == 15 luglio 2025
 
 
 
+[[san-workload-support]]
 === Supporto del carico di lavoro SAN
 
 Questa versione include il supporto per i carichi di lavoro SAN nella BlueXP ransomware protection. Ora è possibile proteggere i carichi di lavoro SAN oltre ai carichi di lavoro NFS e CIFS.
@@ -378,6 +428,7 @@ Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-e
 
 
 
+[[improved-workload-protection]]
 === Protezione migliorata del carico di lavoro
 
 Questa versione migliora il processo di configurazione per i carichi di lavoro con policy di snapshot e backup provenienti da altri NetApp tool come BlueXP backup and recovery. Nelle versioni precedenti, BlueXP ransomware protection rilevava le policy di altri tool, consentendo solo di modificare la policy di rilevamento. Con questa versione, è ora possibile sostituire le policy di snapshot e backup con le policy di protezione ransomware di BlueXP o continuare a utilizzare le policy di altri tool.
@@ -386,6 +437,7 @@ Per i dettagli, fare riferimento alink:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[email-notifications]]
 === Notifiche e-mail
 
 Se la BlueXP ransomware protection rileva un possibile attacco, viene visualizzata una notifica nelle Notifiche BlueXP e viene inviata un'e-mail all'indirizzo e-mail configurato.
@@ -398,16 +450,19 @@ Per i dettagli, fare riferimento alink:https://docs.netapp.com/us-en/data-servic
 
 
 
+[[09-june-2025]]
 == 09 giugno 2025
 
 
 
+[[landing-page-updates]]
 === Aggiornamenti della landing page
 
 Questa versione include aggiornamenti alla landing page per la BlueXP ransomware protection che semplificano l'avvio della prova gratuita e la scoperta.
 
 
 
+[[readiness-drill-updates]]
 === Aggiornamenti sulle esercitazioni di preparazione
 
 In precedenza, era possibile eseguire un'esercitazione di preparazione al ransomware simulando un attacco su un nuovo carico di lavoro di esempio.  Grazie a questa funzionalità è possibile analizzare l'attacco simulato e recuperare il carico di lavoro.  Utilizzare questa funzione per testare le notifiche di avviso, la risposta e il ripristino.  Esegui e programma queste esercitazioni tutte le volte che è necessario.
@@ -420,6 +475,7 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[enable-bluexp-classification-updates]]
 === Abilita gli aggiornamenti BlueXP classification
 
 Prima di utilizzare la BlueXP classification all'interno del servizio BlueXP ransomware protection , è necessario abilitare la BlueXP classification per eseguire la scansione dei dati.  La classificazione dei dati aiuta a trovare informazioni personali identificabili (PII), il che può aumentare i rischi per la sicurezza.
@@ -430,10 +486,12 @@ Per dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-dat
 
 
 
+[[13-may-2025]]
 == 13 maggio 2025
 
 
 
+[[reporting-of-unsupported-working-environments-in-bluexp-ransomware-protection]]
 === Segnalazione di ambienti di lavoro non supportati nella BlueXP ransomware protection
 
 Durante il flusso di lavoro di individuazione, la BlueXP ransomware protection segnala maggiori dettagli quando si passa il mouse su Carichi di lavoro supportati o non supportati.  Questo ti aiuterà a capire perché alcuni dei tuoi carichi di lavoro non vengono rilevati dal servizio BlueXP ransomware protection .
@@ -446,10 +504,12 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[29-april-2025]]
 == 29 aprile 2025
 
 
 
+[[support-for-amazon-fsx-for-netapp-ontap]]
 === Supporto per Amazon FSx for NetApp ONTAP
 
 Questa versione supporta Amazon FSx for NetApp ONTAP.  Questa funzionalità ti aiuta a proteggere i tuoi carichi di lavoro FSx for ONTAP con la BlueXP ransomware protection.
@@ -473,6 +533,7 @@ Per informazioni sulle opzioni supportate, fare riferimento a https://docs.netap
 
 
 
+[[bluexp-access-role-needed]]
 === Ruolo di accesso BlueXP richiesto
 
 Ora è necessario uno dei seguenti ruoli di accesso per visualizzare, scoprire o gestire la BlueXP ransomware protection: amministratore dell'organizzazione, amministratore della cartella o del progetto, amministratore della protezione ransomware o visualizzatore della protezione ransomware.
@@ -481,10 +542,12 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 
 
+[[14-april-2025]]
 == 14 aprile 2025
 
 
 
+[[readiness-drill-reports]]
 === Rapporti di esercitazione di prontezza
 
 Con questa versione è possibile esaminare i report di esercitazione sulla preparazione agli attacchi ransomware.  Un'esercitazione di preparazione consente di simulare un attacco ransomware su un carico di lavoro di esempio appena creato.  Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro di esempio.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
@@ -493,6 +556,7 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[new-role-based-access-control-roles-and-permissions]]
 === Nuovi ruoli e autorizzazioni di controllo degli accessi basati sui ruoli
 
 In precedenza, era possibile assegnare ruoli e autorizzazioni agli utenti in base alle loro responsabilità, il che aiutava a gestire l'accesso degli utenti alla BlueXP ransomware protection.  Con questa versione sono disponibili due nuovi ruoli specifici per la BlueXP ransomware protection con autorizzazioni aggiornate.  I nuovi ruoli sono:
@@ -505,6 +569,7 @@ Per i dettagli sui permessi, fare riferimento a https://docs.netapp.com/us-en/da
 
 
 
+[[payment-improvements]]
 === Miglioramenti nei pagamenti
 
 Questa versione include diversi miglioramenti al processo di pagamento.
@@ -513,10 +578,12 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[10-march-2025]]
 == 10 marzo 2025
 
 
 
+[[simulate-an-attack-and-respond]]
 === Simula un attacco e rispondi
 
 Con questa versione, simula un attacco ransomware per testare la tua risposta a un avviso ransomware.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
@@ -525,6 +592,7 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[enhancements-to-discovery-process]]
 === Miglioramenti al processo di scoperta
 
 Questa versione include miglioramenti ai processi di scoperta e riscoperta selettiva:
@@ -538,6 +606,7 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[alerts-raised-when-high-encryption-is-detected]]
 === Avvisi generati quando viene rilevata una crittografia elevata
 
 Con questa versione, puoi visualizzare avvisi quando viene rilevata una crittografia elevata nei tuoi carichi di lavoro, anche senza modifiche significative alle estensioni dei file.  Questa funzionalità, che utilizza l'intelligenza artificiale ONTAP Autonomous Ransomware Protection (ARP), aiuta a identificare i carichi di lavoro a rischio di attacchi ransomware.  Utilizza questa funzionalità e scarica l'elenco completo dei file interessati, con o senza modifiche all'estensione.
@@ -546,10 +615,12 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[16-december-2024]]
 == 16 dicembre 2024
 
 
 
+[[detect-anomalous-user-behavior-using-data-infrastructure-insights-storage-workload-security]]
 === Rileva comportamenti anomali degli utenti utilizzando Data Infrastructure Insights Storage Workload Security
 
 Con questa versione, puoi utilizzare Data Infrastructure Insights Storage Workload Security per rilevare comportamenti anomali degli utenti nei tuoi carichi di lavoro di archiviazione.  Questa funzionalità ti aiuta a identificare potenziali minacce alla sicurezza e a bloccare gli utenti potenzialmente malintenzionati per proteggere i tuoi dati.
@@ -562,6 +633,7 @@ Fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resili
 
 
 
+[[select-workloads-to-discover-and-protect]]
 === Seleziona i carichi di lavoro da scoprire e proteggere
 
 Con questa versione, ora puoi fare quanto segue:
@@ -575,10 +647,12 @@ Fare riferimento a https://docs.netapp.com/us-en/data-services-ransomware-resili
 
 
 
+[[07-november-2024]]
 == 07 novembre 2024
 
 
 
+[[enable-data-classification-and-scan-for-personally-identifiable-information-pii]]
 === Abilita la classificazione dei dati e la scansione per informazioni di identificazione personale (PII)
 
 Con questa versione, puoi abilitare la BlueXP classification, un componente fondamentale della famiglia BlueXP , per analizzare e classificare i dati nei carichi di lavoro di condivisione file.  La classificazione dei dati aiuta a identificare se i dati contengono informazioni personali o private, il che può aumentare i rischi per la sicurezza.  Questo processo influisce anche sull'importanza del carico di lavoro e ti aiuta a garantire che i carichi di lavoro vengano protetti con il giusto livello di protezione.
@@ -589,6 +663,7 @@ Per avviare la scansione, nella pagina Protezione, seleziona *Identifica esposiz
 
 
 
+[[siem-integration-with-microsoft-sentinel]]
 === Integrazione SIEM con Microsoft Sentinel
 
 Ora puoi inviare dati al tuo sistema di sicurezza e gestione degli eventi (SIEM) per l'analisi e il rilevamento delle minacce tramite Microsoft Sentinel.  In precedenza, era possibile selezionare AWS Security Hub o Splunk Cloud come SIEM.
@@ -597,16 +672,19 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
+[[free-trial-now-30-days]]
 === Prova gratuita ora per 30 giorni
 
 Con questa versione, le nuove distribuzioni della BlueXP ransomware protection hanno ora 30 giorni di prova gratuita.  In precedenza, la BlueXP ransomware protection era disponibile in prova gratuita per 90 giorni.  Se hai già usufruito della prova gratuita di 90 giorni, l'offerta sarà valida per 90 giorni.
 
 
 
+[[30-september-2024]]
 == 30 settembre 2024
 
 
 
+[[custom-grouping-of-file-share-workloads]]
 === Raggruppamento personalizzato dei carichi di lavoro di condivisione file
 
 Con questa versione, ora puoi raggruppare le condivisioni file in gruppi per proteggere più facilmente il tuo patrimonio di dati.  Il servizio può proteggere contemporaneamente tutti i volumi di un gruppo.  In precedenza era necessario proteggere ogni volume separatamente.
@@ -615,10 +693,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[02-september-2024]]
 == 02 settembre 2024
 
 
 
+[[security-risk-assessment-from-digital-advisor]]
 === Valutazione del rischio per la sicurezza da parte di Digital Advisor
 
 BlueXP ransomware protection ora raccoglie informazioni sui rischi per la sicurezza elevati e critici relativi a un cluster da NetApp Digital Advisor. Se viene rilevato un rischio, BlueXP ransomware protection fornisce una raccomandazione nel riquadro *Azioni consigliate* della Dashboard: "Correggi una vulnerabilità di sicurezza nota sul cluster <name>." Dalla raccomandazione nella Dashboard, selezionando *Esamina e correggi* viene suggerito di consultare Digital Advisor e un articolo Common Vulnerability & Exposure (CVE) per risolvere il rischio per la sicurezza. Se sono presenti più rischi per la sicurezza, rivedere le informazioni in Digital Advisor.
@@ -627,6 +707,7 @@ Fare riferimento a https://docs.netapp.com/us-en/active-iq/index.html["Documenta
 
 
 
+[[back-up-to-google-cloud-platform]]
 === Esegui il backup su Google Cloud Platform
 
 Con questa versione, puoi impostare una destinazione di backup su un bucket di Google Cloud Platform.  In precedenza, era possibile aggiungere destinazioni di backup solo a NetApp StorageGRID, Amazon Web Services e Microsoft Azure.
@@ -635,6 +716,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[support-for-google-cloud-platform]]
 === Supporto per Google Cloud Platform
 
 Il servizio ora supporta Cloud Volumes ONTAP per Google Cloud Platform per la protezione dell'archiviazione.  In precedenza, il servizio supportava solo Cloud Volumes ONTAP per Amazon Web Services e Microsoft Azure insieme a NAS locali.
@@ -643,6 +725,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[role-based-access-control]]
 === Controllo degli accessi basato sui ruoli
 
 Ora puoi limitare l'accesso ad attività specifiche con il controllo degli accessi basato sui ruoli (RBAC).  La BlueXP ransomware protection utilizza due ruoli di BlueXP: amministratore dell'account BlueXP e amministratore senza account (visualizzatore).
@@ -651,10 +734,12 @@ Per i dettagli sulle azioni che ogni ruolo può eseguire, vedere https://docs.ne
 
 
 
+[[05-august-2024]]
 == 05 agosto 2024
 
 
 
+[[threat-detection-with-splunk-cloud]]
 === Rilevamento delle minacce con Splunk Cloud
 
 È possibile inviare automaticamente i dati al sistema di gestione della sicurezza e degli eventi (SIEM) per l'analisi e il rilevamento delle minacce.  Nelle versioni precedenti era possibile selezionare solo AWS Security Hub come SIEM.  Con questa versione, puoi selezionare AWS Security Hub o Splunk Cloud come SIEM.
@@ -663,10 +748,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
+[[01-july-2024]]
 == 01 luglio 2024
 
 
 
+[[bring-your-own-license-byol]]
 === Porta la tua licenza (BYOL)
 
 Con questa versione, puoi utilizzare una licenza BYOL, ovvero un file di licenza NetApp (NLF) che puoi ottenere dal tuo rappresentante commerciale NetApp .
@@ -675,6 +762,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
+[[restore-workload-at-the-file-level]]
 === Ripristina il carico di lavoro a livello di file
 
 Prima di ripristinare un carico di lavoro a livello di file, ora è possibile visualizzare un elenco di file che potrebbero essere stati interessati da un attacco e identificare quelli da ripristinare. È possibile lasciare che BlueXP ransomware protection scelga i file da ripristinare, caricare un file CSV contenente l'elenco di tutti i file interessati da un avviso oppure identificare manualmente i file da ripristinare.
@@ -686,6 +774,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover
 
 
 
+[[download-a-list-of-impacted-files]]
 === Scarica un elenco dei file interessati
 
 Prima di ripristinare un carico di lavoro a livello di file, ora è possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati in un file CSV e quindi utilizzare la pagina Ripristino per caricare il file CSV.
@@ -694,6 +783,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-re
 
 
 
+[[delete-protection-plan]]
 === Elimina piano di protezione
 
 Con questa versione è ora possibile eliminare una strategia di protezione dal ransomware.
@@ -702,10 +792,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[10-june-2024]]
 == 10 giugno 2024
 
 
 
+[[snapshot-copy-locking-on-primary-storage]]
 === Blocco della copia snapshot sullo storage primario
 
 Abilita questa opzione per bloccare le copie snapshot sull'archiviazione primaria in modo che non possano essere modificate o eliminate per un determinato periodo di tempo, anche se un attacco ransomware riesce a raggiungere la destinazione dell'archiviazione di backup.
@@ -714,6 +806,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[support-for-cloud-volumes-ontap-for-microsoft-azure]]
 === Supporto per Cloud Volumes ONTAP per Microsoft Azure
 
 Questa versione supporta Cloud Volumes ONTAP per Microsoft Azure come sistema, oltre a Cloud Volumes ONTAP per AWS e ONTAP NAS locale.
@@ -724,6 +817,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[microsoft-azure-added-as-a-backup-destination]]
 === Microsoft Azure aggiunto come destinazione di backup
 
 Ora puoi aggiungere Microsoft Azure come destinazione di backup insieme ad AWS e NetApp StorageGRID.
@@ -732,10 +826,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[14-may-2024]]
 == 14 maggio 2024
 
 
 
+[[licensing-updates]]
 === Aggiornamenti sulle licenze
 
 Puoi registrarti per una prova gratuita di 90 giorni.  Presto potrai acquistare un abbonamento pay-as-you-go con Amazon Web Services Marketplace oppure portare la tua licenza NetApp .
@@ -744,12 +840,14 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
+[[cifs-protocol]]
 === protocollo CIFS
 
 Il servizio ora supporta ONTAP on-premise e Cloud Volumes ONTAP nei sistemi AWS utilizzando i protocolli NFS e CIFS.  La versione precedente supportava solo il protocollo NFS.
 
 
 
+[[workload-details]]
 === Dettagli del carico di lavoro
 
 Questa versione fornisce ora maggiori dettagli nelle informazioni sul carico di lavoro dalle pagine Protezione e altre pagine per una migliore valutazione della protezione del carico di lavoro.  Dai dettagli del carico di lavoro è possibile esaminare la policy attualmente assegnata e le destinazioni di backup configurate.
@@ -758,6 +856,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[ransomware-protection-strategies]]
 === Strategie di protezione dal ransomware
 
 Se nel carico di lavoro non sono presenti policy di snapshot o backup, è possibile creare una strategia di protezione dal ransomware, che può includere le seguenti policy create in questo servizio:
@@ -772,6 +871,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[threat-detection]]
 === Rilevamento delle minacce
 
 È ora possibile abilitare il rilevamento delle minacce tramite un sistema di gestione della sicurezza e degli eventi (SIEM) di terze parti.  La Dashboard ora mostra una nuova raccomandazione per "Abilitare il rilevamento delle minacce", che può essere configurata nella pagina Impostazioni.
@@ -780,6 +880,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
+[[dismiss-false-positive-alerts]]
 === Ignora gli avvisi di falsi positivi
 
 Dalla scheda Avvisi, ora puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
@@ -788,6 +889,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.h
 
 
 
+[[detection-status]]
 === Stato di rilevamento
 
 Nella pagina Protezione vengono visualizzati nuovi stati di rilevamento che mostrano lo stato del rilevamento ransomware applicato al carico di lavoro.
@@ -796,6 +898,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 
 
+[[download-csv-files]]
 === Scarica i file CSV
 
 È possibile scaricare i file CSV* dalle pagine Protezione, Avvisi e Ripristino.
@@ -804,18 +907,21 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports
 
 
 
+[[documentation-link]]
 === Link alla documentazione
 
 Il collegamento alla documentazione è ora incluso nell'interfaccia utente.  È possibile accedere a questa documentazione dalla verticale Dashboard *Azioni*image:button-actions-vertical.png["Opzione Azioni verticali"] opzione.  Selezionare *Novità* per visualizzare i dettagli nelle Note di rilascio o *Documentazione* per visualizzare la pagina iniziale della documentazione BlueXP ransomware protection .
 
 
 
+[[bluexp-backup-and-recovery]]
 === BlueXP backup and recovery
 
 Il servizio di backup e recovery BlueXP non deve più essere già abilitato sul sistema. Vedi link:rp-start-prerequisites.html["prerequisiti"]. Il servizio di protezione ransomware BlueXP aiuta a configurare una destinazione di backup tramite l'opzione Impostazioni. Vedi link:task-backup-destination.html["Configurare le impostazioni"].
 
 
 
+[[settings-option]]
 === Opzione Impostazioni
 
 Ora puoi impostare le destinazioni di backup nelle impostazioni BlueXP ransomware protection .
@@ -824,34 +930,40 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-de
 
 
 
+[[05-march-2024]]
 == 05 marzo 2024
 
 
 
+[[protection-policy-management]]
 === Gestione della politica di protezione
 
 Oltre a utilizzare criteri predefiniti, ora è possibile creare criteri. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Scopri di più sulla gestione delle policy"] .
 
 
 
+[[immutability-on-secondary-storage-datalock]]
 === Immutabilità su storage secondario (DataLock)
 
 Ora è possibile rendere il backup immutabile nello storage secondario utilizzando la tecnologia NetApp DataLock nell'archivio oggetti. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["Scopri di più sulla creazione di policy di protezione"] .
 
 
 
+[[automatic-backup-to-netapp-storagegrid]]
 === Backup automatico su NetApp StorageGRID
 
 Oltre a utilizzare AWS, ora puoi scegliere StorageGRID come destinazione di backup https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["Scopri di più sulla configurazione delle destinazioni di backup"].
 
 
 
+[[additional-features-to-investigate-potential-attacks]]
 === Funzionalità aggiuntive per indagare su potenziali attacchi
 
 Ora è possibile visualizzare maggiori dettagli forensi per indagare sul potenziale attacco rilevato. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["Scopri di più su come rispondere a un avviso di ransomware rilevato"] .
 
 
 
+[[recovery-process]]
 === Processo di recupero
 
 Il processo di recupero è stato migliorato. Ora è possibile recuperare volume per volume o tutti i volumi di un carico di lavoro. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["Scopri di più sul ripristino da un attacco ransomware (dopo che gli incidenti sono stati neutralizzati)"] .
@@ -860,6 +972,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 
 
+[[06-october-2023]]
 == 06 ottobre 2023
 
 Il servizio BlueXP ransomware protection è una soluzione SaaS per la protezione dei dati, il rilevamento di potenziali attacchi e il recupero dei dati da un attacco ransomware.

@@ -29,6 +29,7 @@ Se non stai utilizzando DII, procedi con le istruzioni di configurazione qui.
 
 
 
+[[before-you-begin]]
 == Prima di iniziare
 
 * Assicurati di soddisfare i link:reference-user-activity-requirements.html["requisiti del sistema operativo, del server e della rete"].
@@ -40,6 +41,7 @@ Assicurarsi che ogni ruolo venga applicato a livello di organizzazione.
 
 
 
+[[create-a-user-activity-agent]]
 == Creare un agente di attività utente
 
 Gli agenti di attività utente sono ambienti eseguibili per link:#add-a-data-collector["raccoglitori di dati"]; i raccoglitori di dati condividono gli eventi di attività utente con Ransomware Resilience. È necessario creare almeno un agente di attività utente per abilitare il rilevamento dell'attività utente.
@@ -78,6 +80,7 @@ Dopo che l'agente di attività utente è stato creato correttamente, torna al me
 
 
 
+[[add-a-data-collector]]
 === Aggiungi un raccoglitore di dati
 
 I raccoglitori di dati vengono creati automaticamente quando si abilita una strategia di protezione dal ransomware con rilevamento dell'attività dell'utente. Per ulteriori informazioni, vedere link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["aggiungere una politica di rilevamento"].
@@ -88,6 +91,7 @@ image:user-activity-settings.png["Screenshot delle impostazioni dell'attività u
 
 
 
+[[create-a-user-directory-connector]]
 == Crea un connettore di directory utente
 
 Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di directory utente.
@@ -148,6 +152,7 @@ Fornire i dettagli della mappatura degli attributi:
 
 
 
+[[delete-a-user-directory-connector]]
 === Elimina un connettore di directory utente
 
 .Passi
@@ -160,6 +165,7 @@ Fornire i dettagli della mappatura degli attributi:
 
 
 
+[[respond-to-user-activity-alerts]]
 == Rispondere agli avvisi di attività degli utenti
 
 Dopo aver configurato il rilevamento dell'attività dell'utente, è possibile monitorare gli eventi nella pagina degli avvisi. Per ulteriori informazioni, consultare link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Rileva attività dannose e comportamenti sospetti degli utenti"].
@@ -168,6 +174,7 @@ Dopo aver configurato il rilevamento dell'attività dell'utente, è possibile mo
 
 
 
+[[next-steps]]
 == Prossimi passi
 
 * link:task-users-manage.html["Gestisci le impostazioni degli avvisi e gli utenti bloccati"]

@@ -25,6 +25,7 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 
 
 
+[[select-workloads-to-discover]]
 == Seleziona i carichi di lavoro da scoprire
 
 All'interno di ciascun agente della Console, selezionare i sistemi in cui si desidera identificare i carichi di lavoro.
@@ -69,6 +70,7 @@ link:rp-use-dashboard.html["Scopri cosa mostra la dashboard."]
 
 
 
+[[discover-newly-created-workloads-for-previously-selected-systems]]
 == Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza
 
 Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, devi riavviare la rilevazione per proteggere i nuovi carichi di lavoro.
@@ -83,6 +85,7 @@ TIP: Se noti che alcuni volumi non vengono visualizzati per il sistema individua
 
 
 
+[[discover-new-systems]]
 == Scopri nuovi sistemi
 
 Se hai già eseguito la rilevazione su un sistema e successivamente vi hai aggiunto un carico di lavoro, esegui nuovamente la rilevazione per identificare i carichi di lavoro.
@@ -96,6 +99,7 @@ Se hai già eseguito la rilevazione su un sistema e successivamente vi hai aggiu
 
 
 
+[[exclude-workloads]]
 == Escludi carichi di lavoro
 
 Ransomware Resilience consente di escludere carichi di lavoro specifici in un sistema dalla protezione e dal rilevamento del ransomware.

@@ -18,6 +18,7 @@ Le strategie di protezione dal ransomware sono una caratteristica fondamentale d
 
 
 
+[[understand-ransomware-protection-strategies]]
 == Comprendere le strategie di protezione dal ransomware
 
 Le strategie di protezione dal ransomware comprendono _rilevamento_, _protezione_ e _replica_.
@@ -55,6 +56,7 @@ TIP: Per una migliore gestione e protezione del tuo patrimonio di dati, puoi cre
 
 
 
+[[protection-policies-with-other-netapp-managed-services]]
 === Politiche di protezione con altri servizi gestiti NetApp
 
 Oltre a Ransomware Resilience, puoi utilizzare NetApp Backup and Recovery per gestire la protezione delle condivisioni di file e delle condivisioni di file delle VM.
@@ -74,6 +76,7 @@ Se il carico di lavoro non è gestito da Backup and Recovery o Ransomware Resili
 
 
 
+[[predefined-detection-policies]]
 === Criteri di rilevamento predefiniti
 
 È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.
@@ -189,6 +192,7 @@ Ogni 30 giorni
 |===
 
 
+[[add-a-ransomware-protection-strategy]]
 == Aggiungi una strategia di protezione dal ransomware
 
 Esistono tre approcci per aggiungere una strategia di protezione dal ransomware:
@@ -224,6 +228,7 @@ La policy di rilevamento abilita la protezione autonoma contro i ransomware e la
 
 
 
+[[create-a-ransomware-protection-strategy-if-you-have-no-snapshot-or-backup-policies]]
 === Creare una strategia di protezione dal ransomware (se non si dispone di snapshot o policy di backup)
 
 Se nel carico di lavoro non sono presenti policy di snapshot o backup, è possibile creare una strategia di protezione dal ransomware, che può includere le seguenti policy create in Ransomware Resilience:
@@ -302,6 +307,7 @@ TIP: Per abilitare il blocco del backup su storage secondario, configura le dest
 
 
 
+[[add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-backup-and-recovery]]
 === Aggiungi una policy di rilevamento ai carichi di lavoro con policy di Snapshot e backup esistenti gestite da NetApp Backup and Recovery
 
 Ransomware Resilience consente di assegnare una policy di rilevamento o una policy di protezione ai carichi di lavoro con protezione snapshot e backup esistente gestita in altri NetApp prodotti o servizi. Backup and Recovery utilizza policy che regolano snapshot, replica su storage secondario o backup su storage a oggetti.
@@ -363,6 +369,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 
 
+[[assign-a-different-policy]]
 === Assegna una politica diversa
 
 È possibile sostituire la policy esistente con una diversa.
@@ -378,12 +385,14 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 
 
+[[manage-ransomware-protection-strategies]]
 == Gestire le strategie di protezione dal ransomware
 
 È possibile eliminare una strategia ransomware.
 
 
 
+[[view-workloads-protected-by-a-ransomware-protection-strategy]]
 === Visualizza i carichi di lavoro protetti da una strategia di protezione ransomware
 
 Prima di eliminare una strategia di protezione ransomware, potrebbe essere opportuno verificare quali carichi di lavoro sono protetti da tale strategia.
@@ -404,6 +413,7 @@ image:screen-protection-strategy-list.png["Schermata delle strategie di protezio
 
 
 
+[[delete-a-ransomware-protection-strategy]]
 === Eliminare una strategia di protezione ransomware
 
 È possibile eliminare una strategia di protezione che al momento non è associata ad alcun carico di lavoro.

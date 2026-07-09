@@ -18,6 +18,7 @@ Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ranso
 
 
 
+[[how-readiness-drills-work]]
 == Come funzionano le esercitazioni di prontezza operativa
 
 Ransomware Resilience supporta tre tipi di esercitazioni: link:task-clean-restore-recover.html["ripristino pulito"], link:rp-use-recover.html["recupero personalizzato"] e link:suspicious-user-activity.html["recupero da data breach"]. Le esercitazioni di ripristino pulito e di ripristino personalizzato simulano attacchi basati sulla crittografia (entropia) e si differenziano per il metodo di ripristino che offrono. Le esercitazioni di ripristino in caso di violazione dei dati simulano l'esfiltrazione con modelli di lettura insoliti sui tuoi dati.
@@ -30,6 +31,7 @@ Quando esegui la simulazione, puoi testare la tua risposta agli avvisi e, se vuo
 
 
 
+[[configure-a-ransomware-attack-readiness-drill]]
 == Configurare un'esercitazione di preparazione all'attacco ransomware
 
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
@@ -63,6 +65,7 @@ TIP: È possibile modificare la configurazione dell'esercitazione di preparazion
 
 
 
+[[start-a-readiness-drill]]
 == Avviare un'esercitazione di preparazione
 
 Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.
@@ -86,6 +89,7 @@ NOTE: Non puoi modificare la configurazione dell'esercitazione di prontezza ment
 
 
 
+[[respond-to-a-readiness-drill-alert]]
 == Rispondere a un avviso di esercitazione di prontezza
 
 Metti alla prova la tua prontezza rispondendo a un avviso di esercitazione di prontezza.
@@ -124,6 +128,7 @@ Se la gravità indica che un utente è sospettato di attività dannose, rivedere
 
 
 
+[[restore-the-test-workload]]
 == Ripristinare il carico di lavoro del test
 
 Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il carico di lavoro del test, se necessario.
@@ -146,6 +151,7 @@ Dopo aver esaminato l'avviso di esercitazione di preparazione, ripristinare il c
 
 
 
+[[change-the-alert-status-after-the-readiness-drill]]
 == Modifica lo stato di allerta dopo l'esercitazione di prontezza
 
 Dopo aver esaminato l'avviso di esercitazione di prontezza e aver ripristinato il carico di lavoro, modificare lo stato dell'avviso, se necessario.
@@ -169,6 +175,7 @@ IMPORTANT: Dopo aver ignorato un attacco, non è possibile ripristinarlo. Se si 
 
 
 
+[[review-reports-on-the-readiness-drill]]
 == Rivedere i rapporti sull'esercitazione di preparazione
 
 Al termine dell'esercitazione di preparazione, puoi generare e salvare un report sull'esercitazione. Il report dell'esercitazione è un file JSON che raccoglie informazioni quali la policy di rilevamento, il tipo di avviso e la data e l'ora, i dettagli dell'attacco e lo stato di ripristino.

@@ -18,6 +18,7 @@ Per impostare le licenze, è necessario il ruolo di amministratore dell'organizz
 
 
 
+[[license-types]]
 == Tipi di licenza
 
 Ransomware Resilience è disponibile con i seguenti tipi di licenza:
@@ -38,6 +39,7 @@ Una volta terminato il periodo di prova gratuito o scaduta la licenza o l'abbona
 
 
 
+[[other-licenses]]
 == Altre licenze
 
 La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi. Tuttavia, Ransomware Resilience può essere integrato con NetApp Backup and Recovery, anche se non si dispone di una licenza separata per Backup and Recovery.
@@ -47,6 +49,7 @@ NOTE: Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti 
 
 
 
+[[cost]]
 == Costo
 
 Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
@@ -62,6 +65,7 @@ TIP: Monitora la dimensione dei dati protetti nella dashboard di protezione Rans
 
 
 
+[[try-ransomware-resilience-with-a-30-day-free-trial]]
 == Prova Ransomware Resilience con una prova gratuita di 30 giorni
 
 Puoi provare Ransomware Resilience con una prova gratuita di 30 giorni.  Per iniziare la prova gratuita devi essere un amministratore dell'organizzazione della console.
@@ -101,6 +105,7 @@ Se hai già un abbonamento PAYGO, la licenza verrà automaticamente trasferita a
 
 
 
+[[subscribe-through-aws-marketplace]]
 == Iscriviti tramite AWS Marketplace
 
 Questa procedura fornisce una panoramica di alto livello su come abbonarsi direttamente ad AWS Marketplace.
@@ -143,6 +148,7 @@ Un messaggio conferma che è stata aggiunta una licenza.
 
 
 
+[[subscribe-through-microsoft-azure-marketplace]]
 == Iscriviti tramite Microsoft Azure Marketplace
 
 Questa procedura fornisce una panoramica di alto livello su come sottoscrivere direttamente in Azure Marketplace.
@@ -185,6 +191,7 @@ Viene visualizzato un messaggio che indica che è stata aggiunta una licenza.
 
 
 
+[[subscribe-through-google-cloud-platform-marketplace]]
 == Iscriviti tramite Google Cloud Platform Marketplace
 
 Questa procedura fornisce una panoramica di alto livello su come abbonarsi direttamente a Google Cloud Platform Marketplace.
@@ -227,6 +234,7 @@ Viene visualizzato un messaggio che indica che è stata aggiunta una licenza.
 
 
 
+[[bring-your-own-license-byol]]
 == Porta la tua licenza (BYOL)
 
 Se si desidera utilizzare la propria licenza (BYOL), è necessario acquistare la licenza, ottenere il file di licenza NetApp (NLF) e quindi aggiungere la licenza alla console.
@@ -262,6 +270,7 @@ Nella pagina Licenses and subscriptions viene mostrato che Ransomware Resilience
 
 
 
+[[update-your-console-license-when-it-expires]]
 == Aggiorna la licenza della tua console quando scade
 
 Se il termine della licenza si avvicina alla data di scadenza o se la capacità della licenza sta raggiungendo il limite, verrai avvisato nell'interfaccia utente di Ransomware Resilience.  Puoi aggiornare la tua licenza Ransomware Resilience prima che scada, in modo da non interrompere l'accesso ai dati scansionati.
@@ -285,6 +294,7 @@ Dopo aver pagato la licenza e averla registrata sul sito di supporto NetApp , la
 
 
 
+[[end-the-paygo-subscription]]
 == Disdire l'abbonamento PAYGO
 
 Se desideri disdire il tuo abbonamento PAYGO, puoi farlo in qualsiasi momento.
@@ -298,6 +308,7 @@ Se desideri disdire il tuo abbonamento PAYGO, puoi farlo in qualsiasi momento.
 
 
 
+[[more-information]]
 == Ulteriori informazioni
 
 * link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["Documentazione sulle licenze e gli abbonamenti NetApp Console"^]

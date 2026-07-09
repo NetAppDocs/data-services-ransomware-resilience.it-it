@@ -27,6 +27,7 @@ Ogni avviso potrebbe includere più incidenti su volumi e stati diversi.  Esamin
 
 
 
+[[how-alerts-are-generated]]
 == Come vengono generati gli avvisi
 
 Ransomware Resilience si basa su prove relative a modelli di entropia dei dati, tipi di estensione dei file e crittografia per generare avvisi. Gli avvisi si basano sui seguenti eventi:
@@ -45,6 +46,7 @@ NOTE: Per gli avvisi relativi a violazioni dei dati, distruzione dei dati e comp
 
 
 
+[[alert-types-and-statuses]]
 === Tipi e stati di avviso
 
 Gli avvisi hanno uno dei due stati: *Nuovo* o *Inattivo*.
@@ -74,6 +76,7 @@ Le prove si basano sulle informazioni di Autonomous Ransomware Protection in ONT
 
 
 
+[[alert-states]]
 === Stati di allerta
 
 Un incidente di allerta può avere i seguenti stati:
@@ -106,6 +109,7 @@ NOTE: Se si dispone di una strategia di protezione esistente e si disabilita una
 
 
 
+[[view-alerts]]
 == Visualizza avvisi
 
 È possibile accedere agli avvisi dalla dashboard di NetApp Ransomware Resilience o dalla scheda *Alerts*.
@@ -132,6 +136,7 @@ image:screen-alerts.png["Pagina degli avvisi"]
 
 
 
+[[respond-to-an-alert-email]]
 == Rispondere a un'e-mail di avviso
 
 Quando Ransomware Resilience rileva un potenziale attacco, invia una notifica via email agli utenti iscritti, in base alle preferenze di notifica di iscrizione configurate nelle impostazioni della NetApp Console. L'email contiene informazioni sull'avviso, tra cui la gravità e le risorse interessate.
@@ -160,6 +165,7 @@ Viene visualizzata la pagina Avvisi.
 
 
 
+[[detect-malicious-activity-and-anomalous-user-behavior]]
 == Rileva attività dannose e comportamenti anomali degli utenti
 
 Nella scheda Avvisi è possibile verificare se si è verificata un'attività dannosa o un comportamento anomalo da parte dell'utente.
@@ -168,6 +174,7 @@ Nella scheda Avvisi è possibile verificare se si è verificata un'attività dan
 
 
 
+[[view-malicious-activity]]
 === Visualizza attività dannose
 
 Quando Autonomous Ransomware Protection attiva un avviso in Ransomware Resilience, puoi visualizzare i seguenti dettagli:
@@ -196,6 +203,7 @@ image:screen-alerts-incidents3.png["Pagina di avviso incidenti"]
 
 
 
+[[view-anomalous-user-behavior]]
 === Visualizza il comportamento anomalo dell'utente
 
 Se hai configurato il rilevamento del comportamento dell'utente, puoi visualizzare i dati a livello di utente e bloccare utenti specifici. Per abilitare il rilevamento dell'attività dell'utente, consulta link:suspicious-user-activity.html["Configura agenti e collettori"].
@@ -218,6 +226,7 @@ TIP: Per riattivare gli avvisi per un utente, restituisci l'avviso. Seleziona i 
 
 
 
+[[mark-ransomware-incidents-as-ready-for-recovery-after-incidents-are-neutralized]]
 == Contrassegna gli incidenti ransomware come pronti per il ripristino (dopo che gli incidenti sono stati neutralizzati)
 
 Dopo aver fermato l'attacco, informa l'amministratore dello storage che i dati sono pronti così che possa avviare il processo di ripristino.
@@ -244,6 +253,7 @@ Dopo che l'avviso è stato contrassegnato per il ripristino, l'avviso passa dall
 
 
 
+[[dismiss-incidents-that-are-not-potential-attacks]]
 == Ignorare gli incidenti che non sono potenziali attacchi
 
 Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.
@@ -288,6 +298,7 @@ Lo stato dell'incidente o degli incidenti cambia in "Ignorato".
 
 
 
+[[view-a-list-of-impacted-files]]
 == Visualizza un elenco dei file interessati
 
 Prima di ripristinare un carico di lavoro a livello di file, è possibile visualizzare un elenco dei file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati. Quindi utilizzare la pagina Ripristino per caricare l'elenco e scegliere quali file ripristinare.

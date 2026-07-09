@@ -4,6 +4,7 @@
 
 
 
+[[azure-netapp-files-support]]
 === Supporto per Azure NetApp Files
 
 Ransomware Resilience ora supporta i sistemi Azure NetApp Files, consentendo di rilevare e rispondere in modo efficiente alle minacce ransomware in Azure NetApp Files. Quando scopri i carichi di lavoro, Ransomware Resilience ora presenta Azure NetApp Files e li visualizza nella dashboard di protezione. Il supporto di Ransomware Resilience per Azure NetApp Files include strategie di rilevamento e protezione basate solo su snapshot. Il supporto per Azure NetApp Files è attualmente in anteprima.
@@ -12,6 +13,7 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-servi
 
 
 
+[[exclude-users-from-user-behavior-alerts]]
 === Escludere gli utenti dagli avvisi sul comportamento degli utenti
 
 Ransomware Resilience ora consente di escludere utenti specifici dagli avvisi sul comportamento utente. L'esclusione di utenti attendibili può prevenire falsi positivi e avvisi non necessari.
@@ -20,6 +22,7 @@ Per ulteriori informazioni, vedere il link:Per ulteriori informazioni, vedere li
 
 
 
+[[protection-group-support-for-user-behavior-detection]]
 === Supporto del gruppo di protezione per il rilevamento del comportamento dell'utente
 
 I gruppi di protezione Ransomware Resilience ora supportano policy di rilevamento per il rilevamento di comportamenti sospetti degli utenti. Quando si applica una strategia di protezione ransomware a un gruppo di protezione, viene applicata una policy su tutti i carichi di lavoro, semplificando la gestione della postura di cybersecurity.

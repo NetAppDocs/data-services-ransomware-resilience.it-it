@@ -28,6 +28,7 @@ I playbook di Ransomware Resilience offrono le seguenti funzionalità:
 
 
 
+[[playbooks]]
 == Playbook
 
 Ransomware Resilience offre playbook per Google SecOps, Microsoft Sentinel e Splunk. Consulta le rispettive pagine GitHub per i dettagli di configurazione.

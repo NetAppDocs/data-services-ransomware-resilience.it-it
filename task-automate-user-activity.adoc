@@ -18,6 +18,7 @@ Le risposte automatiche sono supportate per gli eventi di crittografia (comporta
 
 
 
+[[create-an-automated-response]]
 == Crea una risposta automatica
 
 Puoi proteggere solo una macchina virtuale di archiviazione con almeno un carico di lavoro protetto da una policy di rilevamento di comportamenti utente sospetti.
@@ -66,6 +67,7 @@ Se scegli questa opzione, devi anche selezionare la durata del blocco. Può esse
 
 
 
+[[modify-an-automated-response]]
 == Modifica una risposta automatica
 
 Dopo aver creato una risposta automatizzata, puoi metterla in pausa, riavviarla o modificarla. Puoi modificare il nome della risposta, i tipi di avvisi che la attivano, le storage VM e l'azione intrapresa.

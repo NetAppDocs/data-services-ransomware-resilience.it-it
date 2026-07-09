@@ -4,6 +4,7 @@
 
 
 
+[[simulate-an-attack-and-respond]]
 === Simula un attacco e rispondi
 
 Con questa versione, simula un attacco ransomware per testare la tua risposta a un avviso ransomware.  Questa funzionalità ti aiuta a sapere se sei preparato in caso di un vero e proprio attacco ransomware testando i processi di notifica degli avvisi, risposta e ripristino.
@@ -12,6 +13,7 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[enhancements-to-discovery-process]]
 === Miglioramenti al processo di scoperta
 
 Questa versione include miglioramenti ai processi di scoperta e riscoperta selettiva:
@@ -25,6 +27,7 @@ Per i dettagli, fare riferimento a https://docs.netapp.com/us-en/data-services-r
 
 
 
+[[alerts-raised-when-high-encryption-is-detected]]
 === Avvisi generati quando viene rilevata una crittografia elevata
 
 Con questa versione, puoi visualizzare avvisi quando viene rilevata una crittografia elevata nei tuoi carichi di lavoro, anche senza modifiche significative alle estensioni dei file.  Questa funzionalità, che utilizza l'intelligenza artificiale ONTAP Autonomous Ransomware Protection (ARP), aiuta a identificare i carichi di lavoro a rischio di attacchi ransomware.  Utilizza questa funzionalità e scarica l'elenco completo dei file interessati, con o senza modifiche all'estensione.

@@ -16,6 +16,7 @@ Questa sezione FAQ può aiutarti se stai cercando una risposta rapida a una doma
 
 
 
+[[deployment]]
 == Distribuzione
 
 .Hai bisogno di una licenza per utilizzare Ransomware Resilience?
@@ -49,6 +50,7 @@ Nel calcolo delle dimensioni, i costi di licenza si basano sulla capacità logic
 
 
 
+[[access]]
 == Accesso
 
 .Qual è l'URL di Ransomware Resilience?
@@ -65,6 +67,7 @@ La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x108
 
 
 
+[[interoperability]]
 == Interoperabilità
 
 .Ransomware Resilience è a conoscenza delle impostazioni di protezione in ONTAP?
@@ -77,6 +80,7 @@ Per quanto riguarda le licenze e la fatturazione, Ransomware Resilience può int
 
 
 
+[[workloads]]
 == Carichi di lavoro
 
 .Cos'è un carico di lavoro nel contesto della resilienza al ransomware?
@@ -104,6 +108,7 @@ Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazio
 
 
 
+[[protection-policies]]
 == Politiche di protezione
 
 .Le policy ransomware Ransomware Resilience coesistono con altri tipi di policy relative ai carichi di lavoro?

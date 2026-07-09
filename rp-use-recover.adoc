@@ -33,6 +33,7 @@ Un carico di lavoro può avere uno dei seguenti stati di ripristino:
 
 
 
+[[view-workloads-that-are-ready-to-be-restored]]
 == Visualizza i carichi di lavoro pronti per essere ripristinati
 
 Esaminare i carichi di lavoro che si trovano nello stato di ripristino "Ripristino necessario".
@@ -50,6 +51,7 @@ image:screen-recovery2.png["Pagina di recupero"]
 
 
 
+[[recover-a-workload]]
 == Recuperare un carico di lavoro
 
 Dopo aver valutato i carichi di lavoro, hai due opzioni per ripristinare il tuo carico di lavoro:

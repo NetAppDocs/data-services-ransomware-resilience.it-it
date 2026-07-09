@@ -18,6 +18,7 @@ Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato do
 
 
 
+[[before-you-begin]]
 == Prima di iniziare
 
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
@@ -26,6 +27,7 @@ Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato do
 
 
 
+[[considerations]]
 == Considerazioni
 
 * È possibile eseguire un ripristino completo solo in caso di attacco ransomware basato sulla crittografia.
@@ -39,6 +41,7 @@ Con NetApp Ransomware Resilience, è possibile eseguire un ripristino guidato do
 
 
 
+[[considerations-for-restoring-to-an-alternate-location]]
 === Considerazioni per il ripristino in una posizione alternativa
 
 Quando si ripristina un volume utilizzando un ripristino pulito, è possibile scegliere di ripristinarlo in una posizione alternativa gestita dallo stesso agente della Console. La nuova posizione può trovarsi sullo stesso sistema, su una storage VM o su un aggregate, oppure su un sistema diverso. Quando si esegue il ripristino in una posizione alternativa:
@@ -51,6 +54,7 @@ Quando si ripristina un volume utilizzando un ripristino pulito, è possibile sc
 
 
 
+[[perform-a-clean-restore]]
 == Eseguire un ripristino pulito
 
 . Nella sezione **Ripristino**, identifica il carico di lavoro che desideri ripristinare. Seleziona **Ripristina**.

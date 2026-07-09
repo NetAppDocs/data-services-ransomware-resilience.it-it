@@ -4,6 +4,7 @@
 
 
 
+[[support-for-amazon-fsx-for-netapp-ontap]]
 === Supporto per Amazon FSx for NetApp ONTAP
 
 Questa versione supporta Amazon FSx for NetApp ONTAP.  Questa funzionalità ti aiuta a proteggere i tuoi carichi di lavoro FSx for ONTAP con la BlueXP ransomware protection.
@@ -27,6 +28,7 @@ Per informazioni sulle opzioni supportate, fare riferimento a https://docs.netap
 
 
 
+[[bluexp-access-role-needed]]
 === Ruolo di accesso BlueXP richiesto
 
 Ora è necessario uno dei seguenti ruoli di accesso per visualizzare, scoprire o gestire la BlueXP ransomware protection: amministratore dell'organizzazione, amministratore della cartella o del progetto, amministratore della protezione ransomware o visualizzatore della protezione ransomware.

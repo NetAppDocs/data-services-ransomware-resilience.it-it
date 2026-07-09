@@ -18,6 +18,7 @@ Una volta compresa la portata della tua attuale protezione, link:rp-use-protect.
 
 
 
+[[view-protection-on-a-workload]]
 == Visualizza la protezione su un workload
 
 Uno dei primi passi per proteggere i carichi di lavoro è visualizzare i carichi di lavoro correnti e il loro stato di protezione.  È possibile visualizzare i seguenti tipi di carichi di lavoro:
@@ -46,6 +47,7 @@ NOTE: Vedere link:rp-use-protect.html#add-a-ransomware-protection-strategy["Aggi
 
 
 
+[[understand-the-protection-dashboard]]
 == Comprendere la dashboard di protezione
 
 La dashboard di protezione in Ransomware Resilience mostra informazioni dettagliate sui carichi di lavoro (ad esempio, nome e tipo di carico di lavoro, Console agent, sistema e storage VM), oltre a informazioni sullo stato della protezione. Utilizza la dashboard di protezione per esaminare e gestire la preparazione al ransomware per i carichi di lavoro. Le seguenti colonne sono particolarmente utili per comprendere il tuo stato di protezione:
@@ -86,6 +88,7 @@ Ransomware Resilience assegna un'importanza o una priorità a ciascun carico di 
 
 
 
+[[next-steps]]
 == Prossimi passi
 
 * link:rp-use-protect.html["Proteggi i carichi di lavoro con strategie di protezione dal ransomware"]

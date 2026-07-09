@@ -20,6 +20,7 @@ TIP: Puoi link:task-automate-user-activity.html["automatizzare le risposte"] agl
 
 
 
+[[manage-blocked-users]]
 == Gestisci gli utenti bloccati
 
 Puoi bloccare gli utenti quando pensi che siano responsabili di attività dannose.
@@ -46,6 +47,7 @@ Puoi bloccare gli utenti quando pensi che siano responsabili di attività dannos
 
 
 
+[[exclude-users-from-alerts]]
 == Escludi gli utenti dagli avvisi
 
 Se ci sono determinati utenti attendibili il cui comportamento potrebbe attivare avvisi sul comportamento degli utenti, puoi escluderli dagli avvisi.
@@ -84,6 +86,7 @@ TIP: È anche possibile escludere un utente direttamente da un avviso. Per ulter
 
 
 
+[[exclude-file-paths-from-monitoring]]
 == Escludi i percorsi dei file dal monitoraggio
 
 Ogni percorso file deve iniziare con il nome di un volume. Può includere fino a tre sottocartelle per quel volume, ad esempio "volume/cartella/sottocartella/sottocartella2". Puoi escludere percorsi file inserendoli manualmente o caricando un file CSV che li elenca.
@@ -103,6 +106,7 @@ Quando l'operazione viene completata con successo, NetApp Ransomware Resilience 
 
 
 
+[[next-steps]]
 == Prossimi passi
 
 * link:task-automate-user-activity.html["Automatizza le risposte agli eventi di rilevamento dell'attività dell'utente"]

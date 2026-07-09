@@ -4,6 +4,7 @@
 
 
 
+[[automated-responses-to-user-activity-alerts]]
 === Risposte automatiche agli avvisi di attività degli utenti
 
 Ransomware Resilience ora supporta l'automazione della creazione di snapshot e del blocco degli utenti quando viene generato un avviso di attività utente. Con le risposte automatizzate, puoi bloccare un utente non appena viene generato un avviso e creare uno snapshot per il ripristino, permettendo una risposta più rapida senza intervento manuale.

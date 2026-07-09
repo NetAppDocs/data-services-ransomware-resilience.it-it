@@ -18,6 +18,7 @@ Il rilevamento del comportamento dell'utente è supportato in Ransomware Resilie
 
 
 
+[[cloud-provider-support]]
 == Supporto del cloud provider
 
 I dati relativi al comportamento degli utenti possono essere archiviati in AWS e Azure nelle seguenti regioni:
@@ -38,6 +39,7 @@ I dati relativi al comportamento degli utenti possono essere archiviati in AWS e
 |===
 
 
+[[operating-system-requirements]]
 == Requisiti del sistema operativo
 
 Il rilevamento di comportamenti sospetti degli utenti è supportato con i seguenti sistemi operativi:
@@ -80,6 +82,7 @@ IL `unzip` il comando è necessario per l'installazione. IL `sudo su -` Il coman
 
 
 
+[[server-requirements]]
 == Requisiti del server
 
 Il server deve soddisfare i seguenti requisiti minimi:
@@ -91,6 +94,7 @@ Il server deve soddisfare i seguenti requisiti minimi:
 
 
 
+[[server-recommendations]]
 === Raccomandazioni per il server
 
 * Assegnare spazio extra sul disco per consentire la creazione del file system. Assicurarsi che ci siano almeno 35 GB di spazio libero nel file system. + Se `/opt` è una cartella montata da un archivio NAS, gli utenti locali devono avere accesso a questa cartella. La creazione dell'agente di attività utente può fallire se gli utenti locali non dispongono delle autorizzazioni necessarie.
@@ -100,6 +104,7 @@ Il server deve soddisfare i seguenti requisiti minimi:
 
 
 
+[[sizing-recommendations]]
 === Raccomandazioni sulle dimensioni
 
 Quando si raccolgono gli eventi utente, assicurarsi che la macchina che ospita l'agente di attività utente sia dimensionata per gestire la frequenza degli eventi. Ciò significa assicurarsi di disporre di un numero sufficiente di data collector e di una quantità di CPU e RAM sufficiente sulla macchina che ospita l'agente di attività utente per tollerare il numero di eventi al secondo. Per aumentare il numero di data collector, potrebbe essere necessario aumentare la capacità di RAM o CPU. Ransomware Resilience supporta fino a 50 data collector per agente di attività utente.
@@ -146,6 +151,7 @@ Utilizza la frequenza degli eventi per calcolare le dimensioni.
 ====
 
 
+[[cloud-network-access-rules]]
 == Regole di accesso alla rete cloud
 
 Esamina le regole di accesso alla rete cloud per la tua area geografica di riferimento (Asia Pacifico, Europa o Stati Uniti).
@@ -158,6 +164,7 @@ NOTE: L'agente di attività utente utilizza NetApp Data Insights Infrastructure 
 
 
 
+[[apac-based-user-activity-agent-deployments]]
 === Distribuzioni di agenti di attività utente con sede in APAC
 
 [cols="1,1,1,3,1"]
@@ -175,6 +182,7 @@ NOTE: L'agente di attività utente utilizza NetApp Data Insights Infrastructure 
 |===
 
 
+[[europe-based-user-activity-agent-deployments]]
 === Distribuzioni di agenti di attività utente con sede in Europa
 
 [cols="1,1,1,3,1"]
@@ -192,6 +200,7 @@ NOTE: L'agente di attività utente utilizza NetApp Data Insights Infrastructure 
 |===
 
 
+[[us-based-user-activity-agent-deployments]]
 === Distribuzioni di agenti di attività utente con sede negli Stati Uniti
 
 [cols="1,1,1,3,1"]
@@ -209,6 +218,7 @@ NOTE: L'agente di attività utente utilizza NetApp Data Insights Infrastructure 
 |===
 
 
+[[in-network-rules]]
 == Regole in-network
 
 [cols="5*"]
@@ -234,6 +244,7 @@ Indirizzi IP LIF dei dati SVM
 |===
 
 
+[[next-step]]
 == Passaggio successivo
 
 * link:suspicious-user-activity.html["Configura gli agenti e i raccoglitori di attività utente"]

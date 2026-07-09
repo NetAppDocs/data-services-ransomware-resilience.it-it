@@ -16,6 +16,7 @@ Puoi implementare facilmente NetApp Ransomware Resilience. Prima di iniziare, ri
 
 
 
+[[prepare-the-backup-destination]]
 == Preparare la destinazione del backup
 
 Preparare una delle seguenti destinazioni di backup:
@@ -30,12 +31,14 @@ Dopo aver configurato le opzioni nella destinazione di backup stessa, sarà poss
 
 
 
+[[prepare-storagegrid-to-become-a-backup-destination]]
 === Preparare StorageGRID per diventare una destinazione di backup
 
 Se si desidera utilizzare StorageGRID come destinazione di backup, fare riferimento a https://docs.netapp.com/us-en/storagegrid-117/index.html["Documentazione StorageGRID"^] per i dettagli su StorageGRID.
 
 
 
+[[prepare-aws-to-become-a-backup-destination]]
 === Preparare AWS a diventare una destinazione di backup
 
 * Crea un account su AWS.
@@ -46,6 +49,7 @@ Per i dettagli sulla gestione dell'archiviazione AWS nella Console, fare riferim
 
 
 
+[[prepare-azure-to-become-a-backup-destination]]
 === Preparare Azure per diventare una destinazione di backup
 
 * Configura un account in Azure.
@@ -56,6 +60,7 @@ Per informazioni dettagliate sulla gestione dell'archiviazione di Azure nella co
 
 
 
+[[set-up-the-netapp-console]]
 == Configurare la NetApp Console
 
 Il passaggio successivo consiste nell'impostare la console e la resilienza del ransomware.
@@ -64,6 +69,7 @@ Revisione https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-sta
 
 
 
+[[create-a-console-agent]]
 === Creare un agente Console
 
 Contatta il tuo rappresentante commerciale NetApp per provare o utilizzare questo servizio.  Quindi, quando si utilizza l'agente Console, saranno incluse le funzionalità appropriate per Ransomware Resilience.

@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-flexibility-for-protection-strategies]]
 === Maggiore flessibilità per le strategie di protezione
 
 Ransomware Resilience offre ora maggiore flessibilità nella scelta delle strategie di rilevamento del ransomware. In precedenza, tutte le strategie di protezione dal ransomware dovevano includere il rilevamento della crittografia. Ora puoi attivare una strategia di protezione dal ransomware che includa solo il rilevamento del comportamento dell'utente.
@@ -16,6 +17,7 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-s
 
 
 
+[[soar-playbook-enhancements]]
 === Miglioramenti al playbook SOAR
 
 I playbook SOAR per la resilienza al ransomware ora forniscono passaggi di ripristino dopo aver bloccato un utente o messo un volume offline. Ora è possibile rimettere online un volume e sbloccare un utente se l'azione non è stata considerata una minaccia ransomware.
