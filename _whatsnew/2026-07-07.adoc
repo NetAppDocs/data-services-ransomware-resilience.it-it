@@ -10,3 +10,12 @@
 Ransomware Resilience supporta l'esclusione di percorsi di file specifici dagli avvisi di monitoraggio del comportamento degli utenti. Puoi escludere i percorsi di file se sai che non sono a rischio o se stai lavorando su file in un volume che potrebbe attivare avvisi.
 
 Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["Escludi i percorsi dei file dagli avvisi"^].
+
+
+
+[[arm-template-for-microsoft-sentinel]]
+=== Modello ARM per Microsoft Sentinel
+
+Ransomware Resilience ora offre un template Azure Resource Manager (ARM) per la connessione a Microsoft Sentinel come SIEM, offrendo un metodo secondario per facilitare il deployment.
+
+Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Connettiti a un SIEM per il rilevamento e l'analisi delle minacce"^].
