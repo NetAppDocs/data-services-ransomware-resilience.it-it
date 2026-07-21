@@ -12,9 +12,9 @@ summary: NetApp Ransomware Resilience supporta la creazione di risposte automati
 
 
 [role="lead"]
-NetApp Ransomware Resilience supporta la creazione di risposte automatizzate a link:concept-user-behavior.html["eventi di attività utente"]. Con risposte automatizzate, Ransomware Resilience può creare uno snapshot o bloccare un utente quando viene rilevato un attacco o un avviso, permettendo una risposta più rapida agli eventi ransomware.
+Con NetApp Ransomware Resilience, puoi automatizzare le risposte a link:concept-user-behavior.html["eventi di attività utente"]. Con le risposte automatizzate, Ransomware Resilience può creare una snapshot o bloccare un utente quando viene rilevato un attacco o un avviso, permettendoti di rispondere più rapidamente agli eventi ransomware.
 
-Le risposte automatiche sono supportate per gli eventi di crittografia (comportamento dell'utente), violazione dei dati e distruzione dei dati. Devi avere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Hai configurato un agente di attività utente, abilitato una policy con rilevamento dell'attività utente e creato un connettore di directory utente"] prima di creare una risposta automatica.
+Le risposte automatiche sono supportate per gli eventi di crittografia (comportamento dell'utente), violazione dei dati e distruzione dei dati. Devi avere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Hai configurato un agente di attività utente, abilitato una policy con rilevamento dell'attività utente e creato un connettore di directory utente"] prima di creare una risposta automatica. Quando viene attivata una risposta automatica, Ransomware Resilience invia un avviso email.
 
 
 
