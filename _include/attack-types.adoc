@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+[cols="25,75"]
+|===
+| Tipo di attacco | Descrizione 
+
+
+| Crittografia (entropia) | Ransomware Resilience riconosce modelli di IOPS anomali, entropia dei dati e suffissi di file non standard. 
+
+
+| Crittografia (comportamento dell'utente) | Ransomware Resilience identifica attività anomale di lettura, scrittura e ridenominazione di file eseguite da uno specifico utente. 
+
+
+| Violazione dei dati | Ransomware Resilience rileva modelli anomali di accesso in lettura ai file eseguiti da uno specifico utente. 
+
+
+| Distruzione dei dati | Ransomware Resilience rileva la cancellazione massiva di file da parte di uno specifico utente. 
+
+
+| Comportamento sospetto dell'utente | Ransomware Resilience identifica comportamenti anomali che vanno oltre l'ambito di violazione dei dati, distruzione dei dati o crittografia. 
+|===

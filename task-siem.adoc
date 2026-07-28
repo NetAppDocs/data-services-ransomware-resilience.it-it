@@ -376,6 +376,22 @@ NOTE: Puoi modificare la configurazione SIEM dopo averla creata. Puoi modificare
 
 
 
+[[disable-a-siem-system]]
+== Disabilita un sistema SIEM
+
+Puoi sospendere temporaneamente l'invio dei dati degli eventi a un sistema SIEM o eliminare il sistema SIEM se non ti serve più. Se metti in pausa il SIEM, puoi riprenderlo in qualsiasi momento.
+
+.Passi
+. In Ransomware Resilience, seleziona *Impostazioni*.
+. Nel riquadro SIEM, seleziona *Gestisci*.
+. Seleziona il menu delle azioni (`...` per il sistema SIEM che vuoi arrestare, poi seleziona *Pausa* o *Elimina*.
++
+Se stai eliminando, seleziona *Elimina* nella finestra di dialogo di conferma per completare l'azione.
+
+
+
+
+
 [[next-steps]]
 == Prossimi passi
 

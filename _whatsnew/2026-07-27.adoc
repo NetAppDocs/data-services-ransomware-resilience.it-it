@@ -1,0 +1,32 @@
+= Standardizza i gruppi di protezione in base al carico di lavoro e al tipo di sistema
+:allow-uri-read: 
+
+
+
+
+[[standardize-protection-groups-based-on-workload-and-system-type]]
+=== Standardizza i gruppi di protezione in base al carico di lavoro e al tipo di sistema
+
+La funzionalità di resilienza contro i ransomware ora impone che i gruppi di protezione includano un solo tipo di workload e un solo tipo di sistema. Quando crei un nuovo gruppo di protezione, devi specificare sia il tipo di workload (file system o storage a blocchi) sia il sistema per il workload. Questo miglioramento garantisce che la strategia di protezione contro i ransomware scelta per il gruppo di protezione possa essere applicata con successo a tutti i workload del gruppo.
+
+Se hai gruppi di protezione esistenti che combinano tipi di sistema e di workload, puoi continuare a usarli, ma non puoi aggiungere workload al gruppo di protezione.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html["Crea un gruppo di protezione"^].
+
+
+
+[[readiness-drill-enhancement]]
+=== Miglioramento delle esercitazioni di prontezza operativa
+
+Ransomware Resilience ora ti permette di condurre esercitazioni di preparazione in base al tipo di attacco. Ransomware Resilience rileva cinque tipi di attacco e puoi eseguire esercitazioni per ciascuno di essi per simulare il processo di attacco e ripristino e capire quanto sei pronto ad affrontare un attacco ransomware.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["Eseguire un'esercitazione di preparazione"^].
+
+
+
+[[pause-or-delete-a-siem-system]]
+=== Metti in pausa o elimina un sistema SIEM
+
+Ransomware Resilience ora include opzioni nell'interfaccia utente per sospendere o eliminare un sistema SIEM. Questo miglioramento rende più facile disattivare temporaneamente il sistema per la risoluzione dei problemi o la manutenzione, oppure rimuoverlo completamente.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system["Disabilita un sistema SIEM"^].

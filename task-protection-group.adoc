@@ -23,6 +23,8 @@ NetApp Ransomware Resilience offre gruppi di protezione per semplificare la gest
 
 È possibile creare gruppi indipendentemente dal loro stato di protezione (ovvero, gruppi non protetti e gruppi protetti). Quando si aggiunge una policy di protezione a un gruppo di protezione, la nuova policy di protezione sostituisce qualsiasi policy esistente, incluse le policy gestite da NetApp Backup and Recovery.
 
+I carichi di lavoro in un gruppo di protezione devono essere dello stesso tipo di carico di lavoro; quindi, non puoi mescolare carichi di lavoro di storage a blocchi e di file system. I carichi di lavoro devono anche appartenere allo stesso tipo di sistema. Ad esempio, un gruppo di protezione può includere tutti i carichi di lavoro di file system ONTAP on-premises; non puoi aggiungere carichi di lavoro Amazon FSx for NetApp ONTAP allo stesso gruppo di protezione.
+
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Protezione*.
 +
@@ -37,6 +39,7 @@ image:screen-protection-groups.png["Pagina dei gruppi di protezione"]
 image:screen-protection-groups-add.png["Aggiungi pagina gruppo di protezione"]
 
 . Immettere un nome per il gruppo di protezione.
+. Seleziona il **tipo di carico di lavoro** (storage a blocchi o file system) e il **tipo di sistema**.
 . Seleziona i carichi di lavoro da aggiungere al gruppo.
 +
 
@@ -66,7 +69,10 @@ TIP: Quando si esamina la dashboard di protezione in Ransomware Resilience, è p
 [[edit-group-protection]]
 === Modifica protezione gruppo
 
-È possibile modificare i criteri di rilevamento per un gruppo esistente.
+${post_edited_translations.segment}
+
+
+NOTE: Se un gruppo di protezione è stato creato prima di agosto 2026 e include carichi di lavoro di tipi diversi (ad esempio, se mescola carichi di lavoro di storage a blocchi e file system) o di tipi di sistema diversi, non puoi aggiungere nuovi carichi di lavoro al gruppo di protezione. Puoi rimuovere carichi di lavoro per assicurarti che sia presente un solo tipo di carico di lavoro e di sistema, poi puoi aggiungere carichi di lavoro. Questa modifica serve a garantire che le strategie di protezione contro i ransomware vengano applicate in modo uniforme a tutti i tipi di carico di lavoro e di sistema.
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Protezione*.

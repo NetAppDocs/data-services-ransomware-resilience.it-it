@@ -58,3 +58,15 @@ Le seguenti limitazioni si applicano a Google Cloud NetApp Volumes:
 * Al momento, è possibile applicare solo strategie di protezione basate sulla crittografia e su FPolicy ai carichi di lavoro di Google Cloud NetApp Volumes. Non è possibile applicare strategie di protezione basate sul comportamento degli utenti.
 * Le strategie di protezione con replica non sono attualmente supportate per Google Cloud NetApp Volumes
 
+
+
+
+[[san-storage-limitations]]
+== ${post_edited_translations.segment}
+
+Alle workload SAN (storage a blocchi) si applicano le seguenti limitazioni:
+
+* Ransomware Resilience al momento non supporta i carichi di lavoro SAN di Google Cloud NetApp Volumes.
+* Quando Ransomware Resilience genera avvisi per i carichi di lavoro SAN, questi si basano solo su un'entropia elevata.
+* I carichi di lavoro SAN possono essere ripristinati solo utilizzando un link:task-custom-restore.html["ripristino personalizzato"]. Il ripristino pulito non è attualmente disponibile per i carichi di lavoro SAN.
+

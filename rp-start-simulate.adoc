@@ -34,12 +34,39 @@ Quando esegui la simulazione, puoi testare la tua risposta agli avvisi e, se vuo
 [[configure-a-ransomware-attack-readiness-drill]]
 == Configurare un'esercitazione di preparazione all'attacco ransomware
 
+Prima di eseguire una simulazione, devi configurare l'esercitazione di preparazione. Devi creare l'esercitazione di preparazione per uno specifico tipo di attacco ransomware. Ransomware Resilience riconosce cinque tipi di attacchi:
+
+[cols="25,75"]
+|===
+| Tipo di attacco | Descrizione 
+
+
+| Crittografia (entropia) | Ransomware Resilience riconosce modelli di IOPS anomali, entropia dei dati e suffissi di file non standard. 
+
+
+| Crittografia (comportamento dell'utente) | Ransomware Resilience identifica attività anomale di lettura, scrittura e ridenominazione di file eseguite da uno specifico utente. 
+
+
+| Violazione dei dati | Ransomware Resilience rileva modelli anomali di accesso in lettura ai file eseguiti da uno specifico utente. 
+
+
+| Distruzione dei dati | Ransomware Resilience rileva la cancellazione massiva di file da parte di uno specifico utente. 
+
+
+| Comportamento sospetto dell'utente | Ransomware Resilience identifica comportamenti anomali che vanno oltre l'ambito di violazione dei dati, distruzione dei dati o crittografia. 
+|===
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 .Passi
 . In Ransomware Resilience, seleziona **Impostazioni**.
-. Nel riquadro dell'esercitazione di preparazione, seleziona **Configura**.
-. Scegli il **tipo di esercitazione di preparazione**.
+. Nella scheda "Esercitazione di preparazione" nella pagina Impostazioni, seleziona *Configura*.
++
+La console visualizza la pagina Configura esercitazione di prontezza.
+
++
+image:screen-settings-alert-drill-configure.png["Configura la pagina dell'esercitazione di preparazione"]
+
+. Seleziona il *tipo di attacco ransomware*.
 +
 ** **Ripristino personalizzato**: Rispondi a un attacco di crittografia (entropia) con un link:rp-use-recover.html["ripristino personalizzato"] in cui configuri il punto di ripristino.
 ** **Ripristino pulito**: Rispondi a un attacco di crittografia (entropia) con un link:task-clean-restore-recover.html["ripristino pulito"] processo di ripristino che ti guida verso punti di ripristino ottimizzati.
@@ -52,16 +79,13 @@ Quando esegui la simulazione, puoi testare la tua risposta agli avvisi e, se vuo
 .. Dopo aver scelto il **Sistema**, scegli la **Storage VM** dall'elenco precompilato.
 .. Fornisci un nome per il **nuovo carico di lavoro di test**. Il carico di lavoro di test verrà preceduto da "rps_test_".
 .. Se l'esercitazione di preparazione è finalizzata al ripristino in caso di violazione dei dati, seleziona l'**User activity agent** per l'ambiente di esercitazione.
-+
-image:screen-settings-alert-drill-configure.png["Screenshot delle opzioni di configurazione dell'esercitazione di preparazione."]
-
 
 
 . Seleziona *Salva*.
 
 
 
-TIP: È possibile modificare la configurazione dell'esercitazione di preparazione in un secondo momento utilizzando la pagina Impostazioni.
+TIP: Puoi modificare la configurazione dell'esercitazione di preparazione in un secondo momento dalla pagina Impostazioni.
 
 
 
@@ -73,15 +97,8 @@ Dopo aver configurato l'esercitazione di preparazione, è possibile avviarla.
 *Ruolo della console richiesto* Per eseguire questa attività, è necessario il link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["Super amministratore"^] o il ruolo di amministratore di Ransomware Resilience. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 .Passi
-. Per avviare l'esercitazione:
-+
-** Dalla dashboard di Ransomware Resilience, seleziona il pulsante *Run readiness drill* in alto a destra.
-+
-image:screen-dashboard.png["Pagina della dashboard che mostra il pulsante di esercitazione di preparazione all'esecuzione"]
-
-** Oppure vai su **Impostazioni**. Nel riquadro Esercitazione di preparazione, seleziona *Avvia*.
-
-
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella pagina Impostazioni, seleziona *Start*.
 
 
 
@@ -98,13 +115,7 @@ Metti alla prova la tua prontezza rispondendo a un avviso di esercitazione di pr
 
 .Passi
 . Dal menu Ransomware Resilience, seleziona *Avvisi*.
-+
-La Console visualizza la pagina Avvisi.  Nella colonna ID avviso, accanto all'ID viene visualizzato "Esercitazione di preparazione".
-
-+
-image:screen-alerts-readiness.png["Pagina degli avvisi che mostra l'avviso di esercitazione di prontezza"]
-
-. Seleziona l'avviso con l'indicazione "Esercitazione di preparazione".
+. Seleziona l'avviso con l'indicazione "Esercitazione di preparazione". Un elenco degli avvisi relativi agli incidenti appare nella pagina dei dettagli degli avvisi.
 +
 image:screen-alerts-readiness-details.png["Pagina dei dettagli degli avvisi che mostra l'avviso di esercitazione di prontezza"]
 
@@ -121,8 +132,15 @@ Quando rivedi l'incidente, considera:
 +
 Se la gravità indica che un utente è sospettato di attività dannose, rivedere il nome utente. Puoi anchelink:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["bloccare l'utente."]
 
-* L'attività sui file rispetto ai tassi previsti. Questo include il tasso di lettura/scrittura, la creazione, la ridenominazione e l'eliminazione dei file.
-* L'elenco dei file interessati. Guarda le estensioni che potrebbero causare l'attacco.
+* Esamina l'attività dei file e i processi sospetti:
++
+** Guarda i dati rilevati in entrata rispetto ai dati previsti.
+** Guarda la velocità di creazione dei file rilevata rispetto a quella prevista.
+** Guarda la frequenza di ridenominazione dei file rilevata rispetto a quella prevista.
+** Osserva il tasso di cancellazione rispetto al tasso previsto.
+
+
+* Esamina l'elenco dei file interessati. Controlla le estensioni che potrebbero essere la causa dell'attacco.
 * Determinare l'impatto e l'ampiezza dell'attacco esaminando il numero di file e directory interessati.
 
 
