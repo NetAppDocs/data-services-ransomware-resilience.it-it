@@ -256,11 +256,9 @@ Dopo che l'avviso è stato contrassegnato per il ripristino, l'avviso passa dall
 [[dismiss-incidents-that-are-not-potential-attacks]]
 == Ignorare gli incidenti che non sono potenziali attacchi
 
-Dopo aver esaminato gli incidenti, è necessario stabilire se si tratta di potenziali attacchi. Se non si tratta di minacce reali, possono essere ignorate.
+Dopo che hai esaminato gli incidenti, devi determinare se gli incidenti sono potenziali attacchi. Se non sono minacce reali, puoi ignorarli. Se ignori un avviso, tutte le copie snapshot acquisite automaticamente in risposta a un potenziale attacco ransomware vengono eliminate definitivamente.
 
-Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati. Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento e lo associa alle normali operazioni, senza più avviare un avviso per tale comportamento.
-
-Se si elimina un carico di lavoro, tutte le copie snapshot eseguite automaticamente in risposta a un potenziale attacco ransomware vengono eliminate definitivamente.
+Per gli avvisi generati da eventi di crittografia (entropia), Ransomware Resilience apprende dalla tua chiusura dell'avviso per associare l'attività al normale funzionamento; in futuro, non riceverai avvisi basati su questo tipo di attività. Questo perché gli eventi di crittografia (entropia) sono gestiti da ARP/AI. Per gli avvisi generati da link:concept-ransomware-resilience.html#attack-types["altri eventi"], Ransomware Resilience _non_ apprende dalla chiusura perché questi avvisi si basano su modelli di attività dell'utente.
 
 
 CAUTION: Se si ignora un avviso, non è possibile modificarne lo stato né annullare la modifica.
