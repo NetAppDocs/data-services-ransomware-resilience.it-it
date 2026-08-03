@@ -58,9 +58,6 @@ Il rilevamento del comportamento degli utenti di Ransomware Resilience è un'int
 Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, è consigliato utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience, tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di account per abilitare questa associazione.
 
 
-TIP: Se hai configurato Workload Security, puoi configurare gli avvisi tramite link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_create_webhook.html#creating-a-webhook["Webhook DII"^].
-
-
 
 [[next-steps]]
 == Prossimi passi

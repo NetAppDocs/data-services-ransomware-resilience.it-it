@@ -21,3 +21,5 @@
 
 | Comportamento sospetto dell'utente | Ransomware Resilience identifica comportamenti anomali che vanno oltre l'ambito di violazione dei dati, distruzione dei dati o crittografia. 
 |===
+
+NOTE: Devi configurare link:concept-user-behavior.html["rilevamento dell'attività dell'utente"] per rilevare la crittografia (comportamento utente), violazione dei dati, distruzione dei dati e attacchi di comportamento utente sospetto.
