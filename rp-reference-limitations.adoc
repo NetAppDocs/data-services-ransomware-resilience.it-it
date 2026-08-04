@@ -61,7 +61,7 @@ Le seguenti limitazioni si applicano a Google Cloud NetApp Volumes:
 
 
 [[san-storage-limitations]]
-== ${post_edited_translations.segment}
+== Limitazioni di archiviazione SAN
 
 Alle workload SAN (storage a blocchi) si applicano le seguenti limitazioni:
 

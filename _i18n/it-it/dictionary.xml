@@ -2701,9 +2701,7 @@
   <block id="b18d1990e5bda04c0ed4210a1113e197" category="paragraph">Ransomware Resilience ora include opzioni nell'interfaccia utente per sospendere o eliminare un sistema SIEM. Questo miglioramento rende più facile disattivare temporaneamente il sistema per la risoluzione dei problemi o la manutenzione, oppure rimuoverlo completamente.</block>
   <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">Disabilita un sistema SIEM</block>
   <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">Per ulteriori informazioni, vedere <block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>.</block>
-  <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">${post_edited_translations.segment}</block>
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">Le strategie di protezione con replica non sono attualmente supportate per Google Cloud NetApp Volumes</block>
-  <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">${post_edited_translations.segment}</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">Alle workload SAN (storage a blocchi) si applicano le seguenti limitazioni:</block>
   <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">Quando Ransomware Resilience genera avvisi per i carichi di lavoro SAN, questi si basano solo su un'entropia elevata.</block>
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">I carichi di lavoro SAN possono essere ripristinati solo utilizzando un <block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block>. Il ripristino pulito non è attualmente disponibile per i carichi di lavoro SAN.</block>
@@ -2723,7 +2721,6 @@
   <block id="f86fe9463862bcb6c0a89b3fdbb1028b" category="list-text">Esamina l'elenco dei file interessati. Controlla le estensioni che potrebbero essere la causa dell'attacco.</block>
   <block id="e7830468e161b7991b165f7f665b33d1" category="paragraph">I carichi di lavoro in un gruppo di protezione devono essere dello stesso tipo di carico di lavoro; quindi, non puoi mescolare carichi di lavoro di storage a blocchi e di file system. I carichi di lavoro devono anche appartenere allo stesso tipo di sistema. Ad esempio, un gruppo di protezione può includere tutti i carichi di lavoro di file system ONTAP on-premises; non puoi aggiungere carichi di lavoro Amazon FSx for NetApp ONTAP allo stesso gruppo di protezione.</block>
   <block id="b7b39081fc845a35c1a59f4b6fc016e8" category="list-text">Seleziona il **tipo di carico di lavoro** (storage a blocchi o file system) e il **tipo di sistema**.</block>
-  <block id="fb1317cc51c838fac76b98177912063f" category="paragraph">${post_edited_translations.segment}</block>
   <block id="178f74ca677d1dd5ce9bba8b91d1914f" category="admonition">Se un gruppo di protezione è stato creato prima di agosto 2026 e include carichi di lavoro di tipi diversi (ad esempio, se mescola carichi di lavoro di storage a blocchi e file system) o di tipi di sistema diversi, non puoi aggiungere nuovi carichi di lavoro al gruppo di protezione. Puoi rimuovere carichi di lavoro per assicurarti che sia presente un solo tipo di carico di lavoro e di sistema, poi puoi aggiungere carichi di lavoro. Questa modifica serve a garantire che le strategie di protezione contro i ransomware vengano applicate in modo uniforme a tutti i tipi di carico di lavoro e di sistema.</block>
   <block id="75cd9bb10cb7645a7eb4cd70d1070213" category="paragraph">Puoi sospendere temporaneamente l'invio dei dati degli eventi a un sistema SIEM o eliminare il sistema SIEM se non ti serve più. Se metti in pausa il SIEM, puoi riprenderlo in qualsiasi momento.</block>
   <block id="1b143209e630713aded7a96e6e2719fb" category="list-text">Nel riquadro SIEM, seleziona *Gestisci*.</block>
@@ -2759,4 +2756,7 @@
   <block id="a4eaf16125aa6fca833d794fb9973715" category="list-text">Seleziona la durata del blocco. Puoi bloccare gli utenti in modo permanente o impostare un blocco della durata compresa tra 1 e 24 ore.</block>
   <block id="13c987b30f267e394b26e24839fb92c5" category="list-text">Scegli quale qualità di blocco utenti vuoi modificare. Per modificare la durata del blocco, seleziona **Periodo di tempo per gli utenti bloccati** e poi modifica il **Periodo di tempo**. Per rimuovere utenti dall'elenco degli utenti bloccati, seleziona **Sblocca utenti**.</block>
   <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">03 agosto 2026</block>
+  <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">Ransomware Resilience riconosce cinque tipi di attacchi ransomware:</block>
+  <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">Limitazioni di archiviazione SAN</block>
+  <block id="fb1317cc51c838fac76b98177912063f" category="paragraph">Puoi modificare i criteri di rilevamento su un gruppo esistente o aggiungere e rimuovere carichi di lavoro.</block>
 </blocks>

@@ -69,7 +69,7 @@ TIP: Quando si esamina la dashboard di protezione in Ransomware Resilience, è p
 [[edit-group-protection]]
 === Modifica protezione gruppo
 
-${post_edited_translations.segment}
+Puoi modificare i criteri di rilevamento su un gruppo esistente o aggiungere e rimuovere carichi di lavoro.
 
 
 NOTE: Se un gruppo di protezione è stato creato prima di agosto 2026 e include carichi di lavoro di tipi diversi (ad esempio, se mescola carichi di lavoro di storage a blocchi e file system) o di tipi di sistema diversi, non puoi aggiungere nuovi carichi di lavoro al gruppo di protezione. Puoi rimuovere carichi di lavoro per assicurarti che sia presente un solo tipo di carico di lavoro e di sistema, poi puoi aggiungere carichi di lavoro. Questa modifica serve a garantire che le strategie di protezione contro i ransomware vengano applicate in modo uniforme a tutti i tipi di carico di lavoro e di sistema.
