@@ -27,7 +27,7 @@ Assicurati di utilizzare un sistema supportato:
 | Ambiente | Protocollo | Versioni supportate 
 
 
-| Amazon FSx for NetApp ONTAP | CIFS, NFS and SAN | N / A 
+| Amazon FSx for NetApp ONTAP | CIFS, NFS e SAN (iSCSI e NVMe) | N / A 
 
 
 | Azure NetApp Files | CIFS e NFS | N / A 
@@ -57,7 +57,7 @@ Assicurati di utilizzare un sistema supportato:
 | SAN (iSCSI e NVMe) | 9.17.1 e versioni successive 
 
 
-| Google Cloud NetApp Volumes | CIFS e NFS | N / A 
+| Google Cloud NetApp Volumes | CIFS, NFS e SAN (iSCSI e NVMe) | N / A 
 |===
 
 NOTE: Il rilevamento dell'attività dell'utente non è supportato per Azure NetApp Files o Google Cloud NetApp Volumes. Per ulteriori informazioni sul supporto per il rilevamento dell'attività dell'utente, vedere link:reference-user-activity-requirements.html["Requisiti di rilevamento delle attività degli utenti"].

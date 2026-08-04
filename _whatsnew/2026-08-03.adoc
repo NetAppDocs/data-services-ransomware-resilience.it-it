@@ -1,0 +1,21 @@
+= Supporto SAN per Google Cloud NetApp Volumes (anteprima)
+:allow-uri-read: 
+
+
+
+
+[[san-support-for-google-cloud-netapp-volumes-preview]]
+=== Supporto SAN per Google Cloud NetApp Volumes (anteprima)
+
+Ransomware Resilience ora supporta i carichi di lavoro SAN di Google Cloud NetApp Volumes, consentendoti di rilevare gli attacchi ransomware basati sulla crittografia per i carichi di lavoro SAN. Il supporto per SAN in Google Cloud NetApp Volumes è attualmente in anteprima.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["sistemi supportati"^] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html#azure-netapp-files-limitations["Archiviazione SAN nella resilienza al ransomware"^].
+
+
+
+[[streamlined-interface-for-user-blocking]]
+=== Interfaccia semplificata per il blocco degli utenti
+
+Ransomware Resilience ora offre un'esperienza utente semplificata per bloccare gli utenti e gestire gli utenti bloccati. Con questo aggiornamento, puoi facilmente visualizzare e modificare quali utenti hai bloccato. Devi aver configurato link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["rilevamento dell'attività dell'utente"^] per bloccare gli utenti.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html#manage-blocked-users["Utenti bloccati gestiti"^].

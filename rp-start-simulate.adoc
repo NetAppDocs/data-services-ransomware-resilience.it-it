@@ -62,7 +62,7 @@ NOTE: Devi configurare link:concept-user-behavior.html["rilevamento dell'attivit
 
 .Prima di iniziare
 * Per configurare un'esercitazione di preparazione per qualsiasi tipo di attacco ransomware diverso dalla crittografia (entropia), devi aver configurato link:concept-user-behavior.html["rilevamento dell'attività dell'utente"].
-* Quando crei un'esercitazione di preparazione per un carico di lavoro CIFS, devi inserire le credenziali utente. Dovresti creare un utente di test dedicato, non di produzione, per le esercitazioni di preparazione, soprattutto quando testi tipi di attacco basati sull'attività utente (cioè data breach). Se usi un vero utente di produzione, Ransomware Resilience segnala l'utente, il che può portare al blocco dell'utente dai dati di produzione. Se usi un utente di test, tutti gli utenti mantengono il normale accesso ai dati.
+* Quando crei un'esercitazione di preparazione per un carico di lavoro CIFS, devi inserire le credenziali dell'utente. Dovresti creare un utente di test dedicato, non di produzione, per le esercitazioni di preparazione, soprattutto quando testi tipi di attacco basati sull'attività dell'utente (cioè data breach). Se usi un vero utente di produzione e quell'utente ha comportamenti sospetti su altri volumi di produzione, quegli avvisi potrebbero comparire nell'esercitazione di preparazione invece di generare un vero avviso.
 
 
 .Passi

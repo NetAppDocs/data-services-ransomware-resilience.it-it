@@ -30,7 +30,7 @@ Puoi bloccare gli utenti quando pensi che siano responsabili di attività dannos
 . Nella dashboard delle impostazioni, individua il riquadro Monitoraggio attività utente e seleziona **Gestisci**.
 . Seleziona la scheda **Utenti**.
 . Seleziona **Blocca utenti**.
-. Seleziona la durata del blocco: può essere da un'ora fino a 24 ore o permanente.
+. Seleziona la durata del blocco. Puoi bloccare gli utenti in modo permanente o impostare un blocco della durata compresa tra 1 e 24 ore.
 . Seleziona la casella di controllo accanto ai nomi degli utenti che desideri bloccare.
 . Seleziona **Block**.
 
@@ -40,7 +40,7 @@ Puoi bloccare gli utenti quando pensi che siano responsabili di attività dannos
 . Nella dashboard delle impostazioni, individua il riquadro Monitoraggio attività utente e seleziona **Gestisci**.
 . Seleziona la scheda **Utenti**.
 . Seleziona **Modifica blocco utente**.
-. Scegli la modifica. Per modificare la durata del blocco, seleziona **Periodo di tempo per gli utenti bloccati** e poi modifica la durata. Per rimuovere gli utenti dall'elenco degli utenti bloccati, seleziona **Sblocca utenti**.
+. Scegli quale qualità di blocco utenti vuoi modificare. Per modificare la durata del blocco, seleziona **Periodo di tempo per gli utenti bloccati** e poi modifica il **Periodo di tempo**. Per rimuovere utenti dall'elenco degli utenti bloccati, seleziona **Sblocca utenti**.
 . Seleziona la casella di controllo accanto al nome dell'utente bloccato di cui vuoi cambiare lo stato.
 . Seleziona **Salva**.
 
