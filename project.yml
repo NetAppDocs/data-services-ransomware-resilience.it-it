@@ -58,6 +58,8 @@ sidebar:
           url: "/suspicious-user-activity.html"
         - title: Gestisci avvisi e utenti bloccati
           url: "/task-users-manage.html"
+        - title: Risolvi i problemi dell'agente di attività utente
+          url: "/troubleshoot-user-activity.html"
       - title: Gestisci i gruppi di protezione
         url: "/task-protection-group.html"
       - title: Scansione per dati personali identificabili
