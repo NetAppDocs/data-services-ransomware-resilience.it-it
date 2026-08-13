@@ -91,6 +91,21 @@ image:user-activity-settings.png["Screenshot delle impostazioni dell'attività u
 
 
 
+[[delete-a-data-collector]]
+=== Elimina un raccoglitore di dati
+
+Se un raccoglitore di dati è obsoleto o non funziona più, puoi eliminarlo. Qualsiasi carico di lavoro monitorato dal raccoglitore di dati smetterà di essere monitorato per comportamenti utente sospetti dopo che lo elimini.
+
+.Passi
+. In Ransomware Resilience, vai su *Impostazioni*.
+. Nel riquadro Monitoraggio attività utente, seleziona **Gestisci**.
+. Seleziona la scheda *Agenti e raccoglitori* e poi *Raccoglitori di dati*.
+. Individua il raccoglitore di dati che vuoi eliminare. Seleziona il menu delle azioni e poi **Elimina**.
+. Nella finestra di dialogo, seleziona *Delete* per confermare.
+
+
+
+
 [[create-a-user-directory-connector]]
 == Crea un connettore di directory utente
 
@@ -99,7 +114,7 @@ Per mappare gli ID utente ai nomi utente, è necessario creare un connettore di 
 .Passi
 . In Ransomware Resilience, vai su *Impostazioni*.
 . Nel riquadro Monitoraggio attività utente, seleziona **Gestisci**.
-. Selezionare la scheda **Connettori directory utente**, quindi **Aggiungi**.
+. Seleziona la scheda *Agenti e raccoglitori*, poi la scheda **Connettori directory utenti** e quindi **Aggiungi**.
 . Configurare la connessione. Inserisci le informazioni richieste per ogni campo.
 +
 [cols="25,75"]

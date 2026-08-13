@@ -525,8 +525,8 @@ La procedura per la creazione di una sala di ripristino isolata varia a seconda 
 .Cloud
 --
 . In Ransomware Resilience, seleziona **Impostazioni**.
-. Nella scheda Ripristino pulito, seleziona **Aggiungi** per creare l'ambiente di ripristino isolato.
-. Nella sezione Tipo, scegliere *Solo pulizia*.
+. Nella scheda Pulizia e ripristino dell'isolamento, seleziona **Aggiungi** per creare l'ambiente di ripristino isolato.
+. Nella sezione Tipo, scegli *Pulizia su richiesta*.
 . Espandere la sezione **Nome**. Inserire un **Nome** per l'ambiente.
 . Per un IRE basato sul cloud, selezionare **Amazon Web Services**.
 . Espandere la sezione *Sistemi*. Selezionare i sistemi che si desidera connettere all'IRE. Per ogni sistema selezionato, è necessario fornire l'indirizzo IP, la subnet mask e il gateway della VM di storage.
@@ -535,18 +535,18 @@ La procedura per la creazione di una sala di ripristino isolata varia a seconda 
 NOTE: Per gli IRE distribuiti su Amazon FSx per NetApp ONTAP, non devi fornire queste informazioni.
 
 +
-image:clean-restore-systems.png["Screenshot dell'interfaccia di selezione dei sistemi."]
+image::clean-restore-systems.png[Screenshot dell'interfaccia di selezione dei sistemi.]
 
 . Espandere la sezione **Autenticazione**.
 +
 ** Inserisci l'ID dell'**Account** cloud e seleziona la **Regione** per l'account dal menu a tendina. Puoi implementare un IRE solo in una regione supportata.
 ** Inserisci la **chiave di accesso** e la **chiave segreta** dell'account.
++
+image::screenshot-set-up-recovery-environment.png[Screenshot della configurazione di autenticazione IRE.]
+
 
 
 . Espandere la sezione *Virtual private cloud (VPC)*. Inserire l'ID VPC in cui deve essere distribuito l'IRE.
-+
-image:screenshot-set-up-recovery-environment.png["Screenshot della configurazione di autenticazione IRE."]
-
 . Seleziona **Aggiungi** per creare l'IRE.
 +
 Dopo aver selezionato add, Ransomware Resilience verifica la connessione, operazione che può richiedere alcuni minuti. L'IRE è stato distribuito correttamente quando il suo stato viene visualizzato come "deployed".
@@ -558,18 +558,15 @@ Dopo aver selezionato add, Ransomware Resilience verifica la connessione, operaz
 --
 . In Ransomware Resilience, seleziona **Impostazioni**.
 . Nella scheda Ripristini puliti, seleziona **Aggiungi** se questo è il tuo primo ambiente oppure **Gestisci** se ne hai già creato uno.
-. Nella sezione Tipo, scegliere *Solo pulizia*.
+. Nella sezione Tipo, scegli *Pulizia su richiesta*.
 . Espandere la sezione *Nome*. Assegnare un **Nome** per l'IRE.
 . Per la posizione, selezionare **On-premises**.
 . Espandere la sezione *Sistemi*. Selezionare i sistemi che si desidera connettere all'IRE. Assegnare un indirizzo IP della storage VM, una subnet mask e un gateway per ciascun sistema che ha carichi di lavoro da recuperare nell'IRE.
 +
 Ciascun sistema selezionato deve avere un indirizzo IP assegnato. È possibile selezionare sistemi primari o secondari. I sistemi secondari possono essere utilizzati per l'analisi e il ripristino qualora il sistema primario non disponga di snapshot non crittografati o non sia disponibile.
 
-+
-image:clean-restore-systems.png["Screenshot dell'interfaccia di selezione dei sistemi."]
-
 . Espandere la sezione **Agente console**. Selezionare l'agente console dal menu a discesa distribuito nell'IRE.
-. Espandere la sezione *Compute*.
+. Espandi la sezione *Calcolo in clean room*.
 +
 .. Fornisci le credenziali per autenticare il vCenter server: *indirizzo IP* o domain name (FQDN), *porta*, *nome utente* e *password*.
 .. Seleziona **Autentica** per confermare le credenziali. Attendi che l'interfaccia utente confermi le tue credenziali prima di procedere.
@@ -581,7 +578,7 @@ image:clean-restore-compute.png["Screenshot dell'interfaccia di selezione del co
 
 
 
-. Espandete la sezione *VMs*, che viene popolata in base ai dati inseriti nella sezione *Compute*.
+. Espandi la sezione *Clean room VMs*, che viene popolata in base ai tuoi input nella sezione *Compute*.
 +
 .. Per la macchina virtuale Linux che Ransomware Resilience utilizza per la scansione alla ricerca di ransomware, seleziona la macchina virtuale dal menu a tendina e inserisci il *nome utente* e la *password* della macchina virtuale.
 .. Per la macchina virtuale Windows utilizzata per la scansione, seleziona la macchina virtuale dal menu a tendina, quindi inserisci il *nome utente* e la *password* della macchina virtuale.
@@ -597,7 +594,7 @@ image:clean-restore-compute.png["Screenshot dell'interfaccia di selezione del co
 È possibile modificare i sistemi in un IRE dopo la sua creazione. Nella scheda Impostazioni, selezionare **Ambienti di ripristino isolati**. Individuare l'IRE che si desidera modificare, selezionare il menu Azioni `...` quindi **Modifica**. Procedere alla modifica dei sistemi. Selezionare **Salva** al termine.
 
 
-TIP: Se devi modificare i dettagli dell'IRE, seleziona *Impostazioni* dalla barra laterale di Ransomware Resilience, quindi, nella scheda Ripristino pulito, seleziona **Gestisci**. Seleziona il menu delle azioni per l'IRE, poi **Modifica** per cambiare la configurazione.
+TIP: Se devi modificare i dettagli dell'IRE, seleziona *Impostazioni* dalla barra laterale di Ransomware Resilience, poi, nella scheda Pulizia e ripristino dell'isolamento, seleziona **Gestisci**. Seleziona il menu delle azioni per l'IRE e poi **Modifica** per cambiare la configurazione.
 
 
 
@@ -610,7 +607,7 @@ Non è possibile eliminare un IRE durante un'operazione di ripristino attiva; è
 IMPORTANT: Se si elimina l'IRE, vengono eliminati anche l'SVM della clean room e il volume dei metadati. Una volta eliminati questi asset, non sarà più possibile generare report per il clean restore.
 
 . Vai su **Impostazioni**.
-. Nella scheda Ripristino pulito, selezionare **Gestisci**.
+. Nella scheda Pulizia e ripristino isolamento, seleziona **Gestisci**.
 . Identifica la clean room che desideri eliminare. Seleziona il menu Azioni (`...` per l'IRE, quindi **Elimina**.
 . Nella finestra di dialogo, selezionare **Cancella** per confermare l'operazione.
 
