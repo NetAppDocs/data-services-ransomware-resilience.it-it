@@ -12,16 +12,16 @@ summary: Se Ransomware Resilience rileva un possibile attacco, nella dashboard d
 
 
 [role="lead"]
-Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso sulla dashboard e nel menu Notifiche. Ransomware Resilience acquisisce immediatamente uno snapshot. Quando ricevi un avviso, esamina il potenziale rischio nella scheda *Alerts* di Ransomware Resilience per valutare l'impatto sui tuoi dati e prevenire un potenziale attacco ransomware.
+Quando NetApp Ransomware Resilience rileva un possibile attacco, visualizza un avviso nella dashboard e nel menu Notifiche e scatta immediatamente un'istantanea. Esamina l'avviso nella scheda *Avvisi* per valutare il rischio per i tuoi dati e decidere come intervenire.
 
 Se Ransomware Resilience rileva un possibile attacco, viene visualizzata una notifica nelle impostazioni di notifica della Console e viene inviata un'email agli indirizzi configurati. L'email include informazioni sulla gravità, sul workload interessato e un collegamento all'alert nella scheda *Alerts* di Ransomware Resilience.
 
-Puoi ignorare i falsi positivi o decidere di recuperare immediatamente i tuoi dati.
+Puoi ignorare i falsi positivi o avviare subito il recupero.
 
 
 TIP: Se si ignora l'avviso, Ransomware Resilience apprende questo comportamento, lo associa al normale funzionamento e smette di inviare avvisi per eventi simili.
 
-Per iniziare a recuperare i dati, contrassegna l'avviso come pronto per il recupero, in modo che l'amministratore dell'archiviazione possa avviare il processo di recupero.
+Per avviare il ripristino, contrassegna l'avviso come pronto per il ripristino così il tuo amministratore dello storage può iniziare il processo di ripristino.
 
 Ogni avviso potrebbe includere più incidenti su volumi e stati diversi.  Esaminare tutti gli incidenti.
 

@@ -12,9 +12,9 @@ summary: Assicurati di soddisfare i requisiti di licenza per Ransomware Resilien
 
 
 [role="lead"]
-NetApp Ransomware Resilience offre diversi piani di licenza, consentendoti di abbonarti al servizio dove ha senso per la tua organizzazione.
+Scegli tra le opzioni di licenza di prova, PAYGO e BYOL per NetApp Ransomware Resilience, in base alle esigenze della tua organizzazione.
 
-Per impostare le licenze, è necessario il ruolo di amministratore dell'organizzazione, della cartella o del progetto https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console"^].
+Per configurare le licenze, devi avere il ruolo di amministratore dell'organizzazione, di cartella o di progetto https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["Scopri di più sui ruoli di accesso alla console"^].
 
 
 
@@ -176,7 +176,7 @@ NOTE: Ti verrà inviata un'e-mail contenente il numero di serie di Ransomware Re
 +
 image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenza."]
 
-. Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie*, quindi inserisci il numero di serie che hai ricevuto tramite e-mail.  Selezionare *Aggiungi licenza*.
+. Nella pagina Aggiungi licenza, seleziona *Inserisci numero di serie* e poi inserisci il numero di serie dall'email che ti è stata inviata. Seleziona *Aggiungi licenza*.
 . Per visualizzare i dettagli della licenza in Licenses and subscriptions, dal menu di navigazione a sinistra della Console, selezionare *Governance* > * Licenses and subscriptions*.
 +
 ** Per visualizzare le informazioni sull'abbonamento, seleziona *Abbonamenti*.
@@ -259,7 +259,7 @@ image:screen-license-dw-add-license.png["Screenshot della pagina Aggiungi licenz
 +
 Se il tuo account del sito di supporto NetApp non è disponibile nell'elenco a discesa, https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["aggiungere l'account NSS alla Console"^] .
 
-** Se disponi del file di licenza zvondolr (necessario quando l'installazione avviene in un sito buio), seleziona l'opzione *Carica file di licenza* e segui le istruzioni per allegare il file.
+** Se hai il file di licenza (necessario quando installato in un sito isolato), seleziona l'opzione *Carica file di licenza* e segui le istruzioni per allegare il file.
 
 
 . Selezionare *Aggiungi licenza*.

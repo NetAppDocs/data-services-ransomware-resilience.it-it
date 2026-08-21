@@ -11,7 +11,7 @@ summary: 'Se riscontri un problema durante l"installazione dell"agente di monito
 
 
 [role="lead"]
-Se riscontri un problema durante l'installazione o l'esecuzione dell'agente di attività utente in NetApp Ransomware Resilience, consulta i seguenti scenari comuni e le relative soluzioni.
+Se hai problemi a installare o eseguire l'agente di attività utente in NetApp Ransomware Resilience, dai un'occhiata a questi scenari comuni e alle relative soluzioni.
 
 
 

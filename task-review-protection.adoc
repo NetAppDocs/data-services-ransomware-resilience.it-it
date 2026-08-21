@@ -12,7 +12,7 @@ summary: È possibile proteggere i carichi di lavoro dagli attacchi ransomware a
 
 
 [role="lead"]
-La dashboard di protezione di NetApp Ransomware Resilience fornisce una panoramica dello stato di protezione e della preparazione dei tuoi carichi di lavoro. Utilizza la dashboard di protezione per ottenere informazioni su cosa è protetto, cosa necessita di protezione e qual è l'ambito della protezione.
+Utilizza la dashboard di protezione in NetApp Ransomware Resilience per esaminare lo stato di protezione dei carichi di lavoro, identificare i carichi di lavoro che richiedono attenzione e capire la copertura di protezione complessiva.
 
 Una volta compresa la portata della tua attuale protezione, link:rp-use-protect.html["puoi creare e applicare strategie di protezione ransomware ai tuoi workload"].
 

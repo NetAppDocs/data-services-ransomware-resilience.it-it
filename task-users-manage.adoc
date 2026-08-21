@@ -11,7 +11,7 @@ summary: Dopo aver creato il connettore della directory utente in NetApp Ransomw
 
 
 [role="lead"]
-Dopo aver configurato il monitoraggio del comportamento degli utenti in NetApp Ransomware Resilience, puoi personalizzare gli avvisi e gestire gli utenti bloccati. Personalizzare gli avvisi ti permette di escludere utenti specifici o percorsi di file dalla generazione di un avviso. Bloccare gli utenti serve a rispondere agli eventi ransomware per prevenire attività dannose da parte degli utenti.
+Dopo che hai configurato il rilevamento dell'attività degli utenti in NetApp Ransomware Resilience, puoi gestire gli utenti bloccati e personalizzare gli avvisi. Puoi escludere utenti specifici o percorsi di file dagli avvisi e bloccare utenti in risposta a eventi ransomware per aiutare a prevenire attività dannose.
 
 Devi avere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Hai configurato un agente di attività utente, abilitato una policy con rilevamento dell'attività utente e creato un connettore di directory utente"] per bloccare gli utenti.
 

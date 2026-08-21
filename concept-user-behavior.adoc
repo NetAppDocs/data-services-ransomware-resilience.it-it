@@ -12,13 +12,13 @@ summary: Rileva le attività anomale degli utenti in Ransomware Resilience per i
 
 
 [role="lead"]
-Grazie al rilevamento dell'attività dell'utente, NetApp Ransomware Resilience consente di affrontare gli eventi ransomware a livello di utente, bloccando eventi quali violazioni dei dati ed eliminazioni su larga scala.
+Il rilevamento dell'attività degli utenti in NetApp Ransomware Resilience ti aiuta a identificare e fermare comportamenti utente sospetti, incluse violazioni dei dati ed eliminazioni su larga scala.
 
-NetApp Ransomware Resilience offre un sistema di rilevamento e monitoraggio basato sull'intelligenza artificiale per individuare comportamenti sospetti degli utenti. Incrementi improvvisi nell'attività di lettura o modelli di accesso insoliti vengono utilizzati per determinare l'intento malevolo. Una volta rilevato, Ransomware Resilience genera automaticamente avvisi nella NetApp Console, tramite e-mail e in qualsiasi ecosistema di sicurezza configurato (ad esempio, SIEM).
+NetApp Ransomware Resilience offre un rilevamento basato sull'intelligenza artificiale che monitora i comportamenti sospetti degli utenti. Aumenti improvvisi dell'attività di lettura o schemi di accesso insoliti possono indicare intenti malevoli. Una volta rilevato, Ransomware Resilience genera automaticamente avvisi nella NetApp Console, tramite email e negli ecosistemi di sicurezza configurati come SIEM.
 
-Grazie al rilevamento e alla notifica del comportamento degli utenti, Ransomware Resilience ti avvisa in caso di tentativi di violazione e distruzione dei dati e di schemi sospetti. In ogni avviso, Ransomware Resilience identifica un utente che puoi bloccare.
+Grazie al rilevamento e alla notifica del comportamento degli utenti, Ransomware Resilience ti avvisa di schemi sospetti e di tentativi di violazione o distruzione dei dati. In ogni avviso, Ransomware Resilience identifica un utente che puoi bloccare.
 
-Ransomware Resilience rileva le attività sospette degli utenti analizzando gli eventi di attività degli utenti generati da FPolicy in ONTAP. Per raccogliere dati sull'attività dell'utente, è necessario distribuire uno o più agenti di attività dell'utente. L'agente è un server Linux o una macchina virtuale con connettività ai dispositivi del tuo tenant.
+Ransomware Resilience rileva attività utente sospette analizzando gli eventi di attività utente generati da FPolicy in ONTAP. Per raccogliere i dati sull'attività utente, devi distribuire uno o più agenti di attività utente. Un agente di attività utente è un server Linux o una macchina virtuale con connettività ai dispositivi nel tenant.
 
 
 IMPORTANT: Il rilevamento dell'attività utente non è attualmente supportato per i carichi di lavoro SAN. Puoi usare il rilevamento dell'attività utente con i carichi di lavoro NAS in Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP e ONTAP.
@@ -44,7 +44,7 @@ image:all-file-activity.png["Screenshot della vista di tutte le attività dei fi
 Il rilevamento del comportamento dell'utente in Ransomware Resilience si basa su tre componenti chiave.
 
 * L'**agente di attività utente** è un ambiente eseguibile per i raccoglitori di dati. È necessario configurare l'agente di attività utente.
-* Il **collettore dati** condivide gli eventi di attività dell'utente con Ransomware Resilience. Il collettore dati viene creato automaticamente quando link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["abilitare una strategia di protezione dal ransomware con rilevamento del comportamento dell'utente"].
+* Il **raccoglitore di dati** condivide gli eventi di attività dell'utente con Ransomware Resilience. Il raccoglitore di dati viene creato automaticamente quando link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["abilitare una strategia di protezione dal ransomware con rilevamento del comportamento dell'utente"].
 * Il **connettore directory utente** consente la mappatura tra nomi utente e ID utente, garantendo maggiore chiarezza nella risposta a comportamenti sospetti degli utenti. È necessario configurare il connettore directory utente.
 
 
@@ -55,7 +55,7 @@ Il rilevamento del comportamento dell'utente in Ransomware Resilience si basa su
 
 Il rilevamento del comportamento degli utenti di Ransomware Resilience è un'integrazione con Data Infrastructure Insights (DII) Workload Security e utilizza link:reference-user-activity-requirements.html["Endpoint DII"]. Non è necessaria alcuna configurazione DII per abilitare il rilevamento del comportamento degli utenti in Ransomware Resilience. Per abilitare il rilevamento del comportamento degli utenti, link:suspicious-user-activity.html["crea l'agente e i collettori richiesti e abilita la strategia di protezione ransomware appropriata"].
 
-Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, è consigliato utilizzare gli stessi agenti Workload Security per Ransomware Resilience. Non è necessario distribuire agenti Workload Security separati per Ransomware Resilience, tuttavia, l'utilizzo degli stessi agenti Workload Security richiede una relazione di associazione tra l'organizzazione Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo rappresentante di account per abilitare questa associazione.
+Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, usa gli stessi agenti di Workload Security per Ransomware Resilience. Non è necessario distribuire agenti di Workload Security separati per Ransomware Resilience. Tuttavia, usare gli stessi agenti di Workload Security richiede una relazione di associazione tra l'organizzazione della Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo referente commerciale per abilitare questa associazione.
 
 
 

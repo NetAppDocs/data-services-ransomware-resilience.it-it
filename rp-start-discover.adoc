@@ -12,7 +12,7 @@ summary: Durante la fase di individuazione, Ransomware Resilience analizza tutti
 
 
 [role="lead"]
-Prima di poter utilizzare NetApp Ransomware Resilience, è necessario rilevare i dati del carico di lavoro. Durante la fase di individuazione, Ransomware Resilience analizza tutti i volumi e i file nei sistemi di tutti gli agenti Console e progetti all'interno di un'organizzazione.
+Prima di poter proteggere i carichi di lavoro, NetApp Ransomware Resilience deve scoprirli analizzando volumi e file nei sistemi attraverso gli agenti Console e i progetti della tua organizzazione.
 
 Nella dashboard di rilevamento, Ransomware Resilience visualizza le configurazioni di sistema supportate e non supportate. Ransomware Resilience valuta le condivisioni di file e storage a blocchi.
 
@@ -28,7 +28,7 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 [[select-workloads-to-discover]]
 == Seleziona i carichi di lavoro da scoprire
 
-All'interno di ciascun agente della Console, selezionare i sistemi in cui si desidera identificare i carichi di lavoro.
+In ogni agente della Console, seleziona i sistemi in cui vuoi individuare i carichi di lavoro.
 
 La scoperta dei carichi di lavoro non li protegge automaticamente. Ransomware Resilience riconosce le policy di protezione esistenti da NetApp Backup and Recovery o ONTAP durante il processo di rilevamento. Per tutti i carichi di lavoro che non dispongono di protezione è necessario link:rp-use-protect.html["configurare la protezione"].
 
@@ -53,7 +53,7 @@ image:screen-discover-workloads.png["Scopri lo screenshot dei carichi di lavoro"
 . Seleziona i sistemi su cui desideri eseguire la discovery.
 . Seleziona *Scopri*.
 +
-Ransomware Resilience rileva i dati del carico di lavoro solo quando selezioni il sistema. Il processo di scoperta può richiedere diversi minuti.
+Ransomware Resilience rileva i dati del carico di lavoro solo per i sistemi che selezioni. Il processo di rilevamento può richiedere diversi minuti.
 
 . Per scaricare l'elenco dei carichi di lavoro rilevati, seleziona *Scarica risultati*.
 . Per visualizzare la dashboard di Ransomware Resilience, seleziona *Vai alla dashboard*.
@@ -73,7 +73,7 @@ link:rp-use-dashboard.html["Scopri cosa mostra la dashboard."]
 [[discover-newly-created-workloads-for-previously-selected-systems]]
 == Scopri i carichi di lavoro appena creati per i sistemi selezionati in precedenza
 
-Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, devi riavviare la rilevazione per proteggere i nuovi carichi di lavoro.
+Se hai aggiunto carichi di lavoro a un sistema precedentemente rilevato, esegui nuovamente la procedura di rilevamento per identificare e proteggere i nuovi carichi di lavoro.
 
 .Passi
 . Per identificare l'ora dell'ultima scoperta, guarda la data e l'ora accanto all'icona *Aggiorna* in alto a destra nella dashboard di Ransomware Resilience.
@@ -88,7 +88,7 @@ TIP: Se noti che alcuni volumi non vengono visualizzati per il sistema individua
 [[discover-new-systems]]
 == Scopri nuovi sistemi
 
-Se hai già eseguito la rilevazione su un sistema e successivamente vi hai aggiunto un carico di lavoro, esegui nuovamente la rilevazione per identificare i carichi di lavoro.
+Se hai già eseguito la rilevazione su un sistema e in seguito hai aggiunto un carico di lavoro, esegui nuovamente la rilevazione per identificarlo.
 
 .Passi
 . Da NetApp Ransomware Resilience, seleziona *Settings*.
@@ -102,7 +102,7 @@ Se hai già eseguito la rilevazione su un sistema e successivamente vi hai aggiu
 [[exclude-workloads]]
 == Escludi carichi di lavoro
 
-Ransomware Resilience consente di escludere carichi di lavoro specifici in un sistema dalla protezione e dal rilevamento del ransomware.
+Ransomware Resilience ti permette di escludere specifici carichi di lavoro in un sistema dalla protezione e dal rilevamento del ransomware.
 
 È possibile escludere solo i carichi di lavoro supportati e rilevati correttamente. È possibile modificare l'elenco dei carichi di lavoro esclusi in qualsiasi momento. Non ti verrà addebitato alcun costo per i carichi di lavoro esclusi da Ransomware Resilience.
 
@@ -128,5 +128,5 @@ image:settings-excluded-workload.png["Screenshot della dashboard delle impostazi
 Per rimuovere più carichi di lavoro, seleziona la casella di controllo accanto ai carichi di lavoro che desideri rimuovere, quindi **Rimuovi da esclusi**.
 
 . Nella finestra di dialogo, seleziona **Rimuovi** per confermare che desideri rimuovere i carichi di lavoro dall'elenco delle esclusioni.
-. Se il carico di lavoro viene rimosso correttamente dall'elenco dei carichi di lavoro esclusi, nella pagina Carico di lavoro escluso viene visualizzato un messaggio di operazione riuscita e il carico di lavoro non viene più visualizzato nell'elenco dei carichi di lavoro esclusi. Se l'azione fallisce, viene visualizzato un messaggio di errore; riprovare l'operazione. image:exclude-workload-remove-successful.png["Screenshot della rimozione riuscita di un carico di lavoro escluso."]
+. Se il workload viene rimosso correttamente dall'elenco dei workload esclusi, nella pagina dei workload esclusi viene visualizzato un messaggio di successo e il workload non compare più nell'elenco dei workload esclusi. Se l'operazione non riesce, viene visualizzato un messaggio di errore; prova di nuovo a eseguire l'operazione. image:exclude-workload-remove-successful.png["Screenshot della rimozione riuscita di un carico di lavoro escluso."]
 

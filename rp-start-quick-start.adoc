@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-quick-start.html 
 keywords: get started, ransomware protection, quick start, resilience, quickstart 
-summary: Inizia a usare NetApp Ransomware Resilience in pochi passaggi. 
+summary: Inizia a utilizzare NetApp Ransomware Resilience in pochi semplici passaggi. 
 ---
 = Avvio rapido per NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: Inizia a usare NetApp Ransomware Resilience in pochi passaggi.
 
 
 [role="lead"]
-Scopri i passaggi principali da seguire per impostare la Ransomware Resilience e proteggere i tuoi carichi di lavoro.
+Utilizza questa guida rapida per configurare NetApp Ransomware Resilience, individuare i carichi di lavoro e configurare la protezione.
 
 Per informazioni dettagliate, seguire i link presenti in ogni passaggio.
 
@@ -27,7 +27,7 @@ Per queste attività è richiesto il ruolo di _Amministratore della console_.
 ** Esaminare anche i requisiti per link:reference-user-activity-requirements.html["rilevamento di comportamenti sospetti degli utenti"] e link:task-clean-restore.html["ripristini puliti"].
 
 
-* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Esaminare i ruoli utente di Ransomware Resilience e assegnare autorizzazioni agli utenti che accedono a Ransomware Resilience"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Esamina i ruoli utente di Ransomware Resilience e assegna le autorizzazioni agli utenti che accedono al servizio"]
 * link:rp-start-licenses.html["Impostare la licenza"]
 
 
@@ -43,7 +43,7 @@ Per queste attività è richiesto il ruolo di _amministratore di Ransomware Resi
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"]Configurare la protezione e il rilevamento in Ransomware Resilience
 [role="quick-margin-para"]
-Queste attività richiedono il ruolo _Ransomware Resilience admin_. La configurazione del rilevamento del comportamento degli utenti richiede il ruolo aggiuntivo _Ransomware Resilience user behavior admin_.
+Queste attività richiedono il ruolo _Ransomware Resilience admin_. Per configurare il rilevamento del comportamento degli utenti, hai anche bisogno del ruolo _Ransomware Resilience user behavior admin_.
 
 [role="quick-margin-list"]
 * link:rp-use-protect.html["Proteggere i carichi di lavoro"]
@@ -63,7 +63,7 @@ Queste attività richiedono il ruolo _Ransomware Resilience admin_. La configura
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quattro"]Cosa succederà adesso?
 [role="quick-margin-para"]
-Dopo aver configurato la protezione in Ransomware Resilience, è possibile:
+Dopo aver configurato la protezione, puoi:
 
 [role="quick-margin-list"]
 * link:task-classify.html["Abilita la classificazione dei dati per identificare i rischi di governance e sicurezza"]

@@ -12,7 +12,7 @@ summary: Utilizzando NetApp Ransomware Resilience, puoi scaricare report che mos
 
 
 [role="lead"]
-NetApp Ransomware Resilience fornisce report in formato JSON che mostrano i dettagli dei volumi supportati e non supportati, le esercitazioni di preparazione agli attacchi, la protezione, gli avvisi e il recovery, consentendo di valutare e rivedere eventi ransomware e la preparazione offline.
+Scarica i report NetApp Ransomware Resilience per esaminare i volumi supportati e non supportati, le esercitazioni di readiness, la protezione, gli avvisi e i dati di recovery offline.
 
 
 TIP: Prima di scaricare i file, aggiorna la dashboard per acquisire i dati più recenti nei tuoi report.

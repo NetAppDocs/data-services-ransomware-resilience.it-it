@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: 'Prima di eseguire un ripristino completo in NetApp Ransomare Resilience, è necessario creare un ambiente di ripristino isolato per isolare e ripulire l"ambiente.' 
+summary: 'Prima di eseguire un ripristino completo in NetApp Ransomware Resilience, devi creare un ambiente di ripristino isolato per isolare e ripulire l"ambiente.' 
 ---
 = Configura l'ambiente per un ripristino pulito in NetApp Ransomware Resilience
 :hardbreaks:
@@ -23,7 +23,7 @@ NetApp Ransomware Resilience offre ripristini puliti, che forniscono un recupero
 [[learn-about-clean-restores]]
 == Scopri di più sui restauri puliti
 
-Quando si esegue un ripristino pulito, Ransomware Resilience guida l'utente attraverso un processo in più fasi che ottimizza il recovery.
+Quando esegui un ripristino pulito, Ransomware Resilience ti guida attraverso un processo in più fasi che ottimizza il recupero.
 
 * **CONFIGURAZIONE**: Per eseguire un ripristino pulito, è necessario prima creare un IRE e quindi selezionare il carico di lavoro da ripristinare. Ransomware Resilience crea una clean room in cui vengono eseguite tutte le azioni per il carico di lavoro.
 * **ANALISI**: Nella stanza pulita, Ransomware Resilience analizza tutte le istantanee per verificare la presenza di crittografia. Il ripristino pulito determina una mappa di recovery per stabilire il piano di recovery.
@@ -604,7 +604,7 @@ TIP: Se devi modificare i dettagli dell'IRE, seleziona *Impostazioni* dalla barr
 Non è possibile eliminare un IRE durante un'operazione di ripristino attiva; è possibile annullare l'operazione di ripristino oppure attendere il completamento del ripristino e quindi eliminare l'IRE.
 
 
-IMPORTANT: Se si elimina l'IRE, vengono eliminati anche l'SVM della clean room e il volume dei metadati. Una volta eliminati questi asset, non sarà più possibile generare report per il clean restore.
+IMPORTANT: Se elimini l'IRE, vengono eliminati anche l'SVM della clean room e il volume dei metadati. Una volta eliminati questi asset, non puoi più generare report per il clean restore.
 
 . Vai su **Impostazioni**.
 . Nella scheda Pulizia e ripristino isolamento, seleziona **Gestisci**.

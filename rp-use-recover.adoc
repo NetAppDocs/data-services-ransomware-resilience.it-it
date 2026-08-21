@@ -12,9 +12,9 @@ summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di b
 
 
 [role="lead"]
-Dopo che i carichi di lavoro sono stati contrassegnati come "Ripristino necessario", NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino resistente agli arresti anomali.
+Dopo che un carico di lavoro viene contrassegnato come *Ripristino necessario*, NetApp Ransomware Resilience consiglia un punto di ripristino effettivo (RPA) e ti guida attraverso il flusso di lavoro di ripristino.
 
-* Se la macchina virtuale è gestita da NetApp Backup and Recovery o Ransomware Resilience, Ransomware Resilience esegue un ripristino crash-consistent, in cui tutti i dati che si trovavano nel volume nello stesso momento vengono ripristinati, ad esempio, se il sistema si è bloccato.
+* Se la macchina virtuale è gestita da NetApp Backup and Recovery o da Ransomware Resilience, Ransomware Resilience esegue un ripristino crash-consistent, così tutti i dati dallo stesso punto nel tempo vengono ripristinati, proprio come accadrebbe dopo un crash di sistema.
 +
 È possibile ripristinare il carico di lavoro selezionando tutti i volumi, volumi specifici o file specifici.
 
