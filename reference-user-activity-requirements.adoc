@@ -237,7 +237,7 @@ NOTE: L'agente di attività utente utilizza NetApp Data Insights Infrastructure 
 
 | TCP | 35000 - 55000  a| 
 Indirizzi IP LIF dei dati SVM
-| Agente di attività dell'utente | Comunicazione da ONTAP all'agente di attività utente per gli eventi Fpolicy. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli gli eventi, incluso qualsiasi firewall sull'agente di attività utente stesso (se presente). + **NOTA:** Non devi riservare *tutte* queste porte, ma le porte che riservi per questo devono essere comprese in questo intervallo. Ti consigliamo di iniziare riservando 100 porte e di aumentare se necessario. 
+| Agente di attività dell'utente | Comunicazione da ONTAP all'agente di attività utente per gli eventi FPolicy. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli eventi, incluso qualsiasi firewall sull'agente di attività utente stesso (se presente). + **NOTA:** Non devi riservare *tutte* queste porte, ma le porte che riservi per questo devono essere comprese in questo intervallo. Ti consigliamo di iniziare riservando 100 porte e di aumentare se necessario. 
 
 
 | TCP | 35000-55000 | IP di gestione del cluster | Agente di attività dell'utente | Comunicazione dall'IP di gestione del cluster ONTAP all'agente di attività dell'utente per *eventi EMS*. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli eventi EMS, incluso qualsiasi firewall sull'agente di attività utente stesso. + **NOTA:** Non è necessario riservare *tutte* queste porte, ma le porte riservate a questo scopo devono essere comprese in questo intervallo. Si consiglia di iniziare riservando 100 porte e di aumentarle se necessario. 

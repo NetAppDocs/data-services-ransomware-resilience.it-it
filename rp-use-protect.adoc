@@ -265,44 +265,48 @@ NOTE: Se si sceglie di copiare e modificare una strategia esistente, Ransomware 
 +
 Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestione sistema.
 
-+
+
+
+
+
+
+
 
 NOTE: È possibile scegliere qualsiasi combinazione di policy di rilevamento. La policy di rilevamento deve includere il rilevamento della crittografia o il rilevamento di comportamenti utente sospetti.
 
-
-
-** *Politica di snapshot*:
+* *Politica di snapshot*:
 +
-*** *Nome base policy snapshot*: seleziona una policy oppure seleziona *Crea* e inserisci un nome per la policy snapshot.
-*** *Blocco snapshot*: abilita questa opzione per bloccare le copie snapshot sull'archiviazione primaria in modo che non possano essere modificate o eliminate per un determinato periodo di tempo, anche se un attacco ransomware riesce a raggiungere la destinazione dell'archiviazione di backup.  Questo è anche chiamato _archiviazione immutabile_.  Ciò consente tempi di ripristino più rapidi.
+** *Nome base policy snapshot*: seleziona una policy oppure seleziona *Crea* e inserisci un nome per la policy snapshot.
+** *Blocco snapshot*: abilita questa opzione per bloccare le copie snapshot sull'archiviazione primaria in modo che non possano essere modificate o eliminate per un determinato periodo di tempo, anche se un attacco ransomware riesce a raggiungere la destinazione dell'archiviazione di backup.  Questo è anche chiamato _archiviazione immutabile_.  Ciò consente tempi di ripristino più rapidi.
 +
 Quando uno snapshot è bloccato, la data di scadenza del volume viene impostata sulla data di scadenza della copia dello snapshot.
 
 +
 Il blocco della copia snapshot è disponibile con ONTAP 9.12.1 e versioni successive.  Per saperne di più su SnapLock, fare riferimento a https://docs.netapp.com/us-en/ontap/snaplock/index.html["SnapLock in ONTAP"^] .
 
-*** *Pianificazioni snapshot*: scegli le opzioni di pianificazione, il numero di copie snapshot da conservare e seleziona per abilitare la pianificazione.
+** *Pianificazioni snapshot*: scegli le opzioni di pianificazione, il numero di copie snapshot da conservare e seleziona per abilitare la pianificazione.
 
 
-** *Politica di replicazione*:
+* *Politica di replicazione*:
 +
-*** *Nome base della policy di replicazione*: immettere un nuovo nome o sceglierne uno esistente. Il nome base è il prefisso aggiunto a tutti gli snapshot.
-*** *Pianificazioni di replicazione*: attiva/disattiva le frequenze che desideri abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da conservare) per ogni pianificazione abilitata.
+** *Nome base della policy di replicazione*: immettere un nuovo nome o sceglierne uno esistente. Il nome base è il prefisso aggiunto a tutti gli snapshot.
+** *Pianificazioni di replicazione*: attiva/disattiva le frequenze che desideri abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da conservare) per ogni pianificazione abilitata.
 
 
-** *Politica di backup*:
+* *Politica di backup*:
 +
-*** *Nome base della policy di backup*: inserisci un nuovo nome o scegline uno esistente.
-*** *Pianificazioni di backup*: scegli le opzioni di pianificazione per l'archiviazione secondaria e abilita la pianificazione.
+** *Nome base della policy di backup*: inserisci un nuovo nome o scegline uno esistente.
+** *Pianificazioni di backup*: scegli le opzioni di pianificazione per l'archiviazione secondaria e abilita la pianificazione.
 +
 
 TIP: Per abilitare il blocco del backup su storage secondario, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per i dettagli, vedere link:task-backup-destination.html["Configurare le impostazioni"].
 
++
+... Selezionare *Aggiungi*.
 
 
 
 
-. Selezionare *Aggiungi*.
 
 
 
@@ -334,7 +338,7 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 
 . Selezionare **Avanti**.
-. Se hai selezionato *Rilevamento comportamento utente sospetto* come impostazione di rilevamento, seleziona l'agente Attività utente o link:suspicious-user-activity.html#create-a-user-activity-agent["o crearne uno"].
+. Se hai selezionato *Rilevamento del comportamento sospetto dell'utente* come impostazione di rilevamento, seleziona l'agente di attività utente o link:suspicious-user-activity.html#create-a-user-activity-agent["o crearne uno"].
 +
 L'agente di attività utente ospita i nuovi collettori di dati. Ransomware Resilience crea automaticamente il raccoglitore dati per trasmettere gli eventi di attività dell'utente a Ransomware Resilience per rilevare comportamenti anomali dell'utente.
 

@@ -1,0 +1,14 @@
+= Consegna degli eventi SIEM tramite l'agente della Console
+:allow-uri-read: 
+
+
+
+
+[[siem-event-delivery-through-the-console-agent]]
+=== Consegna degli eventi SIEM tramite l'agente della Console
+
+Ransomware Resilience ora supporta la distribuzione di eventi SIEM tramite l'agente Console, oltre all'opzione già esistente di distribuzione degli eventi tramite NetApp Console.
+
+Quando consegni eventi SIEM tramite l'agente Console, puoi mantenere la consegna degli eventi SIEM all'interno del tuo perimetro di rete. Questo semplifica il deployment per ambienti on-premises con allow list di indirizzi IP restrittive e può allinearsi meglio ai controlli di sicurezza esistenti. Per usare questa opzione, assicurati che l'agente Console possa risolvere e connettersi al tuo endpoint SIEM sulla porta richiesta attraverso qualsiasi controllo di firewall o proxy.
+
+Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["Configura un sistema SIEM"^].
