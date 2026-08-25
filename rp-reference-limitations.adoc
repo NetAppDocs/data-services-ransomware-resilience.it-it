@@ -68,3 +68,10 @@ Alle workload SAN (storage a blocchi) si applicano le seguenti limitazioni:
 * Quando Ransomware Resilience genera avvisi per i carichi di lavoro SAN, questi si basano solo su un'entropia elevata.
 * I carichi di lavoro SAN possono essere ripristinati solo utilizzando un link:task-custom-restore.html["ripristino personalizzato"]. Il ripristino pulito non è attualmente disponibile per i carichi di lavoro SAN.
 
+
+
+
+[[multi-admin-verification]]
+== Verifica multi-amministratore
+
+La verifica multi-amministratore non è supportata in Ransomware Resilience o nella NetApp Console. Se hai configurato link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["Verifica multi-amministratore in ONTAP"^], alcuni flussi di lavoro potrebbero non funzionare come previsto in Ransomware Resilience.

@@ -2809,4 +2809,7 @@
   <block id="c0bdc8b4b8a3be2684cfe6108f6978ae" category="paragraph">Quando configuri il monitoraggio dell'attività degli utenti in NetApp Ransomware Resilience, puoi eseguire uno script di test per simulare eventi di comportamento utente sospetti per la convalida e il testing.</block>
   <block id="c120d673c7fb209814b49c9420ea9cee" category="paragraph">Dopo che hai configurato il rilevamento dell'attività degli utenti in NetApp Ransomware Resilience, puoi gestire gli utenti bloccati e personalizzare gli avvisi. Puoi escludere utenti specifici o percorsi di file dagli avvisi e bloccare utenti in risposta a eventi ransomware per aiutare a prevenire attività dannose.</block>
   <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">Se hai problemi a installare o eseguire l'agente di attività utente in NetApp Ransomware Resilience, dai un'occhiata a questi scenari comuni e alle relative soluzioni.</block>
+  <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">Verifica multi-amministratore</block>
+  <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">Verifica multi-amministratore in ONTAP</block>
+  <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">La verifica multi-amministratore non è supportata in Ransomware Resilience o nella NetApp Console. Se hai configurato <block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block>, alcuni flussi di lavoro potrebbero non funzionare come previsto in Ransomware Resilience.</block>
 </blocks>
