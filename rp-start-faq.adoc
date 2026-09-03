@@ -42,7 +42,7 @@ Puoi provare Ransomware Resilience con una prova gratuita di 30 giorni. NetApp n
 
 Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
 
-Quando un carico di lavoro viene classificato come protetto, viene conteggiato ai fini della capacità acquistata o dell'abbonamento PAYGO. Ransomware Resilience classifica un carico di lavoro come protetto quando è abilitata una policy di rilevamento con almeno una policy di backup o snapshot. I carichi di lavoro rilevati con una policy di rilevamento ma _senza_ alcuna policy di backup o snapshot vengono classificati come a rischio. I carichi di lavoro a rischio non vengono conteggiati ai fini della capacità acquistata.
+Quando un workload viene classificato come protetto, viene conteggiato ai fini della capacità acquistata o dell'abbonamento PAYGO. Ransomware Resilience classifica un workload come protetto quando è abilitata una policy di crittografia o una policy di rilevamento dell'attività dell'utente. Senza almeno una di queste policy di rilevamento, un workload viene classificato come a rischio. I workload a rischio non vengono conteggiati ai fini della capacità acquistata.
 
 I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova gratuito. Ransomware Resilience viene addebitato in base ai GB per i dati associati ai carichi di lavoro protetti (come riportato da ONTAP) prima delle efficienze.
 
@@ -98,10 +98,14 @@ Ransomware Resilience è in grado di identificare i seguenti carichi di lavoro: 
 Ransomware Resilience rileva i volumi e le estensioni dei file e li associa al carico di lavoro appropriato.
 
 .Che cosa è un carico di lavoro protetto?
-In Ransomware Resilience, un carico di lavoro mostra lo stato *protetto* quando è abilitata una policy di _rilevamento_. La policy di rilevamento deve consistere nel rilevamento della crittografia o nel rilevamento di comportamenti utente sospetti (o entrambi). Può anche includere il rilevamento di estensioni di file sospette. Per ulteriori informazioni, vedere link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
+In Ransomware Resilience, un carico di lavoro mostra lo stato *protetto* quando è abilitata una policy di _rilevamento_. La policy di rilevamento deve consistere nel rilevamento della crittografia o nel rilevamento di comportamenti utente sospetti (o entrambi). Per ulteriori informazioni, vedi link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
 
 .Che cosa si intende per carico di lavoro "a rischio"?
-Se un carico di lavoro non ha una policy di rilevamento abilitata, viene etichettato come "a rischio" anche se ha una policy di backup e snapshot abilitata. Per la protezione dal ransomware, dovresti abilitare una link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
+Un carico di lavoro deve disporre di una policy di protezione con rilevamento della crittografia o rilevamento del comportamento dell'utente abilitato per essere considerato protetto. Senza almeno una di queste strategie di rilevamento, il carico di lavoro viene etichettato come a rischio. Se un carico di lavoro dispone di una policy di backup o snapshot ma non include il rilevamento della crittografia o il rilevamento del comportamento dell'utente abilitato, verrà considerato a rischio.
+
+Ransomware Resilience offre anche il rilevamento di estensioni di file sospette. Se il rilevamento di estensioni di file sospette è l'unica policy di rilevamento abilitata, il carico di lavoro sarà etichettato come a rischio.
+
+Per la protezione dal ransomware, dovresti abilitare una link:rp-use-protect.html#add-a-ransomware-protection-strategy["politica di rilevamento"].
 
 .Ho aggiunto un nuovo volume, ma non è ancora uscito. Cosa dovrei fare?
 Se hai aggiunto un nuovo volume al tuo ambiente, avvia nuovamente l'individuazione del carico di lavoro. Dopo che il volume è stato scoperto, link:rp-use-protect.html#add-a-ransomware-protection-strategy["applicare policy di protezione per proteggere il nuovo volume"].

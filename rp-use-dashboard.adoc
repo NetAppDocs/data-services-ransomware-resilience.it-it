@@ -30,7 +30,7 @@ image:screen-dashboard.png["Pagina del dashboard"]
 
 . Dalla dashboard, puoi eseguire le seguenti azioni in ogni riquadro:
 +
-** *Protezione dei dati del carico di lavoro*: seleziona *Visualizza tutto* per visualizzare tutti i carichi di lavoro a rischio o protetti nella pagina Protezione.  I carichi di lavoro sono a rischio quando i livelli di protezione non corrispondono a una policy di protezione. Fare riferimento a link:rp-use-protect.html["Proteggere i carichi di lavoro"] .
+** *Protezione dei dati del carico di lavoro*: Seleziona *Visualizza tutto* per vedere tutti i carichi di lavoro a rischio o protetti nella pagina Protezione. Senza rilevamento della crittografia o rilevamento dell'attività dell'utente, il carico di lavoro è considerato a rischio. Consulta link:rp-use-protect.html["Proteggere i carichi di lavoro"].
 +
 
 TIP: Selezionare il suggerimento "i" per visualizzare suggerimenti su questi dati. Per aumentare il limite del carico di lavoro, seleziona *Aumenta limite del carico di lavoro* all'interno di questa nota. Selezionando questa opzione verrai indirizzato alla pagina di supporto della console, dove potrai creare un ticket di assistenza.

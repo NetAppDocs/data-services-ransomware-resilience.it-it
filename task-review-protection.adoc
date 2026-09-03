@@ -54,8 +54,8 @@ La dashboard di protezione in Ransomware Resilience mostra informazioni dettagli
 
 *Stato di protezione*: un carico di lavoro può mostrare uno dei seguenti stati di protezione per indicare se una policy è applicata o meno:
 
-* *Protetto*: viene applicata una policy di rilevamento.
-* *A rischio*: Non viene applicata alcuna policy. Se a un carico di lavoro non è abilitata una policy di rilevamento, è considerato "a rischio" anche se ha una policy di snapshot e una policy di backup abilitate.
+* *Protetto*: è attiva una policy di crittografia o di rilevamento dell'attività dell'utente.
+* *A rischio*: Se un carico di lavoro non dispone di una policy di protezione con rilevamento della crittografia o rilevamento dell'attività dell'utente abilitato, viene etichettato come a rischio. Anche se il carico di lavoro dispone di protezione tramite snapshot e backup e di blocco delle estensioni dei file, viene comunque considerato a rischio senza rilevamento della crittografia o rilevamento del comportamento dell'utente abilitato.
 * *In corso*: È in corso l'applicazione di una policy, ma l'operazione non è ancora stata completata.
 * *Errore*: È stata configurata una policy di backup, ma si è verificato un errore.
 
