@@ -46,7 +46,7 @@ Quando un workload viene classificato come protetto, viene conteggiato ai fini d
 
 I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o nell'abbonamento al termine del periodo di prova gratuito. Ransomware Resilience viene addebitato in base ai GB per i dati associati ai carichi di lavoro protetti (come riportato da ONTAP) prima delle efficienze.
 
-Nel calcolo delle dimensioni, i costi di licenza si basano sulla capacità logica del file system attivo (ovvero, lo spazio occupato dagli snapshot non è incluso).
+Quando consideri il dimensionamento, i costi di licenza si basano sulla capacità logica del file system attivo, indipendentemente dal fatto che quei dati risiedano in livelli di storage hot o cold. Lo spazio occupato dagli snapshot non è incluso in questo calcolo, anche se quegli snapshot sono archiviati in un livello cold.
 
 
 
