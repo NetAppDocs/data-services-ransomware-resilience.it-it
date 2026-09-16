@@ -1,0 +1,21 @@
+= Supporto migliorato per i ripristini puliti
+:allow-uri-read: 
+
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== Supporto migliorato per i ripristini puliti
+
+Ora puoi utilizzare i ripristini puliti per il recupero dopo comportamenti sospetti dell'utente e attacchi di crittografia basati sull'utente. Questo miglioramento si aggiunge al supporto esistente per gli attacchi basati sulla crittografia (entropia). Questa funzionalità avanzata ti permette di sfruttare l'approccio guidato del ripristino pulito, identificando i punti di ripristino ottimali per ridurre al minimo la perdita di dati e accelerare il recupero.
+
+Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crea un ambiente di ripristino isolato per un ripristino pulito"^].
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Supporto SAN per Google Cloud NetApp Volumes
+
+Ransomware Resilience ora offre il supporto per i carichi di lavoro SAN da Google Cloud NetApp Volumes, permettendoti di rilevare attacchi ransomware basati sulla crittografia per i carichi di lavoro SAN. Il supporto per SAN in Google Cloud NetApp Volumes è ora generalmente disponibile.
+
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["sistemi supportati"^] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Archiviazione SAN nella resilienza al ransomware"^].

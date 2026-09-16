@@ -48,6 +48,16 @@ I carichi di lavoro protetti vengono conteggiati nella capacità acquistata o ne
 
 Quando consideri il dimensionamento, i costi di licenza si basano sulla capacità logica del file system attivo, indipendentemente dal fatto che quei dati risiedano in livelli di storage hot o cold. Lo spazio occupato dagli snapshot non è incluso in questo calcolo, anche se quegli snapshot sono archiviati in un livello cold.
 
+.Cosa succede al termine del periodo di prova o alla scadenza della licenza?
+Al termine del periodo di prova gratuito o alla scadenza della licenza o dell'abbonamento, i carichi di lavoro rimangono visibili su Ransomware Resilience a meno che tu non li escluda. Con una licenza o una prova scaduta, puoi:
+
+* Visualizza i carichi di lavoro e lo stato di integrità dei carichi di lavoro
+* Elimina risorse come le policy
+* Esegui tutte le operazioni pianificate create durante il periodo di prova o sotto la licenza
+
+
+Per decommissionare Ransomware Resilience, invia una richiesta di assistenza. La richiesta deve includere l'ID della tua organizzazione e specificare che desideri decommissionare il servizio.
+
 
 
 [[access]]
