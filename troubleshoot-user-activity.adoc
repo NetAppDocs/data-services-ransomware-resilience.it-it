@@ -43,7 +43,7 @@ Se hai problemi a installare o eseguire l'agente di attività utente in NetApp R
 | Lo script cloudsecure-agent-symptom-collector.sh fallisce con l'errore "ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip" | Installa lo strumento zip con il comando  `yum install zip`, poi esegui di nuovo  `cloudsecure-agent-symptom-collector.sh`. 
 
 
-| L'installazione dell'agente di attività utente non riesce con l'errore "useradd: cannot create directory /home/cssys." | Non è possibile creare la directory di login dell'utente nella home directory a causa di un errore di autorizzazione. Crea un utente cssys e aggiungi manualmente la sua directory di login con il comando  `sudo useradd <user_name> -m -d HOME_DIR`. In questo comando,  `-m` crea la home directory se non esiste;  `-d` designa HOME_DIR come directory di login. 
+| L'installazione dell'agente di attività utente non riesce con l'errore "useradd: cannot create directory /home/cssys." | Non puoi creare la directory di login dell'utente nella home directory a causa di un errore di autorizzazioni. Crea un utente cssys e aggiungi manualmente la sua directory di login con il comando `sudo useradd <user_name> -m -d HOME_DIR`. In questo comando, `-m` crea la home directory se non esiste; `-d` designa HOME_DIR come directory di login. 
 |===
 
 

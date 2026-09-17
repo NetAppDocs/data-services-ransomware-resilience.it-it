@@ -97,7 +97,7 @@ NOTE: L'esecuzione di un ripristino pulito in un ambiente basato sul cloud può 
 [[considerations]]
 == Considerazioni
 
-* Puoi eseguire un ripristino completo solo per attacchi basati sulla crittografia (sia sul comportamento dell'utente che sull'entropia) e per attacchi dovuti a comportamenti sospetti dell'utente. Il ripristino completo non è supportato per attacchi di violazione dei dati o distruzione dei dati.
+* Puoi eseguire un ripristino completo solo per attacchi basati sulla crittografia (sia sul comportamento dell'utente che sull'entropia) e per attacchi dovuti a comportamenti sospetti dell'utente. Il ripristino completo non è supportato per attacchi di data breach e data destruction.
 * Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non c'è disponibilità.
 +
 ** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.

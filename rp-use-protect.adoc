@@ -82,9 +82,7 @@ Se il carico di lavoro non è gestito da Backup and Recovery o Ransomware Resili
 È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.
 
 
-NOTE: Il criterio **Estensione utente crittografia** è l'unico criterio predefinito che supporta il rilevamento di comportamenti sospetti degli utenti.
-
-+ La **Criterio di replica critica** è l'unica politica predefinita che supporta la replica degli snapshot su ONTAP.
+NOTE: La policy **Encryption user extension** è l'unica policy predefinita che supporta il rilevamento di comportamenti utente sospetti. + La **Critical replication policy** è l'unica policy predefinita che supporta la replica degli snapshot su ONTAP.
 
 [cols="10,15a,20,15,15,15"]
 |===
