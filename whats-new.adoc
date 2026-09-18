@@ -32,15 +32,6 @@ Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-service
 
 
 
-[[san-support-for-google-cloud-netapp-volumes]]
-=== Supporto SAN per Google Cloud NetApp Volumes
-
-Ransomware Resilience ora offre il supporto per i carichi di lavoro SAN da Google Cloud NetApp Volumes, permettendoti di rilevare attacchi ransomware basati sulla crittografia per i carichi di lavoro SAN. Il supporto per SAN in Google Cloud NetApp Volumes è ora generalmente disponibile.
-
-Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["sistemi supportati"^] e link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["Archiviazione SAN nella resilienza al ransomware"^].
-
-
-
 [[25-august-2026]]
 == 25 agosto 2026
 
