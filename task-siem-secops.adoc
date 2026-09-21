@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-siem-secops.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, google, secops, security operations 
+summary: 'Ottimizza l"analisi delle minacce e la gestione degli eventi in NetApp Ransomware Resilience collegando il Google SecOps SIEM.' 
+---
+= Configura Google SecOps SIEM in NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience offre supporto nativo per la gestione delle informazioni e degli eventi di sicurezza (SIEM) con Google SecOps. Collegando Ransomware Resilience a Google SecOps, puoi inviare automaticamente i dati degli eventi per l'analisi e il rilevamento delle minacce, semplificando la protezione dai ransomware e la gestione degli eventi.
+
+
+
+[[before-you-begin]]
+== Prima di iniziare
+
+Prima di abilitare Google SecOps in Ransomware Resilience, devi registrare il tipo di log e il webhook in Google SecOps per abilitare una connessione tra i servizi.
+
+
+
+[[configure-google-secops]]
+== Configura Google SecOps
+
+Esegui i seguenti passaggi in Google SecOps:
+
+.Crea un tipo di registro
+. In Google SecOps, vai su *Impostazioni* > *Impostazioni SIEM* > *Tipi di log disponibili*.
++
+Si consiglia di utilizzare il tipo di log NETAPP_RANSOMWARE_RESILIENCE. Se non si desidera utilizzare questo tipo di log, creare un tipo di log personalizzato.
+
+. Se si utilizza il tipo di log NETAPP_RANSOMWARE_RESILIENCE, questo include un parser preconfigurato e non è necessaria alcuna ulteriore azione.
++
+Se si utilizza un tipo di log personalizzato, è necessario creare un parser. Accedere a *Impostazioni SIEM* > *Parser* > *Crea parser* per creare il parser.
+
+
+
+.Registra il webhook
+. In Google SecOps, vai su *Impostazioni* > *Impostazioni SIEM* > *Feed*.
+. Seleziona *Aggiungi nuovo feed*.
+. Seleziona il tipo di registro utilizzato nel flusso di lavoro Crea un tipo di registro.
+. Imposta il *Tipo di origine* su Webhook, quindi salva il feed.
+. Apri la scheda *Dettagli*. Copia l'*URL dell'endpoint Webhook* da utilizzare quando ti autentichi in Ransomware Resilience.
+. Apri la scheda *Chiave segreta*. Genera la chiave segreta oppure copiala se ne hai già creata una. Salva la chiave per utilizzarla quando ti autentichi in Ransomware Resilience.
+. Crea una *chiave API* utilizzando la procedura per le chiavi API di Google della tua organizzazione.
+
+
+
+
+[[authenticate-google-secops-in-ransomware-resilience]]
+== Autenticare Google SecOps nella resilienza al ransomware
+
+. In Ransomware Resilience, seleziona *Impostazioni* nella barra laterale.
+. Nella pagina Impostazioni, seleziona *Connetti* nel riquadro di connessione SIEM, quindi scegli *Google SecOps* dal menu a discesa.
++
+image:screen-settings-threat-detection-3options.png["Schermata delle opzioni di connessione SIEM"]
+
+. Esamina le sezioni *Prerequisiti* e *Feed Webhook*.
+. Espandere la sezione *Autenticazione*.
++
+.. Inserisci l'URL del webhook che hai copiato da Google SecOps.
+.. Inserisci la *chiave segreta* e la *chiave API* di Google SecOps.
+
+
+. Scegli link:task-siem.html#event-delivery-route["percorso di consegna dell'evento"]. Per inviare gli eventi SIEM al tuo endpoint SIEM, seleziona *Deliver via NetApp Console*. Per instradare gli eventi tramite l'agente Console già presente nella tua rete, seleziona *Deliver via Console agent*.
++
+Se hai scelto *Consegna tramite Console agent*, seleziona il Console agent da utilizzare dal menu a tendina.
+
+. Seleziona *Connetti* per iniziare a inviare i dati SIEM.
+
+
+
+
+[[next-steps]]
+== Prossimi passi
+
+* link:reference-soar.html["Integra un playbook SOAR"]
+

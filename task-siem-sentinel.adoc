@@ -1,0 +1,246 @@
+---
+sidebar: sidebar 
+permalink: task-siem-sentinel.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, microsoft, sentinel 
+summary: 'Ottimizza l"analisi delle minacce e la gestione degli eventi in NetApp Ransomware Resilience collegando il SIEM Microsoft Sentinel.' 
+---
+= Configura Microsoft Sentinel SIEM in NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience offre supporto nativo per la gestione delle informazioni e degli eventi di sicurezza (SIEM) con Microsoft Sentinel. Collegando Ransomware Resilience a Microsoft Sentinel, puoi inviare automaticamente i dati degli eventi per l'analisi e il rilevamento delle minacce, semplificando la protezione dai ransomware e la gestione degli eventi.
+
+
+
+[[configure-microsoft-sentinel-for-threat-detection]]
+== Configurare Microsoft Sentinel per il rilevamento delle minacce
+
+Per connettere Microsoft Sentinel devi eseguire alcuni passaggi nel portale di Azure.
+
+
+
+[[enable-microsoft-sentinel]]
+=== Abilita Microsoft Sentinel
+
+.Passi
+. In Microsoft Sentinel, crea un'area di lavoro *Log Analytics*.
+. link:https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard?tabs=defender-portal["Abilita Microsoft Sentinel a utilizzare l'area di lavoro di Log Analytics che hai creato."^]
+
+
+
+
+[[create-a-custom-role-in-microsoft-sentinel]]
+=== Creare un ruolo personalizzato in Microsoft Sentinel
+
+.Passi
+. Nel portale di Azure, vai su *Sottoscrizione* > *Controllo degli accessi (IAM)*.
+. Crea un ruolo personalizzato. Per il *Nome ruolo personalizzato*, inserisci "NetApp Ransomware Resilience Sentinel Configurator".
+. Copia il seguente JSON e incollalo nella scheda *JSON*, sostituendo  `{subscription_id}` con l'ID della sottoscrizione Azure a cui assegnerai il ruolo.
++
+[source, json]
+----
+{
+  "properties": {
+    "roleName": "NetApp Ransomware Resilience Sentinel Configurator",
+    "description": "",
+    "assignableScopes": [
+      "/subscriptions/{subscription_id}"
+    ],
+    "permissions": [
+      {
+        "actions": [
+          "Microsoft.Insights/dataCollectionEndpoints/write",
+          "Microsoft.Insights/dataCollectionEndpoints/read",
+          "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
+          "Microsoft.Insights/dataCollectionRules/write",
+          "Microsoft.Insights/dataCollectionRules/read",
+          "Microsoft.OperationalInsights/workspaces/tables/operationresults/read",
+          "Microsoft.OperationalInsights/workspaces/tables/read",
+          "Microsoft.OperationalInsights/workspaces/tables/write",
+          "Microsoft.OperationalInsights/workspaces/read",
+          "Microsoft.OperationalInsights/workspaces/write",
+          "Microsoft.OperationalInsights/workspaces/listKeys/action",
+          "Microsoft.Resources/subscriptions/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/write",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/operationStatuses/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/deployments/write",
+          "Microsoft.Resources/subscriptions/resourceGroups/deployments/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/deployments/operationStatuses/read",
+          "Microsoft.Authorization/roleAssignments/read",
+          "Microsoft.Authorization/roleAssignments/write",
+          "Microsoft.Authorization/roleAssignments/delete",
+          "Microsoft.Authorization/roleDefinitions/read",
+          "Microsoft.Resources/deployments/operations/read",
+          "Microsoft.Resources/deployments/read",
+          "Microsoft.Resources/deployments/write",
+          "Microsoft.Resources/resources/read",
+          "Microsoft.Resources/subscriptions/operationresults/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/delete",
+          "Microsoft.Resources/subscriptions/resourceGroups/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/resources/read",
+          "Microsoft.Resources/subscriptions/resourceGroups/write",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
+          "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read",
+          "Microsoft.Resources/subscriptions/locations/read",
+          "Microsoft.SecurityInsights/alertRules/write",
+          "Microsoft.SecurityInsights/alertRules/read",
+          "Microsoft.SecurityInsights/alertRules/actions/write",
+          "Microsoft.SecurityInsights/alertRules/actions/read",
+          "Microsoft.OperationalInsights/workspaces/search/action",
+          "Microsoft.OperationalInsights/workspaces/rules/read",
+          "Microsoft.OperationalInsights/workspaces/sharedkeys/action",
+          "Microsoft.OperationalInsights/workspaces/customfields/action",
+          "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+          "Microsoft.OperationalInsights/workspaces/api/query/schema/read",
+          "Microsoft.OperationalInsights/workspaces/datasources/read",
+          "Microsoft.OperationalInsights/workspaces/metricDefinitions/read",
+          "Microsoft.OperationalInsights/workspaces/schema/read",
+          "Microsoft.OperationalInsights/workspaces/tables/query/read",
+          "Microsoft.OperationalInsights/workspaces/providers/Microsoft.Insights/logDefinitions/read",
+          "Microsoft.OperationalInsights/workspaces/sharedkeys/read",
+          "Microsoft.OperationalInsights/workspaces/operations/read",
+          "Microsoft.OperationalInsights/workspaces/query/read"
+        ],
+        "notActions": [],
+        "dataActions": [],
+        "notDataActions": []
+      }
+    ]
+  }
+}
+----
+. Rivedi e salva le tue impostazioni.
+
+
+
+
+[[register-ransomware-resilience-in-microsoft-entra-id]]
+=== Registra la resilienza al ransomware in Microsoft Entra ID
+
+.Passi
+. Nel portale di Azure, seleziona *Entra ID* > *Applicazioni* > *Registrazioni app*.
+. Per il *Nome visualizzato* dell'applicazione, inserisci "*NetApp ransomware resilience*".
+. Nel campo *Tipo di account supportato*, seleziona *Solo account in questa directory organizzativa*.
+. Seleziona *Recensione*.
+. Seleziona *Registra* per salvare le tue impostazioni.
++
+Dopo la registrazione, l'interfaccia di amministrazione di Microsoft Entra visualizza il riquadro Panoramica dell'applicazione.
+
+
+
+.Crea un segreto client per la registrazione dell'applicazione
+. Nel portale di Azure, seleziona *Certificati e segreti* > *Segreti client* > *Nuovo segreto client*.
+. Aggiungi una descrizione per il segreto della tua applicazione.
+. Seleziona una *scadenza* per il segreto oppure specifica una durata personalizzata.
++
+
+TIP: La durata di validità di un segreto client è limitata a due anni (24 mesi) o meno. Microsoft consiglia di impostare un valore di scadenza inferiore a 12 mesi.
+
+. Seleziona *Aggiungi* per creare il tuo segreto.
+. Annota il codice segreto da utilizzare in una successiva fase di autenticazione. Questa è la tua unica occasione per visualizzare il codice segreto; non verrà più mostrato dopo che avrai lasciato la pagina.
+
+
+
+
+[[authenticate-microsoft-sentinel-in-ransomware-resilience]]
+== Autenticare Microsoft Sentinel in Ransomware Resilience
+
+Per Microsoft Sentinel SIEM, puoi scegliere una distribuzione automatica in cui Ransomware Resilience distribuisce le risorse in base alle autorizzazioni che fornisci. In alternativa, puoi eseguire una distribuzione manuale in cui distribuisci le risorse in base a un template ARM fornito. Entrambe le opzioni richiedono che tu imposti le autorizzazioni nel portale Azure e poi autentichi la connessione in Ransomware Resilience, anche se i passaggi sono diversi. Scegli il flusso di lavoro che meglio si adatta alle tue esigenze.
+
+[role="tabbed-block"]
+====
+.Distribuzione automatica
+--
+.Configura le autorizzazioni nel portale di Azure
+. Nel portale di Azure, seleziona *Sottoscrizione* > *Controllo degli accessi (IAM)*.
+. Selezionare *Aggiungi* > *Aggiungi assegnazione ruolo*.
+. Nel campo *Ruoli di amministratore privilegiato*, seleziona il ruolo *NetApp Ransomware Resilience Sentinel Configurator* che hai creato in precedenza.
+. Selezionare *Avanti*.
+. Nel campo *Assegna accesso a*, seleziona *Utente, gruppo o entità servizio*.
+. Seleziona *Select Members* poi *NetApp Ransomware Resilience*.
+. Selezionare *Avanti*.
+. Nel campo *Cosa può fare l'utente*, seleziona *Consenti all'utente di assegnare tutti i ruoli eccetto i ruoli di amministratore con privilegi Proprietario, UAA, RBAC (consigliato)*.
+. Selezionare *Avanti*.
+. Selezionare *Rivedi e assegna* per assegnare le autorizzazioni.
+
+
+.Autenticare Microsoft Sentinel in Ransomware Resilience
+. In Ransomware Resilience, seleziona *Impostazioni* nella barra laterale.
+. Nella pagina Impostazioni, seleziona *Connetti* nel riquadro di connessione SIEM, quindi scegli *Microsoft Sentinel* dal menu a discesa.
++
+image:screen-settings-threat-detection-3options.png["Schermata delle opzioni di connessione SIEM"]
+
+. Scegli *Automatico* come metodo di distribuzione.
+. Esamina le sezioni *Prerequisiti*, *Registrazione* e *Autorizzazioni* per assicurarti di aver completato correttamente ogni passaggio.
+. Espandere la sezione *Autenticazione*.
++
+.. Inserisci il *Directory (tenant) ID*, *Application (tenant) ID* e *Client secret*. Seleziona *Authenticate* e attendi che l'UI confermi che le credenziali sono state autenticate per procedere.
+.. Seleziona l'*ID sottoscrizione*, il *gruppo di risorse* e l'*area di lavoro di Log Analytics* a cui vuoi inviare i dati SIEM.
+
+
+. Seleziona *Connetti* per iniziare a inviare i dati SIEM.
+
+
+--
+.Distribuzione manuale
+--
+.Distribuisci il template ARM
+. In Ransomware Resilience, seleziona *Impostazioni* nella barra laterale.
+. Nella pagina Impostazioni, seleziona *Connetti* nel riquadro di connessione SIEM, quindi scegli *Microsoft Sentinel* dal menu a discesa.
++
+image:screen-settings-threat-detection-3options.png["Screenshot delle opzioni di connessione SIEM"]
+
+. Scegli *Manuale* come metodo di distribuzione.
+. Esamina le sezioni *Prerequisiti*, *Registrazione* e *Distribuzione del modello ARM* per assicurarti di aver completato correttamente ogni passaggio.
+. Espandi la sezione *ARM Template Deployments*.
+. Assegna il ruolo Monitoring Metrics Publisher.
++
+.. Nella tua sottoscrizione Azure, vai su *Access control (IAM)*.
+.. Seleziona *Aggiungi assegnazione ruolo*.
+.. Cerca e seleziona *Monitoring Metrics Publisher*.
+.. Aggiungi l'assegnazione del ruolo al service principal della registrazione dell'applicazione creata nella fase di registrazione.
+.. *Revisiona + assegna*.
+
+
+. Torna a Ransomware Resilience. Copia il JSON del template ARM per creare la tabella personalizzata di Log Analytics, il Data Collection Endpoint (DCE), la Data Collection Rule (DCR) e le regole di analytics di Sentinel nel tuo ambiente Azure.
+. Nel portale di Azure, cerca *Distribuisci un modello personalizzato*.
+. Seleziona *Crea il tuo modello* nell'editor.
+. Incolla il codice JSON copiato nell'editor. Seleziona *Salva*.
+. Inserisci il *nome dell'area di lavoro*, cioè il nome della tua Log Analytics workspace. Puoi recuperarlo dalla pagina di panoramica della workspace nel portale Azure.
+. Seleziona *Rivedi + crea*. Rivedi le selezioni, quindi seleziona *Crea* per distribuire.
+. Dopo l'implementazione, raccogli le seguenti informazioni per l'autenticazione in Ransomware Resilience:
++
+** *Endpoint di acquisizione dei log*: apri la risorsa Endpoint di raccolta dati (`rps-alerts-dce` e copia il valore di acquisizione dei log visualizzato nella pagina di panoramica.
+** *ID immutabile DCR*: apri la risorsa Data Collection Rule (`rps-alerts-dcr` e copia l'ID immutabile dalla pagina di overview.
+
+
+
+
+.Autenticare Microsoft Sentinel in Ransomware Resilience
+. Torna alla finestra di configurazione di Ransomware Resilience SIEM.
+. Espandere la sezione *Autenticazione*.
++
+.. Inserisci il *Directory (tenant) ID*, *Application (tenant) ID* e *Client secret*. Seleziona *Authenticate* e attendi che l'UI confermi che le credenziali sono state autenticate.
+.. Inserisci l'*Endpoint di acquisizione dei log* e l'*ID immutabile DCR* che hai copiato in precedenza.
+
+
+. Seleziona *Connect* per creare la connessione.
+
+
+--
+====
+
+
+[[next-steps]]
+== Prossimi passi
+
+* link:reference-soar.html["Integra un playbook SOAR"]
+

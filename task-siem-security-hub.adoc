@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-siem-security-hub.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, amazon web services, aws, security hub 
+summary: 'Ottimizza l"analisi delle minacce e la gestione degli eventi in NetApp Ransomware Resilience collegando AWS Security Hub SIEM.' 
+---
+= Configura AWS Security Hub SIEM in NetApp Ransomware Resilience
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience offre supporto nativo per la gestione delle informazioni e degli eventi di sicurezza (SIEM) con AWS Security Hub. Collegando Ransomware Resilience ad AWS Security Hub, puoi inviare automaticamente i dati degli eventi per l'analisi e il rilevamento delle minacce, semplificando la protezione dai ransomware e la gestione degli eventi.
+
+
+
+[[before-you-begin]]
+== Prima di iniziare
+
+Prima di abilitare AWS Security Hub in Ransomware Resilience, è necessario eseguire le configurazioni di sicurezza in AWS Security Hub:
+
+* Imposta le autorizzazioni in AWS Security Hub.
+* Configura la chiave di accesso e la chiave segreta nelle impostazioni AWS IAM per l'autenticazione. (Questi passaggi non sono descritti qui.)
+
+
+
+
+[[set-up-permissions-in-aws-security-hub]]
+== Configura le autorizzazioni in AWS Security Hub
+
+. Vai alla *console AWS IAM*.
+. Selezionare *Politiche*.
+. Crea una policy utilizzando il seguente codice in formato JSON:
++
+[source, json]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+[[authenticate-aws-security-hub-in-ransomware-resilience]]
+== Autentica AWS Security Hub in NetApp Ransomware Resilience
+
+. In Ransomware Resilience, seleziona *Impostazioni* nella barra laterale.
+. Nella pagina Impostazioni, seleziona *Connetti* nel riquadro di connessione SIEM, quindi scegli *AWS Security Hub* nel menu a discesa.
++
+image:screen-settings-threat-detection-3options.png["Schermata delle opzioni di connessione SIEM"]
+
+. Esamina le sezioni *Autorizzazioni*.
+. Espandere la sezione *Autenticazione*.
++
+.. Inserisci l'*Account* AWS e seleziona la *AWS Region* dell'account.
+.. Inserisci la *chiave di accesso* e la *chiave segreta* da AWS Security Hub.
+
+
+. Seleziona *Connetti* per iniziare a inviare i dati SIEM.
+
+
+
+
+[[next-steps]]
+== Prossimi passi
+
+* link:reference-soar.html["Integra un playbook SOAR"]
+

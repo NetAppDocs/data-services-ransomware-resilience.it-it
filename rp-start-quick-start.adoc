@@ -53,7 +53,6 @@ Queste attività richiedono il ruolo _Ransomware Resilience admin_. Per configur
 
 * Facoltativamente, configurare le destinazioni di backup:
 +
-** link:rp-start-setup.html["Preparare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform o Microsoft Azure come destinazione di backup"] .
 ** link:rp-start-setup.html["Configurare le destinazioni di backup"]
 
 
