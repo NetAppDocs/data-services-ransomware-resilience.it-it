@@ -150,8 +150,8 @@ TIP: La durata di validità di un segreto client è limitata a due anni (24 mesi
 
 
 
-[[authenticate-microsoft-sentinel-in-ransomware-resilience]]
-== Autenticare Microsoft Sentinel in Ransomware Resilience
+[[add-roles-in-azure-and-authenticate-microsoft-sentinel-in-ransomware-resilience]]
+== Aggiungi ruoli in Azure e autentica Microsoft Sentinel in Ransomware Resilience
 
 Per Microsoft Sentinel SIEM, puoi scegliere una distribuzione automatica in cui Ransomware Resilience distribuisce le risorse in base alle autorizzazioni che fornisci. In alternativa, puoi eseguire una distribuzione manuale in cui distribuisci le risorse in base a un template ARM fornito. Entrambe le opzioni richiedono che tu imposti le autorizzazioni nel portale Azure e poi autentichi la connessione in Ransomware Resilience, anche se i passaggi sono diversi. Scegli il flusso di lavoro che meglio si adatta alle tue esigenze.
 

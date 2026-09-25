@@ -45,6 +45,7 @@ Le seguenti limitazioni si applicano ad Azure NetApp Files:
 * Quando si seleziona una strategia di protezione, assicurarsi che la pianificazione degli snapshot sia compatibile con Azure NetApp Files. La pianificazione degli snapshot più frequente disponibile in Azure NetApp Files è oraria.
 * Si sconsiglia di utilizzare link:reference-soar.html["Playbook SOAR"] con Azure NetApp Files poiché le API di Azure NetApp Files bloccano le azioni automatizzate.
 * Alcuni dati relativi agli eventi non sono inclusi in link:task-siem.html["Rapporti SIEM"] per le configurazioni di Azure NetApp Files.
+* Il ripristino a livello di file non è disponibile quando utilizzi link:task-custom-restore.html["ripristinare un carico di lavoro"] Azure NetApp Files.
 
 
 
