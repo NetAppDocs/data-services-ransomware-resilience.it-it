@@ -88,10 +88,18 @@ La risoluzione del dispositivo consigliata per Ransomware Resilience è 1920x108
 .Ransomware Resilience è a conoscenza delle impostazioni di protezione in ONTAP?
 Sì, Ransomware Resilience rileva le pianificazioni degli snapshot impostate in ONTAP.
 
-.In che modo Ransomware Resilience interagisce con NetApp Backup and Recovery?
-Ransomware Resilience works with Backup and Recovery per individuare e impostare policy di snapshot e backup per i carichi di lavoro di condivisione file. Ransomware Resilience works with Backup and Recovery anche per eseguire un ripristino coerente di file e carichi di lavoro.
+.La licenza Ransomware Resilience include ulteriori prodotti NetApp?
+No, la licenza Ransomware Resilience non include ulteriori prodotti NetApp.
 
-Per quanto riguarda le licenze e la fatturazione, Ransomware Resilience può integrarsi con Backup and Recovery anche se non si dispone di una licenza separata per Backup and Recovery. Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
+.In che modo Ransomware Resilience interagisce con NetApp Backup and Recovery?
+Se hai una licenza attiva di Backup and Recovery e Ransomware Resilience, Ransomware Resilience rileva le policy di snapshot e backup impostate in Backup and Recovery. Non puoi modificare le policy di Backup and Recovery in Ransomware Resilience, ma puoi sostituirle.
+
+Ransomware Resilience funziona anche con Backup and Recovery per eseguire un ripristino coerente di file e workload. Per i workload rilevati e protetti sia da Ransomware Resilience sia da Backup and Recovery, puoi eseguire il ripristino da uno dei due servizi.
+
+Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.
+
+.Cosa devo sapere se ho già abilitato il rilevamento dell'attività degli utenti tramite Data Infrastructure Insights Workload Security?
+Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, usa gli stessi agenti di Workload Security per Ransomware Resilience. Non è necessario distribuire agenti di Workload Security separati per Ransomware Resilience. Tuttavia, usare gli stessi agenti di Workload Security richiede una relazione di associazione tra l'organizzazione della Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo referente commerciale per abilitare questa associazione.
 
 
 

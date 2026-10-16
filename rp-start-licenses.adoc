@@ -47,7 +47,7 @@ Al termine del periodo di prova gratuito o alla scadenza della licenza o dell'ab
 [[other-licenses]]
 == Altre licenze
 
-La licenza Ransomware Resilience non include prodotti NetApp aggiuntivi. Tuttavia, Ransomware Resilience può essere integrato con NetApp Backup and Recovery, anche se non si dispone di una licenza separata per Backup and Recovery.
+La licenza Ransomware Resilience non include ulteriori prodotti NetApp.
 
 
 NOTE: Se disponi sia di Backup and Recovery che di Ransomware Resilience, tutti i dati comuni protetti da entrambi i prodotti verranno fatturati solo da Ransomware Resilience.

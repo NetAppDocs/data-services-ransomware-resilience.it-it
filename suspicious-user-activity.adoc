@@ -22,9 +22,6 @@ Un agente di attività utente ospita un raccoglitore di dati e un connettore per
 
 L'agente di attività utente, il data collector e il connettore della user directory possono essere tutti gestiti dalla dashboard delle impostazioni di Ransomware Resilience.
 
-
-NOTE: Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, usa gli stessi agenti di Workload Security per Ransomware Resilience. Non è necessario distribuire agenti di Workload Security separati per Ransomware Resilience. Tuttavia, usare gli stessi agenti di Workload Security richiede una relazione di associazione tra l'organizzazione della Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo referente commerciale per abilitare questa associazione.
-
 Se non usi DII, procedi con le istruzioni di configurazione qui.
 
 
@@ -38,6 +35,13 @@ Se non usi DII, procedi con le istruzioni di configurazione qui.
 *Ruolo richiesto nella console* Per attivare il rilevamento del comportamento degli utenti, è necessario il **ruolo di amministratore dell'organizzazione**. Per le successive configurazioni del rilevamento del comportamento degli utenti, è necessario il **ruolo di amministratore del comportamento degli utenti di Ransomware Resilience**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["Scopri di più sui ruoli di Ransomware Resilience per NetApp Console"^].
 
 Assicurarsi che ogni ruolo venga applicato a livello di organizzazione.
+
+
+
+[[considerations-for-data-infrastructure-insights-dii-workload-security-users]]
+=== Considerazioni per gli utenti di Data Infrastructure Insights (DII) Workload Security
+
+Se stai già utilizzando NetApp Data Infrastructure Insights (DII) Workload Security, usa gli stessi agenti di Workload Security per Ransomware Resilience. Non è necessario distribuire agenti di Workload Security separati per Ransomware Resilience. Tuttavia, usare gli stessi agenti di Workload Security richiede una relazione di associazione tra l'organizzazione della Ransomware Resilience Console e il tenant DII Storage Workload Security. Contatta il tuo referente commerciale per abilitare questa associazione.
 
 
 
