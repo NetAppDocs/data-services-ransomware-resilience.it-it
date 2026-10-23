@@ -13,6 +13,15 @@ Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-service
 
 
 
+[[enhanced-workflow-for-enabling-user-activity-monitoring]]
+=== Flusso di lavoro ottimizzato per abilitare il monitoraggio delle attività degli utenti
+
+Ransomware Resilience ha migliorato il flusso di lavoro per abilitare il monitoraggio dell'attività degli utenti. In precedenza, Ransomware Resilience verificava la connessione del data collector ogni volta che abilitavi una strategia di protezione dal ransomware con il monitoraggio dell'attività degli utenti su un workload. Con questo aggiornamento, questo controllo viene ora saltato se esiste un data collector per la storage VM ed è nello stato "running", accelerando il flusso di lavoro di protezione.
+
+Per ulteriori informazioni, consulta link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["proteggere i carichi di lavoro"^].
+
+
+
 [[google-cloud-netapp-volumes-flex-service-level-generally-available]]
 === Il livello di servizio Flex di Google Cloud NetApp Volumes è generalmente disponibile
 
