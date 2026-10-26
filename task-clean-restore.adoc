@@ -26,7 +26,7 @@ NetApp Ransomware Resilience offre ripristini puliti, che forniscono un recupero
 Quando esegui un ripristino pulito, Ransomware Resilience ti guida attraverso un processo in più fasi che ottimizza il recupero.
 
 * **CONFIGURAZIONE**: Per eseguire un ripristino pulito, è necessario prima creare un IRE e quindi selezionare il carico di lavoro da ripristinare. Ransomware Resilience crea una clean room in cui vengono eseguite tutte le azioni per il carico di lavoro.
-* **ANALISI**: Nella stanza pulita, Ransomware Resilience analizza tutte le istantanee per verificare la presenza di crittografia. Il ripristino pulito determina una mappa di recovery per stabilire il piano di recovery.
+* **ANALISI**: Nella clean room, Ransomware Resilience analizza tutte le snapshot per verificare se è presente la crittografia. Il ripristino pulito determina una mappa di recovery con il piano di recovery ottimale.
 +
 Una volta individuato un punto di ripristino senza file compromessi, tutti i punti di ripristino precedenti vengono ignorati. Ad esempio, se l'attacco ransomware si è verificato il 10 ottobre e il 7 ottobre alle 10:21 è stato individuato un punto di ripristino senza file compromessi, tutti i punti di ripristino precedenti al 7 ottobre alle 10:21 vengono ignorati.
 
@@ -38,7 +38,7 @@ La fase di analisi mostra anche il numero di file esaminati, indicando quali son
 ** _Punto di ripristino più recente non influenzato_: il punto di ripristino più rapido dall'istantanea non crittografata più recente precedente all'attacco
 ** _Minima perdita di dati_: la versione più recente di ogni file non crittografato proveniente da snapshot diversi
 +
-Nella fase di pianificazione è inoltre possibile visualizzare la cronologia dei file per capire quando gli eventi ransomware hanno avuto un impatto sui file e come il punto di recovery si rapporta temporalmente a tali eventi.
+Nella fase di pianificazione puoi anche visualizzare la cronologia dei file per capire quando gli attacchi ransomware hanno avuto un impatto sui file e come il punto di ripristino si rapporta temporalmente a tale evento.
 
 
 
@@ -54,7 +54,7 @@ Nella fase di pianificazione è inoltre possibile visualizzare la cronologia dei
 
 * È possibile creare un solo IRE per account Ransomware Resilience. Ogni IRE può avere tre clean room.
 * Il ripristino completo è attualmente supportato solo per le condivisioni di file NAS (NFS/CIFS).
-* È necessario eseguire un ripristino pulito nell'ambiente di origine.
+* Con un ripristino pulito, puoi eseguire il ripristino solo nell'ambiente di origine.
 * È possibile creare un IRE nel cloud o in locale. Attualmente, sono supportate le seguenti configurazioni:
 +
 |===
@@ -118,7 +118,7 @@ Se si implementa un IRE locale, quando una macchina virtuale Windows viene clona
 * L'utilizzo della stessa identità macchina comporta problemi di licenza e attivazione.
 
 
-Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla clone VM, che reimposta SID, CN e identità della macchina. La reimpostazione di questi valori garantisce che la clone VM operi come un'istanza unica e indipendente senza interferire con la source VM.
+Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla VM clonata, reimpostando SID, CN e identità della macchina. La reimpostazione di questi valori garantisce che la VM clonata operi come un'istanza unica e indipendente, senza interferire con la VM di origine.
 
 
 
@@ -127,7 +127,7 @@ Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla clone V
 
 Quando crei l'IRE, hai la possibilità di aggiungere una fonte secondaria.
 
-Se l'origine primaria non è disponibile e hai configurato un'origine secondaria, il ripristino pulito verrà eseguito sull'origine secondaria.
+Se la sorgente primaria non è disponibile e hai configurato una sorgente secondaria, i dati saranno ripristinati nella sorgente secondaria.
 
 Il processo di ripristino pulito, per impostazione predefinita, analizza gli snapshot dell'ambiente di origine. Se l'ambiente di origine non è disponibile o non è disponibile uno snapshot non crittografato sull'origine, il ripristino pulito analizza gli snapshot su un sistema secondario se ne hai configurato uno.
 
@@ -154,7 +154,7 @@ I costi di terze parti possono includere la creazione e l'implementazione di ist
 Assicurati di aver completato i prerequisiti per il tipo di clean restore scelto. Seleziona la scheda per la configurazione IRE scelta.
 
 
-NOTE: Quando si crea l'IRE, è necessario aggiungere ogni sistema (primario o secondario) che si desidera utilizzare per l'analisi durante la fase di selezione del sistema quando si crea l'IRE.
+NOTE: Quando crei l'IRE, devi aggiungere ogni sistema (primario o secondario) che vuoi usare per l'analisi durante la fase di selezione del sistema.
 
 [role="tabbed-block"]
 ====
@@ -299,9 +299,9 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSx for NetApp ONTAP
 --
 .Dal locale al cloud
 --
-Questo diagramma illustra un esempio di configurazione per il ripristino pulito da locale a cloud. Esamina il diagramma e le risorse che devi configurare prima di poter creare l'IRE.
+Questo diagramma illustra un esempio di configurazione per il ripristino pulito dall'ambiente on-premises al cloud. Esamina il diagramma e le risorse che devi configurare prima di poter creare l'IRE.
 
-image:diagram-clean-recovery-cloud-on-prem.png["Diagramma del ripristino pulito da cloud a locale"]
+image:diagram-clean-recovery-cloud-on-prem.png["Diagramma del ripristino pulito da on-prem a cloud."]
 
 .IP LIF dati SVM clean room (crr-data-LIF-IP)
 * Assegna l'indirizzo IP al LIF dati SVM della clean room. Prendi nota dell'indirizzo IP: ti servirà durante il processo di configurazione IRE.
@@ -440,7 +440,7 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSx for NetApp ONTAP
 --
 Questo diagramma illustra un esempio di configurazione per un ripristino pulito da locale a locale. Esamina il diagramma e le risorse che devi configurare prima di poter creare l'IRE.
 
-image:diagram-clean-recovery-on-prem.png["Diagramma del ripristino pulito da cloud a locale"]
+image:diagram-clean-recovery-on-prem.png["Diagramma del ripristino pulito da locale a locale"]
 
 .IP LIF dati SVM clean room (crr-data-LIF-IP)
 * In ciascuno dei sistemi selezionati per la connessione all'IRE per il ripristino dei carichi di lavoro viene creata una macchina virtuale di archiviazione (SVM). È necessario fornire un indirizzo IP dedicato per ogni sistema che viene utilizzato come LIF dati della SVM della clean room.
@@ -448,15 +448,15 @@ image:diagram-clean-recovery-on-prem.png["Diagramma del ripristino pulito da clo
 
 .Ospiti e vCenter
 * Il vCenter deve essere la versione 7.0 o successiva con almeno un data center.
-* L'host ESXi deve essere ESXi versione 7.0 o successiva e deve disporre di almeno un host con risorse CPU e memoria sufficienti per clonare le VM.
+* L'host ESXi deve eseguire ESXi versione 7.0 o successiva, con almeno un host dotato di risorse di CPU e memoria sufficienti per clonare le macchine virtuali.
 * Le credenziali vCenter fornite devono disporre delle autorizzazioni necessarie per individuare le risorse e clonare le macchine virtuali.
 
 
 .Macchine virtuali di base (Windows o Linux)
-* Durante il ripristino pulito, le VM di base vengono clonate in un datacenter selezionato, posizionate sul compute ESXi scelto, mappate sul datastore specificato e collegate alla rete designata. Quando le VM vengono clonate, vengono configurate con 2 vCPU e 4 GB di RAM (per VM Linux o Windows) e la stessa quantità di spazio su disco delle VM di base. Ogni sessione di ripristino pulito utilizza due indirizzi IP dall'intervallo CIDR specificato.
+* Durante il recovery nel clean restore, le VM di base vengono clonate in un data center selezionato, posizionate sulla risorsa di calcolo ESXi scelta, mappate al datastore specificato e collegate alla rete designata. Quando le VM vengono clonate, vengono configurate con 2 vCPU e 4 GB di RAM (per VM Linux o Windows) e con la stessa quantità di spazio su disco delle VM di base. Ogni sessione di ripristino pulito utilizza due indirizzi IP dall'intervallo CIDR specificato.
 * È necessario fornire un intervallo di indirizzi IP sufficiente per supportare più sessioni parallele in clean room. Gli indirizzi IP vengono rilasciati al termine del ripristino.
 * Il datastore deve disporre di una capacità libera sufficiente per ospitare le macchine virtuali clonate.
-* L'intervallo di indirizzi IP deve essere specificato nel formato CIDR (ad esempio, 100.100.0.0/24)
+* L'intervallo di indirizzi IP deve essere specificato nel formato CIDR (ad esempio, 100.100.0.0/24).
 * Per macchine virtuali Linux:
 +
 ** Il sistema operativo deve essere Ubuntu Linux 20.04 o versioni successive.
@@ -470,9 +470,9 @@ image:diagram-clean-recovery-on-prem.png["Diagramma del ripristino pulito da clo
 
 * Per macchine virtuali Windows:
 +
-** Le macchine virtuali Windows devono disporre di 20 GB di spazio libero.
+** Le VM Windows devono disporre di almeno 20 GB di spazio libero.
 ** Il sistema operativo deve essere Windows Server 2022 o 2025.
-** VMware Tools deve essere installato e in esecuzione.
+** È necessario che VMware Tools sia installato e in esecuzione.
 ** WinRM deve essere abilitato.
 ** L'indirizzo IP deve essere configurato.
 ** Assicurati di disporre della licenza appropriata per consentire la clonazione delle macchine virtuali di base.
@@ -516,9 +516,9 @@ Accesso NFS a: * Agente della console di produzione * VLAN dell'agente della con
 [[create-an-isolated-recovery-environment]]
 == Creare un ambiente di ripristino isolato
 
-Prima di condurre un ripristino completo, è necessario creare una stanza di ripristino isolata.
+Prima di eseguire un ripristino pulito, devi creare un ambiente di recovery isolato.
 
-La procedura per la creazione di una sala di ripristino isolata varia a seconda che l'ambiente sia nel cloud o on-premises. Assicurati di seguire le istruzioni relative alla posizione corretta.
+La procedura per creare un ambiente di ripristino isolato varia a seconda che l'ambiente si trovi nel cloud o in locale. Assicurati di seguire le istruzioni per la posizione corretta.
 
 [role="tabbed-block"]
 ====
@@ -530,7 +530,7 @@ La procedura per la creazione di una sala di ripristino isolata varia a seconda 
 . Per un IRE basato sul cloud, scegli **Amazon Web Services** come posizione.
 . Inserire un **Nome** per l'ambiente.
 . Selezionare *Avanti*.
-. Espandi la sezione *Systems*. Scegli i sistemi che vuoi connettere all'IRE. Per ogni sistema che selezioni. Ogni sistema deve avere connettività di rete con l'IRE. Potresti dover fornire un indirizzo IP della data LIF per ogni sistema per stabilire il punto di ripristino clean restore recovery point.
+. Espandi la sezione *Systems*. Scegli i sistemi che vuoi connettere all'IRE. Ogni sistema deve avere connettività di rete con l'IRE. Potresti dover fornire un indirizzo IP della data LIF per ogni sistema per stabilire il punto di ripristino clean restore recovery point.
 +
 
 NOTE: Per gli IRE distribuiti su Amazon FSx per NetApp ONTAP, non devi fornire queste informazioni.
@@ -572,19 +572,22 @@ Ciascun sistema selezionato deve avere un indirizzo IP assegnato. È possibile s
 
 . Per ogni sistema aggiunto, seleziona *Edit storage VM*. Nella finestra a comparsa, inserisci *Storage VM IP address* e *Storage VM subnet mask*. Per il *Broadcast domain*, scegli default o management. Facoltativamente, puoi inserire un *Storage VM gateway*.
 . Selezionare *Avanti*.
-. Selezionare l'agente console dal menu a discesa distribuito nell'IRE.
-. Fornisci le credenziali per autenticare il server vCenter: *indirizzo IP o domain name completo (FQDN)*, *Porta*, *nome utente* e *password*.
+. Dal menu a tendina, seleziona il *Console agent* distribuito nell'IRE.
+. Fornisci le credenziali per autenticare il server vCenter: *indirizzo IP o fully qualified domain name (FQDN)*, *Port*, *User name* e *Password*.
 . Seleziona **Autentica** per confermare le credenziali. Attendi che l'interfaccia utente confermi le tue credenziali prima di procedere.
-. Espandi la sezione *Elaborazione in camera bianca*.
+. Espandi la sezione *Calcolo in clean room*.
 . Seleziona il *datacenter* e il *cluster* in cui verranno distribuite le macchine virtuali.
 . Selezionare il *Datastore* e la *Network* per l'host ESXi.
-. Inserisci l'intervallo di indirizzi IP in formato CIDR (ad esempio 10.0.0.1/24), la maschera di sottorete e il gateway per le VM.
-. Seleziona le macchine virtuali (VM) presenti sull'host ESXi che verranno utilizzate come VM di base per la clonazione durante il processo di ripristino.
+. Inserisci l'*intervallo di indirizzi IP* in formato CIDR (ad esempio, 100.100.0.0/24), la *maschera di sottorete* e il *Gateway* per le macchine virtuali.
+. Seleziona le macchine virtuali (VM) presenti sull'host ESXi, che userai come VM di base per la clonazione durante il processo di ripristino.
 +
 Per la macchina virtuale Linux che Ransomware Resilience utilizza per la scansione alla ricerca di ransomware, seleziona la macchina virtuale dal menu a tendina e inserisci il *nome utente* e la *password* della macchina virtuale.
 
 +
 Per la macchina virtuale Windows utilizzata per la scansione, seleziona la macchina virtuale dal menu a tendina, quindi inserisci il *nome utente* e la *password* della macchina virtuale.
+
++
+image::clean-restore-compute.png[Screenshot del passaggio di configurazione del compute per il ripristino pulito.]
 
 . Seleziona *Avanti* per esaminare la configurazione.
 . Seleziona **Aggiungi** per creare l'IRE. Ransomware Resilience verifica la connessione dopo aver selezionato **Aggiungi**; questo processo può richiedere alcuni minuti. L'IRE è stato distribuito correttamente quando il suo stato viene visualizzato come "distribuito".
