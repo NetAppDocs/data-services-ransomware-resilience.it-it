@@ -46,6 +46,8 @@ sidebar:
         url: "/task-review-protection.html"
       - title: Configurare le destinazioni di backup
         url: "/task-backup-destination.html"
+      - title: Scopri le strategie di protezione
+        url: "/concept-strategy.html"
       - title: Proteggere i carichi di lavoro
         url: "/rp-use-protect.html"
       - title: Configura il rilevamento dell'attività dell'utente
