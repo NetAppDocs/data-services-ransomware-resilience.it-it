@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: suspicious-user-activity.html 
-keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous behavior, user activity monitoring 
 summary: 'La funzionalità di rilevamento dell"attività degli utenti in NetApp Ransomware Resilience consente di individuare attività degli utenti che potrebbero rappresentare una potenziale minaccia.' 
 ---
 = Configura il rilevamento dell'attività utente in NetApp Ransomware Resilience
@@ -22,7 +22,7 @@ Un agente di attività utente ospita un raccoglitore di dati e un connettore per
 
 L'agente di attività utente, il data collector e il connettore della user directory possono essere tutti gestiti dalla dashboard delle impostazioni di Ransomware Resilience.
 
-Se non usi DII, procedi con le istruzioni di configurazione qui.
+Se non utilizzi NetApp Data Infrastructure Insights (DII), procedi con le istruzioni di configurazione qui.
 
 
 
@@ -52,15 +52,57 @@ Quando attivi il rilevamento dell'attività utente in Ransomware Resilience, ven
 
 Gli agenti di attività utente sono ambienti eseguibili per link:#add-a-data-collector["raccoglitori di dati"], che condividono gli eventi di attività utente con Ransomware Resilience. Devi creare almeno un agente di attività utente per abilitare il rilevamento dell'attività utente.
 
-.Passi
-. Se è la prima volta che crei un agente di attività utente, vai alla **Dashboard**. Nel riquadro **Attività utente**, seleziona **Attiva**.
-+
-Se vuoi aggiungere un ulteriore agente di attività utente, vai su *Impostazioni*, individua il riquadro **Attività utente**, quindi seleziona **Gestisci**. Nella schermata Attività utente, seleziona la scheda **Agenti attività utente**, quindi **Aggiungi**.
 
-. Seleziona un **fornitore cloud**, quindi una **regione**. Selezionare **Avanti**.
+NOTE: Dopo aver creato il tenant, non puoi cambiarne la regione. La creazione del tenant richiede circa cinque minuti e, una volta avviata, non puoi annullarla.
+
+.Passi
+Puoi creare un agente di attività utente utilizzando una configurazione *manuale* o *automatica*. Con la configurazione automatica, devi fornire l'agente Console, il nome DNS o l'indirizzo IP della VM e la chiave SSH della VM affinché Ransomware Resilience possa creare il tenant. Con una configurazione manuale, Ransomware Resilience fornisce i comandi per creare manualmente il tenant.
+
+[role="tabbed-block"]
+====
+.Manuale
+--
+. Se è la prima volta che crei un agente di monitoraggio delle attività utente, vai alla **Dashboard**. Nel riquadro **Monitoraggio attività utente**, seleziona **Attiva**.
++
+Se stai aggiungendo un agente aggiuntivo di monitoraggio dell'attività utente, vai su *Impostazioni*, individua il riquadro **Monitoraggio attività utente** e seleziona **Gestisci**. Nella schermata Attività utente, seleziona la scheda **Agenti di monitoraggio attività utente** e poi **Aggiungi**.
+
+. Seleziona un **provider cloud**, quindi una **regione**.
+. Seleziona **Crea tenant**.
++
+Il processo di creazione del tenant richiede circa cinque minuti. Dopo aver selezionato *Crea tenant*, puoi selezionare *Esegui in background* per tornare alla dashboard e continuare con altre operazioni.
+
+. Inserisci il *nome dell'agente di attività utente*.
+. Scegli *Manuale* come metodo di configurazione.
+. Nel passaggio *Allow tenant*, Ransomware Resilience fornisce l'URL per l'agente delle attività utente. Copia e incolla l'URL per consentire le connessioni.
+. Apri un terminale nel tuo ambiente cloud per installare l'agente di attività dell'utente.
++
+.. Facoltativamente, se utilizzi un proxy server, inserisci la variabile del tuo proxy server ed esegui il comando export mostrato `export https_proxy='USER:PASSWORD@PROXY_SERVER:<port>'`. Se il proxy server non richiede l'autenticazione, ometti i campi utente e password. In questo caso, il comando sarà simile a `export https_proxy='https://proxy.company.com:<port>'`.
+.. Nello stesso terminale, copia e incolla il comando di installazione. Il frammento di codice è valido solo per due ore e può essere utilizzato esclusivamente per installare un agente di attività utente.
++
+Se devi installare altri agenti di attività utente, ripeti questa procedura per generare un nuovo snippet di installazione.
+
+
+
+. Selezionare *Avanti*.
+. Esamina i dettagli del tenant e dell'agente di attività dell'utente. Se tutto è corretto, seleziona *Attiva* per completare la procedura.
+
+
+--
+.Automatico
+--
+. Se è la prima volta che crei un agente di monitoraggio delle attività utente, vai alla **Dashboard**. Nel riquadro **Monitoraggio attività utente**, seleziona **Attiva**.
++
+Se stai aggiungendo un agente aggiuntivo di monitoraggio dell'attività utente, vai su *Impostazioni*, individua il riquadro **Monitoraggio attività utente** e seleziona **Gestisci**. Nella schermata Attività utente, seleziona la scheda **Agenti di monitoraggio attività utente** e poi **Aggiungi**.
+
+. Seleziona un **Cloud provider** e poi una **Region**.
+. Seleziona **Crea tenant**.
++
+Il processo di creazione del tenant richiede circa cinque minuti. Dopo aver selezionato *Crea tenant*, puoi selezionare *Esegui in background* per tornare alla dashboard e continuare con altre operazioni.
+
+. Inserisci un nome per *User activity agent name*.
+. Scegli *Automatic* come metodo di configurazione.
 . Fornire i dettagli dell'agente di attività dell'utente:
 +
-** **Nome dell'agente di attività dell'utente**
 ** *Agente console* - L'agente console deve trovarsi nella stessa rete dell'agente di attività utente e disporre di connettività SSH all'indirizzo IP dell'agente di attività utente.
 ** *Nome DNS o indirizzo IP della VM*
 ** *Chiave SSH VM* - Inserisci la chiave SSH utilizzando questo formato:
@@ -81,6 +123,8 @@ image:user-activity-agent.png["Screenshot dell'interfaccia dell'agente di aggiun
 . Conferma che l'agente di monitoraggio delle attività utente sia stato creato correttamente. Nel riquadro di monitoraggio delle attività utente, una distribuzione riuscita viene visualizzata come **Running**.
 
 
+--
+====
 .Risultato
 Dopo che l'agente di attività utente è stato creato correttamente, torna al menu **Impostazioni** e seleziona **Gestisci** nel riquadro Monitoraggio attività utente. Seleziona la scheda **Agenti di attività utente** e poi seleziona l'agente di attività utente per visualizzare i dettagli, inclusi i data collector e i connettori della directory utente.
 
@@ -164,9 +208,10 @@ Fornire i dettagli della mappatura degli attributi:
 ** *SID* (se si utilizza LDAP)
 ** *Nome utente*
 ** *ID Unix* (se stai utilizzando NFS)
-** Se selezioni *Includi attributi facoltativi*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il nome del responsabile o dei gruppi. Selezionare *Avanzate* per aggiungere una query di ricerca facoltativa.
+** Se selezioni *Include optional attributes*, puoi anche aggiungere un indirizzo email, un numero di telefono, un ruolo, uno stato, un paese, un reparto, una foto, il DN del manager o dei gruppi.
 
 
+. Seleziona *Advanced* per aggiungere una query di ricerca facoltativa.
 . Selezionare **Aggiungi**.
 . Torna alla scheda dei connettori della directory utente per controllare lo stato del connettore della directory utente. Se la creazione avviene correttamente, lo stato del connettore della directory utente viene visualizzato come *In esecuzione*.
 
@@ -191,7 +236,7 @@ Fornire i dettagli della mappatura degli attributi:
 
 Dopo aver configurato il rilevamento dell'attività dell'utente, è possibile monitorare gli eventi nella pagina degli avvisi. Per ulteriori informazioni, consultare link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["Rileva attività dannose e comportamenti sospetti degli utenti"].
 
-È inoltre possibile link:task-automate-user-activity.html["Automatizza le risposte agli eventi di attività dell'utente"].
+Puoi anche link:task-automate-user-activity.html["automatizzare le risposte agli eventi di attività dell'utente"].
 
 
 

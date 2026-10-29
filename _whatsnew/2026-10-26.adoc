@@ -1,0 +1,12 @@
+= Nuovo flusso di lavoro manuale per la creazione di un agente di attività utente
+:allow-uri-read: 
+
+
+
+
+[[new-manual-workflow-for-creating-a-user-activity-agent]]
+== Nuovo flusso di lavoro manuale per la creazione di un agente di attività utente
+
+Ransomware Resilience ora offre un flusso di lavoro manuale per la creazione dell'agente di attività utente, consentendoti un maggiore controllo su come creare l'agente di attività utente sulla tua VM. Con questo nuovo flusso di lavoro, puoi installare direttamente l'agente di attività utente e configurare le impostazioni del proxy senza fornire le chiavi SSH della VM.
+
+Per ulteriori informazioni, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Creare un agente di attività utente"^].
