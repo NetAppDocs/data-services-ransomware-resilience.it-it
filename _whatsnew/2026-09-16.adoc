@@ -1,11 +1,11 @@
-= Supporto migliorato per i ripristini puliti
+= Supporto per il ripristino pulito in caso di comportamenti utente sospetti e attacchi di crittografia basati sugli utenti
 :allow-uri-read: 
 
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== Supporto migliorato per i ripristini puliti
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== Supporto per il ripristino pulito in caso di comportamenti utente sospetti e attacchi di crittografia basati sugli utenti
 
 Ora puoi utilizzare i ripristini puliti per il recupero dopo comportamenti sospetti dell'utente e attacchi di crittografia basati sull'utente. Questo miglioramento si aggiunge al supporto esistente per gli attacchi basati sulla crittografia (entropia). Questa funzionalità avanzata ti permette di sfruttare l'approccio guidato del ripristino pulito, identificando i punti di ripristino ottimali per ridurre al minimo la perdita di dati e accelerare il recupero.
 

@@ -18,6 +18,20 @@ Scopri le novità di NetApp Ransomware Resilience.
 
 
 
+[[26-october-2026]]
+== 26 ottobre 2026
+
+
+
+[[new-manual-workflow-for-creating-a-user-activity-agent]]
+== Nuovo flusso di lavoro manuale per la creazione di un agente di attività utente
+
+Ransomware Resilience ora offre un flusso di lavoro manuale per la creazione dell'agente di attività utente, consentendoti un maggiore controllo su come creare l'agente di attività utente sulla tua VM. Con questo nuovo flusso di lavoro, puoi installare direttamente l'agente di attività utente e configurare le impostazioni del proxy senza fornire le chiavi SSH della VM.
+
+Per ulteriori informazioni, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Creare un agente di attività utente"^].
+
+
+
 [[20-october-2026]]
 == 20 ottobre 2026
 
@@ -32,8 +46,8 @@ Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-service
 
 
 
-[[enhanced-workflow-for-enabling-user-activity-monitoring]]
-=== Flusso di lavoro ottimizzato per abilitare il monitoraggio delle attività degli utenti
+[[improved-workflow-for-enabling-user-activity-monitoring]]
+=== Flusso di lavoro migliorato per abilitare il monitoraggio delle attività degli utenti
 
 Ransomware Resilience ha migliorato il flusso di lavoro per abilitare il monitoraggio dell'attività degli utenti. In precedenza, Ransomware Resilience verificava la connessione del data collector ogni volta che abilitavi una strategia di protezione dal ransomware con il monitoraggio dell'attività degli utenti su un workload. Con questo aggiornamento, questo controllo viene ora saltato se esiste un data collector per la storage VM ed è nello stato "running", accelerando il flusso di lavoro di protezione.
 
@@ -53,8 +67,8 @@ Il supporto per il livello di servizio Flex di Google Cloud NetApp Volumes in Ra
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== Supporto migliorato per i ripristini puliti
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== Supporto per il ripristino pulito in caso di comportamenti utente sospetti e attacchi di crittografia basati sugli utenti
 
 Ora puoi utilizzare i ripristini puliti per il recupero dopo comportamenti sospetti dell'utente e attacchi di crittografia basati sull'utente. Questo miglioramento si aggiunge al supporto esistente per gli attacchi basati sulla crittografia (entropia). Questa funzionalità avanzata ti permette di sfruttare l'approccio guidato del ripristino pulito, identificando i punti di ripristino ottimali per ridurre al minimo la perdita di dati e accelerare il recupero.
 
