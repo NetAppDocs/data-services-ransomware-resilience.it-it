@@ -55,7 +55,7 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSx for NetApp ONTAP
 * Per l'IRE, configura una VPC all'interno dell'intervallo di indirizzi IP del tuo ambiente di produzione. L'indirizzo IP non deve essere in conflitto con alcun indirizzo IP esistente.
 +
 ** La VPC deve avere una capacità minima di 64 indirizzi IP (una netmask /26).
-** La VPC deve consentire l'accesso a Internet pubblico. Altrimenti, l'agente della console non funzionerà.
+** La VPC deve consentire l'accesso a Internet pubblico. In caso contrario, l'agente di Console non funzionerà.
 
 
 

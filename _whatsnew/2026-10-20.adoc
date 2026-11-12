@@ -7,7 +7,7 @@
 [[enhanced-isolated-recovery-environment-configuration]]
 === Configurazione avanzata dell'ambiente di ripristino isolato
 
-Ransomware Resilience offre ora un flusso di lavoro migliorato per la configurazione di ambienti di ripristino isolati. Il nuovo flusso di lavoro chiarisce e semplifica il processo di configurazione di un ambiente di ripristino isolato per il cloud o ambienti on-premises.
+Ransomware Resilience offre ora un flusso di lavoro migliorato per la configurazione di un ambiente di ripristino isolato. Il nuovo flusso di lavoro chiarisce e semplifica il processo di configurazione di un ambiente di ripristino isolato per ambienti cloud o on-premises.
 
 Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["Crea un ambiente di ripristino isolato per un ripristino pulito"^].
 
@@ -16,7 +16,7 @@ Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-service
 [[improved-workflow-for-enabling-user-activity-monitoring]]
 === Flusso di lavoro migliorato per abilitare il monitoraggio delle attività degli utenti
 
-Ransomware Resilience ha migliorato il flusso di lavoro per abilitare il monitoraggio dell'attività degli utenti. In precedenza, Ransomware Resilience verificava la connessione del data collector ogni volta che abilitavi una strategia di protezione dal ransomware con il monitoraggio dell'attività degli utenti su un workload. Con questo aggiornamento, questo controllo viene ora saltato se esiste un data collector per la storage VM ed è nello stato "running", accelerando il flusso di lavoro di protezione.
+Ransomware Resilience ha migliorato il flusso di lavoro per abilitare il monitoraggio dell'attività degli utenti. In precedenza, Ransomware Resilience verificava la connessione del data collector ogni volta che abilitavi una strategia di protezione dal ransomware con monitoraggio dell'attività degli utenti su un workload. Con questo aggiornamento, Ransomware Resilience ora salta questo controllo se esiste un data collector per la storage VM ed è nello stato "running", accelerando così il flusso di lavoro di protezione.
 
 Per ulteriori informazioni, consulta link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["proteggere i carichi di lavoro"^].
 

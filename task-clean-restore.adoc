@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: 'Prima di eseguire un ripristino completo in NetApp Ransomware Resilience, devi creare un ambiente di ripristino isolato per isolare e ripulire l"ambiente.' 
+summary: Crea un ambiente di ripristino isolato in NetApp Ransomware Resilience per isolare e ripulire i carichi di lavoro, esaminare le configurazioni supportate e prepararti per un ripristino pulito. 
 ---
 = Configura l'ambiente per un ripristino pulito in NetApp Ransomware Resilience
 :hardbreaks:
@@ -97,8 +97,8 @@ NOTE: L'esecuzione di un ripristino pulito in un ambiente basato sul cloud può 
 [[considerations]]
 == Considerazioni
 
-* Puoi eseguire un ripristino completo solo per attacchi basati sulla crittografia (sia sul comportamento dell'utente che sull'entropia) e per attacchi dovuti a comportamenti sospetti dell'utente. Il ripristino completo non è supportato per attacchi di data breach e data destruction.
-* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non c'è disponibilità.
+* Puoi eseguire un ripristino pulito solo per gli attacchi basati sulla crittografia (sia sul comportamento dell'utente che sull'entropia) e per gli attacchi basati su comportamenti sospetti dell'utente. Il ripristino pulito non è supportato per gli attacchi di violazione dei dati e distruzione dei dati.
+* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, quest'ultima viene messa in coda fino a quando non si libera capacità.
 +
 ** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.
 
@@ -111,7 +111,7 @@ NOTE: L'esecuzione di un ripristino pulito in un ambiente basato sul cloud può 
 [[additional-considerations-for-on-premises-environments]]
 === Considerazioni aggiuntive per gli ambienti on-premises
 
-Se si implementa un IRE locale, quando una macchina virtuale Windows viene clonata per l'analisi di ripristino durante un ripristino pulito, la macchina virtuale clonata mantiene la stessa configurazione di quella di origine. Ciò può causare conflitti:
+Se implementi un IRE on-premises, quando una VM Windows viene clonata per l'analisi del ripristino durante il clean restore, la VM clonata mantiene la stessa configurazione dell'origine. Questa duplicazione può causare conflitti:
 
 * L'utilizzo dello stesso identificatore di sicurezza (SID) genera conflitti di autenticazione e di sicurezza.
 * L'utilizzo dello stesso nome computer (CN) causa conflitti di rete.
@@ -125,7 +125,7 @@ Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla VM clon
 [[secondary-sources]]
 === Fonti secondarie
 
-Quando crei l'IRE, hai la possibilità di aggiungere una fonte secondaria.
+Quando crei l'IRE, puoi aggiungere una sorgente secondaria.
 
 Se la sorgente primaria non è disponibile e hai configurato una sorgente secondaria, i dati saranno ripristinati nella sorgente secondaria.
 
@@ -151,7 +151,7 @@ I costi di terze parti possono includere la creazione e l'implementazione di ist
 [[prerequisites]]
 == Prerequisiti
 
-Assicurati di aver completato i prerequisiti per il tipo di clean restore scelto. Seleziona la scheda per la configurazione IRE scelta.
+Verifica di aver completato i prerequisiti per il tipo di distribuzione del ripristino pulito scelto. Seleziona la scheda relativa alla configurazione IRE scelta.
 
 
 NOTE: Quando crei l'IRE, devi aggiungere ogni sistema (primario o secondario) che vuoi usare per l'analisi durante la fase di selezione del sistema.
@@ -217,7 +217,7 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSx for NetApp ONTAP
 * Per l'IRE, configura una VPC all'interno dell'intervallo di indirizzi IP del tuo ambiente di produzione. L'indirizzo IP non deve essere in conflitto con alcun indirizzo IP esistente.
 +
 ** La VPC deve avere una capacità minima di 64 indirizzi IP (una netmask /26).
-** La VPC deve consentire l'accesso a Internet pubblico. Altrimenti, l'agente della console non funzionerà.
+** La VPC deve consentire l'accesso a Internet pubblico. In caso contrario, l'agente di Console non funzionerà.
 
 
 
@@ -356,7 +356,7 @@ NOTE: Se stai configurando un IRE con la sorgente in Amazon FSx for NetApp ONTAP
 * Per l'IRE, configura una VPC all'interno dell'intervallo di indirizzi IP del tuo ambiente di produzione. L'indirizzo IP non deve essere in conflitto con alcun indirizzo IP esistente.
 +
 ** La VPC deve avere una capacità minima di 64 indirizzi IP (una netmask /26).
-** La VPC deve consentire l'accesso a Internet pubblico. Altrimenti, l'agente della console non funzionerà.
+** La VPC deve consentire l'accesso a Internet pubblico. In caso contrario, l'agente di Console non funzionerà.
 
 
 
@@ -475,7 +475,7 @@ image:diagram-clean-recovery-on-prem.png["Diagramma del ripristino pulito da loc
 ** È necessario che VMware Tools sia installato e in esecuzione.
 ** WinRM deve essere abilitato.
 ** L'indirizzo IP deve essere configurato.
-** Assicurati di disporre della licenza appropriata per consentire la clonazione delle macchine virtuali di base.
+** Devi disporre della licenza appropriata per consentire la clonazione delle VM di base.
 ** La macchina virtuale deve essere accesa.
 
 
@@ -519,6 +519,9 @@ Accesso NFS a: * Agente della console di produzione * VLAN dell'agente della con
 Prima di eseguire un ripristino pulito, devi creare un ambiente di recovery isolato.
 
 La procedura per creare un ambiente di ripristino isolato varia a seconda che l'ambiente si trovi nel cloud o in locale. Assicurati di seguire le istruzioni per la posizione corretta.
+
+
+TIP: link:https://www.netapp.com/video/6Vj0Ijo3mno/netapp-ransomware-resilience-clean-restore/["Guarda un video che ti guida nella distribuzione del ripristino isolato."^]
 
 [role="tabbed-block"]
 ====
@@ -610,10 +613,18 @@ TIP: Se devi modificare i dettagli dell'IRE, seleziona *Impostazioni* dalla barr
 Non è possibile eliminare un IRE durante un'operazione di ripristino attiva; è possibile annullare l'operazione di ripristino oppure attendere il completamento del ripristino e quindi eliminare l'IRE.
 
 
-IMPORTANT: Se elimini l'IRE, vengono eliminati anche l'SVM della clean room e il volume dei metadati. Una volta eliminati questi asset, non puoi più generare report per il clean restore.
+IMPORTANT: Se elimini l'IRE, vengono eliminati anche l'SVM della clean room e il volume dei metadati. Una volta eliminati questi asset, non puoi più generare report per il ripristino pulito.
 
 . Vai su **Impostazioni**.
 . Nella scheda Pulizia e ripristino isolamento, seleziona **Gestisci**.
 . Identifica la clean room che desideri eliminare. Seleziona il menu Azioni (`...` per l'IRE, quindi **Elimina**.
 . Nella finestra di dialogo, selezionare **Cancella** per confermare l'operazione.
+
+
+
+
+[[more-information]]
+== Ulteriori informazioni
+
+* link:https://www.youtube.com/watch?v=6Vj0Ijo3mno&t=6s["VIDEO: Distribuzione di un ambiente di ripristino isolato"]
 

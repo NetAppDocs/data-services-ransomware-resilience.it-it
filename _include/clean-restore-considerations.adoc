@@ -2,8 +2,8 @@
 :allow-uri-read: 
 
 
-* Puoi eseguire un ripristino completo solo per attacchi basati sulla crittografia (sia sul comportamento dell'utente che sull'entropia) e per attacchi dovuti a comportamenti sospetti dell'utente. Il ripristino completo non è supportato per attacchi di data breach e data destruction.
-* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, questa viene messa in coda fino a quando non c'è disponibilità.
+* Puoi eseguire un ripristino pulito solo per gli attacchi basati sulla crittografia (sia sul comportamento dell'utente che sull'entropia) e per gli attacchi basati su comportamenti sospetti dell'utente. Il ripristino pulito non è supportato per gli attacchi di violazione dei dati e distruzione dei dati.
+* Se l'ambiente di ripristino isolato non ha capacità per una nuova operazione, quest'ultima viene messa in coda fino a quando non si libera capacità.
 +
 ** È possibile monitorare lo stato delle operazioni di ripristino pulito attive e in coda in qualsiasi momento nella dashboard di Ransomware Resilience Recovery.
 

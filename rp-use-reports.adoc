@@ -24,7 +24,7 @@ TIP: Prima di scaricare i file, aggiorna la dashboard per acquisire i dati più 
 * **Riepilogo**: include elenchi di carichi di lavoro supportati e non supportati, azioni consigliate per migliorare la tua postura di resilienza informatica e informazioni acquisite nella dashboard Ransomware Resilience.
 * *Protezione*: include lo stato e i dettagli di tutti i carichi di lavoro, incluso il numero totale di quelli protetti e a rischio.
 * *Avvisi*: include lo stato e i dettagli di tutti gli avvisi, tra cui il numero totale di avvisi e snapshot automatici.
-* *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristino riuscito".
+* *Ripristino*: include lo stato e i dettagli di tutti i carichi di lavoro che devono essere ripristinati, incluso il numero totale di carichi di lavoro contrassegnati come "Ripristino necessario", "In corso", "Ripristino non riuscito" e "Ripristinato con successo".
 * *Esercitazioni di prontezza*: includono i risultati di attacchi simulati per evidenziare le aree di miglioramento.
 * *Modifiche alla protezione*: include una revisione delle modifiche alle strategie di protezione per i carichi di lavoro in un determinato periodo di tempo: 30 giorni, 60 giorni, 90 giorni o 1 anno.
 * *Ripristino pulito*: Include i dettagli sui carichi di lavoro ripristinati con il ripristino pulito.

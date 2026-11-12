@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-custom-restore.html 
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
-summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di backup sullo storage secondario siano puliti, consiglia un punto di ripristino effettivo (RPA) e orchestra il flusso di lavoro per un ripristino a prova di crash.' 
+summary: Ripristina i carichi di lavoro dopo un attacco ransomware utilizzando il punto di ripristino consigliato o preferito a livello di volume, file o VM, senza prima pulire i file. 
 ---
-= Ripristina da un attacco ransomware con un ripristino personalizzato in NetApp Ransomware Resilience
+= Recupera i carichi di lavoro con un ripristino personalizzato in NetApp Ransomware Resilience
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 'Dopo un attacco, NetApp Ransomware Resilience verifica che i dati di b
 
 
 [role="lead"]
-Con Ransomware Resilience, gli amministratori dello storage possono determinare il modo migliore per ripristinare i carichi di lavoro dal punto di ripristino consigliato o da quello preferito.
+Recupera i tuoi carichi di lavoro dopo un attacco ransomware utilizzando un ripristino personalizzato in NetApp Ransomware Resilience. Seleziona il punto di ripristino consigliato o un punto di ripristino preferito per ripristinare i dati senza prima pulire i file.
 
 
 TIP: Ransomware Resilience supporta anche una xref:task-clean-restore.html[opzione di ripristino pulito] funzionalità che offre un ripristino guidato e funzionalità avanzate per garantire il recupero di soli dati puliti e non crittografati.
@@ -143,7 +143,7 @@ TIP: Il nuovo nome del volume appare come nome del volume originale + nome del b
 [[restore-a-workload-at-the-file-level]]
 === Ripristinare un carico di lavoro a livello di file
 
-Prima di ripristinare un carico di lavoro a livello di file, è possibile visualizzare un elenco dei file interessati. È possibile accedere alla pagina Avvisi per scaricare un elenco dei file interessati. Quindi utilizzare la pagina Ripristino per caricare l'elenco e scegliere quali file ripristinare.
+Prima di ripristinare un carico di lavoro a livello di file, puoi scaricare un elenco dei file interessati dalla pagina Alerts. Usa la pagina Recovery per caricare l'elenco e scegliere quali file ripristinare.
 
 È possibile ripristinare un carico di lavoro a livello di file sullo stesso sistema o su un sistema diverso.
 
@@ -198,7 +198,7 @@ image:screen-recovery-app-by-file-select-files.png["Seleziona manualmente i file
 
 +
 
-NOTE: Se non è possibile ripristinare alcun file utilizzando il punto di ripristino selezionato, viene visualizzato un messaggio che indica il numero di file che non possono essere ripristinati e consente di scaricare l'elenco di tali file selezionando *Scarica elenco dei file interessati*.
+NOTE: Se alcuni file non possono essere ripristinati con il punto di ripristino selezionato, compare un messaggio che indica quanti file non possono essere ripristinati. Per scaricare l'elenco di questi file, seleziona *Scarica l'elenco dei file interessati*.
 
 
 
@@ -207,7 +207,7 @@ NOTE: Se non è possibile ripristinare alcun file utilizzando il punto di ripris
 .. Scegli dove ripristinare i dati: la posizione di origine originale o una posizione alternativa che puoi specificare.
 +
 
-TIP: Sebbene i file o la directory originali verranno sovrascritti dai dati ripristinati, i nomi originali dei file e delle cartelle rimarranno gli stessi, a meno che non vengano specificati nuovi nomi.
+TIP: I dati ripristinati sovrascrivono i file o la directory originali, ma i nomi originali dei file e delle cartelle rimangono invariati a meno che tu non specifichi nuovi nomi.
 
 .. Selezionare il sistema.
 .. Selezionare la VM di archiviazione.
@@ -216,7 +216,7 @@ TIP: Sebbene i file o la directory originali verranno sovrascritti dai dati ripr
 
 TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristinati in un nuovo volume nella directory di livello superiore.
 
-.. Selezionare se si desidera che i nomi dei file o delle directory ripristinati siano gli stessi della posizione corrente oppure nomi diversi.
+.. Seleziona se mantenere i nomi correnti o usare nomi diversi per i file o la directory ripristinati.
 
 
 . Selezionare *Avanti*.
@@ -271,7 +271,7 @@ TIP: Se non si specifica un percorso per il ripristino, i file verranno ripristi
 [[restore-a-vm-file-share-at-the-vm-level]]
 === Ripristinare una condivisione file VM a livello di VM
 
-Nella pagina Ripristino, dopo aver selezionato una VM da ripristinare, continuare con questi passaggi.
+Nella pagina Ripristino, dopo aver selezionato una macchina virtuale da ripristinare, procedi con questi passaggi.
 
 . *Origine*: seleziona la freccia rivolta verso il basso accanto a Origine per visualizzare i dettagli.
 +

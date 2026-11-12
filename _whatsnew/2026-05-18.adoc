@@ -18,6 +18,6 @@ Per ulteriori informazioni, consultare link:https://docs.netapp.com/us-en/data-s
 
 La funzione di ripristino pulito ora supporta i report. Grazie ai report, è possibile esaminare e valutare i ripristini puliti, salvando queste informazioni offline come file CSV.
 
-Il ripristino pulito ora supporta anche l'interruzione dell'analisi. Se si interrompe l'analisi, è necessario avviare nuovamente il ripristino pulito.
+Il ripristino pulito ora supporta anche l'interruzione dell'analisi. Se interrompi l'analisi, devi avviare di nuovo il ripristino pulito.
 
 Per ulteriori informazioni sui report, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["Scarica i report in Ransomware Resilience"^]. Per ulteriori informazioni sul ripristino, consultare link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["Recupera i carichi di lavoro con un ripristino pulito"^].

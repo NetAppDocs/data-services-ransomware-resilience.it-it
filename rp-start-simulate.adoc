@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-simulate.html 
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill 
-summary: 'Esegui un"esercitazione di preparazione agli attacchi ransomware simulando un attacco ransomware su un carico di lavoro di esempio. Poi, indaga sull"attacco simulato e ripristina il carico di lavoro di esempio. Puoi eseguire un"esercitazione di preparazione agli attacchi ransomware più volte.' 
+summary: 'Simula un attacco ransomware su un carico di lavoro di esempio per eseguire un"esercitazione di preparazione, quindi analizza l"attacco simulato e ripristina il carico di lavoro.' 
 ---
 = Esegui un'esercitazione di preparazione agli attacchi ransomware in NetApp Ransomware Resilience
 :hardbreaks:
@@ -134,10 +134,10 @@ Se la gravità indica che un utente è sospettato di attività dannose, rivedere
 
 * Esamina l'attività dei file e i processi sospetti:
 +
-** Guarda i dati rilevati in entrata rispetto ai dati previsti.
-** Guarda la velocità di creazione dei file rilevata rispetto a quella prevista.
-** Guarda la frequenza di ridenominazione dei file rilevata rispetto a quella prevista.
-** Osserva il tasso di cancellazione rispetto al tasso previsto.
+** Confronta i dati rilevati in ingresso con i dati previsti.
+** Confronta la frequenza di creazione dei file rilevata con la frequenza prevista.
+** Confronta la frequenza di ridenominazione dei file rilevata con la frequenza prevista.
+** Confronta il tasso di cancellazione con il tasso previsto.
 
 
 * Esamina l'elenco dei file interessati. Controlla le estensioni che potrebbero essere la causa dell'attacco.

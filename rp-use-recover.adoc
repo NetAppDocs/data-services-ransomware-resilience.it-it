@@ -21,7 +21,7 @@ Dopo che un carico di lavoro viene contrassegnato come *Ripristino necessario*, 
 
 
 
-TIP: Il ripristino del carico di lavoro può avere un impatto sui carichi di lavoro in esecuzione.  Dovresti coordinare i processi di recupero con le parti interessate appropriate.
+TIP: Il ripristino del carico di lavoro può influire sui carichi di lavoro in esecuzione. Coordina i processi di ripristino con le parti interessate appropriate.
 
 Un carico di lavoro può avere uno dei seguenti stati di ripristino:
 
