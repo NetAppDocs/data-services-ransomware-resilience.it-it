@@ -120,6 +120,10 @@ NOTE: Se si dispone di una strategia di protezione esistente e si disabilita una
 . Nella dashboard NetApp Ransomware Resilience, esamina il riquadro Avvisi.
 . Selezionare *Visualizza tutto* sotto uno degli stati.
 . Selezionare un avviso per esaminare tutti gli incidenti su ciascun volume per ciascun avviso.
++
+
+TIP: Se l'avviso è stato attivato da un'estensione di file sospetta, puoi impedire che quel tipo di file venga nuovamente consentito sulla VM di storage. Nell'avviso, seleziona *Rimuovi estensioni dall'elenco consentito* link:task-file-extensions.html["per modificare l'elenco delle estensioni di file consentite"].
+
 . Per rivedere altri avvisi, seleziona *Avviso* nel breadcrumb in alto a sinistra.
 . Esaminare gli avvisi nella pagina Avvisi.
 +

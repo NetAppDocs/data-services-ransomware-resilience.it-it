@@ -21,6 +21,173 @@ Dopo aver individuato i carichi di lavoro in NetApp Ransomware Resilience, è fo
 [[before-you-begin]]
 == Prima di iniziare
 
+Le strategie di protezione dal ransomware comprendono _rilevamento_, _protezione_ e _replica_.
+
+* **Le politiche di rilevamento** identificano le minacce ransomware. La tua policy di rilevamento può includere tutti e tre i tipi di rilevamento o una combinazione. Deve includere il rilevamento della crittografia o link:suspicious-user-activity.html["Attività utente sospetta (che richiede configurazioni aggiuntive)"].
++
+** Rilevamento della crittografia
+** Attività utente sospetta
+** Blocca le estensioni di file sospette
++
+Quando abiliti il rilevamento con il blocco delle estensioni di file sospette, passa il puntatore sul tooltip e seleziona **Gestisci** per link:task-file-extensions.html["scegli un elenco personalizzato di estensioni di file bloccate"].
+
+
+
+* **Le policy di protezione** includono policy di snapshot e backup.  In una strategia di protezione sono necessarie policy di rilevamento e snapshot.  Le policy di backup sono facoltative.
++
+Se utilizzi altri prodotti NetApp per proteggere il tuo carico di lavoro, Ransomware Resilience li rileva e ti offre la possibilità di:
+
++
+** utilizzare una policy di rilevamento del ransomware e continuare a utilizzare le policy di Snapshot e backup create da altri strumenti di NetApp, oppure
+** usa Ransomware Resilience per gestire il rilevamento, gli Snapshot e i backup.
+
+
+* **I criteri di replica** consentono di replicare gli snapshot da Ransomware Resilience a un sito secondario. Le pianificazioni di replicazione possono essere impostate su frequenze orarie, giornaliere, settimanali o mensili.
++
+Attualmente è possibile replicare gli snapshot solo nell'archiviazione ONTAP locale.
+
+
+
+
+NOTE: Se stai configurando strategie di protezione per Amazon FSx for NetApp ONTAP e Azure NetApp Files, consulta link:rp-reference-limitations.html["le limitazioni per ogni servizio"].
+
+
+TIP: Per una migliore gestione e protezione del tuo patrimonio di dati, puoi creare link:task-protection-group.html["carichi di lavoro di gruppo"] per proteggere collettivamente i volumi con un'unica strategia.
+
+
+
+[[protection-policies-with-other-netapp-managed-services]]
+=== Politiche di protezione con altri servizi gestiti NetApp
+
+Oltre alla resilienza contro il ransomware, puoi usare NetApp Backup and Recovery per gestire la protezione delle condivisioni di file e delle condivisioni di file delle VM.
+
+Le informazioni di protezione dei servizi Backup and Recovery compaiono in Ransomware Resilience. Puoi aggiungere policy di rilevamento a questi servizi con Ransomware Resilience. L'aggiunta di una policy di protezione con Ransomware Resilience sostituisce le policy di protezione esistenti.
+
+Se una policy di rilevamento ransomware è gestita da Autonomous Ransomware Protection (ARP o ARP/AI, a seconda della versione ONTAP ) e FPolicy in ONTAP, tali carichi di lavoro sono protetti e continueranno a essere gestiti da ARP e FPolicy.
+
+
+NOTE: Le destinazioni di backup non sono disponibili per i carichi di lavoro in Amazon FSx for NetApp ONTAP o Azure NetApp Files. Esegui le operazioni di backup utilizzando il servizio di backup FSx for ONTAP. Imposti le policy di backup per i carichi di lavoro in FSx for ONTAP in AWS, non in Ransomware Resilience. Le policy di backup vengono visualizzate in Ransomware Resilience e rimangono invariate rispetto ad AWS.
+
+
+
+==== Criteri di protezione per carichi di lavoro non protetti dalle applicazioni NetApp
+
+Se il carico di lavoro non è gestito da Backup and Recovery o Ransomware Resilience, potrebbero essere presenti snapshot creati come parte di ONTAP o di altri prodotti. Se la protezione FPolicy di ONTAP è attiva, puoi modificarla utilizzando ONTAP.
+
+
+
+[[predefined-detection-policies]]
+=== Policy di rilevamento predefinite
+
+È possibile scegliere una delle seguenti policy predefinite di Ransomware Resilience, in base all'importanza del carico di lavoro.
+
+
+NOTE: La policy **Encryption user extension** è l'unica policy predefinita che supporta il rilevamento di comportamenti utente sospetti. + La **Critical replication policy** è l'unica policy predefinita che supporta la replica degli Snapshot in ONTAP.
+
+[cols="10,15a,20,15,15,15"]
+|===
+| Livello di politica | Istantanea | Frequenza | Conservazione (giorni) | Numero di copie snapshot | Numero massimo di copie snapshot 
+
+
+.4+| *Politica sui carichi di lavoro critici*  a| 
+Ogni quarto d'ora
+| Ogni 15 minuti | 3 | 288 | 309 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 309 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 309 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 309 
+
+
+.4+| *Importante politica sul carico di lavoro*  a| 
+Ogni quarto d'ora
+| Ogni 30 minuti | 3 | 144 | 165 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 165 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 165 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 165 
+
+
+.4+| *Politica standard del carico di lavoro*  a| 
+Ogni quarto d'ora
+| Ogni 30 min | 3 | 72 | 93 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 93 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 93 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 93 
+
+
+.4+| *Estensione utente crittografia*  a| 
+Ogni quarto d'ora
+| Ogni 30 min | 3 | 72 | 93 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 93 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 93 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 93 
+
+
+.4+| *Politica di replicazione critica*  a| 
+Ogni quarto d'ora
+| Ogni 15 minuti | 3 | 288 | 309 
+
+
+| Quotidiano  a| 
+Ogni 1 giorno
+| 14 | 14 | 309 
+
+
+| Settimanale  a| 
+Ogni 1 settimana
+| 35 | 5 | 309 
+
+
+| Mensile  a| 
+Ogni 30 giorni
+| 60 | 2 | 309 
+|===
 Se intendi creare una policy di protezione con il rilevamento di comportamenti sospetti degli utenti, assicurati di aver link:suspicious-user-activity.html["hai eseguito la configurazione necessaria"] per il monitoraggio dell'attività degli utenti.
 
 
@@ -55,8 +222,15 @@ La strategia di protezione dal ransomware include:
 La policy di rilevamento non modifica le policy gestite in altri prodotti.
 
 +
-La policy di rilevamento abilita la protezione autonoma contro i ransomware e la protezione FPolicy se sono già attivate in altri servizi. Scopri di più sulink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^] ,link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e ripristino"^] , Elink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^] .
+La policy di rilevamento abilita Autonomous Ransomware Protection e la protezione FPolicy se sono già attivati in altri servizi.
 
+
+
+Scopri di più su:
+
+* link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protezione autonoma dal ransomware"^]
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["Backup e ripristino"^]
+* link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["Politica ONTAP"^]
 
 
 
@@ -91,48 +265,32 @@ image:screen-protection-strategy-add.png["Aggiungi una pagina di strategia che m
 ** *Rilevamento di comportamenti utente sospetti*: Abilita il rilevamento del comportamento utente per trasmettere gli eventi relativi all'attività dell'utente a Ransomware Resilience e rilevare eventi sospetti come violazioni di dati o distruzione di dati.
 ** *Blocca le estensioni dei file*: Abilita la Ransomware Resilience per bloccare le estensioni di file sospette note.
 +
-Se si desidera modificare le estensioni dei file bloccati, modificarle in Gestione sistema.
-
-+
-
-NOTE: È possibile scegliere qualsiasi combinazione di policy di rilevamento. La policy di rilevamento deve includere il rilevamento della crittografia o il rilevamento di comportamenti utente sospetti.
+Puoi usare un elenco predefinito di estensioni di file bloccate oppure crearne uno link:task-file-extensions.html["elenco personalizzato"].
 
 
 
-. Imposta la *policy di Snapshot*. Per importare le impostazioni degli snapshot da un'altra configurazione link:concept-strategy.html#predefined-policies["policy predefinita"], seleziona il pulsante di opzione *Seleziona* e poi scegli la policy dal menu a discesa. Non ti servono altre configurazioni di snapshot se importi una policy.
-+
-Per configurare le tue impostazioni, seleziona *Create* e inserisci un *Snapshot basename*. Il basename è il prefisso aggiunto a ogni Snapshot.
 
-. Se stai configurando le tue impostazioni di Snapshot, puoi abilitare *Blocco Snapshot*. Se abiliti il blocco degli Snapshot, imposta un valore per i *giorni di conservazione del blocco* (ovvero, per quanto tempo gli Snapshot rimangono bloccati).
-+
-Il blocco degli Snapshot crea uno storage immutabile bloccando le copie Snapshot sullo storage primario, in modo che non possano essere modificate o eliminate per un determinato periodo di tempo anche se un attacco ransomware riesce a raggiungere la destinazione dello storage per il backup. Questo consente tempi di ripristino più rapidi. Quando uno Snapshot viene bloccato, il tempo di scadenza del volume viene impostato sul tempo di scadenza della copia Snapshot.
 
-+
-Il blocco delle copie Snapshot è disponibile con ONTAP 9.12.1 e versioni successive. Per saperne di più su SnapLock, consulta link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["Documentazione ONTAP per SnapLock"^].
 
-+
-Se stai configurando le tue impostazioni di snapshot, imposta le opzioni di pianificazione degli snapshot. Scegli se acquisire gli snapshot con una frequenza di minuti, ore, giorni, settimane o mesi. Per tutte le opzioni tranne quella giornaliera, scegli l'ora del giorno, della settimana o del mese in cui acquisire gli snapshot. Inoltre, nel campo *Retention*, scegli quante copie di ciascun tipo di snapshot conservare.
+NOTE: È possibile scegliere qualsiasi combinazione di policy di rilevamento. La policy di rilevamento deve includere il rilevamento della crittografia o il rilevamento di comportamenti utente sospetti. . Imposta la *policy di Snapshot*. Per importare le impostazioni degli snapshot da un'altra configurazione link:concept-strategy.html#predefined-policies["policy predefinita"], seleziona il pulsante di opzione *Seleziona* e poi scegli la policy dal menu a discesa. Non ti servono altre configurazioni di snapshot se importi una policy.
 
-+
-image:add-policy-snapshot.png["Schermata delle opzioni della policy di Snapshot."]
++ Per configurare le tue impostazioni, seleziona *Create* e inserisci un *Snapshot basename*. Il basename è il prefisso aggiunto a ogni snapshot. . Se stai configurando le tue impostazioni di snapshot, puoi abilitare *Snapshot locking*. Se abiliti Snapshot locking, imposta un valore per *Locking retention days* (ovvero per quanto tempo gli snapshot rimangono bloccati).
 
-. Per i workload on-premises, puoi facoltativamente impostare una *policy di replica* per replicare il workload nello storage ONTAP.
-+
-Per importare una policy definita dal sistema, scegli il pulsante di opzione *Select*, quindi scegli link:concept-strategy.html#predefined-policies["policy predefinita"] dal menu a discesa.
++ Il blocco Snapshot crea uno storage immutabile bloccando le copie Snapshot sullo storage primario, in modo che non possano essere modificate o eliminate per un determinato periodo di tempo, anche se un attacco ransomware riesce a raggiungere la destinazione dello storage per il backup. Ciò consente tempi di ripristino più rapidi. Quando una Snapshot è bloccata, il tempo di scadenza del volume viene impostato sul tempo di scadenza della copia Snapshot.
 
-+
-Per creare le tue impostazioni di replica, seleziona *Crea* e poi inserisci un *Nome base della policy di replica*, ovvero il prefisso aggiunto a tutti gli snapshot. Imposta le *Pianificazioni di replica*. Attiva o disattiva le frequenze che vuoi abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da conservare) per ogni pianificazione che abiliti.
++ Il blocco della copia Snapshot è disponibile con ONTAP 9.12.1 e versioni successive. Per saperne di più su SnapLock, consulta link:https://docs.netapp.com/us-en/ontap/snaplock/index.html["Documentazione ONTAP per SnapLock"^].
 
-. Facoltativamente, puoi impostare una *policy di backup*. Per importarne uno esistente, seleziona il pulsante di opzione *Seleziona*, quindi scegli link:concept-strategy.html#predefined-policies["policy predefinita"] dal menu a discesa.
-+
-Per creare una policy personalizzata, seleziona *Crea* e inserisci un *nome base della policy di backup*. Imposta le *pianificazioni di backup* attivando o disattivando le diverse frequenze (oraria, giornaliera, settimanale e mensile) e quindi imposta il numero di backup da conservare per ciascuna.
++ Se stai configurando le tue impostazioni di snapshot, imposta le opzioni di pianificazione degli snapshot. Scegli se acquisire snapshot con una frequenza di minuti, ore, giorni, settimane o mesi. Per tutte le opzioni tranne quella giornaliera, scegli l'ora del giorno, della settimana o del mese in cui acquisire gli snapshot. Inoltre, nel campo *Retention*, scegli quante copie di ciascun tipo di snapshot conservare.
 
-+
++ image:add-policy-snapshot.png["Schermata delle opzioni della policy di Snapshot."] . Per i carichi di lavoro on-premises, puoi impostare facoltativamente una *policy di replica* per replicare il carico di lavoro nello storage ONTAP.
 
-TIP: Per abilitare il blocco del backup su storage secondario, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per i dettagli, vedere link:task-backup-destination.html["Configurare le impostazioni"].
++ Per importare una policy definita dal sistema, seleziona il pulsante di opzione *Seleziona*, quindi scegli link:concept-strategy.html#predefined-policies["policy predefinita"] dal menu a discesa.
 
-. Selezionare *Aggiungi*.
++ Per creare le tue impostazioni di replica, seleziona *Create*, quindi inserisci un *Replication policy basename*, ovvero il prefisso aggiunto a tutti gli snapshot. Imposta le *Replication schedules*. Attiva o disattiva le frequenze che vuoi abilitare (oraria, giornaliera, settimanale o mensile) e imposta il valore di conservazione (il numero di snapshot replicati da mantenere) per ogni pianificazione che abiliti. . Facoltativamente, imposta una *Backup policy*. Per importarne una esistente, seleziona il pulsante di opzione *Select*, quindi scegli link:concept-strategy.html#predefined-policies["policy predefinita"] dal menu a discesa.
 
++ Per creare una policy personalizzata, seleziona *Crea* e inserisci un *nome base per la policy di backup*. Imposta le *pianificazioni di backup* attivando o disattivando le diverse frequenze (oraria, giornaliera, settimanale e mensile), quindi imposta il numero di backup da conservare per ciascuna.
+
++ SUGGERIMENTO: Per abilitare il blocco del backup sullo storage secondario, configura le destinazioni di backup utilizzando l'opzione *Impostazioni*. Per i dettagli, consulta link:task-backup-destination.html["Configurare le impostazioni"]. . Seleziona *Aggiungi*.
 
 
 
@@ -160,6 +318,12 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 ** *Rilevamento della crittografia*
 ** *Rilevamento di comportamenti utente sospetti*
 ** *Blocca le estensioni di file sospette*
++
+L'opzione "Blocca estensioni di file sospette" utilizza l'elenco predefinito configurato per l'organizzazione. Per link:task-file-extensions.html["usa un elenco personalizzato"] accedere all'elenco creato, seleziona l'icona a forma di matita.
+
++
+Se hai configurato elenchi di estensioni di file bloccate in ONTAP, puoi sostituirli selezionando *Sostituisci gli elenchi ONTAP con gli elenchi Ransomware Resilience*. Quindi scegli se vuoi che l'SVM *Consenti tutte le estensioni di file tranne quelle nell'elenco bloccato* o *Blocca tutte le estensioni di file tranne quelle nell'elenco consentito*. Quindi seleziona l'elenco dal menu a discesa. Tutte le VM di storage (SVM) nel workload useranno quell'elenco; in seguito potrai applicare elenchi diversi a SVM diverse nel workload.
+
 
 
 . Selezionare **Avanti**.
@@ -185,7 +349,14 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 
 . Dalla pagina Protezione, seleziona un carico di lavoro, quindi seleziona *Proteggi*.
 . Ransomware Resilience rileva se sono presenti policy di Backup and Recovery attive. Per sostituire le policy esistenti, seleziona la casella **Replace existing policies**. Quando selezioni la casella, Ransomware Resilience sostituisce l'elenco delle policy di rilevamento con le policy di rilevamento.
-. Scegli una polizza di protezione.  Se non esiste alcuna policy di protezione, seleziona **Aggiungi** per crearne una nuova.  Per informazioni sulla creazione di una policy, vedere<<steps,Creare una politica di protezione>> . Selezionare **Avanti**.
+. Scegli una policy di protezione. Se non esiste alcuna policy di protezione, seleziona **Aggiungi** per crearne una nuova. Per informazioni sulla creazione di una policy, consulta <<steps,Creare una politica di protezione>>.
++
+L'opzione "Blocca estensioni di file sospette" utilizza l'elenco predefinito configurato per l'organizzazione. Per link:task-file-extensions.html["usa un elenco personalizzato"] accedere all'elenco creato, seleziona l'icona a forma di matita.
+
++
+Se hai configurato elenchi di estensioni di file bloccate in ONTAP, puoi sostituirli selezionando *Sostituisci gli elenchi ONTAP con gli elenchi Ransomware Resilience*. Quindi scegli se vuoi che l'SVM *Consenti tutte le estensioni di file tranne quelle nell'elenco bloccato* o *Blocca tutte le estensioni di file tranne quelle nell'elenco consentito*. Quindi seleziona l'elenco dal menu a discesa. Tutte le VM di storage (SVM) nel workload useranno quell'elenco; in seguito potrai applicare elenchi diversi a SVM diverse nel workload.
+
+. Selezionare **Avanti**.
 . Se la strategia prevede la replica, selezionare **Sistema di destinazione** e **VM di archiviazione di destinazione**. Selezionare **Avanti**.
 . Seleziona una destinazione di backup o creane una nuova. Selezionare **Avanti**.
 +
@@ -231,8 +402,10 @@ image:screen-protection.png["Gestisci la pagina della strategia"]
 [[next-steps]]
 == Prossimi passi
 
+* link:task-file-extensions.html["Gestisci le estensioni dei file bloccate o consentite"]
+* link:suspicious-user-activity.html["Configura il rilevamento dell'attività dell'utente"]
+* link:rp-use-alert.html["Rispondere agli avvisi di ransomware"]
 * link:concept-strategy.html["Scopri le strategie di protezione"]
 * link:task-protection-group.html["Gestisci i gruppi di protezione"]
 * link:task-backup-destination.html["Gestire le destinazioni di backup"]
-* link:suspicious-user-activity.html["Configura il rilevamento dell'attività dell'utente"]
 

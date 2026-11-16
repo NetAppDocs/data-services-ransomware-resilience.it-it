@@ -104,6 +104,7 @@ NOTE: L'esecuzione di un ripristino pulito in un ambiente basato sul cloud può 
 
 
 * Quando si avvia un ripristino pulito, il volume originale viene smontato, il che può interrompere l'accesso IO.
+* Il ripristino pulito non è attualmente supportato per MetroCluster o i carichi di lavoro SAN.
 
 
 

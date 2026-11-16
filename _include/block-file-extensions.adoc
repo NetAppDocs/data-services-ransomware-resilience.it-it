@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+L'opzione "Blocca estensioni di file sospette" utilizza l'elenco predefinito configurato per l'organizzazione. Per link:task-file-extensions.html["usa un elenco personalizzato"] accedere all'elenco creato, seleziona l'icona a forma di matita.
+
++ Se hai configurato elenchi di estensioni di file bloccate in ONTAP, puoi sostituirli selezionando *Sostituisci gli elenchi ONTAP con gli elenchi di Ransomware Resilience*. Quindi scegli se vuoi che l'SVM *Consenta tutte le estensioni di file tranne quelle nell'elenco bloccato* o *Blocchi tutte le estensioni di file tranne quelle nell'elenco consentito*. Quindi, seleziona l'elenco dal menu a discesa. Tutte le VM di storage (SVM) nel workload useranno quell'elenco; in seguito potrai applicare elenchi diversi a SVM diverse nel workload.

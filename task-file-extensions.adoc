@@ -1,0 +1,151 @@
+---
+sidebar: sidebar 
+permalink: task-file-extensions.html 
+keywords: ransomware protection recovery, file list, allowlist, blocked, extensions, fpolicy, file extensions 
+summary: Configura gli elenchi di estensioni di file supportate o bloccate in NetApp Ransomware Resilience per personalizzare il tuo profilo di protezione. 
+---
+= Gestisci le estensioni di file bloccate o consentite in NetApp Ransomware Resilience
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience ti consente di configurare una strategia di protezione che blocca le estensioni di file sospette. Ransomware Resilience fornisce un elenco predefinito di estensioni di file sospette note da bloccare per prevenire gli attacchi ransomware. Puoi personalizzare l'elenco delle estensioni di file, aggiungendo o rimuovendo voci in base alle tue esigenze.
+
+Quando configuri la protezione con il blocco delle estensioni di file sospette, l'impostazione viene applicata a livello di carico di lavoro. Puoi tuttavia personalizzare quali estensioni di file usare a livello di macchina virtuale di storage (SVM), il che significa che diverse SVM nello stesso carico di lavoro possono utilizzare elenchi diversi.
+
+
+
+[[how-file-extension-blocking-works]]
+== Come funziona il blocco delle estensioni dei file
+
+Esistono due approcci per configurare gli elenchi di estensioni dei file:
+
+* *Blocca le estensioni dei file* - Tutte le estensioni di file incluse nell'elenco vengono bloccate e contrassegnate come minacce ransomware.
+* *Consenti estensioni di file* - Sono consentiti solo i file con estensioni presenti in questo elenco. Qualsiasi file con un'estensione non presente nell'elenco viene bloccato e considerato una minaccia ransomware.
+
+
+
+
+[[file-extension-blocking-from-ontap]]
+=== Blocco delle estensioni dei file da ONTAP
+
+Se hai impostato in ONTAP il blocco di specifiche estensioni di file, Ransomware Resilience riconosce queste impostazioni. Se configuri link:rp-use-protect.html["configurare la protezione"] in Ransomware Resilience per bloccare le estensioni di file sospette, Ransomware Resilience passerà a utilizzare un elenco predefinito più selezionato di estensioni di file, a meno che tu non abbia configurato un'impostazione predefinita diversa.
+
+
+
+[[default-file-extensions]]
+=== Estensioni dei file predefinite
+
+Ransomware Resilience fornisce un elenco predefinito di estensioni di file bloccate denominato ""NetApp."". Per impostazione predefinita, tutti i carichi di lavoro abilitati a bloccare le estensioni di file sospette utilizzano questo elenco, che contiene più di 3.900 estensioni di file dannose note. Puoi modificare questo elenco o copiarlo per usarlo come base per un elenco personalizzato.
+
+Puoi impostare un elenco diverso come predefinito. Dopo aver impostato un elenco come predefinito, tutti i workload che abiliterai successivamente per il blocco dei file useranno quell'elenco, a meno che tu non ne selezioni manualmente un altro.
+
+
+
+[[create-a-file-extensions-list]]
+== Crea un elenco delle estensioni dei file
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella sezione Estensioni file, seleziona **Gestisci**.
+. Selezionare **Aggiungi**.
+. Inserisci un *Nome* per l'elenco.
+. Seleziona la modalità di funzionamento dell'elenco:
++
+** Seleziona *Blocca estensioni* per contrassegnare automaticamente qualsiasi estensione di file presente nell'elenco come minaccia ransomware.
+** Seleziona *Allow extensions* per consentire solo le richieste provenienti da estensioni di file nell'elenco.
+
+
+. Scegli come creare l'elenco:
++
+** Seleziona la scheda *Copia elenco* per creare un elenco a partire da un elenco esistente.
++
+Esamina l'elenco delle estensioni dei file. Seleziona la "X" accanto al tipo di estensione del file per eliminare le estensioni. Seleziona *+ Aggiungi all'elenco* per aggiungere altre estensioni; questa selezione ti porta alla scheda *Inserisci manualmente*.
+
+** Seleziona la scheda *Carica* per aggiungere un elenco di estensioni di file da un file CSV.
++
+Seleziona *Carica* e scegli un file CSV che includa l'elenco delle estensioni di file che desideri bloccare o consentire.
+
+** Seleziona *Inserisci manualmente* per digitare l'elenco. Inserisci l'elenco come una serie di valori separati da virgole, ad esempio "vvv, xyz, zzz".
+
+
+. Esamina l'elenco delle estensioni dei file, quindi seleziona *Aggiungi* per creare il nuovo elenco.
++
+image:blocked-file-extensions.png["Schermata delle estensioni di file bloccate."]
+
+
+
+
+
+[[apply-a-file-extension-list-to-an-svm]]
+[[svm]]
+== Applica un elenco di estensioni dei file a una SVM
+
+Quando assegni una strategia di protezione contro i ransomware con la policy di blocco delle estensioni di file sospette, puoi specificare un elenco di estensioni di file per l'intero carico di lavoro. Dopo aver applicato la policy di protezione, puoi applicare elenchi diversi a SVM differenti.
+
+Il carico di lavoro deve includere una policy di rilevamento che blocchi le estensioni di file sospette prima che tu possa eseguire questa attività. Scopri come link:rp-use-protect.html["configurare una strategia di protezione dal ransomware"]. Puoi assegnare un solo elenco di estensioni di file a ciascun SVM.
+
+.Passi
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella sezione Estensioni file, seleziona **Gestisci**.
+. Seleziona la scheda *Storage VM*.
+. Esamina l'elenco degli SVM con la protezione "Blocca estensioni di file sospette" abilitata. Puoi vedere quale SVM utilizza quale elenco. Per modificare l'elenco, seleziona *Cambia elenco*.
+. Nella finestra di dialogo, seleziona il nuovo elenco dal menu a tendina, quindi seleziona *Salva*.
+
+
+
+
+[[manage-file-extension-lists]]
+== Gestisci gli elenchi delle estensioni dei file
+
+Puoi modificare il contenuto dell'elenco delle estensioni dei file in qualsiasi momento. Puoi eliminare un elenco o renderlo predefinito quando abiliti il blocco dei file sospetti.
+
+.Modifica un elenco di estensioni di file
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella sezione Estensioni file, seleziona **Gestisci**.
+. Individua l'elenco delle estensioni di file che vuoi modificare.
+. Per aggiungere estensioni di file all'elenco, seleziona il menu Azioni, quindi *Aggiungi estensioni di file*.
++
+.. Seleziona la scheda corrispondente al metodo che desideri utilizzare per modificare l'elenco. Seleziona *Copia elenco* per importare un elenco esistente; seleziona *Carica* per importare le estensioni dei file da un file CSV; seleziona *Inserisci manualmente* per inserire manualmente le estensioni dei file.
+.. Seleziona *Aggiungi* per salvare le modifiche.
+
+
+. Per rimuovere le estensioni dei file, dal menu Estensioni file, seleziona il nome dell'elenco che vuoi modificare.
++
+.. Nell'elenco delle estensioni di file, seleziona la casella di controllo accanto a ciascuna estensione che desideri rimuovere. Nella parte superiore dell'elenco, seleziona **Rimuovi**.
++
+In alternativa, seleziona il menu delle azioni alla fine della riga corrispondente all'estensione del file che desideri rimuovere quindi fai clic su *Rimuovi*.
+
+
+
+. Seleziona *Salva* per modificare l'elenco.
+
+
+.Imposta un elenco di estensioni di file come predefinito
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella sezione Estensioni file, seleziona **Gestisci**.
+. Scegli il menu delle azioni per l'elenco che vuoi impostare come predefinito, quindi *Contrassegna come elenco predefinito*.
+. L'elenco viene quindi contrassegnato come predefinito. I carichi di lavoro protetti con l'elenco delle estensioni di file bloccate che non sono stati contrassegnati con un elenco specifico bloccheranno o consentiranno le estensioni di file in base al nuovo valore predefinito.
+
+
+.Eliminare un elenco di estensioni di file
+Non puoi eliminare un elenco applicato a un SVM. Devi prima <<svm,modifica l'elenco associato alla SVM>>.
+
+Non puoi eliminare l'elenco NetApp.
+
+. In Ransomware Resilience, seleziona **Impostazioni**.
+. Nella sezione Estensioni file, seleziona **Gestisci**.
+. Seleziona il menu delle azioni per l'elenco che vuoi eliminare, quindi *Elimina elenco*.
+. Conferma l'eliminazione nella finestra di dialogo.
+
+
+
+
+[[more-information]]
+== Ulteriori informazioni
+
+* link:rp-use-protect.html["Configurare una strategia di protezione contro i ransomware"]
+

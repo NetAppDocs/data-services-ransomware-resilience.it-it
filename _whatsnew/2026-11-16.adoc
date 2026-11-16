@@ -1,0 +1,14 @@
+= supporto MetroCluster
+:allow-uri-read: 
+
+
+
+
+[[metrocluster-support]]
+=== supporto MetroCluster
+
+Ransomware Resilience ora supporta MetroCluster, consentendoti protezione, rilevamento e ripristino dal ransomware per le configurazioni MetroCluster mirror. Quando abiliti la protezione dal ransomware nelle configurazioni MetroCluster, entrambi i sistemi della coppia MetroCluster devono essere aggiunti alla Console. Quando rilevi e abiliti la protezione su un lato della coppia, viene abilitata automaticamente anche sull'altro lato.
+
+Quando esegui il ripristino dopo un attacco ransomware su un carico di lavoro MetroCluster, al momento puoi utilizzare solo un ripristino personalizzato.
+
+Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#metrocluster-discovery["Rilevamento di MetroCluster"].

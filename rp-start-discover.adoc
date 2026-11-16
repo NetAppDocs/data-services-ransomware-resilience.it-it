@@ -25,6 +25,18 @@ Ransomware Resilience verifica la protezione di backup corrente, le copie snapsh
 
 
 
+[[metrocluster-discovery]]
+== Rilevamento di MetroCluster
+
+Ransomware Resilience carica automaticamente le configurazioni di MetroCluster per il rilevamento. Devi aver aggiunto entrambi i sistemi della coppia MetroCluster alla Console per completare correttamente il rilevamento.
+
+Se entrambi i sistemi della coppia MetroCluster sono stati aggiunti correttamente all'organizzazione Console, entrambi saranno visibili nella selezione di rilevamento. Ti basta selezionare un solo sistema per il rilevamento; la coppia speculare verrà aggiunta automaticamente.
+
+
+TIP: I sistemi MetroCluster sono contrassegnati con un **+1** nella dashboard di Discovery. Passa il mouse sopra il **+1** per visualizzare tutti i sistemi della coppia.
+
+
+
 [[select-workloads-to-discover]]
 == Seleziona i carichi di lavoro da scoprire
 

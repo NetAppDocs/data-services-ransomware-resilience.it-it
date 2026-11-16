@@ -1,0 +1,12 @@
+= Gestione delle estensioni di file bloccate
+:allow-uri-read: 
+
+
+
+
+[[managed-blocked-file-extensions]]
+=== Gestione delle estensioni di file bloccate
+
+Ransomware Resilience ora ti offre la possibilità di personalizzare l'elenco delle estensioni di file consentite o bloccate per un carico di lavoro quando hai abilitato l'opzione di protezione *Blocca estensioni di file sospette*. Con questo miglioramento, puoi configurare il carico di lavoro in modo da consentire solo tipi di file specifici sulla storage VM (SVM) o da bloccare estensioni di file specifiche. Se esegui la migrazione di un carico di lavoro esistente usando FPolicy per bloccare le estensioni di file sospette con Ransomware Resilience, per impostazione predefinita viene usato un elenco di estensioni più selezionato, anche se puoi personalizzare l'elenco. Questo miglioramento supporta un controllo più granulare sull'opzione delle estensioni di file e ti consente anche di creare elenchi diversi per SVM diverse.
+
+Per ulteriori informazioni, vedi link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["Gestisci le estensioni di file bloccate in Ransomware Resilience"].

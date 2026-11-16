@@ -21,7 +21,13 @@ Con NetApp Ransomware Resilience, puoi automatizzare le risposte a link:concept-
 Le risposte automatiche sono supportate per gli eventi di crittografia (comportamento dell'utente), violazione dei dati e distruzione dei dati. Devi avere link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["Hai configurato un agente di attività utente, abilitato una policy con rilevamento dell'attività utente e creato un connettore di directory utente"] prima di creare una risposta automatica. Quando viene attivata una risposta automatica, Ransomware Resilience invia un avviso email.
 
 
-NOTE: Se l'avviso viene attivato da un comportamento sospetto dell'utente, puoi solo acquisire un'istantanea. Bloccare un utente non è disponibile come risposta automatica a un comportamento sospetto dell'utente.
+
+[[before-you-begin]]
+== Prima di iniziare
+
+* Se l'avviso viene attivato da un comportamento sospetto dell'utente, puoi solo acquisire un'istantanea. Bloccare un utente non è disponibile come risposta automatica a un comportamento sospetto dell'utente.
+* Quando configuri le risposte automatiche per le configurazioni MetroCluster, seleziona un solo carico di lavoro nella coppia MetroCluster. Le risposte automatiche vengono applicate automaticamente all'intera configurazione MetroCluster.
+
 
 
 
