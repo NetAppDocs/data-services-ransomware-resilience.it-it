@@ -54,7 +54,6 @@ Nella fase di pianificazione puoi anche visualizzare la cronologia dei file per 
 
 * È possibile creare un solo IRE per account Ransomware Resilience. Ogni IRE può avere tre clean room.
 * Il ripristino completo è attualmente supportato solo per le condivisioni di file NAS (NFS/CIFS).
-* Con un ripristino pulito, puoi eseguire il ripristino solo nell'ambiente di origine.
 * È possibile creare un IRE nel cloud o in locale. Attualmente, sono supportate le seguenti configurazioni:
 +
 |===
