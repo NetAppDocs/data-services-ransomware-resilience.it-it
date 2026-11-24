@@ -987,10 +987,8 @@
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="cell">Oracle Linux</block>
   <block id="d33305ae6335b0a9106e226ed71ca60f" category="cell">8.10 (64 bit), 9.1 (64 bit) fino a 9.6 (64 bit) e 10 (64 bit), incluso SELinux</block>
   <block id="d405e3063aac76a254e44386c961b24c" category="cell">Roccioso</block>
-  <block id="92ceb02e8fd413288d949e40d8ca4832" category="cell">SUSE Enterprise Linux</block>
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4 (64 bit) fino a 15 SP6 (64 bit), incluso SELinux</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
-  <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS (64 bit), 22.04 LTS (64 bit) e 24.04 LTS (64 bit)</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">Il server deve soddisfare i seguenti requisiti minimi:</block>
   <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">Fornire i dettagli dell'agente di attività dell'utente:</block>
   <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*Nome DNS o indirizzo IP della VM*</block>
@@ -1286,8 +1284,6 @@
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">Nella versione di anteprima, il servizio protegge i carichi di lavoro basati sulle applicazioni di Oracle, i datastore delle VM e le condivisioni di file su storage NAS locale, nonché Cloud Volumes ONTAP su AWS (utilizzando il protocollo NFS) nelle singole organizzazioni BlueXP ed esegue il backup dei dati sullo storage cloud di Amazon Web Services.</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">Da 15.3 (64 bit) a 15.6 (64 bit)</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10 (64 bit) e 9.1 (64 bit) fino a 9.6 (64 bit), incluso SELinux</block>
-  <block id="1d9fc183665bd1e195391190be506894" category="cell">Cappello rosso</block>
-  <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 bit) fino a 9.6 (64 bit), incluso SELinux</block>
   <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">**CPU**: 4 core</block>
   <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**RAM**: 16 GB di RAM</block>
   <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">Configurare la connessione. Inserisci le informazioni richieste per ogni campo.</block>
@@ -1339,7 +1335,6 @@
   <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">Requisiti del sistema operativo</block>
   <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">L’ordinateur que vous utilisez pour l’agent d’activité de l’utilisateur ne doit pas exécuter d’autres logiciels au niveau de l’application. Si consiglia un server dedicato.</block>
   <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">Requisiti del server</block>
-  <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**Spazio su disco**: 36 GB di spazio libero su disco</block>
   <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">Si consiglia di sincronizzare l'ora sia sul sistema ONTAP sia sulla macchina dell'agente di attività utente utilizzando il protocollo NTP (Network Time Protocol) o il protocollo SNTP (Simple Network Time Protocol).</block>
   <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">Regole di accesso alla rete cloud</block>
   <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">Esamina le regole di accesso alla rete cloud per la tua area geografica di riferimento (Asia Pacifico, Europa o Stati Uniti).</block>
@@ -1351,15 +1346,11 @@
   <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">Agente di attività dell'utente</block>
   <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">Accesso alla resilienza del ransomware</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">Regole in-network</block>
-  <block id="84caee864977bc98db0b0df24853f63c" category="cell">URL del server LDAP</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">Connettiti a LDAP</block>
   <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">Indirizzo IP di gestione del cluster o SVM (a seconda della configurazione del collettore SVM)</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">Comunicazione API con ONTAP</block>
-  <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">Indirizzi IP LIF dei dati SVM</block>
   <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
-  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">IP di gestione del cluster</block>
-  <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">Comunicazione dall'IP di gestione del cluster ONTAP all'agente di attività dell'utente per *eventi EMS*. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli eventi EMS, incluso qualsiasi firewall sull'agente di attività utente stesso. + **NOTA:** Non è necessario riservare *tutte* queste porte, ma le porte riservate a questo scopo devono essere comprese in questo intervallo. Si consiglia di iniziare riservando 100 porte e di aumentarle se necessario.</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">Gestione dei cluster</block>
@@ -1451,7 +1442,6 @@
   <block id="58fad0abcf1e493b911b1fec13e0ad03" category="inline-link-macro">Endpoint DII</block>
   <block id="75a6a9319b6e0275c06122285e74cd15" category="inline-link-macro">crea l'agente e i collettori richiesti e abilita la strategia di protezione ransomware appropriata</block>
   <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">Prossimi passi</block>
-  <block id="92df6f183b2e1cfcc696af23c1edd4cb" category="summary">Prima di creare un agente di attività utente e altri collettori, è necessario assicurarsi di soddisfare i requisiti delineati per il sistema operativo, il server e la rete.</block>
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">Il rilevamento di comportamenti sospetti degli utenti è supportato con i seguenti sistemi operativi:</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">Raccomandazioni per il server</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">Durante l'installazione iniziale, sostituire l'<block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block> con un'autorizzazione con carattere jolly <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>). Dopo che l'agente è attivato e completamente operativo, è possibile sostituire l'autorizzazione con il nome del sito. Contattare il proprio rappresentante NetApp per il nome del sito.</block>
@@ -1535,7 +1525,6 @@
   <block id="c83e802b0c338d35c6b87847e7c32f3b" category="inline-image-macro">Screenshot delle impostazioni dell'attività utente.</block>
   <block id="d30589c83707b077a1cb3dec5d118521" category="paragraph"><block ref="d30589c83707b077a1cb3dec5d118521" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d64f95921199e6f185b7d45fa5313dc7" category="paragraph">I report di Ransomware Resilience ora acquisiscono informazioni sui volumi supportati e non supportati nel report **Summary**. Utilizza queste informazioni per diagnosticare perché i volumi di un sistema potrebbero non essere idonei alla protezione ransomware.</block>
-  <block id="56ea37444fe804f14e803d34221ed604" category="paragraph">NetApp Ransomware Resilience il rilevamento del comportamento utente consente di rispondere agli eventi ransomware a livello utente. È necessario creare un set di agenti per abilitare il rilevamento del comportamento utente. Prima di abilitare il rilevamento, è necessario assicurarsi di soddisfare i requisiti di sistema operativo, server e rete indicati, in modo che Ransomware Resilience possa rilevare e segnalare correttamente gli eventi.</block>
   <block id="dc63ea1172fd494feb979a5719e55127" category="doc">Monitora lo stato del carico di lavoro in NetApp Ransomware Resilience</block>
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*Rilevamento della crittografia*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*Rilevamento di comportamenti utente sospetti*</block>
@@ -2049,25 +2038,18 @@
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">18 maggio 2026</block>
   <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">Ti aiuta a monitorare i risultati.</block>
   <block id="b39c809eea98a8d210feb1830518c4e1" category="section-title">Raccomandazioni sulle dimensioni</block>
-  <block id="00a0542d454a2c3d33aa384b663f57ae" category="paragraph">Quando si raccolgono gli eventi utente, assicurarsi che la macchina che ospita l'agente di attività utente sia dimensionata per gestire la frequenza degli eventi. Ciò significa assicurarsi di disporre di un numero sufficiente di data collector e di una quantità di CPU e RAM sufficiente sulla macchina che ospita l'agente di attività utente per tollerare il numero di eventi al secondo. Per aumentare il numero di data collector, potrebbe essere necessario aumentare la capacità di RAM o CPU. Ransomware Resilience supporta fino a 50 data collector per agente di attività utente.</block>
   <block id="6be806c9e81235cc334525899e24ce6d" category="paragraph">La tabella seguente fornisce indicazioni generali per il dimensionamento:</block>
   <block id="b8ba9599bd38d83618d773a0942a64b8" category="cell">Configurazione della macchina dell'agente di attività utente</block>
   <block id="3999d93ad3d5c74655af6243f558b8c2" category="cell">Numero di raccoglitori di dati</block>
   <block id="18d4395da7ff8f089039a4b405433d06" category="cell">Frequenza massima degli eventi</block>
-  <block id="b5de202e9046a5a5b8fefd0d5db9cad4" category="cell">4 core, 16GB</block>
   <block id="23c89b5a97c4b2cdaa4c2463c212461a" category="cell">10 raccoglitori di dati</block>
   <block id="269caf37ed3e8cf3c1e0fedca333dc67" category="cell">20.000 eventi/secondo</block>
-  <block id="4abe7d5f36e50b61122614a74ed19547" category="cell">4 core, 32GB</block>
   <block id="4e562f558044748b7be8a4092faa6075" category="cell">20 raccoglitori di dati</block>
   <block id="9f4dd2227b035f32e343309b777f9a0f" category="paragraph">È inoltre possibile calcolare i requisiti specifici. Nel calcolo delle dimensioni appropriate, si consiglia di considerare un margine di sicurezza del 30%. Utilizzare questa formula per determinare se la configurazione è in grado di gestire il carico.</block>
-  <block id="ad126668a8b9ef5079623e9949eca426" category="example-title">Ransomware Resilience fornisce uno script per calcolare la velocità di trasmissione dei dati degli eventi. Scopri come calcolare la velocità di trasmissione dei dati degli eventi in Ransomware Resilience.</block>
-  <block id="05ad069676a9f89984541497cb4b503a" category="paragraph">Ransomware Resilience fornisce uno script che è possibile eseguire sul sistema per calcolare la frequenza dei dati degli eventi. Per impostazione predefinita, lo script viene eseguito per un massimo di cinque macchine virtuali di archiviazione (SVM). Se l'ambiente include più di 5 SVM, è possibile modificare lo script di conseguenza. Indipendentemente dal numero di SVM, lo script impiega circa cinque minuti per ottenere una lettura media della frequenza degli eventi. Prima di eseguire lo script è necessario disporre di:</block>
   <block id="a8addc595422085e1668bb3064c9e3c2" category="inline-link-macro">Configurato un agente di attività utente</block>
   <block id="ee4ff3935e64f4bc766cf7c778ecf035" category="list-text"><block ref="ee4ff3935e64f4bc766cf7c778ecf035" category="inline-link-macro-rx"></block></block>
   <block id="b824ffb71459288c7a3f5b876e2c6648" category="list-text">L'indirizzo IP del cluster</block>
   <block id="3b35700f5db77466b9829093b579bafc" category="list-text">Nome utente e password dell'amministratore del cluster</block>
-  <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">Installato <block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block> sulla macchina Linux (è possibile installarlo con il comando <block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>)</block>
-  <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">Dal cluster che ospita l'agente di attività utente, eseguire lo script come amministratore:<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
   <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">L'esecuzione dello script richiede circa cinque minuti. Al termine, la riga di comando visualizza la frequenza degli eventi, ad esempio "Svm svm_rate sta generando 100 eventi/sec."</block>
   <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">Utilizza la frequenza degli eventi per calcolare le dimensioni.</block>
   <block id="672477287a4b419cc52d69608af63375" category="admonition">Il rilevamento dell'attività dell'utente non è supportato per Azure NetApp Files o Google Cloud NetApp Volumes. Per ulteriori informazioni sul supporto per il rilevamento dell'attività dell'utente, vedere <block ref="69d552b440ad08cbfe2c75fd459bcf87" category="inline-link-macro-rx"></block>.</block>
@@ -2360,17 +2342,8 @@
   <block id="d17b23053b2c8905a1374dfbb3177a6c" category="list-text">Seleziona *Connetti* per avviare la connessione a Ransomware Resilience.</block>
   <block id="256edba68011601436675d5223414692" category="admonition">Puoi modificare la configurazione SIEM dopo averla creata. Puoi modificare tutti i campi tranne il nome.</block>
   <block id="ac750267020c9b3c0e32de825d9b57fc" category="section-title">20 luglio 2026</block>
-  <block id="65e105b8a7c994c340c0237dcf7e5970" category="section-title">Supporto del cloud provider per l'agente di attività utente</block>
-  <block id="9ebc4352a5afdb84f0bff93ebd15df5b" category="paragraph">Per abilitare il rilevamento del comportamento dell'utente, devi creare un agente di attività utente. L'agente di attività utente è un ambiente eseguibile per i data collector, che condividono gli eventi relativi all'attività dell'utente con Ransomware Resilience.</block>
-  <block id="b176415a669a2bcfa34dd5a6868e1756" category="paragraph">L'agente di monitoraggio delle attività utente può essere distribuito in AWS e Azure nelle seguenti regioni:</block>
-  <block id="6cf349ef77d3b894c407f147f9b0f9a7" category="admonition">La distribuzione regionale dell'agente di attività utente non ha alcun impatto sull'agente della Console. La distribuzione dell'agente della Console è indipendente da queste regioni.</block>
-  <block id="a17da1e1013a5f5e4cb001153fe98736" category="paragraph">Il <block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block>comando è necessario per l'installazione. Il <block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block>comando è necessario per l'installazione, l'esecuzione degli script e la disinstallazione.</block>
-  <block id="c9636848fc1b9b62740a33de6f0bad1f" category="list-text">Alloca spazio su disco extra per consentire la creazione del file system. Assicurati che ci siano almeno 35 GB di spazio libero nel file system. + Se <block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> è una cartella montata da uno storage NAS, gli utenti locali devono avere accesso a questa cartella. La creazione dell'agente di attività utente può fallire se gli utenti locali non hanno le autorizzazioni necessarie.</block>
-  <block id="1a283fc89a251e8e273bf67b6e692071" category="list-text">Ti consigliamo di installare l'agente per l'attività utente su un sistema separato dal tuo ambiente Ransomware Resilience. Se installi l'agente e Ransomware Resilience sulla stessa macchina, prevedi da 50 a 55 GB di spazio su disco. Per Linux, alloca da 25 a 30 GB di spazio a<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> e 25 GB a<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>.</block>
   <block id="ccde7d5f2c38977ff57bfa0294ad83d7" category="list-text">Quando richiesto, inserisci l'indirizzo IP del cluster, il nome utente admin e la password admin.</block>
-  <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">L'agente di attività utente utilizza NetApp Data Insights Infrastructure technology, da cui l'utilizzo di <block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block> endpoints. Per ulteriori informazioni, vedere <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>.</block>
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
-  <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389 (LDAP) 636 (LDAPS / start-tls)</block>
   <block id="752cfb7f100699ed10b934470fc8824c" category="doc">Standardizza i gruppi di protezione in base al carico di lavoro e al tipo di sistema</block>
   <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">La funzionalità di resilienza contro i ransomware ora impone che i gruppi di protezione includano un solo tipo di workload e un solo tipo di sistema. Quando crei un nuovo gruppo di protezione, devi specificare sia il tipo di workload (file system o storage a blocchi) sia il sistema per il workload. Questo miglioramento garantisce che la strategia di protezione contro i ransomware scelta per il gruppo di protezione possa essere applicata con successo a tutti i workload del gruppo.</block>
   <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">Se hai gruppi di protezione esistenti che combinano tipi di sistema e di workload, puoi continuare a usarli, ma non puoi aggiungere workload al gruppo di protezione.</block>
@@ -2608,7 +2581,6 @@
   <block id="dc33acebba1d27abf28977cc5a12db48" category="admonition">Se l'avviso viene attivato da un comportamento sospetto dell'utente, puoi solo acquisire un'istantanea. Bloccare un utente non è disponibile come risposta automatica a un comportamento sospetto dell'utente.</block>
   <block id="15033b064af1493a291f43131186f596" category="paragraph"><block ref="15033b064af1493a291f43131186f596" category="inline-link-macro-rx"></block></block>
   <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">16 settembre 2026</block>
-  <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">Comunicazione da ONTAP all'agente di attività utente per gli eventi FPolicy. Queste porte devono essere aperte verso l'agente di attività utente affinché ONTAP possa inviargli eventi, incluso qualsiasi firewall sull'agente di attività utente stesso (se presente). + **NOTA:** Non devi riservare *tutte* queste porte, ma le porte che riservi per questo devono essere comprese in questo intervallo. Ti consigliamo di iniziare riservando 100 porte e di aumentare se necessario.</block>
   <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">Nella dashboard NetApp Ransomware Resilience, esamina il riquadro Avvisi.</block>
   <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">Quando Ransomware Resilience rileva un potenziale attacco, invia una notifica via email agli utenti iscritti, in base alle preferenze di notifica di iscrizione configurate nelle impostazioni della NetApp Console. L'email contiene informazioni sull'avviso, tra cui la gravità e le risorse interessate.</block>
   <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">Non puoi creare la directory di login dell'utente nella home directory a causa di un errore di autorizzazioni. Crea un utente cssys e aggiungi manualmente la sua directory di login con il comando<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>. In questo comando,<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block> crea la home directory se non esiste;<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block> designa HOME_DIR come directory di login.</block>
@@ -2745,7 +2717,6 @@
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">proteggere i carichi di lavoro</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**ANALISI**: Nella clean room, Ransomware Resilience analizza tutte le snapshot per verificare se è presente la crittografia. Il ripristino pulito determina una mappa di recovery con il piano di recovery ottimale.</block>
   <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">Nella fase di pianificazione puoi anche visualizzare la cronologia dei file per capire quando gli attacchi ransomware hanno avuto un impatto sui file e come il punto di ripristino si rapporta temporalmente a tale evento.</block>
-  <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">Con un ripristino pulito, puoi eseguire il ripristino solo nell'ambiente di origine.</block>
   <block id="b1210ce3e5b669a69cc79e2b0ee6c53f" category="paragraph">Per evitare questi conflitti, Ransomware Resilience esegue sysprep sulla VM clonata, reimpostando SID, CN e identità della macchina. La reimpostazione di questi valori garantisce che la VM clonata operi come un'istanza unica e indipendente, senza interferire con la VM di origine.</block>
   <block id="24026e872b9b407496cb872d2956b369" category="paragraph">Se la sorgente primaria non è disponibile e hai configurato una sorgente secondaria, i dati saranno ripristinati nella sorgente secondaria.</block>
   <block id="170723e001c3b4c37b841a3f81011c7c" category="admonition">Quando crei l'IRE, devi aggiungere ogni sistema (primario o secondario) che vuoi usare per l'analisi durante la fase di selezione del sistema.</block>
@@ -3030,4 +3001,32 @@
   <block id="c0062521587f0627efacd75f75346a70" category="list-text">Esamina l'elenco degli SVM con le protezioni di blocco delle estensioni di file sospette abilitate. Puoi vedere quale SVM utilizza quale elenco. Per modificare l'elenco, seleziona *Cambia elenco*.</block>
   <block id="0838f82be2f27550128e5538479f4329" category="paragraph">Non puoi eliminare un elenco applicato a una SVM. Devi prima <block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>.</block>
   <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">Non puoi eliminare l'elenco NetApp.</block>
+  <block id="d1911ce26de45f2d2605b10b84369117" category="summary">Prima di creare un agente per il monitoraggio delle attività degli utenti, devi assicurarti di soddisfare i requisiti relativi al sistema operativo, al server e alla rete indicati.</block>
+  <block id="16c57e5f4f0b7d7b3708ae5054805ed5" category="paragraph">NetApp Ransomware Resilience ti consente di rispondere agli eventi ransomware a livello di utente grazie al rilevamento del comportamento degli utenti. Devi creare un tenant e un set di agenti per abilitare il rilevamento del comportamento degli utenti. Prima di abilitare il rilevamento, devi assicurarti di soddisfare i requisiti indicati relativi al sistema operativo, al server e alla rete, in modo che Ransomware Resilience possa rilevare e segnalare correttamente gli eventi.</block>
+  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">Supporto del cloud provider</block>
+  <block id="46d0eaec023b0432189234ee0117aefe" category="paragraph">Per abilitare il rilevamento del comportamento dell'utente, è necessario creare un ambiente eseguibile per i raccoglitori di dati, che condividono gli eventi relativi all'attività dell'utente con Ransomware Resilience.</block>
+  <block id="c754f70b24546d3b7ea308ec0a266819" category="admonition">La distribuzione regionale del tenant non ha alcun impatto sul Console agent. La distribuzione del Console agent è indipendente da queste regioni.</block>
+  <block id="c4e4893f8021b34fa3230fef41affd05" category="paragraph">Il tenant può essere distribuito in AWS e Azure nelle seguenti regioni:</block>
+  <block id="c73bbd3786350b0a8d3577d82afdf489" category="cell">Red Hat Enterprise Linux</block>
+  <block id="46f920779c70ad11c81d2a88305df5ae" category="cell">Dalla versione 9.4 (64 bit) alla 9.6 (64 bit), incluso SELinux</block>
+  <block id="4ae0b3e9c82d7212e106b8d937d888f9" category="cell">SUSE Linux Enterprise Server</block>
+  <block id="41ae405edf25cef7a892f03a0d4a0e69" category="cell">20.04 LTS (64 bit), 22.04 LTS (64 bit), e 24.04 LTS (64 bit)</block>
+  <block id="acd32e9f7be5d0139bf41001adc3748f" category="paragraph">Il<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> comando è necessario per l'installazione. Il<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> comando è necessario per l'installazione, l'esecuzione degli script e la disinstallazione.</block>
+  <block id="347df1f5ce2f4c9ac5d171603123d70b" category="list-text">**Spazio su disco**: 36 GB liberi</block>
+  <block id="f03113ecfe5eec30d7fa0c6e772ee333" category="list-text">Alloca spazio su disco aggiuntivo per consentire la creazione del file system. Assicurati che ci siano almeno 35 GB di spazio libero nel file system. + Se<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> è una cartella montata da uno storage NAS, gli utenti locali devono avere accesso a questa cartella. La creazione dell'agente di attività utente può non riuscire se gli utenti locali non dispongono delle autorizzazioni necessarie.</block>
+  <block id="180d287450c45d52e0d974a3b9615eb5" category="list-text">Installa l'agente di attività utente su un sistema separato dall'ambiente Ransomware Resilience. Se installi l'agente e Ransomware Resilience sulla stessa macchina, assicurati di avere a disposizione da 50 a 55 GB di spazio su disco. Per Linux, alloca da 25 a 30 GB di spazio a<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> e 25 GB a<block ref="16643b27340306e64b23df0f54664963" prefix=" " category="inline-code"></block>.</block>
+  <block id="11a1b759509cbc306f2770f25a884b8c" category="paragraph">Quando raccogli gli eventi utente, assicurati che la macchina che ospita l'agente di attività utente sia dimensionata per supportare la frequenza dei tuoi eventi. Ciò significa assicurarti di avere un numero sufficiente di collettori di dati e abbastanza CPU e RAM sulla macchina che ospita l'agente di attività utente per gestire il numero di eventi al secondo. Per aumentare il numero di collettori di dati, potresti dover aumentare la capacità di RAM o CPU. Ransomware Resilience supporta fino a 50 collettori di dati per agente di attività utente.</block>
+  <block id="9e307da13f4fbc1f93630e31169402ff" category="cell">4 core, 16GB</block>
+  <block id="d8eb539beebfd86b0e5458fd6893fe26" category="cell">4 core, 32GB</block>
+  <block id="fc6f065ae34f83ecff5902aa52ae5b24" category="example-title">Calcola la velocità dei dati degli eventi in Ransomware Resilience.</block>
+  <block id="a9648406f04c3e2716ce48b7fa2d5192" category="paragraph">Ransomware Resilience ti fornisce uno script che puoi eseguire sul sistema per calcolare il tasso dei dati degli eventi. Per impostazione predefinita, lo script viene eseguito per un massimo di cinque SVM. Se il tuo ambiente include più di cinque SVM, puoi modificare lo script di conseguenza. Indipendentemente dal numero di SVM, lo script impiega circa cinque minuti per ottenere una lettura del tasso medio di eventi. Prima di eseguire lo script, devi disporre di:</block>
+  <block id="c1b56e09cd3b4327ae7a5af63c46a8e4" category="list-text">Installato<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block> sulla macchina Linux (puoi installarlo usando il comando<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>)</block>
+  <block id="6d7d602708c503dfdb5b58c7cfb129ef" category="list-text">Dalla macchina che ospita l'agente di attività utente, esegui lo script come amministratore:<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
+  <block id="1bd4b8d2f4802d1f84efe680d238becb" category="admonition">L'agente di attività utente utilizza la tecnologia NetApp Data Infrastructure Insights, da cui l'uso di<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block> endpoint. Per ulteriori informazioni, consulta <block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>.</block>
+  <block id="d135604ac9e98972c83595fe18ccf0c7" category="cell">389 (LDAP) 636 (LDAPS / StartTLS)</block>
+  <block id="549c6c5676384145c78e433cd7a72102" category="cell">URL del server LDAP</block>
+  <block id="f88c8d37a06873c6731c6109773db908" category="cell">Comunicazione da ONTAP all'agente di attività utente per gli eventi FPolicy. Devi aprire queste porte verso l'agente di attività utente affinché ONTAP possa inviargli gli eventi, incluso qualsiasi firewall sull'agente di attività utente stesso (se presente). + **NOTA:** Non devi riservare *tutte* queste porte, ma le porte che riservi a questo scopo devono rientrare in questo intervallo. Ti consigliamo di iniziare riservando 100 porte e di aumentare se necessario.</block>
+  <block id="b0e8f71425f234ca2f061a0c485640c3" category="cell">IP di gestione del cluster</block>
+  <block id="a1b557c5fe6dcfec9f24e02db3bf04ef" category="cell">agente di attività utente</block>
+  <block id="5e845144086b1a54c1c4dd3a9e2169d7" category="cell">Comunicazione dall'IP di gestione del cluster ONTAP all'agente di attività utente per gli *eventi EMS*. Devi aprire queste porte verso l'agente di attività utente affinché ONTAP possa inviargli gli eventi EMS, incluso qualsiasi firewall sull'agente di attività utente stesso. + **NOTA:** Non devi riservare *tutte* queste porte, ma quelle che riservi a questo scopo devono rientrare in questo intervallo. Ti consigliamo di iniziare riservando 100 porte e di aumentare se necessario.</block>
 </blocks>
