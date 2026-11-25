@@ -12,14 +12,14 @@ summary: Prima di creare un agente per il monitoraggio delle attività degli ute
 
 
 [role="lead"]
-NetApp Ransomware Resilience ti consente di rispondere agli eventi ransomware a livello di utente grazie al rilevamento del comportamento degli utenti. Devi creare un tenant e un set di agenti per abilitare il rilevamento del comportamento degli utenti. Prima di abilitare il rilevamento, devi assicurarti di soddisfare i requisiti indicati relativi al sistema operativo, al server e alla rete, in modo che Ransomware Resilience possa rilevare e segnalare correttamente gli eventi.
+NetApp Ransomware Resilience user activity detection ti consente di rispondere agli eventi ransomware a livello utente. Per abilitare il rilevamento dell'attività degli utenti, devi creare un tenant e un set di agenti. Prima di abilitare il rilevamento, devi assicurarti di soddisfare i requisiti indicati per sistema operativo, server e rete, in modo che Ransomware Resilience possa rilevare e segnalare correttamente gli eventi.
 
 
 
-[[cloud-provider-support]]
-== Supporto del cloud provider
+[[user-activity-tenant]]
+== tenant dell'attività utente
 
-Per abilitare il rilevamento del comportamento dell'utente, è necessario creare un ambiente eseguibile per i raccoglitori di dati, che condividono gli eventi relativi all'attività dell'utente con Ransomware Resilience.
+Per abilitare il rilevamento dell'attività degli utenti, viene configurato un tenant che consente di condividere con Ransomware Resilience gli eventi relativi all'attività degli utenti. Puoi selezionare la regione e il cloud provider in cui vuoi che Ransomware Resilience distribuisca il tenant.
 
 
 NOTE: La distribuzione regionale del tenant non ha alcun impatto sul Console agent. La distribuzione del Console agent è indipendente da queste regioni.
@@ -42,8 +42,17 @@ Il tenant può essere distribuito in AWS e Azure nelle seguenti regioni:
 |===
 
 
+[[user-activity-agent-requirements]]
+== Requisiti dell'agente di attività dell'utente
+
+Dopo aver creato il tenant, devi creare un agente di attività utente per abilitare il rilevamento delle attività degli utenti. L'agente di attività utente non è l'agente della Console; l'agente di attività utente deve essere distribuito come istanza di calcolo separata.
+
+Assicurati che il tuo agente di monitoraggio delle attività utente soddisfi i seguenti requisiti e rispetti le raccomandazioni.
+
+
+
 [[operating-system-requirements]]
-== Requisiti del sistema operativo
+=== Requisiti del sistema operativo
 
 Il rilevamento di comportamenti sospetti degli utenti è supportato con i seguenti sistemi operativi:
 
@@ -86,7 +95,7 @@ Il `unzip` comando è necessario per l'installazione. Il `sudo su -` comando è 
 
 
 [[server-requirements]]
-== Requisiti del server
+=== Requisiti del server
 
 Il server deve soddisfare i seguenti requisiti minimi:
 
@@ -97,8 +106,7 @@ Il server deve soddisfare i seguenti requisiti minimi:
 
 
 
-[[server-recommendations]]
-=== Raccomandazioni per il server
+==== Raccomandazioni per il server
 
 * Alloca spazio su disco aggiuntivo per consentire la creazione del file system. Assicurati che ci siano almeno 35 GB di spazio libero nel file system. + Se `/opt` è una cartella montata da uno storage NAS, gli utenti locali devono avere accesso a questa cartella. La creazione dell'agente di attività utente può non riuscire se gli utenti locali non dispongono delle autorizzazioni necessarie.
 * Installa l'agente di attività utente su un sistema separato dall'ambiente Ransomware Resilience. Se installi l'agente e Ransomware Resilience sulla stessa macchina, assicurati di avere a disposizione da 50 a 55 GB di spazio su disco. Per Linux, alloca da 25 a 30 GB di spazio a `/opt/netapp` e 25 GB a `/var/log/netapp`.
@@ -107,8 +115,7 @@ Il server deve soddisfare i seguenti requisiti minimi:
 
 
 
-[[sizing-recommendations]]
-=== Raccomandazioni sulle dimensioni
+==== Raccomandazioni sulle dimensioni
 
 Quando raccogli gli eventi utente, assicurati che la macchina che ospita l'agente di attività utente sia dimensionata per supportare la frequenza dei tuoi eventi. Ciò significa assicurarti di avere un numero sufficiente di collettori di dati e abbastanza CPU e RAM sulla macchina che ospita l'agente di attività utente per gestire il numero di eventi al secondo. Per aumentare il numero di collettori di dati, potresti dover aumentare la capacità di RAM o CPU. Ransomware Resilience supporta fino a 50 collettori di dati per agente di attività utente.
 
@@ -131,7 +138,7 @@ Where E is the sum of all events per second across all data collectors:
 
 E + (0.3 x E) < 20,000 events/second
 ----
-.Calcola la velocità dei dati degli eventi in Ransomware Resilience.
+.Calcola la velocità dei dati degli eventi in Ransomware Resilience
 [%collapsible]
 ====
 Ransomware Resilience ti fornisce uno script che puoi eseguire sul sistema per calcolare il tasso dei dati degli eventi. Per impostazione predefinita, lo script viene eseguito per un massimo di cinque SVM. Se il tuo ambiente include più di cinque SVM, puoi modificare lo script di conseguenza. Indipendentemente dal numero di SVM, lo script impiega circa cinque minuti per ottenere una lettura del tasso medio di eventi. Prima di eseguire lo script, devi disporre di:
@@ -155,7 +162,7 @@ Utilizza la frequenza degli eventi per calcolare le dimensioni.
 
 
 [[cloud-network-access-rules]]
-== Regole di accesso alla rete cloud
+=== Regole di accesso alla rete cloud
 
 Esamina le regole di accesso alla rete cloud per la tua area geografica di riferimento (Asia Pacifico, Europa o Stati Uniti).
 
@@ -167,8 +174,7 @@ NOTE: L'agente di attività utente utilizza la tecnologia NetApp Data Infrastruc
 
 
 
-[[apac-based-user-activity-agent-deployments]]
-=== Distribuzioni di agenti di attività utente con sede in APAC
+==== Implementazioni di agenti per l'attività utente basate nell'area Asia-Pacifico
 
 [cols="1,1,1,3,1"]
 |===
@@ -185,8 +191,7 @@ NOTE: L'agente di attività utente utilizza la tecnologia NetApp Data Infrastruc
 |===
 
 
-[[europe-based-user-activity-agent-deployments]]
-=== Distribuzioni di agenti di attività utente con sede in Europa
+==== Distribuzioni di agenti di attività utente con sede in Europa
 
 [cols="1,1,1,3,1"]
 |===
@@ -203,8 +208,7 @@ NOTE: L'agente di attività utente utilizza la tecnologia NetApp Data Infrastruc
 |===
 
 
-[[us-based-user-activity-agent-deployments]]
-=== Distribuzioni di agenti di attività utente con sede negli Stati Uniti
+==== Distribuzioni di agenti di attività utente con sede negli Stati Uniti
 
 [cols="1,1,1,3,1"]
 |===
@@ -222,7 +226,7 @@ NOTE: L'agente di attività utente utilizza la tecnologia NetApp Data Infrastruc
 
 
 [[in-network-rules]]
-== Regole in-network
+=== Regole in-network
 
 [cols="5*"]
 |===
